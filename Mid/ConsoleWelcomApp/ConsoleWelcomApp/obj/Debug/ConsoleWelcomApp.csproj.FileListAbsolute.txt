@@ -1,0 +1,7 @@
+C:\Users\Alvi\Documents\C#\Mid\ConsoleWelcomApp\ConsoleWelcomApp\bin\Debug\ConsoleWelcomApp.exe.config
+C:\Users\Alvi\Documents\C#\Mid\ConsoleWelcomApp\ConsoleWelcomApp\bin\Debug\ConsoleWelcomApp.exe
+C:\Users\Alvi\Documents\C#\Mid\ConsoleWelcomApp\ConsoleWelcomApp\bin\Debug\ConsoleWelcomApp.pdb
+C:\Users\Alvi\Documents\C#\Mid\ConsoleWelcomApp\ConsoleWelcomApp\obj\Debug\ConsoleWelcomApp.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Mid\ConsoleWelcomApp\ConsoleWelcomApp\obj\Debug\ConsoleWelcomApp.exe
+C:\Users\Alvi\Documents\C#\Mid\ConsoleWelcomApp\ConsoleWelcomApp\obj\Debug\ConsoleWelcomApp.pdb
+C:\Users\Alvi\Documents\C#\Mid\ConsoleWelcomApp\ConsoleWelcomApp\obj\Debug\ConsoleWelcomApp.csprojAssemblyReference.cache

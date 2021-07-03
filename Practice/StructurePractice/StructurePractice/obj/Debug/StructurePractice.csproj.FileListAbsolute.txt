@@ -1,0 +1,7 @@
+C:\Users\Alvi\Documents\C#\practice\StructurePractice\StructurePractice\bin\Debug\StructurePractice.exe.config
+C:\Users\Alvi\Documents\C#\practice\StructurePractice\StructurePractice\bin\Debug\StructurePractice.exe
+C:\Users\Alvi\Documents\C#\practice\StructurePractice\StructurePractice\bin\Debug\StructurePractice.pdb
+C:\Users\Alvi\Documents\C#\practice\StructurePractice\StructurePractice\obj\Debug\StructurePractice.csproj.AssemblyReference.cache
+C:\Users\Alvi\Documents\C#\practice\StructurePractice\StructurePractice\obj\Debug\StructurePractice.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\practice\StructurePractice\StructurePractice\obj\Debug\StructurePractice.exe
+C:\Users\Alvi\Documents\C#\practice\StructurePractice\StructurePractice\obj\Debug\StructurePractice.pdb
