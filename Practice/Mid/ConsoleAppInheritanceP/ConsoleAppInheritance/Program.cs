@@ -10,7 +10,7 @@ namespace ConsoleAppInheritance
     {
         static void Main(string[] args)
         {
-            Child c = new Child();
+            Child c = new Child(23);
         }
     }
 }

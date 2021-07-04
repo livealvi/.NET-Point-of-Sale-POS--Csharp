@@ -12,5 +12,9 @@ namespace ConsoleAppInheritance
         {
             Console.WriteLine("Child Called");
         }
+        internal Child(int e)
+        {
+            Console.WriteLine("Child Called - 2 " + e);
+        }
     }
 }
