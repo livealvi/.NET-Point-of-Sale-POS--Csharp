@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppInheritance
+namespace ConsoleAppInhertianceP
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Child c = new Child(23);
+            Child c = new Child();
         }
     }
 }

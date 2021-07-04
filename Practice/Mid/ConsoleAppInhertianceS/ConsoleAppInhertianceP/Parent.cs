@@ -4,13 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppInheritance
+namespace ConsoleAppInhertianceP
 {
-    public class Parent
+    internal class Parent
     {
         internal Parent()
         {
             Console.WriteLine("Parent Called");
+        }
+        internal Parent(int r)
+        {
+            Console.WriteLine("Parent PC-I " + r);
         }
     }
 }

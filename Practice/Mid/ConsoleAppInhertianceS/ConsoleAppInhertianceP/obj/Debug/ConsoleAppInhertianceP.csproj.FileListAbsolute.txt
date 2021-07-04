@@ -1,0 +1,7 @@
+C:\Users\Alvi\Documents\C#\Practice\Mid\ConsoleAppInhertianceS\ConsoleAppInhertianceP\bin\Debug\ConsoleAppInhertianceP.exe.config
+C:\Users\Alvi\Documents\C#\Practice\Mid\ConsoleAppInhertianceS\ConsoleAppInhertianceP\bin\Debug\ConsoleAppInhertianceP.exe
+C:\Users\Alvi\Documents\C#\Practice\Mid\ConsoleAppInhertianceS\ConsoleAppInhertianceP\bin\Debug\ConsoleAppInhertianceP.pdb
+C:\Users\Alvi\Documents\C#\Practice\Mid\ConsoleAppInhertianceS\ConsoleAppInhertianceP\obj\Debug\ConsoleAppInhertianceP.csproj.AssemblyReference.cache
+C:\Users\Alvi\Documents\C#\Practice\Mid\ConsoleAppInhertianceS\ConsoleAppInhertianceP\obj\Debug\ConsoleAppInhertianceP.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Practice\Mid\ConsoleAppInhertianceS\ConsoleAppInhertianceP\obj\Debug\ConsoleAppInhertianceP.exe
+C:\Users\Alvi\Documents\C#\Practice\Mid\ConsoleAppInhertianceS\ConsoleAppInhertianceP\obj\Debug\ConsoleAppInhertianceP.pdb
