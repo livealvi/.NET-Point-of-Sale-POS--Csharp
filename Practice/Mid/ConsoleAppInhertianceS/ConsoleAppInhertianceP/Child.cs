@@ -8,18 +8,30 @@ namespace ConsoleAppInhertianceP
 {
     internal class Child : Parent
     {
-        internal Child() : base(45)
+        internal Child() : base("OK")
         {
             Console.WriteLine("Child Called");
         }
 
-        internal Child(int e) : base()
+        internal Child(int e) : base(e)
         {
             Console.WriteLine("Child PC-I " + e);
         }
-        internal Child(string t)
+        internal Child(string t) 
         {
-            Console.WriteLine("Child PC-II " + t);
+            Console.WriteLine("Child PC-S " + t);
+        }
+        internal override void MethodA()
+        {
+            Console.WriteLine("Child MethodA");
+        }
+        internal void MethodB()
+        {
+            Console.WriteLine("Child MethodB");
+        }
+        internal void MethodC()
+        {
+            Console.WriteLine("Child MethodC");
         }
     }
 }
