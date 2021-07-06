@@ -9,17 +9,15 @@ namespace MidExamTask.Employees
     struct Date
     {
         private byte day;
-        private byte month;
+        private string month;
         private ushort year;
-
-
-        public Date(ushort year, byte month, byte day)
+        internal Date(ushort year, string month, byte day)
         {
             this.year = year;
             this.month = month;
             this.day = day;
         }
-        public void ShowDate()
+        internal void ShowDate()
         {
             Console.WriteLine("Date: {0}/{1}/{2}", year, month, day);
         }
@@ -30,37 +28,32 @@ namespace MidExamTask.Employees
         private string thana;
         private string homeDistrict;
         private string phoneNo;
-
-        public EmpResidenceInfo(string thana, string homeDistrict, string phoneNo)
+        internal EmpResidenceInfo(string thana, string homeDistrict, string phoneNo)
         {
             this.thana = thana;
             this.homeDistrict = homeDistrict;
             this.phoneNo = phoneNo;
         }
-        public void ShowEmpResidenceInfo()
+        internal void ShowEmpResidenceInfo()
         {
-            Console.WriteLine("Thana: {0}", thana);
-            Console.WriteLine("Home District: {0}", homeDistrict);
-            Console.WriteLine("Phone: {0}", phoneNo);
+            Console.WriteLine("\tThana: {0}", thana);
+            Console.WriteLine("\tHome District: {0}", homeDistrict);
+            Console.WriteLine("\tPhone: {0}", phoneNo);
         }
     }
-    class EmployeeInfo
+    internal class EmployeeInfo
     {
         private Date birthDate;
         private Date joiningDate;
         private EmpResidenceInfo addressInfo;
 
-        public EmployeeInfo()
-        {
-
-        }
-        public EmployeeInfo(EmpResidenceInfo addressInfo, Date birthDate, Date joiningDate)
+        internal EmployeeInfo(EmpResidenceInfo addressInfo, Date birthDate, Date joiningDate)
         {
             this.Residence = addressInfo;
             this.BirthDate = birthDate;
             this.JoiningDate = joiningDate;
         }
-        public EmpResidenceInfo Residence
+        internal EmpResidenceInfo Residence
         {
             get { return this.addressInfo; }
 

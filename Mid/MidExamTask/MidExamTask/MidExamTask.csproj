@@ -47,6 +47,7 @@
     <Compile Include="Employees\HRManager.cs" />
     <Compile Include="Employees\ITExecutive.cs" />
     <Compile Include="Employees\MarketAnalyst.cs" />
+    <Compile Include="Employees\PartTimer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

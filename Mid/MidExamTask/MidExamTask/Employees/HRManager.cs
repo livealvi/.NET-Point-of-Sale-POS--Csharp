@@ -6,46 +6,32 @@ using System.Threading.Tasks;
 
 namespace MidExamTask.Employees
 {
-    class HRManager : Employee
+    internal class HRManager : Employee
     {
         private double kpi;
 
-        public HRManager()
-        {
-        }
-
-        public HRManager(string name, string Id, string bloodGroup, double commission, double salary) : base(name, Id, bloodGroup)
+        internal HRManager(string name, string id, string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double kpi) : base(name, id, bloodGroup, salary, empPost, employeeInfo)
         {
             this.KPI = kpi;
             this.Salary = salary;
         }
 
-        public double KPI
+        internal double KPI
         {
             get { return this.kpi; }
-
             set { this.kpi = value; }
         }
 
-        public double TotalKPI()
+        internal double TotalKPI()
         {
             return (this.kpi + this.Salary);
         }
 
-        public void ShowEmpAddress()
+        internal override void ShowEmployeeInfo()
         {
-            Console.WriteLine("\n\n\t -------- Show Employee Infos --------\n");
-            Console.WriteLine("\tPost - HR Manager ");
-            Console.WriteLine("\tID: {0}", this.EmpID);
-            Console.WriteLine("\tName: {0}", this.EmpName);
-            Console.WriteLine("\tBlood Group: {0}", this.EmpBloodGroup);
-            Console.WriteLine("\tSalary : {0}", this.Salary);
+            base.ShowEmployeeInfo();
             Console.WriteLine("\tKPI: {0}", this.KPI);
             Console.WriteLine("\tSalary with KPI: {0}", this.TotalKPI());
-            Console.Write("\tBirth ");
-            this.EmployeeInfo.BirthDate.ShowDate();
-            Console.Write("\tJoin ");
-            this.EmployeeInfo.JoiningDate.ShowDate();
         }
     }
 }

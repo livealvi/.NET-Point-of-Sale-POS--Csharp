@@ -6,48 +6,29 @@ using System.Threading.Tasks;
 
 namespace MidExamTask.Employees
 {
-    class ITExecutive : Employee
+    internal class ITExecutive : Employee
     {
-
         private double bonus;
 
-        public ITExecutive()
-        {
-        }
-
-        public ITExecutive(string name, string Id, string bloodGroup, double bonus, double salary) : base(name, Id, bloodGroup)
+        internal ITExecutive(string name, string id, string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double bonus) : base(name, id, bloodGroup, salary, empPost, employeeInfo)
         {
             this.Bonus = bonus;
             this.Salary = salary;
         }
-
-        public double Bonus
+        internal double Bonus
         {
             get { return this.bonus; }
-
             set { this.bonus = value; }
         }
-
-        public double TotalSalary()
+        internal double TotalSalary()
         {
             return (this.bonus + this.Salary);
         }
-
-        public void ShowEmpAddress() 
+        internal override void ShowEmployeeInfo() 
         {
-            Console.WriteLine("\n\n\t-------- Show Employee Infos --------\n");
-            Console.WriteLine("\tPost - IT Executive");
-            Console.WriteLine("\tID: {0}", this.EmpID);
-            Console.WriteLine("\tName: {0}", this.EmpName);
-            Console.WriteLine("\tBlood Group: {0}", this.EmpBloodGroup);
-            Console.WriteLine("\tSalary : {0}", this.Salary);
+            base.ShowEmployeeInfo();
             Console.WriteLine("\tBonus: {0}", this.Bonus);
             Console.WriteLine("\tSalary with bonus: {0}", this.TotalSalary());
-            Console.Write("\tBirth ");
-            this.EmployeeInfo.BirthDate.ShowDate();
-            Console.Write("\tJoin ");
-            this.EmployeeInfo.JoiningDate.ShowDate();
-
         }
     }
 }

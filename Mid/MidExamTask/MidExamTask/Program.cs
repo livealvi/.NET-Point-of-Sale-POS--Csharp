@@ -14,34 +14,20 @@ namespace MidExamTask
 
             Console.WriteLine("\n\n======= Welcome to Employees Management System =======\n");
 
+            Employee[] emp = new Employee[5];
+            emp[0] = new Employee("FirstName LastName", "E-000", "Unknown", 0000000, "Employee", new EmployeeInfo(new EmpResidenceInfo("Blank", "Blank", "01000000000"), new Date(0000, "Blank", 00), new Date(0000, "Blank", 00)));
+            emp[1] = new Employee("Alvi Hasan", "E-0001", "B+", 75000, "HR Manager", new EmployeeInfo(new EmpResidenceInfo("Kowtali", "Jessore", "01900000000"), new Date(1997, "OCT", 25), new Date(2021, "Jan", 11)));
+            emp[2] = new Employee("Hasan Mahamud", "E-0002", "B+", 55000, "IT Executive", new EmployeeInfo(new EmpResidenceInfo("Vatara", "Dhaka", "01700000000"), new Date(1998, "SEP", 20), new Date(2021, "Jan", 12)));
+            emp[3] = new Employee("Rifat Karim", "E-0003", "AB+", 45000, "Market Analyst", new EmployeeInfo(new EmpResidenceInfo("Khula", "Khulna", "01800000000"), new Date(1999, "AUG", 10), new Date(2021, "Jan", 13)));
+            emp[4] = new Employee("Nobel Khan", "E-0004", "A+", 35000, "Part Timer", new EmployeeInfo(new EmpResidenceInfo("Badda", "Dhaka", "01500000000"), new Date(2000, "JUN", 07), new Date(2021, "Jan", 14)));
 
-            ITExecutive itEx = new ITExecutive();
-            itEx.EmpID = "E-0001";
-            itEx.EmpName = "Alvi Hasan";
-            itEx.EmpBloodGroup = "B+";
-            itEx.EmployeeInfo = new EmployeeInfo(new EmpResidenceInfo("Dhaka", "Khulna", "017777777"), new Date(1997, 10, 25), new Date(2021, 01, 21));
-            itEx.Salary = 80000;
-            itEx.Bonus = 3000;
-            itEx.ShowEmpAddress();
-
-            MarketAnalyst mA = new MarketAnalyst();
-            mA.EmpID = "E-0002";
-            mA.EmpName = "Hasan Mahamud";
-            mA.EmpBloodGroup = "O+";
-            mA.EmployeeInfo = new EmployeeInfo(new EmpResidenceInfo("Dhaka", "Jessore", "01999999999"), new Date(1999, 11, 20), new Date(2021, 08, 29));
-            mA.Salary = 50000;
-            mA.Commission = 7000;
-            mA.ShowEmpAddress();
-
-            HRManager hrm = new HRManager();
-            hrm.EmpID = "E-0003";
-            hrm.EmpName = "Rifat Karim";
-            hrm.EmpBloodGroup = "O+";
-            hrm.EmployeeInfo = new EmployeeInfo(new EmpResidenceInfo("Dhaka", "Bogra", "01888888888"), new Date(2000, 05, 27), new Date(2021, 02, 09));
-            hrm.Salary = 75000;
-            hrm.KPI = 1000;
-            hrm.ShowEmpAddress();
-
+            byte i = 1;
+            while (i < emp.Length)
+            {
+                emp[i].ShowEmployeeInfo();
+                Console.WriteLine();
+                i++;
+            }
         }
     }
 }
