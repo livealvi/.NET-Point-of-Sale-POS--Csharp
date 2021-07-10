@@ -10,28 +10,35 @@ namespace MidExamTask.Employees
     {
         private double kpi;
 
-        internal HRManager(string name, string id, string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double kpi) : base(name, id, bloodGroup, salary, empPost, employeeInfo)
+        internal HRManager(string name, string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double kpi) : base(name,  bloodGroup, salary, empPost, employeeInfo)
         {
             this.KPI = kpi;
         }
 
-        internal double KPI
+        internal override string EmpID
         {
-            get { return this.kpi; }
-            set { this.kpi = value; }
+            get { return this.id; }
+
+            set { this.id = "E-" + value + "-HRM"; }
         }
+
+        internal double KPI{get; set;}
 
         internal double TotalKPI()
         {
-            return (this.kpi + this.Salary);
+            return (this.Salary + this.KPI);
         }
 
         internal override void ShowEmployeeInfo()
         {
             base.ShowEmployeeInfo();
             Console.WriteLine("\tKPI: {0}", this.KPI);
-            Console.WriteLine("\tSalary with KPI: {0}", this.TotalKPI());
         }
+
+        //internal override void M1()
+        //{
+
+        //}
     }
 }
 

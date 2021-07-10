@@ -10,20 +10,25 @@ namespace MidExamTask.Employees
     {
         private double commission;
 
-        internal double Commission
+        internal override string EmpId
         {
-            get { return this.commission; }
-            set { this.commission = value; }
+            set
+            {
+                this.id = "E-" + value + "-MA";
+            }
         }
+
+        internal double Commission{get; set;}
 
         internal double TotalCommission()
         {
             return (this.commission + this.Salary);
         }
 
-        internal MarketAnalyst(string name, string id, string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double commission) : base(name, id, bloodGroup, salary, empPost, employeeInfo)
+        internal MarketAnalyst(string name,  string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double commission) : base(name, bloodGroup, salary, empPost, employeeInfo)
         {
             this.Commission = commission;
+            this.Salary = salary;
         }
 
         internal override void ShowEmployeeInfo()
@@ -32,5 +37,10 @@ namespace MidExamTask.Employees
             Console.WriteLine("\tBonus: {0}", this.Commission);
             Console.WriteLine("\tSalary with Commission: {0}", this.TotalCommission());
         }
+
+        //internal override void M1()
+        //{
+
+        //}
     }
 }

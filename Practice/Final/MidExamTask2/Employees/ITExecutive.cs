@@ -10,15 +10,21 @@ namespace MidExamTask.Employees
     {
         private double bonus;
 
-        internal ITExecutive(string name, string id, string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double bonus) : base(name, id, bloodGroup, salary, empPost, employeeInfo)
+        internal override string EmpId
+        {
+            set
+            {
+                this.id = "E-" + value + "-ITE";
+            }
+        }
+
+        internal ITExecutive(string name, string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double bonus) : base(name, bloodGroup, salary, empPost, employeeInfo)
         {
             this.Bonus = bonus;
+            this.Salary = salary;
         }
-        internal double Bonus
-        {
-            get { return this.bonus; }
-            set { this.bonus = value; }
-        }
+        internal double Bonus{get; set;}
+     
         internal double TotalSalary()
         {
             return (this.bonus + this.Salary);
@@ -29,5 +35,10 @@ namespace MidExamTask.Employees
             Console.WriteLine("\tBonus: {0}", this.Bonus);
             Console.WriteLine("\tSalary with bonus: {0}", this.TotalSalary());
         }
+
+        //internal override void M1()
+        //{
+
+        //}
     }
 }
