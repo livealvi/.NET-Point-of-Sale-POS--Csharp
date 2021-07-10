@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MidExamTask.Employees
 {
-    internal class Employee
+    internal abstract class Employee
     {
         private static int serialNo = 0;
         protected string id;

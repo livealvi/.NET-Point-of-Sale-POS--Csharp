@@ -21,15 +21,23 @@ namespace MidExamTask
             emp[2] = new MarketAnalyst("Rifat Karim",  "AB+", 45000, "Market Analyst", new EmployeeInfo(new EmpResidenceInfo("Khulna", "Khulna", "01800000000"), new Date(1999, "AUG", 10), new Date(2021, "Jan", 13)), 3500);
             emp[3] = new PartTimer("Nobel Khan", "A+", 35000, "Part Timer", new EmployeeInfo(new EmpResidenceInfo("Badda", "Dhaka", "01500000000"), new Date(2000, "JUN", 07), new Date(2021, "Jan", 14)));
 
-            byte i = 0;
-            while (i < emp.Length)
-            {
-                emp[i].ShowEmployeeInfo();
-                Console.WriteLine();
-                i++;
-            }
+            //byte i = 0;
+            //while (i < emp.Length)
+            //{
+            //    emp[i].ShowEmployeeInfo();
+            //    Console.WriteLine();
+            //    i++;
+            //}
 
-            Employee e;
+            //Employee e;
+
+            XYZCompany company = new XYZCompany();
+            company.AddEmployee(emp[0]);
+            company.AddEmployee(emp[1]);
+            company.AddEmployee(emp[2]);
+            company.AddEmployee(emp[3]);
+            company.ShowAll();
+
 
         }
     }
