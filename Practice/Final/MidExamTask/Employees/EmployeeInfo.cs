@@ -15,7 +15,6 @@ namespace MidExamTask.Employees
         internal byte Day
         {
             get {return this.day;}
-
             set {this.day = value;}
         }
 

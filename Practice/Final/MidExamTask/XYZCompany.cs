@@ -45,10 +45,8 @@ namespace MidExamTask.Employees
                     Console.WriteLine("\n\n\t-------- Employee Search ------------\n");
                     Console.Write("\tEmployee Found");
                     employeesList[index].ShowEmployeeInfo();
-                    //Console.WriteLine("\n\t-------------------------------------\n");
                     Console.WriteLine();
                     found = true;
-                    //break;
                     counter = index;
                     return found;
                 }

@@ -12,15 +12,10 @@ namespace MidExamTask.Employees
         internal override string EmpID
         {
             get { return this.id; }
-
             set { this.id = "E-" + value + "-PA"; }
         }
         internal PartTimer(string name,  string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo) : base(name, bloodGroup, salary, empPost, employeeInfo)
         {
         }
     }
-    //internal override void M1()
-    //{
-
-    //}
 }

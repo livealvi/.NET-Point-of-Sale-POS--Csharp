@@ -21,7 +21,6 @@ namespace MidExamTask.Employees
         internal virtual string EmpID
         {
             get { return this.id; }
-
             set { this.id = "E-" + value; }
         }
         internal string EmpBloodGroup{get; set;}
@@ -73,8 +72,5 @@ namespace MidExamTask.Employees
             Console.WriteLine("\tSalary : {0}", this.Salary);
             Console.WriteLine("\tTotal Income: {0}", this.TotalIncome());
         }
-
-        //internal abstract void M1();
-
     }
 }

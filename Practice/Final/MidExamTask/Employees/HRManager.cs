@@ -18,7 +18,6 @@ namespace MidExamTask.Employees
         internal override string EmpID
         {
             get { return this.id; }
-
             set { this.id = "E-" + value + "-HRM"; }
         }
 
@@ -34,11 +33,6 @@ namespace MidExamTask.Employees
             base.ShowEmployeeInfo();
             Console.WriteLine("\tKPI: {0}", this.KPI);
         }
-
-        //internal override void M1()
-        //{
-
-        //}
     }
 }
 

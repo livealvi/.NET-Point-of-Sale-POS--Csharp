@@ -17,7 +17,6 @@ namespace MidExamTask.Employees
         internal override string EmpID
         {
             get { return this.id; }
-
             set { this.id = "E-" + value + "-ITE"; }
         }
         internal double Bonus{get; set;}
@@ -30,10 +29,5 @@ namespace MidExamTask.Employees
             base.ShowEmployeeInfo();
             Console.WriteLine("\tBonus: {0}", this.Bonus);
         }
-
-        //internal override void M1()
-        //{
-
-        //}
     }
 }

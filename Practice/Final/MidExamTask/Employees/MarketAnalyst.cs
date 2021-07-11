@@ -13,7 +13,6 @@ namespace MidExamTask.Employees
         internal override string EmpID
         {
             get { return this.id; }
-
             set { this.id = "E-" + value + "-MA"; }
         }
         internal MarketAnalyst(string name,  string bloodGroup, double salary, string empPost, EmployeeInfo employeeInfo, double commission) : base(name, bloodGroup, salary, empPost, employeeInfo)
@@ -33,10 +32,5 @@ namespace MidExamTask.Employees
             base.ShowEmployeeInfo();
             Console.WriteLine("\tBonus: {0}", this.Commission);
         }
-
-        //internal override void M1()
-        //{
-
-        //}
     }
 }
