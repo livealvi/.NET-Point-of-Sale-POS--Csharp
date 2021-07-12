@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MidExamTask.Employees
 {
-    internal static class XYZCompany
+    internal class XYZCompany
     {
         private static Employee[] employeesList = new Employee[3000];
         private static int count = 0;

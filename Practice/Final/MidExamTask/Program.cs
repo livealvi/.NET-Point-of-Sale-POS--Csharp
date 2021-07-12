@@ -23,6 +23,25 @@ namespace MidExamTask
             //XYZCompany.Search("E-1-HRM", out w);
             //XYZCompany.DeleteEmployee("E-1-HRM");
 
+            //CTS - Common Type System
+            Object o1 = 23;
+            Object o2 = 34.554;
+            Object o3 = new EmpResidenceInfo();
+
+            var a = 23;
+            var b = 56.0987;
+            var c = new int[67];
+
+            Console.WriteLine(a.GetType());
+            Console.WriteLine(b.GetType());
+            Console.WriteLine(c.GetType());
+
+            dynamic u = 56;
+            dynamic v = new XYZCompany();
+
+            Nullable<int> q = null;
+            int? e = null;
+            int n = e ?? -1;
         }
     }
 }
