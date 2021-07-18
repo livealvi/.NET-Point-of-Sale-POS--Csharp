@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasedOnMidExamTask", "BasedOnMidExamTask\BasedOnMidExamTask.csproj", "{27E33394-7E4B-407B-92C6-AAD5AB827756}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27E33394-7E4B-407B-92C6-AAD5AB827756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E33394-7E4B-407B-92C6-AAD5AB827756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E33394-7E4B-407B-92C6-AAD5AB827756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E33394-7E4B-407B-92C6-AAD5AB827756}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B5CAB18-0B5D-4BAA-B5A6-A1B6ED103A34}
+	EndGlobalSection
+EndGlobal

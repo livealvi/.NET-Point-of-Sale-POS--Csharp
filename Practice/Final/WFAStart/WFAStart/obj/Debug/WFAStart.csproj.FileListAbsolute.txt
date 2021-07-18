@@ -1,0 +1,11 @@
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\bin\Debug\WFAStart.exe.config
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\bin\Debug\WFAStart.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\bin\Debug\WFAStart.pdb
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.csproj.AssemblyReference.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.Properties.Resources.resources
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.csproj.GenerateResource.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.pdb
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.FormStart.resources
+C:\Users\Alvi\Documents\C#\Practice\Final\WFAStart\WFAStart\obj\Debug\WFAStart.FormInfo.resources

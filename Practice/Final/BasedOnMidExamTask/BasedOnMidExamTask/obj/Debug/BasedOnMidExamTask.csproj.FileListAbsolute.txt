@@ -1,0 +1,6 @@
+C:\Users\Alvi\Documents\C#\Practice\Final\BasedOnMidExamTask\BasedOnMidExamTask\obj\Debug\BasedOnMidExamTask.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\BasedOnMidExamTask\BasedOnMidExamTask\bin\Debug\BasedOnMidExamTask.exe.config
+C:\Users\Alvi\Documents\C#\Practice\Final\BasedOnMidExamTask\BasedOnMidExamTask\bin\Debug\BasedOnMidExamTask.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\BasedOnMidExamTask\BasedOnMidExamTask\bin\Debug\BasedOnMidExamTask.pdb
+C:\Users\Alvi\Documents\C#\Practice\Final\BasedOnMidExamTask\BasedOnMidExamTask\obj\Debug\BasedOnMidExamTask.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\BasedOnMidExamTask\BasedOnMidExamTask\obj\Debug\BasedOnMidExamTask.pdb
