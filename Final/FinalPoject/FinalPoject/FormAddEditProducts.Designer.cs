@@ -1,7 +1,7 @@
 ﻿
 namespace FinalPoject
 {
-    partial class FormAddProducts
+    partial class FormAddEditProducts
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,6 @@ namespace FinalPoject
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -48,7 +47,6 @@ namespace FinalPoject
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlOrderSelect = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
@@ -57,6 +55,10 @@ namespace FinalPoject
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlRigh = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlInsideLeft2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PnlTop.SuspendLayout();
             this.guna2Panel13.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -64,6 +66,7 @@ namespace FinalPoject
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.pnlRigh.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ElipseAddProducts
@@ -150,22 +153,6 @@ namespace FinalPoject
             this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.Size = new System.Drawing.Size(65, 40);
             this.guna2ControlBox3.TabIndex = 10;
-            // 
-            // guna2Panel12
-            // 
-            this.guna2Panel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel12.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel12.BorderRadius = 12;
-            this.guna2Panel12.BorderThickness = 1;
-            this.guna2Panel12.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel12.FillColor = System.Drawing.Color.White;
-            this.guna2Panel12.Location = new System.Drawing.Point(1134, 140);
-            this.guna2Panel12.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Panel12.Name = "guna2Panel12";
-            this.guna2Panel12.ShadowDecoration.Parent = this.guna2Panel12;
-            this.guna2Panel12.Size = new System.Drawing.Size(399, 508);
-            this.guna2Panel12.TabIndex = 24;
             // 
             // guna2Panel10
             // 
@@ -319,22 +306,6 @@ namespace FinalPoject
             this.label3.TabIndex = 2;
             this.label3.Text = "Add Products";
             // 
-            // guna2Panel11
-            // 
-            this.guna2Panel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel11.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel11.BorderRadius = 12;
-            this.guna2Panel11.BorderThickness = 1;
-            this.guna2Panel11.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel11.FillColor = System.Drawing.Color.White;
-            this.guna2Panel11.Location = new System.Drawing.Point(27, 140);
-            this.guna2Panel11.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Panel11.Name = "guna2Panel11";
-            this.guna2Panel11.ShadowDecoration.Parent = this.guna2Panel11;
-            this.guna2Panel11.Size = new System.Drawing.Size(797, 508);
-            this.guna2Panel11.TabIndex = 23;
-            // 
             // pnlOrderSelect
             // 
             this.pnlOrderSelect.BackColor = System.Drawing.Color.Transparent;
@@ -358,7 +329,8 @@ namespace FinalPoject
             // 
             this.guna2Panel6.Controls.Add(this.guna2Panel9);
             this.guna2Panel6.Controls.Add(this.label3);
-            this.guna2Panel6.Location = new System.Drawing.Point(57, 0);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel6.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
@@ -378,8 +350,8 @@ namespace FinalPoject
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2Panel12);
-            this.guna2Panel1.Controls.Add(this.guna2Panel11);
+            this.guna2Panel1.Controls.Add(this.guna2Panel14);
+            this.guna2Panel1.Controls.Add(this.pnlRigh);
             this.guna2Panel1.Controls.Add(this.guna2Panel4);
             this.guna2Panel1.Controls.Add(this.pnlOrderSelect);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
@@ -437,7 +409,63 @@ namespace FinalPoject
             this.pnlBottom.Size = new System.Drawing.Size(1560, 25);
             this.pnlBottom.TabIndex = 9;
             // 
-            // FormAddProducts
+            // pnlRigh
+            // 
+            this.pnlRigh.BackColor = System.Drawing.Color.Transparent;
+            this.pnlRigh.Controls.Add(this.guna2Panel12);
+            this.pnlRigh.Controls.Add(this.pnlInsideLeft2);
+            this.pnlRigh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlRigh.Location = new System.Drawing.Point(986, 140);
+            this.pnlRigh.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlRigh.Name = "pnlRigh";
+            this.pnlRigh.ShadowDecoration.Parent = this.pnlRigh;
+            this.pnlRigh.Size = new System.Drawing.Size(547, 508);
+            this.pnlRigh.TabIndex = 23;
+            // 
+            // pnlInsideLeft2
+            // 
+            this.pnlInsideLeft2.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInsideLeft2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlInsideLeft2.Location = new System.Drawing.Point(0, 0);
+            this.pnlInsideLeft2.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlInsideLeft2.Name = "pnlInsideLeft2";
+            this.pnlInsideLeft2.ShadowDecoration.Parent = this.pnlInsideLeft2;
+            this.pnlInsideLeft2.Size = new System.Drawing.Size(27, 508);
+            this.pnlInsideLeft2.TabIndex = 12;
+            // 
+            // guna2Panel12
+            // 
+            this.guna2Panel12.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel12.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel12.BorderRadius = 12;
+            this.guna2Panel12.BorderThickness = 1;
+            this.guna2Panel12.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel12.FillColor = System.Drawing.Color.White;
+            this.guna2Panel12.Location = new System.Drawing.Point(27, 0);
+            this.guna2Panel12.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel12.Name = "guna2Panel12";
+            this.guna2Panel12.ShadowDecoration.Parent = this.guna2Panel12;
+            this.guna2Panel12.Size = new System.Drawing.Size(520, 508);
+            this.guna2Panel12.TabIndex = 23;
+            // 
+            // guna2Panel14
+            // 
+            this.guna2Panel14.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel14.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel14.BorderRadius = 12;
+            this.guna2Panel14.BorderThickness = 1;
+            this.guna2Panel14.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel14.FillColor = System.Drawing.Color.White;
+            this.guna2Panel14.Location = new System.Drawing.Point(27, 140);
+            this.guna2Panel14.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel14.Name = "guna2Panel14";
+            this.guna2Panel14.ShadowDecoration.Parent = this.guna2Panel14;
+            this.guna2Panel14.Size = new System.Drawing.Size(959, 508);
+            this.guna2Panel14.TabIndex = 24;
+            // 
+            // FormAddEditProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -445,7 +473,7 @@ namespace FinalPoject
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PnlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormAddProducts";
+            this.Name = "FormAddEditProducts";
             this.Text = "Form1";
             this.guna2PnlTop.ResumeLayout(false);
             this.guna2Panel13.ResumeLayout(false);
@@ -455,6 +483,7 @@ namespace FinalPoject
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
+            this.pnlRigh.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -465,8 +494,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Panel guna2PnlTop;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel12;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel pnlOrderSelect;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
@@ -488,5 +515,9 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2Panel pnlRigh;
+        private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel12;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel14;
     }
 }

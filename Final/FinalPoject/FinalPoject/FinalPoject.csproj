@@ -53,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAddProducts.cs">
+    <Compile Include="FormAddEditProducts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddProducts.Designer.cs">
-      <DependentUpon>FormAddProducts.cs</DependentUpon>
+    <Compile Include="FormAddEditProducts.Designer.cs">
+      <DependentUpon>FormAddEditProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="ComponentsDesign.cs">
       <SubType>Form</SubType>
@@ -97,8 +97,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAddProducts.resx">
-      <DependentUpon>FormAddProducts.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddEditProducts.resx">
+      <DependentUpon>FormAddEditProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComponentsDesign.resx">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>

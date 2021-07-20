@@ -33,4 +33,4 @@ C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.c
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.exe
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.pdb
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.ComponentsDesign.resources
-C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddProducts.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddEditProducts.resources

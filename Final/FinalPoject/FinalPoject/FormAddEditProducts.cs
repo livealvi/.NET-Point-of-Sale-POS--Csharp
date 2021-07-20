@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalPoject
 {
-    public partial class FormAddProducts : Form
+    public partial class FormAddEditProducts : Form
     {
-        public FormAddProducts()
+        public FormAddEditProducts()
         {
             InitializeComponent();
         }
