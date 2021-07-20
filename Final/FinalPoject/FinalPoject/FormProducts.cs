@@ -16,5 +16,13 @@ namespace FinalPoject
         {
             InitializeComponent();
         }
+
+        private void btnProductAdd_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
+
     }
 }

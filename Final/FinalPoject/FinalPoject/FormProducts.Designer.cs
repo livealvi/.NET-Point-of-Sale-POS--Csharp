@@ -31,7 +31,7 @@ namespace FinalPoject
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlOrderSelect = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlProducts = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
@@ -52,7 +52,7 @@ namespace FinalPoject
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ElipseProducts = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1.SuspendLayout();
-            this.pnlOrderSelect.SuspendLayout();
+            this.pnlProducts.SuspendLayout();
             this.pnlInsideTop2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -61,7 +61,7 @@ namespace FinalPoject
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.pnlOrderSelect);
+            this.guna2Panel1.Controls.Add(this.pnlProducts);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.pnlInsideLeft);
             this.guna2Panel1.Controls.Add(this.pnlBottom);
@@ -74,23 +74,23 @@ namespace FinalPoject
             this.guna2Panel1.Size = new System.Drawing.Size(1560, 714);
             this.guna2Panel1.TabIndex = 1;
             // 
-            // pnlOrderSelect
+            // pnlProducts
             // 
-            this.pnlOrderSelect.BackColor = System.Drawing.Color.Transparent;
-            this.pnlOrderSelect.BorderColor = System.Drawing.Color.Silver;
-            this.pnlOrderSelect.BorderRadius = 12;
-            this.pnlOrderSelect.BorderThickness = 1;
-            this.pnlOrderSelect.Controls.Add(this.guna2Panel4);
-            this.pnlOrderSelect.Controls.Add(this.pnlInsideTop2);
-            this.pnlOrderSelect.CustomBorderColor = System.Drawing.Color.Silver;
-            this.pnlOrderSelect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlOrderSelect.FillColor = System.Drawing.Color.White;
-            this.pnlOrderSelect.Location = new System.Drawing.Point(27, 25);
-            this.pnlOrderSelect.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlOrderSelect.Name = "pnlOrderSelect";
-            this.pnlOrderSelect.ShadowDecoration.Parent = this.pnlOrderSelect;
-            this.pnlOrderSelect.Size = new System.Drawing.Size(1506, 664);
-            this.pnlOrderSelect.TabIndex = 20;
+            this.pnlProducts.BackColor = System.Drawing.Color.Transparent;
+            this.pnlProducts.BorderColor = System.Drawing.Color.Silver;
+            this.pnlProducts.BorderRadius = 12;
+            this.pnlProducts.BorderThickness = 1;
+            this.pnlProducts.Controls.Add(this.guna2Panel4);
+            this.pnlProducts.Controls.Add(this.pnlInsideTop2);
+            this.pnlProducts.CustomBorderColor = System.Drawing.Color.Silver;
+            this.pnlProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlProducts.FillColor = System.Drawing.Color.White;
+            this.pnlProducts.Location = new System.Drawing.Point(27, 25);
+            this.pnlProducts.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlProducts.Name = "pnlProducts";
+            this.pnlProducts.ShadowDecoration.Parent = this.pnlProducts;
+            this.pnlProducts.Size = new System.Drawing.Size(1506, 664);
+            this.pnlProducts.TabIndex = 20;
             // 
             // guna2Panel4
             // 
@@ -263,6 +263,7 @@ namespace FinalPoject
             this.btnProductAdd.Size = new System.Drawing.Size(111, 45);
             this.btnProductAdd.TabIndex = 7;
             this.btnProductAdd.Text = "Add";
+            this.btnProductAdd.Click += new System.EventHandler(this.btnProductAdd_Click);
             // 
             // btnProductEdit
             // 
@@ -368,7 +369,7 @@ namespace FinalPoject
             this.Name = "FormProducts";
             this.Text = "FormProducts";
             this.guna2Panel1.ResumeLayout(false);
-            this.pnlOrderSelect.ResumeLayout(false);
+            this.pnlProducts.ResumeLayout(false);
             this.pnlInsideTop2.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
@@ -384,7 +385,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel pnlBottom;
         private Guna.UI2.WinForms.Guna2Panel pnlInsideTop;
         private Guna.UI2.WinForms.Guna2Elipse guna2ElipseProducts;
-        private Guna.UI2.WinForms.Guna2Panel pnlOrderSelect;
+        private Guna.UI2.WinForms.Guna2Panel pnlProducts;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Panel pnlInsideTop2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;

@@ -20,7 +20,7 @@ namespace FinalPoject
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnSales_Click(object sender, EventArgs e)
@@ -57,5 +57,6 @@ namespace FinalPoject
             }
         }
 
+        
     }
 }
