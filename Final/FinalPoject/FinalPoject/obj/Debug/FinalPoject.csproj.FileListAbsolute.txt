@@ -34,3 +34,4 @@ C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.e
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.pdb
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.ComponentsDesign.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddEditProducts.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormScroll.resources

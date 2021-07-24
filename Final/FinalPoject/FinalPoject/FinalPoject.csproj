@@ -95,6 +95,12 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormScroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScroll.Designer.cs">
+      <DependentUpon>FormScroll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAddEditProducts.resx">
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSales.resx">
       <DependentUpon>FormSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScroll.resx">
+      <DependentUpon>FormScroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

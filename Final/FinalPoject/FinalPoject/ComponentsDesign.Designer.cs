@@ -56,6 +56,11 @@ namespace FinalPoject
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2PnlTopCloseMiniMax.SuspendLayout();
             this.guna2Panel13.SuspendLayout();
             this.pnlProducts.SuspendLayout();
@@ -63,6 +68,8 @@ namespace FinalPoject
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.guna2Panel22.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnProductAdd
@@ -82,7 +89,7 @@ namespace FinalPoject
             this.btnProductAdd.HoverState.Font = new System.Drawing.Font("Poppins", 13F);
             this.btnProductAdd.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnProductAdd.HoverState.Parent = this.btnProductAdd;
-            this.btnProductAdd.Location = new System.Drawing.Point(35, 270);
+            this.btnProductAdd.Location = new System.Drawing.Point(26, 431);
             this.btnProductAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnProductAdd.Name = "btnProductAdd";
             this.btnProductAdd.ShadowDecoration.Parent = this.btnProductAdd;
@@ -108,7 +115,7 @@ namespace FinalPoject
             this.btnProductEdit.HoverState.Font = new System.Drawing.Font("Poppins", 13F);
             this.btnProductEdit.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnProductEdit.HoverState.Parent = this.btnProductEdit;
-            this.btnProductEdit.Location = new System.Drawing.Point(194, 270);
+            this.btnProductEdit.Location = new System.Drawing.Point(185, 431);
             this.btnProductEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnProductEdit.Name = "btnProductEdit";
             this.btnProductEdit.ShadowDecoration.Parent = this.btnProductEdit;
@@ -134,7 +141,7 @@ namespace FinalPoject
             this.btnProductRemove.HoverState.Font = new System.Drawing.Font("Poppins", 13F);
             this.btnProductRemove.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnProductRemove.HoverState.Parent = this.btnProductRemove;
-            this.btnProductRemove.Location = new System.Drawing.Point(360, 270);
+            this.btnProductRemove.Location = new System.Drawing.Point(351, 431);
             this.btnProductRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnProductRemove.Name = "btnProductRemove";
             this.btnProductRemove.ShadowDecoration.Parent = this.btnProductRemove;
@@ -159,7 +166,7 @@ namespace FinalPoject
             this.guna2TextBox1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(566, 270);
+            this.guna2TextBox1.Location = new System.Drawing.Point(557, 431);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -189,7 +196,7 @@ namespace FinalPoject
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 25F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(37, 171);
+            this.label1.Location = new System.Drawing.Point(28, 332);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(312, 74);
@@ -204,7 +211,7 @@ namespace FinalPoject
             this.guna2Panel11.BorderThickness = 1;
             this.guna2Panel11.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel11.FillColor = System.Drawing.Color.White;
-            this.guna2Panel11.Location = new System.Drawing.Point(34, 384);
+            this.guna2Panel11.Location = new System.Drawing.Point(25, 545);
             this.guna2Panel11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel11.Name = "guna2Panel11";
             this.guna2Panel11.ShadowDecoration.Parent = this.guna2Panel11;
@@ -297,7 +304,7 @@ namespace FinalPoject
             this.pnlProducts.Controls.Add(this.guna2Panel1);
             this.pnlProducts.CustomBorderColor = System.Drawing.Color.Silver;
             this.pnlProducts.FillColor = System.Drawing.Color.White;
-            this.pnlProducts.Location = new System.Drawing.Point(371, 384);
+            this.pnlProducts.Location = new System.Drawing.Point(362, 545);
             this.pnlProducts.Margin = new System.Windows.Forms.Padding(4);
             this.pnlProducts.Name = "pnlProducts";
             this.pnlProducts.ShadowDecoration.Parent = this.pnlProducts;
@@ -522,11 +529,82 @@ namespace FinalPoject
             this.guna2Button3.TabIndex = 5;
             this.guna2Button3.Text = "Remove";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.guna2Panel21);
+            this.panel1.Controls.Add(this.guna2TextBox3);
+            this.panel1.Controls.Add(this.guna2Panel22);
+            this.panel1.Location = new System.Drawing.Point(557, 215);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(466, 119);
+            this.panel1.TabIndex = 29;
+            // 
+            // guna2Panel21
+            // 
+            this.guna2Panel21.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel21.Location = new System.Drawing.Point(0, 80);
+            this.guna2Panel21.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel21.Name = "guna2Panel21";
+            this.guna2Panel21.ShadowDecoration.Parent = this.guna2Panel21;
+            this.guna2Panel21.Size = new System.Drawing.Size(466, 25);
+            this.guna2Panel21.TabIndex = 37;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Location = new System.Drawing.Point(0, 29);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Size = new System.Drawing.Size(466, 51);
+            this.guna2TextBox3.TabIndex = 36;
+            // 
+            // guna2Panel22
+            // 
+            this.guna2Panel22.Controls.Add(this.label4);
+            this.guna2Panel22.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel22.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel22.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel22.Name = "guna2Panel22";
+            this.guna2Panel22.ShadowDecoration.Parent = this.guna2Panel22;
+            this.guna2Panel22.Size = new System.Drawing.Size(466, 29);
+            this.guna2Panel22.TabIndex = 35;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Font = new System.Drawing.Font("Poppins", 10F);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(126, 30);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Products TAG";
+            // 
             // ComponentsDesign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1508, 911);
+            this.ClientSize = new System.Drawing.Size(1508, 1055);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlProducts);
             this.Controls.Add(this.guna2PnlTopCloseMiniMax);
             this.Controls.Add(this.guna2Panel11);
@@ -546,6 +624,9 @@ namespace FinalPoject
             this.guna2Panel6.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.guna2Panel22.ResumeLayout(false);
+            this.guna2Panel22.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -580,5 +661,10 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel21;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel22;
+        private System.Windows.Forms.Label label4;
     }
 }
