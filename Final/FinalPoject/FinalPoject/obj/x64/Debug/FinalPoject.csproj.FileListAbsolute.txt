@@ -1,0 +1,13 @@
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.ResponsiveTableTextBox.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormAddEditProducts.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.ComponentsDesign.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormAddCataAndBrands.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormCustomers.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormMain.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormEmployees.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormProducts.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormSales.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.FormScroll.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.Properties.Resources.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.csproj.GenerateResource.cache
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\x64\Debug\FinalPoject.csproj.CoreCompileInputs.cache
