@@ -40,10 +40,10 @@ namespace FinalPoject
 
         private void btnEmployees_Click(object sender, EventArgs e)
         {
-            ViewForm(new FormEmployees());
+            //ViewForm(new FormEmployees());
         }
 
-        private void ViewForm(object _form)
+        public void ViewForm(object _form)
         {
             if (pnlFormViwer.Controls.Count > 0) pnlFormViwer.Controls.Clear();
             {

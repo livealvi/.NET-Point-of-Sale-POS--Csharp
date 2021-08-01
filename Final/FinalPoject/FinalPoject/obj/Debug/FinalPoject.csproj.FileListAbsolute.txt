@@ -23,7 +23,6 @@ C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\bin\Debug\FontAwesome.S
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.csproj.AssemblyReference.cache
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormCustomers.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormMain.resources
-C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormEmployees.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormProducts.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormSales.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.Properties.Resources.resources
@@ -34,6 +33,5 @@ C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.e
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.pdb
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.ComponentsDesign.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddEditProducts.resources
-C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormScroll.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddCataAndBrands.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.ResponsiveTableTextBox.resources

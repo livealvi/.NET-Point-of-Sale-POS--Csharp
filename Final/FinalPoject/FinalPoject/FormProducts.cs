@@ -17,12 +17,12 @@ namespace FinalPoject
             InitializeComponent();
         }
 
-        private void btnProductAdd_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         
 
+        private void btnSaveEdit_Click(object sender, EventArgs e)
+        {
+            FormAddEditProducts addEditProducts = new FormAddEditProducts();
+            addEditProducts.Show();
+        }
     }
 }

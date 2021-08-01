@@ -103,12 +103,6 @@
     <Compile Include="FormCustomers.Designer.cs">
       <DependentUpon>FormCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEmployees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEmployees.Designer.cs">
-      <DependentUpon>FormEmployees.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,12 +120,6 @@
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormScroll.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormScroll.Designer.cs">
-      <DependentUpon>FormScroll.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,17 +141,11 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEmployees.resx">
-      <DependentUpon>FormEmployees.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormProducts.resx">
       <DependentUpon>FormProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSales.resx">
       <DependentUpon>FormSales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormScroll.resx">
-      <DependentUpon>FormScroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

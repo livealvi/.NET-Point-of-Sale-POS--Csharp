@@ -16,5 +16,21 @@ namespace FinalPoject
         {
             InitializeComponent();
         }
+
+        private void formClose_Click(object sender, EventArgs e)
+        {
+            this.ShowProducts();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            this.ShowProducts();
+        }
+
+        private void ShowProducts()
+        {
+            FormProducts formProducts = new FormProducts();
+            this.Hide();
+        }
     }
 }

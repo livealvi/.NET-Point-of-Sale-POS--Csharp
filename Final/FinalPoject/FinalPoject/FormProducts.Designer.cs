@@ -46,13 +46,13 @@ namespace FinalPoject
             this.pnlOrderSelect = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.pnlOrderSelect.SuspendLayout();
@@ -133,6 +133,7 @@ namespace FinalPoject
             this.btnSaveEdit.Size = new System.Drawing.Size(111, 45);
             this.btnSaveEdit.TabIndex = 6;
             this.btnSaveEdit.Text = "Save";
+            this.btnSaveEdit.Click += new System.EventHandler(this.btnSaveEdit_Click);
             // 
             // btnProductCancle
             // 
@@ -281,49 +282,6 @@ namespace FinalPoject
             this.guna2Panel1.Size = new System.Drawing.Size(1560, 714);
             this.guna2Panel1.TabIndex = 8;
             // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel4.Location = new System.Drawing.Point(27, 115);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(1506, 25);
-            this.guna2Panel4.TabIndex = 22;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(1533, 25);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(27, 664);
-            this.guna2Panel3.TabIndex = 16;
-            // 
-            // pnlInsideLeft
-            // 
-            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 25);
-            this.pnlInsideLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlInsideLeft.Name = "pnlInsideLeft";
-            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
-            this.pnlInsideLeft.Size = new System.Drawing.Size(27, 664);
-            this.pnlInsideLeft.TabIndex = 12;
-            // 
-            // pnlBottom
-            // 
-            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 689);
-            this.pnlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.ShadowDecoration.Parent = this.pnlBottom;
-            this.pnlBottom.Size = new System.Drawing.Size(1560, 25);
-            this.pnlBottom.TabIndex = 9;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
@@ -371,6 +329,49 @@ namespace FinalPoject
             this.guna2Panel11.ShadowDecoration.Parent = this.guna2Panel11;
             this.guna2Panel11.Size = new System.Drawing.Size(1102, 541);
             this.guna2Panel11.TabIndex = 25;
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel4.Location = new System.Drawing.Point(27, 115);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(1506, 25);
+            this.guna2Panel4.TabIndex = 22;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel3.Location = new System.Drawing.Point(1533, 25);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(27, 664);
+            this.guna2Panel3.TabIndex = 16;
+            // 
+            // pnlInsideLeft
+            // 
+            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 25);
+            this.pnlInsideLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlInsideLeft.Name = "pnlInsideLeft";
+            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
+            this.pnlInsideLeft.Size = new System.Drawing.Size(27, 664);
+            this.pnlInsideLeft.TabIndex = 12;
+            // 
+            // pnlBottom
+            // 
+            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottom.Location = new System.Drawing.Point(0, 689);
+            this.pnlBottom.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlBottom.Name = "pnlBottom";
+            this.pnlBottom.ShadowDecoration.Parent = this.pnlBottom;
+            this.pnlBottom.Size = new System.Drawing.Size(1560, 25);
+            this.pnlBottom.TabIndex = 9;
             // 
             // FormProducts
             // 
