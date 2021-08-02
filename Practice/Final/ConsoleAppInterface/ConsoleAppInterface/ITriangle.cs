@@ -9,5 +9,7 @@ namespace ConsoleAppInterface
     interface ITriangle
     {
         void Area();
+        void M1();
+        string Zx{get; set;}
     }
 }

@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppInterface
 {
-    class Program
+    interface ISquare
     {
-        static void Main(string[] args)
-        {
-            ITriangle t1 = new Test();
-        }
+        void Area();
+        void M2();
     }
 }

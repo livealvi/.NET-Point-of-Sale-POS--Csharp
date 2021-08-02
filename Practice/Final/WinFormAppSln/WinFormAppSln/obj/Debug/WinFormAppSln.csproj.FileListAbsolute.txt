@@ -1,0 +1,10 @@
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\bin\Debug\WinFormAppSln.exe.config
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\bin\Debug\WinFormAppSln.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\bin\Debug\WinFormAppSln.pdb
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\obj\Debug\WinFormAppSln.csproj.AssemblyReference.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\obj\Debug\WinFormAppSln.Dashboard.resources
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\obj\Debug\WinFormAppSln.Properties.Resources.resources
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\obj\Debug\WinFormAppSln.csproj.GenerateResource.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\obj\Debug\WinFormAppSln.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\obj\Debug\WinFormAppSln.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\WinFormAppSln\WinFormAppSln\obj\Debug\WinFormAppSln.pdb
