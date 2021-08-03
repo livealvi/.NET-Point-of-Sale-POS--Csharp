@@ -31,12 +31,6 @@ namespace WinFormAppSln
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnShow = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtAutoSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dgvMovie = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,23 +38,31 @@ namespace WinFormAppSln
             this.Income = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReleaseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Genre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMovieId = new System.Windows.Forms.TextBox();
-            this.txtMovieTitle = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.cmbGenre = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.dtpReleaseDate = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtMovieBoxOffice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtMovieIMDB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dtReleaseDate = new System.Windows.Forms.DateTimePicker();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cmbGenre = new System.Windows.Forms.ComboBox();
+            this.txtMovieTitle = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtMovieId = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAutoSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnShow = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,60 +70,6 @@ namespace WinFormAppSln
             this.panel1.Controls.Add(this.dgvMovie);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.cmbGenre);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.btnSave);
-            this.panel2.Controls.Add(this.dtReleaseDate);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.txtMovieBoxOffice);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtMovieIMDB);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txtMovieTitle);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.txtMovieId);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtAutoSearch);
-            this.panel2.Controls.Add(this.btnSearch);
-            this.panel2.Controls.Add(this.txtSearch);
-            this.panel2.Controls.Add(this.btnShow);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // btnShow
-            // 
-            resources.ApplyResources(this.btnShow, "btnShow");
-            this.btnShow.Name = "btnShow";
-            this.btnShow.UseVisualStyleBackColor = true;
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
-            // 
-            // txtSearch
-            // 
-            resources.ApplyResources(this.txtSearch, "txtSearch");
-            this.txtSearch.Name = "txtSearch";
-            // 
-            // btnSearch
-            // 
-            resources.ApplyResources(this.btnSearch, "btnSearch");
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // txtAutoSearch
-            // 
-            resources.ApplyResources(this.txtAutoSearch, "txtAutoSearch");
-            this.txtAutoSearch.Name = "txtAutoSearch";
-            this.txtAutoSearch.TextChanged += new System.EventHandler(this.txtAutoSearch_TextChanged);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // dgvMovie
             // 
@@ -139,6 +87,9 @@ namespace WinFormAppSln
             this.dgvMovie.Name = "dgvMovie";
             this.dgvMovie.ReadOnly = true;
             this.dgvMovie.RowTemplate.Height = 24;
+            this.dgvMovie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMovie.CellToolTipTextNeeded += new System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler(this.dgvMovie_CellToolTipTextNeeded);
+            this.dgvMovie.DoubleClick += new System.EventHandler(this.dgvMovie_DoubleClick);
             // 
             // Id
             // 
@@ -188,25 +139,86 @@ namespace WinFormAppSln
             this.Genre.Name = "Genre";
             this.Genre.ReadOnly = true;
             // 
-            // label2
+            // panel2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.btnClear);
+            this.panel2.Controls.Add(this.cmbGenre);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.dtpReleaseDate);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.txtMovieBoxOffice);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.txtMovieIMDB);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.txtMovieTitle);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.txtMovieId);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtAutoSearch);
+            this.panel2.Controls.Add(this.btnSearch);
+            this.panel2.Controls.Add(this.txtSearch);
+            this.panel2.Controls.Add(this.btnShow);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
             // 
-            // txtMovieId
+            // btnDelete
             // 
-            resources.ApplyResources(this.txtMovieId, "txtMovieId");
-            this.txtMovieId.Name = "txtMovieId";
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // txtMovieTitle
+            // btnClear
             // 
-            resources.ApplyResources(this.txtMovieTitle, "txtMovieTitle");
-            this.txtMovieTitle.Name = "txtMovieTitle";
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // label3
+            // cmbGenre
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            this.cmbGenre.FormattingEnabled = true;
+            this.cmbGenre.Items.AddRange(new object[] {
+            resources.GetString("cmbGenre.Items"),
+            resources.GetString("cmbGenre.Items1"),
+            resources.GetString("cmbGenre.Items2"),
+            resources.GetString("cmbGenre.Items3"),
+            resources.GetString("cmbGenre.Items4"),
+            resources.GetString("cmbGenre.Items5")});
+            resources.ApplyResources(this.cmbGenre, "cmbGenre");
+            this.cmbGenre.Name = "cmbGenre";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // btnSave
+            // 
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.Name = "btnSave";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // dtpReleaseDate
+            // 
+            resources.ApplyResources(this.dtpReleaseDate, "dtpReleaseDate");
+            this.dtpReleaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpReleaseDate.Name = "dtpReleaseDate";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
             // 
             // txtMovieBoxOffice
             // 
@@ -228,46 +240,56 @@ namespace WinFormAppSln
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // label6
+            // txtMovieTitle
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.txtMovieTitle, "txtMovieTitle");
+            this.txtMovieTitle.Name = "txtMovieTitle";
             // 
-            // label7
+            // label3
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
-            // dtReleaseDate
+            // txtMovieId
             // 
-            resources.ApplyResources(this.dtReleaseDate, "dtReleaseDate");
-            this.dtReleaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtReleaseDate.Name = "dtReleaseDate";
+            resources.ApplyResources(this.txtMovieId, "txtMovieId");
+            this.txtMovieId.Name = "txtMovieId";
+            this.txtMovieId.ReadOnly = true;
             // 
-            // btnSave
+            // label2
             // 
-            resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
-            // label8
+            // label1
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
-            // cmbGenre
+            // txtAutoSearch
             // 
-            this.cmbGenre.FormattingEnabled = true;
-            this.cmbGenre.Items.AddRange(new object[] {
-            resources.GetString("cmbGenre.Items"),
-            resources.GetString("cmbGenre.Items1"),
-            resources.GetString("cmbGenre.Items2"),
-            resources.GetString("cmbGenre.Items3"),
-            resources.GetString("cmbGenre.Items4"),
-            resources.GetString("cmbGenre.Items5")});
-            resources.ApplyResources(this.cmbGenre, "cmbGenre");
-            this.cmbGenre.Name = "cmbGenre";
+            resources.ApplyResources(this.txtAutoSearch, "txtAutoSearch");
+            this.txtAutoSearch.Name = "txtAutoSearch";
+            this.txtAutoSearch.TextChanged += new System.EventHandler(this.txtAutoSearch_TextChanged);
+            // 
+            // btnSearch
+            // 
+            resources.ApplyResources(this.btnSearch, "btnSearch");
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearch
+            // 
+            resources.ApplyResources(this.txtSearch, "txtSearch");
+            this.txtSearch.Name = "txtSearch";
+            // 
+            // btnShow
+            // 
+            resources.ApplyResources(this.btnShow, "btnShow");
+            this.btnShow.Name = "btnShow";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // Dashboard
             // 
@@ -278,9 +300,9 @@ namespace WinFormAppSln
             this.MaximizeBox = false;
             this.Name = "Dashboard";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,7 +326,7 @@ namespace WinFormAppSln
         private System.Windows.Forms.ComboBox cmbGenre;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DateTimePicker dtReleaseDate;
+        private System.Windows.Forms.DateTimePicker dtpReleaseDate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMovieBoxOffice;
@@ -315,6 +337,8 @@ namespace WinFormAppSln
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMovieId;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

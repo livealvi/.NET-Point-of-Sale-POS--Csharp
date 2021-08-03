@@ -59,6 +59,15 @@ namespace WinFormAppSln
             return Ds;
         }
 
+        public DataTable ExecuteQueryTable(string sql)
+        {
+            this.QueryText(sql);
+            this.Sda = new SqlDataAdapter(this.Sqlcom);
+            this.Ds = new DataSet();
+            this.Sda.Fill(this.Ds);
+            return Ds.Tables[0];
+        }
+
         public int ExecuteDMLQuery(string sql)
         {
             this.QueryText(sql);
