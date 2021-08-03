@@ -207,7 +207,6 @@ namespace WinFormAppSln
             this.AutoIdGenerate();
         }
 
-
         private void dgvMovie_CellToolTipTextNeeded(object sender, DataGridViewCellToolTipTextNeededEventArgs e)
         {
             e.ToolTipText = string.Format("Double Click to Edit Data");
