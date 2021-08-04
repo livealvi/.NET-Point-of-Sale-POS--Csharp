@@ -32,5 +32,6 @@ namespace FinalPoject
             FormProducts formProducts = new FormProducts();
             this.Hide();
         }
+
     }
 }

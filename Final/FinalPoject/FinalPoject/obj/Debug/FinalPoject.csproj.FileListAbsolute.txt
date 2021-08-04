@@ -35,3 +35,4 @@ C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.C
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddEditProducts.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddCataAndBrands.resources
 C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.ResponsiveTableTextBox.resources
+C:\Users\Alvi\Documents\C#\Final\FinalPoject\FinalPoject\obj\Debug\FinalPoject.FormAddProduct.resources

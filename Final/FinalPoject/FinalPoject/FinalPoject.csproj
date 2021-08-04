@@ -73,6 +73,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddProduct.Designer.cs">
+      <DependentUpon>FormAddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="ResponsiveTableTextBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddProduct.resx">
+      <DependentUpon>FormAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResponsiveTableTextBox.resx">
       <DependentUpon>ResponsiveTableTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,7 +228,22 @@
     <None Include="Resources\icons8_shopping_cart_96px_1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8_search_480px.png" />
+    <None Include="Resources\icons8_remove_image_480px.png" />
+    <None Include="Resources\icons8_remove_image_480px_1.png" />
+    <None Include="Resources\icons8_edit_image_480px_1.png" />
+    <None Include="Resources\icons8_edit_image_480px.png" />
+    <None Include="Resources\icons8_image_file_add_96px_2.png" />
+    <None Include="Resources\icons8_image_file_add_96px_31.png" />
+    <None Include="Resources\icons8_image_file_add_96px_3.png" />
+    <None Include="Resources\icons8_trash_can_480px_1.png" />
+    <None Include="Resources\icons8_trash_can_480px.png" />
+    <None Include="Resources\icons8_waste_96px_1.png" />
+    <None Include="Resources\icons8_waste_96px_2.png" />
+    <None Include="Resources\icons8_no_image_480px_2.png" />
+    <None Include="Resources\icons8_add_camera_480px.png" />
     <Content Include="Resources\icons8_delete_480px_1.png" />
+    <None Include="Resources\icons8_image_480px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
