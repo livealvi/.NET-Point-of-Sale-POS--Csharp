@@ -1,0 +1,6 @@
+C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Data\bin\Debug\OOP2.LayerSample.Data.dll
+C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Data\bin\Debug\OOP2.LayerSample.Data.pdb
+C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Data\obj\Debug\OOP2.LayerSample.Data.csproj.AssemblyReference.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Data\obj\Debug\OOP2.LayerSample.Data.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Data\obj\Debug\OOP2.LayerSample.Data.dll
+C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Data\obj\Debug\OOP2.LayerSample.Data.pdb

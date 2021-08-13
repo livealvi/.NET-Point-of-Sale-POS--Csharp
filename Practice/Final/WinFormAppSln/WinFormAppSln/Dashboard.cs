@@ -52,7 +52,7 @@ namespace WinFormAppSln
         {
             try
             {
-                var sql = "select * from Movies where Title like '" + this.txtAutoSearch.Text + "%' or Id like '"+ this.txtMovieId.Text+ "%' ;";
+                var sql = "select * from Movies where Title like '" + this.txtAutoSearch.Text + "%' or Id like 'm-" + this.txtMovieId.Text+ "%' ;";
                 this.PopulateGridView(sql);
             }
             catch (Exception exception)

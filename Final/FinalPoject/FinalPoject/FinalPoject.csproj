@@ -73,11 +73,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess.cs" />
     <Compile Include="FormAddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddProduct.Designer.cs">
       <DependentUpon>FormAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventoryDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventoryDBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ResponsiveTableTextBox.cs">
       <SubType>Form</SubType>
@@ -160,7 +166,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="inventoryDBDataSet.xsc">
+      <DependentUpon>inventoryDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="inventoryDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventoryDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventoryDBDataSet.xss">
+      <DependentUpon>inventoryDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\inventoryDBDataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

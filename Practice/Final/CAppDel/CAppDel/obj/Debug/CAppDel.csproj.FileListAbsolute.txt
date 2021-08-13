@@ -1,0 +1,7 @@
+C:\Users\Alvi\Documents\C#\Practice\Final\CAppDel\CAppDel\obj\Debug\CAppDel.csproj.AssemblyReference.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\CAppDel\CAppDel\obj\Debug\CAppDel.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\CAppDel\CAppDel\bin\Debug\CAppDel.exe.config
+C:\Users\Alvi\Documents\C#\Practice\Final\CAppDel\CAppDel\bin\Debug\CAppDel.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\CAppDel\CAppDel\bin\Debug\CAppDel.pdb
+C:\Users\Alvi\Documents\C#\Practice\Final\CAppDel\CAppDel\obj\Debug\CAppDel.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\CAppDel\CAppDel\obj\Debug\CAppDel.pdb

@@ -1,0 +1,10 @@
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\bin\Debug\SQLInnerJoin.exe.config
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\bin\Debug\SQLInnerJoin.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\bin\Debug\SQLInnerJoin.pdb
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\obj\Debug\SQLInnerJoin.csproj.AssemblyReference.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\obj\Debug\SQLInnerJoin.Form1.resources
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\obj\Debug\SQLInnerJoin.Properties.Resources.resources
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\obj\Debug\SQLInnerJoin.csproj.GenerateResource.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\obj\Debug\SQLInnerJoin.csproj.CoreCompileInputs.cache
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\obj\Debug\SQLInnerJoin.exe
+C:\Users\Alvi\Documents\C#\Practice\Final\SQLInnerJoin\SQLInnerJoin\obj\Debug\SQLInnerJoin.pdb
