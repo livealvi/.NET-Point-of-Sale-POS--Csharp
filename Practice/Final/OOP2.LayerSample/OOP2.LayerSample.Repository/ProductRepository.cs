@@ -26,15 +26,14 @@ namespace OOP2.LayerSample.Repository
             try
             {
                 if (key == null)
-                    sql = "select * from ProductInfo;";
+                    sql = @"select * from ProductInfo;";
                 else
-                    sql = @"select * from Product where Name like '%'"+ key +"%' " +
-                          "or AppId like '%"+ key +"%';";
+                    sql = @"select * from ProductInfo where PName like '%" + key +"%' or AppId like '%"+ key +"%';";
                 var dt = this.Da.ExecuteQueryTable(sql);
 
                 for (int ax = 0; ax < dt.Rows.Count; ax++)
                 {
-                    Product p = this.ConvertToEntity(dt.Rows[0]);
+                    Product p = this.ConvertToEntity(dt.Rows[ax]);
                     productList.Add(p);
                 }
                 return productList;
@@ -42,6 +41,20 @@ namespace OOP2.LayerSample.Repository
             catch (Exception e)
             {
                 return null;
+                throw;
+            }
+        }
+
+        public void Delete(string id)
+        {
+            string sql;
+            try
+            {
+                sql = "delete from ProductInfo where Id = '" + id + "';";
+                var dt = this.Da.ExecuteDMLQuery(sql);
+            }
+            catch (Exception e)
+            {
                 throw;
             }
         }
