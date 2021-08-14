@@ -45,6 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DelegateCollection.cs" />
+    <Compile Include="FormAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddProduct.Designer.cs">
+      <DependentUpon>FormAddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddProduct.resx">
+      <DependentUpon>FormAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,6 +92,10 @@
     <ProjectReference Include="..\OOP2.LayerSample.Entity\OOP2.LayerSample.Entity.csproj">
       <Project>{1343B331-EFD3-47AF-A11E-4EF0CE8B4F01}</Project>
       <Name>OOP2.LayerSample.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OOP2.LayerSample.Framework\OOP2.LayerSample.Framework.csproj">
+      <Project>{6077a534-4c69-49c8-ad18-f1e5007b6f00}</Project>
+      <Name>OOP2.LayerSample.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\OOP2.LayerSample.Repository\OOP2.LayerSample.Repository.csproj">
       <Project>{cfca3d6b-d8d9-4f1e-8d6f-76d610247b22}</Project>

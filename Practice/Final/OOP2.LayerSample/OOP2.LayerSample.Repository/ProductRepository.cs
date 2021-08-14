@@ -18,6 +18,7 @@ namespace OOP2.LayerSample.Repository
             this.Da = new DataAccess();
         }
 
+        //view and search
         public List<Product> GetAll(string key)
         {
             List<Product> productList = new List<Product>();
@@ -45,6 +46,30 @@ namespace OOP2.LayerSample.Repository
             }
         }
 
+        //save
+        public bool Save(Product p)
+        {
+            try
+            {
+                var sql= @"insert into ProductInfo values('" + p.AppId+ "' , '" +p.PName +"' ," +
+                          "'" + p.Quantity+ "' ,'" + p.UnitPrice+ "');";
+                  
+                var rowCount = this.Da.ExecuteDMLQuery(sql);
+
+                if (rowCount == 1)
+                    return true;
+                else
+                    return false;
+            }
+
+            catch (Exception e)
+            {
+                return false; 
+                throw;
+            }
+        }
+        
+        //delete
         public void Delete(string id)
         {
             string sql;

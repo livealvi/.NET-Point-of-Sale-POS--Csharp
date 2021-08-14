@@ -33,11 +33,13 @@ namespace OOP2.LayerSample.App
             this.dgvProduct.Refresh();
         }
 
+        //search button
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             this.PopulateGridView(this.txtSearch.Text);
         }
 
+        //refresh button
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             this.PopulateGridView();
@@ -68,6 +70,12 @@ namespace OOP2.LayerSample.App
 
                 this.PopulateGridView();
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            DelegateCollection.RefreshGrid refresh = this.PopulateGridView;
+            new FormAddProduct(productRepo, refresh).Show();
         }
     }
 }
