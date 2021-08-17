@@ -1,7 +1,0 @@
-C:\Users\Alvi\Documents\C#\Mid\Task2\Task2\bin\Debug\Task2.exe.config
-C:\Users\Alvi\Documents\C#\Mid\Task2\Task2\bin\Debug\Task2.exe
-C:\Users\Alvi\Documents\C#\Mid\Task2\Task2\bin\Debug\Task2.pdb
-C:\Users\Alvi\Documents\C#\Mid\Task2\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
-C:\Users\Alvi\Documents\C#\Mid\Task2\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
-C:\Users\Alvi\Documents\C#\Mid\Task2\Task2\obj\Debug\Task2.exe
-C:\Users\Alvi\Documents\C#\Mid\Task2\Task2\obj\Debug\Task2.pdb
