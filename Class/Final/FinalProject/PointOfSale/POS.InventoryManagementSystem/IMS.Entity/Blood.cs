@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IMS.Framework
+namespace IMS.Entity
 {
-    public class Class1
+    public class Blood
     {
+        public int    BloodId   { get; set; }
+        public string BloodGroup{ get; set; }
     }
 }
