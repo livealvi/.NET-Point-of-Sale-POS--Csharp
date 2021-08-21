@@ -1,7 +1,7 @@
 ﻿
 namespace FinalPoject
 {
-    partial class FormMain
+    partial class FormStart
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace FinalPoject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
             this.guna2PnlTopCloseMiniMax = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();

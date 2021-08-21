@@ -39,6 +39,11 @@ namespace FinalPoject
             this.label4 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbThirdCate = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbSecondCate = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbMainCate = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
@@ -51,14 +56,32 @@ namespace FinalPoject
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dgvAllProduct = new System.Windows.Forms.DataGridView();
+            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pPerUnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnMasterSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMasterRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.pnlCategoryButton = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
+            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
+            this.btnAddThirdCate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddBrandCate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddSecondCate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddVendor = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddMainCate = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
@@ -82,30 +105,6 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.cmbMainCate = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbSecondCate = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbThirdCate = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
-            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.btnAddThirdCate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddBrandCate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddSecondCate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddVendor = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddMainCate = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.dgvAllProduct = new System.Windows.Forms.DataGridView();
-            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pPerUnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
@@ -115,18 +114,18 @@ namespace FinalPoject
             this.tableLayoutPanel3.SuspendLayout();
             this.guna2Panel15.SuspendLayout();
             this.guna2Panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).BeginInit();
             this.guna2Panel13.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.pnlCategoryButton.SuspendLayout();
+            this.guna2Panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
+            this.tablePanel2.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
             this.guna2Panel23.SuspendLayout();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
-            this.guna2Panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
-            this.tablePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2DragControl1
@@ -146,7 +145,7 @@ namespace FinalPoject
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1179, 717);
+            this.guna2Panel1.Size = new System.Drawing.Size(1682, 921);
             this.guna2Panel1.TabIndex = 6;
             // 
             // tableLayoutPanel1
@@ -163,7 +162,7 @@ namespace FinalPoject
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1149, 596);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1652, 800);
             this.tableLayoutPanel1.TabIndex = 25;
             // 
             // guna2Panel12
@@ -180,10 +179,10 @@ namespace FinalPoject
             this.guna2Panel12.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel12.FillColor = System.Drawing.Color.White;
-            this.guna2Panel12.Location = new System.Drawing.Point(732, 3);
+            this.guna2Panel12.Location = new System.Drawing.Point(1235, 3);
             this.guna2Panel12.Name = "guna2Panel12";
             this.guna2Panel12.ShadowDecoration.Parent = this.guna2Panel12;
-            this.guna2Panel12.Size = new System.Drawing.Size(414, 590);
+            this.guna2Panel12.Size = new System.Drawing.Size(414, 794);
             this.guna2Panel12.TabIndex = 25;
             // 
             // panel1
@@ -200,7 +199,7 @@ namespace FinalPoject
             this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(414, 450);
+            this.panel1.Size = new System.Drawing.Size(414, 654);
             this.panel1.TabIndex = 152;
             // 
             // label2
@@ -287,6 +286,106 @@ namespace FinalPoject
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 362);
             this.tableLayoutPanel2.TabIndex = 164;
             // 
+            // cmbBrand
+            // 
+            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
+            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbBrand.FocusedState.Parent = this.cmbBrand;
+            this.cmbBrand.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbBrand.FormattingEnabled = true;
+            this.cmbBrand.HoverState.Parent = this.cmbBrand;
+            this.cmbBrand.ItemHeight = 30;
+            this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
+            this.cmbBrand.Location = new System.Drawing.Point(2, 210);
+            this.cmbBrand.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbBrand.Name = "cmbBrand";
+            this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
+            this.cmbBrand.Size = new System.Drawing.Size(196, 36);
+            this.cmbBrand.TabIndex = 135;
+            // 
+            // cmbVendor
+            // 
+            this.cmbVendor.BackColor = System.Drawing.Color.Transparent;
+            this.cmbVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVendor.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbVendor.FocusedState.Parent = this.cmbVendor;
+            this.cmbVendor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbVendor.FormattingEnabled = true;
+            this.cmbVendor.HoverState.Parent = this.cmbVendor;
+            this.cmbVendor.ItemHeight = 30;
+            this.cmbVendor.ItemsAppearance.Parent = this.cmbVendor;
+            this.cmbVendor.Location = new System.Drawing.Point(2, 161);
+            this.cmbVendor.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbVendor.Name = "cmbVendor";
+            this.cmbVendor.ShadowDecoration.Parent = this.cmbVendor;
+            this.cmbVendor.Size = new System.Drawing.Size(196, 36);
+            this.cmbVendor.TabIndex = 135;
+            // 
+            // cmbThirdCate
+            // 
+            this.cmbThirdCate.BackColor = System.Drawing.Color.Transparent;
+            this.cmbThirdCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbThirdCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbThirdCate.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbThirdCate.FocusedState.Parent = this.cmbThirdCate;
+            this.cmbThirdCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbThirdCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbThirdCate.FormattingEnabled = true;
+            this.cmbThirdCate.HoverState.Parent = this.cmbThirdCate;
+            this.cmbThirdCate.ItemHeight = 30;
+            this.cmbThirdCate.ItemsAppearance.Parent = this.cmbThirdCate;
+            this.cmbThirdCate.Location = new System.Drawing.Point(2, 112);
+            this.cmbThirdCate.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbThirdCate.Name = "cmbThirdCate";
+            this.cmbThirdCate.ShadowDecoration.Parent = this.cmbThirdCate;
+            this.cmbThirdCate.Size = new System.Drawing.Size(196, 36);
+            this.cmbThirdCate.TabIndex = 135;
+            // 
+            // cmbSecondCate
+            // 
+            this.cmbSecondCate.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSecondCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSecondCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecondCate.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSecondCate.FocusedState.Parent = this.cmbSecondCate;
+            this.cmbSecondCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSecondCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSecondCate.FormattingEnabled = true;
+            this.cmbSecondCate.HoverState.Parent = this.cmbSecondCate;
+            this.cmbSecondCate.ItemHeight = 30;
+            this.cmbSecondCate.ItemsAppearance.Parent = this.cmbSecondCate;
+            this.cmbSecondCate.Location = new System.Drawing.Point(2, 63);
+            this.cmbSecondCate.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSecondCate.Name = "cmbSecondCate";
+            this.cmbSecondCate.ShadowDecoration.Parent = this.cmbSecondCate;
+            this.cmbSecondCate.Size = new System.Drawing.Size(196, 36);
+            this.cmbSecondCate.TabIndex = 135;
+            // 
+            // cmbMainCate
+            // 
+            this.cmbMainCate.BackColor = System.Drawing.Color.Transparent;
+            this.cmbMainCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbMainCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMainCate.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbMainCate.FocusedState.Parent = this.cmbMainCate;
+            this.cmbMainCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMainCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbMainCate.FormattingEnabled = true;
+            this.cmbMainCate.HoverState.Parent = this.cmbMainCate;
+            this.cmbMainCate.ItemHeight = 30;
+            this.cmbMainCate.ItemsAppearance.Parent = this.cmbMainCate;
+            this.cmbMainCate.Location = new System.Drawing.Point(2, 14);
+            this.cmbMainCate.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbMainCate.Name = "cmbMainCate";
+            this.cmbMainCate.ShadowDecoration.Parent = this.cmbMainCate;
+            this.cmbMainCate.Size = new System.Drawing.Size(196, 36);
+            this.cmbMainCate.TabIndex = 135;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -315,7 +414,7 @@ namespace FinalPoject
             // 
             this.guna2Panel10.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel10.Location = new System.Drawing.Point(0, 520);
+            this.guna2Panel10.Location = new System.Drawing.Point(0, 724);
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.ShadowDecoration.Parent = this.guna2Panel10;
             this.guna2Panel10.Size = new System.Drawing.Size(414, 13);
@@ -338,7 +437,7 @@ namespace FinalPoject
             this.guna2Panel62.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel62.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.guna2Panel62.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel62.Location = new System.Drawing.Point(0, 533);
+            this.guna2Panel62.Location = new System.Drawing.Point(0, 737);
             this.guna2Panel62.Name = "guna2Panel62";
             this.guna2Panel62.ShadowDecoration.Parent = this.guna2Panel62;
             this.guna2Panel62.Size = new System.Drawing.Size(414, 57);
@@ -463,694 +562,8 @@ namespace FinalPoject
             this.guna2Panel11.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel11.Name = "guna2Panel11";
             this.guna2Panel11.ShadowDecoration.Parent = this.guna2Panel11;
-            this.guna2Panel11.Size = new System.Drawing.Size(708, 590);
+            this.guna2Panel11.Size = new System.Drawing.Size(1211, 794);
             this.guna2Panel11.TabIndex = 27;
-            // 
-            // guna2Panel28
-            // 
-            this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel28.Location = new System.Drawing.Point(8, 525);
-            this.guna2Panel28.Name = "guna2Panel28";
-            this.guna2Panel28.ShadowDecoration.Parent = this.guna2Panel28;
-            this.guna2Panel28.Size = new System.Drawing.Size(692, 8);
-            this.guna2Panel28.TabIndex = 159;
-            // 
-            // guna2Panel26
-            // 
-            this.guna2Panel26.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel26.Location = new System.Drawing.Point(700, 156);
-            this.guna2Panel26.Name = "guna2Panel26";
-            this.guna2Panel26.ShadowDecoration.Parent = this.guna2Panel26;
-            this.guna2Panel26.Size = new System.Drawing.Size(8, 377);
-            this.guna2Panel26.TabIndex = 156;
-            // 
-            // guna2Panel18
-            // 
-            this.guna2Panel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel18.Location = new System.Drawing.Point(0, 156);
-            this.guna2Panel18.Name = "guna2Panel18";
-            this.guna2Panel18.ShadowDecoration.Parent = this.guna2Panel18;
-            this.guna2Panel18.Size = new System.Drawing.Size(8, 377);
-            this.guna2Panel18.TabIndex = 155;
-            // 
-            // guna2Panel13
-            // 
-            this.guna2Panel13.Controls.Add(this.tableLayoutPanel4);
-            this.guna2Panel13.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel13.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel13.Location = new System.Drawing.Point(0, 533);
-            this.guna2Panel13.Name = "guna2Panel13";
-            this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
-            this.guna2Panel13.Size = new System.Drawing.Size(708, 57);
-            this.guna2Panel13.TabIndex = 133;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 5;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.btnMasterSave, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.btnRefresh, 3, 1);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(708, 57);
-            this.tableLayoutPanel4.TabIndex = 137;
-            // 
-            // btnMasterSave
-            // 
-            this.btnMasterSave.Animated = true;
-            this.btnMasterSave.CheckedState.Parent = this.btnMasterSave;
-            this.btnMasterSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMasterSave.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnMasterSave.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnMasterSave.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMasterSave.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnMasterSave.CustomImages.Parent = this.btnMasterSave;
-            this.btnMasterSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMasterSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnMasterSave.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMasterSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnMasterSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnMasterSave.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMasterSave.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnMasterSave.HoverState.Parent = this.btnMasterSave;
-            this.btnMasterSave.Location = new System.Drawing.Point(128, 11);
-            this.btnMasterSave.Name = "btnMasterSave";
-            this.btnMasterSave.ShadowDecoration.Parent = this.btnMasterSave;
-            this.btnMasterSave.Size = new System.Drawing.Size(219, 35);
-            this.btnMasterSave.TabIndex = 133;
-            this.btnMasterSave.Text = "Master Save";
-            this.btnMasterSave.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Animated = true;
-            this.btnRefresh.CheckedState.Parent = this.btnRefresh;
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_trash_can_480px;
-            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_trash_can_480px_1;
-            this.btnRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnRefresh.CustomImages.Parent = this.btnRefresh;
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.HoverState.Parent = this.btnRefresh;
-            this.btnRefresh.Location = new System.Drawing.Point(361, 11);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.ShadowDecoration.Parent = this.btnRefresh;
-            this.btnRefresh.Size = new System.Drawing.Size(219, 35);
-            this.btnRefresh.TabIndex = 135;
-            this.btnRefresh.Text = "Master Delete";
-            // 
-            // pnlCategoryButton
-            // 
-            this.pnlCategoryButton.Controls.Add(this.guna2Panel19);
-            this.pnlCategoryButton.Controls.Add(this.guna2Panel22);
-            this.pnlCategoryButton.Controls.Add(this.guna2Panel27);
-            this.pnlCategoryButton.Controls.Add(this.guna2Panel14);
-            this.pnlCategoryButton.CustomBorderColor = System.Drawing.Color.Silver;
-            this.pnlCategoryButton.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.pnlCategoryButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCategoryButton.Location = new System.Drawing.Point(0, 57);
-            this.pnlCategoryButton.Name = "pnlCategoryButton";
-            this.pnlCategoryButton.ShadowDecoration.Parent = this.pnlCategoryButton;
-            this.pnlCategoryButton.Size = new System.Drawing.Size(708, 99);
-            this.pnlCategoryButton.TabIndex = 132;
-            // 
-            // guna2Panel22
-            // 
-            this.guna2Panel22.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel22.Location = new System.Drawing.Point(20, 91);
-            this.guna2Panel22.Name = "guna2Panel22";
-            this.guna2Panel22.ShadowDecoration.Parent = this.guna2Panel22;
-            this.guna2Panel22.Size = new System.Drawing.Size(668, 8);
-            this.guna2Panel22.TabIndex = 182;
-            // 
-            // guna2Panel27
-            // 
-            this.guna2Panel27.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel27.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel27.Location = new System.Drawing.Point(688, 0);
-            this.guna2Panel27.Name = "guna2Panel27";
-            this.guna2Panel27.ShadowDecoration.Parent = this.guna2Panel27;
-            this.guna2Panel27.Size = new System.Drawing.Size(20, 99);
-            this.guna2Panel27.TabIndex = 20;
-            // 
-            // guna2Panel14
-            // 
-            this.guna2Panel14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel14.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel14.Name = "guna2Panel14";
-            this.guna2Panel14.ShadowDecoration.Parent = this.guna2Panel14;
-            this.guna2Panel14.Size = new System.Drawing.Size(20, 99);
-            this.guna2Panel14.TabIndex = 19;
-            // 
-            // guna2Panel17
-            // 
-            this.guna2Panel17.Controls.Add(this.guna2Panel23);
-            this.guna2Panel17.Controls.Add(this.guna2Panel25);
-            this.guna2Panel17.Controls.Add(this.label6);
-            this.guna2Panel17.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel17.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel17.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel17.Name = "guna2Panel17";
-            this.guna2Panel17.ShadowDecoration.Parent = this.guna2Panel17;
-            this.guna2Panel17.Size = new System.Drawing.Size(708, 57);
-            this.guna2Panel17.TabIndex = 131;
-            // 
-            // guna2Panel23
-            // 
-            this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel23.Controls.Add(this.label24);
-            this.guna2Panel23.Controls.Add(this.guna2Panel24);
-            this.guna2Panel23.Controls.Add(this.txtSearchProduct);
-            this.guna2Panel23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel23.Location = new System.Drawing.Point(319, 0);
-            this.guna2Panel23.Name = "guna2Panel23";
-            this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
-            this.guna2Panel23.Size = new System.Drawing.Size(389, 57);
-            this.guna2Panel23.TabIndex = 21;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label24.Location = new System.Drawing.Point(10, 20);
-            this.label24.Margin = new System.Windows.Forms.Padding(0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(101, 19);
-            this.label24.TabIndex = 164;
-            this.label24.Text = "Search Product";
-            // 
-            // guna2Panel24
-            // 
-            this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel24.Location = new System.Drawing.Point(369, 0);
-            this.guna2Panel24.Name = "guna2Panel24";
-            this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
-            this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
-            this.guna2Panel24.TabIndex = 135;
-            // 
-            // txtSearchProduct
-            // 
-            this.txtSearchProduct.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.txtSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchProduct.DefaultText = "";
-            this.txtSearchProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.DisabledState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchProduct.FocusedState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchProduct.HoverState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.txtSearchProduct.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearchProduct.Location = new System.Drawing.Point(116, 14);
-            this.txtSearchProduct.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtSearchProduct.Name = "txtSearchProduct";
-            this.txtSearchProduct.PasswordChar = '\0';
-            this.txtSearchProduct.PlaceholderText = "by Name, Tag, Cate. Brand";
-            this.txtSearchProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearchProduct.SelectedText = "";
-            this.txtSearchProduct.ShadowDecoration.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.Size = new System.Drawing.Size(245, 30);
-            this.txtSearchProduct.TabIndex = 134;
-            // 
-            // guna2Panel25
-            // 
-            this.guna2Panel25.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel25.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel25.Name = "guna2Panel25";
-            this.guna2Panel25.ShadowDecoration.Parent = this.guna2Panel25;
-            this.guna2Panel25.Size = new System.Drawing.Size(20, 57);
-            this.guna2Panel25.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(26, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 21);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "View All Categories";
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel4.Location = new System.Drawing.Point(15, 89);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(1149, 16);
-            this.guna2Panel4.TabIndex = 22;
-            // 
-            // pnlOrderSelect
-            // 
-            this.pnlOrderSelect.BackColor = System.Drawing.Color.Transparent;
-            this.pnlOrderSelect.BorderColor = System.Drawing.Color.Silver;
-            this.pnlOrderSelect.BorderRadius = 12;
-            this.pnlOrderSelect.BorderThickness = 1;
-            this.pnlOrderSelect.Controls.Add(this.guna2ComboBox1);
-            this.pnlOrderSelect.Controls.Add(this.guna2Panel2);
-            this.pnlOrderSelect.Controls.Add(this.guna2Panel6);
-            this.pnlOrderSelect.CustomBorderColor = System.Drawing.Color.Silver;
-            this.pnlOrderSelect.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlOrderSelect.FillColor = System.Drawing.Color.White;
-            this.pnlOrderSelect.Location = new System.Drawing.Point(15, 16);
-            this.pnlOrderSelect.Name = "pnlOrderSelect";
-            this.pnlOrderSelect.ShadowDecoration.Parent = this.pnlOrderSelect;
-            this.pnlOrderSelect.Size = new System.Drawing.Size(1149, 73);
-            this.pnlOrderSelect.TabIndex = 21;
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(591, 19);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(196, 36);
-            this.guna2ComboBox1.TabIndex = 134;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2Panel8);
-            this.guna2Panel2.Controls.Add(this.guna2Panel7);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(839, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(310, 73);
-            this.guna2Panel2.TabIndex = 6;
-            // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
-            this.guna2Panel8.Size = new System.Drawing.Size(20, 73);
-            this.guna2Panel8.TabIndex = 18;
-            // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel7.Location = new System.Drawing.Point(290, 0);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
-            this.guna2Panel7.Size = new System.Drawing.Size(20, 73);
-            this.guna2Panel7.TabIndex = 17;
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.Controls.Add(this.label3);
-            this.guna2Panel6.Controls.Add(this.guna2Panel9);
-            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel6.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
-            this.guna2Panel6.Size = new System.Drawing.Size(542, 73);
-            this.guna2Panel6.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 60);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "All Categories";
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel9.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
-            this.guna2Panel9.Size = new System.Drawing.Size(20, 73);
-            this.guna2Panel9.TabIndex = 19;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(1164, 16);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(15, 685);
-            this.guna2Panel3.TabIndex = 16;
-            // 
-            // pnlInsideLeft
-            // 
-            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 16);
-            this.pnlInsideLeft.Name = "pnlInsideLeft";
-            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
-            this.pnlInsideLeft.Size = new System.Drawing.Size(15, 685);
-            this.pnlInsideLeft.TabIndex = 12;
-            // 
-            // pnlBottom
-            // 
-            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 701);
-            this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.ShadowDecoration.Parent = this.pnlBottom;
-            this.pnlBottom.Size = new System.Drawing.Size(1179, 16);
-            this.pnlBottom.TabIndex = 9;
-            // 
-            // pnlInsideTop
-            // 
-            this.pnlInsideTop.BackColor = System.Drawing.Color.Transparent;
-            this.pnlInsideTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlInsideTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlInsideTop.Name = "pnlInsideTop";
-            this.pnlInsideTop.ShadowDecoration.Parent = this.pnlInsideTop;
-            this.pnlInsideTop.Size = new System.Drawing.Size(1179, 16);
-            this.pnlInsideTop.TabIndex = 5;
-            // 
-            // cmbMainCate
-            // 
-            this.cmbMainCate.BackColor = System.Drawing.Color.Transparent;
-            this.cmbMainCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbMainCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMainCate.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbMainCate.FocusedState.Parent = this.cmbMainCate;
-            this.cmbMainCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMainCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbMainCate.FormattingEnabled = true;
-            this.cmbMainCate.HoverState.Parent = this.cmbMainCate;
-            this.cmbMainCate.ItemHeight = 30;
-            this.cmbMainCate.ItemsAppearance.Parent = this.cmbMainCate;
-            this.cmbMainCate.Location = new System.Drawing.Point(2, 14);
-            this.cmbMainCate.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbMainCate.Name = "cmbMainCate";
-            this.cmbMainCate.ShadowDecoration.Parent = this.cmbMainCate;
-            this.cmbMainCate.Size = new System.Drawing.Size(196, 36);
-            this.cmbMainCate.TabIndex = 135;
-            // 
-            // cmbSecondCate
-            // 
-            this.cmbSecondCate.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSecondCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSecondCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSecondCate.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbSecondCate.FocusedState.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSecondCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbSecondCate.FormattingEnabled = true;
-            this.cmbSecondCate.HoverState.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.ItemHeight = 30;
-            this.cmbSecondCate.ItemsAppearance.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Location = new System.Drawing.Point(2, 63);
-            this.cmbSecondCate.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbSecondCate.Name = "cmbSecondCate";
-            this.cmbSecondCate.ShadowDecoration.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Size = new System.Drawing.Size(196, 36);
-            this.cmbSecondCate.TabIndex = 135;
-            // 
-            // cmbThirdCate
-            // 
-            this.cmbThirdCate.BackColor = System.Drawing.Color.Transparent;
-            this.cmbThirdCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbThirdCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbThirdCate.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbThirdCate.FocusedState.Parent = this.cmbThirdCate;
-            this.cmbThirdCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbThirdCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbThirdCate.FormattingEnabled = true;
-            this.cmbThirdCate.HoverState.Parent = this.cmbThirdCate;
-            this.cmbThirdCate.ItemHeight = 30;
-            this.cmbThirdCate.ItemsAppearance.Parent = this.cmbThirdCate;
-            this.cmbThirdCate.Location = new System.Drawing.Point(2, 112);
-            this.cmbThirdCate.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbThirdCate.Name = "cmbThirdCate";
-            this.cmbThirdCate.ShadowDecoration.Parent = this.cmbThirdCate;
-            this.cmbThirdCate.Size = new System.Drawing.Size(196, 36);
-            this.cmbThirdCate.TabIndex = 135;
-            // 
-            // cmbVendor
-            // 
-            this.cmbVendor.BackColor = System.Drawing.Color.Transparent;
-            this.cmbVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbVendor.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbVendor.FocusedState.Parent = this.cmbVendor;
-            this.cmbVendor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbVendor.FormattingEnabled = true;
-            this.cmbVendor.HoverState.Parent = this.cmbVendor;
-            this.cmbVendor.ItemHeight = 30;
-            this.cmbVendor.ItemsAppearance.Parent = this.cmbVendor;
-            this.cmbVendor.Location = new System.Drawing.Point(2, 161);
-            this.cmbVendor.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbVendor.Name = "cmbVendor";
-            this.cmbVendor.ShadowDecoration.Parent = this.cmbVendor;
-            this.cmbVendor.Size = new System.Drawing.Size(196, 36);
-            this.cmbVendor.TabIndex = 135;
-            // 
-            // cmbBrand
-            // 
-            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
-            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbBrand.FocusedState.Parent = this.cmbBrand;
-            this.cmbBrand.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbBrand.FormattingEnabled = true;
-            this.cmbBrand.HoverState.Parent = this.cmbBrand;
-            this.cmbBrand.ItemHeight = 30;
-            this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
-            this.cmbBrand.Location = new System.Drawing.Point(2, 210);
-            this.cmbBrand.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbBrand.Name = "cmbBrand";
-            this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
-            this.cmbBrand.Size = new System.Drawing.Size(196, 36);
-            this.cmbBrand.TabIndex = 135;
-            // 
-            // guna2Panel19
-            // 
-            this.guna2Panel19.AutoScroll = true;
-            this.guna2Panel19.Controls.Add(this.tablePanel2);
-            this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel19.Location = new System.Drawing.Point(20, 0);
-            this.guna2Panel19.Name = "guna2Panel19";
-            this.guna2Panel19.ShadowDecoration.Parent = this.guna2Panel19;
-            this.guna2Panel19.Size = new System.Drawing.Size(668, 91);
-            this.guna2Panel19.TabIndex = 184;
-            // 
-            // tablePanel2
-            // 
-            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 244F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 256F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 237F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 187F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 177F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F)});
-            this.tablePanel2.Controls.Add(this.btnAddThirdCate);
-            this.tablePanel2.Controls.Add(this.btnAddBrandCate);
-            this.tablePanel2.Controls.Add(this.btnAddSecondCate);
-            this.tablePanel2.Controls.Add(this.btnAddVendor);
-            this.tablePanel2.Controls.Add(this.btnAddMainCate);
-            this.tablePanel2.Location = new System.Drawing.Point(0, 15);
-            this.tablePanel2.Name = "tablePanel2";
-            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F)});
-            this.tablePanel2.Size = new System.Drawing.Size(1162, 67);
-            this.tablePanel2.TabIndex = 196;
-            // 
-            // btnAddThirdCate
-            // 
-            this.btnAddThirdCate.Animated = true;
-            this.btnAddThirdCate.CheckedState.Parent = this.btnAddThirdCate;
-            this.btnAddThirdCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddThirdCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddThirdCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnAddThirdCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddThirdCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnAddThirdCate.CustomImages.Parent = this.btnAddThirdCate;
-            this.btnAddThirdCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddThirdCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddThirdCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddThirdCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddThirdCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddThirdCate.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddThirdCate.HoverState.Parent = this.btnAddThirdCate;
-            this.btnAddThirdCate.Location = new System.Drawing.Point(533, 16);
-            this.btnAddThirdCate.Name = "btnAddThirdCate";
-            this.btnAddThirdCate.ShadowDecoration.Parent = this.btnAddThirdCate;
-            this.btnAddThirdCate.Size = new System.Drawing.Size(231, 35);
-            this.btnAddThirdCate.TabIndex = 158;
-            this.btnAddThirdCate.Text = "Add - Third Categories";
-            this.btnAddThirdCate.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnAddBrandCate
-            // 
-            this.btnAddBrandCate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddBrandCate.Animated = true;
-            this.btnAddBrandCate.CheckedState.Parent = this.btnAddBrandCate;
-            this.btnAddBrandCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddBrandCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddBrandCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnAddBrandCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddBrandCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnAddBrandCate.CustomImages.Parent = this.btnAddBrandCate;
-            this.btnAddBrandCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddBrandCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddBrandCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddBrandCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddBrandCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddBrandCate.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddBrandCate.HoverState.Parent = this.btnAddBrandCate;
-            this.btnAddBrandCate.Location = new System.Drawing.Point(977, 16);
-            this.btnAddBrandCate.Name = "btnAddBrandCate";
-            this.btnAddBrandCate.ShadowDecoration.Parent = this.btnAddBrandCate;
-            this.btnAddBrandCate.Size = new System.Drawing.Size(171, 35);
-            this.btnAddBrandCate.TabIndex = 159;
-            this.btnAddBrandCate.Text = "Add - Brands";
-            this.btnAddBrandCate.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnAddSecondCate
-            // 
-            this.btnAddSecondCate.Animated = true;
-            this.btnAddSecondCate.CheckedState.Parent = this.btnAddSecondCate;
-            this.tablePanel2.SetColumn(this.btnAddSecondCate, 3);
-            this.btnAddSecondCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddSecondCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddSecondCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnAddSecondCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddSecondCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnAddSecondCate.CustomImages.Parent = this.btnAddSecondCate;
-            this.btnAddSecondCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddSecondCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSecondCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddSecondCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddSecondCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSecondCate.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddSecondCate.HoverState.Parent = this.btnAddSecondCate;
-            this.btnAddSecondCate.Location = new System.Drawing.Point(267, 16);
-            this.btnAddSecondCate.Name = "btnAddSecondCate";
-            this.tablePanel2.SetRow(this.btnAddSecondCate, 0);
-            this.btnAddSecondCate.ShadowDecoration.Parent = this.btnAddSecondCate;
-            this.btnAddSecondCate.Size = new System.Drawing.Size(250, 35);
-            this.btnAddSecondCate.TabIndex = 157;
-            this.btnAddSecondCate.Text = "Add - Second Categories";
-            this.btnAddSecondCate.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnAddSecondCate.Click += new System.EventHandler(this.btnAddSecondCate_Click);
-            // 
-            // btnAddVendor
-            // 
-            this.btnAddVendor.Animated = true;
-            this.btnAddVendor.CheckedState.Parent = this.btnAddVendor;
-            this.btnAddVendor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddVendor.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddVendor.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnAddVendor.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddVendor.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnAddVendor.CustomImages.Parent = this.btnAddVendor;
-            this.btnAddVendor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddVendor.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddVendor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddVendor.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddVendor.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddVendor.HoverState.Parent = this.btnAddVendor;
-            this.btnAddVendor.Location = new System.Drawing.Point(780, 16);
-            this.btnAddVendor.Name = "btnAddVendor";
-            this.btnAddVendor.ShadowDecoration.Parent = this.btnAddVendor;
-            this.btnAddVendor.Size = new System.Drawing.Size(181, 35);
-            this.btnAddVendor.TabIndex = 160;
-            this.btnAddVendor.Text = "Add - Vendors";
-            this.btnAddVendor.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnAddMainCate
-            // 
-            this.btnAddMainCate.Animated = true;
-            this.btnAddMainCate.CheckedState.Parent = this.btnAddMainCate;
-            this.tablePanel2.SetColumn(this.btnAddMainCate, 1);
-            this.btnAddMainCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddMainCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddMainCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnAddMainCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddMainCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnAddMainCate.CustomImages.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddMainCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMainCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddMainCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddMainCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMainCate.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddMainCate.HoverState.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.Location = new System.Drawing.Point(13, 16);
-            this.btnAddMainCate.Name = "btnAddMainCate";
-            this.tablePanel2.SetRow(this.btnAddMainCate, 0);
-            this.btnAddMainCate.ShadowDecoration.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.Size = new System.Drawing.Size(238, 35);
-            this.btnAddMainCate.TabIndex = 156;
-            this.btnAddMainCate.Text = "Add - Main Categories";
-            this.btnAddMainCate.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnAddMainCate.Click += new System.EventHandler(this.btnAddMainCate_Click);
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(8, 156);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(692, 8);
-            this.guna2Panel5.TabIndex = 161;
             // 
             // dgvAllProduct
             // 
@@ -1177,7 +590,7 @@ namespace FinalPoject
             this.dgvAllProduct.RowHeadersWidth = 51;
             this.dgvAllProduct.RowTemplate.Height = 24;
             this.dgvAllProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllProduct.Size = new System.Drawing.Size(692, 361);
+            this.dgvAllProduct.Size = new System.Drawing.Size(1195, 565);
             this.dgvAllProduct.TabIndex = 162;
             // 
             // pID
@@ -1270,16 +683,582 @@ namespace FinalPoject
             this.pSize.ReadOnly = true;
             this.pSize.Width = 125;
             // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel5.Location = new System.Drawing.Point(8, 156);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(1195, 8);
+            this.guna2Panel5.TabIndex = 161;
+            // 
+            // guna2Panel28
+            // 
+            this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel28.Location = new System.Drawing.Point(8, 729);
+            this.guna2Panel28.Name = "guna2Panel28";
+            this.guna2Panel28.ShadowDecoration.Parent = this.guna2Panel28;
+            this.guna2Panel28.Size = new System.Drawing.Size(1195, 8);
+            this.guna2Panel28.TabIndex = 159;
+            // 
+            // guna2Panel26
+            // 
+            this.guna2Panel26.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel26.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel26.Location = new System.Drawing.Point(1203, 156);
+            this.guna2Panel26.Name = "guna2Panel26";
+            this.guna2Panel26.ShadowDecoration.Parent = this.guna2Panel26;
+            this.guna2Panel26.Size = new System.Drawing.Size(8, 581);
+            this.guna2Panel26.TabIndex = 156;
+            // 
+            // guna2Panel18
+            // 
+            this.guna2Panel18.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel18.Location = new System.Drawing.Point(0, 156);
+            this.guna2Panel18.Name = "guna2Panel18";
+            this.guna2Panel18.ShadowDecoration.Parent = this.guna2Panel18;
+            this.guna2Panel18.Size = new System.Drawing.Size(8, 581);
+            this.guna2Panel18.TabIndex = 155;
+            // 
+            // guna2Panel13
+            // 
+            this.guna2Panel13.Controls.Add(this.tableLayoutPanel4);
+            this.guna2Panel13.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel13.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel13.Location = new System.Drawing.Point(0, 737);
+            this.guna2Panel13.Name = "guna2Panel13";
+            this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
+            this.guna2Panel13.Size = new System.Drawing.Size(1211, 57);
+            this.guna2Panel13.TabIndex = 133;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.btnMasterRefresh, 1, 1);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1211, 57);
+            this.tableLayoutPanel4.TabIndex = 137;
+            // 
+            // btnMasterRefresh
+            // 
+            this.btnMasterRefresh.Animated = true;
+            this.btnMasterRefresh.CheckedState.Parent = this.btnMasterRefresh;
+            this.btnMasterRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMasterRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnMasterRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnMasterRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMasterRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnMasterRefresh.CustomImages.Parent = this.btnMasterRefresh;
+            this.btnMasterRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMasterRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnMasterRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMasterRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnMasterRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnMasterRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMasterRefresh.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnMasterRefresh.HoverState.Parent = this.btnMasterRefresh;
+            this.btnMasterRefresh.Location = new System.Drawing.Point(496, 11);
+            this.btnMasterRefresh.Name = "btnMasterRefresh";
+            this.btnMasterRefresh.ShadowDecoration.Parent = this.btnMasterRefresh;
+            this.btnMasterRefresh.Size = new System.Drawing.Size(219, 35);
+            this.btnMasterRefresh.TabIndex = 133;
+            this.btnMasterRefresh.Text = "Refresh";
+            this.btnMasterRefresh.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // pnlCategoryButton
+            // 
+            this.pnlCategoryButton.Controls.Add(this.guna2Panel19);
+            this.pnlCategoryButton.Controls.Add(this.guna2Panel22);
+            this.pnlCategoryButton.Controls.Add(this.guna2Panel27);
+            this.pnlCategoryButton.Controls.Add(this.guna2Panel14);
+            this.pnlCategoryButton.CustomBorderColor = System.Drawing.Color.Silver;
+            this.pnlCategoryButton.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.pnlCategoryButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlCategoryButton.Location = new System.Drawing.Point(0, 57);
+            this.pnlCategoryButton.Name = "pnlCategoryButton";
+            this.pnlCategoryButton.ShadowDecoration.Parent = this.pnlCategoryButton;
+            this.pnlCategoryButton.Size = new System.Drawing.Size(1211, 99);
+            this.pnlCategoryButton.TabIndex = 132;
+            // 
+            // guna2Panel19
+            // 
+            this.guna2Panel19.AutoScroll = true;
+            this.guna2Panel19.Controls.Add(this.tablePanel2);
+            this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel19.Location = new System.Drawing.Point(20, 0);
+            this.guna2Panel19.Name = "guna2Panel19";
+            this.guna2Panel19.ShadowDecoration.Parent = this.guna2Panel19;
+            this.guna2Panel19.Size = new System.Drawing.Size(1171, 91);
+            this.guna2Panel19.TabIndex = 184;
+            // 
+            // tablePanel2
+            // 
+            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 244F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 256F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 237F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 187F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 177F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F)});
+            this.tablePanel2.Controls.Add(this.btnAddThirdCate);
+            this.tablePanel2.Controls.Add(this.btnAddBrandCate);
+            this.tablePanel2.Controls.Add(this.btnAddSecondCate);
+            this.tablePanel2.Controls.Add(this.btnAddVendor);
+            this.tablePanel2.Controls.Add(this.btnAddMainCate);
+            this.tablePanel2.Location = new System.Drawing.Point(0, 15);
+            this.tablePanel2.Name = "tablePanel2";
+            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F)});
+            this.tablePanel2.Size = new System.Drawing.Size(1162, 67);
+            this.tablePanel2.TabIndex = 196;
+            // 
+            // btnAddThirdCate
+            // 
+            this.btnAddThirdCate.Animated = true;
+            this.btnAddThirdCate.CheckedState.Parent = this.btnAddThirdCate;
+            this.btnAddThirdCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddThirdCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddThirdCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddThirdCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddThirdCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddThirdCate.CustomImages.Parent = this.btnAddThirdCate;
+            this.btnAddThirdCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddThirdCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddThirdCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddThirdCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddThirdCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddThirdCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddThirdCate.HoverState.Parent = this.btnAddThirdCate;
+            this.btnAddThirdCate.Location = new System.Drawing.Point(533, 16);
+            this.btnAddThirdCate.Name = "btnAddThirdCate";
+            this.btnAddThirdCate.ShadowDecoration.Parent = this.btnAddThirdCate;
+            this.btnAddThirdCate.Size = new System.Drawing.Size(231, 35);
+            this.btnAddThirdCate.TabIndex = 158;
+            this.btnAddThirdCate.Text = "Add - Third Categories";
+            this.btnAddThirdCate.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddThirdCate.Click += new System.EventHandler(this.btnAddThirdCate_Click);
+            // 
+            // btnAddBrandCate
+            // 
+            this.btnAddBrandCate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddBrandCate.Animated = true;
+            this.btnAddBrandCate.CheckedState.Parent = this.btnAddBrandCate;
+            this.btnAddBrandCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddBrandCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddBrandCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddBrandCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddBrandCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddBrandCate.CustomImages.Parent = this.btnAddBrandCate;
+            this.btnAddBrandCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddBrandCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBrandCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddBrandCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddBrandCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBrandCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddBrandCate.HoverState.Parent = this.btnAddBrandCate;
+            this.btnAddBrandCate.Location = new System.Drawing.Point(977, 16);
+            this.btnAddBrandCate.Name = "btnAddBrandCate";
+            this.btnAddBrandCate.ShadowDecoration.Parent = this.btnAddBrandCate;
+            this.btnAddBrandCate.Size = new System.Drawing.Size(171, 35);
+            this.btnAddBrandCate.TabIndex = 159;
+            this.btnAddBrandCate.Text = "Add - Brands";
+            this.btnAddBrandCate.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddBrandCate.Click += new System.EventHandler(this.btnAddBrandCate_Click);
+            // 
+            // btnAddSecondCate
+            // 
+            this.btnAddSecondCate.Animated = true;
+            this.btnAddSecondCate.CheckedState.Parent = this.btnAddSecondCate;
+            this.tablePanel2.SetColumn(this.btnAddSecondCate, 3);
+            this.btnAddSecondCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddSecondCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddSecondCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddSecondCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddSecondCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddSecondCate.CustomImages.Parent = this.btnAddSecondCate;
+            this.btnAddSecondCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddSecondCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSecondCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddSecondCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddSecondCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSecondCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddSecondCate.HoverState.Parent = this.btnAddSecondCate;
+            this.btnAddSecondCate.Location = new System.Drawing.Point(267, 16);
+            this.btnAddSecondCate.Name = "btnAddSecondCate";
+            this.tablePanel2.SetRow(this.btnAddSecondCate, 0);
+            this.btnAddSecondCate.ShadowDecoration.Parent = this.btnAddSecondCate;
+            this.btnAddSecondCate.Size = new System.Drawing.Size(250, 35);
+            this.btnAddSecondCate.TabIndex = 157;
+            this.btnAddSecondCate.Text = "Add - Second Categories";
+            this.btnAddSecondCate.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddSecondCate.Click += new System.EventHandler(this.btnAddSecondCate_Click);
+            // 
+            // btnAddVendor
+            // 
+            this.btnAddVendor.Animated = true;
+            this.btnAddVendor.CheckedState.Parent = this.btnAddVendor;
+            this.btnAddVendor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddVendor.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddVendor.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddVendor.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddVendor.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddVendor.CustomImages.Parent = this.btnAddVendor;
+            this.btnAddVendor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddVendor.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendor.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendor.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddVendor.HoverState.Parent = this.btnAddVendor;
+            this.btnAddVendor.Location = new System.Drawing.Point(780, 16);
+            this.btnAddVendor.Name = "btnAddVendor";
+            this.btnAddVendor.ShadowDecoration.Parent = this.btnAddVendor;
+            this.btnAddVendor.Size = new System.Drawing.Size(181, 35);
+            this.btnAddVendor.TabIndex = 160;
+            this.btnAddVendor.Text = "Add - Vendors";
+            this.btnAddVendor.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddVendor.Click += new System.EventHandler(this.btnAddVendor_Click);
+            // 
+            // btnAddMainCate
+            // 
+            this.btnAddMainCate.Animated = true;
+            this.btnAddMainCate.CheckedState.Parent = this.btnAddMainCate;
+            this.tablePanel2.SetColumn(this.btnAddMainCate, 1);
+            this.btnAddMainCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddMainCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddMainCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddMainCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddMainCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddMainCate.CustomImages.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddMainCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMainCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddMainCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddMainCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMainCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddMainCate.HoverState.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.Location = new System.Drawing.Point(13, 16);
+            this.btnAddMainCate.Name = "btnAddMainCate";
+            this.tablePanel2.SetRow(this.btnAddMainCate, 0);
+            this.btnAddMainCate.ShadowDecoration.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.Size = new System.Drawing.Size(238, 35);
+            this.btnAddMainCate.TabIndex = 156;
+            this.btnAddMainCate.Text = "Add - Main Categories";
+            this.btnAddMainCate.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddMainCate.Click += new System.EventHandler(this.btnAddMainCate_Click);
+            // 
+            // guna2Panel22
+            // 
+            this.guna2Panel22.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel22.Location = new System.Drawing.Point(20, 91);
+            this.guna2Panel22.Name = "guna2Panel22";
+            this.guna2Panel22.ShadowDecoration.Parent = this.guna2Panel22;
+            this.guna2Panel22.Size = new System.Drawing.Size(1171, 8);
+            this.guna2Panel22.TabIndex = 182;
+            // 
+            // guna2Panel27
+            // 
+            this.guna2Panel27.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel27.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel27.Location = new System.Drawing.Point(1191, 0);
+            this.guna2Panel27.Name = "guna2Panel27";
+            this.guna2Panel27.ShadowDecoration.Parent = this.guna2Panel27;
+            this.guna2Panel27.Size = new System.Drawing.Size(20, 99);
+            this.guna2Panel27.TabIndex = 20;
+            // 
+            // guna2Panel14
+            // 
+            this.guna2Panel14.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel14.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel14.Name = "guna2Panel14";
+            this.guna2Panel14.ShadowDecoration.Parent = this.guna2Panel14;
+            this.guna2Panel14.Size = new System.Drawing.Size(20, 99);
+            this.guna2Panel14.TabIndex = 19;
+            // 
+            // guna2Panel17
+            // 
+            this.guna2Panel17.Controls.Add(this.guna2Panel23);
+            this.guna2Panel17.Controls.Add(this.guna2Panel25);
+            this.guna2Panel17.Controls.Add(this.label6);
+            this.guna2Panel17.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel17.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.guna2Panel17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel17.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel17.Name = "guna2Panel17";
+            this.guna2Panel17.ShadowDecoration.Parent = this.guna2Panel17;
+            this.guna2Panel17.Size = new System.Drawing.Size(1211, 57);
+            this.guna2Panel17.TabIndex = 131;
+            // 
+            // guna2Panel23
+            // 
+            this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel23.Controls.Add(this.label24);
+            this.guna2Panel23.Controls.Add(this.guna2Panel24);
+            this.guna2Panel23.Controls.Add(this.txtSearchProduct);
+            this.guna2Panel23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel23.Location = new System.Drawing.Point(822, 0);
+            this.guna2Panel23.Name = "guna2Panel23";
+            this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
+            this.guna2Panel23.Size = new System.Drawing.Size(389, 57);
+            this.guna2Panel23.TabIndex = 21;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label24.Location = new System.Drawing.Point(10, 20);
+            this.label24.Margin = new System.Windows.Forms.Padding(0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(101, 19);
+            this.label24.TabIndex = 164;
+            this.label24.Text = "Search Product";
+            // 
+            // guna2Panel24
+            // 
+            this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel24.Location = new System.Drawing.Point(369, 0);
+            this.guna2Panel24.Name = "guna2Panel24";
+            this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
+            this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
+            this.guna2Panel24.TabIndex = 135;
+            // 
+            // txtSearchProduct
+            // 
+            this.txtSearchProduct.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchProduct.DefaultText = "";
+            this.txtSearchProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchProduct.DisabledState.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchProduct.FocusedState.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchProduct.HoverState.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.txtSearchProduct.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
+            this.txtSearchProduct.Location = new System.Drawing.Point(116, 14);
+            this.txtSearchProduct.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSearchProduct.Name = "txtSearchProduct";
+            this.txtSearchProduct.PasswordChar = '\0';
+            this.txtSearchProduct.PlaceholderText = "by Name, Tag, Cate. Brand";
+            this.txtSearchProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearchProduct.SelectedText = "";
+            this.txtSearchProduct.ShadowDecoration.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.Size = new System.Drawing.Size(245, 30);
+            this.txtSearchProduct.TabIndex = 134;
+            // 
+            // guna2Panel25
+            // 
+            this.guna2Panel25.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel25.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel25.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel25.Name = "guna2Panel25";
+            this.guna2Panel25.ShadowDecoration.Parent = this.guna2Panel25;
+            this.guna2Panel25.Size = new System.Drawing.Size(20, 57);
+            this.guna2Panel25.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(26, 17);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(151, 21);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "View All Categories";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel4.Location = new System.Drawing.Point(15, 89);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(1652, 16);
+            this.guna2Panel4.TabIndex = 22;
+            // 
+            // pnlOrderSelect
+            // 
+            this.pnlOrderSelect.BackColor = System.Drawing.Color.Transparent;
+            this.pnlOrderSelect.BorderColor = System.Drawing.Color.Silver;
+            this.pnlOrderSelect.BorderRadius = 12;
+            this.pnlOrderSelect.BorderThickness = 1;
+            this.pnlOrderSelect.Controls.Add(this.guna2ComboBox1);
+            this.pnlOrderSelect.Controls.Add(this.guna2Panel2);
+            this.pnlOrderSelect.Controls.Add(this.guna2Panel6);
+            this.pnlOrderSelect.CustomBorderColor = System.Drawing.Color.Silver;
+            this.pnlOrderSelect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlOrderSelect.FillColor = System.Drawing.Color.White;
+            this.pnlOrderSelect.Location = new System.Drawing.Point(15, 16);
+            this.pnlOrderSelect.Name = "pnlOrderSelect";
+            this.pnlOrderSelect.ShadowDecoration.Parent = this.pnlOrderSelect;
+            this.pnlOrderSelect.Size = new System.Drawing.Size(1652, 73);
+            this.pnlOrderSelect.TabIndex = 21;
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.FormattingEnabled = true;
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(591, 19);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(196, 36);
+            this.guna2ComboBox1.TabIndex = 134;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.guna2Panel8);
+            this.guna2Panel2.Controls.Add(this.guna2Panel7);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel2.Location = new System.Drawing.Point(1342, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(310, 73);
+            this.guna2Panel2.TabIndex = 6;
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
+            this.guna2Panel8.Size = new System.Drawing.Size(20, 73);
+            this.guna2Panel8.TabIndex = 18;
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel7.Location = new System.Drawing.Point(290, 0);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
+            this.guna2Panel7.Size = new System.Drawing.Size(20, 73);
+            this.guna2Panel7.TabIndex = 17;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.Controls.Add(this.label3);
+            this.guna2Panel6.Controls.Add(this.guna2Panel9);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel6.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
+            this.guna2Panel6.Size = new System.Drawing.Size(542, 73);
+            this.guna2Panel6.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(18, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(260, 60);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "All Categories";
+            // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel9.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
+            this.guna2Panel9.Size = new System.Drawing.Size(20, 73);
+            this.guna2Panel9.TabIndex = 19;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel3.Location = new System.Drawing.Point(1667, 16);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(15, 889);
+            this.guna2Panel3.TabIndex = 16;
+            // 
+            // pnlInsideLeft
+            // 
+            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 16);
+            this.pnlInsideLeft.Name = "pnlInsideLeft";
+            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
+            this.pnlInsideLeft.Size = new System.Drawing.Size(15, 889);
+            this.pnlInsideLeft.TabIndex = 12;
+            // 
+            // pnlBottom
+            // 
+            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottom.Location = new System.Drawing.Point(0, 905);
+            this.pnlBottom.Name = "pnlBottom";
+            this.pnlBottom.ShadowDecoration.Parent = this.pnlBottom;
+            this.pnlBottom.Size = new System.Drawing.Size(1682, 16);
+            this.pnlBottom.TabIndex = 9;
+            // 
+            // pnlInsideTop
+            // 
+            this.pnlInsideTop.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInsideTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlInsideTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlInsideTop.Name = "pnlInsideTop";
+            this.pnlInsideTop.ShadowDecoration.Parent = this.pnlInsideTop;
+            this.pnlInsideTop.Size = new System.Drawing.Size(1682, 16);
+            this.pnlInsideTop.TabIndex = 5;
+            // 
             // FormMasterCategories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 717);
+            this.ClientSize = new System.Drawing.Size(1682, 921);
             this.Controls.Add(this.guna2Panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1698, 960);
             this.Name = "FormMasterCategories";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Master Categories";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2Panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.guna2Panel12.ResumeLayout(false);
@@ -1291,9 +1270,13 @@ namespace FinalPoject
             this.guna2Panel15.ResumeLayout(false);
             this.guna2Panel15.PerformLayout();
             this.guna2Panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).EndInit();
             this.guna2Panel13.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.pnlCategoryButton.ResumeLayout(false);
+            this.guna2Panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
+            this.tablePanel2.ResumeLayout(false);
             this.guna2Panel17.ResumeLayout(false);
             this.guna2Panel17.PerformLayout();
             this.guna2Panel23.ResumeLayout(false);
@@ -1302,10 +1285,6 @@ namespace FinalPoject
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
-            this.guna2Panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
-            this.tablePanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1343,8 +1322,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private Guna.UI2.WinForms.Guna2Button btnMasterSave;
-        private Guna.UI2.WinForms.Guna2Button btnRefresh;
+        private Guna.UI2.WinForms.Guna2Button btnMasterRefresh;
         private Guna.UI2.WinForms.Guna2Panel pnlCategoryButton;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel14;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel17;

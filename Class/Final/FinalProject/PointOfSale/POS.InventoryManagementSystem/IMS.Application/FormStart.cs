@@ -11,9 +11,9 @@ using Guna.UI2.WinForms;
 
 namespace FinalPoject
 {
-    public partial class FormMain : Form
+    public partial class FormStart : Form
     {
-        public FormMain()
+        public FormStart()
         {
             InitializeComponent();
         }
