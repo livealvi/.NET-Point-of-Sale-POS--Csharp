@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace WinFormAppSln
 {
     public partial class Dashboard : Form
@@ -52,7 +53,7 @@ namespace WinFormAppSln
         {
             try
             {
-                var sql = "select * from Movies where Title like '" + this.txtAutoSearch.Text + "%' or Id like 'm-" + this.txtMovieId.Text+ "%' ;";
+                var sql = "select * from Movies where Title like '" + this.txtAutoSearch.Text + "%' or Id like 'm-" + this.txtMovieId.Text + "%' ;";
                 this.PopulateGridView(sql);
             }
             catch (Exception exception)
@@ -74,16 +75,16 @@ namespace WinFormAppSln
                     return;
                 }
 
-                var query = @"select * from Movies where Id = '"+this.txtMovieId.Text+"';";
+                var query = @"select * from Movies where Id = '" + this.txtMovieId.Text + "';";
                 var ds = this.Da.ExecuteQuery(query);
 
                 if (ds.Tables[0].Rows.Count == 1)
                 {
                     //update
-                    var sql = @"update Movies set Title = '"+this.txtMovieTitle.Text+"', IMDB = '"+this.txtMovieIMDB.Text+ @"',
-                                    Income = '"+this.txtMovieBoxOffice.Text+"', ReleaseDate = '"+this.dtpReleaseDate.Text+ @"',
-                                    Genre = '" + this.cmbGenre.Text+"' where Id = '"+this.txtMovieId.Text+"';";
-                    
+                    var sql = @"update Movies set Title = '" + this.txtMovieTitle.Text + "', IMDB = '" + this.txtMovieIMDB.Text + @"',
+                                    Income = '" + this.txtMovieBoxOffice.Text + "', ReleaseDate = '" + this.dtpReleaseDate.Text + @"',
+                                    Genre = '" + this.cmbGenre.Text + "' where Id = '" + this.txtMovieId.Text + "';";
+
                     int count = this.Da.ExecuteDMLQuery(sql);
                     if (count == 1)
                     {
@@ -147,7 +148,7 @@ namespace WinFormAppSln
                 var id = this.dgvMovie.CurrentRow.Cells[0].Value.ToString();
                 var name = this.dgvMovie.CurrentRow.Cells[1].Value.ToString();
 
-                var sql = "delete from Movies where Id ='"+id+"';";
+                var sql = "delete from Movies where Id ='" + id + "';";
                 int count = this.Da.ExecuteDMLQuery(sql);
 
                 if (count == 1)
@@ -188,7 +189,7 @@ namespace WinFormAppSln
             string[] temp = oldId.Split('-');
             int num = Convert.ToInt32(temp[1]);
             string newId = "m-" + (++num).ToString("d3");
-            
+
             this.txtMovieId.Text = newId;
         }
 

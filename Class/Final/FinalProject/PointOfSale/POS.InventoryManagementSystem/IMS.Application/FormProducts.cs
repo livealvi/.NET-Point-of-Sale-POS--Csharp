@@ -21,8 +21,8 @@ namespace FinalPoject
 
         private void btnSaveEdit_Click(object sender, EventArgs e)
         {
-            FormAddEditProducts addEditProducts = new FormAddEditProducts();
-            addEditProducts.Show();
+            FormAddProduct addProduct = new FormAddProduct();
+            addProduct.ShowDialog();
         }
     }
 }

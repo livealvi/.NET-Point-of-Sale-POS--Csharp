@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace IMS.Entity
 {
-    public class Division
+    public class Divisions
     {
         public         int                    DivisionId  { get; set; }
         public         string                 DivisionName{ get; set; }
-        public virtual ICollection<Customer> Customers   { get; set; }
+        public virtual ICollection<Customers> Customers   { get; set; }
     }
 }

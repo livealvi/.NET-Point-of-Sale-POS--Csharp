@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IMS.Entity
 {
-    public class Blood
+    public class Bloods
     {
         public int    BloodId   { get; set; }
         public string BloodGroup{ get; set; }

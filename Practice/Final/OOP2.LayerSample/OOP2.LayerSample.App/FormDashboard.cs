@@ -27,7 +27,7 @@ namespace OOP2.LayerSample.App
 
         private void PopulateGridView(string searchKey = null)
         {
-            this.dgvProduct.AutoGenerateColumns = false;
+            //this.dgvProduct.AutoGenerateColumns = false;
             this.dgvProduct.DataSource = this.productRepo.GetAll(searchKey).ToList();
             this.dgvProduct.ClearSelection();
             this.dgvProduct.Refresh();

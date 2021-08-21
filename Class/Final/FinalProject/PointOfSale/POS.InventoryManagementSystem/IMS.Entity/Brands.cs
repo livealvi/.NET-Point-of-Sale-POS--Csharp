@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IMS.Entity
 {
-    public class Brand
+    public class Brands
     {
         public int           BrandId         { get; set; }
         public string        BrandName       { get; set; }
@@ -15,6 +15,9 @@ namespace IMS.Entity
         public string        BrandStatus     { get; set; }
         public byte[]        BrandImage      { get; set; }
 
-        public virtual ICollection<Product> Products{ get; set; }
+        public virtual Vendors Vendor{ get; set; }
+        public virtual ICollection<Products> Products{ get; set; }
+        public virtual ICollection<Products_Categories_Map> Products_Categories_Map{ get; set; }
+
     }
 }

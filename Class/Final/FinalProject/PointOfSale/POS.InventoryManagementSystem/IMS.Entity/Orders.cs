@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IMS.Entity
 {
-    public class Order
+    public class Orders
     {
         public int                       OrderId    { get; set; }
         public int                       EmployeeId { get; set; }
@@ -18,9 +18,9 @@ namespace IMS.Entity
         public Nullable<System.DateTime> PaymentDate{ get; set; }
         public byte[]                    PaymentTime{ get; set; }
 
-        public virtual Customer Customer{ get; set; }
-
-        public virtual ICollection<Order_Product_Map> Orders_Products_Map{ get; set; }
+        public virtual Customers Customer{ get; set; }
+        public virtual Employees Employee{ get; set; }
+        public virtual ICollection<Orders_Products_Categories_Map> Orders_Products_Categories_Map{ get; set; }
 
     }
 }

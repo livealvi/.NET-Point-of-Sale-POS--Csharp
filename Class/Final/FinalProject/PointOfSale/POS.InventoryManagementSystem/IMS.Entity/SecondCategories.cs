@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IMS.Entity
 {
-    public class SecondCategory
+    public class SecondCategories
     {
         public int           SecondCategoryId         { get; set; }
         public string        SecondCategoryName       { get; set; }
@@ -14,8 +14,9 @@ namespace IMS.Entity
         public string        SecondCategoryDescription{ get; set; }
         public byte[]        SecondCategoryImage      { get; set; }
 
-        public virtual MainCategorie              MainCategory   { get; set; }
-        public virtual ICollection<ThirdCategory> ThirdCategories{ get; set; }
+        public virtual MainCategories MainCategory{ get; set; }
+        public virtual ICollection<Products_Categories_Map> Products_Categories_Map{ get; set; }
+        public virtual ICollection<ThirdCategories> ThirdCategories{ get; set; }
 
     }
 }

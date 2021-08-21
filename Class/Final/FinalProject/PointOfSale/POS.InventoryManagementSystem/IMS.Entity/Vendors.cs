@@ -14,7 +14,8 @@ namespace IMS.Entity
         public string        VendorDescription{ get; set; }
         public byte[]        VendorImage      { get; set; }
 
-        public virtual ThirdCategory ThirdCategory{ get; set; }
-
+        public virtual ICollection<Brands> Brands{ get; set; }
+        public virtual ICollection<Products_Categories_Map> Products_Categories_Map{ get; set; }
+        public virtual ThirdCategories ThirdCategory{ get;                                  set; }
     }
 }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IMS.Repository
+namespace FinalPoject
 {
-    public class Class1
+    public class DelegateCollection
     {
+        public delegate void RefreshGrid(string key = null);
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IMS.Entity
 {
-    public class Customer
+    public class Customers
     {
         public int           CustomerId       { get; set; }
         public string        CustomerFirstName{ get; set; }

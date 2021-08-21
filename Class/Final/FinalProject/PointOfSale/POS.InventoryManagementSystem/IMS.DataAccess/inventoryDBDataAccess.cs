@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IMS.DataAccess
 {
-    public class inventoryDBDataAccess
+    public class InventoryDBDataAccess
     {
         private SqlConnection sqlcon;
         public SqlConnection Sqlcon
@@ -39,7 +39,7 @@ namespace IMS.DataAccess
         }
 
         //internal DataTable dt
-        public inventoryDBDataAccess()
+        public InventoryDBDataAccess()
         {
             this.Sqlcon = new SqlConnection(@"Data Source=X510UQR\SQLEXPRESS;Initial Catalog=inventoryDB;Persist Security Info=True;User ID=sa;Password=madworld");
             Sqlcon.Open();

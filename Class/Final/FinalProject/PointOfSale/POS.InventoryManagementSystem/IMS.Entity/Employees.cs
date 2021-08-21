@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IMS.Entity
 {
-    public class Employee
+    public class Employees
     {
         public int                       EmployeeId       { get; set; }
         public string                    EmployeeFirstName{ get; set; }
@@ -26,8 +26,8 @@ namespace IMS.Entity
         public int                       BloodId          { get; set; }
         public int                       DivisionId       { get; set; }
 
-        public virtual Blood              Blood   { get; set; }
-        public virtual Division           Division{ get; set; }
-        public virtual ICollection<Order> Orders  { get; set; }
+        public virtual Bloods              Blood   { get; set; }
+        public virtual Divisions           Division{ get; set; }
+        public virtual ICollection<Orders> Orders  { get; set; }
     }
 }
