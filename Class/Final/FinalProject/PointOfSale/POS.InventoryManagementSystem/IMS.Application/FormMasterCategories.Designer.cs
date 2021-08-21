@@ -75,8 +75,6 @@ namespace FinalPoject
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvAllProduct = new System.Windows.Forms.DataGridView();
             this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +86,7 @@ namespace FinalPoject
             this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
@@ -96,12 +95,19 @@ namespace FinalPoject
             this.btnMasterSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -116,11 +122,7 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnMC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBR = new Guna.UI2.WinForms.Guna2Button();
-            this.btnVN = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
@@ -130,11 +132,12 @@ namespace FinalPoject
             this.tableLayoutPanel3.SuspendLayout();
             this.guna2Panel15.SuspendLayout();
             this.guna2Panel11.SuspendLayout();
-            this.guna2Panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).BeginInit();
             this.guna2Panel13.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
+            this.tablePanel1.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
             this.guna2Panel23.SuspendLayout();
             this.pnlOrderSelect.SuspendLayout();
@@ -924,8 +927,8 @@ namespace FinalPoject
             this.guna2Panel11.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel11.BorderRadius = 12;
             this.guna2Panel11.BorderThickness = 1;
-            this.guna2Panel11.Controls.Add(this.guna2Panel22);
-            this.guna2Panel11.Controls.Add(this.guna2Panel19);
+            this.guna2Panel11.Controls.Add(this.dgvAllProduct);
+            this.guna2Panel11.Controls.Add(this.guna2Panel28);
             this.guna2Panel11.Controls.Add(this.guna2Panel26);
             this.guna2Panel11.Controls.Add(this.guna2Panel18);
             this.guna2Panel11.Controls.Add(this.guna2Panel21);
@@ -940,27 +943,6 @@ namespace FinalPoject
             this.guna2Panel11.ShadowDecoration.Parent = this.guna2Panel11;
             this.guna2Panel11.Size = new System.Drawing.Size(708, 590);
             this.guna2Panel11.TabIndex = 27;
-            // 
-            // guna2Panel22
-            // 
-            this.guna2Panel22.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel22.Location = new System.Drawing.Point(8, 229);
-            this.guna2Panel22.Name = "guna2Panel22";
-            this.guna2Panel22.ShadowDecoration.Parent = this.guna2Panel22;
-            this.guna2Panel22.Size = new System.Drawing.Size(692, 8);
-            this.guna2Panel22.TabIndex = 158;
-            // 
-            // guna2Panel19
-            // 
-            this.guna2Panel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel19.Controls.Add(this.dgvAllProduct);
-            this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel19.Location = new System.Drawing.Point(8, 237);
-            this.guna2Panel19.Name = "guna2Panel19";
-            this.guna2Panel19.ShadowDecoration.Parent = this.guna2Panel19;
-            this.guna2Panel19.Size = new System.Drawing.Size(692, 296);
-            this.guna2Panel19.TabIndex = 157;
             // 
             // dgvAllProduct
             // 
@@ -979,15 +961,16 @@ namespace FinalPoject
             this.pQuaPerUn,
             this.pDisRate,
             this.pSize});
-            this.dgvAllProduct.Location = new System.Drawing.Point(17, 18);
+            this.dgvAllProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvAllProduct.Location = new System.Drawing.Point(8, 154);
             this.dgvAllProduct.Margin = new System.Windows.Forms.Padding(2);
             this.dgvAllProduct.Name = "dgvAllProduct";
             this.dgvAllProduct.ReadOnly = true;
             this.dgvAllProduct.RowHeadersWidth = 51;
             this.dgvAllProduct.RowTemplate.Height = 24;
             this.dgvAllProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllProduct.Size = new System.Drawing.Size(655, 350);
-            this.dgvAllProduct.TabIndex = 152;
+            this.dgvAllProduct.Size = new System.Drawing.Size(692, 371);
+            this.dgvAllProduct.TabIndex = 160;
             // 
             // pID
             // 
@@ -1079,31 +1062,41 @@ namespace FinalPoject
             this.pSize.ReadOnly = true;
             this.pSize.Width = 125;
             // 
+            // guna2Panel28
+            // 
+            this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel28.Location = new System.Drawing.Point(8, 525);
+            this.guna2Panel28.Name = "guna2Panel28";
+            this.guna2Panel28.ShadowDecoration.Parent = this.guna2Panel28;
+            this.guna2Panel28.Size = new System.Drawing.Size(692, 8);
+            this.guna2Panel28.TabIndex = 159;
+            // 
             // guna2Panel26
             // 
             this.guna2Panel26.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel26.Location = new System.Drawing.Point(700, 176);
+            this.guna2Panel26.Location = new System.Drawing.Point(700, 154);
             this.guna2Panel26.Name = "guna2Panel26";
             this.guna2Panel26.ShadowDecoration.Parent = this.guna2Panel26;
-            this.guna2Panel26.Size = new System.Drawing.Size(8, 357);
+            this.guna2Panel26.Size = new System.Drawing.Size(8, 379);
             this.guna2Panel26.TabIndex = 156;
             // 
             // guna2Panel18
             // 
             this.guna2Panel18.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel18.Location = new System.Drawing.Point(0, 176);
+            this.guna2Panel18.Location = new System.Drawing.Point(0, 154);
             this.guna2Panel18.Name = "guna2Panel18";
             this.guna2Panel18.ShadowDecoration.Parent = this.guna2Panel18;
-            this.guna2Panel18.Size = new System.Drawing.Size(8, 357);
+            this.guna2Panel18.Size = new System.Drawing.Size(8, 379);
             this.guna2Panel18.TabIndex = 155;
             // 
             // guna2Panel21
             // 
             this.guna2Panel21.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel21.Location = new System.Drawing.Point(0, 168);
+            this.guna2Panel21.Location = new System.Drawing.Point(0, 146);
             this.guna2Panel21.Name = "guna2Panel21";
             this.guna2Panel21.ShadowDecoration.Parent = this.guna2Panel21;
             this.guna2Panel21.Size = new System.Drawing.Size(708, 8);
@@ -1195,11 +1188,9 @@ namespace FinalPoject
             // 
             // guna2Panel5
             // 
-            this.guna2Panel5.Controls.Add(this.btnVN);
-            this.guna2Panel5.Controls.Add(this.btnBR);
-            this.guna2Panel5.Controls.Add(this.btnTC);
-            this.guna2Panel5.Controls.Add(this.btnSC);
-            this.guna2Panel5.Controls.Add(this.btnMC);
+            this.guna2Panel5.Controls.Add(this.tablePanel1);
+            this.guna2Panel5.Controls.Add(this.guna2Panel22);
+            this.guna2Panel5.Controls.Add(this.guna2Panel27);
             this.guna2Panel5.Controls.Add(this.guna2Panel14);
             this.guna2Panel5.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel5.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
@@ -1207,8 +1198,193 @@ namespace FinalPoject
             this.guna2Panel5.Location = new System.Drawing.Point(0, 57);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(708, 111);
+            this.guna2Panel5.Size = new System.Drawing.Size(708, 89);
             this.guna2Panel5.TabIndex = 132;
+            // 
+            // tablePanel1
+            // 
+            this.tablePanel1.AutoScroll = true;
+            this.tablePanel1.AutoSize = true;
+            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.AutoSize, 244F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 256F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 237F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 187F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 177F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F)});
+            this.tablePanel1.Controls.Add(this.guna2Button1);
+            this.tablePanel1.Controls.Add(this.guna2Button2);
+            this.tablePanel1.Controls.Add(this.guna2Button3);
+            this.tablePanel1.Controls.Add(this.guna2Button4);
+            this.tablePanel1.Controls.Add(this.guna2Button5);
+            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel1.Location = new System.Drawing.Point(20, 0);
+            this.tablePanel1.Name = "tablePanel1";
+            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 49F)});
+            this.tablePanel1.Size = new System.Drawing.Size(668, 81);
+            this.tablePanel1.TabIndex = 186;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.tablePanel1.SetColumn(this.guna2Button1, 5);
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.guna2Button1.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.guna2Button1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(533, 14);
+            this.guna2Button1.Name = "guna2Button1";
+            this.tablePanel1.SetRow(this.guna2Button1, 0);
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(231, 35);
+            this.guna2Button1.TabIndex = 158;
+            this.guna2Button1.Text = "Add - Third Categories";
+            this.guna2Button1.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.tablePanel1.SetColumn(this.guna2Button2, 9);
+            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button2.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.guna2Button2.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(977, 14);
+            this.guna2Button2.Name = "guna2Button2";
+            this.tablePanel1.SetRow(this.guna2Button2, 0);
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(171, 35);
+            this.guna2Button2.TabIndex = 159;
+            this.guna2Button2.Text = "Add - Brands";
+            this.guna2Button2.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Animated = true;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.tablePanel1.SetColumn(this.guna2Button3, 3);
+            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button3.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.guna2Button3.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.guna2Button3.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button3.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(267, 14);
+            this.guna2Button3.Name = "guna2Button3";
+            this.tablePanel1.SetRow(this.guna2Button3, 0);
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(250, 35);
+            this.guna2Button3.TabIndex = 157;
+            this.guna2Button3.Text = "Add - Second Categories";
+            this.guna2Button3.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.Animated = true;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.tablePanel1.SetColumn(this.guna2Button4, 7);
+            this.guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button4.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.guna2Button4.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.guna2Button4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button4.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(780, 14);
+            this.guna2Button4.Name = "guna2Button4";
+            this.tablePanel1.SetRow(this.guna2Button4, 0);
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(181, 35);
+            this.guna2Button4.TabIndex = 160;
+            this.guna2Button4.Text = "Add - Vendors";
+            this.guna2Button4.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Animated = true;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.tablePanel1.SetColumn(this.guna2Button5, 1);
+            this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button5.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.guna2Button5.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.guna2Button5.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.guna2Button5.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Location = new System.Drawing.Point(13, 14);
+            this.guna2Button5.Name = "guna2Button5";
+            this.tablePanel1.SetRow(this.guna2Button5, 0);
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(238, 35);
+            this.guna2Button5.TabIndex = 156;
+            this.guna2Button5.Text = "Add - Main Categories";
+            this.guna2Button5.TextOffset = new System.Drawing.Point(8, 0);
+            // 
+            // guna2Panel22
+            // 
+            this.guna2Panel22.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel22.Location = new System.Drawing.Point(20, 81);
+            this.guna2Panel22.Name = "guna2Panel22";
+            this.guna2Panel22.ShadowDecoration.Parent = this.guna2Panel22;
+            this.guna2Panel22.Size = new System.Drawing.Size(668, 8);
+            this.guna2Panel22.TabIndex = 182;
+            // 
+            // guna2Panel27
+            // 
+            this.guna2Panel27.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel27.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel27.Location = new System.Drawing.Point(688, 0);
+            this.guna2Panel27.Name = "guna2Panel27";
+            this.guna2Panel27.ShadowDecoration.Parent = this.guna2Panel27;
+            this.guna2Panel27.Size = new System.Drawing.Size(20, 89);
+            this.guna2Panel27.TabIndex = 20;
             // 
             // guna2Panel14
             // 
@@ -1217,7 +1393,7 @@ namespace FinalPoject
             this.guna2Panel14.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel14.Name = "guna2Panel14";
             this.guna2Panel14.ShadowDecoration.Parent = this.guna2Panel14;
-            this.guna2Panel14.Size = new System.Drawing.Size(20, 111);
+            this.guna2Panel14.Size = new System.Drawing.Size(20, 89);
             this.guna2Panel14.TabIndex = 19;
             // 
             // guna2Panel17
@@ -1269,34 +1445,6 @@ namespace FinalPoject
             this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
             this.guna2Panel24.TabIndex = 135;
             // 
-            // txtSearchProduct
-            // 
-            this.txtSearchProduct.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.txtSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchProduct.DefaultText = "";
-            this.txtSearchProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.DisabledState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchProduct.FocusedState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchProduct.HoverState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.txtSearchProduct.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearchProduct.Location = new System.Drawing.Point(116, 14);
-            this.txtSearchProduct.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtSearchProduct.Name = "txtSearchProduct";
-            this.txtSearchProduct.PasswordChar = '\0';
-            this.txtSearchProduct.PlaceholderText = "by Name, Tag, Cate. Brand";
-            this.txtSearchProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearchProduct.SelectedText = "";
-            this.txtSearchProduct.ShadowDecoration.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.Size = new System.Drawing.Size(245, 30);
-            this.txtSearchProduct.TabIndex = 134;
-            // 
             // guna2Panel25
             // 
             this.guna2Panel25.BackColor = System.Drawing.Color.Transparent;
@@ -1314,9 +1462,9 @@ namespace FinalPoject
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(26, 17);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 21);
+            this.label6.Size = new System.Drawing.Size(151, 21);
             this.label6.TabIndex = 0;
-            this.label6.Text = "View All Product";
+            this.label6.Text = "View All Categories";
             // 
             // guna2Panel4
             // 
@@ -1447,130 +1595,33 @@ namespace FinalPoject
             this.pnlInsideTop.Size = new System.Drawing.Size(1179, 16);
             this.pnlInsideTop.TabIndex = 5;
             // 
-            // btnMC
+            // txtSearchProduct
             // 
-            this.btnMC.Animated = true;
-            this.btnMC.CheckedState.Parent = this.btnMC;
-            this.btnMC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMC.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnMC.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnMC.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMC.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnMC.CustomImages.Parent = this.btnMC;
-            this.btnMC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnMC.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnMC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnMC.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMC.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnMC.HoverState.Parent = this.btnMC;
-            this.btnMC.Location = new System.Drawing.Point(30, 13);
-            this.btnMC.Name = "btnMC";
-            this.btnMC.ShadowDecoration.Parent = this.btnMC;
-            this.btnMC.Size = new System.Drawing.Size(219, 35);
-            this.btnMC.TabIndex = 134;
-            this.btnMC.Text = "Add - Main Category";
-            this.btnMC.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnSC
-            // 
-            this.btnSC.Animated = true;
-            this.btnSC.CheckedState.Parent = this.btnSC;
-            this.btnSC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSC.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnSC.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnSC.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSC.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnSC.CustomImages.Parent = this.btnSC;
-            this.btnSC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnSC.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnSC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnSC.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSC.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnSC.HoverState.Parent = this.btnSC;
-            this.btnSC.Location = new System.Drawing.Point(255, 13);
-            this.btnSC.Name = "btnSC";
-            this.btnSC.ShadowDecoration.Parent = this.btnSC;
-            this.btnSC.Size = new System.Drawing.Size(237, 35);
-            this.btnSC.TabIndex = 135;
-            this.btnSC.Text = "Add - Second Category";
-            this.btnSC.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnTC
-            // 
-            this.btnTC.Animated = true;
-            this.btnTC.CheckedState.Parent = this.btnTC;
-            this.btnTC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTC.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnTC.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnTC.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnTC.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnTC.CustomImages.Parent = this.btnTC;
-            this.btnTC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnTC.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnTC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnTC.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTC.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnTC.HoverState.Parent = this.btnTC;
-            this.btnTC.Location = new System.Drawing.Point(30, 59);
-            this.btnTC.Name = "btnTC";
-            this.btnTC.ShadowDecoration.Parent = this.btnTC;
-            this.btnTC.Size = new System.Drawing.Size(219, 35);
-            this.btnTC.TabIndex = 136;
-            this.btnTC.Text = "Add - Third Category";
-            this.btnTC.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnBR
-            // 
-            this.btnBR.Animated = true;
-            this.btnBR.CheckedState.Parent = this.btnBR;
-            this.btnBR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBR.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnBR.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnBR.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBR.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnBR.CustomImages.Parent = this.btnBR;
-            this.btnBR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnBR.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnBR.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnBR.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBR.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnBR.HoverState.Parent = this.btnBR;
-            this.btnBR.Location = new System.Drawing.Point(507, 13);
-            this.btnBR.Name = "btnBR";
-            this.btnBR.ShadowDecoration.Parent = this.btnBR;
-            this.btnBR.Size = new System.Drawing.Size(177, 35);
-            this.btnBR.TabIndex = 137;
-            this.btnBR.Text = "Add - Brands";
-            this.btnBR.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnVN
-            // 
-            this.btnVN.Animated = true;
-            this.btnVN.CheckedState.Parent = this.btnVN;
-            this.btnVN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVN.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnVN.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnVN.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnVN.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnVN.CustomImages.Parent = this.btnVN;
-            this.btnVN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnVN.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnVN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnVN.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVN.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnVN.HoverState.Parent = this.btnVN;
-            this.btnVN.Location = new System.Drawing.Point(507, 59);
-            this.btnVN.Name = "btnVN";
-            this.btnVN.ShadowDecoration.Parent = this.btnVN;
-            this.btnVN.Size = new System.Drawing.Size(177, 35);
-            this.btnVN.TabIndex = 138;
-            this.btnVN.Text = "Add - Vendors";
-            this.btnVN.TextOffset = new System.Drawing.Point(8, 0);
+            this.txtSearchProduct.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchProduct.DefaultText = "";
+            this.txtSearchProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchProduct.DisabledState.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchProduct.FocusedState.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchProduct.HoverState.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.txtSearchProduct.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
+            this.txtSearchProduct.Location = new System.Drawing.Point(116, 14);
+            this.txtSearchProduct.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSearchProduct.Name = "txtSearchProduct";
+            this.txtSearchProduct.PasswordChar = '\0';
+            this.txtSearchProduct.PlaceholderText = "by Name, Tag, Cate. Brand";
+            this.txtSearchProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearchProduct.SelectedText = "";
+            this.txtSearchProduct.ShadowDecoration.Parent = this.txtSearchProduct;
+            this.txtSearchProduct.Size = new System.Drawing.Size(245, 30);
+            this.txtSearchProduct.TabIndex = 134;
             // 
             // FormMasterCategories
             // 
@@ -1592,11 +1643,13 @@ namespace FinalPoject
             this.guna2Panel15.ResumeLayout(false);
             this.guna2Panel15.PerformLayout();
             this.guna2Panel11.ResumeLayout(false);
-            this.guna2Panel19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).EndInit();
             this.guna2Panel13.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
+            this.tablePanel1.ResumeLayout(false);
             this.guna2Panel17.ResumeLayout(false);
             this.guna2Panel17.PerformLayout();
             this.guna2Panel23.ResumeLayout(false);
@@ -1680,8 +1733,17 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2ComboBox cmbBr;
         private Guna.UI2.WinForms.Guna2TextBox txtBrId;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel26;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel18;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel21;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel27;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel22;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel19;
+        private DevExpress.Utils.Layout.TablePanel tablePanel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private System.Windows.Forms.DataGridView dgvAllProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn pID;
         private System.Windows.Forms.DataGridViewTextBoxColumn pTag;
@@ -1693,13 +1755,6 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn pQuaPerUn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pDisRate;
         private System.Windows.Forms.DataGridViewTextBoxColumn pSize;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel26;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel18;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel21;
-        private Guna.UI2.WinForms.Guna2Button btnMC;
-        private Guna.UI2.WinForms.Guna2Button btnVN;
-        private Guna.UI2.WinForms.Guna2Button btnBR;
-        private Guna.UI2.WinForms.Guna2Button btnTC;
-        private Guna.UI2.WinForms.Guna2Button btnSC;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel28;
     }
 }
