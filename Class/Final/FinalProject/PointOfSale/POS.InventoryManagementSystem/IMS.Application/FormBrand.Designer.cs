@@ -1,7 +1,7 @@
 ﻿
 namespace FinalPoject
 {
-    partial class FormMainCategory
+    partial class FormBrand
     {
         /// <summary>
         /// Required designer variable.
@@ -29,30 +29,18 @@ namespace FinalPoject
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlOrderSelect = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtMainTag = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMainId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtDiscription = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMainName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtBrandTag = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBrandId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBrandDisc = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBrandName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -61,7 +49,7 @@ namespace FinalPoject
             this.btnAddProductPhoto = new Guna.UI2.WinForms.Guna2Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbmage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
@@ -74,12 +62,13 @@ namespace FinalPoject
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
-            this.dgvAllProduct = new System.Windows.Forms.DataGridView();
+            this.dgvBrand = new System.Windows.Forms.DataGridView();
             this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -99,158 +88,37 @@ namespace FinalPoject
             this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.pnlOrderSelect.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2Panel6.SuspendLayout();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlOrderSelect = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbmage)).BeginInit();
             this.guna2Panel62.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.guna2Panel15.SuspendLayout();
             this.guna2Panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBrand)).BeginInit();
             this.guna2Panel13.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
             this.guna2Panel23.SuspendLayout();
+            this.pnlOrderSelect.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlInsideTop
-            // 
-            this.pnlInsideTop.BackColor = System.Drawing.Color.Transparent;
-            this.pnlInsideTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlInsideTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlInsideTop.Name = "pnlInsideTop";
-            this.pnlInsideTop.ShadowDecoration.Parent = this.pnlInsideTop;
-            this.pnlInsideTop.Size = new System.Drawing.Size(1179, 16);
-            this.pnlInsideTop.TabIndex = 24;
-            // 
-            // pnlBottom
-            // 
-            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 701);
-            this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.ShadowDecoration.Parent = this.pnlBottom;
-            this.pnlBottom.Size = new System.Drawing.Size(1179, 16);
-            this.pnlBottom.TabIndex = 27;
-            // 
-            // pnlInsideLeft
-            // 
-            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 16);
-            this.pnlInsideLeft.Name = "pnlInsideLeft";
-            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
-            this.pnlInsideLeft.Size = new System.Drawing.Size(15, 685);
-            this.pnlInsideLeft.TabIndex = 28;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(1164, 16);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(15, 685);
-            this.guna2Panel3.TabIndex = 29;
-            // 
-            // pnlOrderSelect
-            // 
-            this.pnlOrderSelect.BackColor = System.Drawing.Color.Transparent;
-            this.pnlOrderSelect.BorderColor = System.Drawing.Color.Silver;
-            this.pnlOrderSelect.BorderRadius = 12;
-            this.pnlOrderSelect.BorderThickness = 1;
-            this.pnlOrderSelect.Controls.Add(this.guna2Panel2);
-            this.pnlOrderSelect.Controls.Add(this.guna2Panel6);
-            this.pnlOrderSelect.CustomBorderColor = System.Drawing.Color.Silver;
-            this.pnlOrderSelect.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlOrderSelect.FillColor = System.Drawing.Color.White;
-            this.pnlOrderSelect.Location = new System.Drawing.Point(15, 16);
-            this.pnlOrderSelect.Name = "pnlOrderSelect";
-            this.pnlOrderSelect.ShadowDecoration.Parent = this.pnlOrderSelect;
-            this.pnlOrderSelect.Size = new System.Drawing.Size(1149, 73);
-            this.pnlOrderSelect.TabIndex = 30;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2Panel8);
-            this.guna2Panel2.Controls.Add(this.guna2Panel7);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(839, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(310, 73);
-            this.guna2Panel2.TabIndex = 6;
-            // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
-            this.guna2Panel8.Size = new System.Drawing.Size(20, 73);
-            this.guna2Panel8.TabIndex = 18;
-            // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel7.Location = new System.Drawing.Point(290, 0);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
-            this.guna2Panel7.Size = new System.Drawing.Size(20, 73);
-            this.guna2Panel7.TabIndex = 17;
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.Controls.Add(this.label3);
-            this.guna2Panel6.Controls.Add(this.guna2Panel9);
-            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel6.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
-            this.guna2Panel6.Size = new System.Drawing.Size(542, 73);
-            this.guna2Panel6.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 60);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Main Category";
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel9.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
-            this.guna2Panel9.Size = new System.Drawing.Size(20, 73);
-            this.guna2Panel9.TabIndex = 19;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(15, 89);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1149, 16);
-            this.guna2Panel1.TabIndex = 33;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 12;
             // 
             // tableLayoutPanel1
             // 
@@ -267,7 +135,7 @@ namespace FinalPoject
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1149, 596);
-            this.tableLayoutPanel1.TabIndex = 34;
+            this.tableLayoutPanel1.TabIndex = 42;
             // 
             // guna2Panel12
             // 
@@ -292,6 +160,7 @@ namespace FinalPoject
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
@@ -303,7 +172,7 @@ namespace FinalPoject
             this.panel1.Controls.Add(this.btnAddProductPhoto);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pbImage);
+            this.panel1.Controls.Add(this.pbmage);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.guna2TextBox11);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -314,12 +183,24 @@ namespace FinalPoject
             this.panel1.Size = new System.Drawing.Size(414, 450);
             this.panel1.TabIndex = 153;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(50, 408);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 15);
+            this.label2.TabIndex = 167;
+            this.label2.Text = "Vendor Name";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(73, 404);
+            this.label1.Location = new System.Drawing.Point(81, 464);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 15);
@@ -331,25 +212,28 @@ namespace FinalPoject
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(32, 309);
+            this.label26.Location = new System.Drawing.Point(28, 309);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 15);
+            this.label26.Size = new System.Drawing.Size(62, 15);
             this.label26.TabIndex = 165;
-            this.label26.Text = "Main Category TAG";
+            this.label26.Text = "Brand TAG";
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.txtMainTag, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txtMainId, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtDiscription, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.txtMainName, 0, 5);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(144, 236);
+            this.tableLayoutPanel2.Controls.Add(this.cmbVendor, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.txtBrandTag, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtBrandId, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtBrandDisc, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.txtBrandName, 0, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(152, 236);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 9;
+            this.tableLayoutPanel2.RowCount = 11;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
@@ -359,119 +243,137 @@ namespace FinalPoject
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 360);
             this.tableLayoutPanel2.TabIndex = 164;
             // 
-            // txtMainTag
+            // cmbVendor
             // 
-            this.txtMainTag.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMainTag.DefaultText = "";
-            this.txtMainTag.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMainTag.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMainTag.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMainTag.DisabledState.Parent = this.txtMainTag;
-            this.txtMainTag.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMainTag.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMainTag.FocusedState.Parent = this.txtMainTag;
-            this.txtMainTag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMainTag.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtMainTag.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMainTag.HoverState.Parent = this.txtMainTag;
-            this.txtMainTag.Location = new System.Drawing.Point(3, 64);
-            this.txtMainTag.Name = "txtMainTag";
-            this.txtMainTag.PasswordChar = '\0';
-            this.txtMainTag.PlaceholderText = "";
-            this.txtMainTag.ReadOnly = true;
-            this.txtMainTag.SelectedText = "";
-            this.txtMainTag.ShadowDecoration.Parent = this.txtMainTag;
-            this.txtMainTag.Size = new System.Drawing.Size(194, 30);
-            this.txtMainTag.TabIndex = 167;
+            this.cmbVendor.BackColor = System.Drawing.Color.Transparent;
+            this.cmbVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVendor.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbVendor.FocusedState.Parent = this.cmbVendor;
+            this.cmbVendor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbVendor.FormattingEnabled = true;
+            this.cmbVendor.HoverState.Parent = this.cmbVendor;
+            this.cmbVendor.ItemHeight = 30;
+            this.cmbVendor.ItemsAppearance.Parent = this.cmbVendor;
+            this.cmbVendor.Location = new System.Drawing.Point(2, 161);
+            this.cmbVendor.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbVendor.Name = "cmbVendor";
+            this.cmbVendor.ShadowDecoration.Parent = this.cmbVendor;
+            this.cmbVendor.Size = new System.Drawing.Size(196, 36);
+            this.cmbVendor.TabIndex = 183;
             // 
-            // txtMainId
+            // txtBrandTag
             // 
-            this.txtMainId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMainId.DefaultText = "";
-            this.txtMainId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMainId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMainId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMainId.DisabledState.Parent = this.txtMainId;
-            this.txtMainId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMainId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMainId.FocusedState.Parent = this.txtMainId;
-            this.txtMainId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMainId.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtMainId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMainId.HoverState.Parent = this.txtMainId;
-            this.txtMainId.Location = new System.Drawing.Point(3, 15);
-            this.txtMainId.Name = "txtMainId";
-            this.txtMainId.PasswordChar = '\0';
-            this.txtMainId.PlaceholderText = "";
-            this.txtMainId.SelectedText = "";
-            this.txtMainId.ShadowDecoration.Parent = this.txtMainId;
-            this.txtMainId.Size = new System.Drawing.Size(194, 30);
-            this.txtMainId.TabIndex = 55;
+            this.txtBrandTag.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBrandTag.DefaultText = "";
+            this.txtBrandTag.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBrandTag.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBrandTag.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandTag.DisabledState.Parent = this.txtBrandTag;
+            this.txtBrandTag.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandTag.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandTag.FocusedState.Parent = this.txtBrandTag;
+            this.txtBrandTag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBrandTag.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtBrandTag.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandTag.HoverState.Parent = this.txtBrandTag;
+            this.txtBrandTag.Location = new System.Drawing.Point(3, 64);
+            this.txtBrandTag.Name = "txtBrandTag";
+            this.txtBrandTag.PasswordChar = '\0';
+            this.txtBrandTag.PlaceholderText = "";
+            this.txtBrandTag.ReadOnly = true;
+            this.txtBrandTag.SelectedText = "";
+            this.txtBrandTag.ShadowDecoration.Parent = this.txtBrandTag;
+            this.txtBrandTag.Size = new System.Drawing.Size(194, 30);
+            this.txtBrandTag.TabIndex = 167;
             // 
-            // txtDiscription
+            // txtBrandId
             // 
-            this.txtDiscription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiscription.DefaultText = "";
-            this.txtDiscription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDiscription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDiscription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiscription.DisabledState.Parent = this.txtDiscription;
-            this.txtDiscription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiscription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscription.FocusedState.Parent = this.txtDiscription;
-            this.txtDiscription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscription.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtDiscription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscription.HoverState.Parent = this.txtDiscription;
-            this.txtDiscription.Location = new System.Drawing.Point(3, 162);
-            this.txtDiscription.Multiline = true;
-            this.txtDiscription.Name = "txtDiscription";
-            this.txtDiscription.PasswordChar = '\0';
-            this.txtDiscription.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtDiscription.PlaceholderText = "Ex: Products Details (Max 50 words)";
-            this.txtDiscription.SelectedText = "";
-            this.txtDiscription.ShadowDecoration.Parent = this.txtDiscription;
-            this.txtDiscription.Size = new System.Drawing.Size(194, 115);
-            this.txtDiscription.TabIndex = 146;
+            this.txtBrandId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBrandId.DefaultText = "";
+            this.txtBrandId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBrandId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBrandId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandId.DisabledState.Parent = this.txtBrandId;
+            this.txtBrandId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandId.FocusedState.Parent = this.txtBrandId;
+            this.txtBrandId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBrandId.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtBrandId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandId.HoverState.Parent = this.txtBrandId;
+            this.txtBrandId.Location = new System.Drawing.Point(3, 15);
+            this.txtBrandId.Name = "txtBrandId";
+            this.txtBrandId.PasswordChar = '\0';
+            this.txtBrandId.PlaceholderText = "";
+            this.txtBrandId.SelectedText = "";
+            this.txtBrandId.ShadowDecoration.Parent = this.txtBrandId;
+            this.txtBrandId.Size = new System.Drawing.Size(194, 30);
+            this.txtBrandId.TabIndex = 55;
             // 
-            // txtMainName
+            // txtBrandDisc
             // 
-            this.txtMainName.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.txtMainName.BackColor = System.Drawing.Color.Transparent;
-            this.txtMainName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMainName.DefaultText = "";
-            this.txtMainName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMainName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMainName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMainName.DisabledState.Parent = this.txtMainName;
-            this.txtMainName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMainName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMainName.FocusedState.Parent = this.txtMainName;
-            this.txtMainName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMainName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtMainName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMainName.HoverState.Parent = this.txtMainName;
-            this.txtMainName.Location = new System.Drawing.Point(3, 113);
-            this.txtMainName.Name = "txtMainName";
-            this.txtMainName.PasswordChar = '\0';
-            this.txtMainName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtMainName.PlaceholderText = "Ex: Chips, Coke, Mobile";
-            this.txtMainName.SelectedText = "";
-            this.txtMainName.ShadowDecoration.Parent = this.txtMainName;
-            this.txtMainName.Size = new System.Drawing.Size(194, 30);
-            this.txtMainName.TabIndex = 56;
+            this.txtBrandDisc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBrandDisc.DefaultText = "";
+            this.txtBrandDisc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBrandDisc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBrandDisc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandDisc.DisabledState.Parent = this.txtBrandDisc;
+            this.txtBrandDisc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandDisc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandDisc.FocusedState.Parent = this.txtBrandDisc;
+            this.txtBrandDisc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBrandDisc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtBrandDisc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandDisc.HoverState.Parent = this.txtBrandDisc;
+            this.txtBrandDisc.Location = new System.Drawing.Point(3, 211);
+            this.txtBrandDisc.Multiline = true;
+            this.txtBrandDisc.Name = "txtBrandDisc";
+            this.txtBrandDisc.PasswordChar = '\0';
+            this.txtBrandDisc.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtBrandDisc.PlaceholderText = "Ex: Products Details (Max 50 words)";
+            this.txtBrandDisc.SelectedText = "";
+            this.txtBrandDisc.ShadowDecoration.Parent = this.txtBrandDisc;
+            this.txtBrandDisc.Size = new System.Drawing.Size(194, 115);
+            this.txtBrandDisc.TabIndex = 146;
+            // 
+            // txtBrandName
+            // 
+            this.txtBrandName.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.txtBrandName.BackColor = System.Drawing.Color.Transparent;
+            this.txtBrandName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBrandName.DefaultText = "";
+            this.txtBrandName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBrandName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBrandName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandName.DisabledState.Parent = this.txtBrandName;
+            this.txtBrandName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandName.FocusedState.Parent = this.txtBrandName;
+            this.txtBrandName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBrandName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtBrandName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandName.HoverState.Parent = this.txtBrandName;
+            this.txtBrandName.Location = new System.Drawing.Point(3, 113);
+            this.txtBrandName.Name = "txtBrandName";
+            this.txtBrandName.PasswordChar = '\0';
+            this.txtBrandName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.txtBrandName.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtBrandName.SelectedText = "";
+            this.txtBrandName.ShadowDecoration.Parent = this.txtBrandName;
+            this.txtBrandName.Size = new System.Drawing.Size(194, 30);
+            this.txtBrandName.TabIndex = 56;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(348, 404);
+            this.label22.Location = new System.Drawing.Point(356, 404);
             this.label22.Margin = new System.Windows.Forms.Padding(0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(27, 15);
@@ -483,7 +385,7 @@ namespace FinalPoject
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(348, 355);
+            this.label21.Location = new System.Drawing.Point(356, 355);
             this.label21.Margin = new System.Windows.Forms.Padding(0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(27, 15);
@@ -495,7 +397,7 @@ namespace FinalPoject
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(348, 258);
+            this.label20.Location = new System.Drawing.Point(356, 258);
             this.label20.Margin = new System.Windows.Forms.Padding(0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(27, 15);
@@ -507,7 +409,7 @@ namespace FinalPoject
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(348, 307);
+            this.label19.Location = new System.Drawing.Point(356, 307);
             this.label19.Margin = new System.Windows.Forms.Padding(0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(27, 15);
@@ -569,38 +471,38 @@ namespace FinalPoject
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(42, 258);
+            this.label8.Location = new System.Drawing.Point(38, 258);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 15);
+            this.label8.Size = new System.Drawing.Size(52, 15);
             this.label8.TabIndex = 44;
-            this.label8.Text = "Main Category ID";
+            this.label8.Text = "Brand ID";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(21, 357);
+            this.label7.Location = new System.Drawing.Point(14, 357);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 15);
+            this.label7.Size = new System.Drawing.Size(73, 15);
             this.label7.TabIndex = 45;
-            this.label7.Text = "Main Category Name";
+            this.label7.Text = "Brand Name";
             // 
-            // pbImage
+            // pbmage
             // 
-            this.pbImage.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pbImage.ErrorImage = global::FinalPoject.Properties.Resources.icons8_no_image_480px_2;
-            this.pbImage.Image = global::FinalPoject.Properties.Resources.icons8_add_camera_480px;
-            this.pbImage.Location = new System.Drawing.Point(20, 20);
-            this.pbImage.Margin = new System.Windows.Forms.Padding(2);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.ShadowDecoration.Parent = this.pbImage;
-            this.pbImage.Size = new System.Drawing.Size(150, 162);
-            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbImage.TabIndex = 148;
-            this.pbImage.TabStop = false;
+            this.pbmage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pbmage.ErrorImage = global::FinalPoject.Properties.Resources.icons8_no_image_480px_2;
+            this.pbmage.Image = global::FinalPoject.Properties.Resources.icons8_add_camera_480px;
+            this.pbmage.Location = new System.Drawing.Point(20, 20);
+            this.pbmage.Margin = new System.Windows.Forms.Padding(2);
+            this.pbmage.Name = "pbmage";
+            this.pbmage.ShadowDecoration.Parent = this.pbmage;
+            this.pbmage.Size = new System.Drawing.Size(150, 162);
+            this.pbmage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbmage.TabIndex = 148;
+            this.pbmage.TabStop = false;
             // 
             // label9
             // 
@@ -777,7 +679,7 @@ namespace FinalPoject
             this.guna2Panel11.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel11.BorderRadius = 12;
             this.guna2Panel11.BorderThickness = 1;
-            this.guna2Panel11.Controls.Add(this.dgvAllProduct);
+            this.guna2Panel11.Controls.Add(this.dgvBrand);
             this.guna2Panel11.Controls.Add(this.guna2Panel28);
             this.guna2Panel11.Controls.Add(this.guna2Panel26);
             this.guna2Panel11.Controls.Add(this.guna2Panel18);
@@ -794,33 +696,34 @@ namespace FinalPoject
             this.guna2Panel11.Size = new System.Drawing.Size(708, 590);
             this.guna2Panel11.TabIndex = 27;
             // 
-            // dgvAllProduct
+            // dgvBrand
             // 
-            this.dgvAllProduct.AllowUserToAddRows = false;
-            this.dgvAllProduct.AllowUserToDeleteRows = false;
-            this.dgvAllProduct.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvAllProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAllProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvBrand.AllowUserToAddRows = false;
+            this.dgvBrand.AllowUserToDeleteRows = false;
+            this.dgvBrand.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBrand.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pID,
             this.pName,
             this.pTag,
             this.pBrandName,
-            this.pStatus});
-            this.dgvAllProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAllProduct.Location = new System.Drawing.Point(8, 154);
-            this.dgvAllProduct.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvAllProduct.Name = "dgvAllProduct";
-            this.dgvAllProduct.ReadOnly = true;
-            this.dgvAllProduct.RowHeadersWidth = 51;
-            this.dgvAllProduct.RowTemplate.Height = 24;
-            this.dgvAllProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllProduct.Size = new System.Drawing.Size(692, 371);
-            this.dgvAllProduct.TabIndex = 160;
+            this.pStatus,
+            this.Column1});
+            this.dgvBrand.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBrand.Location = new System.Drawing.Point(8, 154);
+            this.dgvBrand.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvBrand.Name = "dgvBrand";
+            this.dgvBrand.ReadOnly = true;
+            this.dgvBrand.RowHeadersWidth = 51;
+            this.dgvBrand.RowTemplate.Height = 24;
+            this.dgvBrand.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvBrand.Size = new System.Drawing.Size(692, 371);
+            this.dgvBrand.TabIndex = 160;
             // 
             // pID
             // 
             this.pID.DataPropertyName = "ProductId";
-            this.pID.HeaderText = "Main Category ID";
+            this.pID.HeaderText = "Brand ID";
             this.pID.MinimumWidth = 6;
             this.pID.Name = "pID";
             this.pID.ReadOnly = true;
@@ -829,7 +732,7 @@ namespace FinalPoject
             // pName
             // 
             this.pName.DataPropertyName = "ProductName";
-            this.pName.HeaderText = "Main Category TAG";
+            this.pName.HeaderText = "Brand TAG";
             this.pName.MinimumWidth = 6;
             this.pName.Name = "pName";
             this.pName.ReadOnly = true;
@@ -838,7 +741,7 @@ namespace FinalPoject
             // pTag
             // 
             this.pTag.DataPropertyName = "ProductIdTag";
-            this.pTag.HeaderText = "Main Category Name";
+            this.pTag.HeaderText = "Brand Name";
             this.pTag.MinimumWidth = 6;
             this.pTag.Name = "pTag";
             this.pTag.ReadOnly = true;
@@ -847,7 +750,7 @@ namespace FinalPoject
             // pBrandName
             // 
             this.pBrandName.DataPropertyName = "BrandName";
-            this.pBrandName.HeaderText = "Main Category Disc.";
+            this.pBrandName.HeaderText = "Brand Disc.";
             this.pBrandName.MinimumWidth = 6;
             this.pBrandName.Name = "pBrandName";
             this.pBrandName.ReadOnly = true;
@@ -856,11 +759,17 @@ namespace FinalPoject
             // pStatus
             // 
             this.pStatus.DataPropertyName = "ProductStatus";
-            this.pStatus.HeaderText = "Main Category Picture";
+            this.pStatus.HeaderText = "Brand Picture";
             this.pStatus.MinimumWidth = 6;
             this.pStatus.Name = "pStatus";
             this.pStatus.ReadOnly = true;
             this.pStatus.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Vendor Name";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // guna2Panel28
             // 
@@ -1124,11 +1033,140 @@ namespace FinalPoject
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(26, 17);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 21);
+            this.label6.Size = new System.Drawing.Size(122, 21);
             this.label6.TabIndex = 0;
-            this.label6.Text = "View All Categories";
+            this.label6.Text = "View All Brands";
             // 
-            // FormMainCategory
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(15, 89);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(1149, 16);
+            this.guna2Panel1.TabIndex = 41;
+            // 
+            // pnlOrderSelect
+            // 
+            this.pnlOrderSelect.BackColor = System.Drawing.Color.Transparent;
+            this.pnlOrderSelect.BorderColor = System.Drawing.Color.Silver;
+            this.pnlOrderSelect.BorderRadius = 12;
+            this.pnlOrderSelect.BorderThickness = 1;
+            this.pnlOrderSelect.Controls.Add(this.guna2Panel2);
+            this.pnlOrderSelect.Controls.Add(this.guna2Panel6);
+            this.pnlOrderSelect.CustomBorderColor = System.Drawing.Color.Silver;
+            this.pnlOrderSelect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlOrderSelect.FillColor = System.Drawing.Color.White;
+            this.pnlOrderSelect.Location = new System.Drawing.Point(15, 16);
+            this.pnlOrderSelect.Name = "pnlOrderSelect";
+            this.pnlOrderSelect.ShadowDecoration.Parent = this.pnlOrderSelect;
+            this.pnlOrderSelect.Size = new System.Drawing.Size(1149, 73);
+            this.pnlOrderSelect.TabIndex = 40;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.guna2Panel8);
+            this.guna2Panel2.Controls.Add(this.guna2Panel7);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel2.Location = new System.Drawing.Point(839, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(310, 73);
+            this.guna2Panel2.TabIndex = 6;
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
+            this.guna2Panel8.Size = new System.Drawing.Size(20, 73);
+            this.guna2Panel8.TabIndex = 18;
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel7.Location = new System.Drawing.Point(290, 0);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
+            this.guna2Panel7.Size = new System.Drawing.Size(20, 73);
+            this.guna2Panel7.TabIndex = 17;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.Controls.Add(this.label3);
+            this.guna2Panel6.Controls.Add(this.guna2Panel9);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel6.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
+            this.guna2Panel6.Size = new System.Drawing.Size(542, 73);
+            this.guna2Panel6.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(18, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(145, 60);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Brands";
+            // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel9.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
+            this.guna2Panel9.Size = new System.Drawing.Size(20, 73);
+            this.guna2Panel9.TabIndex = 19;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel3.Location = new System.Drawing.Point(1164, 16);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(15, 685);
+            this.guna2Panel3.TabIndex = 39;
+            // 
+            // pnlInsideLeft
+            // 
+            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 16);
+            this.pnlInsideLeft.Name = "pnlInsideLeft";
+            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
+            this.pnlInsideLeft.Size = new System.Drawing.Size(15, 685);
+            this.pnlInsideLeft.TabIndex = 38;
+            // 
+            // pnlBottom
+            // 
+            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottom.Location = new System.Drawing.Point(0, 701);
+            this.pnlBottom.Name = "pnlBottom";
+            this.pnlBottom.ShadowDecoration.Parent = this.pnlBottom;
+            this.pnlBottom.Size = new System.Drawing.Size(1179, 16);
+            this.pnlBottom.TabIndex = 37;
+            // 
+            // pnlInsideTop
+            // 
+            this.pnlInsideTop.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInsideTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlInsideTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlInsideTop.Name = "pnlInsideTop";
+            this.pnlInsideTop.ShadowDecoration.Parent = this.pnlInsideTop;
+            this.pnlInsideTop.Size = new System.Drawing.Size(1179, 16);
+            this.pnlInsideTop.TabIndex = 36;
+            // 
+            // FormBrand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1140,24 +1178,20 @@ namespace FinalPoject
             this.Controls.Add(this.pnlInsideLeft);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlInsideTop);
-            this.Name = "FormMainCategory";
-            this.Text = "FormMainCategory";
-            this.pnlOrderSelect.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel6.ResumeLayout(false);
-            this.guna2Panel6.PerformLayout();
+            this.Name = "FormBrand";
+            this.Text = "FormBrand";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.guna2Panel12.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbmage)).EndInit();
             this.guna2Panel62.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.guna2Panel15.ResumeLayout(false);
             this.guna2Panel15.PerformLayout();
             this.guna2Panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBrand)).EndInit();
             this.guna2Panel13.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
@@ -1165,26 +1199,39 @@ namespace FinalPoject
             this.guna2Panel17.PerformLayout();
             this.guna2Panel23.ResumeLayout(false);
             this.guna2Panel23.PerformLayout();
+            this.pnlOrderSelect.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel6.ResumeLayout(false);
+            this.guna2Panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Panel pnlInsideTop;
-        private Guna.UI2.WinForms.Guna2Panel pnlBottom;
-        private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Panel pnlOrderSelect;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbVendor;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandTag;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandId;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandDisc;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandName;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private Guna.UI2.WinForms.Guna2Button btnRemoveProductPhoto;
+        private Guna.UI2.WinForms.Guna2Button btnAddProductPhoto;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2PictureBox pbmage;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel20;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel62;
@@ -1195,7 +1242,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel16;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel11;
-        private System.Windows.Forms.DataGridView dgvAllProduct;
+        private System.Windows.Forms.DataGridView dgvBrand;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel28;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel26;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel18;
@@ -1215,29 +1262,23 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2TextBox txtSearchProduct;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel25;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Guna.UI2.WinForms.Guna2TextBox txtMainTag;
-        private Guna.UI2.WinForms.Guna2TextBox txtMainId;
-        private Guna.UI2.WinForms.Guna2TextBox txtDiscription;
-        private Guna.UI2.WinForms.Guna2TextBox txtMainName;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2Button btnRemoveProductPhoto;
-        private Guna.UI2.WinForms.Guna2Button btnAddProductPhoto;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2PictureBox pbImage;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
-        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel pnlOrderSelect;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft;
+        private Guna.UI2.WinForms.Guna2Panel pnlBottom;
+        private Guna.UI2.WinForms.Guna2Panel pnlInsideTop;
         private System.Windows.Forms.DataGridViewTextBoxColumn pID;
         private System.Windows.Forms.DataGridViewTextBoxColumn pName;
         private System.Windows.Forms.DataGridViewTextBoxColumn pTag;
         private System.Windows.Forms.DataGridViewTextBoxColumn pBrandName;
         private System.Windows.Forms.DataGridViewTextBoxColumn pStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

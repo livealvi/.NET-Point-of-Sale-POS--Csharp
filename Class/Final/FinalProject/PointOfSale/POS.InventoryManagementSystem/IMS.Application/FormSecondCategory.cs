@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalPoject
 {
-    public partial class SecondCategory : Form
+    public partial class FormSecondCategory : Form
     {
-        public SecondCategory()
+        public FormSecondCategory()
         {
             InitializeComponent();
         }

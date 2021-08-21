@@ -17,14 +17,35 @@ namespace FinalPoject
             InitializeComponent();
         }
 
-        private void guna2Panel14_Paint(object sender, PaintEventArgs e)
+        private void btnAddMainCate_Click(object sender, EventArgs e)
         {
-
+            FormMainCategory mainCategory = new FormMainCategory();
+            mainCategory.ShowDialog();
         }
 
-        private void btnSaveProduct_Click(object sender, EventArgs e)
+        private void btnAddSecondCate_Click(object sender, EventArgs e)
         {
-
+            FormSecondCategory secondCategory = new FormSecondCategory();
+            secondCategory.ShowDialog();
         }
+
+        private void btnAddThirdCate_Click(object sender, EventArgs e)
+        {
+            FormThirdCategory thirdCategory = new FormThirdCategory();
+            thirdCategory.ShowDialog();
+        }
+
+        private void btnAddVendor_Click(object sender, EventArgs e)
+        {
+            FormVendor vendor = new FormVendor();
+            vendor.ShowDialog();
+        }
+
+        private void btnAddBrandCate_Click(object sender, EventArgs e)
+        {
+            FormBrand brand = new FormBrand();
+            brand.ShowDialog();
+        }
+
     }
 }

@@ -102,11 +102,29 @@
     <Compile Include="FormAddProduct.Designer.cs">
       <DependentUpon>FormAddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrand.Designer.cs">
+      <DependentUpon>FormBrand.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMainCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMainCategory.Designer.cs">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThirdCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThirdCategory.Designer.cs">
+      <DependentUpon>FormThirdCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVendor.Designer.cs">
+      <DependentUpon>FormVendor.cs</DependentUpon>
     </Compile>
     <Compile Include="ResponsiveTableTextBox.cs">
       <SubType>Form</SubType>
@@ -152,11 +170,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecondCategory.cs">
+    <Compile Include="FormSecondCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SecondCategory.Designer.cs">
-      <DependentUpon>SecondCategory.cs</DependentUpon>
+    <Compile Include="FormSecondCategory.Designer.cs">
+      <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="XtraForm1.cs">
       <SubType>Form</SubType>
@@ -167,8 +185,17 @@
     <EmbeddedResource Include="FormAddProduct.resx">
       <DependentUpon>FormAddProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBrand.resx">
+      <DependentUpon>FormBrand.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainCategory.resx">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThirdCategory.resx">
+      <DependentUpon>FormThirdCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVendor.resx">
+      <DependentUpon>FormVendor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="ResponsiveTableTextBox.resx">
@@ -196,8 +223,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SecondCategory.resx">
-      <DependentUpon>SecondCategory.cs</DependentUpon>
+    <EmbeddedResource Include="FormSecondCategory.resx">
+      <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
