@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace FinalPoject
 {
-    public partial class FormAddCataAndBrands : Form
+    public partial class FormMasterCategories : Form
     {
-        public FormAddCataAndBrands()
+        public FormMasterCategories()
         {
             InitializeComponent();
         }
 
         private void guna2Panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSaveProduct_Click(object sender, EventArgs e)
         {
 
         }

@@ -103,11 +103,11 @@
     <Compile Include="ComponentsDesign.Designer.cs">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddCataAndBrands.cs">
+    <Compile Include="FormMasterCategories.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddCataAndBrands.Designer.cs">
-      <DependentUpon>FormAddCataAndBrands.cs</DependentUpon>
+    <Compile Include="FormMasterCategories.Designer.cs">
+      <DependentUpon>FormMasterCategories.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCustomers.cs">
       <SubType>Form</SubType>
@@ -151,8 +151,8 @@
     <EmbeddedResource Include="ComponentsDesign.resx">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddCataAndBrands.resx">
-      <DependentUpon>FormAddCataAndBrands.cs</DependentUpon>
+    <EmbeddedResource Include="FormMasterCategories.resx">
+      <DependentUpon>FormMasterCategories.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCustomers.resx">
       <DependentUpon>FormCustomers.cs</DependentUpon>
