@@ -17,16 +17,16 @@ namespace FinalPoject
 {
     public partial class FormAddProduct : Form
     {
-        private ProductRepo                    productRepo{get;  set;}
+        private ProductsRepo                    productRepo{get;  set;}
         private BrandsRepo                     brandRepo  {get;  set;}
         private DelegateCollection.RefreshGrid refreshGrid{ get; set; }
-
-        private ProductsBrandViewRepo pbvReop{ get; set; }
+        //private ProductsBrandViewRepo          pbvReop    { get; set; }
         public FormAddProduct()
         {
             InitializeComponent();
-            this.productRepo = new ProductRepo();
-            this.brandRepo = new BrandsRepo(); 
+            this.productRepo = new ProductsRepo();
+            this.brandRepo = new BrandsRepo();
+            this.RefreshContent();
         }
 
         private void PopulateGridView(string searchKey = null)
@@ -35,8 +35,8 @@ namespace FinalPoject
             this.dgvAllProduct.DataSource = this.productRepo.GetAll(searchKey).ToList();
             this.dgvAllProduct.ClearSelection();
             this.Refresh();
-
             this.RefreshContent();
+
             this.cmbBrand.Items.Clear();
             this.cmbBrand.Items.Add("--Not Selected--");
             this.cmbBrand.SelectedIndex = cmbBrand.FindStringExact("--Not Selected--");
@@ -45,9 +45,12 @@ namespace FinalPoject
                 this.cmbBrand.Items.Add(row["BrandName"].ToString());
             }
 
-            //this.txtId.Text = this.dgvAllProduct.CurrentRow.Cells["pID"].Value.ToString();
-            //this.txtTag.Text = this.dgvAllProduct.CurrentRow.Cells["pTag"].Value.ToString();
+            //this.BrandIdToName();
+        }
 
+        private void BrandIdToName()
+        {
+            
         }
 
 
@@ -101,14 +104,6 @@ namespace FinalPoject
                         MessageBox.Show("Save Failed");
                     }
                 }
-
-                //var dc = this.productRepo.Save(proObj);
-
-                //if (dc)
-                //{
-                //    MessageBox.Show("Dara Insert", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //    this.Refresh();
-                //}
                 Refresh();
                 this.PopulateGridView();
             }
@@ -145,7 +140,7 @@ namespace FinalPoject
             //    return null;
             //}
 
-            Products product = new Products();
+             var product = new Products();
 
             if (this.txtId.Text == "")
             {
@@ -232,6 +227,12 @@ namespace FinalPoject
         private void btnCancleProductSave_Click(object sender, EventArgs e)
         {
             PopulateGridView();
+        }
+
+        private void btnProductMasterEdit_Click(object sender, EventArgs e)
+        {
+            FormMasterCategories masterCategories = new FormMasterCategories();
+            masterCategories.ShowDialog();
         }
     }
 }

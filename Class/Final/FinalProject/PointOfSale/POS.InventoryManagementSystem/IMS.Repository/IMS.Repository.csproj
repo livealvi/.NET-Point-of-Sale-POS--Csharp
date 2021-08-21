@@ -44,8 +44,9 @@
     <Compile Include="BrandsRepo.cs" />
     <Compile Include="ProductsBrandViewRepo.cs" />
     <Compile Include="ProductsCategoriesMapRepo.cs" />
-    <Compile Include="ProductRepo.cs" />
+    <Compile Include="ProductsRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendorsRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IMS.DataAccess\IMS.DataAccess.csproj">

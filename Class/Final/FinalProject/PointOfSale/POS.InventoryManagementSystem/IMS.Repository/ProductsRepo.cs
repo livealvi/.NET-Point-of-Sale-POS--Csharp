@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,11 @@ using IMS.Entity;
 
 namespace IMS.Repository
 {
-    public class ProductRepo
+    public class ProductsRepo
     {
         private InventoryDBDataAccess iDB {get; set;}
 
-        public ProductRepo()
+        public ProductsRepo()
         {
             this.iDB = new InventoryDBDataAccess();
         }
@@ -123,7 +124,6 @@ namespace IMS.Repository
         }
 
         //update
-
         public bool UpdateProduct(Products product)
         {
             
@@ -162,9 +162,10 @@ namespace IMS.Repository
             {
                 sql = @"delete from Products where ProductId ='" + id + "';";
                 var dataTable = this.iDB.ExecuteDMLQuery(sql);
-
+                
                 return true;
             }
+
             catch (Exception e)
             {
                 Debug.WriteLine(e.ToString());
