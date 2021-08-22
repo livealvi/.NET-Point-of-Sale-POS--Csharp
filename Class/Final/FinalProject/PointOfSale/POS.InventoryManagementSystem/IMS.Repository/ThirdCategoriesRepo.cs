@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -162,6 +163,106 @@ namespace IMS.Repository
 
                 throw;
             }
+        }
+
+        //DataCount
+        public bool DataExists(int id)
+        {
+            try
+            {
+                DataSet ds = iDB.ExecuteQuery("select ThirdCategoryId from ThirdCategories where ThirdCategoryId=" + id);
+
+                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
+                Debug.WriteLine(ds.Tables[0].Rows.Count);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+
+                throw;
+
+                return false;
+            }
+        }
+
+        //save
+        public bool Save(ThirdCategories thc)
+        {
+            try
+            {
+                var sql = @"insert into ThirdCategories (ThirdCategoryName, SecondCategoryId)
+                                values ('" + thc.ThirdCategoryName + "' , '" + thc.SecondCategoryId + "');";
+
+                var rowCount = this.iDB.ExecuteDMLQuery(sql);
+
+                if (rowCount == 1)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+            }
+        }
+
+        //update
+        public bool UpdateProduct(ThirdCategories thc)
+        {
+            try
+            {
+                string sql = @"update ThirdCategories set ThirdCategoryName='" + thc.ThirdCategoryName + "' , SecondCategoryId='" + thc.SecondCategoryId + "' where ThirdCategoryId='" + thc.ThirdCategoryId + "'";
+
+                int count = this.iDB.ExecuteDMLQuery(sql);
+
+                if (count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                throw;
+            }
+        }
+
+
+        //delete
+        public bool Delete(string id)
+        {
+            string sql;
+
+            try
+            {
+                sql = @"delete from ThirdCategories where ThirdCategoryId ='" + id + "';";
+                var dataTable = this.iDB.ExecuteDMLQuery(sql);
+
+                return true;
+            }
+
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+
+                throw;
+            }
+
         }
     }
 

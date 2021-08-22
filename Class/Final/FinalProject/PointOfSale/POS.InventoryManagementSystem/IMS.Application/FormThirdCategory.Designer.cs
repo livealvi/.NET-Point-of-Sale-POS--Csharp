@@ -34,10 +34,8 @@ namespace FinalPoject
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.cmbSecondCate = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtThirdCateTag = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbSecondCateName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtThirdCateId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtThirdCateDisc = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtThirdCateName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -94,7 +92,7 @@ namespace FinalPoject
             this.label24 = new System.Windows.Forms.Label();
             this.txtSearchCategories = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThirdCategoryPicture = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -160,7 +158,6 @@ namespace FinalPoject
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label21);
@@ -186,12 +183,12 @@ namespace FinalPoject
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(50, 408);
+            this.label2.Location = new System.Drawing.Point(12, 408);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 15);
+            this.label2.Size = new System.Drawing.Size(132, 15);
             this.label2.TabIndex = 167;
-            this.label2.Text = "Second Category ID";
+            this.label2.Text = "Second Category Name";
             // 
             // label1
             // 
@@ -205,24 +202,11 @@ namespace FinalPoject
             this.label1.TabIndex = 166;
             this.label1.Text = "Discritption";
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(28, 309);
-            this.label26.Margin = new System.Windows.Forms.Padding(0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 15);
-            this.label26.TabIndex = 165;
-            this.label26.Text = "Third Category TAG";
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.cmbSecondCate, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.txtThirdCateTag, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.cmbSecondCateName, 0, 7);
             this.tableLayoutPanel2.Controls.Add(this.txtThirdCateId, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtThirdCateDisc, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.txtThirdCateName, 0, 5);
@@ -244,50 +228,25 @@ namespace FinalPoject
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 360);
             this.tableLayoutPanel2.TabIndex = 164;
             // 
-            // cmbSecondCate
+            // cmbSecondCateName
             // 
-            this.cmbSecondCate.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSecondCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSecondCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSecondCate.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbSecondCate.FocusedState.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSecondCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbSecondCate.FormattingEnabled = true;
-            this.cmbSecondCate.HoverState.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.ItemHeight = 30;
-            this.cmbSecondCate.ItemsAppearance.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Location = new System.Drawing.Point(2, 161);
-            this.cmbSecondCate.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbSecondCate.Name = "cmbSecondCate";
-            this.cmbSecondCate.ShadowDecoration.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Size = new System.Drawing.Size(196, 36);
-            this.cmbSecondCate.TabIndex = 183;
-            // 
-            // txtThirdCateTag
-            // 
-            this.txtThirdCateTag.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtThirdCateTag.DefaultText = "";
-            this.txtThirdCateTag.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtThirdCateTag.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtThirdCateTag.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtThirdCateTag.DisabledState.Parent = this.txtThirdCateTag;
-            this.txtThirdCateTag.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtThirdCateTag.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtThirdCateTag.FocusedState.Parent = this.txtThirdCateTag;
-            this.txtThirdCateTag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtThirdCateTag.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtThirdCateTag.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtThirdCateTag.HoverState.Parent = this.txtThirdCateTag;
-            this.txtThirdCateTag.Location = new System.Drawing.Point(3, 64);
-            this.txtThirdCateTag.Name = "txtThirdCateTag";
-            this.txtThirdCateTag.PasswordChar = '\0';
-            this.txtThirdCateTag.PlaceholderText = "";
-            this.txtThirdCateTag.ReadOnly = true;
-            this.txtThirdCateTag.SelectedText = "";
-            this.txtThirdCateTag.ShadowDecoration.Parent = this.txtThirdCateTag;
-            this.txtThirdCateTag.Size = new System.Drawing.Size(194, 30);
-            this.txtThirdCateTag.TabIndex = 167;
+            this.cmbSecondCateName.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSecondCateName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSecondCateName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecondCateName.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSecondCateName.FocusedState.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSecondCateName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSecondCateName.FormattingEnabled = true;
+            this.cmbSecondCateName.HoverState.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.ItemHeight = 30;
+            this.cmbSecondCateName.ItemsAppearance.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.Location = new System.Drawing.Point(2, 161);
+            this.cmbSecondCateName.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSecondCateName.Name = "cmbSecondCateName";
+            this.cmbSecondCateName.ShadowDecoration.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.Size = new System.Drawing.Size(196, 36);
+            this.cmbSecondCateName.TabIndex = 183;
             // 
             // txtThirdCateId
             // 
@@ -703,7 +662,7 @@ namespace FinalPoject
             this.dgvThirdCate.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvThirdCate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThirdCate.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pID,
+            this.ThirdCategoryId,
             this.ThirdCategoryName,
             this.ThirdCategoryPicture,
             this.SecondCategoryName});
@@ -717,6 +676,7 @@ namespace FinalPoject
             this.dgvThirdCate.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvThirdCate.Size = new System.Drawing.Size(1195, 575);
             this.dgvThirdCate.TabIndex = 160;
+            this.dgvThirdCate.DoubleClick += new System.EventHandler(this.dgvThirdCate_DoubleClick);
             // 
             // guna2Panel28
             // 
@@ -1116,14 +1076,14 @@ namespace FinalPoject
             this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
             this.guna2Panel24.TabIndex = 135;
             // 
-            // pID
+            // ThirdCategoryId
             // 
-            this.pID.DataPropertyName = "ThirdCategoryId";
-            this.pID.HeaderText = "Third Category ID";
-            this.pID.MinimumWidth = 6;
-            this.pID.Name = "pID";
-            this.pID.ReadOnly = true;
-            this.pID.Width = 125;
+            this.ThirdCategoryId.DataPropertyName = "ThirdCategoryId";
+            this.ThirdCategoryId.HeaderText = "Third Category ID";
+            this.ThirdCategoryId.MinimumWidth = 6;
+            this.ThirdCategoryId.Name = "ThirdCategoryId";
+            this.ThirdCategoryId.ReadOnly = true;
+            this.ThirdCategoryId.Width = 125;
             // 
             // ThirdCategoryName
             // 
@@ -1202,10 +1162,8 @@ namespace FinalPoject
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbSecondCate;
-        private Guna.UI2.WinForms.Guna2TextBox txtThirdCateTag;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSecondCateName;
         private Guna.UI2.WinForms.Guna2TextBox txtThirdCateId;
         private Guna.UI2.WinForms.Guna2TextBox txtThirdCateDisc;
         private Guna.UI2.WinForms.Guna2TextBox txtThirdCateName;
@@ -1262,7 +1220,7 @@ namespace FinalPoject
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchCategories;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryPicture;
         private System.Windows.Forms.DataGridViewTextBoxColumn SecondCategoryName;

@@ -69,7 +69,6 @@ namespace IMS.Repository
         }
 
         //DataCount
-
         public bool DataExists(int id)
         {
             try
