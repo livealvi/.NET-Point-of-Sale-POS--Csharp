@@ -32,12 +32,12 @@ namespace IMS.Repository
                 if (key == null)
                     sql =
                         @"SELECT Brands.BrandId AS BrandId, Brands.BrandTag AS BrandTag, Brands.BrandName As BrandName, Brands.BrandDescription AS BrandDisc, Brands.BrandStatus AS BrandStatus,
-                            Brands.BrandImage AS BrandImage, Vendors.VendorId AS VendorId, Vendors.VendorName AS VendorName
-                            FROM Brands
-                            LEFT JOIN Vendors
-			                ON Brands.VendorId = Vendors.VendorId;";
+                          Brands.BrandImage AS BrandImage, Vendors.VendorId AS VendorId, Vendors.VendorName AS VendorName
+                          FROM Brands
+                          LEFT JOIN Vendors
+			              ON Brands.VendorId = Vendors.VendorId;";
                 else
-                    sql = @"SELECT Brands.BrandId AS BrandId,Brands.BrandId AS BrandTag, Brands.BrandName As BrandName, Brands.BrandDescription AS BrandDisc, Brands.BrandStatus AS BrandStatus,
+                    sql = @"SELECT Brands.BrandId AS BrandId, Brands.BrandTag AS BrandTag, Brands.BrandName As BrandName, Brands.BrandDescription AS BrandDisc, Brands.BrandStatus AS BrandStatus,
                             Brands.BrandImage AS BrandImage, Vendors.VendorId AS VendorId, Vendors.VendorName AS VendorName
                             FROM Brands
                             LEFT JOIN Vendors

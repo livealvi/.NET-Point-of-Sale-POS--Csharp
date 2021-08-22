@@ -36,7 +36,11 @@ namespace FinalPoject
             this.dgvAllProduct.ClearSelection();
             this.Refresh();
             this.RefreshContent();
+            this.BrandIdToName();
+        }
 
+        private void BrandIdToName()
+        {
             this.cmbBrand.Items.Clear();
             this.cmbBrand.Items.Add("--Not Selected--");
             this.cmbBrand.SelectedIndex = cmbBrand.FindStringExact("--Not Selected--");
@@ -44,13 +48,6 @@ namespace FinalPoject
             {
                 this.cmbBrand.Items.Add(row["BrandName"].ToString());
             }
-
-            //this.BrandIdToName();
-        }
-
-        private void BrandIdToName()
-        {
-            
         }
 
 

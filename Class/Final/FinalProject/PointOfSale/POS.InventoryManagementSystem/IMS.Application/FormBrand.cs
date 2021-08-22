@@ -14,14 +14,12 @@ namespace FinalPoject
 {
     public partial class FormBrand : Form
     {
-        private ProductsRepo productRepo{ get; set; }
         private BrandsRepo  brandRepo  { get; set; }
         private VendorsRepo vendorRepo { get; set; }
 
         public FormBrand()
         {
             InitializeComponent();
-            this.productRepo = new ProductsRepo();
             this.brandRepo = new BrandsRepo();
             this.vendorRepo = new VendorsRepo();
             this.RefreshContent();

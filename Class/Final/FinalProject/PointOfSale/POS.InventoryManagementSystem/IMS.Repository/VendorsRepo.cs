@@ -19,6 +19,73 @@ namespace IMS.Repository
         }
 
 
+        //view & search
+        public List<Vendors> GetAll(string key)
+        {
+            List<Vendors> vendorsList = new List<Vendors>();
+            string sql;
+
+            try
+            {
+                if (key == null)
+                    sql =
+                        @"SELECT Vendors.VendorId AS VendorId, Vendors.VednorTag AS VendorTag, Vendors.VendorName AS VendorName,
+                            Vendors.VendorDescription AS VendorDisc, Vendors.VendorStatus As VendorStatus,
+                            Vendors.VendorImage AS VendorImage, ThirdCategories.ThirdCategoryId AS ThirdCateId,
+                            ThirdCategories.ThirdCategoryName AS ThirdCateName
+                            FROM Vendors
+				            LEFT JOIN ThirdCategories
+                            ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId";
+                else
+                    sql = @"SELECT Vendors.VendorId AS VendorId, Vendors.VednorTag AS VendorTag, Vendors.VendorName AS VendorName,
+                            Vendors.VendorDescription AS VendorDisc, Vendors.VendorStatus As VendorStatus,
+                            Vendors.VendorImage AS VendorImage, ThirdCategories.ThirdCategoryId AS ThirdCateId,
+                            ThirdCategories.ThirdCategoryName AS ThirdCateName
+                            FROM Vendors
+				            LEFT JOIN ThirdCategories
+                            ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId
+                            where Vendors.VendorName like '%" + key + "%' or Vendors.VendorStatus like '%" + key + "%' or  Vendors.VendorName like '%" + key + "%'; ";
+
+                var dt = this.iDB.ExecuteQueryTable(sql);
+
+                int x = 0;
+                while (x < dt.Rows.Count)
+                {
+                    Vendors vn = this.ConvertToEntity(dt.Rows[x]);
+                    vendorsList.Add(vn);
+                    x++;
+                }
+                return vendorsList;
+            }
+
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+        }
+
+        private Vendors ConvertToEntity(DataRow row)
+        {
+            if (row == null)
+            {
+                return null;
+            }
+
+            var vendor = new Vendors();
+            vendor.VendorId = Convert.ToInt32(row["VendorId"].ToString());
+            vendor.VendorTag = row["VendorTag"].ToString();
+            vendor.VendorName = row["VendorName"].ToString();
+            vendor.VendorDescription = row["VendorDisc"].ToString();
+            vendor.VendorStatus = row["VendorStatus"].ToString();
+            //vendor.VendorImage = Convert.ToDouble(row["VendorImage"].ToString());
+            vendor.ThirdCategoryId = Convert.ToInt32(row["ThirdCateId"].ToString());
+            vendor.ThirdCategoryName = row["ThirdCateName"].ToString();
+
+            return vendor;
+        }
+
+
 
         public DataTable LoadComboVendorName()
         {
