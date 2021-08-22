@@ -145,6 +145,85 @@ namespace IMS.Repository
             return v;
         }
 
+
+        //DataCount
+        public bool DataExists(int id)
+        {
+            try
+            {
+                DataSet ds = iDB.ExecuteQuery("select VendorId from Vendors where VendorId=" + id);
+
+                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
+                Debug.WriteLine(ds.Tables[0].Rows.Count);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+
+                throw;
+
+                return false;
+            }
+        }
+
+        //save
+        public bool Save(Vendors vr)
+        {
+            try
+            {
+                var sql = @"insert into Vendors (VendorName, ThirdCategoryId, VendorDescription, VendorStatus)
+                                values ('" + vr.VendorName + "' , '" + vr.ThirdCategoryId + "' , '" + vr.VendorDescription + "' ,'" + vr.VendorStatus + "');";
+
+                var rowCount = this.iDB.ExecuteDMLQuery(sql);
+
+                if (rowCount == 1)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+            }
+        }
+
+        //update
+        public bool UpdateProduct(Vendors vr)
+        {
+            try
+            {
+                string sql = @"update Vendors set VendorName='" + vr.VendorName + "' , ThirdCategoryId='" + vr.ThirdCategoryId + "'," +
+                             "VendorDescription='" + vr.VendorDescription + "'," +
+                             "VendorStatus='" + vr.VendorStatus + "' where VendorId='" + vr.VendorId + "';";
+
+                int count = this.iDB.ExecuteDMLQuery(sql);
+
+                if (count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                throw;
+            }
+        }
+
         //delete
         public bool Delete(string id)
         {

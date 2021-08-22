@@ -172,7 +172,6 @@ namespace FinalPoject
             brand.BrandDescription = this.txtBrandDisc.Text;
             brand.BrandStatus = this.txtBrandStatus.Text;
             brand.VendorId = vendorsRepo.GetVendorId(this.cmbVendor.Text);
-            
             return brand;
         }
 

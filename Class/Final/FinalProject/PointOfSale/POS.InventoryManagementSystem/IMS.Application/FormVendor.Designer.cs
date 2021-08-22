@@ -56,8 +56,8 @@ namespace FinalPoject
             this.guna2Panel20 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel62 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCancleProductSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSaveProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCancle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSaveVendor = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -101,6 +101,7 @@ namespace FinalPoject
             this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VendorDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VendorImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
@@ -587,8 +588,8 @@ namespace FinalPoject
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.btnCancleProductSave, 2, 1);
-            this.tableLayoutPanel3.Controls.Add(this.btnSaveProduct, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btnCancle, 2, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btnSaveVendor, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
@@ -600,51 +601,53 @@ namespace FinalPoject
             this.tableLayoutPanel3.Size = new System.Drawing.Size(414, 57);
             this.tableLayoutPanel3.TabIndex = 135;
             // 
-            // btnCancleProductSave
+            // btnCancle
             // 
-            this.btnCancleProductSave.Animated = true;
-            this.btnCancleProductSave.CheckedState.Parent = this.btnCancleProductSave;
-            this.btnCancleProductSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancleProductSave.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCancleProductSave.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnCancleProductSave.CustomImages.Parent = this.btnCancleProductSave;
-            this.btnCancleProductSave.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCancleProductSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
-            this.btnCancleProductSave.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnCancleProductSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnCancleProductSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnCancleProductSave.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnCancleProductSave.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnCancleProductSave.HoverState.Parent = this.btnCancleProductSave;
-            this.btnCancleProductSave.Location = new System.Drawing.Point(214, 11);
-            this.btnCancleProductSave.Name = "btnCancleProductSave";
-            this.btnCancleProductSave.ShadowDecoration.Parent = this.btnCancleProductSave;
-            this.btnCancleProductSave.Size = new System.Drawing.Size(142, 35);
-            this.btnCancleProductSave.TabIndex = 117;
-            this.btnCancleProductSave.Text = "Cancle";
+            this.btnCancle.Animated = true;
+            this.btnCancle.CheckedState.Parent = this.btnCancle;
+            this.btnCancle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancle.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCancle.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnCancle.CustomImages.Parent = this.btnCancle;
+            this.btnCancle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCancle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
+            this.btnCancle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnCancle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnCancle.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnCancle.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnCancle.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCancle.HoverState.Parent = this.btnCancle;
+            this.btnCancle.Location = new System.Drawing.Point(214, 11);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.ShadowDecoration.Parent = this.btnCancle;
+            this.btnCancle.Size = new System.Drawing.Size(142, 35);
+            this.btnCancle.TabIndex = 117;
+            this.btnCancle.Text = "Cancle";
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
-            // btnSaveProduct
+            // btnSaveVendor
             // 
-            this.btnSaveProduct.Animated = true;
-            this.btnSaveProduct.CheckedState.Parent = this.btnSaveProduct;
-            this.btnSaveProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveProduct.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSaveProduct.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnSaveProduct.CustomImages.Parent = this.btnSaveProduct;
-            this.btnSaveProduct.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnSaveProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.btnSaveProduct.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnSaveProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.btnSaveProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.btnSaveProduct.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnSaveProduct.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnSaveProduct.HoverState.Parent = this.btnSaveProduct;
-            this.btnSaveProduct.Location = new System.Drawing.Point(58, 11);
-            this.btnSaveProduct.Name = "btnSaveProduct";
-            this.btnSaveProduct.ShadowDecoration.Parent = this.btnSaveProduct;
-            this.btnSaveProduct.Size = new System.Drawing.Size(142, 35);
-            this.btnSaveProduct.TabIndex = 118;
-            this.btnSaveProduct.Text = "Save";
+            this.btnSaveVendor.Animated = true;
+            this.btnSaveVendor.CheckedState.Parent = this.btnSaveVendor;
+            this.btnSaveVendor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveVendor.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSaveVendor.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnSaveVendor.CustomImages.Parent = this.btnSaveVendor;
+            this.btnSaveVendor.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSaveVendor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.btnSaveVendor.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnSaveVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnSaveVendor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.btnSaveVendor.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnSaveVendor.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSaveVendor.HoverState.Parent = this.btnSaveVendor;
+            this.btnSaveVendor.Location = new System.Drawing.Point(58, 11);
+            this.btnSaveVendor.Name = "btnSaveVendor";
+            this.btnSaveVendor.ShadowDecoration.Parent = this.btnSaveVendor;
+            this.btnSaveVendor.Size = new System.Drawing.Size(142, 35);
+            this.btnSaveVendor.TabIndex = 118;
+            this.btnSaveVendor.Text = "Save";
+            this.btnSaveVendor.Click += new System.EventHandler(this.btnSaveVendor_Click);
             // 
             // guna2Panel15
             // 
@@ -715,6 +718,7 @@ namespace FinalPoject
             this.VendorName,
             this.VendorDisc,
             this.VendorImage,
+            this.VendorStatus,
             this.ThirdCategoryName});
             this.dgvVendor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvVendor.Location = new System.Drawing.Point(8, 154);
@@ -726,6 +730,7 @@ namespace FinalPoject
             this.dgvVendor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVendor.Size = new System.Drawing.Size(1195, 575);
             this.dgvVendor.TabIndex = 160;
+            this.dgvVendor.DoubleClick += new System.EventHandler(this.dgvVendor_DoubleClick);
             // 
             // guna2Panel28
             // 
@@ -1080,7 +1085,6 @@ namespace FinalPoject
             this.txtVendorStatus.Name = "txtVendorStatus";
             this.txtVendorStatus.PasswordChar = '\0';
             this.txtVendorStatus.PlaceholderText = "";
-            this.txtVendorStatus.ReadOnly = true;
             this.txtVendorStatus.SelectedText = "";
             this.txtVendorStatus.ShadowDecoration.Parent = this.txtVendorStatus;
             this.txtVendorStatus.Size = new System.Drawing.Size(194, 30);
@@ -1207,6 +1211,13 @@ namespace FinalPoject
             this.VendorImage.ReadOnly = true;
             this.VendorImage.Width = 125;
             // 
+            // VendorStatus
+            // 
+            this.VendorStatus.DataPropertyName = "VendorStatus";
+            this.VendorStatus.HeaderText = "Vendor Status";
+            this.VendorStatus.Name = "VendorStatus";
+            this.VendorStatus.ReadOnly = true;
+            // 
             // ThirdCategoryName
             // 
             this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
@@ -1288,8 +1299,8 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel20;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel62;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private Guna.UI2.WinForms.Guna2Button btnCancleProductSave;
-        private Guna.UI2.WinForms.Guna2Button btnSaveProduct;
+        private Guna.UI2.WinForms.Guna2Button btnCancle;
+        private Guna.UI2.WinForms.Guna2Button btnSaveVendor;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel15;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel16;
         private System.Windows.Forms.Label label5;
@@ -1333,6 +1344,7 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorDisc;
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorImage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VendorStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
     }
 }
