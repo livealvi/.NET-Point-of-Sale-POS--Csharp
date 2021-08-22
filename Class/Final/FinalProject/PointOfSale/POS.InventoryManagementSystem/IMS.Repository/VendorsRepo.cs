@@ -85,8 +85,7 @@ namespace IMS.Repository
             return vendor;
         }
 
-
-
+        //LoadComboBox
         public DataTable LoadComboVendorName()
         {
             string sql;

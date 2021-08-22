@@ -263,6 +263,7 @@ namespace FinalPoject
             this.cmbThirdCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbThirdCate.FormattingEnabled = true;
             this.cmbThirdCate.HoverState.Parent = this.cmbThirdCate;
+            this.cmbThirdCate.IntegralHeight = false;
             this.cmbThirdCate.ItemHeight = 30;
             this.cmbThirdCate.ItemsAppearance.Parent = this.cmbThirdCate;
             this.cmbThirdCate.Location = new System.Drawing.Point(2, 161);

@@ -16,7 +16,7 @@ namespace FinalPoject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormVendor());
+            Application.Run(new FormBrand());
         }
     }
 }
