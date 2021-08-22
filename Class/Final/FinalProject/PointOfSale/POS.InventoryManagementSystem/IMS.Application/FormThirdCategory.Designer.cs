@@ -61,6 +61,10 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvThirdCate = new System.Windows.Forms.DataGridView();
+            this.ThirdCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryPicture = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -74,6 +78,10 @@ namespace FinalPoject
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtSearchCategories = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -88,14 +96,6 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtSearchCategories = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ThirdCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThirdCategoryPicture = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -110,10 +110,10 @@ namespace FinalPoject
             this.tableLayoutPanel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
+            this.guna2Panel23.SuspendLayout();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
-            this.guna2Panel23.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -678,6 +678,40 @@ namespace FinalPoject
             this.dgvThirdCate.TabIndex = 160;
             this.dgvThirdCate.DoubleClick += new System.EventHandler(this.dgvThirdCate_DoubleClick);
             // 
+            // ThirdCategoryId
+            // 
+            this.ThirdCategoryId.DataPropertyName = "ThirdCategoryId";
+            this.ThirdCategoryId.HeaderText = "Third Category ID";
+            this.ThirdCategoryId.MinimumWidth = 6;
+            this.ThirdCategoryId.Name = "ThirdCategoryId";
+            this.ThirdCategoryId.ReadOnly = true;
+            this.ThirdCategoryId.Width = 125;
+            // 
+            // ThirdCategoryName
+            // 
+            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
+            this.ThirdCategoryName.HeaderText = "Third Category Name";
+            this.ThirdCategoryName.MinimumWidth = 6;
+            this.ThirdCategoryName.Name = "ThirdCategoryName";
+            this.ThirdCategoryName.ReadOnly = true;
+            this.ThirdCategoryName.Width = 125;
+            // 
+            // ThirdCategoryPicture
+            // 
+            this.ThirdCategoryPicture.DataPropertyName = "ThirdCategoryPicture";
+            this.ThirdCategoryPicture.HeaderText = "Third Category Picture";
+            this.ThirdCategoryPicture.MinimumWidth = 6;
+            this.ThirdCategoryPicture.Name = "ThirdCategoryPicture";
+            this.ThirdCategoryPicture.ReadOnly = true;
+            this.ThirdCategoryPicture.Width = 125;
+            // 
+            // SecondCategoryName
+            // 
+            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
+            this.SecondCategoryName.HeaderText = "Second Category Name";
+            this.SecondCategoryName.Name = "SecondCategoryName";
+            this.SecondCategoryName.ReadOnly = true;
+            // 
             // guna2Panel28
             // 
             this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
@@ -862,6 +896,70 @@ namespace FinalPoject
             this.guna2Panel17.Size = new System.Drawing.Size(1211, 57);
             this.guna2Panel17.TabIndex = 131;
             // 
+            // guna2Panel23
+            // 
+            this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel23.Controls.Add(this.label24);
+            this.guna2Panel23.Controls.Add(this.txtSearchCategories);
+            this.guna2Panel23.Controls.Add(this.guna2Panel24);
+            this.guna2Panel23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel23.Location = new System.Drawing.Point(709, 0);
+            this.guna2Panel23.Name = "guna2Panel23";
+            this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
+            this.guna2Panel23.Size = new System.Drawing.Size(502, 57);
+            this.guna2Panel23.TabIndex = 23;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label24.Location = new System.Drawing.Point(107, 19);
+            this.label24.Margin = new System.Windows.Forms.Padding(0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(118, 19);
+            this.label24.TabIndex = 166;
+            this.label24.Text = "Search Categories";
+            // 
+            // txtSearchCategories
+            // 
+            this.txtSearchCategories.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtSearchCategories.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchCategories.DefaultText = "";
+            this.txtSearchCategories.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchCategories.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchCategories.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchCategories.DisabledState.Parent = this.txtSearchCategories;
+            this.txtSearchCategories.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchCategories.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchCategories.FocusedState.Parent = this.txtSearchCategories;
+            this.txtSearchCategories.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchCategories.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchCategories.HoverState.Parent = this.txtSearchCategories;
+            this.txtSearchCategories.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.txtSearchCategories.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
+            this.txtSearchCategories.Location = new System.Drawing.Point(237, 13);
+            this.txtSearchCategories.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSearchCategories.Name = "txtSearchCategories";
+            this.txtSearchCategories.PasswordChar = '\0';
+            this.txtSearchCategories.PlaceholderText = "by Name, Tag, Cate. Brand";
+            this.txtSearchCategories.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearchCategories.SelectedText = "";
+            this.txtSearchCategories.ShadowDecoration.Parent = this.txtSearchCategories;
+            this.txtSearchCategories.Size = new System.Drawing.Size(245, 30);
+            this.txtSearchCategories.TabIndex = 165;
+            this.txtSearchCategories.TextChanged += new System.EventHandler(this.txtSearchCategories_TextChanged);
+            // 
+            // guna2Panel24
+            // 
+            this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel24.Location = new System.Drawing.Point(482, 0);
+            this.guna2Panel24.Name = "guna2Panel24";
+            this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
+            this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
+            this.guna2Panel24.TabIndex = 135;
+            // 
             // guna2Panel25
             // 
             this.guna2Panel25.BackColor = System.Drawing.Color.Transparent;
@@ -1012,104 +1110,6 @@ namespace FinalPoject
             this.pnlInsideTop.Size = new System.Drawing.Size(1682, 16);
             this.pnlInsideTop.TabIndex = 36;
             // 
-            // guna2Panel23
-            // 
-            this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel23.Controls.Add(this.label24);
-            this.guna2Panel23.Controls.Add(this.txtSearchCategories);
-            this.guna2Panel23.Controls.Add(this.guna2Panel24);
-            this.guna2Panel23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel23.Location = new System.Drawing.Point(709, 0);
-            this.guna2Panel23.Name = "guna2Panel23";
-            this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
-            this.guna2Panel23.Size = new System.Drawing.Size(502, 57);
-            this.guna2Panel23.TabIndex = 23;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label24.Location = new System.Drawing.Point(107, 19);
-            this.label24.Margin = new System.Windows.Forms.Padding(0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(118, 19);
-            this.label24.TabIndex = 166;
-            this.label24.Text = "Search Categories";
-            // 
-            // txtSearchCategories
-            // 
-            this.txtSearchCategories.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.txtSearchCategories.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchCategories.DefaultText = "";
-            this.txtSearchCategories.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchCategories.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchCategories.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchCategories.DisabledState.Parent = this.txtSearchCategories;
-            this.txtSearchCategories.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchCategories.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchCategories.FocusedState.Parent = this.txtSearchCategories;
-            this.txtSearchCategories.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchCategories.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchCategories.HoverState.Parent = this.txtSearchCategories;
-            this.txtSearchCategories.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.txtSearchCategories.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearchCategories.Location = new System.Drawing.Point(237, 13);
-            this.txtSearchCategories.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtSearchCategories.Name = "txtSearchCategories";
-            this.txtSearchCategories.PasswordChar = '\0';
-            this.txtSearchCategories.PlaceholderText = "by Name, Tag, Cate. Brand";
-            this.txtSearchCategories.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearchCategories.SelectedText = "";
-            this.txtSearchCategories.ShadowDecoration.Parent = this.txtSearchCategories;
-            this.txtSearchCategories.Size = new System.Drawing.Size(245, 30);
-            this.txtSearchCategories.TabIndex = 165;
-            this.txtSearchCategories.TextChanged += new System.EventHandler(this.txtSearchCategories_TextChanged);
-            // 
-            // guna2Panel24
-            // 
-            this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel24.Location = new System.Drawing.Point(482, 0);
-            this.guna2Panel24.Name = "guna2Panel24";
-            this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
-            this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
-            this.guna2Panel24.TabIndex = 135;
-            // 
-            // ThirdCategoryId
-            // 
-            this.ThirdCategoryId.DataPropertyName = "ThirdCategoryId";
-            this.ThirdCategoryId.HeaderText = "Third Category ID";
-            this.ThirdCategoryId.MinimumWidth = 6;
-            this.ThirdCategoryId.Name = "ThirdCategoryId";
-            this.ThirdCategoryId.ReadOnly = true;
-            this.ThirdCategoryId.Width = 125;
-            // 
-            // ThirdCategoryName
-            // 
-            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
-            this.ThirdCategoryName.HeaderText = "Third Category Name";
-            this.ThirdCategoryName.MinimumWidth = 6;
-            this.ThirdCategoryName.Name = "ThirdCategoryName";
-            this.ThirdCategoryName.ReadOnly = true;
-            this.ThirdCategoryName.Width = 125;
-            // 
-            // ThirdCategoryPicture
-            // 
-            this.ThirdCategoryPicture.DataPropertyName = "ThirdCategoryPicture";
-            this.ThirdCategoryPicture.HeaderText = "Third Category Picture";
-            this.ThirdCategoryPicture.MinimumWidth = 6;
-            this.ThirdCategoryPicture.Name = "ThirdCategoryPicture";
-            this.ThirdCategoryPicture.ReadOnly = true;
-            this.ThirdCategoryPicture.Width = 125;
-            // 
-            // SecondCategoryName
-            // 
-            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
-            this.SecondCategoryName.HeaderText = "Second Category Name";
-            this.SecondCategoryName.Name = "SecondCategoryName";
-            this.SecondCategoryName.ReadOnly = true;
-            // 
             // FormThirdCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1145,12 +1145,12 @@ namespace FinalPoject
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel17.ResumeLayout(false);
             this.guna2Panel17.PerformLayout();
+            this.guna2Panel23.ResumeLayout(false);
+            this.guna2Panel23.PerformLayout();
             this.pnlOrderSelect.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
-            this.guna2Panel23.ResumeLayout(false);
-            this.guna2Panel23.PerformLayout();
             this.ResumeLayout(false);
 
         }

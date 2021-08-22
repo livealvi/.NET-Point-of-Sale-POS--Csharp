@@ -141,8 +141,6 @@ namespace FinalPoject
             {
                 thC.ThirdCategoryId = Convert.ToInt32(this.txtThirdCateId.Text);
             }
-
-            thC.ThirdCategoryId = Convert.ToInt32(this.txtThirdCateId.Text);
             thC.ThirdCategoryName = this.txtThirdCateName.Text;
             thC.SecondCategoryId = secondCategoriesReop.GetSecondCategoryId(this.cmbSecondCateName.Text);
             return thC;
