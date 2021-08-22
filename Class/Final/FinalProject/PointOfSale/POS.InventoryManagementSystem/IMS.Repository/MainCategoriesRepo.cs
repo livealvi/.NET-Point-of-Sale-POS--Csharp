@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,54 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        public List<MainCategories> GetAll(string key)
+        {
+            List<MainCategories> mainCategoriesList = new List<MainCategories>();
+            string sql;
 
+            try
+            {
+                if (key == null)
+                    sql =
+                        @"SELECT MainCategories.MainCategoryId AS MainCategoryId, MainCategories.MainCategoryName AS MainCategoryName
+                          FROM MainCategories";
+                else
+                    sql = @"SELECT MainCategories.MainCategoryId AS MainCategoryId, MainCategories.MainCategoryName AS MainCategoryName
+                          FROM MainCategories
+                          where MainCategories.MainCategoryId like '%" + key + "%' or MainCategories.MainCategoryName like '%" + key + "%' ; ";
+
+                var dt = this.iDB.ExecuteQueryTable(sql);
+
+                int x = 0;
+                while (x < dt.Rows.Count)
+                {
+                    MainCategories sc = this.ConvertToEntity(dt.Rows[x]);
+                    mainCategoriesList.Add(sc);
+                    x++;
+                }
+                return mainCategoriesList;
+            }
+
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+        }
+
+        private MainCategories ConvertToEntity(DataRow row)
+        {
+            if (row == null)
+            {
+                return null;
+            }
+
+            var mainCate = new MainCategories();
+            mainCate.MainCategoryId = Convert.ToInt32(row["MainCategoryId"].ToString());
+            mainCate.MainCategoryName = row["MainCategoryName"].ToString();
+            
+            return mainCate;
+        }
 
 
         //LoadComboBox
@@ -81,5 +129,99 @@ namespace IMS.Repository
             return m;
         }
 
+        //DataCount
+        public bool DataExists(int id)
+        {
+            try
+            {
+                DataSet ds = iDB.ExecuteQuery("select MainCategoryId from MainCategories where MainCategoryId=" + id);
+
+                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
+                Debug.WriteLine(ds.Tables[0].Rows.Count);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+                return false;
+            }
+        }
+
+        public bool Save(MainCategories mc)
+        {
+            try
+            {
+                var sql = @"insert into MainCategories (MainCategoryName)
+                                values ('" + mc.MainCategoryName + "');";
+
+                var rowCount = this.iDB.ExecuteDMLQuery(sql);
+
+                if (rowCount == 1)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+            }
+        }
+
+        //update
+        public bool UpdateProduct(MainCategories mc)
+        {
+            try
+            {
+                string sql = @"update MainCategories set MainCategoryName='" + mc.MainCategoryName + "' where MainCategoryId='" + mc.MainCategoryId + "';";
+
+                int count = this.iDB.ExecuteDMLQuery(sql);
+
+                if (count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                throw;
+            }
+        }
+
+        //delete
+        public bool Delete(string id)
+        {
+            string sql;
+
+            try
+            {
+                sql = @"delete from MainCategories where MainCategoryId ='" + id + "';";
+                var dataTable = this.iDB.ExecuteDMLQuery(sql);
+
+                return true;
+            }
+
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+                throw;
+            }
+
+        }
     }
 }
