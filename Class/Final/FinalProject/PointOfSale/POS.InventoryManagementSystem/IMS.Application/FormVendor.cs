@@ -69,5 +69,22 @@ namespace FinalPoject
         {
             this.PopulateGridView(this.txtSearchVendor.Text);
         }
+
+        private void btnDeleteVendor_Click(object sender, EventArgs e)
+        {
+            var id = this.dgvVendor.CurrentRow.Cells["VendorId"].Value.ToString();
+            var name = this.dgvVendor.CurrentRow.Cells["VendorName"].Value.ToString();
+
+            if (this.vendorsRepo.Delete(id))
+            {
+                MessageBox.Show(name + " - Delete Succeeded", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Error Delete", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            this.PopulateGridView();
+        }
     }
 }

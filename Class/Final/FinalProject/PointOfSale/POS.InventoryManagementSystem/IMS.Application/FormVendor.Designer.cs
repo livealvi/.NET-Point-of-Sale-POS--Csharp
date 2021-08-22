@@ -70,7 +70,7 @@ namespace FinalPoject
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnVendorRefresh = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteVendor = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
@@ -96,7 +96,7 @@ namespace FinalPoject
             this.label24 = new System.Windows.Forms.Label();
             this.txtSearchVendor = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Vendor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VendorTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VendorDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -710,7 +710,7 @@ namespace FinalPoject
             this.dgvVendor.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvVendor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVendor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Vendor,
+            this.VendorId,
             this.VendorTag,
             this.VendorName,
             this.VendorDisc,
@@ -788,7 +788,7 @@ namespace FinalPoject
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.btnVendorRefresh, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.btnDeleteProduct, 3, 1);
+            this.tableLayoutPanel4.Controls.Add(this.btnDeleteVendor, 3, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
@@ -827,30 +827,31 @@ namespace FinalPoject
             this.btnVendorRefresh.TextOffset = new System.Drawing.Point(8, 0);
             this.btnVendorRefresh.Click += new System.EventHandler(this.btnVendorRefresh_Click);
             // 
-            // btnDeleteProduct
+            // btnDeleteVendor
             // 
-            this.btnDeleteProduct.Animated = true;
-            this.btnDeleteProduct.CheckedState.Parent = this.btnDeleteProduct;
-            this.btnDeleteProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeleteProduct.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_trash_can_480px;
-            this.btnDeleteProduct.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_trash_can_480px_1;
-            this.btnDeleteProduct.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDeleteProduct.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnDeleteProduct.CustomImages.Parent = this.btnDeleteProduct;
-            this.btnDeleteProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDeleteProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
-            this.btnDeleteProduct.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnDeleteProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnDeleteProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnDeleteProduct.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnDeleteProduct.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteProduct.HoverState.Parent = this.btnDeleteProduct;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(612, 11);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.ShadowDecoration.Parent = this.btnDeleteProduct;
-            this.btnDeleteProduct.Size = new System.Drawing.Size(219, 35);
-            this.btnDeleteProduct.TabIndex = 135;
-            this.btnDeleteProduct.Text = "Master Delete";
+            this.btnDeleteVendor.Animated = true;
+            this.btnDeleteVendor.CheckedState.Parent = this.btnDeleteVendor;
+            this.btnDeleteVendor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteVendor.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_trash_can_480px;
+            this.btnDeleteVendor.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_trash_can_480px_1;
+            this.btnDeleteVendor.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDeleteVendor.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnDeleteVendor.CustomImages.Parent = this.btnDeleteVendor;
+            this.btnDeleteVendor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDeleteVendor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
+            this.btnDeleteVendor.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnDeleteVendor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnDeleteVendor.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteVendor.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteVendor.HoverState.Parent = this.btnDeleteVendor;
+            this.btnDeleteVendor.Location = new System.Drawing.Point(612, 11);
+            this.btnDeleteVendor.Name = "btnDeleteVendor";
+            this.btnDeleteVendor.ShadowDecoration.Parent = this.btnDeleteVendor;
+            this.btnDeleteVendor.Size = new System.Drawing.Size(219, 35);
+            this.btnDeleteVendor.TabIndex = 135;
+            this.btnDeleteVendor.Text = "Delete";
+            this.btnDeleteVendor.Click += new System.EventHandler(this.btnDeleteVendor_Click);
             // 
             // guna2Panel5
             // 
@@ -1161,14 +1162,14 @@ namespace FinalPoject
             this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
             this.guna2Panel24.TabIndex = 135;
             // 
-            // Vendor
+            // VendorId
             // 
-            this.Vendor.DataPropertyName = "VendorId";
-            this.Vendor.HeaderText = "Vendor ID";
-            this.Vendor.MinimumWidth = 6;
-            this.Vendor.Name = "Vendor";
-            this.Vendor.ReadOnly = true;
-            this.Vendor.Width = 125;
+            this.VendorId.DataPropertyName = "VendorId";
+            this.VendorId.HeaderText = "Vendor ID";
+            this.VendorId.MinimumWidth = 6;
+            this.VendorId.Name = "VendorId";
+            this.VendorId.ReadOnly = true;
+            this.VendorId.Width = 125;
             // 
             // VendorTag
             // 
@@ -1301,7 +1302,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private Guna.UI2.WinForms.Guna2Button btnVendorRefresh;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteProduct;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteVendor;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel22;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel27;
@@ -1327,7 +1328,7 @@ namespace FinalPoject
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchVendor;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vendor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VendorId;
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorTag;
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorDisc;

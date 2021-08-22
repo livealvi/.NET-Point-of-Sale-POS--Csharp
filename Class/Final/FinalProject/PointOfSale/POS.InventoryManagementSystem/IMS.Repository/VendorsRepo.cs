@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -142,6 +143,25 @@ namespace IMS.Repository
             v.VendorName = row["VendorName"].ToString();
             v.VendorId = Convert.ToInt32(row["VendorId"].ToString());
             return v;
+        }
+
+        //delete
+        public bool Delete(string id)
+        {
+            string sql;
+            try
+            {
+                sql = @"delete from Vendors where VendorId ='" + id + "';";
+                var dataTable = this.iDB.ExecuteDMLQuery(sql);
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+                throw;
+            }
         }
     }
 }
