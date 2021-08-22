@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FinalPoject
 {
-    public partial class FormCustomers : Form
+    public partial class FormUser : Form
     {
-        public FormCustomers()
+        public FormUser()
         {
             InitializeComponent();
+        }
+
+        private void btnCancle_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

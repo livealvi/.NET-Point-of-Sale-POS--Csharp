@@ -26,11 +26,14 @@ namespace FinalPoject
         private void PopulateGridView(string searchKey = null)
         {
             this.dgvSecondCate.AutoGenerateColumns = false;
+            
+            
             this.dgvSecondCate.DataSource = this.secondCateReop.GetAll(searchKey).ToList();
             this.dgvSecondCate.ClearSelection();
             this.Refresh();
             this.RefreshContent();
             this.MainCategoryIdToName();
+            //this.ItemFound();
         }
 
         private void MainCategoryIdToName()
@@ -51,10 +54,16 @@ namespace FinalPoject
             this.cmbMainCate.SelectedIndex = -1;
         }
 
+        //private void ItemFound()
+        //{
+        //    this.lblTotal.Text = "Total Item: " + this.dgvSecondCate.RowCount.ToString();
+        //} 
+
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             this.RefreshContent();
             this.txtSearchCategories.Clear();
+            //this.ItemFound();
         }
 
         private void FormSecondCategory_Load(object sender, EventArgs e)
@@ -62,9 +71,12 @@ namespace FinalPoject
             this.PopulateGridView();
         }
 
-        private void txtSearchCategories_TextChanged(object sender, EventArgs e)
+        private void txtSearchCategories_TextChanged_1(object sender, EventArgs e)
         {
             this.PopulateGridView(this.txtSearchCategories.Text);
+            //if (this.txtSearchCategories.Text == String.Empty)
+            //    this.lblTotal.Text = "Serach Found: " + this.dgvSecondCate.RowCount.ToString();
+           
         }
 
         private void dgvSecondCate_DoubleClick(object sender, EventArgs e)

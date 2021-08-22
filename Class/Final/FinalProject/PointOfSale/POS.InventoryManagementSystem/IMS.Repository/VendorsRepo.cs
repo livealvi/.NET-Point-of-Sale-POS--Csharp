@@ -31,7 +31,7 @@ namespace IMS.Repository
                 if (key == null)
                     sql =
                         @"SELECT Vendors.VendorId AS VendorId, Vendors.VednorTag AS VendorTag, Vendors.VendorName AS VendorName,
-                            Vendors.VendorDescription AS VendorDisc, Vendors.VendorStatus As VendorStatus,
+                            Vendors.VendorDescription AS VendorDisc,
                             Vendors.VendorImage AS VendorImage, ThirdCategories.ThirdCategoryId AS ThirdCateId,
                             ThirdCategories.ThirdCategoryName AS ThirdCateName
                             FROM Vendors
@@ -39,13 +39,13 @@ namespace IMS.Repository
                             ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId";
                 else
                     sql = @"SELECT Vendors.VendorId AS VendorId, Vendors.VednorTag AS VendorTag, Vendors.VendorName AS VendorName,
-                            Vendors.VendorDescription AS VendorDisc, Vendors.VendorStatus As VendorStatus,
+                            Vendors.VendorDescription AS VendorDisc,
                             Vendors.VendorImage AS VendorImage, ThirdCategories.ThirdCategoryId AS ThirdCateId,
                             ThirdCategories.ThirdCategoryName AS ThirdCateName
                             FROM Vendors
 				            LEFT JOIN ThirdCategories
                             ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId
-                            where Vendors.VendorName like '%" + key + "%' or Vendors.VendorStatus like '%" + key + "%' or  Vendors.VendorName like '%" + key + "%'; ";
+                            where Vendors.VendorName like '%" + key + "%' or  ThirdCategories.ThirdCategoryName like '%" + key + "%'; ";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
 
@@ -78,7 +78,7 @@ namespace IMS.Repository
             vendor.VendorTag = row["VendorTag"].ToString();
             vendor.VendorName = row["VendorName"].ToString();
             vendor.VendorDescription = row["VendorDisc"].ToString();
-            vendor.VendorStatus = row["VendorStatus"].ToString();
+            //vendor.VendorStatus = row["VendorStatus"].ToString();
             //vendor.VendorImage = Convert.ToDouble(row["VendorImage"].ToString());
             vendor.ThirdCategoryId = Convert.ToInt32(row["ThirdCateId"].ToString());
             vendor.ThirdCategoryName = row["ThirdCateName"].ToString();
@@ -145,7 +145,6 @@ namespace IMS.Repository
             return v;
         }
 
-
         //DataCount
         public bool DataExists(int id)
         {
@@ -180,8 +179,8 @@ namespace IMS.Repository
         {
             try
             {
-                var sql = @"insert into Vendors (VendorName, ThirdCategoryId, VendorDescription, VendorStatus)
-                                values ('" + vr.VendorName + "' , '" + vr.ThirdCategoryId + "' , '" + vr.VendorDescription + "' ,'" + vr.VendorStatus + "');";
+                var sql = @"insert into Vendors (VendorName, ThirdCategoryId, VendorDescription)
+                                values ('" + vr.VendorName + "' , '" + vr.ThirdCategoryId + "' , '" + vr.VendorDescription + "');";
 
                 var rowCount = this.iDB.ExecuteDMLQuery(sql);
 
@@ -203,8 +202,7 @@ namespace IMS.Repository
             try
             {
                 string sql = @"update Vendors set VendorName='" + vr.VendorName + "' , ThirdCategoryId='" + vr.ThirdCategoryId + "'," +
-                             "VendorDescription='" + vr.VendorDescription + "'," +
-                             "VendorStatus='" + vr.VendorStatus + "' where VendorId='" + vr.VendorId + "';";
+                             "VendorDescription='" + vr.VendorDescription + "' where VendorId='" + vr.VendorId + "';";
 
                 int count = this.iDB.ExecuteDMLQuery(sql);
 

@@ -92,7 +92,6 @@ namespace FinalPoject
             this.txtVendorName.Text = this.dgvVendor.CurrentRow.Cells["VendorName"].Value.ToString();
             this.txtVendorTag.Text = this.dgvVendor.CurrentRow.Cells["VendorTag"].Value.ToString();
             this.cmbThirdCate.Text = this.dgvVendor.CurrentRow.Cells["ThirdCategoryName"].Value.ToString();
-            this.txtVendorStatus.Text = this.dgvVendor.CurrentRow.Cells["VendorStatus"].Value.ToString();
             this.txtVendorDisc.Text = this.dgvVendor.CurrentRow.Cells["VendorDisc"].Value.ToString();
         }
 
@@ -164,7 +163,6 @@ namespace FinalPoject
 
             vendor.VendorName = this.txtVendorName.Text;
             vendor.VendorDescription = this.txtVendorDisc.Text;
-            vendor.VendorStatus = this.txtVendorStatus.Text;
             vendor.ThirdCategoryId = thirdCategoriesRepo.GetThirdCateId(this.cmbThirdCate.Text);
             return vendor;
         }

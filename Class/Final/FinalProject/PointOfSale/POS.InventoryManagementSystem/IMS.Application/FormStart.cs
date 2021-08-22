@@ -35,7 +35,7 @@ namespace FinalPoject
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
-            ViewForm(new FormCustomers());
+            ViewForm(new FormUser());
         }
 
         private void btnEmployees_Click(object sender, EventArgs e)

@@ -48,7 +48,6 @@ namespace FinalPoject
             this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtDiscription = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtQuantityPerUnit = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPerUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtWeight = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMSRP = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSize = new Guna.UI2.WinForms.Guna2TextBox();
@@ -113,7 +112,6 @@ namespace FinalPoject
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.cmbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.label24 = new System.Windows.Forms.Label();
@@ -128,6 +126,7 @@ namespace FinalPoject
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ElipseAddProducts = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txtPerUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
@@ -520,30 +519,6 @@ namespace FinalPoject
             this.txtQuantityPerUnit.ShadowDecoration.Parent = this.txtQuantityPerUnit;
             this.txtQuantityPerUnit.Size = new System.Drawing.Size(194, 30);
             this.txtQuantityPerUnit.TabIndex = 58;
-            // 
-            // txtPerUnitPrice
-            // 
-            this.txtPerUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPerUnitPrice.DefaultText = "";
-            this.txtPerUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPerUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPerUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPerUnitPrice.DisabledState.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPerUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPerUnitPrice.FocusedState.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPerUnitPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPerUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPerUnitPrice.HoverState.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.Location = new System.Drawing.Point(3, 260);
-            this.txtPerUnitPrice.Name = "txtPerUnitPrice";
-            this.txtPerUnitPrice.PasswordChar = '\0';
-            this.txtPerUnitPrice.PlaceholderText = "Ex: 10.00";
-            this.txtPerUnitPrice.SelectedText = "";
-            this.txtPerUnitPrice.ShadowDecoration.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.Size = new System.Drawing.Size(194, 30);
-            this.txtPerUnitPrice.TabIndex = 59;
             // 
             // txtWeight
             // 
@@ -1454,7 +1429,6 @@ namespace FinalPoject
             // guna2Panel7
             // 
             this.guna2Panel7.Controls.Add(this.guna2Panel8);
-            this.guna2Panel7.Controls.Add(this.cmbStatus);
             this.guna2Panel7.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel7.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1473,26 +1447,6 @@ namespace FinalPoject
             this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
             this.guna2Panel8.Size = new System.Drawing.Size(20, 63);
             this.guna2Panel8.TabIndex = 19;
-            // 
-            // cmbStatus
-            // 
-            this.cmbStatus.BackColor = System.Drawing.Color.Transparent;
-            this.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatus.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbStatus.FocusedState.Parent = this.cmbStatus;
-            this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.HoverState.Parent = this.cmbStatus;
-            this.cmbStatus.ItemHeight = 30;
-            this.cmbStatus.ItemsAppearance.Parent = this.cmbStatus;
-            this.cmbStatus.Location = new System.Drawing.Point(385, 21);
-            this.cmbStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.ShadowDecoration.Parent = this.cmbStatus;
-            this.cmbStatus.Size = new System.Drawing.Size(196, 36);
-            this.cmbStatus.TabIndex = 132;
             // 
             // guna2Panel2
             // 
@@ -1661,6 +1615,30 @@ namespace FinalPoject
             // 
             this.guna2ElipseAddProducts.BorderRadius = 12;
             // 
+            // txtPerUnitPrice
+            // 
+            this.txtPerUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPerUnitPrice.DefaultText = "";
+            this.txtPerUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPerUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPerUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPerUnitPrice.DisabledState.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPerUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPerUnitPrice.FocusedState.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPerUnitPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPerUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPerUnitPrice.HoverState.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.Location = new System.Drawing.Point(3, 260);
+            this.txtPerUnitPrice.Name = "txtPerUnitPrice";
+            this.txtPerUnitPrice.PasswordChar = '\0';
+            this.txtPerUnitPrice.PlaceholderText = "Ex: 10.00";
+            this.txtPerUnitPrice.SelectedText = "";
+            this.txtPerUnitPrice.ShadowDecoration.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.Size = new System.Drawing.Size(194, 30);
+            this.txtPerUnitPrice.TabIndex = 59;
+            // 
             // FormAddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1768,8 +1746,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2ComboBox cmbBrand;
         private Guna.UI2.WinForms.Guna2TextBox txtDiscription;
         private Guna.UI2.WinForms.Guna2TextBox txtQuantityPerUnit;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbStatus;
-        private Guna.UI2.WinForms.Guna2TextBox txtPerUnitPrice;
         private Guna.UI2.WinForms.Guna2TextBox txtWeight;
         private Guna.UI2.WinForms.Guna2TextBox txtDiscountRate;
         private Guna.UI2.WinForms.Guna2TextBox txtMSRP;
@@ -1802,5 +1778,6 @@ namespace FinalPoject
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txtPerUnitPrice;
     }
 }

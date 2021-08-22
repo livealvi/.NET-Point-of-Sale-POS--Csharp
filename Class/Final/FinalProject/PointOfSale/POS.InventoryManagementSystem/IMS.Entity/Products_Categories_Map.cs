@@ -42,7 +42,7 @@ namespace IMS.Entity
         public virtual Brands         Brands         { get; set; }
         public virtual MainCategories MainCategories{ get; set; }
 
-        public virtual ICollection<Orders_Products_Categories_Map> Orders_Products_Categories_Map{ get; set; }
+        
         public virtual Products        Products       { get;                                              set; }
         public virtual SecondCategories SecondCategories { get;                                              set; }
         public virtual ThirdCategories ThirdCategories { get;                                              set; }

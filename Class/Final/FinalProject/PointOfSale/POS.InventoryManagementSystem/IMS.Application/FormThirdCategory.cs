@@ -26,12 +26,13 @@ namespace FinalPoject
         private void PopulateGridView(string searchKey = null)
         {
             this.dgvThirdCate.AutoGenerateColumns = false;
-            this.dgvThirdCate.DataSource = this.thirdCategoriesRepo.GetAll(searchKey).ToList();
+            var a = this.dgvThirdCate.DataSource = this.thirdCategoriesRepo.GetAll(searchKey).ToList();
             this.dgvThirdCate.ClearSelection();
             this.Refresh();
             this.RefreshContent();
             this.SecondCategoryIdToName();
         }
+
 
         private void SecondCategoryIdToName()
         {

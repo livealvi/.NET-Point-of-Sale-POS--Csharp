@@ -45,10 +45,10 @@
     <Compile Include="Brands.cs" />
     <Compile Include="Customers.cs" />
     <Compile Include="Divisions.cs" />
-    <Compile Include="Employees.cs" />
+    <Compile Include="Users.cs" />
     <Compile Include="MainCategories.cs" />
     <Compile Include="Orders.cs" />
-    <Compile Include="Orders_Products_Categories_Map.cs" />
+    <Compile Include="OrdersProductsMap.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Products_Categories_Map.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
