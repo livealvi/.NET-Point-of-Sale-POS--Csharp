@@ -32,10 +32,12 @@ namespace FinalPoject
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtVendorStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbThirdCate = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtVendorTag = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtVendorId = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,6 +65,13 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvVendor = new System.Windows.Forms.DataGridView();
+            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -76,6 +85,10 @@ namespace FinalPoject
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtSearchVendor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -90,19 +103,6 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtVendorStatus = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtSearchVendor = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
-            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -117,10 +117,10 @@ namespace FinalPoject
             this.tableLayoutPanel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
+            this.guna2Panel23.SuspendLayout();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
-            this.guna2Panel23.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -187,6 +187,18 @@ namespace FinalPoject
             this.panel1.Size = new System.Drawing.Size(414, 654);
             this.panel1.TabIndex = 153;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(88, 462);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.TabIndex = 168;
+            this.label4.Text = "Status";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -252,6 +264,30 @@ namespace FinalPoject
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 459);
             this.tableLayoutPanel2.TabIndex = 164;
+            // 
+            // txtVendorStatus
+            // 
+            this.txtVendorStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtVendorStatus.DefaultText = "";
+            this.txtVendorStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtVendorStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtVendorStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtVendorStatus.DisabledState.Parent = this.txtVendorStatus;
+            this.txtVendorStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtVendorStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtVendorStatus.FocusedState.Parent = this.txtVendorStatus;
+            this.txtVendorStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVendorStatus.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtVendorStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtVendorStatus.HoverState.Parent = this.txtVendorStatus;
+            this.txtVendorStatus.Location = new System.Drawing.Point(3, 211);
+            this.txtVendorStatus.Name = "txtVendorStatus";
+            this.txtVendorStatus.PasswordChar = '\0';
+            this.txtVendorStatus.PlaceholderText = "";
+            this.txtVendorStatus.SelectedText = "";
+            this.txtVendorStatus.ShadowDecoration.Parent = this.txtVendorStatus;
+            this.txtVendorStatus.Size = new System.Drawing.Size(194, 30);
+            this.txtVendorStatus.TabIndex = 168;
             // 
             // cmbThirdCate
             // 
@@ -732,6 +768,65 @@ namespace FinalPoject
             this.dgvVendor.TabIndex = 160;
             this.dgvVendor.DoubleClick += new System.EventHandler(this.dgvVendor_DoubleClick);
             // 
+            // VendorId
+            // 
+            this.VendorId.DataPropertyName = "VendorId";
+            this.VendorId.HeaderText = "Vendor ID";
+            this.VendorId.MinimumWidth = 6;
+            this.VendorId.Name = "VendorId";
+            this.VendorId.ReadOnly = true;
+            this.VendorId.Width = 125;
+            // 
+            // VendorTag
+            // 
+            this.VendorTag.DataPropertyName = "VendorTag";
+            this.VendorTag.HeaderText = "Vendor TAG";
+            this.VendorTag.MinimumWidth = 6;
+            this.VendorTag.Name = "VendorTag";
+            this.VendorTag.ReadOnly = true;
+            this.VendorTag.Width = 125;
+            // 
+            // VendorName
+            // 
+            this.VendorName.DataPropertyName = "VendorName";
+            this.VendorName.HeaderText = "Vendor Name";
+            this.VendorName.MinimumWidth = 6;
+            this.VendorName.Name = "VendorName";
+            this.VendorName.ReadOnly = true;
+            this.VendorName.Width = 125;
+            // 
+            // VendorDisc
+            // 
+            this.VendorDisc.DataPropertyName = "VendorDescription";
+            this.VendorDisc.HeaderText = "Vendor Disc.";
+            this.VendorDisc.MinimumWidth = 6;
+            this.VendorDisc.Name = "VendorDisc";
+            this.VendorDisc.ReadOnly = true;
+            this.VendorDisc.Width = 125;
+            // 
+            // VendorImage
+            // 
+            this.VendorImage.DataPropertyName = "VendorImage";
+            this.VendorImage.HeaderText = "Vendor Picture";
+            this.VendorImage.MinimumWidth = 6;
+            this.VendorImage.Name = "VendorImage";
+            this.VendorImage.ReadOnly = true;
+            this.VendorImage.Width = 125;
+            // 
+            // VendorStatus
+            // 
+            this.VendorStatus.DataPropertyName = "VendorStatus";
+            this.VendorStatus.HeaderText = "Vendor Status";
+            this.VendorStatus.Name = "VendorStatus";
+            this.VendorStatus.ReadOnly = true;
+            // 
+            // ThirdCategoryName
+            // 
+            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
+            this.ThirdCategoryName.HeaderText = "Third Category Name";
+            this.ThirdCategoryName.Name = "ThirdCategoryName";
+            this.ThirdCategoryName.ReadOnly = true;
+            // 
             // guna2Panel28
             // 
             this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
@@ -916,6 +1011,70 @@ namespace FinalPoject
             this.guna2Panel17.Size = new System.Drawing.Size(1211, 57);
             this.guna2Panel17.TabIndex = 131;
             // 
+            // guna2Panel23
+            // 
+            this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel23.Controls.Add(this.label24);
+            this.guna2Panel23.Controls.Add(this.txtSearchVendor);
+            this.guna2Panel23.Controls.Add(this.guna2Panel24);
+            this.guna2Panel23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel23.Location = new System.Drawing.Point(709, 0);
+            this.guna2Panel23.Name = "guna2Panel23";
+            this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
+            this.guna2Panel23.Size = new System.Drawing.Size(502, 57);
+            this.guna2Panel23.TabIndex = 22;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label24.Location = new System.Drawing.Point(128, 19);
+            this.label24.Margin = new System.Windows.Forms.Padding(0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(103, 19);
+            this.label24.TabIndex = 166;
+            this.label24.Text = "Search Vendors";
+            // 
+            // txtSearchVendor
+            // 
+            this.txtSearchVendor.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtSearchVendor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchVendor.DefaultText = "";
+            this.txtSearchVendor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchVendor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchVendor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchVendor.DisabledState.Parent = this.txtSearchVendor;
+            this.txtSearchVendor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchVendor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchVendor.FocusedState.Parent = this.txtSearchVendor;
+            this.txtSearchVendor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchVendor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchVendor.HoverState.Parent = this.txtSearchVendor;
+            this.txtSearchVendor.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.txtSearchVendor.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
+            this.txtSearchVendor.Location = new System.Drawing.Point(237, 13);
+            this.txtSearchVendor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSearchVendor.Name = "txtSearchVendor";
+            this.txtSearchVendor.PasswordChar = '\0';
+            this.txtSearchVendor.PlaceholderText = "by Name, Tag, Cate. Brand";
+            this.txtSearchVendor.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearchVendor.SelectedText = "";
+            this.txtSearchVendor.ShadowDecoration.Parent = this.txtSearchVendor;
+            this.txtSearchVendor.Size = new System.Drawing.Size(245, 30);
+            this.txtSearchVendor.TabIndex = 165;
+            this.txtSearchVendor.TextChanged += new System.EventHandler(this.txtSearchVendor_TextChanged);
+            // 
+            // guna2Panel24
+            // 
+            this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel24.Location = new System.Drawing.Point(482, 0);
+            this.guna2Panel24.Name = "guna2Panel24";
+            this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
+            this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
+            this.guna2Panel24.TabIndex = 135;
+            // 
             // guna2Panel25
             // 
             this.guna2Panel25.BackColor = System.Drawing.Color.Transparent;
@@ -1066,165 +1225,6 @@ namespace FinalPoject
             this.pnlInsideTop.Size = new System.Drawing.Size(1682, 16);
             this.pnlInsideTop.TabIndex = 36;
             // 
-            // txtVendorStatus
-            // 
-            this.txtVendorStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtVendorStatus.DefaultText = "";
-            this.txtVendorStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtVendorStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtVendorStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtVendorStatus.DisabledState.Parent = this.txtVendorStatus;
-            this.txtVendorStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtVendorStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtVendorStatus.FocusedState.Parent = this.txtVendorStatus;
-            this.txtVendorStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendorStatus.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtVendorStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtVendorStatus.HoverState.Parent = this.txtVendorStatus;
-            this.txtVendorStatus.Location = new System.Drawing.Point(3, 211);
-            this.txtVendorStatus.Name = "txtVendorStatus";
-            this.txtVendorStatus.PasswordChar = '\0';
-            this.txtVendorStatus.PlaceholderText = "";
-            this.txtVendorStatus.SelectedText = "";
-            this.txtVendorStatus.ShadowDecoration.Parent = this.txtVendorStatus;
-            this.txtVendorStatus.Size = new System.Drawing.Size(194, 30);
-            this.txtVendorStatus.TabIndex = 168;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(88, 462);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
-            this.label4.TabIndex = 168;
-            this.label4.Text = "Status";
-            // 
-            // guna2Panel23
-            // 
-            this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel23.Controls.Add(this.label24);
-            this.guna2Panel23.Controls.Add(this.txtSearchVendor);
-            this.guna2Panel23.Controls.Add(this.guna2Panel24);
-            this.guna2Panel23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel23.Location = new System.Drawing.Point(709, 0);
-            this.guna2Panel23.Name = "guna2Panel23";
-            this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
-            this.guna2Panel23.Size = new System.Drawing.Size(502, 57);
-            this.guna2Panel23.TabIndex = 22;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label24.Location = new System.Drawing.Point(128, 19);
-            this.label24.Margin = new System.Windows.Forms.Padding(0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(103, 19);
-            this.label24.TabIndex = 166;
-            this.label24.Text = "Search Vendors";
-            // 
-            // txtSearchVendor
-            // 
-            this.txtSearchVendor.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.txtSearchVendor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchVendor.DefaultText = "";
-            this.txtSearchVendor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchVendor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchVendor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchVendor.DisabledState.Parent = this.txtSearchVendor;
-            this.txtSearchVendor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchVendor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchVendor.FocusedState.Parent = this.txtSearchVendor;
-            this.txtSearchVendor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchVendor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchVendor.HoverState.Parent = this.txtSearchVendor;
-            this.txtSearchVendor.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.txtSearchVendor.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearchVendor.Location = new System.Drawing.Point(237, 13);
-            this.txtSearchVendor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtSearchVendor.Name = "txtSearchVendor";
-            this.txtSearchVendor.PasswordChar = '\0';
-            this.txtSearchVendor.PlaceholderText = "by Name, Tag, Cate. Brand";
-            this.txtSearchVendor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearchVendor.SelectedText = "";
-            this.txtSearchVendor.ShadowDecoration.Parent = this.txtSearchVendor;
-            this.txtSearchVendor.Size = new System.Drawing.Size(245, 30);
-            this.txtSearchVendor.TabIndex = 165;
-            this.txtSearchVendor.TextChanged += new System.EventHandler(this.txtSearchVendor_TextChanged);
-            // 
-            // guna2Panel24
-            // 
-            this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel24.Location = new System.Drawing.Point(482, 0);
-            this.guna2Panel24.Name = "guna2Panel24";
-            this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
-            this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
-            this.guna2Panel24.TabIndex = 135;
-            // 
-            // VendorId
-            // 
-            this.VendorId.DataPropertyName = "VendorId";
-            this.VendorId.HeaderText = "Vendor ID";
-            this.VendorId.MinimumWidth = 6;
-            this.VendorId.Name = "VendorId";
-            this.VendorId.ReadOnly = true;
-            this.VendorId.Width = 125;
-            // 
-            // VendorTag
-            // 
-            this.VendorTag.DataPropertyName = "VendorTag";
-            this.VendorTag.HeaderText = "Vendor TAG";
-            this.VendorTag.MinimumWidth = 6;
-            this.VendorTag.Name = "VendorTag";
-            this.VendorTag.ReadOnly = true;
-            this.VendorTag.Width = 125;
-            // 
-            // VendorName
-            // 
-            this.VendorName.DataPropertyName = "VendorName";
-            this.VendorName.HeaderText = "Vendor Name";
-            this.VendorName.MinimumWidth = 6;
-            this.VendorName.Name = "VendorName";
-            this.VendorName.ReadOnly = true;
-            this.VendorName.Width = 125;
-            // 
-            // VendorDisc
-            // 
-            this.VendorDisc.DataPropertyName = "VendorDescription";
-            this.VendorDisc.HeaderText = "Vendor Disc.";
-            this.VendorDisc.MinimumWidth = 6;
-            this.VendorDisc.Name = "VendorDisc";
-            this.VendorDisc.ReadOnly = true;
-            this.VendorDisc.Width = 125;
-            // 
-            // VendorImage
-            // 
-            this.VendorImage.DataPropertyName = "VendorImage";
-            this.VendorImage.HeaderText = "Vendor Picture";
-            this.VendorImage.MinimumWidth = 6;
-            this.VendorImage.Name = "VendorImage";
-            this.VendorImage.ReadOnly = true;
-            this.VendorImage.Width = 125;
-            // 
-            // VendorStatus
-            // 
-            this.VendorStatus.DataPropertyName = "VendorStatus";
-            this.VendorStatus.HeaderText = "Vendor Status";
-            this.VendorStatus.Name = "VendorStatus";
-            this.VendorStatus.ReadOnly = true;
-            // 
-            // ThirdCategoryName
-            // 
-            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
-            this.ThirdCategoryName.HeaderText = "Third Category Name";
-            this.ThirdCategoryName.Name = "ThirdCategoryName";
-            this.ThirdCategoryName.ReadOnly = true;
-            // 
             // FormVendor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1260,12 +1260,12 @@ namespace FinalPoject
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel17.ResumeLayout(false);
             this.guna2Panel17.PerformLayout();
+            this.guna2Panel23.ResumeLayout(false);
+            this.guna2Panel23.PerformLayout();
             this.pnlOrderSelect.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
-            this.guna2Panel23.ResumeLayout(false);
-            this.guna2Panel23.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -18,6 +18,66 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        //view & search
+        public List<ThirdCategories> GetAll(string key)
+        {
+            List<ThirdCategories> thirdCategoriesList = new List<ThirdCategories>();
+            string sql;
+
+            try
+            {
+                if (key == null)
+                    sql =
+                        @"SELECT ThirdCategories.ThirdCategoryId AS ThirdCategoryId, ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
+                          ThirdCategories.ThirdCategoryImage AS ThirdCategoryImage, SecondCategories.SecondCategoryId AS SecondCategoryId, 
+                          SecondCategories.SecondCategoryName AS SecondCategoryName
+                          FROM ThirdCategories
+				          LEFT JOIN SecondCategories
+                          ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId";
+                else
+                    sql = @"SELECT ThirdCategories.ThirdCategoryId AS ThirdCategoryId, ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
+                          ThirdCategories.ThirdCategoryImage AS ThirdCategoryImage, SecondCategories.SecondCategoryId AS SecondCategoryId, 
+                          SecondCategories.SecondCategoryName AS SecondCategoryName
+                          FROM ThirdCategories
+				          LEFT JOIN SecondCategories
+                          ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId
+                          where ThirdCategories.ThirdCategoryName like '%" + key + "%' or SecondCategories.SecondCategoryName like '%" + key + "%' ; ";
+
+                var dt = this.iDB.ExecuteQueryTable(sql);
+
+                int x = 0;
+                while (x < dt.Rows.Count)
+                {
+                    ThirdCategories th = this.ConvertToEntity(dt.Rows[x]);
+                    thirdCategoriesList.Add(th);
+                    x++;
+                }
+                return thirdCategoriesList;
+            }
+
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+        }
+
+        private ThirdCategories ConvertToEntity(DataRow row)
+        {
+            if (row == null)
+            {
+                return null;
+            }
+
+            var thirdCate = new ThirdCategories();
+            thirdCate.ThirdCategoryId = Convert.ToInt32(row["ThirdCategoryId"].ToString());
+            thirdCate.ThirdCategoryName = row["ThirdCategoryName"].ToString();
+            //vendor.VendorImage = Convert.ToDouble(row["VendorImage"].ToString());
+            thirdCate.SecondCategoryId = Convert.ToInt32(row["SecondCategoryId"].ToString());
+            thirdCate.SecondCategoryName = row["SecondCategoryName"].ToString();
+
+            return thirdCate;
+        }
 
 
         //LoadComboBox
