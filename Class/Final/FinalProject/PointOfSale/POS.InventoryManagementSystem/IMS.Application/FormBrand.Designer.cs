@@ -32,11 +32,13 @@ namespace FinalPoject
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtBrandStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtBrandTag = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBrandId = new Guna.UI2.WinForms.Guna2TextBox();
@@ -99,8 +101,6 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtBrandStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -183,6 +183,18 @@ namespace FinalPoject
             this.panel1.Size = new System.Drawing.Size(414, 654);
             this.panel1.TabIndex = 153;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(35, 458);
+            this.label10.Margin = new System.Windows.Forms.Padding(0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(39, 15);
+            this.label10.TabIndex = 169;
+            this.label10.Text = "Status";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -260,6 +272,33 @@ namespace FinalPoject
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 429);
             this.tableLayoutPanel2.TabIndex = 164;
+            // 
+            // txtBrandStatus
+            // 
+            this.txtBrandStatus.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.txtBrandStatus.BackColor = System.Drawing.Color.Transparent;
+            this.txtBrandStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBrandStatus.DefaultText = "";
+            this.txtBrandStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBrandStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBrandStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandStatus.DisabledState.Parent = this.txtBrandStatus;
+            this.txtBrandStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBrandStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandStatus.FocusedState.Parent = this.txtBrandStatus;
+            this.txtBrandStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBrandStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtBrandStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBrandStatus.HoverState.Parent = this.txtBrandStatus;
+            this.txtBrandStatus.Location = new System.Drawing.Point(3, 211);
+            this.txtBrandStatus.Name = "txtBrandStatus";
+            this.txtBrandStatus.PasswordChar = '\0';
+            this.txtBrandStatus.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.txtBrandStatus.PlaceholderText = "Brand:  Coca cola, Lays";
+            this.txtBrandStatus.SelectedText = "";
+            this.txtBrandStatus.ShadowDecoration.Parent = this.txtBrandStatus;
+            this.txtBrandStatus.Size = new System.Drawing.Size(194, 30);
+            this.txtBrandStatus.TabIndex = 163;
             // 
             // cmbVendor
             // 
@@ -1160,45 +1199,6 @@ namespace FinalPoject
             this.pnlInsideTop.ShadowDecoration.Parent = this.pnlInsideTop;
             this.pnlInsideTop.Size = new System.Drawing.Size(1682, 16);
             this.pnlInsideTop.TabIndex = 36;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(35, 458);
-            this.label10.Margin = new System.Windows.Forms.Padding(0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 15);
-            this.label10.TabIndex = 169;
-            this.label10.Text = "Status";
-            // 
-            // txtBrandStatus
-            // 
-            this.txtBrandStatus.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.txtBrandStatus.BackColor = System.Drawing.Color.Transparent;
-            this.txtBrandStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBrandStatus.DefaultText = "";
-            this.txtBrandStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBrandStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBrandStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrandStatus.DisabledState.Parent = this.txtBrandStatus;
-            this.txtBrandStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBrandStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBrandStatus.FocusedState.Parent = this.txtBrandStatus;
-            this.txtBrandStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBrandStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtBrandStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBrandStatus.HoverState.Parent = this.txtBrandStatus;
-            this.txtBrandStatus.Location = new System.Drawing.Point(3, 211);
-            this.txtBrandStatus.Name = "txtBrandStatus";
-            this.txtBrandStatus.PasswordChar = '\0';
-            this.txtBrandStatus.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtBrandStatus.PlaceholderText = "Brand:  Coca cola, Lays";
-            this.txtBrandStatus.SelectedText = "";
-            this.txtBrandStatus.ShadowDecoration.Parent = this.txtBrandStatus;
-            this.txtBrandStatus.Size = new System.Drawing.Size(194, 30);
-            this.txtBrandStatus.TabIndex = 163;
             // 
             // FormBrand
             // 

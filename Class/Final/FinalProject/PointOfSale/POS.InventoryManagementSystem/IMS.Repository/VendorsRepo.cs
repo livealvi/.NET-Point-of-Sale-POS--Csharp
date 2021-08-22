@@ -20,14 +20,6 @@ namespace IMS.Repository
 
 
 
-
-
-
-
-
-
-
-
         public DataTable LoadComboVendorName()
         {
             string sql;
