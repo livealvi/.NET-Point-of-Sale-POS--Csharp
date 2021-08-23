@@ -1695,9 +1695,9 @@ namespace FinalPoject
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(26, 18);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(75, 21);
+            this.label19.Size = new System.Drawing.Size(145, 21);
             this.label19.TabIndex = 0;
-            this.label19.Text = "Products";
+            this.label19.Text = "Select Porduct List";
             // 
             // guna2Panel29
             // 
@@ -1946,9 +1946,9 @@ namespace FinalPoject
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(26, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 21);
+            this.label5.Size = new System.Drawing.Size(150, 21);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Products";
+            this.label5.Text = "Search Product List";
             // 
             // guna2Panel15
             // 
