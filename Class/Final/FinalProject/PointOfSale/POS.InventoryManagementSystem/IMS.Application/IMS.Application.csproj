@@ -144,6 +144,12 @@
     <Compile Include="FormMainCategory.Designer.cs">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMakeSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMakeSale.Designer.cs">
+      <DependentUpon>FormMakeSale.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThirdCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,12 +192,6 @@
     <Compile Include="FormProducts.Designer.cs">
       <DependentUpon>FormProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSales.Designer.cs">
-      <DependentUpon>FormSales.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormStart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +221,9 @@
     <EmbeddedResource Include="FormMainCategory.resx">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMakeSale.resx">
+      <DependentUpon>FormMakeSale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormThirdCategory.resx">
       <DependentUpon>FormThirdCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,9 +248,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormProducts.resx">
       <DependentUpon>FormProducts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSales.resx">
-      <DependentUpon>FormSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
