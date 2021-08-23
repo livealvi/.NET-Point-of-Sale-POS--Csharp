@@ -199,7 +199,7 @@ namespace IMS.Repository
             product.ProductColor = row["pColor"].ToString();
             //proCateMas.ProductPictures = new[] { Convert.ToByte(row["pPictures"].ToString()) };
             product.ProductWeight = Convert.ToDouble(row["pWeight"].ToString());
-            product.ProductUnitStock = row["pUnStock"].ToString();
+            product.ProductUnitStock = Convert.ToInt32(row["pUnStock"].ToString());
             product.ProductDescription = row["pDisc"].ToString();
 
             return product;

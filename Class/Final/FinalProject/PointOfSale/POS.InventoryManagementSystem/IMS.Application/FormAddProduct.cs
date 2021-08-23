@@ -159,7 +159,7 @@ namespace FinalPoject
             product.ProductColor = this.txtColor.Text;
             //proCateMas.ProductPictures = new[] { Convert.ToByte(row["pPictures"].ToString()) };
             product.ProductWeight = Convert.ToDouble(this.txtWeight.Text);
-            product.ProductUnitStock = this.txtUniStock.Text;
+            product.ProductUnitStock = Convert.ToInt32(this.txtUniStock.Text);
             product.ProductDescription = this.txtDiscription.Text;
 
             return product;

@@ -22,7 +22,7 @@ namespace IMS.Entity
         public string           ProductColor          { get; set; }
        // public byte[]           ProductPictures       { get; set; }
         public Nullable<double> ProductWeight         { get; set; }
-        public string           ProductUnitStock      { get; set; }
+        public int           ProductUnitStock      { get; set; }
 
         //outside
         public string BrandName{ get; set; }
