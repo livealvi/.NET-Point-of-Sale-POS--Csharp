@@ -23,14 +23,14 @@ namespace FinalPoject
             
         }
 
-        private void btnSales_Click(object sender, EventArgs e)
+        private void btnMakeSell_Click(object sender, EventArgs e)
         {
-            ViewForm(new FormSales());
+
         }
 
-        private void btnProducts_Click(object sender, EventArgs e)
+        private void btnMasterStock_Click(object sender, EventArgs e)
         {
-            ViewForm(new FormProducts());
+
         }
 
         private void btnMasterProducts_Click(object sender, EventArgs e)
@@ -38,12 +38,12 @@ namespace FinalPoject
             ViewForm(new FormProductsMaster());
         }
 
-        private void btnCustomers_Click(object sender, EventArgs e)
+        private void btnMasterUser_Click(object sender, EventArgs e)
         {
             ViewForm(new FormUser());
         }
 
-        private void btnUser_Click(object sender, EventArgs e)
+        private void btnMasterCustomer_Click(object sender, EventArgs e)
         {
 
         }
@@ -62,6 +62,5 @@ namespace FinalPoject
             }
         }
 
-        
     }
 }

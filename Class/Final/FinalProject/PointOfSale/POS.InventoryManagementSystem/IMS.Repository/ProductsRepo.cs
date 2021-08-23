@@ -45,12 +45,6 @@ namespace IMS.Repository
                     where Products.ProductIdTag like '%" + key + "%' or Products.ProductName like '%" + key + "%' or  Brands.BrandName like '%" + key + "%'; ";
                 var dt = this.iDB.ExecuteQueryTable(sql);
 
-                //for (int ax = 0; ax < dt.Rows.Count; ax++)
-                //{
-                //    Products p = this.ConvertToEntity(dt.Rows[ax]);
-                //    productList.Add(p);
-                //}
-
                 int x = 0;
                 while (x < dt.Rows.Count)
                 {
@@ -188,7 +182,6 @@ namespace IMS.Repository
             product.ProductId = Convert.ToInt32(row["pID"].ToString());
             product.ProductIdTag = row["pTag"].ToString();
             product.ProductName = row["pName"].ToString();
-            //product.BrandId = Convert.ToInt32(row["bId"].ToString());
             product.BrandName = row["pBrandName"].ToString();
             product.ProductStatus = row["pStatus"].ToString();
             product.ProductMSRP = Convert.ToDouble(row["pMSRP"].ToString());
