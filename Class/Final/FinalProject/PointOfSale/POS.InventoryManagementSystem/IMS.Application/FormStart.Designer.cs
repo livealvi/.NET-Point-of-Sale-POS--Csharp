@@ -31,10 +31,10 @@ namespace FinalPoject
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
             this.pnlLeftMenu = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnCataAndBrands = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMasterProducts = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnEmployees = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUser = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomers = new Guna.UI2.WinForms.Guna2Button();
             this.btnSales = new Guna.UI2.WinForms.Guna2Button();
             this.btnAllStocks = new Guna.UI2.WinForms.Guna2Button();
@@ -54,10 +54,10 @@ namespace FinalPoject
             // 
             this.pnlLeftMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlLeftMenu.BackColor = System.Drawing.Color.White;
-            this.pnlLeftMenu.Controls.Add(this.btnCataAndBrands);
+            this.pnlLeftMenu.Controls.Add(this.btnMasterProducts);
             this.pnlLeftMenu.Controls.Add(this.guna2Panel1);
             this.pnlLeftMenu.Controls.Add(this.pnlInsideLeft);
-            this.pnlLeftMenu.Controls.Add(this.btnEmployees);
+            this.pnlLeftMenu.Controls.Add(this.btnUser);
             this.pnlLeftMenu.Controls.Add(this.btnCustomers);
             this.pnlLeftMenu.Controls.Add(this.btnSales);
             this.pnlLeftMenu.Controls.Add(this.btnAllStocks);
@@ -71,42 +71,43 @@ namespace FinalPoject
             this.pnlLeftMenu.Size = new System.Drawing.Size(284, 782);
             this.pnlLeftMenu.TabIndex = 30;
             // 
-            // btnCataAndBrands
+            // btnMasterProducts
             // 
-            this.btnCataAndBrands.Animated = true;
-            this.btnCataAndBrands.BackColor = System.Drawing.Color.Transparent;
-            this.btnCataAndBrands.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCataAndBrands.BorderColor = System.Drawing.Color.Transparent;
-            this.btnCataAndBrands.BorderRadius = 13;
-            this.btnCataAndBrands.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.btnCataAndBrands.CheckedState.Parent = this.btnCataAndBrands;
-            this.btnCataAndBrands.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCataAndBrands.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnCataAndBrands.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_people_96px;
-            this.btnCataAndBrands.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_people_96px_1;
-            this.btnCataAndBrands.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCataAndBrands.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
-            this.btnCataAndBrands.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
-            this.btnCataAndBrands.CustomImages.Parent = this.btnCataAndBrands;
-            this.btnCataAndBrands.FillColor = System.Drawing.Color.Transparent;
-            this.btnCataAndBrands.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnCataAndBrands.ForeColor = System.Drawing.Color.Gray;
-            this.btnCataAndBrands.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.btnCataAndBrands.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnCataAndBrands.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnCataAndBrands.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnCataAndBrands.HoverState.Parent = this.btnCataAndBrands;
-            this.btnCataAndBrands.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCataAndBrands.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnCataAndBrands.Location = new System.Drawing.Point(26, 420);
-            this.btnCataAndBrands.Name = "btnCataAndBrands";
-            this.btnCataAndBrands.ShadowDecoration.Parent = this.btnCataAndBrands;
-            this.btnCataAndBrands.Size = new System.Drawing.Size(220, 49);
-            this.btnCataAndBrands.TabIndex = 18;
-            this.btnCataAndBrands.Text = "Master Categories";
-            this.btnCataAndBrands.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCataAndBrands.TextOffset = new System.Drawing.Point(50, 0);
-            this.btnCataAndBrands.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.btnMasterProducts.Animated = true;
+            this.btnMasterProducts.BackColor = System.Drawing.Color.Transparent;
+            this.btnMasterProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMasterProducts.BorderColor = System.Drawing.Color.Transparent;
+            this.btnMasterProducts.BorderRadius = 13;
+            this.btnMasterProducts.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.btnMasterProducts.CheckedState.Parent = this.btnMasterProducts;
+            this.btnMasterProducts.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMasterProducts.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnMasterProducts.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_people_96px;
+            this.btnMasterProducts.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_people_96px_1;
+            this.btnMasterProducts.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMasterProducts.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
+            this.btnMasterProducts.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.btnMasterProducts.CustomImages.Parent = this.btnMasterProducts;
+            this.btnMasterProducts.FillColor = System.Drawing.Color.Transparent;
+            this.btnMasterProducts.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnMasterProducts.ForeColor = System.Drawing.Color.Gray;
+            this.btnMasterProducts.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.btnMasterProducts.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnMasterProducts.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMasterProducts.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnMasterProducts.HoverState.Parent = this.btnMasterProducts;
+            this.btnMasterProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMasterProducts.ImageOffset = new System.Drawing.Point(25, 0);
+            this.btnMasterProducts.Location = new System.Drawing.Point(26, 420);
+            this.btnMasterProducts.Name = "btnMasterProducts";
+            this.btnMasterProducts.ShadowDecoration.Parent = this.btnMasterProducts;
+            this.btnMasterProducts.Size = new System.Drawing.Size(220, 49);
+            this.btnMasterProducts.TabIndex = 18;
+            this.btnMasterProducts.Text = "Master Products";
+            this.btnMasterProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMasterProducts.TextOffset = new System.Drawing.Point(50, 0);
+            this.btnMasterProducts.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.btnMasterProducts.Click += new System.EventHandler(this.btnMasterProducts_Click);
             // 
             // guna2Panel1
             // 
@@ -128,43 +129,43 @@ namespace FinalPoject
             this.pnlInsideLeft.Size = new System.Drawing.Size(20, 782);
             this.pnlInsideLeft.TabIndex = 13;
             // 
-            // btnEmployees
+            // btnUser
             // 
-            this.btnEmployees.Animated = true;
-            this.btnEmployees.BackColor = System.Drawing.Color.Transparent;
-            this.btnEmployees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnEmployees.BorderColor = System.Drawing.Color.Transparent;
-            this.btnEmployees.BorderRadius = 13;
-            this.btnEmployees.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.btnEmployees.CheckedState.Parent = this.btnEmployees;
-            this.btnEmployees.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnEmployees.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnEmployees.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
-            this.btnEmployees.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
-            this.btnEmployees.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEmployees.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
-            this.btnEmployees.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
-            this.btnEmployees.CustomImages.Parent = this.btnEmployees;
-            this.btnEmployees.FillColor = System.Drawing.Color.Transparent;
-            this.btnEmployees.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnEmployees.ForeColor = System.Drawing.Color.Gray;
-            this.btnEmployees.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.btnEmployees.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnEmployees.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnEmployees.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnEmployees.HoverState.Parent = this.btnEmployees;
-            this.btnEmployees.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEmployees.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnEmployees.Location = new System.Drawing.Point(26, 561);
-            this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.ShadowDecoration.Parent = this.btnEmployees;
-            this.btnEmployees.Size = new System.Drawing.Size(184, 49);
-            this.btnEmployees.TabIndex = 6;
-            this.btnEmployees.Text = "Employees";
-            this.btnEmployees.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEmployees.TextOffset = new System.Drawing.Point(50, 0);
-            this.btnEmployees.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
+            this.btnUser.Animated = true;
+            this.btnUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnUser.BorderColor = System.Drawing.Color.Transparent;
+            this.btnUser.BorderRadius = 13;
+            this.btnUser.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.btnUser.CheckedState.Parent = this.btnUser;
+            this.btnUser.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUser.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnUser.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
+            this.btnUser.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
+            this.btnUser.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUser.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
+            this.btnUser.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.btnUser.CustomImages.Parent = this.btnUser;
+            this.btnUser.FillColor = System.Drawing.Color.Transparent;
+            this.btnUser.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnUser.ForeColor = System.Drawing.Color.Gray;
+            this.btnUser.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.btnUser.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnUser.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnUser.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnUser.HoverState.Parent = this.btnUser;
+            this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUser.ImageOffset = new System.Drawing.Point(25, 0);
+            this.btnUser.Location = new System.Drawing.Point(26, 561);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.ShadowDecoration.Parent = this.btnUser;
+            this.btnUser.Size = new System.Drawing.Size(184, 49);
+            this.btnUser.TabIndex = 6;
+            this.btnUser.Text = "Master Users";
+            this.btnUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUser.TextOffset = new System.Drawing.Point(50, 0);
+            this.btnUser.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnCustomers
             // 
@@ -403,10 +404,10 @@ namespace FinalPoject
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel pnlLeftMenu;
-        private Guna.UI2.WinForms.Guna2Button btnCataAndBrands;
+        private Guna.UI2.WinForms.Guna2Button btnMasterProducts;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft;
-        private Guna.UI2.WinForms.Guna2Button btnEmployees;
+        private Guna.UI2.WinForms.Guna2Button btnUser;
         private Guna.UI2.WinForms.Guna2Button btnCustomers;
         private Guna.UI2.WinForms.Guna2Button btnSales;
         private Guna.UI2.WinForms.Guna2Button btnAllStocks;

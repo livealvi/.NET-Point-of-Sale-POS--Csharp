@@ -147,8 +147,7 @@ namespace FinalPoject
             {
                 product.ProductId = Convert.ToInt32(this.txtId.Text);
             }
-            //var product = new Products();
-            //product.ProductId = Convert.ToInt32(this.txtId.Text);
+
             product.ProductName = this.txtName.Text;
             product.ProductStatus = this.txtStatus.Text;
             product.ProductMSRP = Convert.ToDouble(this.txtMSRP.Text);
@@ -221,15 +220,16 @@ namespace FinalPoject
             this.PopulateGridView();
         }
 
-        private void btnCancleProductSave_Click(object sender, EventArgs e)
+        private void btnCancle_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.txtSearchProduct.Clear();
             PopulateGridView();
         }
 
-        private void btnProductMasterEdit_Click(object sender, EventArgs e)
-        {
-            FormMasterCategories masterCategories = new FormMasterCategories();
-            masterCategories.ShowDialog();
-        }
     }
 }

@@ -33,14 +33,19 @@ namespace FinalPoject
             ViewForm(new FormProducts());
         }
 
+        private void btnMasterProducts_Click(object sender, EventArgs e)
+        {
+            ViewForm(new FormProductsMaster());
+        }
+
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ViewForm(new FormUser());
         }
 
-        private void btnEmployees_Click(object sender, EventArgs e)
+        private void btnUser_Click(object sender, EventArgs e)
         {
-            //ViewForm(new FormEmployees());
+
         }
 
         public void ViewForm(object _form)

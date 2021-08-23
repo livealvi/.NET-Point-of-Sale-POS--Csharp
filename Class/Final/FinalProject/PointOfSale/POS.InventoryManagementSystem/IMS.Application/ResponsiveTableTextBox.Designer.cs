@@ -45,30 +45,16 @@ namespace FinalPoject
             this.txtId = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtTag = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
-            this.btnTC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBR = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnVN = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMC = new Guna.UI2.WinForms.Guna2Button();
-            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
+            this.btnAddMainCate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddVendor = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddBrandCate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddSecondCate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddThirdCate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
-            this.tablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
-            this.tablePanel2.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
+            this.tablePanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtColor
@@ -420,7 +406,7 @@ namespace FinalPoject
             this.tableLayoutPanel1.Controls.Add(this.txtSize, 0, 15);
             this.tableLayoutPanel1.Controls.Add(this.txtColor, 0, 17);
             this.tableLayoutPanel1.Controls.Add(this.txtName, 0, 5);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 28);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 119);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 31;
@@ -483,9 +469,9 @@ namespace FinalPoject
             this.txtTag.Size = new System.Drawing.Size(194, 30);
             this.txtTag.TabIndex = 167;
             // 
-            // tablePanel1
+            // tablePanel3
             // 
-            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            this.tablePanel3.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 244F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
@@ -496,488 +482,200 @@ namespace FinalPoject
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 187F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 177F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F)});
-            this.tablePanel1.Controls.Add(this.btnTC);
-            this.tablePanel1.Controls.Add(this.btnBR);
-            this.tablePanel1.Controls.Add(this.btnSC);
-            this.tablePanel1.Controls.Add(this.btnVN);
-            this.tablePanel1.Controls.Add(this.btnMC);
-            this.tablePanel1.Location = new System.Drawing.Point(338, 43);
-            this.tablePanel1.Name = "tablePanel1";
-            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 49F)});
-            this.tablePanel1.Size = new System.Drawing.Size(1162, 71);
-            this.tablePanel1.TabIndex = 162;
-            // 
-            // btnTC
-            // 
-            this.btnTC.Animated = true;
-            this.btnTC.CheckedState.Parent = this.btnTC;
-            this.tablePanel1.SetColumn(this.btnTC, 5);
-            this.btnTC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTC.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnTC.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnTC.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnTC.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnTC.CustomImages.Parent = this.btnTC;
-            this.btnTC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnTC.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnTC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnTC.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTC.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnTC.HoverState.Parent = this.btnTC;
-            this.btnTC.Location = new System.Drawing.Point(533, 18);
-            this.btnTC.Name = "btnTC";
-            this.tablePanel1.SetRow(this.btnTC, 0);
-            this.btnTC.ShadowDecoration.Parent = this.btnTC;
-            this.btnTC.Size = new System.Drawing.Size(231, 35);
-            this.btnTC.TabIndex = 158;
-            this.btnTC.Text = "Add - Third Categories";
-            this.btnTC.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnBR
-            // 
-            this.btnBR.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBR.Animated = true;
-            this.btnBR.CheckedState.Parent = this.btnBR;
-            this.tablePanel1.SetColumn(this.btnBR, 9);
-            this.btnBR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBR.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnBR.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnBR.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBR.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnBR.CustomImages.Parent = this.btnBR;
-            this.btnBR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnBR.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnBR.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnBR.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBR.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnBR.HoverState.Parent = this.btnBR;
-            this.btnBR.Location = new System.Drawing.Point(977, 18);
-            this.btnBR.Name = "btnBR";
-            this.tablePanel1.SetRow(this.btnBR, 0);
-            this.btnBR.ShadowDecoration.Parent = this.btnBR;
-            this.btnBR.Size = new System.Drawing.Size(171, 35);
-            this.btnBR.TabIndex = 159;
-            this.btnBR.Text = "Add - Brands";
-            this.btnBR.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnSC
-            // 
-            this.btnSC.Animated = true;
-            this.btnSC.CheckedState.Parent = this.btnSC;
-            this.tablePanel1.SetColumn(this.btnSC, 3);
-            this.btnSC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSC.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnSC.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnSC.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSC.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnSC.CustomImages.Parent = this.btnSC;
-            this.btnSC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnSC.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnSC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnSC.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSC.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnSC.HoverState.Parent = this.btnSC;
-            this.btnSC.Location = new System.Drawing.Point(267, 18);
-            this.btnSC.Name = "btnSC";
-            this.tablePanel1.SetRow(this.btnSC, 0);
-            this.btnSC.ShadowDecoration.Parent = this.btnSC;
-            this.btnSC.Size = new System.Drawing.Size(250, 35);
-            this.btnSC.TabIndex = 157;
-            this.btnSC.Text = "Add - Second Categories";
-            this.btnSC.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnVN
-            // 
-            this.btnVN.Animated = true;
-            this.btnVN.CheckedState.Parent = this.btnVN;
-            this.tablePanel1.SetColumn(this.btnVN, 7);
-            this.btnVN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVN.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnVN.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnVN.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnVN.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnVN.CustomImages.Parent = this.btnVN;
-            this.btnVN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnVN.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnVN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnVN.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVN.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnVN.HoverState.Parent = this.btnVN;
-            this.btnVN.Location = new System.Drawing.Point(780, 18);
-            this.btnVN.Name = "btnVN";
-            this.tablePanel1.SetRow(this.btnVN, 0);
-            this.btnVN.ShadowDecoration.Parent = this.btnVN;
-            this.btnVN.Size = new System.Drawing.Size(181, 35);
-            this.btnVN.TabIndex = 160;
-            this.btnVN.Text = "Add - Vendors";
-            this.btnVN.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnMC
-            // 
-            this.btnMC.Animated = true;
-            this.btnMC.CheckedState.Parent = this.btnMC;
-            this.tablePanel1.SetColumn(this.btnMC, 1);
-            this.btnMC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMC.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnMC.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnMC.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMC.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnMC.CustomImages.Parent = this.btnMC;
-            this.btnMC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnMC.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnMC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnMC.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMC.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnMC.HoverState.Parent = this.btnMC;
-            this.btnMC.Location = new System.Drawing.Point(13, 18);
-            this.btnMC.Name = "btnMC";
-            this.tablePanel1.SetRow(this.btnMC, 0);
-            this.btnMC.ShadowDecoration.Parent = this.btnMC;
-            this.btnMC.Size = new System.Drawing.Size(238, 35);
-            this.btnMC.TabIndex = 156;
-            this.btnMC.Text = "Add - Main Categories";
-            this.btnMC.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // tablePanel2
-            // 
-            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 244F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 256F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 237F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 187F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 177F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F)});
-            this.tablePanel2.Controls.Add(this.guna2Button1);
-            this.tablePanel2.Controls.Add(this.guna2Button2);
-            this.tablePanel2.Controls.Add(this.guna2Button3);
-            this.tablePanel2.Controls.Add(this.guna2Button4);
-            this.tablePanel2.Controls.Add(this.guna2Button5);
-            this.tablePanel2.Location = new System.Drawing.Point(338, 141);
-            this.tablePanel2.Name = "tablePanel2";
-            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 49F)});
-            this.tablePanel2.Size = new System.Drawing.Size(1162, 71);
-            this.tablePanel2.TabIndex = 163;
+            this.tablePanel3.Controls.Add(this.btnAddProduct);
+            this.tablePanel3.Controls.Add(this.btnAddMainCate);
+            this.tablePanel3.Controls.Add(this.btnAddVendor);
+            this.tablePanel3.Controls.Add(this.btnAddBrandCate);
+            this.tablePanel3.Controls.Add(this.btnAddSecondCate);
+            this.tablePanel3.Controls.Add(this.btnAddThirdCate);
+            this.tablePanel3.Location = new System.Drawing.Point(14, 12);
+            this.tablePanel3.Name = "tablePanel3";
+            this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F)});
+            this.tablePanel3.Size = new System.Drawing.Size(1374, 67);
+            this.tablePanel3.TabIndex = 198;
             // 
-            // guna2Button1
+            // btnAddMainCate
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.tablePanel2.SetColumn(this.guna2Button1, 5);
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button1.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(533, 18);
-            this.guna2Button1.Name = "guna2Button1";
-            this.tablePanel2.SetRow(this.guna2Button1, 0);
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(231, 35);
-            this.guna2Button1.TabIndex = 158;
-            this.guna2Button1.Text = "Add - Third Categories";
-            this.guna2Button1.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddMainCate.Animated = true;
+            this.btnAddMainCate.CheckedState.Parent = this.btnAddMainCate;
+            this.tablePanel3.SetColumn(this.btnAddMainCate, 1);
+            this.btnAddMainCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddMainCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddMainCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddMainCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddMainCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddMainCate.CustomImages.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddMainCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMainCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddMainCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddMainCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMainCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddMainCate.HoverState.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.Location = new System.Drawing.Point(13, 16);
+            this.btnAddMainCate.Name = "btnAddMainCate";
+            this.tablePanel3.SetRow(this.btnAddMainCate, 0);
+            this.btnAddMainCate.ShadowDecoration.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.Size = new System.Drawing.Size(238, 35);
+            this.btnAddMainCate.TabIndex = 169;
+            this.btnAddMainCate.Text = "Add - Main Categories";
+            this.btnAddMainCate.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // guna2Button2
+            // btnAddVendor
             // 
-            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.tablePanel2.SetColumn(this.guna2Button2, 9);
-            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button2.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button2.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(977, 18);
-            this.guna2Button2.Name = "guna2Button2";
-            this.tablePanel2.SetRow(this.guna2Button2, 0);
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(171, 35);
-            this.guna2Button2.TabIndex = 159;
-            this.guna2Button2.Text = "Add - Brands";
-            this.guna2Button2.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddVendor.Animated = true;
+            this.btnAddVendor.CheckedState.Parent = this.btnAddVendor;
+            this.tablePanel3.SetColumn(this.btnAddVendor, 7);
+            this.btnAddVendor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddVendor.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddVendor.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddVendor.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddVendor.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddVendor.CustomImages.Parent = this.btnAddVendor;
+            this.btnAddVendor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddVendor.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendor.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendor.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddVendor.HoverState.Parent = this.btnAddVendor;
+            this.btnAddVendor.Location = new System.Drawing.Point(780, 16);
+            this.btnAddVendor.Name = "btnAddVendor";
+            this.tablePanel3.SetRow(this.btnAddVendor, 0);
+            this.btnAddVendor.ShadowDecoration.Parent = this.btnAddVendor;
+            this.btnAddVendor.Size = new System.Drawing.Size(181, 35);
+            this.btnAddVendor.TabIndex = 168;
+            this.btnAddVendor.Text = "Add - Vendors";
+            this.btnAddVendor.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // guna2Button3
+            // btnAddBrandCate
             // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.tablePanel2.SetColumn(this.guna2Button3, 3);
-            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button3.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button3.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button3.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button3.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(267, 18);
-            this.guna2Button3.Name = "guna2Button3";
-            this.tablePanel2.SetRow(this.guna2Button3, 0);
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(250, 35);
-            this.guna2Button3.TabIndex = 157;
-            this.guna2Button3.Text = "Add - Second Categories";
-            this.guna2Button3.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddBrandCate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddBrandCate.Animated = true;
+            this.btnAddBrandCate.CheckedState.Parent = this.btnAddBrandCate;
+            this.tablePanel3.SetColumn(this.btnAddBrandCate, 9);
+            this.btnAddBrandCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddBrandCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddBrandCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddBrandCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddBrandCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddBrandCate.CustomImages.Parent = this.btnAddBrandCate;
+            this.btnAddBrandCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddBrandCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBrandCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddBrandCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddBrandCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBrandCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddBrandCate.HoverState.Parent = this.btnAddBrandCate;
+            this.btnAddBrandCate.Location = new System.Drawing.Point(977, 16);
+            this.btnAddBrandCate.Name = "btnAddBrandCate";
+            this.tablePanel3.SetRow(this.btnAddBrandCate, 0);
+            this.btnAddBrandCate.ShadowDecoration.Parent = this.btnAddBrandCate;
+            this.btnAddBrandCate.Size = new System.Drawing.Size(171, 35);
+            this.btnAddBrandCate.TabIndex = 167;
+            this.btnAddBrandCate.Text = "Add - Brands";
+            this.btnAddBrandCate.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // guna2Button4
+            // btnAddSecondCate
             // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.tablePanel2.SetColumn(this.guna2Button4, 7);
-            this.guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button4.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button4.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button4.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(780, 18);
-            this.guna2Button4.Name = "guna2Button4";
-            this.tablePanel2.SetRow(this.guna2Button4, 0);
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(181, 35);
-            this.guna2Button4.TabIndex = 160;
-            this.guna2Button4.Text = "Add - Vendors";
-            this.guna2Button4.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddSecondCate.Animated = true;
+            this.btnAddSecondCate.CheckedState.Parent = this.btnAddSecondCate;
+            this.tablePanel3.SetColumn(this.btnAddSecondCate, 3);
+            this.btnAddSecondCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddSecondCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddSecondCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddSecondCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddSecondCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddSecondCate.CustomImages.Parent = this.btnAddSecondCate;
+            this.btnAddSecondCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddSecondCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSecondCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddSecondCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddSecondCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSecondCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddSecondCate.HoverState.Parent = this.btnAddSecondCate;
+            this.btnAddSecondCate.Location = new System.Drawing.Point(267, 16);
+            this.btnAddSecondCate.Name = "btnAddSecondCate";
+            this.tablePanel3.SetRow(this.btnAddSecondCate, 0);
+            this.btnAddSecondCate.ShadowDecoration.Parent = this.btnAddSecondCate;
+            this.btnAddSecondCate.Size = new System.Drawing.Size(250, 35);
+            this.btnAddSecondCate.TabIndex = 166;
+            this.btnAddSecondCate.Text = "Add - Second Categories";
+            this.btnAddSecondCate.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // guna2Button5
+            // btnAddThirdCate
             // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.tablePanel2.SetColumn(this.guna2Button5, 1);
-            this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button5.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button5.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button5.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button5.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(13, 18);
-            this.guna2Button5.Name = "guna2Button5";
-            this.tablePanel2.SetRow(this.guna2Button5, 0);
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(238, 35);
-            this.guna2Button5.TabIndex = 156;
-            this.guna2Button5.Text = "Add - Main Categories";
-            this.guna2Button5.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddThirdCate.Animated = true;
+            this.btnAddThirdCate.CheckedState.Parent = this.btnAddThirdCate;
+            this.tablePanel3.SetColumn(this.btnAddThirdCate, 5);
+            this.btnAddThirdCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddThirdCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddThirdCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddThirdCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddThirdCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddThirdCate.CustomImages.Parent = this.btnAddThirdCate;
+            this.btnAddThirdCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddThirdCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddThirdCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddThirdCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddThirdCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddThirdCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddThirdCate.HoverState.Parent = this.btnAddThirdCate;
+            this.btnAddThirdCate.Location = new System.Drawing.Point(533, 16);
+            this.btnAddThirdCate.Name = "btnAddThirdCate";
+            this.tablePanel3.SetRow(this.btnAddThirdCate, 0);
+            this.btnAddThirdCate.ShadowDecoration.Parent = this.btnAddThirdCate;
+            this.btnAddThirdCate.Size = new System.Drawing.Size(231, 35);
+            this.btnAddThirdCate.TabIndex = 165;
+            this.btnAddThirdCate.Text = "Add - Third Categories";
+            this.btnAddThirdCate.TextOffset = new System.Drawing.Point(8, 0);
             // 
-            // tableLayoutPanel2
+            // btnAddProduct
             // 
-            this.tableLayoutPanel2.ColumnCount = 12;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 256F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 187F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel2.Controls.Add(this.guna2Button10, 9, 0);
-            this.tableLayoutPanel2.Controls.Add(this.guna2Button9, 7, 0);
-            this.tableLayoutPanel2.Controls.Add(this.guna2Button8, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.guna2Button7, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.guna2Button6, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(263, 256);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1206, 43);
-            this.tableLayoutPanel2.TabIndex = 164;
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.Animated = true;
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button6.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button6.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button6.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button6.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button6.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(13, 3);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(218, 37);
-            this.guna2Button6.TabIndex = 165;
-            this.guna2Button6.Text = "Add - Main Categories";
-            this.guna2Button6.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.Animated = true;
-            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
-            this.guna2Button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button7.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button7.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button7.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button7.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button7.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button7.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(247, 3);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(250, 35);
-            this.guna2Button7.TabIndex = 165;
-            this.guna2Button7.Text = "Add - Second Categories";
-            this.guna2Button7.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.Animated = true;
-            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
-            this.guna2Button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button8.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button8.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button8.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button8.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
-            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button8.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button8.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button8.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(513, 3);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(231, 35);
-            this.guna2Button8.TabIndex = 165;
-            this.guna2Button8.Text = "Add - Third Categories";
-            this.guna2Button8.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.Animated = true;
-            this.guna2Button9.CheckedState.Parent = this.guna2Button9;
-            this.guna2Button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button9.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button9.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button9.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button9.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button9.CustomImages.Parent = this.guna2Button9;
-            this.guna2Button9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button9.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button9.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button9.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button9.HoverState.Parent = this.guna2Button9;
-            this.guna2Button9.Location = new System.Drawing.Point(758, 3);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
-            this.guna2Button9.Size = new System.Drawing.Size(181, 35);
-            this.guna2Button9.TabIndex = 165;
-            this.guna2Button9.Text = "Add - Vendors";
-            this.guna2Button9.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.Animated = true;
-            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
-            this.guna2Button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button10.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.guna2Button10.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.guna2Button10.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button10.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
-            this.guna2Button10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button10.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.guna2Button10.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button10.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button10.HoverState.Parent = this.guna2Button10;
-            this.guna2Button10.Location = new System.Drawing.Point(953, 3);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
-            this.guna2Button10.Size = new System.Drawing.Size(181, 35);
-            this.guna2Button10.TabIndex = 165;
-            this.guna2Button10.Text = "Add - Vendors";
-            this.guna2Button10.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddProduct.Animated = true;
+            this.btnAddProduct.CheckedState.Parent = this.btnAddProduct;
+            this.tablePanel3.SetColumn(this.btnAddProduct, 11);
+            this.btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddProduct.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddProduct.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddProduct.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddProduct.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddProduct.CustomImages.Parent = this.btnAddProduct;
+            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddProduct.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddProduct.HoverState.Parent = this.btnAddProduct;
+            this.btnAddProduct.Location = new System.Drawing.Point(1164, 16);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.tablePanel3.SetRow(this.btnAddProduct, 0);
+            this.btnAddProduct.ShadowDecoration.Parent = this.btnAddProduct;
+            this.btnAddProduct.Size = new System.Drawing.Size(171, 35);
+            this.btnAddProduct.TabIndex = 199;
+            this.btnAddProduct.Text = "Add - Products";
+            this.btnAddProduct.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // ResponsiveTableTextBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1508, 765);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.tablePanel2);
-            this.Controls.Add(this.tablePanel1);
+            this.Controls.Add(this.tablePanel3);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ResponsiveTableTextBox";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
-            this.tablePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
-            this.tablePanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
+            this.tablePanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -999,23 +697,12 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2TextBox txtId;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2TextBox txtTag;
-        private DevExpress.Utils.Layout.TablePanel tablePanel1;
-        private Guna.UI2.WinForms.Guna2Button btnTC;
-        private Guna.UI2.WinForms.Guna2Button btnBR;
-        private Guna.UI2.WinForms.Guna2Button btnSC;
-        private Guna.UI2.WinForms.Guna2Button btnVN;
-        private Guna.UI2.WinForms.Guna2Button btnMC;
-        private DevExpress.Utils.Layout.TablePanel tablePanel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button10;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private DevExpress.Utils.Layout.TablePanel tablePanel3;
+        private Guna.UI2.WinForms.Guna2Button btnAddMainCate;
+        private Guna.UI2.WinForms.Guna2Button btnAddVendor;
+        private Guna.UI2.WinForms.Guna2Button btnAddBrandCate;
+        private Guna.UI2.WinForms.Guna2Button btnAddSecondCate;
+        private Guna.UI2.WinForms.Guna2Button btnAddThirdCate;
+        private Guna.UI2.WinForms.Guna2Button btnAddProduct;
     }
 }

@@ -10,13 +10,15 @@ using System.Windows.Forms;
 
 namespace FinalPoject
 {
-    public partial class FormMasterCategories : Form
+    public partial class FormProductsMaster : Form
     {
-        public FormMasterCategories()
+        public FormProductsMaster()
         {
             InitializeComponent();
         }
 
+        
+        //
         private void btnAddMainCate_Click(object sender, EventArgs e)
         {
             FormMainCategory mainCategory = new FormMainCategory();
@@ -47,6 +49,15 @@ namespace FinalPoject
             brand.ShowDialog();
         }
 
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            FormAddProduct product = new FormAddProduct();
+            product.ShowDialog();
+        }
 
+        private void btnCancle_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

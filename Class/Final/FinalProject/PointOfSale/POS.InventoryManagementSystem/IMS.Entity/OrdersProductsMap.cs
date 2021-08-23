@@ -10,12 +10,9 @@ namespace IMS.Entity
     using System.Collections.Generic;
     public class OrdersProductsMap
     {
-        public int              OrderProductsCategoriesId{ get; set; }
-        public Nullable<int>    OrderId                  { get; set; }
-        public Nullable<int>    ProductId                { get; set; }
-        public Nullable<double> UnitPrice                { get; set; }
-        public Nullable<int>    OrderQuantity            { get; set; }
-        public Nullable<double> OrderDiscount            { get; set; }
+        public int           OrderProductsCategoriesId{ get; set; }
+        public Nullable<int> OrderId                  { get; set; }
+        public Nullable<int> ProductId                { get; set; }
 
         public virtual Orders   Order  { get; set; }
         public virtual Products Product{ get; set; }
