@@ -45,15 +45,11 @@ namespace FinalPoject
             this.label26 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cmbEmpRole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbRole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtPostalCode = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbBlood = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbCurrentCity = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbDivision = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpBirthDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.rbFemale = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rbMale = new Guna.UI2.WinForms.Guna2RadioButton();
             this.dtpJoinDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtTag = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -92,24 +88,6 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.UserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.JoinDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BirthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thana = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HomeTown = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CurrentCity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Division = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BloodGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PostalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
@@ -127,11 +105,29 @@ namespace FinalPoject
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.UserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.JoinDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BirthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HomeTown = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CurrentCity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Division = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BloodGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PostalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbGender = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtCurrentCity = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.guna2Panel62.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -269,7 +265,7 @@ namespace FinalPoject
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(68, 1044);
+            this.label28.Location = new System.Drawing.Point(60, 1039);
             this.label28.Margin = new System.Windows.Forms.Padding(0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(70, 15);
@@ -281,7 +277,7 @@ namespace FinalPoject
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(64, 995);
+            this.label27.Location = new System.Drawing.Point(56, 989);
             this.label27.Margin = new System.Windows.Forms.Padding(0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(74, 15);
@@ -293,19 +289,19 @@ namespace FinalPoject
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(50, 946);
+            this.label18.Location = new System.Drawing.Point(78, 943);
             this.label18.Margin = new System.Windows.Forms.Padding(0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(88, 15);
+            this.label18.Size = new System.Drawing.Size(52, 15);
             this.label18.TabIndex = 166;
-            this.label18.Text = "Home Division ";
+            this.label18.Text = "Division ";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(110, 307);
+            this.label26.Location = new System.Drawing.Point(102, 302);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(28, 15);
@@ -316,14 +312,14 @@ namespace FinalPoject
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.txtCurrentCity, 0, 27);
+            this.tableLayoutPanel2.Controls.Add(this.cmbGender, 0, 11);
             this.tableLayoutPanel2.Controls.Add(this.txtLastName, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.cmbEmpRole, 0, 13);
+            this.tableLayoutPanel2.Controls.Add(this.cmbRole, 0, 13);
             this.tableLayoutPanel2.Controls.Add(this.txtPostalCode, 0, 33);
             this.tableLayoutPanel2.Controls.Add(this.cmbBlood, 0, 31);
-            this.tableLayoutPanel2.Controls.Add(this.guna2ComboBox2, 0, 29);
-            this.tableLayoutPanel2.Controls.Add(this.cmbCurrentCity, 0, 27);
+            this.tableLayoutPanel2.Controls.Add(this.cmbDivision, 0, 29);
             this.tableLayoutPanel2.Controls.Add(this.dtpBirthDate, 0, 19);
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 11);
             this.tableLayoutPanel2.Controls.Add(this.dtpJoinDate, 0, 17);
             this.tableLayoutPanel2.Controls.Add(this.txtTag, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.txtNID, 0, 21);
@@ -333,7 +329,7 @@ namespace FinalPoject
             this.tableLayoutPanel2.Controls.Add(this.txtSalary, 0, 15);
             this.tableLayoutPanel2.Controls.Add(this.txtFirstName, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.txtHomeTown, 0, 25);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(146, 236);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(142, 232);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 37;
@@ -404,29 +400,30 @@ namespace FinalPoject
             this.txtLastName.Size = new System.Drawing.Size(194, 30);
             this.txtLastName.TabIndex = 57;
             // 
-            // cmbEmpRole
+            // cmbRole
             // 
-            this.cmbEmpRole.BackColor = System.Drawing.Color.Transparent;
-            this.cmbEmpRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbEmpRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEmpRole.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbEmpRole.FocusedState.Parent = this.cmbEmpRole;
-            this.cmbEmpRole.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEmpRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbEmpRole.FormattingEnabled = true;
-            this.cmbEmpRole.HoverState.Parent = this.cmbEmpRole;
-            this.cmbEmpRole.ItemHeight = 30;
-            this.cmbEmpRole.Items.AddRange(new object[] {
+            this.cmbRole.BackColor = System.Drawing.Color.Transparent;
+            this.cmbRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRole.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbRole.FocusedState.Parent = this.cmbRole;
+            this.cmbRole.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.HoverState.Parent = this.cmbRole;
+            this.cmbRole.ItemHeight = 30;
+            this.cmbRole.Items.AddRange(new object[] {
+            "Not Selected",
             "Admin",
             "Cashier",
             "SalesMan"});
-            this.cmbEmpRole.ItemsAppearance.Parent = this.cmbEmpRole;
-            this.cmbEmpRole.Location = new System.Drawing.Point(2, 308);
-            this.cmbEmpRole.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbEmpRole.Name = "cmbEmpRole";
-            this.cmbEmpRole.ShadowDecoration.Parent = this.cmbEmpRole;
-            this.cmbEmpRole.Size = new System.Drawing.Size(196, 36);
-            this.cmbEmpRole.TabIndex = 134;
+            this.cmbRole.ItemsAppearance.Parent = this.cmbRole;
+            this.cmbRole.Location = new System.Drawing.Point(2, 308);
+            this.cmbRole.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.ShadowDecoration.Parent = this.cmbRole;
+            this.cmbRole.Size = new System.Drawing.Size(196, 36);
+            this.cmbRole.TabIndex = 134;
             // 
             // txtPostalCode
             // 
@@ -464,6 +461,16 @@ namespace FinalPoject
             this.cmbBlood.FormattingEnabled = true;
             this.cmbBlood.HoverState.Parent = this.cmbBlood;
             this.cmbBlood.ItemHeight = 30;
+            this.cmbBlood.Items.AddRange(new object[] {
+            "Not Selected",
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "O+",
+            "O-",
+            "AB+",
+            "AB-"});
             this.cmbBlood.ItemsAppearance.Parent = this.cmbBlood;
             this.cmbBlood.Location = new System.Drawing.Point(2, 749);
             this.cmbBlood.Margin = new System.Windows.Forms.Padding(2);
@@ -472,52 +479,42 @@ namespace FinalPoject
             this.cmbBlood.Size = new System.Drawing.Size(196, 36);
             this.cmbBlood.TabIndex = 136;
             // 
-            // guna2ComboBox2
+            // cmbDivision
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.FormattingEnabled = true;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(2, 700);
-            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(196, 36);
-            this.guna2ComboBox2.TabIndex = 135;
-            // 
-            // cmbCurrentCity
-            // 
-            this.cmbCurrentCity.BackColor = System.Drawing.Color.Transparent;
-            this.cmbCurrentCity.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbCurrentCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCurrentCity.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbCurrentCity.FocusedState.Parent = this.cmbCurrentCity;
-            this.cmbCurrentCity.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCurrentCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbCurrentCity.FormattingEnabled = true;
-            this.cmbCurrentCity.HoverState.Parent = this.cmbCurrentCity;
-            this.cmbCurrentCity.ItemHeight = 30;
-            this.cmbCurrentCity.ItemsAppearance.Parent = this.cmbCurrentCity;
-            this.cmbCurrentCity.Location = new System.Drawing.Point(2, 651);
-            this.cmbCurrentCity.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbCurrentCity.Name = "cmbCurrentCity";
-            this.cmbCurrentCity.ShadowDecoration.Parent = this.cmbCurrentCity;
-            this.cmbCurrentCity.Size = new System.Drawing.Size(196, 36);
-            this.cmbCurrentCity.TabIndex = 134;
+            this.cmbDivision.BackColor = System.Drawing.Color.Transparent;
+            this.cmbDivision.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbDivision.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDivision.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbDivision.FocusedState.Parent = this.cmbDivision;
+            this.cmbDivision.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbDivision.FormattingEnabled = true;
+            this.cmbDivision.HoverState.Parent = this.cmbDivision;
+            this.cmbDivision.ItemHeight = 30;
+            this.cmbDivision.Items.AddRange(new object[] {
+            "Not Selected",
+            "Dhaka",
+            "Khulna",
+            "Chittagong",
+            "Mymensingh",
+            "Barisal",
+            "Rajshahi",
+            "Rangpur",
+            "Sylhet"});
+            this.cmbDivision.ItemsAppearance.Parent = this.cmbDivision;
+            this.cmbDivision.Location = new System.Drawing.Point(2, 700);
+            this.cmbDivision.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbDivision.Name = "cmbDivision";
+            this.cmbDivision.ShadowDecoration.Parent = this.cmbDivision;
+            this.cmbDivision.Size = new System.Drawing.Size(196, 36);
+            this.cmbDivision.TabIndex = 135;
             // 
             // dtpBirthDate
             // 
             this.dtpBirthDate.CheckedState.Parent = this.dtpBirthDate;
-            this.dtpBirthDate.CustomFormat = "";
+            this.dtpBirthDate.CustomFormat = "yyyy-MM-dd";
             this.dtpBirthDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpBirthDate.HoverState.Parent = this.dtpBirthDate;
             this.dtpBirthDate.Location = new System.Drawing.Point(3, 456);
             this.dtpBirthDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -526,64 +523,14 @@ namespace FinalPoject
             this.dtpBirthDate.ShadowDecoration.Parent = this.dtpBirthDate;
             this.dtpBirthDate.Size = new System.Drawing.Size(194, 31);
             this.dtpBirthDate.TabIndex = 166;
-            this.dtpBirthDate.Value = new System.DateTime(2021, 8, 23, 3, 54, 23, 512);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.rbFemale);
-            this.panel2.Controls.Add(this.rbMale);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 260);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(194, 31);
-            this.panel2.TabIndex = 6;
-            // 
-            // rbFemale
-            // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFemale.CheckedState.BorderThickness = 0;
-            this.rbFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFemale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbFemale.CheckedState.InnerOffset = -4;
-            this.rbFemale.Location = new System.Drawing.Point(100, 4);
-            this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(70, 23);
-            this.rbFemale.TabIndex = 7;
-            this.rbFemale.Text = "Female";
-            this.rbFemale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbFemale.UncheckedState.BorderThickness = 2;
-            this.rbFemale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbFemale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbFemale.UseVisualStyleBackColor = true;
-            // 
-            // rbMale
-            // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Checked = true;
-            this.rbMale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbMale.CheckedState.BorderThickness = 0;
-            this.rbMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbMale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbMale.CheckedState.InnerOffset = -4;
-            this.rbMale.Location = new System.Drawing.Point(29, 4);
-            this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(57, 23);
-            this.rbMale.TabIndex = 6;
-            this.rbMale.TabStop = true;
-            this.rbMale.Text = "Male";
-            this.rbMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbMale.UncheckedState.BorderThickness = 2;
-            this.rbMale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbMale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbMale.UseVisualStyleBackColor = true;
+            this.dtpBirthDate.Value = new System.DateTime(2021, 8, 23, 0, 0, 0, 0);
             // 
             // dtpJoinDate
             // 
             this.dtpJoinDate.CheckedState.Parent = this.dtpJoinDate;
-            this.dtpJoinDate.CustomFormat = "";
+            this.dtpJoinDate.CustomFormat = "yyyy-MM-dd";
             this.dtpJoinDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtpJoinDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpJoinDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpJoinDate.HoverState.Parent = this.dtpJoinDate;
             this.dtpJoinDate.Location = new System.Drawing.Point(3, 407);
             this.dtpJoinDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -592,7 +539,7 @@ namespace FinalPoject
             this.dtpJoinDate.ShadowDecoration.Parent = this.dtpJoinDate;
             this.dtpJoinDate.Size = new System.Drawing.Size(194, 31);
             this.dtpJoinDate.TabIndex = 7;
-            this.dtpJoinDate.Value = new System.DateTime(2021, 8, 23, 3, 54, 23, 512);
+            this.dtpJoinDate.Value = new System.DateTime(2021, 8, 23, 0, 0, 0, 0);
             // 
             // txtTag
             // 
@@ -795,31 +742,31 @@ namespace FinalPoject
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(67, 898);
+            this.label17.Location = new System.Drawing.Point(55, 892);
             this.label17.Margin = new System.Windows.Forms.Padding(0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 15);
+            this.label17.Size = new System.Drawing.Size(75, 15);
             this.label17.TabIndex = 157;
-            this.label17.Text = "Current City";
+            this.label17.Text = "Current Add.";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(70, 848);
+            this.label16.Location = new System.Drawing.Point(62, 843);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(68, 15);
             this.label16.TabIndex = 156;
-            this.label16.Text = "HomeTown";
+            this.label16.Text = "Home Add.";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(97, 798);
+            this.label11.Location = new System.Drawing.Point(89, 794);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 15);
@@ -856,7 +803,7 @@ namespace FinalPoject
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(75, 407);
+            this.label4.Location = new System.Drawing.Point(67, 402);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 15);
@@ -893,7 +840,7 @@ namespace FinalPoject
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(111, 750);
+            this.label15.Location = new System.Drawing.Point(103, 745);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(27, 15);
@@ -905,7 +852,7 @@ namespace FinalPoject
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(79, 700);
+            this.label13.Location = new System.Drawing.Point(71, 698);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 15);
@@ -917,7 +864,7 @@ namespace FinalPoject
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(108, 553);
+            this.label1.Location = new System.Drawing.Point(100, 552);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 15);
@@ -929,7 +876,7 @@ namespace FinalPoject
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(86, 651);
+            this.label14.Location = new System.Drawing.Point(78, 647);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(52, 15);
@@ -941,7 +888,7 @@ namespace FinalPoject
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(110, 455);
+            this.label12.Location = new System.Drawing.Point(102, 452);
             this.label12.Margin = new System.Windows.Forms.Padding(0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(28, 15);
@@ -953,7 +900,7 @@ namespace FinalPoject
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(120, 261);
+            this.label8.Location = new System.Drawing.Point(112, 255);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 15);
@@ -965,7 +912,7 @@ namespace FinalPoject
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(100, 602);
+            this.label2.Location = new System.Drawing.Point(92, 599);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 15);
@@ -977,7 +924,7 @@ namespace FinalPoject
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(74, 357);
+            this.label7.Location = new System.Drawing.Point(66, 353);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 15);
@@ -989,7 +936,7 @@ namespace FinalPoject
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(93, 504);
+            this.label10.Location = new System.Drawing.Point(85, 502);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 15);
@@ -1015,7 +962,7 @@ namespace FinalPoject
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(183, 24);
+            this.label9.Location = new System.Drawing.Point(413, -689);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(76, 20);
@@ -1121,6 +1068,7 @@ namespace FinalPoject
             this.btnCancle.Size = new System.Drawing.Size(142, 35);
             this.btnCancle.TabIndex = 117;
             this.btnCancle.Text = "Cancle";
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnSave
             // 
@@ -1144,6 +1092,7 @@ namespace FinalPoject
             this.btnSave.Size = new System.Drawing.Size(142, 35);
             this.btnSave.TabIndex = 118;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // guna2Panel15
             // 
@@ -1175,9 +1124,9 @@ namespace FinalPoject
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(26, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 21);
+            this.label5.Size = new System.Drawing.Size(138, 21);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Enter Product Details";
+            this.label5.Text = "Enter User Details";
             // 
             // guna2Panel11
             // 
@@ -1221,7 +1170,6 @@ namespace FinalPoject
             this.BirthDate,
             this.NID,
             this.Phone,
-            this.Thana,
             this.HomeTown,
             this.CurrentCity,
             this.Division,
@@ -1237,6 +1185,254 @@ namespace FinalPoject
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUser.Size = new System.Drawing.Size(773, 502);
             this.dgvUser.TabIndex = 151;
+            this.dgvUser.DoubleClick += new System.EventHandler(this.dgvUser_DoubleClick);
+            // 
+            // guna2Panel22
+            // 
+            this.guna2Panel22.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel22.Location = new System.Drawing.Point(8, 630);
+            this.guna2Panel22.Name = "guna2Panel22";
+            this.guna2Panel22.ShadowDecoration.Parent = this.guna2Panel22;
+            this.guna2Panel22.Size = new System.Drawing.Size(773, 8);
+            this.guna2Panel22.TabIndex = 150;
+            // 
+            // guna2Panel21
+            // 
+            this.guna2Panel21.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel21.Location = new System.Drawing.Point(8, 120);
+            this.guna2Panel21.Name = "guna2Panel21";
+            this.guna2Panel21.ShadowDecoration.Parent = this.guna2Panel21;
+            this.guna2Panel21.Size = new System.Drawing.Size(773, 8);
+            this.guna2Panel21.TabIndex = 149;
+            // 
+            // guna2Panel19
+            // 
+            this.guna2Panel19.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel19.Location = new System.Drawing.Point(781, 120);
+            this.guna2Panel19.Name = "guna2Panel19";
+            this.guna2Panel19.ShadowDecoration.Parent = this.guna2Panel19;
+            this.guna2Panel19.Size = new System.Drawing.Size(8, 518);
+            this.guna2Panel19.TabIndex = 147;
+            // 
+            // guna2Panel18
+            // 
+            this.guna2Panel18.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel18.Location = new System.Drawing.Point(0, 120);
+            this.guna2Panel18.Name = "guna2Panel18";
+            this.guna2Panel18.ShadowDecoration.Parent = this.guna2Panel18;
+            this.guna2Panel18.Size = new System.Drawing.Size(8, 518);
+            this.guna2Panel18.TabIndex = 146;
+            // 
+            // guna2Panel13
+            // 
+            this.guna2Panel13.Controls.Add(this.tableLayoutPanel4);
+            this.guna2Panel13.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel13.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel13.Location = new System.Drawing.Point(0, 638);
+            this.guna2Panel13.Name = "guna2Panel13";
+            this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
+            this.guna2Panel13.Size = new System.Drawing.Size(789, 57);
+            this.guna2Panel13.TabIndex = 133;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 5;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.btnRefresh, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.btnDelete, 3, 1);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(789, 57);
+            this.tableLayoutPanel4.TabIndex = 137;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Animated = true;
+            this.btnRefresh.CheckedState.Parent = this.btnRefresh;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnRefresh.CustomImages.Parent = this.btnRefresh;
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.HoverState.Parent = this.btnRefresh;
+            this.btnRefresh.Location = new System.Drawing.Point(168, 11);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.ShadowDecoration.Parent = this.btnRefresh;
+            this.btnRefresh.Size = new System.Drawing.Size(219, 35);
+            this.btnRefresh.TabIndex = 133;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Animated = true;
+            this.btnDelete.CheckedState.Parent = this.btnDelete;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_trash_can_480px;
+            this.btnDelete.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_trash_can_480px_1;
+            this.btnDelete.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnDelete.CustomImages.Parent = this.btnDelete;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnDelete.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.HoverState.Parent = this.btnDelete;
+            this.btnDelete.Location = new System.Drawing.Point(401, 11);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
+            this.btnDelete.Size = new System.Drawing.Size(219, 35);
+            this.btnDelete.TabIndex = 135;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.Controls.Add(this.guna2Panel8);
+            this.guna2Panel7.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel7.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel7.Location = new System.Drawing.Point(0, 57);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
+            this.guna2Panel7.Size = new System.Drawing.Size(789, 63);
+            this.guna2Panel7.TabIndex = 132;
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
+            this.guna2Panel8.Size = new System.Drawing.Size(20, 63);
+            this.guna2Panel8.TabIndex = 19;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.guna2Panel14);
+            this.guna2Panel2.Controls.Add(this.guna2Panel5);
+            this.guna2Panel2.Controls.Add(this.label6);
+            this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(789, 57);
+            this.guna2Panel2.TabIndex = 131;
+            // 
+            // guna2Panel14
+            // 
+            this.guna2Panel14.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel14.Controls.Add(this.label24);
+            this.guna2Panel14.Controls.Add(this.guna2Panel17);
+            this.guna2Panel14.Controls.Add(this.txtSearch);
+            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel14.Location = new System.Drawing.Point(400, 0);
+            this.guna2Panel14.Name = "guna2Panel14";
+            this.guna2Panel14.ShadowDecoration.Parent = this.guna2Panel14;
+            this.guna2Panel14.Size = new System.Drawing.Size(389, 57);
+            this.guna2Panel14.TabIndex = 21;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label24.Location = new System.Drawing.Point(10, 20);
+            this.label24.Margin = new System.Windows.Forms.Padding(0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(81, 19);
+            this.label24.TabIndex = 164;
+            this.label24.Text = "Search User";
+            // 
+            // guna2Panel17
+            // 
+            this.guna2Panel17.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel17.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel17.Location = new System.Drawing.Point(369, 0);
+            this.guna2Panel17.Name = "guna2Panel17";
+            this.guna2Panel17.ShadowDecoration.Parent = this.guna2Panel17;
+            this.guna2Panel17.Size = new System.Drawing.Size(20, 57);
+            this.guna2Panel17.TabIndex = 135;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.Parent = this.txtSearch;
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedState.Parent = this.txtSearch;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.HoverState.Parent = this.txtSearch;
+            this.txtSearch.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.txtSearch.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
+            this.txtSearch.Location = new System.Drawing.Point(116, 14);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "by Name, Tag, Phone, City etc..";
+            this.txtSearch.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            this.txtSearch.Size = new System.Drawing.Size(245, 30);
+            this.txtSearch.TabIndex = 134;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(20, 57);
+            this.guna2Panel5.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(26, 17);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 21);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "View All User";
             // 
             // UserId
             // 
@@ -1344,15 +1540,6 @@ namespace FinalPoject
             this.Phone.ReadOnly = true;
             this.Phone.Width = 125;
             // 
-            // Thana
-            // 
-            this.Thana.DataPropertyName = "Thana";
-            this.Thana.HeaderText = "Thana";
-            this.Thana.MinimumWidth = 6;
-            this.Thana.Name = "Thana";
-            this.Thana.ReadOnly = true;
-            this.Thana.Width = 125;
-            // 
             // HomeTown
             // 
             this.HomeTown.DataPropertyName = "HomeTown";
@@ -1373,6 +1560,7 @@ namespace FinalPoject
             // 
             // Division
             // 
+            this.Division.DataPropertyName = "Division";
             this.Division.HeaderText = "Division";
             this.Division.Name = "Division";
             this.Division.ReadOnly = true;
@@ -1391,249 +1579,53 @@ namespace FinalPoject
             this.PostalCode.Name = "PostalCode";
             this.PostalCode.ReadOnly = true;
             // 
-            // guna2Panel22
+            // cmbGender
             // 
-            this.guna2Panel22.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel22.Location = new System.Drawing.Point(8, 630);
-            this.guna2Panel22.Name = "guna2Panel22";
-            this.guna2Panel22.ShadowDecoration.Parent = this.guna2Panel22;
-            this.guna2Panel22.Size = new System.Drawing.Size(773, 8);
-            this.guna2Panel22.TabIndex = 150;
+            this.cmbGender.BackColor = System.Drawing.Color.Transparent;
+            this.cmbGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGender.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbGender.FocusedState.Parent = this.cmbGender;
+            this.cmbGender.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.HoverState.Parent = this.cmbGender;
+            this.cmbGender.ItemHeight = 30;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Not Selected",
+            "Male",
+            "Female"});
+            this.cmbGender.ItemsAppearance.Parent = this.cmbGender;
+            this.cmbGender.Location = new System.Drawing.Point(2, 259);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.ShadowDecoration.Parent = this.cmbGender;
+            this.cmbGender.Size = new System.Drawing.Size(196, 36);
+            this.cmbGender.TabIndex = 169;
             // 
-            // guna2Panel21
+            // txtCurrentCity
             // 
-            this.guna2Panel21.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel21.Location = new System.Drawing.Point(8, 120);
-            this.guna2Panel21.Name = "guna2Panel21";
-            this.guna2Panel21.ShadowDecoration.Parent = this.guna2Panel21;
-            this.guna2Panel21.Size = new System.Drawing.Size(773, 8);
-            this.guna2Panel21.TabIndex = 149;
-            // 
-            // guna2Panel19
-            // 
-            this.guna2Panel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel19.Location = new System.Drawing.Point(781, 120);
-            this.guna2Panel19.Name = "guna2Panel19";
-            this.guna2Panel19.ShadowDecoration.Parent = this.guna2Panel19;
-            this.guna2Panel19.Size = new System.Drawing.Size(8, 518);
-            this.guna2Panel19.TabIndex = 147;
-            // 
-            // guna2Panel18
-            // 
-            this.guna2Panel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel18.Location = new System.Drawing.Point(0, 120);
-            this.guna2Panel18.Name = "guna2Panel18";
-            this.guna2Panel18.ShadowDecoration.Parent = this.guna2Panel18;
-            this.guna2Panel18.Size = new System.Drawing.Size(8, 518);
-            this.guna2Panel18.TabIndex = 146;
-            // 
-            // guna2Panel13
-            // 
-            this.guna2Panel13.Controls.Add(this.tableLayoutPanel4);
-            this.guna2Panel13.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel13.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel13.Location = new System.Drawing.Point(0, 638);
-            this.guna2Panel13.Name = "guna2Panel13";
-            this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
-            this.guna2Panel13.Size = new System.Drawing.Size(789, 57);
-            this.guna2Panel13.TabIndex = 133;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 5;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.btnRefresh, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.btnDelete, 3, 1);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(789, 57);
-            this.tableLayoutPanel4.TabIndex = 137;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Animated = true;
-            this.btnRefresh.CheckedState.Parent = this.btnRefresh;
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnRefresh.CustomImages.Parent = this.btnRefresh;
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.HoverState.Parent = this.btnRefresh;
-            this.btnRefresh.Location = new System.Drawing.Point(168, 11);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.ShadowDecoration.Parent = this.btnRefresh;
-            this.btnRefresh.Size = new System.Drawing.Size(219, 35);
-            this.btnRefresh.TabIndex = 133;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Animated = true;
-            this.btnDelete.CheckedState.Parent = this.btnDelete;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_trash_can_480px;
-            this.btnDelete.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_trash_can_480px_1;
-            this.btnDelete.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDelete.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnDelete.CustomImages.Parent = this.btnDelete;
-            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.btnDelete.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Location = new System.Drawing.Point(401, 11);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(219, 35);
-            this.btnDelete.TabIndex = 135;
-            this.btnDelete.Text = "Delete";
-            // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.Controls.Add(this.guna2Panel8);
-            this.guna2Panel7.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel7.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel7.Location = new System.Drawing.Point(0, 57);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
-            this.guna2Panel7.Size = new System.Drawing.Size(789, 63);
-            this.guna2Panel7.TabIndex = 132;
-            // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
-            this.guna2Panel8.Size = new System.Drawing.Size(20, 63);
-            this.guna2Panel8.TabIndex = 19;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2Panel14);
-            this.guna2Panel2.Controls.Add(this.guna2Panel5);
-            this.guna2Panel2.Controls.Add(this.label6);
-            this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(789, 57);
-            this.guna2Panel2.TabIndex = 131;
-            // 
-            // guna2Panel14
-            // 
-            this.guna2Panel14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel14.Controls.Add(this.label24);
-            this.guna2Panel14.Controls.Add(this.guna2Panel17);
-            this.guna2Panel14.Controls.Add(this.txtSearch);
-            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel14.Location = new System.Drawing.Point(400, 0);
-            this.guna2Panel14.Name = "guna2Panel14";
-            this.guna2Panel14.ShadowDecoration.Parent = this.guna2Panel14;
-            this.guna2Panel14.Size = new System.Drawing.Size(389, 57);
-            this.guna2Panel14.TabIndex = 21;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label24.Location = new System.Drawing.Point(10, 20);
-            this.label24.Margin = new System.Windows.Forms.Padding(0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(81, 19);
-            this.label24.TabIndex = 164;
-            this.label24.Text = "Search User";
-            // 
-            // guna2Panel17
-            // 
-            this.guna2Panel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel17.Location = new System.Drawing.Point(369, 0);
-            this.guna2Panel17.Name = "guna2Panel17";
-            this.guna2Panel17.ShadowDecoration.Parent = this.guna2Panel17;
-            this.guna2Panel17.Size = new System.Drawing.Size(20, 57);
-            this.guna2Panel17.TabIndex = 135;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.Parent = this.txtSearch;
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.FocusedState.Parent = this.txtSearch;
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.HoverState.Parent = this.txtSearch;
-            this.txtSearch.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.txtSearch.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearch.Location = new System.Drawing.Point(116, 14);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "by Name, Tag, Phone, City etc..";
-            this.txtSearch.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
-            this.txtSearch.Size = new System.Drawing.Size(245, 30);
-            this.txtSearch.TabIndex = 134;
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(20, 57);
-            this.guna2Panel5.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(26, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 21);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "View All User";
+            this.txtCurrentCity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCurrentCity.DefaultText = "";
+            this.txtCurrentCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCurrentCity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCurrentCity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCurrentCity.DisabledState.Parent = this.txtCurrentCity;
+            this.txtCurrentCity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCurrentCity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCurrentCity.FocusedState.Parent = this.txtCurrentCity;
+            this.txtCurrentCity.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentCity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtCurrentCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCurrentCity.HoverState.Parent = this.txtCurrentCity;
+            this.txtCurrentCity.Location = new System.Drawing.Point(3, 652);
+            this.txtCurrentCity.Name = "txtCurrentCity";
+            this.txtCurrentCity.PasswordChar = '\0';
+            this.txtCurrentCity.PlaceholderText = "Yes or No";
+            this.txtCurrentCity.SelectedText = "";
+            this.txtCurrentCity.ShadowDecoration.Parent = this.txtCurrentCity;
+            this.txtCurrentCity.Size = new System.Drawing.Size(194, 30);
+            this.txtCurrentCity.TabIndex = 169;
             // 
             // FormUser
             // 
@@ -1648,13 +1640,12 @@ namespace FinalPoject
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUser";
             this.Text = "FormCustomers";
+            this.Load += new System.EventHandler(this.FormUser_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.guna2Panel12.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.guna2Panel62.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -1690,15 +1681,11 @@ namespace FinalPoject
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2TextBox txtLastName;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbEmpRole;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbRole;
         private Guna.UI2.WinForms.Guna2TextBox txtPostalCode;
         private Guna.UI2.WinForms.Guna2ComboBox cmbBlood;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbCurrentCity;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbDivision;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpBirthDate;
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2RadioButton rbFemale;
-        private Guna.UI2.WinForms.Guna2RadioButton rbMale;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpJoinDate;
         private Guna.UI2.WinForms.Guna2TextBox txtTag;
         private Guna.UI2.WinForms.Guna2TextBox txtNID;
@@ -1737,24 +1724,6 @@ namespace FinalPoject
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel11;
         private System.Windows.Forms.DataGridView dgvUser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserTag;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
-        private System.Windows.Forms.DataGridViewTextBoxColumn JoinDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BirthDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thana;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HomeTown;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CurrentCity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Division;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BloodGroup;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PostalCode;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel22;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel21;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel19;
@@ -1772,5 +1741,24 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserTag;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
+        private System.Windows.Forms.DataGridViewTextBoxColumn JoinDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BirthDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HomeTown;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CurrentCity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Division;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BloodGroup;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PostalCode;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbGender;
+        private Guna.UI2.WinForms.Guna2TextBox txtCurrentCity;
     }
 }

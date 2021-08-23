@@ -48,6 +48,7 @@ namespace FinalPoject
             this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtDiscription = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtQuantityPerUnit = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPerUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtWeight = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMSRP = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSize = new Guna.UI2.WinForms.Guna2TextBox();
@@ -126,7 +127,6 @@ namespace FinalPoject
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ElipseAddProducts = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.txtPerUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
@@ -519,6 +519,30 @@ namespace FinalPoject
             this.txtQuantityPerUnit.ShadowDecoration.Parent = this.txtQuantityPerUnit;
             this.txtQuantityPerUnit.Size = new System.Drawing.Size(194, 30);
             this.txtQuantityPerUnit.TabIndex = 58;
+            // 
+            // txtPerUnitPrice
+            // 
+            this.txtPerUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPerUnitPrice.DefaultText = "";
+            this.txtPerUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPerUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPerUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPerUnitPrice.DisabledState.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPerUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPerUnitPrice.FocusedState.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPerUnitPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPerUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPerUnitPrice.HoverState.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.Location = new System.Drawing.Point(3, 260);
+            this.txtPerUnitPrice.Name = "txtPerUnitPrice";
+            this.txtPerUnitPrice.PasswordChar = '\0';
+            this.txtPerUnitPrice.PlaceholderText = "Ex: 10.00";
+            this.txtPerUnitPrice.SelectedText = "";
+            this.txtPerUnitPrice.ShadowDecoration.Parent = this.txtPerUnitPrice;
+            this.txtPerUnitPrice.Size = new System.Drawing.Size(194, 30);
+            this.txtPerUnitPrice.TabIndex = 59;
             // 
             // txtWeight
             // 
@@ -1614,30 +1638,6 @@ namespace FinalPoject
             // guna2ElipseAddProducts
             // 
             this.guna2ElipseAddProducts.BorderRadius = 12;
-            // 
-            // txtPerUnitPrice
-            // 
-            this.txtPerUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPerUnitPrice.DefaultText = "";
-            this.txtPerUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPerUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPerUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPerUnitPrice.DisabledState.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPerUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPerUnitPrice.FocusedState.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPerUnitPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPerUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPerUnitPrice.HoverState.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.Location = new System.Drawing.Point(3, 260);
-            this.txtPerUnitPrice.Name = "txtPerUnitPrice";
-            this.txtPerUnitPrice.PasswordChar = '\0';
-            this.txtPerUnitPrice.PlaceholderText = "Ex: 10.00";
-            this.txtPerUnitPrice.SelectedText = "";
-            this.txtPerUnitPrice.ShadowDecoration.Parent = this.txtPerUnitPrice;
-            this.txtPerUnitPrice.Size = new System.Drawing.Size(194, 30);
-            this.txtPerUnitPrice.TabIndex = 59;
             // 
             // FormAddProduct
             // 

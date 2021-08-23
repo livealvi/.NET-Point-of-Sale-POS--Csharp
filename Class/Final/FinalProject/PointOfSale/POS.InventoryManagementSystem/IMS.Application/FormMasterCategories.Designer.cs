@@ -904,11 +904,11 @@ namespace FinalPoject
             this.btnAddSecondCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSecondCate.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddSecondCate.HoverState.Parent = this.btnAddSecondCate;
-            this.btnAddSecondCate.Location = new System.Drawing.Point(178, 5);
+            this.btnAddSecondCate.Location = new System.Drawing.Point(267, 16);
             this.btnAddSecondCate.Name = "btnAddSecondCate";
             this.tablePanel2.SetRow(this.btnAddSecondCate, 0);
             this.btnAddSecondCate.ShadowDecoration.Parent = this.btnAddSecondCate;
-            this.btnAddSecondCate.Size = new System.Drawing.Size(167, 35);
+            this.btnAddSecondCate.Size = new System.Drawing.Size(250, 35);
             this.btnAddSecondCate.TabIndex = 157;
             this.btnAddSecondCate.Text = "Add - Second Categories";
             this.btnAddSecondCate.TextOffset = new System.Drawing.Point(8, 0);
@@ -958,11 +958,11 @@ namespace FinalPoject
             this.btnAddMainCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMainCate.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddMainCate.HoverState.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.Location = new System.Drawing.Point(9, 5);
+            this.btnAddMainCate.Location = new System.Drawing.Point(13, 16);
             this.btnAddMainCate.Name = "btnAddMainCate";
             this.tablePanel2.SetRow(this.btnAddMainCate, 0);
             this.btnAddMainCate.ShadowDecoration.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.Size = new System.Drawing.Size(159, 35);
+            this.btnAddMainCate.Size = new System.Drawing.Size(238, 35);
             this.btnAddMainCate.TabIndex = 156;
             this.btnAddMainCate.Text = "Add - Main Categories";
             this.btnAddMainCate.TextOffset = new System.Drawing.Point(8, 0);
