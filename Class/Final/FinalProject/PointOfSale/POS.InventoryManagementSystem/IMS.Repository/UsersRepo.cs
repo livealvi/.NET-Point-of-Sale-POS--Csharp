@@ -28,18 +28,18 @@ namespace IMS.Repository
 
             try
             {
-                if (key == null)  //JoinDate, Birthdate,
-                    sql = @"SELECT UserId, UserTag, FirstName,  LastName, Age, Gender, Role, Salary,   NID, Phone,
+                if (key == null)  //
+                    sql = @"SELECT UserId, UserTag, FirstName,  LastName, Age, Gender, Role, Salary, JoinDate, Birthdate,   NID, Phone,
                           HomeTown, CurrentCity, Division, BloodGroup, PostalCode
                           FROM Users";
 
-                else //  JoinDate, Birthdate, or JoinDate like '%" + key + "%' or Birthdate like '%" + key + "%' "
-                    sql = @"SELECT UserId, UserTag, FirstName, LastName, Age, Gender, Role, Salary,    NID, Phone,
+                else //   
+                    sql = @"SELECT UserId, UserTag, FirstName, LastName, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
                           HomeTown, CurrentCity, Division, BloodGroup, PostalCode
                           FROM Users
                           where UserId like '%" + key + "%' or UserTag like '%" + key + "%' or FirstName like '%" + key + "%' or LastName like '%" + key + "%' " +
                           " or Age like '%" + key + "%' or Gender like '%" + key + "%' or Role like '%" + key + "%' " +
-                          "or Salary like '%" + key + "%'            " +
+                          "or Salary like '%" + key + "%' or JoinDate like '%" + key + "%' or Birthdate like '%" + key + "%' " +
                           "or NID like '%" + key + "%' or Phone like '%" + key + "%'" +
                           "or HomeTown like '%" + key + "%' or CurrentCity like '%" + key + "%' or Division like '%" + key + "%'" +
                           "or BloodGroup like '%" + key + "%' or PostalCode like '%" + key + "%' ; ";
@@ -79,8 +79,8 @@ namespace IMS.Repository
             users.Gender = row["Gender"].ToString();
             users.Role = row["Role"].ToString();
             users.Salary = Convert.ToDouble(row["Salary"].ToString());
-            //users.JoinDate = Convert.ToDateTime();
-            //users.Birthdate = Convert.ToDateTime(new DateTime("year"));
+            users.JoinDate = Convert.ToDateTime(row["JoinDate"].ToString());
+            users.Birthdate = Convert.ToDateTime(row["BirthDate"].ToString());
             users.NID = row["NID"].ToString();
             users.Phone = row["Phone"].ToString();
             users.HomeTown = row["HomeTown"].ToString();
@@ -122,12 +122,12 @@ namespace IMS.Repository
 
         public bool Save(Users uc)
         {
-            try //JoinDate, Birthdate,   '" + uc.JoinDate + "', '" + uc.Birthdate + "',
+            try //   
             {
-                var sql = @"insert into Users (FirstName, LastName, Age, Gender, Role, Salary,     NID, Phone,
+                var sql = @"insert into Users (FirstName, LastName, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
                                   HomeTown, CurrentCity, Division, BloodGroup, PostalCode)
                                 values ('" + uc.FirstName + "', '" + uc.LastName + "', '" + uc.Age + "', '" + uc.Gender + "'," +
-                          " '" + uc.Role + "', '" + uc.Salary + "',    '" + uc.NID + "'," +
+                          " '" + uc.Role + "', '" + uc.Salary + "', '" + uc.JoinDate + "', '" + uc.Birthdate + "',   '" + uc.NID + "'," +
                           "'" + uc.Phone + "', '" + uc.HomeTown + "', '" + uc.CurrentCity + "', '" + uc.Division + "', '" + uc.BloodGroup + "'," +
                           "'" + uc.PostalCode + "');";
 
@@ -153,7 +153,7 @@ namespace IMS.Repository
                 string sql = @"update Users set FirstName='" + uc.FirstName + "' , LastName='" + uc.LastName + "' ," +
                              "Age='" + uc.Age + "' , Gender='" + uc.Gender + "' ," +
                              "Role='" + uc.Role + "' ,Salary='" + uc.Salary + "' ," +
-                             //"JoinDate='" + uc.JoinDate + "' ,Birthdate='" + uc.Birthdate + "' ," +
+                             "JoinDate='" + uc.JoinDate + "' ,Birthdate='" + uc.Birthdate + "' ," +
                              "NID='" + uc.NID + "' ,Phone='" + uc.Phone + "' ," +
                              "HomeTown='" + uc.HomeTown + "' ,CurrentCity='" + uc.CurrentCity + "' ," +
                              "Division='" + uc.Division + "' ,BloodGroup='" + uc.BloodGroup + "' ," +

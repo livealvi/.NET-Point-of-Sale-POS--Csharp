@@ -16,8 +16,8 @@ namespace IMS.Entity
         public string                    Gender     { get; set; }
         public string                    Role       { get; set; }
         public Nullable<double>          Salary     { get; set; }
-        public Nullable<System.DateTime> JoinDate   { get; set; }
-        public Nullable<System.DateTime> Birthdate  { get; set; }
+        public DateTime JoinDate   { get; set; }
+        public DateTime Birthdate  { get; set; }
         public string                    NID        { get; set; }
         public string                    Phone      { get; set; }
         public string                    Thana      { get; set; }

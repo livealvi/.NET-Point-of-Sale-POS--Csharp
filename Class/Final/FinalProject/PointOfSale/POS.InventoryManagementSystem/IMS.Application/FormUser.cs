@@ -78,8 +78,8 @@ namespace FinalPoject
             this.cmbGender.Text = this.dgvUser.CurrentRow.Cells["Gender"].Value.ToString();
             this.cmbRole.Text = this.dgvUser.CurrentRow.Cells["Role"].Value.ToString();
             this.txtSalary.Text = this.dgvUser.CurrentRow.Cells["Salary"].Value.ToString();
-            //this.dtpJoinDate.Text = this.dgvUser.CurrentRow.Cells["JoinDate"].Value.ToString();
-            //this.dtpBirthDate.Text = this.dgvUser.CurrentRow.Cells["Birthdate"].Value.ToString();
+            this.dtpJoinDate.Text = this.dgvUser.CurrentRow.Cells["JoinDate"].Value.ToString();
+            this.dtpBirthDate.Text = this.dgvUser.CurrentRow.Cells["Birthdate"].Value.ToString();
             this.txtNID.Text = this.dgvUser.CurrentRow.Cells["NID"].Value.ToString();
             this.txtPhone.Text = this.dgvUser.CurrentRow.Cells["Phone"].Value.ToString();
             this.txtHomeTown.Text = this.dgvUser.CurrentRow.Cells["HomeTown"].Value.ToString();
@@ -115,8 +115,8 @@ namespace FinalPoject
             users.Gender = cmbGender.Text;
             users.Role = cmbRole.Text;
             users.Salary = Convert.ToDouble(txtSalary.Text);
-            //users.JoinDate = dtpJoinDate.Text;
-            //users.Birthdate = Convert.ToDateTime(new DateTime("year"));
+            users.JoinDate = Convert.ToDateTime(Convert.ToDateTime(dtpJoinDate.Value).ToString("yyyy-MM-dd"));
+            users.Birthdate = Convert.ToDateTime(Convert.ToDateTime(dtpBirthDate.Value).ToString("yyyy-MM-dd"));
             users.NID = txtNID.Text; ;
             users.Phone = txtPhone.Text; ;
             users.HomeTown = txtHomeTown.Text; ;

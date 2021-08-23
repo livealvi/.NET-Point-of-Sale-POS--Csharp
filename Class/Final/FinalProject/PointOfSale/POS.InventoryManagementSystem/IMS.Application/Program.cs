@@ -16,7 +16,7 @@ namespace FinalPoject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMakeSale());
+            Application.Run(new FormUser());
         }
     }
 }
