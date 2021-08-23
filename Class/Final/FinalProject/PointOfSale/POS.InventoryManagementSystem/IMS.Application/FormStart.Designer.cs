@@ -29,13 +29,7 @@ namespace FinalPoject
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
-            this.guna2PnlTopCloseMiniMax = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlLeftMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCataAndBrands = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -50,91 +44,11 @@ namespace FinalPoject
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2ElipseMain = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2PnlTopCloseMiniMax.SuspendLayout();
-            this.guna2Panel13.SuspendLayout();
             this.pnlLeftMenu.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2PnlTopCloseMiniMax
-            // 
-            this.guna2PnlTopCloseMiniMax.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PnlTopCloseMiniMax.Controls.Add(this.guna2Panel13);
-            this.guna2PnlTopCloseMiniMax.CustomBorderColor = System.Drawing.Color.Silver;
-            this.guna2PnlTopCloseMiniMax.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2PnlTopCloseMiniMax.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PnlTopCloseMiniMax.Location = new System.Drawing.Point(0, 0);
-            this.guna2PnlTopCloseMiniMax.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PnlTopCloseMiniMax.Name = "guna2PnlTopCloseMiniMax";
-            this.guna2PnlTopCloseMiniMax.ShadowDecoration.Parent = this.guna2PnlTopCloseMiniMax;
-            this.guna2PnlTopCloseMiniMax.Size = new System.Drawing.Size(1590, 41);
-            this.guna2PnlTopCloseMiniMax.TabIndex = 26;
-            // 
-            // guna2Panel13
-            // 
-            this.guna2Panel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel13.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel13.Controls.Add(this.guna2ControlBox1);
-            this.guna2Panel13.Controls.Add(this.guna2ControlBox3);
-            this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel13.Location = new System.Drawing.Point(1403, 0);
-            this.guna2Panel13.Name = "guna2Panel13";
-            this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
-            this.guna2Panel13.Size = new System.Drawing.Size(187, 41);
-            this.guna2Panel13.TabIndex = 8;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.Animated = true;
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Gray;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(0, 0);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(65, 40);
-            this.guna2ControlBox2.TabIndex = 9;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.ControlBoxStyle = Guna.UI2.WinForms.Enums.ControlBoxStyle.Custom;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(130, 0);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(56, 40);
-            this.guna2ControlBox1.TabIndex = 8;
-            // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.Animated = true;
-            this.guna2ControlBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.Gray;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(65, 0);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.Size = new System.Drawing.Size(65, 40);
-            this.guna2ControlBox3.TabIndex = 10;
             // 
             // pnlLeftMenu
             // 
@@ -151,11 +65,10 @@ namespace FinalPoject
             this.pnlLeftMenu.CustomBorderColor = System.Drawing.Color.Silver;
             this.pnlLeftMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.pnlLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 41);
-            this.pnlLeftMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlLeftMenu.Name = "pnlLeftMenu";
             this.pnlLeftMenu.ShadowDecoration.Parent = this.pnlLeftMenu;
-            this.pnlLeftMenu.Size = new System.Drawing.Size(378, 889);
+            this.pnlLeftMenu.Size = new System.Drawing.Size(284, 782);
             this.pnlLeftMenu.TabIndex = 30;
             // 
             // btnCataAndBrands
@@ -185,11 +98,10 @@ namespace FinalPoject
             this.btnCataAndBrands.HoverState.Parent = this.btnCataAndBrands;
             this.btnCataAndBrands.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCataAndBrands.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnCataAndBrands.Location = new System.Drawing.Point(35, 517);
-            this.btnCataAndBrands.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCataAndBrands.Location = new System.Drawing.Point(26, 420);
             this.btnCataAndBrands.Name = "btnCataAndBrands";
             this.btnCataAndBrands.ShadowDecoration.Parent = this.btnCataAndBrands;
-            this.btnCataAndBrands.Size = new System.Drawing.Size(294, 60);
+            this.btnCataAndBrands.Size = new System.Drawing.Size(220, 49);
             this.btnCataAndBrands.TabIndex = 18;
             this.btnCataAndBrands.Text = "Master Categories";
             this.btnCataAndBrands.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -200,11 +112,10 @@ namespace FinalPoject
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(351, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel1.Location = new System.Drawing.Point(264, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(27, 889);
+            this.guna2Panel1.Size = new System.Drawing.Size(20, 782);
             this.guna2Panel1.TabIndex = 17;
             // 
             // pnlInsideLeft
@@ -212,10 +123,9 @@ namespace FinalPoject
             this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
             this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlInsideLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnlInsideLeft.Margin = new System.Windows.Forms.Padding(4);
             this.pnlInsideLeft.Name = "pnlInsideLeft";
             this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
-            this.pnlInsideLeft.Size = new System.Drawing.Size(27, 889);
+            this.pnlInsideLeft.Size = new System.Drawing.Size(20, 782);
             this.pnlInsideLeft.TabIndex = 13;
             // 
             // btnEmployees
@@ -245,11 +155,10 @@ namespace FinalPoject
             this.btnEmployees.HoverState.Parent = this.btnEmployees;
             this.btnEmployees.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnEmployees.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnEmployees.Location = new System.Drawing.Point(35, 691);
-            this.btnEmployees.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEmployees.Location = new System.Drawing.Point(26, 561);
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.ShadowDecoration.Parent = this.btnEmployees;
-            this.btnEmployees.Size = new System.Drawing.Size(245, 60);
+            this.btnEmployees.Size = new System.Drawing.Size(184, 49);
             this.btnEmployees.TabIndex = 6;
             this.btnEmployees.Text = "Employees";
             this.btnEmployees.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -284,11 +193,10 @@ namespace FinalPoject
             this.btnCustomers.HoverState.Parent = this.btnCustomers;
             this.btnCustomers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCustomers.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnCustomers.Location = new System.Drawing.Point(35, 596);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCustomers.Location = new System.Drawing.Point(26, 484);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.ShadowDecoration.Parent = this.btnCustomers;
-            this.btnCustomers.Size = new System.Drawing.Size(245, 60);
+            this.btnCustomers.Size = new System.Drawing.Size(184, 49);
             this.btnCustomers.TabIndex = 5;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -323,11 +231,10 @@ namespace FinalPoject
             this.btnSales.HoverState.Parent = this.btnSales;
             this.btnSales.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSales.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnSales.Location = new System.Drawing.Point(35, 325);
-            this.btnSales.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSales.Location = new System.Drawing.Point(26, 264);
             this.btnSales.Name = "btnSales";
             this.btnSales.ShadowDecoration.Parent = this.btnSales;
-            this.btnSales.Size = new System.Drawing.Size(245, 60);
+            this.btnSales.Size = new System.Drawing.Size(184, 49);
             this.btnSales.TabIndex = 4;
             this.btnSales.Text = "Sales";
             this.btnSales.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -362,11 +269,10 @@ namespace FinalPoject
             this.btnAllStocks.HoverState.Parent = this.btnAllStocks;
             this.btnAllStocks.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAllStocks.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnAllStocks.Location = new System.Drawing.Point(35, 420);
-            this.btnAllStocks.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAllStocks.Location = new System.Drawing.Point(26, 341);
             this.btnAllStocks.Name = "btnAllStocks";
             this.btnAllStocks.ShadowDecoration.Parent = this.btnAllStocks;
-            this.btnAllStocks.Size = new System.Drawing.Size(245, 60);
+            this.btnAllStocks.Size = new System.Drawing.Size(184, 49);
             this.btnAllStocks.TabIndex = 3;
             this.btnAllStocks.Text = "All Stocks";
             this.btnAllStocks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -401,11 +307,10 @@ namespace FinalPoject
             this.btnDashboard.HoverState.Parent = this.btnDashboard;
             this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDashboard.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnDashboard.Location = new System.Drawing.Point(35, 230);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDashboard.Location = new System.Drawing.Point(26, 187);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
-            this.btnDashboard.Size = new System.Drawing.Size(245, 60);
+            this.btnDashboard.Size = new System.Drawing.Size(184, 49);
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -416,11 +321,10 @@ namespace FinalPoject
             // pnlFormViwer
             // 
             this.pnlFormViwer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFormViwer.Location = new System.Drawing.Point(378, 131);
-            this.pnlFormViwer.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlFormViwer.Location = new System.Drawing.Point(284, 73);
             this.pnlFormViwer.Name = "pnlFormViwer";
             this.pnlFormViwer.ShadowDecoration.Parent = this.pnlFormViwer;
-            this.pnlFormViwer.Size = new System.Drawing.Size(1212, 799);
+            this.pnlFormViwer.Size = new System.Drawing.Size(1197, 709);
             this.pnlFormViwer.TabIndex = 32;
             // 
             // pnlTop
@@ -433,11 +337,10 @@ namespace FinalPoject
             this.pnlTop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.FillColor = System.Drawing.Color.Transparent;
-            this.pnlTop.Location = new System.Drawing.Point(378, 41);
-            this.pnlTop.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlTop.Location = new System.Drawing.Point(284, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.ShadowDecoration.Parent = this.pnlTop;
-            this.pnlTop.Size = new System.Drawing.Size(1212, 90);
+            this.pnlTop.Size = new System.Drawing.Size(1197, 73);
             this.pnlTop.TabIndex = 31;
             // 
             // guna2Panel9
@@ -445,11 +348,10 @@ namespace FinalPoject
             this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel9.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel9.Location = new System.Drawing.Point(866, 0);
-            this.guna2Panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel9.Location = new System.Drawing.Point(937, 0);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
-            this.guna2Panel9.Size = new System.Drawing.Size(101, 90);
+            this.guna2Panel9.Size = new System.Drawing.Size(76, 73);
             this.guna2Panel9.TabIndex = 5;
             // 
             // guna2PictureBox1
@@ -457,14 +359,13 @@ namespace FinalPoject
             this.guna2PictureBox1.AutoRoundedCorners = true;
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2PictureBox1.BorderRadius = 30;
+            this.guna2PictureBox1.BorderRadius = 24;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageLocation = "";
-            this.guna2PictureBox1.Location = new System.Drawing.Point(17, 14);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 11);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(67, 62);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(50, 50);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 4;
             this.guna2PictureBox1.TabStop = false;
@@ -473,39 +374,25 @@ namespace FinalPoject
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(967, 0);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel3.Location = new System.Drawing.Point(1013, 0);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(245, 90);
+            this.guna2Panel3.Size = new System.Drawing.Size(184, 73);
             this.guna2Panel3.TabIndex = 0;
             // 
-            // guna2DragControl1
+            // FormStart
             // 
-            this.guna2DragControl1.TargetControl = this.guna2PnlTopCloseMiniMax;
-            // 
-            // guna2ElipseMain
-            // 
-            this.guna2ElipseMain.BorderRadius = 12;
-            this.guna2ElipseMain.TargetControl = this;
-            // 
-            // FormMain
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(1590, 930);
+            this.ClientSize = new System.Drawing.Size(1481, 782);
             this.Controls.Add(this.pnlFormViwer);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlLeftMenu);
-            this.Controls.Add(this.guna2PnlTopCloseMiniMax);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormMain";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.guna2PnlTopCloseMiniMax.ResumeLayout(false);
-            this.guna2Panel13.ResumeLayout(false);
             this.pnlLeftMenu.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
             this.guna2Panel9.ResumeLayout(false);
@@ -515,12 +402,6 @@ namespace FinalPoject
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel guna2PnlTopCloseMiniMax;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel13;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2Panel pnlLeftMenu;
         private Guna.UI2.WinForms.Guna2Button btnCataAndBrands;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -535,8 +416,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2ElipseMain;
     }
 }
 
