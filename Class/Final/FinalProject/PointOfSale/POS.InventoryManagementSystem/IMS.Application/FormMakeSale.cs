@@ -12,6 +12,7 @@ namespace FinalPoject
 {
     public partial class FormMakeSale : Form
     {
+        
         public FormMakeSale()
         {
             InitializeComponent();

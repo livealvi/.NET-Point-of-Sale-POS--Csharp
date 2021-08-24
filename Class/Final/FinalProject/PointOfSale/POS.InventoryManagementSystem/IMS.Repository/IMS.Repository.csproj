@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="BrandsRepo.cs" />
     <Compile Include="MainCategoriesRepo.cs" />
-    <Compile Include="MekeSellRepo.cs" />
+    <Compile Include="MakeSalesRepo.cs" />
     <Compile Include="ProductsBrandViewRepo.cs" />
     <Compile Include="ProductsCategoriesMapRepo.cs" />
     <Compile Include="ProductsRepo.cs" />

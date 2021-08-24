@@ -9,11 +9,11 @@ using IMS.Entity;
 
 namespace IMS.Repository
 {
-    public class MekeSellRepo
+    public class MakeSalesRepo
     {
         private InventoryDBDataAccess iDB{ get; set; }
 
-        public MekeSellRepo()
+        public MakeSalesRepo()
         {
             this.iDB = new InventoryDBDataAccess();
         }
