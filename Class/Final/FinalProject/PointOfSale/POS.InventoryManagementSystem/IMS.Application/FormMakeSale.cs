@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IMS.Entity;
 using IMS.Repository;
 
 namespace FinalPoject
@@ -15,7 +16,6 @@ namespace FinalPoject
     public partial class FormMakeSale : Form
     {
         private DataTable OrderDetailDataTable;
-        private int counter = 0;
         private MakeSalesRepo makeSalesRepo{get; set;}
         public FormMakeSale()
         {
@@ -70,7 +70,7 @@ namespace FinalPoject
             this.txtProductName.Text = this.dgvSearchProduct.CurrentRow.Cells["ProductName"].Value.ToString();
             this.txtProductId.Text = this.dgvSearchProduct.CurrentRow.Cells["ProductId"].Value.ToString();
             this.txtProducTag.Text= this.dgvSearchProduct.CurrentRow.Cells["ProductIdTag"].Value.ToString();
-            this.txtProductQuant.Text = this.dgvSearchProduct.CurrentRow.Cells["ProductUnitStock"].Value.ToString();
+            this.txtPorductItemLeft.Text = this.dgvSearchProduct.CurrentRow.Cells["ProductUnitStock"].Value.ToString();
             this.txtProductPerUnitPrice.Text= this.dgvSearchProduct.CurrentRow.Cells["ProductPerUnitPrice"].Value.ToString();
             this.txtDiscount.Text = this.dgvSearchProduct.CurrentRow.Cells["ProductDiscountRate"].Value.ToString();
             this.txtProductMSRP.Text= this.dgvSearchProduct.CurrentRow.Cells["ProductMSRP"].Value.ToString();
@@ -78,13 +78,24 @@ namespace FinalPoject
 
         }
 
+        void UpdatePrice()
+        {
+            List<Orders> orders= makeSalesRepo.GetAllForOrders();
+            double price = 0.0;
+
+            foreach (Orders order in orders)
+            {
+                price += order.TotalAmount;
+            }
+
+            txtTotalAmount.Text = price.ToString();
+
+            txtVatShow.Text = (price * 1.15).ToString();
+        }
+
         private void btnAddItem_Click(object sender, EventArgs e)
         {
             DataRow row = OrderDetailDataTable.NewRow();
-            foreach (DataColumn col in OrderDetailDataTable.Columns)
-            {
-                row[col.ColumnName] = dgvSearchProduct.SelectedRows[0].Cells[counter++].Value.ToString();
-            }
 
             row["ProductId"] = dgvSearchProduct.SelectedRows[0].Cells[0].Value.ToString();
             row["ProductIdTag"] = dgvSearchProduct.SelectedRows[0].Cells[1].Value.ToString();
@@ -96,7 +107,9 @@ namespace FinalPoject
             row["BrandName"] = dgvSearchProduct.SelectedRows[0].Cells[7].Value.ToString();
 
             OrderDetailDataTable.Rows.Add(row);
-            counter = 0;
+
+            UpdatePrice();
+
 
             //this.dgvSelect.CurrentRow.Cells["ProductName"].Value = this.dgvSearchProduct.CurrentRow.Cells["ProductName"].Value.ToString();
             //this.dgvSelect.CurrentRow.Cells["ProId"].Value = this.txtProductId.Text;
@@ -142,7 +155,43 @@ namespace FinalPoject
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
-            //this.dgvSearchProduct.SelectedRows[0].Cells[0] ;
+            int rowToRemove = dgvCart.SelectedRows[0].Index;
+
+            if (rowToRemove != -1)
+            {
+                this.dgvCart.Rows.RemoveAt(dgvCart.SelectedRows[0].Index);
+            }
+            else
+            {
+                MessageBox.Show("Test");
+
+            }
+            
+        }
+
+        private Orders FillEntity()
+        {
+            //if (!this.IsValidToSave())
+            //{
+            //    return null;
+            //}
+
+            var orders = new Orders();
+
+           orders.ProductName = this.txtProductName.Text;
+           orders.ProductId = this.txtProductId.Text;
+           orders.ProductIdTag = this.txtProducTag.Text;
+           
+           orders.ProductPerUnitPrice = this.txtProductPerUnitPrice.Text;
+           orders.ProductDiscountRate = this.txtDiscount.Text;
+           orders.ProductMSRP = this.txtProductMSRP.Text;
+           
+            return orders;
+        }
+
+        private void btnPlaceOrderToSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

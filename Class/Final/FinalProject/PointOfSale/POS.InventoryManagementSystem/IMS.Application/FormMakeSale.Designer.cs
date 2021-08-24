@@ -152,6 +152,7 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPlaceOrderToSave = new Guna.UI2.WinForms.Guna2Button();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1936,14 +1937,17 @@ namespace FinalPoject
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 7;
+            this.tableLayoutPanel4.ColumnCount = 9;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.btnPlaceOrderToSave, 7, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnAddItem, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnRefresh, 3, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnDeleteProduct, 5, 1);
@@ -1975,7 +1979,7 @@ namespace FinalPoject
             this.btnAddItem.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItem.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddItem.HoverState.Parent = this.btnAddItem;
-            this.btnAddItem.Location = new System.Drawing.Point(497, 11);
+            this.btnAddItem.Location = new System.Drawing.Point(381, 11);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
             this.btnAddItem.Size = new System.Drawing.Size(219, 35);
@@ -2002,7 +2006,7 @@ namespace FinalPoject
             this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.HoverState.Parent = this.btnRefresh;
-            this.btnRefresh.Location = new System.Drawing.Point(730, 11);
+            this.btnRefresh.Location = new System.Drawing.Point(614, 11);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.ShadowDecoration.Parent = this.btnRefresh;
             this.btnRefresh.Size = new System.Drawing.Size(219, 35);
@@ -2029,13 +2033,39 @@ namespace FinalPoject
             this.btnDeleteProduct.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnDeleteProduct.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDeleteProduct.HoverState.Parent = this.btnDeleteProduct;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(963, 11);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(847, 11);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.ShadowDecoration.Parent = this.btnDeleteProduct;
             this.btnDeleteProduct.Size = new System.Drawing.Size(219, 35);
             this.btnDeleteProduct.TabIndex = 135;
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
+            // 
+            // btnPlaceOrderToSave
+            // 
+            this.btnPlaceOrderToSave.Animated = true;
+            this.btnPlaceOrderToSave.CheckedState.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlaceOrderToSave.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnPlaceOrderToSave.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnPlaceOrderToSave.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPlaceOrderToSave.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnPlaceOrderToSave.CustomImages.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnPlaceOrderToSave.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaceOrderToSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnPlaceOrderToSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnPlaceOrderToSave.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaceOrderToSave.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnPlaceOrderToSave.HoverState.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.Location = new System.Drawing.Point(1080, 11);
+            this.btnPlaceOrderToSave.Name = "btnPlaceOrderToSave";
+            this.btnPlaceOrderToSave.ShadowDecoration.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.Size = new System.Drawing.Size(219, 35);
+            this.btnPlaceOrderToSave.TabIndex = 172;
+            this.btnPlaceOrderToSave.Text = "Plcae Order";
+            this.btnPlaceOrderToSave.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnPlaceOrderToSave.Click += new System.EventHandler(this.btnPlaceOrderToSave_Click);
             // 
             // FormMakeSale
             // 
@@ -2208,5 +2238,6 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn SecondCategoryName;
+        private Guna.UI2.WinForms.Guna2Button btnPlaceOrderToSave;
     }
 }
