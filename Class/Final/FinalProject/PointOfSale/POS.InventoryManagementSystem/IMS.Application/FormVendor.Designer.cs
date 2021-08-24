@@ -61,6 +61,13 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvVendor = new System.Windows.Forms.DataGridView();
+            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -92,13 +99,6 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -724,6 +724,65 @@ namespace FinalPoject
             this.dgvVendor.TabIndex = 160;
             this.dgvVendor.DoubleClick += new System.EventHandler(this.dgvVendor_DoubleClick);
             // 
+            // VendorId
+            // 
+            this.VendorId.DataPropertyName = "VendorId";
+            this.VendorId.HeaderText = "Vendor ID";
+            this.VendorId.MinimumWidth = 6;
+            this.VendorId.Name = "VendorId";
+            this.VendorId.ReadOnly = true;
+            this.VendorId.Width = 125;
+            // 
+            // VendorTag
+            // 
+            this.VendorTag.DataPropertyName = "VendorTag";
+            this.VendorTag.HeaderText = "Vendor TAG";
+            this.VendorTag.MinimumWidth = 6;
+            this.VendorTag.Name = "VendorTag";
+            this.VendorTag.ReadOnly = true;
+            this.VendorTag.Width = 125;
+            // 
+            // VendorName
+            // 
+            this.VendorName.DataPropertyName = "VendorName";
+            this.VendorName.HeaderText = "Vendor Name";
+            this.VendorName.MinimumWidth = 6;
+            this.VendorName.Name = "VendorName";
+            this.VendorName.ReadOnly = true;
+            this.VendorName.Width = 125;
+            // 
+            // ThirdCategoryName
+            // 
+            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
+            this.ThirdCategoryName.HeaderText = "Third Category Name";
+            this.ThirdCategoryName.Name = "ThirdCategoryName";
+            this.ThirdCategoryName.ReadOnly = true;
+            // 
+            // VendorDisc
+            // 
+            this.VendorDisc.DataPropertyName = "VendorDescription";
+            this.VendorDisc.HeaderText = "Vendor Disc.";
+            this.VendorDisc.MinimumWidth = 6;
+            this.VendorDisc.Name = "VendorDisc";
+            this.VendorDisc.ReadOnly = true;
+            this.VendorDisc.Width = 125;
+            // 
+            // VendorStatus
+            // 
+            this.VendorStatus.DataPropertyName = "VendorStatus";
+            this.VendorStatus.HeaderText = "Vendor Status";
+            this.VendorStatus.Name = "VendorStatus";
+            this.VendorStatus.ReadOnly = true;
+            // 
+            // VendorImage
+            // 
+            this.VendorImage.DataPropertyName = "VendorImage";
+            this.VendorImage.HeaderText = "Vendor Picture";
+            this.VendorImage.MinimumWidth = 6;
+            this.VendorImage.Name = "VendorImage";
+            this.VendorImage.ReadOnly = true;
+            this.VendorImage.Width = 125;
+            // 
             // guna2Panel28
             // 
             this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
@@ -1121,65 +1180,6 @@ namespace FinalPoject
             this.pnlInsideTop.ShadowDecoration.Parent = this.pnlInsideTop;
             this.pnlInsideTop.Size = new System.Drawing.Size(1244, 16);
             this.pnlInsideTop.TabIndex = 36;
-            // 
-            // VendorId
-            // 
-            this.VendorId.DataPropertyName = "VendorId";
-            this.VendorId.HeaderText = "Vendor ID";
-            this.VendorId.MinimumWidth = 6;
-            this.VendorId.Name = "VendorId";
-            this.VendorId.ReadOnly = true;
-            this.VendorId.Width = 125;
-            // 
-            // VendorTag
-            // 
-            this.VendorTag.DataPropertyName = "VendorTag";
-            this.VendorTag.HeaderText = "Vendor TAG";
-            this.VendorTag.MinimumWidth = 6;
-            this.VendorTag.Name = "VendorTag";
-            this.VendorTag.ReadOnly = true;
-            this.VendorTag.Width = 125;
-            // 
-            // VendorName
-            // 
-            this.VendorName.DataPropertyName = "VendorName";
-            this.VendorName.HeaderText = "Vendor Name";
-            this.VendorName.MinimumWidth = 6;
-            this.VendorName.Name = "VendorName";
-            this.VendorName.ReadOnly = true;
-            this.VendorName.Width = 125;
-            // 
-            // ThirdCategoryName
-            // 
-            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
-            this.ThirdCategoryName.HeaderText = "Third Category Name";
-            this.ThirdCategoryName.Name = "ThirdCategoryName";
-            this.ThirdCategoryName.ReadOnly = true;
-            // 
-            // VendorDisc
-            // 
-            this.VendorDisc.DataPropertyName = "VendorDescription";
-            this.VendorDisc.HeaderText = "Vendor Disc.";
-            this.VendorDisc.MinimumWidth = 6;
-            this.VendorDisc.Name = "VendorDisc";
-            this.VendorDisc.ReadOnly = true;
-            this.VendorDisc.Width = 125;
-            // 
-            // VendorStatus
-            // 
-            this.VendorStatus.DataPropertyName = "VendorStatus";
-            this.VendorStatus.HeaderText = "Vendor Status";
-            this.VendorStatus.Name = "VendorStatus";
-            this.VendorStatus.ReadOnly = true;
-            // 
-            // VendorImage
-            // 
-            this.VendorImage.DataPropertyName = "VendorImage";
-            this.VendorImage.HeaderText = "Vendor Picture";
-            this.VendorImage.MinimumWidth = 6;
-            this.VendorImage.Name = "VendorImage";
-            this.VendorImage.ReadOnly = true;
-            this.VendorImage.Width = 125;
             // 
             // FormVendor
             // 

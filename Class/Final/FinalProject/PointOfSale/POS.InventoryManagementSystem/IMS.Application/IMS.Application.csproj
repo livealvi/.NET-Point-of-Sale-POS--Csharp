@@ -114,12 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DelegateCollection.cs" />
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +144,12 @@
     <Compile Include="FormMakeSale.Designer.cs">
       <DependentUpon>FormMakeSale.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSellsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSellsHistory.Designer.cs">
+      <DependentUpon>FormSellsHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThirdCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,23 +174,17 @@
     <Compile Include="ComponentsDesign.Designer.cs">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMasterCategories.cs">
+    <Compile Include="FormMasterCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMasterCategories.Designer.cs">
-      <DependentUpon>FormMasterCategories.cs</DependentUpon>
+    <Compile Include="FormMasterCategory.Designer.cs">
+      <DependentUpon>FormMasterCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormUser.Designer.cs">
       <DependentUpon>FormUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormProducts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormProducts.Designer.cs">
-      <DependentUpon>FormProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStart.cs">
       <SubType>Form</SubType>
@@ -206,9 +200,6 @@
     <Compile Include="FormSecondCategory.Designer.cs">
       <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +215,9 @@
     <EmbeddedResource Include="FormMakeSale.resx">
       <DependentUpon>FormMakeSale.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSellsHistory.resx">
+      <DependentUpon>FormSellsHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormThirdCategory.resx">
       <DependentUpon>FormThirdCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,17 +231,14 @@
     <EmbeddedResource Include="ComponentsDesign.resx">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMasterCategories.resx">
-      <DependentUpon>FormMasterCategories.cs</DependentUpon>
+    <EmbeddedResource Include="FormMasterCategory.resx">
+      <DependentUpon>FormMasterCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormProducts.resx">
-      <DependentUpon>FormProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

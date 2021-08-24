@@ -44,6 +44,7 @@
     <Compile Include="BrandsRepo.cs" />
     <Compile Include="MainCategoriesRepo.cs" />
     <Compile Include="MakeSalesRepo.cs" />
+    <Compile Include="MasterCategoriesRepo.cs" />
     <Compile Include="ProductsBrandViewRepo.cs" />
     <Compile Include="ProductsCategoriesMapRepo.cs" />
     <Compile Include="ProductsRepo.cs" />

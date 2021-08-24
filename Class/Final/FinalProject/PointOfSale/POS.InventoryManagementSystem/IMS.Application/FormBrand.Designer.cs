@@ -32,6 +32,7 @@ namespace FinalPoject
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddVendors = new Guna.UI2.WinForms.Guna2Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,6 +62,13 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvBrand = new System.Windows.Forms.DataGridView();
+            this.BrandId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -92,14 +100,6 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnAddVendors = new Guna.UI2.WinForms.Guna2Button();
-            this.BrandId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -180,6 +180,30 @@ namespace FinalPoject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(414, 480);
             this.panel1.TabIndex = 153;
+            // 
+            // btnAddVendors
+            // 
+            this.btnAddVendors.Animated = true;
+            this.btnAddVendors.CheckedState.Parent = this.btnAddVendors;
+            this.btnAddVendors.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddVendors.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
+            this.btnAddVendors.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
+            this.btnAddVendors.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddVendors.CustomImages.Parent = this.btnAddVendors;
+            this.btnAddVendors.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddVendors.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendors.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendors.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendors.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddVendors.HoverState.Parent = this.btnAddVendors;
+            this.btnAddVendors.Location = new System.Drawing.Point(339, 399);
+            this.btnAddVendors.Name = "btnAddVendors";
+            this.btnAddVendors.ShadowDecoration.Parent = this.btnAddVendors;
+            this.btnAddVendors.Size = new System.Drawing.Size(35, 30);
+            this.btnAddVendors.TabIndex = 206;
+            this.btnAddVendors.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddVendors.Click += new System.EventHandler(this.btnAddVendors_Click);
             // 
             // label10
             // 
@@ -715,6 +739,67 @@ namespace FinalPoject
             this.dgvBrand.TabIndex = 162;
             this.dgvBrand.DoubleClick += new System.EventHandler(this.dgvBrand_DoubleClick);
             // 
+            // BrandId
+            // 
+            this.BrandId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandId.DataPropertyName = "BrandId";
+            this.BrandId.HeaderText = "Brand ID";
+            this.BrandId.MinimumWidth = 6;
+            this.BrandId.Name = "BrandId";
+            this.BrandId.ReadOnly = true;
+            // 
+            // BrandTag
+            // 
+            this.BrandTag.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandTag.DataPropertyName = "BrandTag";
+            this.BrandTag.HeaderText = "Brand TAG";
+            this.BrandTag.MinimumWidth = 6;
+            this.BrandTag.Name = "BrandTag";
+            this.BrandTag.ReadOnly = true;
+            // 
+            // BrandName
+            // 
+            this.BrandName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandName.DataPropertyName = "BrandName";
+            this.BrandName.HeaderText = "Brand Name";
+            this.BrandName.MinimumWidth = 6;
+            this.BrandName.Name = "BrandName";
+            this.BrandName.ReadOnly = true;
+            // 
+            // VendorName
+            // 
+            this.VendorName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.VendorName.DataPropertyName = "VendorName";
+            this.VendorName.HeaderText = "Vendor Name";
+            this.VendorName.Name = "VendorName";
+            this.VendorName.ReadOnly = true;
+            // 
+            // BrandStatus
+            // 
+            this.BrandStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandStatus.DataPropertyName = "BrandStatus";
+            this.BrandStatus.HeaderText = "Brand Status";
+            this.BrandStatus.Name = "BrandStatus";
+            this.BrandStatus.ReadOnly = true;
+            // 
+            // BrandDisc
+            // 
+            this.BrandDisc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandDisc.DataPropertyName = "BrandDescription";
+            this.BrandDisc.HeaderText = "Brand Disc.";
+            this.BrandDisc.MinimumWidth = 6;
+            this.BrandDisc.Name = "BrandDisc";
+            this.BrandDisc.ReadOnly = true;
+            // 
+            // VendorId
+            // 
+            this.VendorId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.VendorId.DataPropertyName = "VendorId";
+            this.VendorId.HeaderText = "Brand Picture";
+            this.VendorId.MinimumWidth = 6;
+            this.VendorId.Name = "VendorId";
+            this.VendorId.ReadOnly = true;
+            // 
             // guna2Panel28
             // 
             this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
@@ -1112,91 +1197,6 @@ namespace FinalPoject
             this.pnlInsideTop.ShadowDecoration.Parent = this.pnlInsideTop;
             this.pnlInsideTop.Size = new System.Drawing.Size(1244, 16);
             this.pnlInsideTop.TabIndex = 36;
-            // 
-            // btnAddVendors
-            // 
-            this.btnAddVendors.Animated = true;
-            this.btnAddVendors.CheckedState.Parent = this.btnAddVendors;
-            this.btnAddVendors.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddVendors.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
-            this.btnAddVendors.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
-            this.btnAddVendors.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAddVendors.CustomImages.Parent = this.btnAddVendors;
-            this.btnAddVendors.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddVendors.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddVendors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddVendors.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddVendors.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddVendors.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddVendors.HoverState.Parent = this.btnAddVendors;
-            this.btnAddVendors.Location = new System.Drawing.Point(339, 399);
-            this.btnAddVendors.Name = "btnAddVendors";
-            this.btnAddVendors.ShadowDecoration.Parent = this.btnAddVendors;
-            this.btnAddVendors.Size = new System.Drawing.Size(35, 30);
-            this.btnAddVendors.TabIndex = 206;
-            this.btnAddVendors.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnAddVendors.Click += new System.EventHandler(this.btnAddVendors_Click);
-            // 
-            // BrandId
-            // 
-            this.BrandId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandId.DataPropertyName = "BrandId";
-            this.BrandId.HeaderText = "Brand ID";
-            this.BrandId.MinimumWidth = 6;
-            this.BrandId.Name = "BrandId";
-            this.BrandId.ReadOnly = true;
-            // 
-            // BrandTag
-            // 
-            this.BrandTag.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandTag.DataPropertyName = "BrandTag";
-            this.BrandTag.HeaderText = "Brand TAG";
-            this.BrandTag.MinimumWidth = 6;
-            this.BrandTag.Name = "BrandTag";
-            this.BrandTag.ReadOnly = true;
-            // 
-            // BrandName
-            // 
-            this.BrandName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandName.DataPropertyName = "BrandName";
-            this.BrandName.HeaderText = "Brand Name";
-            this.BrandName.MinimumWidth = 6;
-            this.BrandName.Name = "BrandName";
-            this.BrandName.ReadOnly = true;
-            // 
-            // VendorName
-            // 
-            this.VendorName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.VendorName.DataPropertyName = "VendorName";
-            this.VendorName.HeaderText = "Vendor Name";
-            this.VendorName.Name = "VendorName";
-            this.VendorName.ReadOnly = true;
-            // 
-            // BrandStatus
-            // 
-            this.BrandStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandStatus.DataPropertyName = "BrandStatus";
-            this.BrandStatus.HeaderText = "Brand Status";
-            this.BrandStatus.Name = "BrandStatus";
-            this.BrandStatus.ReadOnly = true;
-            // 
-            // BrandDisc
-            // 
-            this.BrandDisc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandDisc.DataPropertyName = "BrandDescription";
-            this.BrandDisc.HeaderText = "Brand Disc.";
-            this.BrandDisc.MinimumWidth = 6;
-            this.BrandDisc.Name = "BrandDisc";
-            this.BrandDisc.ReadOnly = true;
-            // 
-            // VendorId
-            // 
-            this.VendorId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.VendorId.DataPropertyName = "VendorId";
-            this.VendorId.HeaderText = "Brand Picture";
-            this.VendorId.MinimumWidth = 6;
-            this.VendorId.Name = "VendorId";
-            this.VendorId.ReadOnly = true;
             // 
             // FormBrand
             // 

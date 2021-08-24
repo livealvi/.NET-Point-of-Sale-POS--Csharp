@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace FinalPoject
 {
-    public partial class FormProducts : Form
+    public partial class FormSellsHistory : Form
     {
-        public FormProducts()
+        public FormSellsHistory()
         {
             InitializeComponent();
-        }
-
-        
-
-        private void btnSaveEdit_Click(object sender, EventArgs e)
-        {
-            FormAddProduct addProduct = new FormAddProduct();
-            addProduct.ShowDialog();
         }
     }
 }

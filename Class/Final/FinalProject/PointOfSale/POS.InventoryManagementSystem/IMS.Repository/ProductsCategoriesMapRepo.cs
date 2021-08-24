@@ -87,9 +87,6 @@ namespace IMS.Repository
         }
 
 
-
-        
-
         //save
         public bool Save(Products_Categories_Map ins)
         {

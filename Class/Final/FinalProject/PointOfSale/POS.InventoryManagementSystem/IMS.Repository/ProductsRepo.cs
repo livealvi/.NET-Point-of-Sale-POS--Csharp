@@ -190,7 +190,6 @@ namespace IMS.Repository
             product.ProductDiscountRate = Convert.ToDouble(row["pDisRate"].ToString());
             product.ProductSize = Convert.ToDouble(row["pSize"].ToString());
             product.ProductColor = row["pColor"].ToString();
-            //proCateMas.ProductPictures = new[] { Convert.ToByte(row["pPictures"].ToString()) };
             product.ProductWeight = Convert.ToDouble(row["pWeight"].ToString());
             product.ProductUnitStock = Convert.ToInt32(row["pUnStock"].ToString());
             product.ProductDescription = row["pDisc"].ToString();

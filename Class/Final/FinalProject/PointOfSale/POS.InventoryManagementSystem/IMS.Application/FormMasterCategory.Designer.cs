@@ -42,7 +42,7 @@ namespace FinalPoject
             this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbThirdCate = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbSecondCate = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbSecondCateName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbMainCate = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,17 +56,13 @@ namespace FinalPoject
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
-            this.dgvAllProduct = new System.Windows.Forms.DataGridView();
-            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pPerUnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvMasterView = new System.Windows.Forms.DataGridView();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MainCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
@@ -90,7 +86,7 @@ namespace FinalPoject
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSerachAllCate = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -114,7 +110,7 @@ namespace FinalPoject
             this.tableLayoutPanel3.SuspendLayout();
             this.guna2Panel15.SuspendLayout();
             this.guna2Panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMasterView)).BeginInit();
             this.guna2Panel13.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.pnlCategoryButton.SuspendLayout();
@@ -245,7 +241,7 @@ namespace FinalPoject
             this.tableLayoutPanel2.Controls.Add(this.cmbBrand, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.cmbVendor, 0, 7);
             this.tableLayoutPanel2.Controls.Add(this.cmbThirdCate, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.cmbSecondCate, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.cmbSecondCateName, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.cmbMainCate, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(181, 81);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
@@ -346,25 +342,25 @@ namespace FinalPoject
             this.cmbThirdCate.Size = new System.Drawing.Size(196, 36);
             this.cmbThirdCate.TabIndex = 135;
             // 
-            // cmbSecondCate
+            // cmbSecondCateName
             // 
-            this.cmbSecondCate.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSecondCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSecondCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSecondCate.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbSecondCate.FocusedState.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSecondCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbSecondCate.FormattingEnabled = true;
-            this.cmbSecondCate.HoverState.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.ItemHeight = 30;
-            this.cmbSecondCate.ItemsAppearance.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Location = new System.Drawing.Point(2, 63);
-            this.cmbSecondCate.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbSecondCate.Name = "cmbSecondCate";
-            this.cmbSecondCate.ShadowDecoration.Parent = this.cmbSecondCate;
-            this.cmbSecondCate.Size = new System.Drawing.Size(196, 36);
-            this.cmbSecondCate.TabIndex = 135;
+            this.cmbSecondCateName.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSecondCateName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSecondCateName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecondCateName.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSecondCateName.FocusedState.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSecondCateName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSecondCateName.FormattingEnabled = true;
+            this.cmbSecondCateName.HoverState.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.ItemHeight = 30;
+            this.cmbSecondCateName.ItemsAppearance.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.Location = new System.Drawing.Point(2, 63);
+            this.cmbSecondCateName.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSecondCateName.Name = "cmbSecondCateName";
+            this.cmbSecondCateName.ShadowDecoration.Parent = this.cmbSecondCateName;
+            this.cmbSecondCateName.Size = new System.Drawing.Size(196, 36);
+            this.cmbSecondCateName.TabIndex = 135;
             // 
             // cmbMainCate
             // 
@@ -549,7 +545,7 @@ namespace FinalPoject
             this.guna2Panel11.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel11.BorderRadius = 12;
             this.guna2Panel11.BorderThickness = 1;
-            this.guna2Panel11.Controls.Add(this.dgvAllProduct);
+            this.guna2Panel11.Controls.Add(this.dgvMasterView);
             this.guna2Panel11.Controls.Add(this.guna2Panel5);
             this.guna2Panel11.Controls.Add(this.guna2Panel28);
             this.guna2Panel11.Controls.Add(this.guna2Panel26);
@@ -566,123 +562,87 @@ namespace FinalPoject
             this.guna2Panel11.Size = new System.Drawing.Size(773, 620);
             this.guna2Panel11.TabIndex = 27;
             // 
-            // dgvAllProduct
+            // dgvMasterView
             // 
-            this.dgvAllProduct.AllowUserToAddRows = false;
-            this.dgvAllProduct.AllowUserToDeleteRows = false;
-            this.dgvAllProduct.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvAllProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAllProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pID,
-            this.pTag,
-            this.pName,
-            this.pBrandName,
-            this.pStatus,
-            this.pMSRP,
-            this.pPerUnPrice,
-            this.pQuaPerUn,
-            this.pDisRate,
-            this.pSize});
-            this.dgvAllProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAllProduct.Location = new System.Drawing.Point(8, 164);
-            this.dgvAllProduct.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvAllProduct.Name = "dgvAllProduct";
-            this.dgvAllProduct.ReadOnly = true;
-            this.dgvAllProduct.RowHeadersWidth = 51;
-            this.dgvAllProduct.RowTemplate.Height = 24;
-            this.dgvAllProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllProduct.Size = new System.Drawing.Size(757, 391);
-            this.dgvAllProduct.TabIndex = 162;
+            this.dgvMasterView.AllowUserToAddRows = false;
+            this.dgvMasterView.AllowUserToDeleteRows = false;
+            this.dgvMasterView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvMasterView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMasterView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProductName,
+            this.BrandName,
+            this.VendorName,
+            this.ThirdCategoryName,
+            this.SecondCategoryName,
+            this.MainCategoryName});
+            this.dgvMasterView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMasterView.Location = new System.Drawing.Point(8, 164);
+            this.dgvMasterView.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvMasterView.Name = "dgvMasterView";
+            this.dgvMasterView.ReadOnly = true;
+            this.dgvMasterView.RowHeadersWidth = 51;
+            this.dgvMasterView.RowTemplate.Height = 24;
+            this.dgvMasterView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMasterView.Size = new System.Drawing.Size(757, 391);
+            this.dgvMasterView.TabIndex = 162;
             // 
-            // pID
+            // ProductName
             // 
-            this.pID.DataPropertyName = "ProductId";
-            this.pID.HeaderText = "Main Category ID";
-            this.pID.MinimumWidth = 6;
-            this.pID.Name = "pID";
-            this.pID.ReadOnly = true;
-            this.pID.Width = 125;
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.FillWeight = 200F;
+            this.ProductName.HeaderText = "ProductName";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            this.ProductName.Width = 200;
             // 
-            // pTag
+            // BrandName
             // 
-            this.pTag.DataPropertyName = "ProductIdTag";
-            this.pTag.HeaderText = "Main Category Name";
-            this.pTag.MinimumWidth = 6;
-            this.pTag.Name = "pTag";
-            this.pTag.ReadOnly = true;
-            this.pTag.Width = 125;
+            this.BrandName.DataPropertyName = "BrandName";
+            this.BrandName.FillWeight = 200F;
+            this.BrandName.HeaderText = "Brand Name";
+            this.BrandName.MinimumWidth = 6;
+            this.BrandName.Name = "BrandName";
+            this.BrandName.ReadOnly = true;
+            this.BrandName.Width = 200;
             // 
-            // pName
+            // VendorName
             // 
-            this.pName.DataPropertyName = "ProductName";
-            this.pName.HeaderText = "Second Category ID";
-            this.pName.MinimumWidth = 6;
-            this.pName.Name = "pName";
-            this.pName.ReadOnly = true;
-            this.pName.Width = 125;
+            this.VendorName.DataPropertyName = "VendorName";
+            this.VendorName.FillWeight = 200F;
+            this.VendorName.HeaderText = "Vendor Name";
+            this.VendorName.MinimumWidth = 6;
+            this.VendorName.Name = "VendorName";
+            this.VendorName.ReadOnly = true;
+            this.VendorName.Width = 200;
             // 
-            // pBrandName
+            // ThirdCategoryName
             // 
-            this.pBrandName.DataPropertyName = "BrandName";
-            this.pBrandName.HeaderText = "Second Category Name";
-            this.pBrandName.MinimumWidth = 6;
-            this.pBrandName.Name = "pBrandName";
-            this.pBrandName.ReadOnly = true;
-            this.pBrandName.Width = 125;
+            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
+            this.ThirdCategoryName.FillWeight = 200F;
+            this.ThirdCategoryName.HeaderText = "Third Category Name";
+            this.ThirdCategoryName.Name = "ThirdCategoryName";
+            this.ThirdCategoryName.ReadOnly = true;
+            this.ThirdCategoryName.Width = 200;
             // 
-            // pStatus
+            // SecondCategoryName
             // 
-            this.pStatus.DataPropertyName = "ProductStatus";
-            this.pStatus.HeaderText = "Third Category ID";
-            this.pStatus.MinimumWidth = 6;
-            this.pStatus.Name = "pStatus";
-            this.pStatus.ReadOnly = true;
-            this.pStatus.Width = 125;
+            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
+            this.SecondCategoryName.FillWeight = 200F;
+            this.SecondCategoryName.HeaderText = "Second Category Name";
+            this.SecondCategoryName.MinimumWidth = 6;
+            this.SecondCategoryName.Name = "SecondCategoryName";
+            this.SecondCategoryName.ReadOnly = true;
+            this.SecondCategoryName.Width = 200;
             // 
-            // pMSRP
+            // MainCategoryName
             // 
-            this.pMSRP.DataPropertyName = "ProductMSRP";
-            this.pMSRP.HeaderText = "Second Category Name";
-            this.pMSRP.MinimumWidth = 6;
-            this.pMSRP.Name = "pMSRP";
-            this.pMSRP.ReadOnly = true;
-            this.pMSRP.Width = 125;
-            // 
-            // pPerUnPrice
-            // 
-            this.pPerUnPrice.DataPropertyName = "ProductPerUnitPrice";
-            this.pPerUnPrice.HeaderText = "Vendor Category ID";
-            this.pPerUnPrice.MinimumWidth = 6;
-            this.pPerUnPrice.Name = "pPerUnPrice";
-            this.pPerUnPrice.ReadOnly = true;
-            this.pPerUnPrice.Width = 125;
-            // 
-            // pQuaPerUn
-            // 
-            this.pQuaPerUn.DataPropertyName = "ProductQuantityPerUnit";
-            this.pQuaPerUn.HeaderText = "Vendor Name";
-            this.pQuaPerUn.MinimumWidth = 6;
-            this.pQuaPerUn.Name = "pQuaPerUn";
-            this.pQuaPerUn.ReadOnly = true;
-            this.pQuaPerUn.Width = 125;
-            // 
-            // pDisRate
-            // 
-            this.pDisRate.DataPropertyName = "ProductDiscountRate";
-            this.pDisRate.HeaderText = "Brand ID";
-            this.pDisRate.MinimumWidth = 6;
-            this.pDisRate.Name = "pDisRate";
-            this.pDisRate.ReadOnly = true;
-            this.pDisRate.Width = 125;
-            // 
-            // pSize
-            // 
-            this.pSize.DataPropertyName = "ProductSize";
-            this.pSize.HeaderText = "Brand Name";
-            this.pSize.MinimumWidth = 6;
-            this.pSize.Name = "pSize";
-            this.pSize.ReadOnly = true;
-            this.pSize.Width = 125;
+            this.MainCategoryName.DataPropertyName = "MainCategoryName";
+            this.MainCategoryName.FillWeight = 200F;
+            this.MainCategoryName.HeaderText = "Main Category Name";
+            this.MainCategoryName.MinimumWidth = 6;
+            this.MainCategoryName.Name = "MainCategoryName";
+            this.MainCategoryName.ReadOnly = true;
+            this.MainCategoryName.Width = 200;
             // 
             // guna2Panel5
             // 
@@ -781,6 +741,7 @@ namespace FinalPoject
             this.btnMasterRefresh.TabIndex = 133;
             this.btnMasterRefresh.Text = "Refresh";
             this.btnMasterRefresh.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnMasterRefresh.Click += new System.EventHandler(this.btnMasterRefresh_Click);
             // 
             // pnlCategoryButton
             // 
@@ -1057,12 +1018,12 @@ namespace FinalPoject
             this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel23.Controls.Add(this.label24);
             this.guna2Panel23.Controls.Add(this.guna2Panel24);
-            this.guna2Panel23.Controls.Add(this.txtSearchProduct);
+            this.guna2Panel23.Controls.Add(this.txtSerachAllCate);
             this.guna2Panel23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel23.Location = new System.Drawing.Point(384, 0);
+            this.guna2Panel23.Location = new System.Drawing.Point(326, 0);
             this.guna2Panel23.Name = "guna2Panel23";
             this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
-            this.guna2Panel23.Size = new System.Drawing.Size(389, 57);
+            this.guna2Panel23.Size = new System.Drawing.Size(447, 57);
             this.guna2Panel23.TabIndex = 21;
             // 
             // label24
@@ -1073,47 +1034,48 @@ namespace FinalPoject
             this.label24.Location = new System.Drawing.Point(10, 20);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(101, 19);
+            this.label24.Size = new System.Drawing.Size(113, 19);
             this.label24.TabIndex = 164;
-            this.label24.Text = "Search Product";
+            this.label24.Text = "Seach Categoires";
             // 
             // guna2Panel24
             // 
             this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel24.Location = new System.Drawing.Point(369, 0);
+            this.guna2Panel24.Location = new System.Drawing.Point(427, 0);
             this.guna2Panel24.Name = "guna2Panel24";
             this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
             this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
             this.guna2Panel24.TabIndex = 135;
             // 
-            // txtSearchProduct
+            // txtSerachAllCate
             // 
-            this.txtSearchProduct.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.txtSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchProduct.DefaultText = "";
-            this.txtSearchProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.DisabledState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchProduct.FocusedState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchProduct.HoverState.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.txtSearchProduct.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearchProduct.Location = new System.Drawing.Point(116, 14);
-            this.txtSearchProduct.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtSearchProduct.Name = "txtSearchProduct";
-            this.txtSearchProduct.PasswordChar = '\0';
-            this.txtSearchProduct.PlaceholderText = "by Name, Tag, Cate. Brand";
-            this.txtSearchProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearchProduct.SelectedText = "";
-            this.txtSearchProduct.ShadowDecoration.Parent = this.txtSearchProduct;
-            this.txtSearchProduct.Size = new System.Drawing.Size(245, 30);
-            this.txtSearchProduct.TabIndex = 134;
+            this.txtSerachAllCate.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtSerachAllCate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSerachAllCate.DefaultText = "";
+            this.txtSerachAllCate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSerachAllCate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSerachAllCate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSerachAllCate.DisabledState.Parent = this.txtSerachAllCate;
+            this.txtSerachAllCate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSerachAllCate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSerachAllCate.FocusedState.Parent = this.txtSerachAllCate;
+            this.txtSerachAllCate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSerachAllCate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSerachAllCate.HoverState.Parent = this.txtSerachAllCate;
+            this.txtSerachAllCate.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.txtSerachAllCate.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
+            this.txtSerachAllCate.Location = new System.Drawing.Point(133, 14);
+            this.txtSerachAllCate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSerachAllCate.Name = "txtSerachAllCate";
+            this.txtSerachAllCate.PasswordChar = '\0';
+            this.txtSerachAllCate.PlaceholderText = "by Name, Tag, Cate. Brand";
+            this.txtSerachAllCate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSerachAllCate.SelectedText = "";
+            this.txtSerachAllCate.ShadowDecoration.Parent = this.txtSerachAllCate;
+            this.txtSerachAllCate.Size = new System.Drawing.Size(245, 30);
+            this.txtSerachAllCate.TabIndex = 134;
+            this.txtSerachAllCate.TextChanged += new System.EventHandler(this.txtSerachAllCate_TextChanged);
             // 
             // guna2Panel25
             // 
@@ -1275,7 +1237,8 @@ namespace FinalPoject
             this.MinimizeBox = false;
             this.Name = "FormProductsMaster";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Master Products Contorls";
+            this.Text = "Master Categories";
+            this.Load += new System.EventHandler(this.FormProductsMaster_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.guna2Panel12.ResumeLayout(false);
@@ -1287,7 +1250,7 @@ namespace FinalPoject
             this.guna2Panel15.ResumeLayout(false);
             this.guna2Panel15.PerformLayout();
             this.guna2Panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMasterView)).EndInit();
             this.guna2Panel13.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.pnlCategoryButton.ResumeLayout(false);
@@ -1346,7 +1309,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel23;
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchProduct;
+        private Guna.UI2.WinForms.Guna2TextBox txtSerachAllCate;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel25;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label18;
@@ -1360,21 +1323,11 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2ComboBox cmbBrand;
         private Guna.UI2.WinForms.Guna2ComboBox cmbVendor;
         private Guna.UI2.WinForms.Guna2ComboBox cmbThirdCate;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbSecondCate;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSecondCateName;
         private Guna.UI2.WinForms.Guna2ComboBox cmbMainCate;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel19;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private System.Windows.Forms.DataGridView dgvAllProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pTag;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pBrandName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pMSRP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pPerUnPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pQuaPerUn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pDisRate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pSize;
+        private System.Windows.Forms.DataGridView dgvMasterView;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
         private Guna.UI2.WinForms.Guna2Button btnAddProduct;
         private Guna.UI2.WinForms.Guna2Button btnAddMainCate;
@@ -1382,5 +1335,11 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Button btnAddBrandCate;
         private Guna.UI2.WinForms.Guna2Button btnAddSecondCate;
         private Guna.UI2.WinForms.Guna2Button btnAddThirdCate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BrandName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VendorName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SecondCategoryName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MainCategoryName;
     }
 }

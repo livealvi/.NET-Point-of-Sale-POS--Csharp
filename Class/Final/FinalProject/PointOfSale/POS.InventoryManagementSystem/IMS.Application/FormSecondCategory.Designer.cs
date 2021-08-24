@@ -44,6 +44,8 @@ namespace FinalPoject
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddMainCate = new Guna.UI2.WinForms.Guna2Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -69,6 +71,10 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvSecondCate = new System.Windows.Forms.DataGridView();
+            this.SecondCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SecondCategoryImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MainCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -88,12 +94,6 @@ namespace FinalPoject
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.SecondCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SecondCategoryImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnAddMainCate = new Guna.UI2.WinForms.Guna2Button();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -303,6 +303,42 @@ namespace FinalPoject
             this.panel1.Size = new System.Drawing.Size(444, 480);
             this.panel1.TabIndex = 153;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnAddMainCate
+            // 
+            this.btnAddMainCate.Animated = true;
+            this.btnAddMainCate.CheckedState.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddMainCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
+            this.btnAddMainCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
+            this.btnAddMainCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddMainCate.CustomImages.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddMainCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMainCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddMainCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddMainCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMainCate.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddMainCate.HoverState.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.Location = new System.Drawing.Point(361, 403);
+            this.btnAddMainCate.Name = "btnAddMainCate";
+            this.btnAddMainCate.ShadowDecoration.Parent = this.btnAddMainCate;
+            this.btnAddMainCate.Size = new System.Drawing.Size(35, 30);
+            this.btnAddMainCate.TabIndex = 206;
+            this.btnAddMainCate.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddMainCate.Click += new System.EventHandler(this.btnAddMainCate_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(26, 309);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 15);
+            this.label4.TabIndex = 168;
+            this.label4.Text = "Second Category TAG";
             // 
             // label2
             // 
@@ -756,6 +792,41 @@ namespace FinalPoject
             this.dgvSecondCate.TabIndex = 160;
             this.dgvSecondCate.DoubleClick += new System.EventHandler(this.dgvSecondCate_DoubleClick);
             // 
+            // SecondCategoryId
+            // 
+            this.SecondCategoryId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SecondCategoryId.DataPropertyName = "SecondCategoryId";
+            this.SecondCategoryId.HeaderText = "Second Category ID";
+            this.SecondCategoryId.MinimumWidth = 6;
+            this.SecondCategoryId.Name = "SecondCategoryId";
+            this.SecondCategoryId.ReadOnly = true;
+            // 
+            // SecondCategoryName
+            // 
+            this.SecondCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
+            this.SecondCategoryName.HeaderText = "Second Category Name";
+            this.SecondCategoryName.MinimumWidth = 6;
+            this.SecondCategoryName.Name = "SecondCategoryName";
+            this.SecondCategoryName.ReadOnly = true;
+            // 
+            // SecondCategoryImage
+            // 
+            this.SecondCategoryImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SecondCategoryImage.DataPropertyName = "SecondCategoryImage";
+            this.SecondCategoryImage.HeaderText = "Second Category Picture";
+            this.SecondCategoryImage.MinimumWidth = 6;
+            this.SecondCategoryImage.Name = "SecondCategoryImage";
+            this.SecondCategoryImage.ReadOnly = true;
+            // 
+            // MainCategoryName
+            // 
+            this.MainCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MainCategoryName.DataPropertyName = "MainCategoryName";
+            this.MainCategoryName.HeaderText = "Main Category Name";
+            this.MainCategoryName.Name = "MainCategoryName";
+            this.MainCategoryName.ReadOnly = true;
+            // 
             // guna2Panel28
             // 
             this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
@@ -1024,77 +1095,6 @@ namespace FinalPoject
             this.label6.Size = new System.Drawing.Size(151, 21);
             this.label6.TabIndex = 0;
             this.label6.Text = "View All Categories";
-            // 
-            // SecondCategoryId
-            // 
-            this.SecondCategoryId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SecondCategoryId.DataPropertyName = "SecondCategoryId";
-            this.SecondCategoryId.HeaderText = "Second Category ID";
-            this.SecondCategoryId.MinimumWidth = 6;
-            this.SecondCategoryId.Name = "SecondCategoryId";
-            this.SecondCategoryId.ReadOnly = true;
-            // 
-            // SecondCategoryName
-            // 
-            this.SecondCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
-            this.SecondCategoryName.HeaderText = "Second Category Name";
-            this.SecondCategoryName.MinimumWidth = 6;
-            this.SecondCategoryName.Name = "SecondCategoryName";
-            this.SecondCategoryName.ReadOnly = true;
-            // 
-            // SecondCategoryImage
-            // 
-            this.SecondCategoryImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SecondCategoryImage.DataPropertyName = "SecondCategoryImage";
-            this.SecondCategoryImage.HeaderText = "Second Category Picture";
-            this.SecondCategoryImage.MinimumWidth = 6;
-            this.SecondCategoryImage.Name = "SecondCategoryImage";
-            this.SecondCategoryImage.ReadOnly = true;
-            // 
-            // MainCategoryName
-            // 
-            this.MainCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MainCategoryName.DataPropertyName = "MainCategoryName";
-            this.MainCategoryName.HeaderText = "Main Category Name";
-            this.MainCategoryName.Name = "MainCategoryName";
-            this.MainCategoryName.ReadOnly = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(26, 309);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 15);
-            this.label4.TabIndex = 168;
-            this.label4.Text = "Second Category TAG";
-            // 
-            // btnAddMainCate
-            // 
-            this.btnAddMainCate.Animated = true;
-            this.btnAddMainCate.CheckedState.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddMainCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
-            this.btnAddMainCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
-            this.btnAddMainCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAddMainCate.CustomImages.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddMainCate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMainCate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddMainCate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddMainCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMainCate.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddMainCate.HoverState.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.Location = new System.Drawing.Point(361, 403);
-            this.btnAddMainCate.Name = "btnAddMainCate";
-            this.btnAddMainCate.ShadowDecoration.Parent = this.btnAddMainCate;
-            this.btnAddMainCate.Size = new System.Drawing.Size(35, 30);
-            this.btnAddMainCate.TabIndex = 206;
-            this.btnAddMainCate.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnAddMainCate.Click += new System.EventHandler(this.btnAddMainCate_Click);
             // 
             // FormSecondCategory
             // 

@@ -31,10 +31,9 @@ namespace FinalPoject
             this.Refresh();
             this.RefreshContent();
             this.MainCategoryIdToName();
-            //this.ItemFound();
         }
 
-        private void MainCategoryIdToName()
+        public void MainCategoryIdToName()
         {
             this.cmbMainCate.Items.Clear();
             this.cmbMainCate.Items.Add("--Not Selected--");

@@ -15,13 +15,21 @@ namespace FinalPoject
 {
     public partial class FormMakeSale : Form
     {
+        private MasterCategoriesRepo masterCategoriesRepo{ get; set; }
+        private ThirdCategoriesRepo  thirdCategoriesRepo { get; set; }
+        private SecondCategoriesReop secondCateReop      { get; set; }
+        private VendorsRepo          vendorsRepo         { get; set; }
+        private BrandsRepo           brandRepo           { get; set; }
         private DataTable OrderDetailDataTable;
         private MakeSalesRepo makeSalesRepo{get; set;}
         public FormMakeSale()
         {
             InitializeComponent();
             this.makeSalesRepo = new MakeSalesRepo();
-
+            this.secondCateReop = new SecondCategoriesReop();
+            this.thirdCategoriesRepo = new ThirdCategoriesRepo();
+            this.vendorsRepo = new VendorsRepo();
+            this.brandRepo = new BrandsRepo();
             InitiateDgvcart();
         }
 
@@ -54,6 +62,10 @@ namespace FinalPoject
             this.dgvSearchProduct.AutoGenerateColumns = false;
             this.dgvSearchProduct.DataSource = this.makeSalesRepo.GetAll(searchKey);
             this.dgvSearchProduct.ClearSelection();
+            this.SecondCategoryIdToName();
+            this.ThirdCategoryIdToName();
+            this.BrandIdToName();
+            this.VendorIdToName();
             this.Refresh();
             this.RefreshContent();
         }
@@ -136,7 +148,52 @@ namespace FinalPoject
         {
             this.txtSearchForSell.Clear();
             this.PopulateGridView();
-            
+            this.SecondCategoryIdToName();
+            this.ThirdCategoryIdToName();
+            this.BrandIdToName();
+            this.VendorIdToName();
+        }
+
+        private void BrandIdToName()
+        {
+            this.cmbBrand.Items.Clear();
+            this.cmbBrand.Items.Add("--Not Selected--");
+            this.cmbBrand.SelectedIndex = cmbBrand.FindStringExact("--Not Selected--");
+            foreach (DataRow row in this.brandRepo.LoadComboBrandName().Rows)
+            {
+                this.cmbBrand.Items.Add(row["BrandName"].ToString());
+            }
+        }
+        private void VendorIdToName()
+        {
+            this.cmbVendor.Items.Clear();
+            this.cmbVendor.Items.Add("--Not Selected--");
+            this.cmbVendor.SelectedIndex = cmbVendor.FindStringExact("--Not Selected--");
+            foreach (DataRow row in this.vendorsRepo.LoadComboVendorName().Rows)
+            {
+                this.cmbVendor.Items.Add(row["VendorName"].ToString());
+            }
+        }
+
+        private void ThirdCategoryIdToName()
+        {
+            this.cmbThird.Items.Clear();
+            this.cmbThird.Items.Add("--Not Selected--");
+            this.cmbThird.SelectedIndex = cmbThird.FindStringExact("--Not Selected--");
+            foreach (DataRow row in this.thirdCategoriesRepo.LoadComboThirdCategoryName().Rows)
+            {
+                this.cmbThird.Items.Add(row["ThirdCategoryName"].ToString());
+            }
+        }
+        private void SecondCategoryIdToName()
+        {
+            this.cmbSecond.Items.Clear();
+            this.cmbSecond.Items.Add("--Not Selected--");
+            this.cmbSecond.SelectedIndex = cmbSecond.FindStringExact("--Not Selected--");
+            foreach (DataRow row in this.secondCateReop.LoadComboMainCategoryName().Rows)
+            {
+                this.cmbSecond.Items.Add(row["SecondCategoryName"].ToString());
+            }
         }
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)

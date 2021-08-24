@@ -43,6 +43,18 @@ namespace FinalPoject
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.LeftPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvSearchProduct = new System.Windows.Forms.DataGridView();
+            this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductIdTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductUnitStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductPerUnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductDiscountRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
@@ -52,6 +64,18 @@ namespace FinalPoject
             this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
             this.MiddelPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvCart = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
@@ -117,10 +141,6 @@ namespace FinalPoject
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
-            this.cmbFilterBySec = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbFilterByBrand = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbFilterByVendor = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbFilterByThird = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnCancleSearch = new Guna.UI2.WinForms.Guna2Button();
             this.label24 = new System.Windows.Forms.Label();
             this.txtSearchForSell = new Guna.UI2.WinForms.Guna2TextBox();
@@ -132,30 +152,10 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductIdTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductUnitStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductPerUnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductDiscountRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbSecond = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbThird = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -373,6 +373,101 @@ namespace FinalPoject
             this.dgvSearchProduct.TabIndex = 169;
             this.dgvSearchProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSearchProdcut_CellClick);
             // 
+            // ProductId
+            // 
+            this.ProductId.DataPropertyName = "ProductId";
+            this.ProductId.HeaderText = "ProductId";
+            this.ProductId.MinimumWidth = 6;
+            this.ProductId.Name = "ProductId";
+            this.ProductId.ReadOnly = true;
+            this.ProductId.Width = 60;
+            // 
+            // ProductIdTag
+            // 
+            this.ProductIdTag.DataPropertyName = "ProductIdTag";
+            this.ProductIdTag.HeaderText = "ProductIdTag";
+            this.ProductIdTag.MinimumWidth = 6;
+            this.ProductIdTag.Name = "ProductIdTag";
+            this.ProductIdTag.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "ProductName";
+            this.ProductName.MinimumWidth = 6;
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            this.ProductName.Width = 120;
+            // 
+            // BrandName
+            // 
+            this.BrandName.DataPropertyName = "BrandName";
+            this.BrandName.HeaderText = "BrandName";
+            this.BrandName.MinimumWidth = 6;
+            this.BrandName.Name = "BrandName";
+            this.BrandName.ReadOnly = true;
+            // 
+            // ProductStatus
+            // 
+            this.ProductStatus.DataPropertyName = "ProductStatus";
+            this.ProductStatus.HeaderText = "ProductStatus";
+            this.ProductStatus.MinimumWidth = 6;
+            this.ProductStatus.Name = "ProductStatus";
+            this.ProductStatus.ReadOnly = true;
+            // 
+            // ProductUnitStock
+            // 
+            this.ProductUnitStock.DataPropertyName = "ProductUnitStock";
+            this.ProductUnitStock.HeaderText = "ProductUnitStock";
+            this.ProductUnitStock.MinimumWidth = 6;
+            this.ProductUnitStock.Name = "ProductUnitStock";
+            this.ProductUnitStock.ReadOnly = true;
+            // 
+            // ProductMSRP
+            // 
+            this.ProductMSRP.DataPropertyName = "ProductMSRP";
+            this.ProductMSRP.HeaderText = "ProductMSRP";
+            this.ProductMSRP.MinimumWidth = 6;
+            this.ProductMSRP.Name = "ProductMSRP";
+            this.ProductMSRP.ReadOnly = true;
+            // 
+            // ProductPerUnitPrice
+            // 
+            this.ProductPerUnitPrice.DataPropertyName = "ProductPerUnitPrice";
+            this.ProductPerUnitPrice.HeaderText = "ProductPerUnitPrice";
+            this.ProductPerUnitPrice.MinimumWidth = 6;
+            this.ProductPerUnitPrice.Name = "ProductPerUnitPrice";
+            this.ProductPerUnitPrice.ReadOnly = true;
+            // 
+            // ProductDiscountRate
+            // 
+            this.ProductDiscountRate.DataPropertyName = "ProductDiscountRate";
+            this.ProductDiscountRate.HeaderText = "ProductDiscountRate";
+            this.ProductDiscountRate.MinimumWidth = 6;
+            this.ProductDiscountRate.Name = "ProductDiscountRate";
+            this.ProductDiscountRate.ReadOnly = true;
+            // 
+            // VendorName
+            // 
+            this.VendorName.DataPropertyName = "VendorName";
+            this.VendorName.HeaderText = "VendorName";
+            this.VendorName.Name = "VendorName";
+            this.VendorName.ReadOnly = true;
+            // 
+            // ThirdCategoryName
+            // 
+            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
+            this.ThirdCategoryName.HeaderText = "ThirdCategoryName";
+            this.ThirdCategoryName.Name = "ThirdCategoryName";
+            this.ThirdCategoryName.ReadOnly = true;
+            // 
+            // SecondCategoryName
+            // 
+            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
+            this.SecondCategoryName.HeaderText = "SecondCategoryName";
+            this.SecondCategoryName.Name = "SecondCategoryName";
+            this.SecondCategoryName.ReadOnly = true;
+            // 
             // guna2Panel7
             // 
             this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
@@ -495,6 +590,108 @@ namespace FinalPoject
             this.dgvCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCart.Size = new System.Drawing.Size(380, 407);
             this.dgvCart.TabIndex = 170;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProductIdTag";
+            this.dataGridViewTextBoxColumn2.HeaderText = "TAG";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ProductName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "BrandName";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Brand";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductStatus";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Status";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ProductUnitStock";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Item Left";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ProductMSRP";
+            this.dataGridViewTextBoxColumn7.HeaderText = "MSRP";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProductPerUnitPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Stock Price";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Visible = false;
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "ProductDiscountRate";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Discount Rate";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "VendorName";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Vendor";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "ThirdCategoryName";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Category 1";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "SecondCategoryName";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Category 2";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // guna2Panel16
             // 
@@ -1593,18 +1790,18 @@ namespace FinalPoject
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 16F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 41F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 15F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 154F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 150F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 150F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 150F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 150F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26.31F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 133F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 14F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 179F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 173F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 168F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 189F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 16.31F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 7.23F)});
-            this.tablePanel3.Controls.Add(this.cmbFilterBySec);
-            this.tablePanel3.Controls.Add(this.cmbFilterByBrand);
-            this.tablePanel3.Controls.Add(this.cmbFilterByVendor);
-            this.tablePanel3.Controls.Add(this.cmbFilterByThird);
+            this.tablePanel3.Controls.Add(this.cmbThird);
+            this.tablePanel3.Controls.Add(this.cmbSecond);
+            this.tablePanel3.Controls.Add(this.cmbVendor);
+            this.tablePanel3.Controls.Add(this.cmbBrand);
             this.tablePanel3.Controls.Add(this.btnCancleSearch);
             this.tablePanel3.Controls.Add(this.label24);
             this.tablePanel3.Controls.Add(this.txtSearchForSell);
@@ -1613,84 +1810,8 @@ namespace FinalPoject
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F)});
-            this.tablePanel3.Size = new System.Drawing.Size(1512, 72);
+            this.tablePanel3.Size = new System.Drawing.Size(1622, 72);
             this.tablePanel3.TabIndex = 205;
-            // 
-            // cmbFilterBySec
-            // 
-            this.cmbFilterBySec.BackColor = System.Drawing.Color.Transparent;
-            this.cmbFilterBySec.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbFilterBySec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilterBySec.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbFilterBySec.FocusedState.Parent = this.cmbFilterBySec;
-            this.cmbFilterBySec.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbFilterBySec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbFilterBySec.FormattingEnabled = true;
-            this.cmbFilterBySec.HoverState.Parent = this.cmbFilterBySec;
-            this.cmbFilterBySec.ItemHeight = 30;
-            this.cmbFilterBySec.ItemsAppearance.Parent = this.cmbFilterBySec;
-            this.cmbFilterBySec.Location = new System.Drawing.Point(1332, 18);
-            this.cmbFilterBySec.Name = "cmbFilterBySec";
-            this.cmbFilterBySec.ShadowDecoration.Parent = this.cmbFilterBySec;
-            this.cmbFilterBySec.Size = new System.Drawing.Size(144, 36);
-            this.cmbFilterBySec.TabIndex = 206;
-            // 
-            // cmbFilterByBrand
-            // 
-            this.cmbFilterByBrand.BackColor = System.Drawing.Color.Transparent;
-            this.cmbFilterByBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbFilterByBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilterByBrand.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbFilterByBrand.FocusedState.Parent = this.cmbFilterByBrand;
-            this.cmbFilterByBrand.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbFilterByBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbFilterByBrand.FormattingEnabled = true;
-            this.cmbFilterByBrand.HoverState.Parent = this.cmbFilterByBrand;
-            this.cmbFilterByBrand.ItemHeight = 30;
-            this.cmbFilterByBrand.ItemsAppearance.Parent = this.cmbFilterByBrand;
-            this.cmbFilterByBrand.Location = new System.Drawing.Point(882, 18);
-            this.cmbFilterByBrand.Name = "cmbFilterByBrand";
-            this.cmbFilterByBrand.ShadowDecoration.Parent = this.cmbFilterByBrand;
-            this.cmbFilterByBrand.Size = new System.Drawing.Size(144, 36);
-            this.cmbFilterByBrand.TabIndex = 205;
-            // 
-            // cmbFilterByVendor
-            // 
-            this.cmbFilterByVendor.BackColor = System.Drawing.Color.Transparent;
-            this.cmbFilterByVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbFilterByVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilterByVendor.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbFilterByVendor.FocusedState.Parent = this.cmbFilterByVendor;
-            this.cmbFilterByVendor.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbFilterByVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbFilterByVendor.FormattingEnabled = true;
-            this.cmbFilterByVendor.HoverState.Parent = this.cmbFilterByVendor;
-            this.cmbFilterByVendor.ItemHeight = 30;
-            this.cmbFilterByVendor.ItemsAppearance.Parent = this.cmbFilterByVendor;
-            this.cmbFilterByVendor.Location = new System.Drawing.Point(1032, 18);
-            this.cmbFilterByVendor.Name = "cmbFilterByVendor";
-            this.cmbFilterByVendor.ShadowDecoration.Parent = this.cmbFilterByVendor;
-            this.cmbFilterByVendor.Size = new System.Drawing.Size(144, 36);
-            this.cmbFilterByVendor.TabIndex = 205;
-            // 
-            // cmbFilterByThird
-            // 
-            this.cmbFilterByThird.BackColor = System.Drawing.Color.Transparent;
-            this.cmbFilterByThird.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbFilterByThird.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilterByThird.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbFilterByThird.FocusedState.Parent = this.cmbFilterByThird;
-            this.cmbFilterByThird.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbFilterByThird.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbFilterByThird.FormattingEnabled = true;
-            this.cmbFilterByThird.HoverState.Parent = this.cmbFilterByThird;
-            this.cmbFilterByThird.ItemHeight = 30;
-            this.cmbFilterByThird.ItemsAppearance.Parent = this.cmbFilterByThird;
-            this.cmbFilterByThird.Location = new System.Drawing.Point(1182, 18);
-            this.cmbFilterByThird.Name = "cmbFilterByThird";
-            this.cmbFilterByThird.ShadowDecoration.Parent = this.cmbFilterByThird;
-            this.cmbFilterByThird.Size = new System.Drawing.Size(144, 36);
-            this.cmbFilterByThird.TabIndex = 206;
             // 
             // btnCancleSearch
             // 
@@ -1941,202 +2062,89 @@ namespace FinalPoject
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
-            // ProductId
+            // cmbBrand
             // 
-            this.ProductId.DataPropertyName = "ProductId";
-            this.ProductId.HeaderText = "ProductId";
-            this.ProductId.MinimumWidth = 6;
-            this.ProductId.Name = "ProductId";
-            this.ProductId.ReadOnly = true;
-            this.ProductId.Width = 60;
+            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbBrand, 9);
+            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbBrand.FocusedState.Parent = this.cmbBrand;
+            this.cmbBrand.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbBrand.FormattingEnabled = true;
+            this.cmbBrand.HoverState.Parent = this.cmbBrand;
+            this.cmbBrand.ItemHeight = 30;
+            this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
+            this.cmbBrand.Location = new System.Drawing.Point(865, 18);
+            this.cmbBrand.Name = "cmbBrand";
+            this.tablePanel3.SetRow(this.cmbBrand, 0);
+            this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
+            this.cmbBrand.Size = new System.Drawing.Size(173, 36);
+            this.cmbBrand.TabIndex = 207;
             // 
-            // ProductIdTag
+            // cmbVendor
             // 
-            this.ProductIdTag.DataPropertyName = "ProductIdTag";
-            this.ProductIdTag.HeaderText = "ProductIdTag";
-            this.ProductIdTag.MinimumWidth = 6;
-            this.ProductIdTag.Name = "ProductIdTag";
-            this.ProductIdTag.ReadOnly = true;
+            this.cmbVendor.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbVendor, 10);
+            this.cmbVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVendor.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbVendor.FocusedState.Parent = this.cmbVendor;
+            this.cmbVendor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbVendor.FormattingEnabled = true;
+            this.cmbVendor.HoverState.Parent = this.cmbVendor;
+            this.cmbVendor.ItemHeight = 30;
+            this.cmbVendor.ItemsAppearance.Parent = this.cmbVendor;
+            this.cmbVendor.Location = new System.Drawing.Point(1044, 18);
+            this.cmbVendor.Name = "cmbVendor";
+            this.tablePanel3.SetRow(this.cmbVendor, 0);
+            this.cmbVendor.ShadowDecoration.Parent = this.cmbVendor;
+            this.cmbVendor.Size = new System.Drawing.Size(167, 36);
+            this.cmbVendor.TabIndex = 208;
             // 
-            // ProductName
+            // cmbSecond
             // 
-            this.ProductName.DataPropertyName = "ProductName";
-            this.ProductName.HeaderText = "ProductName";
-            this.ProductName.MinimumWidth = 6;
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            this.ProductName.Width = 120;
+            this.cmbSecond.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbSecond, 12);
+            this.cmbSecond.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSecond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecond.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSecond.FocusedState.Parent = this.cmbSecond;
+            this.cmbSecond.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSecond.FormattingEnabled = true;
+            this.cmbSecond.HoverState.Parent = this.cmbSecond;
+            this.cmbSecond.ItemHeight = 30;
+            this.cmbSecond.ItemsAppearance.Parent = this.cmbSecond;
+            this.cmbSecond.Location = new System.Drawing.Point(1385, 18);
+            this.cmbSecond.Name = "cmbSecond";
+            this.tablePanel3.SetRow(this.cmbSecond, 0);
+            this.cmbSecond.ShadowDecoration.Parent = this.cmbSecond;
+            this.cmbSecond.Size = new System.Drawing.Size(183, 36);
+            this.cmbSecond.TabIndex = 209;
             // 
-            // BrandName
+            // cmbThird
             // 
-            this.BrandName.DataPropertyName = "BrandName";
-            this.BrandName.HeaderText = "BrandName";
-            this.BrandName.MinimumWidth = 6;
-            this.BrandName.Name = "BrandName";
-            this.BrandName.ReadOnly = true;
-            // 
-            // ProductStatus
-            // 
-            this.ProductStatus.DataPropertyName = "ProductStatus";
-            this.ProductStatus.HeaderText = "ProductStatus";
-            this.ProductStatus.MinimumWidth = 6;
-            this.ProductStatus.Name = "ProductStatus";
-            this.ProductStatus.ReadOnly = true;
-            // 
-            // ProductUnitStock
-            // 
-            this.ProductUnitStock.DataPropertyName = "ProductUnitStock";
-            this.ProductUnitStock.HeaderText = "ProductUnitStock";
-            this.ProductUnitStock.MinimumWidth = 6;
-            this.ProductUnitStock.Name = "ProductUnitStock";
-            this.ProductUnitStock.ReadOnly = true;
-            // 
-            // ProductMSRP
-            // 
-            this.ProductMSRP.DataPropertyName = "ProductMSRP";
-            this.ProductMSRP.HeaderText = "ProductMSRP";
-            this.ProductMSRP.MinimumWidth = 6;
-            this.ProductMSRP.Name = "ProductMSRP";
-            this.ProductMSRP.ReadOnly = true;
-            // 
-            // ProductPerUnitPrice
-            // 
-            this.ProductPerUnitPrice.DataPropertyName = "ProductPerUnitPrice";
-            this.ProductPerUnitPrice.HeaderText = "ProductPerUnitPrice";
-            this.ProductPerUnitPrice.MinimumWidth = 6;
-            this.ProductPerUnitPrice.Name = "ProductPerUnitPrice";
-            this.ProductPerUnitPrice.ReadOnly = true;
-            // 
-            // ProductDiscountRate
-            // 
-            this.ProductDiscountRate.DataPropertyName = "ProductDiscountRate";
-            this.ProductDiscountRate.HeaderText = "ProductDiscountRate";
-            this.ProductDiscountRate.MinimumWidth = 6;
-            this.ProductDiscountRate.Name = "ProductDiscountRate";
-            this.ProductDiscountRate.ReadOnly = true;
-            // 
-            // VendorName
-            // 
-            this.VendorName.DataPropertyName = "VendorName";
-            this.VendorName.HeaderText = "VendorName";
-            this.VendorName.Name = "VendorName";
-            this.VendorName.ReadOnly = true;
-            // 
-            // ThirdCategoryName
-            // 
-            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
-            this.ThirdCategoryName.HeaderText = "ThirdCategoryName";
-            this.ThirdCategoryName.Name = "ThirdCategoryName";
-            this.ThirdCategoryName.ReadOnly = true;
-            // 
-            // SecondCategoryName
-            // 
-            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
-            this.SecondCategoryName.HeaderText = "SecondCategoryName";
-            this.SecondCategoryName.Name = "SecondCategoryName";
-            this.SecondCategoryName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 60;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProductIdTag";
-            this.dataGridViewTextBoxColumn2.HeaderText = "TAG";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 70;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ProductName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "BrandName";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Brand";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductStatus";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Status";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ProductUnitStock";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Item Left";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ProductMSRP";
-            this.dataGridViewTextBoxColumn7.HeaderText = "MSRP";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProductPerUnitPrice";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Stock Price";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Visible = false;
-            this.dataGridViewTextBoxColumn8.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "ProductDiscountRate";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Discount Rate";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "VendorName";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Vendor";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "ThirdCategoryName";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Category 1";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "SecondCategoryName";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Category 2";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.cmbThird.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbThird, 11);
+            this.cmbThird.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbThird.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbThird.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbThird.FocusedState.Parent = this.cmbThird;
+            this.cmbThird.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbThird.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbThird.FormattingEnabled = true;
+            this.cmbThird.HoverState.Parent = this.cmbThird;
+            this.cmbThird.ItemHeight = 30;
+            this.cmbThird.ItemsAppearance.Parent = this.cmbThird;
+            this.cmbThird.Location = new System.Drawing.Point(1217, 18);
+            this.cmbThird.Name = "cmbThird";
+            this.tablePanel3.SetRow(this.cmbThird, 0);
+            this.cmbThird.ShadowDecoration.Parent = this.cmbThird;
+            this.cmbThird.Size = new System.Drawing.Size(162, 36);
+            this.cmbThird.TabIndex = 210;
             // 
             // FormMakeSale
             // 
@@ -2205,10 +2213,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2Button btnDeleteProduct;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBySec;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbFilterByBrand;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbFilterByVendor;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbFilterByThird;
         private Guna.UI2.WinForms.Guna2Button btnCancleSearch;
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchForSell;
@@ -2313,5 +2317,9 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbThird;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSecond;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbVendor;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbBrand;
     }
 }

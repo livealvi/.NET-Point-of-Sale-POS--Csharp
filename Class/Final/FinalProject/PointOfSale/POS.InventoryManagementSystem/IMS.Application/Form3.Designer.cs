@@ -67,9 +67,9 @@ namespace FinalPoject
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
@@ -839,6 +839,20 @@ namespace FinalPoject
             this.label10.TabIndex = 48;
             this.label10.Text = "Gender";
             // 
+            // pbImage
+            // 
+            this.pbImage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pbImage.ErrorImage = global::FinalPoject.Properties.Resources.icons8_no_image_480px_2;
+            this.pbImage.Image = global::FinalPoject.Properties.Resources.icons8_add_camera_480px;
+            this.pbImage.Location = new System.Drawing.Point(8, 20);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(2);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.ShadowDecoration.Parent = this.pbImage;
+            this.pbImage.Size = new System.Drawing.Size(150, 162);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImage.TabIndex = 148;
+            this.pbImage.TabStop = false;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -875,20 +889,6 @@ namespace FinalPoject
             this.guna2TextBox11.ShadowDecoration.Parent = this.guna2TextBox11;
             this.guna2TextBox11.Size = new System.Drawing.Size(190, 32);
             this.guna2TextBox11.TabIndex = 146;
-            // 
-            // pbImage
-            // 
-            this.pbImage.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pbImage.ErrorImage = global::FinalPoject.Properties.Resources.icons8_no_image_480px_2;
-            this.pbImage.Image = global::FinalPoject.Properties.Resources.icons8_add_camera_480px;
-            this.pbImage.Location = new System.Drawing.Point(8, 20);
-            this.pbImage.Margin = new System.Windows.Forms.Padding(2);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.ShadowDecoration.Parent = this.pbImage;
-            this.pbImage.Size = new System.Drawing.Size(150, 162);
-            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbImage.TabIndex = 148;
-            this.pbImage.TabStop = false;
             // 
             // Form3
             // 

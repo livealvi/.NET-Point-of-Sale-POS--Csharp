@@ -85,6 +85,20 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvAllProduct = new System.Windows.Forms.DataGridView();
+            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pPerUnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pUnStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
@@ -109,20 +123,6 @@ namespace FinalPoject
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ElipseAddProducts = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pPerUnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pUnStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
@@ -1156,6 +1156,132 @@ namespace FinalPoject
             this.dgvAllProduct.TabIndex = 151;
             this.dgvAllProduct.DoubleClick += new System.EventHandler(this.dgvAllProduct_DoubleClick);
             // 
+            // pID
+            // 
+            this.pID.DataPropertyName = "ProductId";
+            this.pID.HeaderText = "ID";
+            this.pID.MinimumWidth = 6;
+            this.pID.Name = "pID";
+            this.pID.ReadOnly = true;
+            this.pID.Width = 125;
+            // 
+            // pTag
+            // 
+            this.pTag.DataPropertyName = "ProductIdTag";
+            this.pTag.HeaderText = "Tag";
+            this.pTag.MinimumWidth = 6;
+            this.pTag.Name = "pTag";
+            this.pTag.ReadOnly = true;
+            this.pTag.Width = 125;
+            // 
+            // pName
+            // 
+            this.pName.DataPropertyName = "ProductName";
+            this.pName.HeaderText = "Name";
+            this.pName.MinimumWidth = 6;
+            this.pName.Name = "pName";
+            this.pName.ReadOnly = true;
+            this.pName.Width = 125;
+            // 
+            // pBrandName
+            // 
+            this.pBrandName.DataPropertyName = "BrandName";
+            this.pBrandName.HeaderText = "Brand Name";
+            this.pBrandName.MinimumWidth = 6;
+            this.pBrandName.Name = "pBrandName";
+            this.pBrandName.ReadOnly = true;
+            this.pBrandName.Width = 125;
+            // 
+            // pStatus
+            // 
+            this.pStatus.DataPropertyName = "ProductStatus";
+            this.pStatus.HeaderText = "Status";
+            this.pStatus.MinimumWidth = 6;
+            this.pStatus.Name = "pStatus";
+            this.pStatus.ReadOnly = true;
+            this.pStatus.Width = 125;
+            // 
+            // pMSRP
+            // 
+            this.pMSRP.DataPropertyName = "ProductMSRP";
+            this.pMSRP.HeaderText = "MSRP";
+            this.pMSRP.MinimumWidth = 6;
+            this.pMSRP.Name = "pMSRP";
+            this.pMSRP.ReadOnly = true;
+            this.pMSRP.Width = 125;
+            // 
+            // pPerUnPrice
+            // 
+            this.pPerUnPrice.DataPropertyName = "ProductPerUnitPrice";
+            this.pPerUnPrice.HeaderText = "Per Unit Price";
+            this.pPerUnPrice.MinimumWidth = 6;
+            this.pPerUnPrice.Name = "pPerUnPrice";
+            this.pPerUnPrice.ReadOnly = true;
+            this.pPerUnPrice.Width = 125;
+            // 
+            // pQuaPerUn
+            // 
+            this.pQuaPerUn.DataPropertyName = "ProductQuantityPerUnit";
+            this.pQuaPerUn.HeaderText = "Quantity Per Unit";
+            this.pQuaPerUn.MinimumWidth = 6;
+            this.pQuaPerUn.Name = "pQuaPerUn";
+            this.pQuaPerUn.ReadOnly = true;
+            this.pQuaPerUn.Width = 125;
+            // 
+            // pDisRate
+            // 
+            this.pDisRate.DataPropertyName = "ProductDiscountRate";
+            this.pDisRate.HeaderText = "Discount Rate";
+            this.pDisRate.MinimumWidth = 6;
+            this.pDisRate.Name = "pDisRate";
+            this.pDisRate.ReadOnly = true;
+            this.pDisRate.Width = 125;
+            // 
+            // pUnStock
+            // 
+            this.pUnStock.DataPropertyName = "ProductUnitStock";
+            this.pUnStock.HeaderText = "Unit Stock";
+            this.pUnStock.MinimumWidth = 6;
+            this.pUnStock.Name = "pUnStock";
+            this.pUnStock.ReadOnly = true;
+            this.pUnStock.Width = 125;
+            // 
+            // pSize
+            // 
+            this.pSize.DataPropertyName = "ProductSize";
+            this.pSize.HeaderText = "Size";
+            this.pSize.MinimumWidth = 6;
+            this.pSize.Name = "pSize";
+            this.pSize.ReadOnly = true;
+            this.pSize.Width = 125;
+            // 
+            // pColor
+            // 
+            this.pColor.DataPropertyName = "ProductColor";
+            this.pColor.HeaderText = "Color";
+            this.pColor.MinimumWidth = 6;
+            this.pColor.Name = "pColor";
+            this.pColor.ReadOnly = true;
+            this.pColor.Width = 125;
+            // 
+            // pWeight
+            // 
+            this.pWeight.DataPropertyName = "ProductWeight";
+            this.pWeight.HeaderText = "Weight";
+            this.pWeight.MinimumWidth = 6;
+            this.pWeight.Name = "pWeight";
+            this.pWeight.ReadOnly = true;
+            this.pWeight.Width = 125;
+            // 
+            // pDisc
+            // 
+            this.pDisc.DataPropertyName = "ProductDescription";
+            this.pDisc.HeaderText = "Description";
+            this.pDisc.MinimumWidth = 6;
+            this.pDisc.Name = "pDisc";
+            this.pDisc.ReadOnly = true;
+            this.pDisc.Width = 125;
+            // 
             // guna2Panel22
             // 
             this.guna2Panel22.BackColor = System.Drawing.Color.Transparent;
@@ -1470,132 +1596,6 @@ namespace FinalPoject
             // guna2ElipseAddProducts
             // 
             this.guna2ElipseAddProducts.BorderRadius = 12;
-            // 
-            // pID
-            // 
-            this.pID.DataPropertyName = "ProductId";
-            this.pID.HeaderText = "ID";
-            this.pID.MinimumWidth = 6;
-            this.pID.Name = "pID";
-            this.pID.ReadOnly = true;
-            this.pID.Width = 125;
-            // 
-            // pTag
-            // 
-            this.pTag.DataPropertyName = "ProductIdTag";
-            this.pTag.HeaderText = "Tag";
-            this.pTag.MinimumWidth = 6;
-            this.pTag.Name = "pTag";
-            this.pTag.ReadOnly = true;
-            this.pTag.Width = 125;
-            // 
-            // pName
-            // 
-            this.pName.DataPropertyName = "ProductName";
-            this.pName.HeaderText = "Name";
-            this.pName.MinimumWidth = 6;
-            this.pName.Name = "pName";
-            this.pName.ReadOnly = true;
-            this.pName.Width = 125;
-            // 
-            // pBrandName
-            // 
-            this.pBrandName.DataPropertyName = "BrandName";
-            this.pBrandName.HeaderText = "Brand Name";
-            this.pBrandName.MinimumWidth = 6;
-            this.pBrandName.Name = "pBrandName";
-            this.pBrandName.ReadOnly = true;
-            this.pBrandName.Width = 125;
-            // 
-            // pStatus
-            // 
-            this.pStatus.DataPropertyName = "ProductStatus";
-            this.pStatus.HeaderText = "Status";
-            this.pStatus.MinimumWidth = 6;
-            this.pStatus.Name = "pStatus";
-            this.pStatus.ReadOnly = true;
-            this.pStatus.Width = 125;
-            // 
-            // pMSRP
-            // 
-            this.pMSRP.DataPropertyName = "ProductMSRP";
-            this.pMSRP.HeaderText = "MSRP";
-            this.pMSRP.MinimumWidth = 6;
-            this.pMSRP.Name = "pMSRP";
-            this.pMSRP.ReadOnly = true;
-            this.pMSRP.Width = 125;
-            // 
-            // pPerUnPrice
-            // 
-            this.pPerUnPrice.DataPropertyName = "ProductPerUnitPrice";
-            this.pPerUnPrice.HeaderText = "Per Unit Price";
-            this.pPerUnPrice.MinimumWidth = 6;
-            this.pPerUnPrice.Name = "pPerUnPrice";
-            this.pPerUnPrice.ReadOnly = true;
-            this.pPerUnPrice.Width = 125;
-            // 
-            // pQuaPerUn
-            // 
-            this.pQuaPerUn.DataPropertyName = "ProductQuantityPerUnit";
-            this.pQuaPerUn.HeaderText = "Quantity Per Unit";
-            this.pQuaPerUn.MinimumWidth = 6;
-            this.pQuaPerUn.Name = "pQuaPerUn";
-            this.pQuaPerUn.ReadOnly = true;
-            this.pQuaPerUn.Width = 125;
-            // 
-            // pDisRate
-            // 
-            this.pDisRate.DataPropertyName = "ProductDiscountRate";
-            this.pDisRate.HeaderText = "Discount Rate";
-            this.pDisRate.MinimumWidth = 6;
-            this.pDisRate.Name = "pDisRate";
-            this.pDisRate.ReadOnly = true;
-            this.pDisRate.Width = 125;
-            // 
-            // pUnStock
-            // 
-            this.pUnStock.DataPropertyName = "ProductUnitStock";
-            this.pUnStock.HeaderText = "Unit Stock";
-            this.pUnStock.MinimumWidth = 6;
-            this.pUnStock.Name = "pUnStock";
-            this.pUnStock.ReadOnly = true;
-            this.pUnStock.Width = 125;
-            // 
-            // pSize
-            // 
-            this.pSize.DataPropertyName = "ProductSize";
-            this.pSize.HeaderText = "Size";
-            this.pSize.MinimumWidth = 6;
-            this.pSize.Name = "pSize";
-            this.pSize.ReadOnly = true;
-            this.pSize.Width = 125;
-            // 
-            // pColor
-            // 
-            this.pColor.DataPropertyName = "ProductColor";
-            this.pColor.HeaderText = "Color";
-            this.pColor.MinimumWidth = 6;
-            this.pColor.Name = "pColor";
-            this.pColor.ReadOnly = true;
-            this.pColor.Width = 125;
-            // 
-            // pWeight
-            // 
-            this.pWeight.DataPropertyName = "ProductWeight";
-            this.pWeight.HeaderText = "Weight";
-            this.pWeight.MinimumWidth = 6;
-            this.pWeight.Name = "pWeight";
-            this.pWeight.ReadOnly = true;
-            this.pWeight.Width = 125;
-            // 
-            // pDisc
-            // 
-            this.pDisc.DataPropertyName = "ProductDescription";
-            this.pDisc.HeaderText = "Description";
-            this.pDisc.MinimumWidth = 6;
-            this.pDisc.Name = "pDisc";
-            this.pDisc.ReadOnly = true;
-            this.pDisc.Width = 125;
             // 
             // FormAddProduct
             // 
