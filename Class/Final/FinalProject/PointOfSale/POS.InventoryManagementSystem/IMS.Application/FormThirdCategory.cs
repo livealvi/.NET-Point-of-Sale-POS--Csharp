@@ -168,5 +168,11 @@ namespace FinalPoject
         {
             this.Close();
         }
+
+        private void btnAddSecondCate_Click(object sender, EventArgs e)
+        {
+            FormSecondCategory secondCategory = new FormSecondCategory();
+            secondCategory.ShowDialog();
+        }
     }
 }

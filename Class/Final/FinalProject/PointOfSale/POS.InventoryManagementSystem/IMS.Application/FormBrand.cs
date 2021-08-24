@@ -179,5 +179,11 @@ namespace FinalPoject
         {
             this.Close();
         }
+
+        private void btnAddVendors_Click(object sender, EventArgs e)
+        {
+            FormVendor vendor = new FormVendor();
+            vendor.ShowDialog();
+        }
     }
 }

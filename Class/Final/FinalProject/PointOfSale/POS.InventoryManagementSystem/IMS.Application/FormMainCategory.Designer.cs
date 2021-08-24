@@ -49,8 +49,6 @@ namespace FinalPoject
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtMainCateId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMainCateName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.btnRemoveProductPhoto = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddProductPhoto = new Guna.UI2.WinForms.Guna2Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -69,9 +67,6 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvMainCate = new System.Windows.Forms.DataGridView();
-            this.MainCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainCategoryImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -91,6 +86,9 @@ namespace FinalPoject
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.MainCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MainCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MainCategoryImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -285,8 +283,6 @@ namespace FinalPoject
             // 
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.btnRemoveProductPhoto);
             this.panel1.Controls.Add(this.btnAddProductPhoto);
             this.panel1.Controls.Add(this.label8);
@@ -308,7 +304,7 @@ namespace FinalPoject
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.txtMainCateId, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtMainCateName, 0, 3);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(144, 236);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(169, 236);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -371,30 +367,6 @@ namespace FinalPoject
             this.txtMainCateName.Size = new System.Drawing.Size(194, 30);
             this.txtMainCateName.TabIndex = 56;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(348, 258);
-            this.label20.Margin = new System.Windows.Forms.Padding(0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(27, 15);
-            this.label20.TabIndex = 160;
-            this.label20.Text = "BDT";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(348, 307);
-            this.label19.Margin = new System.Windows.Forms.Padding(0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(27, 15);
-            this.label19.TabIndex = 159;
-            this.label19.Text = "BDT";
-            // 
             // btnRemoveProductPhoto
             // 
             this.btnRemoveProductPhoto.Animated = true;
@@ -450,7 +422,7 @@ namespace FinalPoject
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(42, 258);
+            this.label8.Location = new System.Drawing.Point(67, 258);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 15);
@@ -462,7 +434,7 @@ namespace FinalPoject
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(21, 308);
+            this.label7.Location = new System.Drawing.Point(46, 308);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 15);
@@ -650,9 +622,9 @@ namespace FinalPoject
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(26, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 21);
+            this.label5.Size = new System.Drawing.Size(165, 21);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Relationship Chain";
+            this.label5.Text = "Add Main CateGories";
             // 
             // guna2Panel11
             // 
@@ -698,33 +670,6 @@ namespace FinalPoject
             this.dgvMainCate.Size = new System.Drawing.Size(757, 401);
             this.dgvMainCate.TabIndex = 160;
             this.dgvMainCate.DoubleClick += new System.EventHandler(this.dgvMainCate_DoubleClick);
-            // 
-            // MainCategoryId
-            // 
-            this.MainCategoryId.DataPropertyName = "MainCategoryId";
-            this.MainCategoryId.HeaderText = "Main Category ID";
-            this.MainCategoryId.MinimumWidth = 6;
-            this.MainCategoryId.Name = "MainCategoryId";
-            this.MainCategoryId.ReadOnly = true;
-            this.MainCategoryId.Width = 125;
-            // 
-            // MainCategoryName
-            // 
-            this.MainCategoryName.DataPropertyName = "MainCategoryName";
-            this.MainCategoryName.HeaderText = "Main Category Name";
-            this.MainCategoryName.MinimumWidth = 6;
-            this.MainCategoryName.Name = "MainCategoryName";
-            this.MainCategoryName.ReadOnly = true;
-            this.MainCategoryName.Width = 125;
-            // 
-            // MainCategoryImage
-            // 
-            this.MainCategoryImage.DataPropertyName = "MainCategoryImage";
-            this.MainCategoryImage.HeaderText = "Main Category Picture";
-            this.MainCategoryImage.MinimumWidth = 6;
-            this.MainCategoryImage.Name = "MainCategoryImage";
-            this.MainCategoryImage.ReadOnly = true;
-            this.MainCategoryImage.Width = 125;
             // 
             // guna2Panel28
             // 
@@ -995,6 +940,33 @@ namespace FinalPoject
             this.label6.TabIndex = 0;
             this.label6.Text = "View All Categories";
             // 
+            // MainCategoryId
+            // 
+            this.MainCategoryId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MainCategoryId.DataPropertyName = "MainCategoryId";
+            this.MainCategoryId.HeaderText = "Main Category ID";
+            this.MainCategoryId.MinimumWidth = 6;
+            this.MainCategoryId.Name = "MainCategoryId";
+            this.MainCategoryId.ReadOnly = true;
+            // 
+            // MainCategoryName
+            // 
+            this.MainCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MainCategoryName.DataPropertyName = "MainCategoryName";
+            this.MainCategoryName.HeaderText = "Main Category Name";
+            this.MainCategoryName.MinimumWidth = 6;
+            this.MainCategoryName.Name = "MainCategoryName";
+            this.MainCategoryName.ReadOnly = true;
+            // 
+            // MainCategoryImage
+            // 
+            this.MainCategoryImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MainCategoryImage.DataPropertyName = "MainCategoryImage";
+            this.MainCategoryImage.HeaderText = "Main Category Picture";
+            this.MainCategoryImage.MinimumWidth = 6;
+            this.MainCategoryImage.Name = "MainCategoryImage";
+            this.MainCategoryImage.ReadOnly = true;
+            // 
             // FormMainCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1086,8 +1058,6 @@ namespace FinalPoject
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2TextBox txtMainCateId;
         private Guna.UI2.WinForms.Guna2TextBox txtMainCateName;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
         private Guna.UI2.WinForms.Guna2Button btnRemoveProductPhoto;
         private Guna.UI2.WinForms.Guna2Button btnAddProductPhoto;
         private System.Windows.Forms.Label label8;

@@ -33,7 +33,6 @@ namespace FinalPoject
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -44,7 +43,6 @@ namespace FinalPoject
             this.txtBrandId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBrandDisc = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBrandName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.btnRemoveProductPhoto = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddProductPhoto = new Guna.UI2.WinForms.Guna2Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -63,13 +61,6 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvBrand = new System.Windows.Forms.DataGridView();
-            this.BrandId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -101,6 +92,14 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideTop = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAddVendors = new Guna.UI2.WinForms.Guna2Button();
+            this.BrandId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -161,13 +160,12 @@ namespace FinalPoject
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btnAddVendors);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.btnRemoveProductPhoto);
             this.panel1.Controls.Add(this.btnAddProductPhoto);
             this.panel1.Controls.Add(this.label8);
@@ -188,31 +186,19 @@ namespace FinalPoject
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(35, 458);
+            this.label10.Location = new System.Drawing.Point(80, 458);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(39, 15);
             this.label10.TabIndex = 169;
             this.label10.Text = "Status";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(314, 309);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 15);
-            this.label4.TabIndex = 168;
-            this.label4.Text = "Auto Generate";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(18, 408);
+            this.label2.Location = new System.Drawing.Point(40, 408);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 15);
@@ -224,7 +210,7 @@ namespace FinalPoject
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(29, 509);
+            this.label1.Location = new System.Drawing.Point(51, 509);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 15);
@@ -236,7 +222,7 @@ namespace FinalPoject
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(35, 309);
+            this.label26.Location = new System.Drawing.Point(57, 309);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(62, 15);
@@ -253,7 +239,7 @@ namespace FinalPoject
             this.tableLayoutPanel2.Controls.Add(this.txtBrandId, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtBrandDisc, 0, 11);
             this.tableLayoutPanel2.Controls.Add(this.txtBrandName, 0, 5);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(106, 236);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(132, 236);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 13;
@@ -421,18 +407,6 @@ namespace FinalPoject
             this.txtBrandName.Size = new System.Drawing.Size(194, 30);
             this.txtBrandName.TabIndex = 56;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(314, 258);
-            this.label20.Margin = new System.Windows.Forms.Padding(0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 15);
-            this.label20.TabIndex = 160;
-            this.label20.Text = "Auto Generate";
-            // 
             // btnRemoveProductPhoto
             // 
             this.btnRemoveProductPhoto.Animated = true;
@@ -488,7 +462,7 @@ namespace FinalPoject
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(45, 258);
+            this.label8.Location = new System.Drawing.Point(67, 258);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 15);
@@ -500,7 +474,7 @@ namespace FinalPoject
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(24, 357);
+            this.label7.Location = new System.Drawing.Point(46, 357);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 15);
@@ -688,9 +662,9 @@ namespace FinalPoject
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(26, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 21);
+            this.label5.Size = new System.Drawing.Size(92, 21);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Relationship Chain";
+            this.label5.Text = "Add Barnd:";
             // 
             // guna2Panel11
             // 
@@ -725,10 +699,10 @@ namespace FinalPoject
             this.BrandId,
             this.BrandTag,
             this.BrandName,
-            this.BrandDisc,
+            this.VendorName,
             this.BrandStatus,
-            this.VendorId,
-            this.VendorName});
+            this.BrandDisc,
+            this.VendorId});
             this.dgvBrand.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBrand.Location = new System.Drawing.Point(8, 154);
             this.dgvBrand.Margin = new System.Windows.Forms.Padding(2);
@@ -740,67 +714,6 @@ namespace FinalPoject
             this.dgvBrand.Size = new System.Drawing.Size(757, 401);
             this.dgvBrand.TabIndex = 162;
             this.dgvBrand.DoubleClick += new System.EventHandler(this.dgvBrand_DoubleClick);
-            // 
-            // BrandId
-            // 
-            this.BrandId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandId.DataPropertyName = "BrandId";
-            this.BrandId.HeaderText = "Brand ID";
-            this.BrandId.MinimumWidth = 6;
-            this.BrandId.Name = "BrandId";
-            this.BrandId.ReadOnly = true;
-            // 
-            // BrandTag
-            // 
-            this.BrandTag.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandTag.DataPropertyName = "BrandTag";
-            this.BrandTag.HeaderText = "Brand TAG";
-            this.BrandTag.MinimumWidth = 6;
-            this.BrandTag.Name = "BrandTag";
-            this.BrandTag.ReadOnly = true;
-            // 
-            // BrandName
-            // 
-            this.BrandName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandName.DataPropertyName = "BrandName";
-            this.BrandName.HeaderText = "Brand Name";
-            this.BrandName.MinimumWidth = 6;
-            this.BrandName.Name = "BrandName";
-            this.BrandName.ReadOnly = true;
-            // 
-            // BrandDisc
-            // 
-            this.BrandDisc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandDisc.DataPropertyName = "BrandDescription";
-            this.BrandDisc.HeaderText = "Brand Disc.";
-            this.BrandDisc.MinimumWidth = 6;
-            this.BrandDisc.Name = "BrandDisc";
-            this.BrandDisc.ReadOnly = true;
-            // 
-            // BrandStatus
-            // 
-            this.BrandStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BrandStatus.DataPropertyName = "BrandStatus";
-            this.BrandStatus.HeaderText = "Brand Status";
-            this.BrandStatus.Name = "BrandStatus";
-            this.BrandStatus.ReadOnly = true;
-            // 
-            // VendorId
-            // 
-            this.VendorId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.VendorId.DataPropertyName = "VendorId";
-            this.VendorId.HeaderText = "Brand Picture";
-            this.VendorId.MinimumWidth = 6;
-            this.VendorId.Name = "VendorId";
-            this.VendorId.ReadOnly = true;
-            // 
-            // VendorName
-            // 
-            this.VendorName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.VendorName.DataPropertyName = "VendorName";
-            this.VendorName.HeaderText = "Vendor Name";
-            this.VendorName.Name = "VendorName";
-            this.VendorName.ReadOnly = true;
             // 
             // guna2Panel28
             // 
@@ -1200,6 +1113,91 @@ namespace FinalPoject
             this.pnlInsideTop.Size = new System.Drawing.Size(1244, 16);
             this.pnlInsideTop.TabIndex = 36;
             // 
+            // btnAddVendors
+            // 
+            this.btnAddVendors.Animated = true;
+            this.btnAddVendors.CheckedState.Parent = this.btnAddVendors;
+            this.btnAddVendors.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddVendors.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
+            this.btnAddVendors.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
+            this.btnAddVendors.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddVendors.CustomImages.Parent = this.btnAddVendors;
+            this.btnAddVendors.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddVendors.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendors.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddVendors.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVendors.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddVendors.HoverState.Parent = this.btnAddVendors;
+            this.btnAddVendors.Location = new System.Drawing.Point(339, 399);
+            this.btnAddVendors.Name = "btnAddVendors";
+            this.btnAddVendors.ShadowDecoration.Parent = this.btnAddVendors;
+            this.btnAddVendors.Size = new System.Drawing.Size(35, 30);
+            this.btnAddVendors.TabIndex = 206;
+            this.btnAddVendors.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddVendors.Click += new System.EventHandler(this.btnAddVendors_Click);
+            // 
+            // BrandId
+            // 
+            this.BrandId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandId.DataPropertyName = "BrandId";
+            this.BrandId.HeaderText = "Brand ID";
+            this.BrandId.MinimumWidth = 6;
+            this.BrandId.Name = "BrandId";
+            this.BrandId.ReadOnly = true;
+            // 
+            // BrandTag
+            // 
+            this.BrandTag.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandTag.DataPropertyName = "BrandTag";
+            this.BrandTag.HeaderText = "Brand TAG";
+            this.BrandTag.MinimumWidth = 6;
+            this.BrandTag.Name = "BrandTag";
+            this.BrandTag.ReadOnly = true;
+            // 
+            // BrandName
+            // 
+            this.BrandName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandName.DataPropertyName = "BrandName";
+            this.BrandName.HeaderText = "Brand Name";
+            this.BrandName.MinimumWidth = 6;
+            this.BrandName.Name = "BrandName";
+            this.BrandName.ReadOnly = true;
+            // 
+            // VendorName
+            // 
+            this.VendorName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.VendorName.DataPropertyName = "VendorName";
+            this.VendorName.HeaderText = "Vendor Name";
+            this.VendorName.Name = "VendorName";
+            this.VendorName.ReadOnly = true;
+            // 
+            // BrandStatus
+            // 
+            this.BrandStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandStatus.DataPropertyName = "BrandStatus";
+            this.BrandStatus.HeaderText = "Brand Status";
+            this.BrandStatus.Name = "BrandStatus";
+            this.BrandStatus.ReadOnly = true;
+            // 
+            // BrandDisc
+            // 
+            this.BrandDisc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BrandDisc.DataPropertyName = "BrandDescription";
+            this.BrandDisc.HeaderText = "Brand Disc.";
+            this.BrandDisc.MinimumWidth = 6;
+            this.BrandDisc.Name = "BrandDisc";
+            this.BrandDisc.ReadOnly = true;
+            // 
+            // VendorId
+            // 
+            this.VendorId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.VendorId.DataPropertyName = "VendorId";
+            this.VendorId.HeaderText = "Brand Picture";
+            this.VendorId.MinimumWidth = 6;
+            this.VendorId.Name = "VendorId";
+            this.VendorId.ReadOnly = true;
+            // 
             // FormBrand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1249,23 +1247,6 @@ namespace FinalPoject
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel12;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbVendor;
-        private Guna.UI2.WinForms.Guna2TextBox txtBrandTag;
-        private Guna.UI2.WinForms.Guna2TextBox txtBrandId;
-        private Guna.UI2.WinForms.Guna2TextBox txtBrandDisc;
-        private Guna.UI2.WinForms.Guna2TextBox txtBrandName;
-        private Guna.UI2.WinForms.Guna2Button btnRemoveProductPhoto;
-        private Guna.UI2.WinForms.Guna2Button btnAddProductPhoto;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2PictureBox pbmage;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel20;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel62;
@@ -1305,19 +1286,35 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft;
         private Guna.UI2.WinForms.Guna2Panel pnlBottom;
         private Guna.UI2.WinForms.Guna2Panel pnlInsideTop;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgvBrand;
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchBrand;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandStatus;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbVendor;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandTag;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandId;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandDisc;
+        private Guna.UI2.WinForms.Guna2TextBox txtBrandName;
+        private Guna.UI2.WinForms.Guna2Button btnRemoveProductPhoto;
+        private Guna.UI2.WinForms.Guna2Button btnAddProductPhoto;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2PictureBox pbmage;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
+        private Guna.UI2.WinForms.Guna2Button btnAddVendors;
         private System.Windows.Forms.DataGridViewTextBoxColumn BrandId;
         private System.Windows.Forms.DataGridViewTextBoxColumn BrandTag;
         private System.Windows.Forms.DataGridViewTextBoxColumn BrandName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BrandDisc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BrandStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VendorId;
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorName;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox txtBrandStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BrandStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BrandDisc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VendorId;
     }
 }

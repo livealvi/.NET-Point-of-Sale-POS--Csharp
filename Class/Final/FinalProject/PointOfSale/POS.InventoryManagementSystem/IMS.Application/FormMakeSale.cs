@@ -214,5 +214,11 @@ namespace FinalPoject
                 MessageBox.Show("Please Fill Correct Data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnCancle_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
     }
 }

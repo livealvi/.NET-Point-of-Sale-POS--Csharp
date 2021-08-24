@@ -177,5 +177,15 @@ namespace FinalPoject
             this.Close();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAddMainCate_Click(object sender, EventArgs e)
+        {
+            FormMainCategory mainCategory = new FormMainCategory();
+            mainCategory.ShowDialog();
+        }
     }
 }

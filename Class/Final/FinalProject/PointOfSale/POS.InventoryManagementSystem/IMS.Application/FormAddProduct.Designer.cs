@@ -39,6 +39,7 @@ namespace FinalPoject
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddBarnd = new Guna.UI2.WinForms.Guna2Button();
             this.label26 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtTag = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,11 +56,6 @@ namespace FinalPoject
             this.txtColor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -89,20 +85,6 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvAllProduct = new System.Windows.Forms.DataGridView();
-            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pPerUnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pUnStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
@@ -127,6 +109,20 @@ namespace FinalPoject
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ElipseAddProducts = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pBrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pPerUnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pQuaPerUn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDisRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pUnStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
@@ -252,13 +248,9 @@ namespace FinalPoject
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btnAddBarnd);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label11);
@@ -284,6 +276,30 @@ namespace FinalPoject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(414, 480);
             this.panel1.TabIndex = 152;
+            // 
+            // btnAddBarnd
+            // 
+            this.btnAddBarnd.Animated = true;
+            this.btnAddBarnd.CheckedState.Parent = this.btnAddBarnd;
+            this.btnAddBarnd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddBarnd.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
+            this.btnAddBarnd.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
+            this.btnAddBarnd.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddBarnd.CustomImages.Parent = this.btnAddBarnd;
+            this.btnAddBarnd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddBarnd.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBarnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddBarnd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddBarnd.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBarnd.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddBarnd.HoverState.Parent = this.btnAddBarnd;
+            this.btnAddBarnd.Location = new System.Drawing.Point(337, 404);
+            this.btnAddBarnd.Name = "btnAddBarnd";
+            this.btnAddBarnd.ShadowDecoration.Parent = this.btnAddBarnd;
+            this.btnAddBarnd.Size = new System.Drawing.Size(35, 30);
+            this.btnAddBarnd.TabIndex = 203;
+            this.btnAddBarnd.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnAddBarnd.Click += new System.EventHandler(this.btnAddBarnd_Click);
             // 
             // label26
             // 
@@ -692,66 +708,6 @@ namespace FinalPoject
             this.txtStatus.ShadowDecoration.Parent = this.txtStatus;
             this.txtStatus.Size = new System.Drawing.Size(194, 30);
             this.txtStatus.TabIndex = 168;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(341, 795);
-            this.label23.Margin = new System.Windows.Forms.Padding(0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(17, 15);
-            this.label23.TabIndex = 163;
-            this.label23.Text = "%";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(341, 649);
-            this.label22.Margin = new System.Windows.Forms.Padding(0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(27, 15);
-            this.label22.TabIndex = 162;
-            this.label22.Text = "BDT";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(341, 600);
-            this.label21.Margin = new System.Windows.Forms.Padding(0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(27, 15);
-            this.label21.TabIndex = 161;
-            this.label21.Text = "BDT";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(341, 503);
-            this.label20.Margin = new System.Windows.Forms.Padding(0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(27, 15);
-            this.label20.TabIndex = 160;
-            this.label20.Text = "BDT";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(341, 552);
-            this.label19.Margin = new System.Windows.Forms.Padding(0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(27, 15);
-            this.label19.TabIndex = 159;
-            this.label19.Text = "BDT";
             // 
             // label17
             // 
@@ -1183,10 +1139,10 @@ namespace FinalPoject
             this.pPerUnPrice,
             this.pQuaPerUn,
             this.pDisRate,
+            this.pUnStock,
             this.pSize,
             this.pColor,
             this.pWeight,
-            this.pUnStock,
             this.pDisc});
             this.dgvAllProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAllProduct.Location = new System.Drawing.Point(8, 128);
@@ -1199,132 +1155,6 @@ namespace FinalPoject
             this.dgvAllProduct.Size = new System.Drawing.Size(757, 427);
             this.dgvAllProduct.TabIndex = 151;
             this.dgvAllProduct.DoubleClick += new System.EventHandler(this.dgvAllProduct_DoubleClick);
-            // 
-            // pID
-            // 
-            this.pID.DataPropertyName = "ProductId";
-            this.pID.HeaderText = "ID";
-            this.pID.MinimumWidth = 6;
-            this.pID.Name = "pID";
-            this.pID.ReadOnly = true;
-            this.pID.Width = 125;
-            // 
-            // pTag
-            // 
-            this.pTag.DataPropertyName = "ProductIdTag";
-            this.pTag.HeaderText = "Tag";
-            this.pTag.MinimumWidth = 6;
-            this.pTag.Name = "pTag";
-            this.pTag.ReadOnly = true;
-            this.pTag.Width = 125;
-            // 
-            // pName
-            // 
-            this.pName.DataPropertyName = "ProductName";
-            this.pName.HeaderText = "Name";
-            this.pName.MinimumWidth = 6;
-            this.pName.Name = "pName";
-            this.pName.ReadOnly = true;
-            this.pName.Width = 125;
-            // 
-            // pBrandName
-            // 
-            this.pBrandName.DataPropertyName = "BrandName";
-            this.pBrandName.HeaderText = "Brand Name";
-            this.pBrandName.MinimumWidth = 6;
-            this.pBrandName.Name = "pBrandName";
-            this.pBrandName.ReadOnly = true;
-            this.pBrandName.Width = 125;
-            // 
-            // pStatus
-            // 
-            this.pStatus.DataPropertyName = "ProductStatus";
-            this.pStatus.HeaderText = "Status";
-            this.pStatus.MinimumWidth = 6;
-            this.pStatus.Name = "pStatus";
-            this.pStatus.ReadOnly = true;
-            this.pStatus.Width = 125;
-            // 
-            // pMSRP
-            // 
-            this.pMSRP.DataPropertyName = "ProductMSRP";
-            this.pMSRP.HeaderText = "MSRP";
-            this.pMSRP.MinimumWidth = 6;
-            this.pMSRP.Name = "pMSRP";
-            this.pMSRP.ReadOnly = true;
-            this.pMSRP.Width = 125;
-            // 
-            // pPerUnPrice
-            // 
-            this.pPerUnPrice.DataPropertyName = "ProductPerUnitPrice";
-            this.pPerUnPrice.HeaderText = "Per Unit Price";
-            this.pPerUnPrice.MinimumWidth = 6;
-            this.pPerUnPrice.Name = "pPerUnPrice";
-            this.pPerUnPrice.ReadOnly = true;
-            this.pPerUnPrice.Width = 125;
-            // 
-            // pQuaPerUn
-            // 
-            this.pQuaPerUn.DataPropertyName = "ProductQuantityPerUnit";
-            this.pQuaPerUn.HeaderText = "Quantity Per Unit";
-            this.pQuaPerUn.MinimumWidth = 6;
-            this.pQuaPerUn.Name = "pQuaPerUn";
-            this.pQuaPerUn.ReadOnly = true;
-            this.pQuaPerUn.Width = 125;
-            // 
-            // pDisRate
-            // 
-            this.pDisRate.DataPropertyName = "ProductDiscountRate";
-            this.pDisRate.HeaderText = "Discount Rate";
-            this.pDisRate.MinimumWidth = 6;
-            this.pDisRate.Name = "pDisRate";
-            this.pDisRate.ReadOnly = true;
-            this.pDisRate.Width = 125;
-            // 
-            // pSize
-            // 
-            this.pSize.DataPropertyName = "ProductSize";
-            this.pSize.HeaderText = "Size";
-            this.pSize.MinimumWidth = 6;
-            this.pSize.Name = "pSize";
-            this.pSize.ReadOnly = true;
-            this.pSize.Width = 125;
-            // 
-            // pColor
-            // 
-            this.pColor.DataPropertyName = "ProductColor";
-            this.pColor.HeaderText = "Color";
-            this.pColor.MinimumWidth = 6;
-            this.pColor.Name = "pColor";
-            this.pColor.ReadOnly = true;
-            this.pColor.Width = 125;
-            // 
-            // pWeight
-            // 
-            this.pWeight.DataPropertyName = "ProductWeight";
-            this.pWeight.HeaderText = "Weight";
-            this.pWeight.MinimumWidth = 6;
-            this.pWeight.Name = "pWeight";
-            this.pWeight.ReadOnly = true;
-            this.pWeight.Width = 125;
-            // 
-            // pUnStock
-            // 
-            this.pUnStock.DataPropertyName = "ProductUnitStock";
-            this.pUnStock.HeaderText = "Unit Stock";
-            this.pUnStock.MinimumWidth = 6;
-            this.pUnStock.Name = "pUnStock";
-            this.pUnStock.ReadOnly = true;
-            this.pUnStock.Width = 125;
-            // 
-            // pDisc
-            // 
-            this.pDisc.DataPropertyName = "ProductDescription";
-            this.pDisc.HeaderText = "Description";
-            this.pDisc.MinimumWidth = 6;
-            this.pDisc.Name = "pDisc";
-            this.pDisc.ReadOnly = true;
-            this.pDisc.Width = 125;
             // 
             // guna2Panel22
             // 
@@ -1641,6 +1471,132 @@ namespace FinalPoject
             // 
             this.guna2ElipseAddProducts.BorderRadius = 12;
             // 
+            // pID
+            // 
+            this.pID.DataPropertyName = "ProductId";
+            this.pID.HeaderText = "ID";
+            this.pID.MinimumWidth = 6;
+            this.pID.Name = "pID";
+            this.pID.ReadOnly = true;
+            this.pID.Width = 125;
+            // 
+            // pTag
+            // 
+            this.pTag.DataPropertyName = "ProductIdTag";
+            this.pTag.HeaderText = "Tag";
+            this.pTag.MinimumWidth = 6;
+            this.pTag.Name = "pTag";
+            this.pTag.ReadOnly = true;
+            this.pTag.Width = 125;
+            // 
+            // pName
+            // 
+            this.pName.DataPropertyName = "ProductName";
+            this.pName.HeaderText = "Name";
+            this.pName.MinimumWidth = 6;
+            this.pName.Name = "pName";
+            this.pName.ReadOnly = true;
+            this.pName.Width = 125;
+            // 
+            // pBrandName
+            // 
+            this.pBrandName.DataPropertyName = "BrandName";
+            this.pBrandName.HeaderText = "Brand Name";
+            this.pBrandName.MinimumWidth = 6;
+            this.pBrandName.Name = "pBrandName";
+            this.pBrandName.ReadOnly = true;
+            this.pBrandName.Width = 125;
+            // 
+            // pStatus
+            // 
+            this.pStatus.DataPropertyName = "ProductStatus";
+            this.pStatus.HeaderText = "Status";
+            this.pStatus.MinimumWidth = 6;
+            this.pStatus.Name = "pStatus";
+            this.pStatus.ReadOnly = true;
+            this.pStatus.Width = 125;
+            // 
+            // pMSRP
+            // 
+            this.pMSRP.DataPropertyName = "ProductMSRP";
+            this.pMSRP.HeaderText = "MSRP";
+            this.pMSRP.MinimumWidth = 6;
+            this.pMSRP.Name = "pMSRP";
+            this.pMSRP.ReadOnly = true;
+            this.pMSRP.Width = 125;
+            // 
+            // pPerUnPrice
+            // 
+            this.pPerUnPrice.DataPropertyName = "ProductPerUnitPrice";
+            this.pPerUnPrice.HeaderText = "Per Unit Price";
+            this.pPerUnPrice.MinimumWidth = 6;
+            this.pPerUnPrice.Name = "pPerUnPrice";
+            this.pPerUnPrice.ReadOnly = true;
+            this.pPerUnPrice.Width = 125;
+            // 
+            // pQuaPerUn
+            // 
+            this.pQuaPerUn.DataPropertyName = "ProductQuantityPerUnit";
+            this.pQuaPerUn.HeaderText = "Quantity Per Unit";
+            this.pQuaPerUn.MinimumWidth = 6;
+            this.pQuaPerUn.Name = "pQuaPerUn";
+            this.pQuaPerUn.ReadOnly = true;
+            this.pQuaPerUn.Width = 125;
+            // 
+            // pDisRate
+            // 
+            this.pDisRate.DataPropertyName = "ProductDiscountRate";
+            this.pDisRate.HeaderText = "Discount Rate";
+            this.pDisRate.MinimumWidth = 6;
+            this.pDisRate.Name = "pDisRate";
+            this.pDisRate.ReadOnly = true;
+            this.pDisRate.Width = 125;
+            // 
+            // pUnStock
+            // 
+            this.pUnStock.DataPropertyName = "ProductUnitStock";
+            this.pUnStock.HeaderText = "Unit Stock";
+            this.pUnStock.MinimumWidth = 6;
+            this.pUnStock.Name = "pUnStock";
+            this.pUnStock.ReadOnly = true;
+            this.pUnStock.Width = 125;
+            // 
+            // pSize
+            // 
+            this.pSize.DataPropertyName = "ProductSize";
+            this.pSize.HeaderText = "Size";
+            this.pSize.MinimumWidth = 6;
+            this.pSize.Name = "pSize";
+            this.pSize.ReadOnly = true;
+            this.pSize.Width = 125;
+            // 
+            // pColor
+            // 
+            this.pColor.DataPropertyName = "ProductColor";
+            this.pColor.HeaderText = "Color";
+            this.pColor.MinimumWidth = 6;
+            this.pColor.Name = "pColor";
+            this.pColor.ReadOnly = true;
+            this.pColor.Width = 125;
+            // 
+            // pWeight
+            // 
+            this.pWeight.DataPropertyName = "ProductWeight";
+            this.pWeight.HeaderText = "Weight";
+            this.pWeight.MinimumWidth = 6;
+            this.pWeight.Name = "pWeight";
+            this.pWeight.ReadOnly = true;
+            this.pWeight.Width = 125;
+            // 
+            // pDisc
+            // 
+            this.pDisc.DataPropertyName = "ProductDescription";
+            this.pDisc.HeaderText = "Description";
+            this.pDisc.MinimumWidth = 6;
+            this.pDisc.Name = "pDisc";
+            this.pDisc.ReadOnly = true;
+            this.pDisc.Width = 125;
+            // 
             // FormAddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1722,11 +1678,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel14;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchProduct;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel17;
@@ -1754,20 +1705,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2TextBox txtSize;
         private Guna.UI2.WinForms.Guna2TextBox txtColor;
         private Guna.UI2.WinForms.Guna2TextBox txtName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pTag;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pBrandName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pMSRP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pPerUnPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pQuaPerUn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pDisRate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pWeight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pUnStock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pDisc;
         private Guna.UI2.WinForms.Guna2TextBox txtStatus;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -1781,5 +1718,20 @@ namespace FinalPoject
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2TextBox txtPerUnitPrice;
+        private Guna.UI2.WinForms.Guna2Button btnAddBarnd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pTag;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pBrandName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pMSRP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pPerUnPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pQuaPerUn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pDisRate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pUnStock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pSize;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pColor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pWeight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pDisc;
     }
 }

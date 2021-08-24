@@ -43,18 +43,6 @@ namespace FinalPoject
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.LeftPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvSearchProduct = new System.Windows.Forms.DataGridView();
-            this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductIdTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductUnitStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductPerUnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductDiscountRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
@@ -64,18 +52,6 @@ namespace FinalPoject
             this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
             this.MiddelPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvCart = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
@@ -85,6 +61,8 @@ namespace FinalPoject
             this.guna2Panel29 = new Guna.UI2.WinForms.Guna2Panel();
             this.RightPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtBarcode = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.txtBrand = new Guna.UI2.WinForms.Guna2TextBox();
@@ -149,12 +127,35 @@ namespace FinalPoject
             this.lblTotalItemFound = new System.Windows.Forms.Label();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCancle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPlaceOrderToSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPlaceOrderToSave = new Guna.UI2.WinForms.Guna2Button();
-            this.txtBarcode = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductIdTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductUnitStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductMSRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductPerUnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductDiscountRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VendorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThirdCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SecondCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -372,108 +373,6 @@ namespace FinalPoject
             this.dgvSearchProduct.TabIndex = 169;
             this.dgvSearchProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSearchProdcut_CellClick);
             // 
-            // ProductId
-            // 
-            this.ProductId.DataPropertyName = "ProductId";
-            this.ProductId.HeaderText = "ProductId";
-            this.ProductId.MinimumWidth = 6;
-            this.ProductId.Name = "ProductId";
-            this.ProductId.ReadOnly = true;
-            this.ProductId.Width = 125;
-            // 
-            // ProductIdTag
-            // 
-            this.ProductIdTag.DataPropertyName = "ProductIdTag";
-            this.ProductIdTag.HeaderText = "ProductIdTag";
-            this.ProductIdTag.MinimumWidth = 6;
-            this.ProductIdTag.Name = "ProductIdTag";
-            this.ProductIdTag.ReadOnly = true;
-            this.ProductIdTag.Width = 125;
-            // 
-            // ProductName
-            // 
-            this.ProductName.DataPropertyName = "ProductName";
-            this.ProductName.HeaderText = "ProductName";
-            this.ProductName.MinimumWidth = 6;
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            this.ProductName.Width = 125;
-            // 
-            // BrandName
-            // 
-            this.BrandName.DataPropertyName = "BrandName";
-            this.BrandName.HeaderText = "BrandName";
-            this.BrandName.MinimumWidth = 6;
-            this.BrandName.Name = "BrandName";
-            this.BrandName.ReadOnly = true;
-            this.BrandName.Width = 125;
-            // 
-            // ProductStatus
-            // 
-            this.ProductStatus.DataPropertyName = "ProductStatus";
-            this.ProductStatus.HeaderText = "ProductStatus";
-            this.ProductStatus.MinimumWidth = 6;
-            this.ProductStatus.Name = "ProductStatus";
-            this.ProductStatus.ReadOnly = true;
-            this.ProductStatus.Width = 125;
-            // 
-            // ProductUnitStock
-            // 
-            this.ProductUnitStock.DataPropertyName = "ProductUnitStock";
-            this.ProductUnitStock.HeaderText = "ProductUnitStock";
-            this.ProductUnitStock.MinimumWidth = 6;
-            this.ProductUnitStock.Name = "ProductUnitStock";
-            this.ProductUnitStock.ReadOnly = true;
-            this.ProductUnitStock.Width = 125;
-            // 
-            // ProductMSRP
-            // 
-            this.ProductMSRP.DataPropertyName = "ProductMSRP";
-            this.ProductMSRP.HeaderText = "ProductMSRP";
-            this.ProductMSRP.MinimumWidth = 6;
-            this.ProductMSRP.Name = "ProductMSRP";
-            this.ProductMSRP.ReadOnly = true;
-            this.ProductMSRP.Width = 125;
-            // 
-            // ProductPerUnitPrice
-            // 
-            this.ProductPerUnitPrice.DataPropertyName = "ProductPerUnitPrice";
-            this.ProductPerUnitPrice.HeaderText = "ProductPerUnitPrice";
-            this.ProductPerUnitPrice.MinimumWidth = 6;
-            this.ProductPerUnitPrice.Name = "ProductPerUnitPrice";
-            this.ProductPerUnitPrice.ReadOnly = true;
-            this.ProductPerUnitPrice.Width = 125;
-            // 
-            // ProductDiscountRate
-            // 
-            this.ProductDiscountRate.DataPropertyName = "ProductDiscountRate";
-            this.ProductDiscountRate.HeaderText = "ProductDiscountRate";
-            this.ProductDiscountRate.MinimumWidth = 6;
-            this.ProductDiscountRate.Name = "ProductDiscountRate";
-            this.ProductDiscountRate.ReadOnly = true;
-            this.ProductDiscountRate.Width = 125;
-            // 
-            // VendorName
-            // 
-            this.VendorName.DataPropertyName = "VendorName";
-            this.VendorName.HeaderText = "VendorName";
-            this.VendorName.Name = "VendorName";
-            this.VendorName.ReadOnly = true;
-            // 
-            // ThirdCategoryName
-            // 
-            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
-            this.ThirdCategoryName.HeaderText = "ThirdCategoryName";
-            this.ThirdCategoryName.Name = "ThirdCategoryName";
-            this.ThirdCategoryName.ReadOnly = true;
-            // 
-            // SecondCategoryName
-            // 
-            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
-            this.SecondCategoryName.HeaderText = "SecondCategoryName";
-            this.SecondCategoryName.Name = "SecondCategoryName";
-            this.SecondCategoryName.ReadOnly = true;
-            // 
             // guna2Panel7
             // 
             this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
@@ -596,108 +495,6 @@ namespace FinalPoject
             this.dgvCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCart.Size = new System.Drawing.Size(380, 407);
             this.dgvCart.TabIndex = 170;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProductIdTag";
-            this.dataGridViewTextBoxColumn2.HeaderText = "TAG";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ProductName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "BrandName";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Brand";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductStatus";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Status";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ProductUnitStock";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Item Left";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ProductMSRP";
-            this.dataGridViewTextBoxColumn7.HeaderText = "MSRP";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProductPerUnitPrice";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Stock Price";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "ProductDiscountRate";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Discount Rate";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "VendorName";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Vendor";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "ThirdCategoryName";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Category 1";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "SecondCategoryName";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Category 2";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // guna2Panel16
             // 
@@ -844,6 +641,42 @@ namespace FinalPoject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(829, 407);
             this.panel1.TabIndex = 170;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(732, 78);
+            this.label27.Margin = new System.Windows.Forms.Padding(0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(52, 15);
+            this.label27.TabIndex = 254;
+            this.label27.Text = "BarCode";
+            // 
+            // txtBarcode
+            // 
+            this.txtBarcode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBarcode.DefaultText = "";
+            this.txtBarcode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBarcode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBarcode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBarcode.DisabledState.Parent = this.txtBarcode;
+            this.txtBarcode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBarcode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBarcode.FocusedState.Parent = this.txtBarcode;
+            this.txtBarcode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarcode.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtBarcode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBarcode.HoverState.Parent = this.txtBarcode;
+            this.txtBarcode.Location = new System.Drawing.Point(548, 70);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.PasswordChar = '\0';
+            this.txtBarcode.PlaceholderText = "";
+            this.txtBarcode.SelectedText = "";
+            this.txtBarcode.ShadowDecoration.Parent = this.txtBarcode;
+            this.txtBarcode.Size = new System.Drawing.Size(181, 30);
+            this.txtBarcode.TabIndex = 253;
             // 
             // label23
             // 
@@ -1776,7 +1609,7 @@ namespace FinalPoject
             this.tablePanel3.Controls.Add(this.label24);
             this.tablePanel3.Controls.Add(this.txtSearchForSell);
             this.tablePanel3.Controls.Add(this.lblTotalItemFound);
-            this.tablePanel3.Location = new System.Drawing.Point(37, 13);
+            this.tablePanel3.Location = new System.Drawing.Point(30, 16);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F)});
@@ -1949,7 +1782,7 @@ namespace FinalPoject
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 9;
+            this.tableLayoutPanel4.ColumnCount = 12;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
@@ -1958,7 +1791,11 @@ namespace FinalPoject
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.btnCancle, 9, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnPlaceOrderToSave, 7, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnAddItem, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnRefresh, 3, 1);
@@ -1973,6 +1810,57 @@ namespace FinalPoject
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1680, 57);
             this.tableLayoutPanel4.TabIndex = 137;
+            // 
+            // btnCancle
+            // 
+            this.btnCancle.Animated = true;
+            this.btnCancle.CheckedState.Parent = this.btnCancle;
+            this.btnCancle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancle.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_trash_can_480px;
+            this.btnCancle.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_trash_can_480px_1;
+            this.btnCancle.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCancle.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnCancle.CustomImages.Parent = this.btnCancle;
+            this.btnCancle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(229)))));
+            this.btnCancle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnCancle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnCancle.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.btnCancle.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnCancle.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCancle.HoverState.Parent = this.btnCancle;
+            this.btnCancle.Location = new System.Drawing.Point(1192, 11);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.ShadowDecoration.Parent = this.btnCancle;
+            this.btnCancle.Size = new System.Drawing.Size(219, 35);
+            this.btnCancle.TabIndex = 171;
+            this.btnCancle.Text = "Cancle";
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
+            // 
+            // btnPlaceOrderToSave
+            // 
+            this.btnPlaceOrderToSave.Animated = true;
+            this.btnPlaceOrderToSave.CheckedState.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlaceOrderToSave.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnPlaceOrderToSave.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnPlaceOrderToSave.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPlaceOrderToSave.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnPlaceOrderToSave.CustomImages.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnPlaceOrderToSave.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaceOrderToSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnPlaceOrderToSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnPlaceOrderToSave.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaceOrderToSave.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnPlaceOrderToSave.HoverState.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.Location = new System.Drawing.Point(959, 11);
+            this.btnPlaceOrderToSave.Name = "btnPlaceOrderToSave";
+            this.btnPlaceOrderToSave.ShadowDecoration.Parent = this.btnPlaceOrderToSave;
+            this.btnPlaceOrderToSave.Size = new System.Drawing.Size(219, 35);
+            this.btnPlaceOrderToSave.TabIndex = 172;
+            this.btnPlaceOrderToSave.Text = "Plcae Order";
+            this.btnPlaceOrderToSave.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnPlaceOrderToSave.Click += new System.EventHandler(this.btnPlaceOrderToSave_Click);
             // 
             // btnAddItem
             // 
@@ -1991,7 +1879,7 @@ namespace FinalPoject
             this.btnAddItem.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItem.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddItem.HoverState.Parent = this.btnAddItem;
-            this.btnAddItem.Location = new System.Drawing.Point(381, 11);
+            this.btnAddItem.Location = new System.Drawing.Point(260, 11);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
             this.btnAddItem.Size = new System.Drawing.Size(219, 35);
@@ -2018,7 +1906,7 @@ namespace FinalPoject
             this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.HoverState.Parent = this.btnRefresh;
-            this.btnRefresh.Location = new System.Drawing.Point(614, 11);
+            this.btnRefresh.Location = new System.Drawing.Point(493, 11);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.ShadowDecoration.Parent = this.btnRefresh;
             this.btnRefresh.Size = new System.Drawing.Size(219, 35);
@@ -2045,7 +1933,7 @@ namespace FinalPoject
             this.btnDeleteProduct.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnDeleteProduct.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDeleteProduct.HoverState.Parent = this.btnDeleteProduct;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(847, 11);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(726, 11);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.ShadowDecoration.Parent = this.btnDeleteProduct;
             this.btnDeleteProduct.Size = new System.Drawing.Size(219, 35);
@@ -2053,67 +1941,202 @@ namespace FinalPoject
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
-            // btnPlaceOrderToSave
+            // ProductId
             // 
-            this.btnPlaceOrderToSave.Animated = true;
-            this.btnPlaceOrderToSave.CheckedState.Parent = this.btnPlaceOrderToSave;
-            this.btnPlaceOrderToSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPlaceOrderToSave.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnPlaceOrderToSave.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnPlaceOrderToSave.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPlaceOrderToSave.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnPlaceOrderToSave.CustomImages.Parent = this.btnPlaceOrderToSave;
-            this.btnPlaceOrderToSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnPlaceOrderToSave.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaceOrderToSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnPlaceOrderToSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnPlaceOrderToSave.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaceOrderToSave.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnPlaceOrderToSave.HoverState.Parent = this.btnPlaceOrderToSave;
-            this.btnPlaceOrderToSave.Location = new System.Drawing.Point(1080, 11);
-            this.btnPlaceOrderToSave.Name = "btnPlaceOrderToSave";
-            this.btnPlaceOrderToSave.ShadowDecoration.Parent = this.btnPlaceOrderToSave;
-            this.btnPlaceOrderToSave.Size = new System.Drawing.Size(219, 35);
-            this.btnPlaceOrderToSave.TabIndex = 172;
-            this.btnPlaceOrderToSave.Text = "Plcae Order";
-            this.btnPlaceOrderToSave.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnPlaceOrderToSave.Click += new System.EventHandler(this.btnPlaceOrderToSave_Click);
+            this.ProductId.DataPropertyName = "ProductId";
+            this.ProductId.HeaderText = "ProductId";
+            this.ProductId.MinimumWidth = 6;
+            this.ProductId.Name = "ProductId";
+            this.ProductId.ReadOnly = true;
+            this.ProductId.Width = 60;
             // 
-            // txtBarcode
+            // ProductIdTag
             // 
-            this.txtBarcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBarcode.DefaultText = "";
-            this.txtBarcode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBarcode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBarcode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBarcode.DisabledState.Parent = this.txtBarcode;
-            this.txtBarcode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBarcode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBarcode.FocusedState.Parent = this.txtBarcode;
-            this.txtBarcode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarcode.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtBarcode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBarcode.HoverState.Parent = this.txtBarcode;
-            this.txtBarcode.Location = new System.Drawing.Point(548, 70);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.PasswordChar = '\0';
-            this.txtBarcode.PlaceholderText = "";
-            this.txtBarcode.SelectedText = "";
-            this.txtBarcode.ShadowDecoration.Parent = this.txtBarcode;
-            this.txtBarcode.Size = new System.Drawing.Size(181, 30);
-            this.txtBarcode.TabIndex = 253;
+            this.ProductIdTag.DataPropertyName = "ProductIdTag";
+            this.ProductIdTag.HeaderText = "ProductIdTag";
+            this.ProductIdTag.MinimumWidth = 6;
+            this.ProductIdTag.Name = "ProductIdTag";
+            this.ProductIdTag.ReadOnly = true;
             // 
-            // label27
+            // ProductName
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(732, 78);
-            this.label27.Margin = new System.Windows.Forms.Padding(0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(52, 15);
-            this.label27.TabIndex = 254;
-            this.label27.Text = "BarCode";
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "ProductName";
+            this.ProductName.MinimumWidth = 6;
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            this.ProductName.Width = 120;
+            // 
+            // BrandName
+            // 
+            this.BrandName.DataPropertyName = "BrandName";
+            this.BrandName.HeaderText = "BrandName";
+            this.BrandName.MinimumWidth = 6;
+            this.BrandName.Name = "BrandName";
+            this.BrandName.ReadOnly = true;
+            // 
+            // ProductStatus
+            // 
+            this.ProductStatus.DataPropertyName = "ProductStatus";
+            this.ProductStatus.HeaderText = "ProductStatus";
+            this.ProductStatus.MinimumWidth = 6;
+            this.ProductStatus.Name = "ProductStatus";
+            this.ProductStatus.ReadOnly = true;
+            // 
+            // ProductUnitStock
+            // 
+            this.ProductUnitStock.DataPropertyName = "ProductUnitStock";
+            this.ProductUnitStock.HeaderText = "ProductUnitStock";
+            this.ProductUnitStock.MinimumWidth = 6;
+            this.ProductUnitStock.Name = "ProductUnitStock";
+            this.ProductUnitStock.ReadOnly = true;
+            // 
+            // ProductMSRP
+            // 
+            this.ProductMSRP.DataPropertyName = "ProductMSRP";
+            this.ProductMSRP.HeaderText = "ProductMSRP";
+            this.ProductMSRP.MinimumWidth = 6;
+            this.ProductMSRP.Name = "ProductMSRP";
+            this.ProductMSRP.ReadOnly = true;
+            // 
+            // ProductPerUnitPrice
+            // 
+            this.ProductPerUnitPrice.DataPropertyName = "ProductPerUnitPrice";
+            this.ProductPerUnitPrice.HeaderText = "ProductPerUnitPrice";
+            this.ProductPerUnitPrice.MinimumWidth = 6;
+            this.ProductPerUnitPrice.Name = "ProductPerUnitPrice";
+            this.ProductPerUnitPrice.ReadOnly = true;
+            // 
+            // ProductDiscountRate
+            // 
+            this.ProductDiscountRate.DataPropertyName = "ProductDiscountRate";
+            this.ProductDiscountRate.HeaderText = "ProductDiscountRate";
+            this.ProductDiscountRate.MinimumWidth = 6;
+            this.ProductDiscountRate.Name = "ProductDiscountRate";
+            this.ProductDiscountRate.ReadOnly = true;
+            // 
+            // VendorName
+            // 
+            this.VendorName.DataPropertyName = "VendorName";
+            this.VendorName.HeaderText = "VendorName";
+            this.VendorName.Name = "VendorName";
+            this.VendorName.ReadOnly = true;
+            // 
+            // ThirdCategoryName
+            // 
+            this.ThirdCategoryName.DataPropertyName = "ThirdCategoryName";
+            this.ThirdCategoryName.HeaderText = "ThirdCategoryName";
+            this.ThirdCategoryName.Name = "ThirdCategoryName";
+            this.ThirdCategoryName.ReadOnly = true;
+            // 
+            // SecondCategoryName
+            // 
+            this.SecondCategoryName.DataPropertyName = "SecondCategoryName";
+            this.SecondCategoryName.HeaderText = "SecondCategoryName";
+            this.SecondCategoryName.Name = "SecondCategoryName";
+            this.SecondCategoryName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProductIdTag";
+            this.dataGridViewTextBoxColumn2.HeaderText = "TAG";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ProductName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "BrandName";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Brand";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductStatus";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Status";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ProductUnitStock";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Item Left";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ProductMSRP";
+            this.dataGridViewTextBoxColumn7.HeaderText = "MSRP";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProductPerUnitPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Stock Price";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Visible = false;
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "ProductDiscountRate";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Discount Rate";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "VendorName";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Vendor";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "ThirdCategoryName";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Category 1";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "SecondCategoryName";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Category 2";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // FormMakeSale
             // 
@@ -2262,18 +2285,10 @@ namespace FinalPoject
         private System.Windows.Forms.Label label22;
         private Guna.UI2.WinForms.Guna2TextBox txtBrand;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private Guna.UI2.WinForms.Guna2Button btnPlaceOrderToSave;
+        private System.Windows.Forms.Label label27;
+        private Guna.UI2.WinForms.Guna2TextBox txtBarcode;
+        private Guna.UI2.WinForms.Guna2Button btnCancle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductIdTag;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
@@ -2286,8 +2301,17 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn SecondCategoryName;
-        private Guna.UI2.WinForms.Guna2Button btnPlaceOrderToSave;
-        private System.Windows.Forms.Label label27;
-        private Guna.UI2.WinForms.Guna2TextBox txtBarcode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
     }
 }

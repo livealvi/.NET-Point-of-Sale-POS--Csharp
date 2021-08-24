@@ -231,5 +231,10 @@ namespace FinalPoject
             PopulateGridView();
         }
 
+        private void btnAddBarnd_Click(object sender, EventArgs e)
+        {
+            FormBrand brand = new FormBrand();
+            brand.ShowDialog();
+        }
     }
 }

@@ -171,5 +171,11 @@ namespace FinalPoject
         {
             this.Close();
         }
+
+        private void btnAddThirdCate_Click(object sender, EventArgs e)
+        {
+            FormThirdCategory thirdCategory = new FormThirdCategory();
+            thirdCategory.ShowDialog();
+        }
     }
 }
