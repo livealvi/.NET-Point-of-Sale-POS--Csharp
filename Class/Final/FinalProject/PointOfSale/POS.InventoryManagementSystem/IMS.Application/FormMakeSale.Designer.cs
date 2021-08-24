@@ -89,7 +89,7 @@ namespace FinalPoject
             this.label22 = new System.Windows.Forms.Label();
             this.txtBrand = new Guna.UI2.WinForms.Guna2TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.txt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNewVatAmount = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtVatShow = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPorductItemLeft = new Guna.UI2.WinForms.Guna2TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@ namespace FinalPoject
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtpPayDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtProductPerUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtProductQuant = new Guna.UI2.WinForms.Guna2TextBox();
@@ -153,6 +153,8 @@ namespace FinalPoject
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnPlaceOrderToSave = new Guna.UI2.WinForms.Guna2Button();
+            this.txtBarcode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -792,11 +794,13 @@ namespace FinalPoject
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.txtBarcode);
             this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.txtBrand);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.txt);
+            this.panel1.Controls.Add(this.txtNewVatAmount);
             this.panel1.Controls.Add(this.txtVatShow);
             this.panel1.Controls.Add(this.txtPorductItemLeft);
             this.panel1.Controls.Add(this.label18);
@@ -819,7 +823,7 @@ namespace FinalPoject
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.guna2DateTimePicker1);
+            this.panel1.Controls.Add(this.dtpPayDate);
             this.panel1.Controls.Add(this.txtProductPerUnitPrice);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtProductQuant);
@@ -904,29 +908,29 @@ namespace FinalPoject
             this.label21.TabIndex = 249;
             this.label21.Text = "New Amount with 15% Vat";
             // 
-            // txt
+            // txtNewVatAmount
             // 
-            this.txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt.DefaultText = "";
-            this.txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt.DisabledState.Parent = this.txt;
-            this.txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt.FocusedState.Parent = this.txt;
-            this.txt.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt.HoverState.Parent = this.txt;
-            this.txt.Location = new System.Drawing.Point(505, 582);
-            this.txt.Name = "txt";
-            this.txt.PasswordChar = '\0';
-            this.txt.PlaceholderText = "";
-            this.txt.SelectedText = "";
-            this.txt.ShadowDecoration.Parent = this.txt;
-            this.txt.Size = new System.Drawing.Size(271, 30);
-            this.txt.TabIndex = 248;
+            this.txtNewVatAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNewVatAmount.DefaultText = "";
+            this.txtNewVatAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNewVatAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNewVatAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNewVatAmount.DisabledState.Parent = this.txtNewVatAmount;
+            this.txtNewVatAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNewVatAmount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNewVatAmount.FocusedState.Parent = this.txtNewVatAmount;
+            this.txtNewVatAmount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewVatAmount.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtNewVatAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNewVatAmount.HoverState.Parent = this.txtNewVatAmount;
+            this.txtNewVatAmount.Location = new System.Drawing.Point(505, 582);
+            this.txtNewVatAmount.Name = "txtNewVatAmount";
+            this.txtNewVatAmount.PasswordChar = '\0';
+            this.txtNewVatAmount.PlaceholderText = "";
+            this.txtNewVatAmount.SelectedText = "";
+            this.txtNewVatAmount.ShadowDecoration.Parent = this.txtNewVatAmount;
+            this.txtNewVatAmount.Size = new System.Drawing.Size(271, 30);
+            this.txtNewVatAmount.TabIndex = 248;
             // 
             // txtVatShow
             // 
@@ -1030,6 +1034,9 @@ namespace FinalPoject
             this.cmbPayStatus.FormattingEnabled = true;
             this.cmbPayStatus.HoverState.Parent = this.cmbPayStatus;
             this.cmbPayStatus.ItemHeight = 30;
+            this.cmbPayStatus.Items.AddRange(new object[] {
+            "Paid",
+            "UnPaid"});
             this.cmbPayStatus.ItemsAppearance.Parent = this.cmbPayStatus;
             this.cmbPayStatus.Location = new System.Drawing.Point(505, 438);
             this.cmbPayStatus.Name = "cmbPayStatus";
@@ -1049,6 +1056,9 @@ namespace FinalPoject
             this.cmbPaymentMethod.FormattingEnabled = true;
             this.cmbPaymentMethod.HoverState.Parent = this.cmbPaymentMethod;
             this.cmbPaymentMethod.ItemHeight = 30;
+            this.cmbPaymentMethod.Items.AddRange(new object[] {
+            "Cash",
+            "Card"});
             this.cmbPaymentMethod.ItemsAppearance.Parent = this.cmbPaymentMethod;
             this.cmbPaymentMethod.Location = new System.Drawing.Point(190, 438);
             this.cmbPaymentMethod.Name = "cmbPaymentMethod";
@@ -1119,6 +1129,10 @@ namespace FinalPoject
             this.cmbPayByUser.FormattingEnabled = true;
             this.cmbPayByUser.HoverState.Parent = this.cmbPayByUser;
             this.cmbPayByUser.ItemHeight = 30;
+            this.cmbPayByUser.Items.AddRange(new object[] {
+            "Admin",
+            "Emp",
+            "Cashier"});
             this.cmbPayByUser.ItemsAppearance.Parent = this.cmbPayByUser;
             this.cmbPayByUser.Location = new System.Drawing.Point(356, 250);
             this.cmbPayByUser.Name = "cmbPayByUser";
@@ -1208,7 +1222,6 @@ namespace FinalPoject
             this.txtCoustomerEmail.Name = "txtCoustomerEmail";
             this.txtCoustomerEmail.PasswordChar = '\0';
             this.txtCoustomerEmail.PlaceholderText = "";
-            this.txtCoustomerEmail.ReadOnly = true;
             this.txtCoustomerEmail.SelectedText = "";
             this.txtCoustomerEmail.ShadowDecoration.Parent = this.txtCoustomerEmail;
             this.txtCoustomerEmail.Size = new System.Drawing.Size(224, 30);
@@ -1325,19 +1338,20 @@ namespace FinalPoject
             this.label2.TabIndex = 226;
             this.label2.Text = "MSRP";
             // 
-            // guna2DateTimePicker1
+            // dtpPayDate
             // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(190, 480);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(586, 30);
-            this.guna2DateTimePicker1.TabIndex = 225;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 8, 23, 18, 39, 4, 672);
+            this.dtpPayDate.CheckedState.Parent = this.dtpPayDate;
+            this.dtpPayDate.CustomFormat = "yyyy-MM-dd";
+            this.dtpPayDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpPayDate.HoverState.Parent = this.dtpPayDate;
+            this.dtpPayDate.Location = new System.Drawing.Point(190, 480);
+            this.dtpPayDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpPayDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpPayDate.Name = "dtpPayDate";
+            this.dtpPayDate.ShadowDecoration.Parent = this.dtpPayDate;
+            this.dtpPayDate.Size = new System.Drawing.Size(586, 30);
+            this.dtpPayDate.TabIndex = 225;
+            this.dtpPayDate.Value = new System.DateTime(2021, 8, 23, 18, 39, 4, 672);
             // 
             // txtProductPerUnitPrice
             // 
@@ -1358,7 +1372,6 @@ namespace FinalPoject
             this.txtProductPerUnitPrice.Name = "txtProductPerUnitPrice";
             this.txtProductPerUnitPrice.PasswordChar = '\0';
             this.txtProductPerUnitPrice.PlaceholderText = "";
-            this.txtProductPerUnitPrice.ReadOnly = true;
             this.txtProductPerUnitPrice.SelectedText = "";
             this.txtProductPerUnitPrice.ShadowDecoration.Parent = this.txtProductPerUnitPrice;
             this.txtProductPerUnitPrice.Size = new System.Drawing.Size(170, 30);
@@ -1458,10 +1471,9 @@ namespace FinalPoject
             this.txtProductId.Name = "txtProductId";
             this.txtProductId.PasswordChar = '\0';
             this.txtProductId.PlaceholderText = "";
-            this.txtProductId.ReadOnly = true;
             this.txtProductId.SelectedText = "";
             this.txtProductId.ShadowDecoration.Parent = this.txtProductId;
-            this.txtProductId.Size = new System.Drawing.Size(420, 30);
+            this.txtProductId.Size = new System.Drawing.Size(170, 30);
             this.txtProductId.TabIndex = 219;
             // 
             // label26
@@ -2067,6 +2079,42 @@ namespace FinalPoject
             this.btnPlaceOrderToSave.TextOffset = new System.Drawing.Point(8, 0);
             this.btnPlaceOrderToSave.Click += new System.EventHandler(this.btnPlaceOrderToSave_Click);
             // 
+            // txtBarcode
+            // 
+            this.txtBarcode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBarcode.DefaultText = "";
+            this.txtBarcode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBarcode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBarcode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBarcode.DisabledState.Parent = this.txtBarcode;
+            this.txtBarcode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBarcode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBarcode.FocusedState.Parent = this.txtBarcode;
+            this.txtBarcode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarcode.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtBarcode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBarcode.HoverState.Parent = this.txtBarcode;
+            this.txtBarcode.Location = new System.Drawing.Point(548, 70);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.PasswordChar = '\0';
+            this.txtBarcode.PlaceholderText = "";
+            this.txtBarcode.SelectedText = "";
+            this.txtBarcode.ShadowDecoration.Parent = this.txtBarcode;
+            this.txtBarcode.Size = new System.Drawing.Size(181, 30);
+            this.txtBarcode.TabIndex = 253;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(732, 78);
+            this.label27.Margin = new System.Windows.Forms.Padding(0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(52, 15);
+            this.label27.TabIndex = 254;
+            this.label27.Text = "BarCode";
+            // 
             // FormMakeSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2185,7 +2233,7 @@ namespace FinalPoject
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpPayDate;
         private Guna.UI2.WinForms.Guna2TextBox txtProductPerUnitPrice;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtProductQuant;
@@ -2208,7 +2256,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label21;
-        private Guna.UI2.WinForms.Guna2TextBox txt;
+        private Guna.UI2.WinForms.Guna2TextBox txtNewVatAmount;
         private System.Windows.Forms.DataGridView dgvCart;
         private Guna.UI2.WinForms.Guna2Button btnAddItem;
         private System.Windows.Forms.Label label22;
@@ -2239,5 +2287,7 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn SecondCategoryName;
         private Guna.UI2.WinForms.Guna2Button btnPlaceOrderToSave;
+        private System.Windows.Forms.Label label27;
+        private Guna.UI2.WinForms.Guna2TextBox txtBarcode;
     }
 }

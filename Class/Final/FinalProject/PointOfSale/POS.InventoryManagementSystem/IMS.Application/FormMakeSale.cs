@@ -56,8 +56,6 @@ namespace FinalPoject
             this.dgvSearchProduct.ClearSelection();
             this.Refresh();
             this.RefreshContent();
-            //this.MainCategoryIdToName();
-            //this.ItemFound();
         }
 
         private void FormMakeSale_Load(object sender, EventArgs e)
@@ -80,17 +78,23 @@ namespace FinalPoject
 
         void UpdatePrice()
         {
-            List<Orders> orders= makeSalesRepo.GetAllForOrders();
-            double price = 0.0;
+            //List<Orders> orders= makeSalesRepo.GetAllForOrders();
 
-            foreach (Orders order in orders)
+            double price = 0.0;
+            foreach (DataGridViewRow row in dgvCart.Rows)
             {
-                price += order.TotalAmount;
+                price += double.Parse(row.Cells[6].Value.ToString());
             }
+
+
+            //foreach (Orders order in orders)
+            //{
+            //    //price += order.TotalAmount;
+            //}
 
             txtTotalAmount.Text = price.ToString();
 
-            txtVatShow.Text = (price * 1.15).ToString();
+            txtNewVatAmount.Text = (price * 1.15).ToString();
         }
 
         private void btnAddItem_Click(object sender, EventArgs e)
@@ -154,44 +158,79 @@ namespace FinalPoject
         }
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
+        
         {
-            int rowToRemove = dgvCart.SelectedRows[0].Index;
-
-            if (rowToRemove != -1)
+            if (dgvCart.SelectedRows.Count > 0)
             {
                 this.dgvCart.Rows.RemoveAt(dgvCart.SelectedRows[0].Index);
             }
             else
             {
-                MessageBox.Show("Test");
+                if (dgvCart.Rows.Count == 0)
+                {
+                    MessageBox.Show("No Item to remove ");
+                }
+                else
+                {
+                    MessageBox.Show("Select a Item to remove");
+                }
+                
 
             }
-            
+
         }
 
         private Orders FillEntity()
         {
-            //if (!this.IsValidToSave())
-            //{
-            //    return null;
-            //}
 
             var orders = new Orders();
-
+           
            orders.ProductName = this.txtProductName.Text;
-           orders.ProductId = this.txtProductId.Text;
-           orders.ProductIdTag = this.txtProducTag.Text;
-           
-           orders.ProductPerUnitPrice = this.txtProductPerUnitPrice.Text;
-           orders.ProductDiscountRate = this.txtDiscount.Text;
-           orders.ProductMSRP = this.txtProductMSRP.Text;
-           
+           orders.ProductPerUnitPrice = Convert.ToDouble(this.txtProductPerUnitPrice.Text);
+           orders.CustomerFullName = this.txtCoustomerName.Text;
+           orders.CustomerAddress = this.txtCustomerAddress.Text;
+           orders.CustomerPhone = this.txtCustomerPhone.Text;
+           orders.OrderQuantity = Convert.ToInt32(this.txtProductQuant.Text);
+           orders.Date = Convert.ToDateTime(Convert.ToDateTime(dtpPayDate.Value).ToString("yyyy-MM-dd"));
+           orders.TotalAmount = Convert.ToDouble(this.txtTotalAmount.Text);
+           orders.OrderStatus = this.cmbPayStatus.Text;
+           orders.PaymentMethod = this.cmbPaymentMethod.Text;
+
             return orders;
         }
 
         private void btnPlaceOrderToSave_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Orders orObj = this.FillEntity();
+                if (orObj == null)
+                {
+                    orObj = new Orders();
+                    MessageBox.Show("Please Fill Data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    if (this.makeSalesRepo.SaveOrders())
+                    {
+                        MessageBox.Show("Save Successfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Save Failed");
+                    }
 
+                }
+               
+                Refresh();
+                this.PopulateGridView();
+            }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show("Please Fill Correct Data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -90,7 +90,6 @@ namespace IMS.Repository
 
             var orders = new Orders();
 
-            //Products
             orders.ProductName = row["ProductName"].ToString(); 
             orders.ProductId = Convert.ToInt32(row["ProductId"].ToString());
             orders.ProductIdTag = row["ProductIdTag"].ToString();
@@ -103,10 +102,8 @@ namespace IMS.Repository
 
             orders.VendorName = row["VendorName"].ToString();
 
-            //ThirdCat
             orders.ThirdCategoryName = row["ThirdCategoryName"].ToString();
 
-            //SecondCate
             orders.SecondCategoryName = row["SecondCategoryName"].ToString();
 
 
@@ -114,22 +111,34 @@ namespace IMS.Repository
         }
 
 
-        public void SaveOrders()
+        public bool SaveOrders()
         {
+            bool saveSuccesful=false;
             List<Orders> orders = GetAllForOrders();
-
             foreach (Orders order in orders)
             {
-                string sql = "insert into Orders values(OrderId , OrderTag, UserId, CustomerId, " +
-                             "BarCodeId, Date, ProductId, ProductPerUnitPrice, OrderQuantity, OrderStatus, PaymentMethod, " +
-                             "TotalAmount, CustomerFullName, CustomerPhone, CustomerEmail, CustomeAddress) " +
-                             " values ('" + order.OrderId + "' , '" + order.OrderTag + "' , '" + order.UserId + "'); '" + order.CustomerId + "' ," +
-                             " '" + order.BarCodeId + "' , '" + order.Date + "' , '" + order.ProductId + "' , '" + order.ProductPerUnitPrice + "' , " +
+                string sql = "insert into Orders (UserId, " +
+                             "BarCodeId, Date, ProductId, ProductName, ProductPerUnitPrice, OrderQuantity, OrderStatus, PaymentMethod, " +
+                             "TotalAmount, CustomerFullName, CustomerPhone, CustomerEmail, CustomerAddress) " +
+                             " values (    '" + order.UserId + "', " +
+                             " '" + order.BarCodeId + "' , '" + order.Date + "' , '" + order.ProductId + "' , '" + order.ProductName + "' ,  '" + order.ProductPerUnitPrice + "' , " +
                              " '" + order.OrderQuantity + "' , '" + order.OrderStatus + "' , '" + order.PaymentMethod + "' , '" + order.TotalAmount + "' ," +
-                             " '" + order.CustomerFullName + "' , '" + order.CustomerPhone + "' , '" + order.CustomerEmail + "' , '" + order.CustomerAddress + "' ";
+                             " '" + order.CustomerFullName + "' , '" + order.CustomerPhone + "' , '" + order.CustomerEmail + "' , '" + order.CustomerAddress + "') ";
 
-                iDB.ExecuteDMLQuery(sql);
+                try
+                {
+                    this.iDB.ExecuteDMLQuery(sql);
+                    saveSuccesful = true;
+                }
+                catch(Exception e)
+                {
+                    saveSuccesful = false;
+                    Debug.WriteLine(e.ToString());
+                    break;
+                }
             }
+
+            return saveSuccesful;
 
         }
 
@@ -144,10 +153,12 @@ namespace IMS.Repository
 		                    Orders.OrderId AS OrderId,
 		                    Orders.OrderTag AS OrderTag,
 		                    Users.UserId AS UserId,
-		                    Orders.CustomerId AS CustomerId,
+		             
 		                    BarCodes.BarCodeId AS BarCodeId,
 		                    Orders.Date AS Date,
 		                    Products.ProductId AS ProductId,
+                            Products.ProductName AS ProductName,
+                            Products.ProductPerUnitPrice AS ProductPerUnitPrice,
 		                    Orders.OrderQuantity AS OrderQuantity,
 		                    Orders.OrderStatus AS OrderStatus,
 		                    Orders.PaymentMethod AS PaymentMethod,
@@ -155,11 +166,11 @@ namespace IMS.Repository
 		                    Orders.CustomerFullName AS CustomerFullName,
 		                    Orders.CustomerPhone AS CustomerPhone,
 		                    Orders.CustomerEmail AS CustomerEmail,
-		                    Orders.CustomeAddress AS CustomeAddress
+		                    Orders.CustomerAddress AS CustomerAddress
 		                    From
                             Orders INNER JOIN
 		                    Products ON Orders.ProductId = Products.ProductId INNER JOIN
-                            Customers ON Orders.CustomerId = Customers.CustomerId INNER JOIN
+                         
 						    BarCodes ON Orders.BarCodeId = BarCodes.BarCodeId INNER JOIN
                             Users ON Orders.UserId = Users.UserId";
                 
@@ -195,19 +206,22 @@ namespace IMS.Repository
             orders.CustomerAddress = row["CustomerAddress"].ToString(); 
             orders.CustomerPhone = row["CustomerPhone"].ToString();
             orders.CustomerFullName = row["CustomerFullName"].ToString();
-            orders.PaymentMethod = row["PaymentMethod"].ToString();
-            orders.OrderQuantity = Convert.ToInt32(row["OrderQuantity"].ToString());
-            orders.CustomerId = Convert.ToInt32(row["CustomerId"].ToString());
+            //
             orders.UserId = Convert.ToInt32(row["UserId"].ToString());
-            orders.OrderTag = row["OrderTag"].ToString();
+            //
             orders.ProductId = Convert.ToInt32(row["ProductId"].ToString());
+            orders.ProductName = row["ProductName"].ToString();
             orders.ProductPerUnitPrice = Convert.ToDouble(row["ProductPerUnitPrice"].ToString());
-            orders.ProductDiscountRate = Convert.ToDouble(row["ProductDiscountRate"].ToString());
-            orders.ProductMSRP = Convert.ToDouble(row["ProductMSRP"].ToString());
-            orders.OrderId = Convert.ToInt32(row["Orderid"].ToString()); 
+            //orders.ProductDiscountRate = Convert.ToDouble(row["ProductDiscountRate"].ToString());
+            //orders.ProductMSRP = Convert.ToDouble(row["ProductMSRP"].ToString());
+            //
+            orders.OrderId = Convert.ToInt32(row["Orderid"].ToString());
+            orders.OrderQuantity = Convert.ToInt32(row["OrderQuantity"].ToString());
             orders.Date = Convert.ToDateTime(row["Date"].ToString()); 
             orders.TotalAmount = Convert.ToDouble(row["TotalAmount"].ToString()); 
-            orders.OrderStatus = row["OrderStatus"].ToString(); 
+            orders.OrderStatus = row["OrderStatus"].ToString();
+            orders.PaymentMethod = row["PaymentMethod"].ToString();
+            //
             orders.BarCodeId = Convert.ToInt32(row["BarCodeId"].ToString());
 
             return orders;
