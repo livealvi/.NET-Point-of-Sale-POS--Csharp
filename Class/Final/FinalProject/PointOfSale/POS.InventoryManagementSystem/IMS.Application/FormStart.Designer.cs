@@ -68,7 +68,7 @@ namespace FinalPoject
             this.pnlLeftMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlLeftMenu.Name = "pnlLeftMenu";
             this.pnlLeftMenu.ShadowDecoration.Parent = this.pnlLeftMenu;
-            this.pnlLeftMenu.Size = new System.Drawing.Size(284, 782);
+            this.pnlLeftMenu.Size = new System.Drawing.Size(297, 782);
             this.pnlLeftMenu.TabIndex = 30;
             // 
             // btnMasterProducts
@@ -98,10 +98,10 @@ namespace FinalPoject
             this.btnMasterProducts.HoverState.Parent = this.btnMasterProducts;
             this.btnMasterProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterProducts.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterProducts.Location = new System.Drawing.Point(26, 420);
+            this.btnMasterProducts.Location = new System.Drawing.Point(33, 409);
             this.btnMasterProducts.Name = "btnMasterProducts";
             this.btnMasterProducts.ShadowDecoration.Parent = this.btnMasterProducts;
-            this.btnMasterProducts.Size = new System.Drawing.Size(220, 49);
+            this.btnMasterProducts.Size = new System.Drawing.Size(230, 49);
             this.btnMasterProducts.TabIndex = 18;
             this.btnMasterProducts.Text = "Master Products";
             this.btnMasterProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -113,7 +113,7 @@ namespace FinalPoject
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(264, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(277, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(20, 782);
@@ -156,10 +156,10 @@ namespace FinalPoject
             this.btnUser.HoverState.Parent = this.btnUser;
             this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUser.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnUser.Location = new System.Drawing.Point(26, 561);
+            this.btnUser.Location = new System.Drawing.Point(33, 557);
             this.btnUser.Name = "btnUser";
             this.btnUser.ShadowDecoration.Parent = this.btnUser;
-            this.btnUser.Size = new System.Drawing.Size(184, 49);
+            this.btnUser.Size = new System.Drawing.Size(230, 49);
             this.btnUser.TabIndex = 6;
             this.btnUser.Text = "Master Users";
             this.btnUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -194,10 +194,10 @@ namespace FinalPoject
             this.btnMasterCustomers.HoverState.Parent = this.btnMasterCustomers;
             this.btnMasterCustomers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterCustomers.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterCustomers.Location = new System.Drawing.Point(26, 484);
+            this.btnMasterCustomers.Location = new System.Drawing.Point(33, 483);
             this.btnMasterCustomers.Name = "btnMasterCustomers";
             this.btnMasterCustomers.ShadowDecoration.Parent = this.btnMasterCustomers;
-            this.btnMasterCustomers.Size = new System.Drawing.Size(220, 49);
+            this.btnMasterCustomers.Size = new System.Drawing.Size(230, 49);
             this.btnMasterCustomers.TabIndex = 5;
             this.btnMasterCustomers.Text = "Customers Details";
             this.btnMasterCustomers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -232,10 +232,10 @@ namespace FinalPoject
             this.btnMakeSell.HoverState.Parent = this.btnMakeSell;
             this.btnMakeSell.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMakeSell.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMakeSell.Location = new System.Drawing.Point(26, 264);
+            this.btnMakeSell.Location = new System.Drawing.Point(33, 261);
             this.btnMakeSell.Name = "btnMakeSell";
             this.btnMakeSell.ShadowDecoration.Parent = this.btnMakeSell;
-            this.btnMakeSell.Size = new System.Drawing.Size(184, 49);
+            this.btnMakeSell.Size = new System.Drawing.Size(230, 49);
             this.btnMakeSell.TabIndex = 4;
             this.btnMakeSell.Text = "Make Sales";
             this.btnMakeSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -270,10 +270,10 @@ namespace FinalPoject
             this.btnMasterStock.HoverState.Parent = this.btnMasterStock;
             this.btnMasterStock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterStock.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterStock.Location = new System.Drawing.Point(26, 341);
+            this.btnMasterStock.Location = new System.Drawing.Point(33, 335);
             this.btnMasterStock.Name = "btnMasterStock";
             this.btnMasterStock.ShadowDecoration.Parent = this.btnMasterStock;
-            this.btnMasterStock.Size = new System.Drawing.Size(184, 49);
+            this.btnMasterStock.Size = new System.Drawing.Size(230, 49);
             this.btnMasterStock.TabIndex = 3;
             this.btnMasterStock.Text = "All Stocks";
             this.btnMasterStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -308,10 +308,10 @@ namespace FinalPoject
             this.btnDashboard.HoverState.Parent = this.btnDashboard;
             this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDashboard.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnDashboard.Location = new System.Drawing.Point(26, 187);
+            this.btnDashboard.Location = new System.Drawing.Point(33, 187);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
-            this.btnDashboard.Size = new System.Drawing.Size(184, 49);
+            this.btnDashboard.Size = new System.Drawing.Size(230, 49);
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -322,10 +322,10 @@ namespace FinalPoject
             // pnlFormViwer
             // 
             this.pnlFormViwer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFormViwer.Location = new System.Drawing.Point(284, 73);
+            this.pnlFormViwer.Location = new System.Drawing.Point(297, 73);
             this.pnlFormViwer.Name = "pnlFormViwer";
             this.pnlFormViwer.ShadowDecoration.Parent = this.pnlFormViwer;
-            this.pnlFormViwer.Size = new System.Drawing.Size(1197, 709);
+            this.pnlFormViwer.Size = new System.Drawing.Size(1184, 709);
             this.pnlFormViwer.TabIndex = 32;
             // 
             // pnlTop
@@ -338,10 +338,10 @@ namespace FinalPoject
             this.pnlTop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.FillColor = System.Drawing.Color.Transparent;
-            this.pnlTop.Location = new System.Drawing.Point(284, 0);
+            this.pnlTop.Location = new System.Drawing.Point(297, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.ShadowDecoration.Parent = this.pnlTop;
-            this.pnlTop.Size = new System.Drawing.Size(1197, 73);
+            this.pnlTop.Size = new System.Drawing.Size(1184, 73);
             this.pnlTop.TabIndex = 31;
             // 
             // guna2Panel9
@@ -349,7 +349,7 @@ namespace FinalPoject
             this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel9.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel9.Location = new System.Drawing.Point(937, 0);
+            this.guna2Panel9.Location = new System.Drawing.Point(924, 0);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
             this.guna2Panel9.Size = new System.Drawing.Size(76, 73);
@@ -375,7 +375,7 @@ namespace FinalPoject
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(1013, 0);
+            this.guna2Panel3.Location = new System.Drawing.Point(1000, 0);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(184, 73);

@@ -78,19 +78,11 @@ namespace FinalPoject
 
         void UpdatePrice()
         {
-            //List<Orders> orders= makeSalesRepo.GetAllForOrders();
-
             double price = 0.0;
             foreach (DataGridViewRow row in dgvCart.Rows)
             {
                 price += double.Parse(row.Cells[6].Value.ToString());
             }
-
-
-            //foreach (Orders order in orders)
-            //{
-            //    //price += order.TotalAmount;
-            //}
 
             txtTotalAmount.Text = price.ToString();
 
@@ -113,16 +105,6 @@ namespace FinalPoject
             OrderDetailDataTable.Rows.Add(row);
 
             UpdatePrice();
-
-
-            //this.dgvSelect.CurrentRow.Cells["ProductName"].Value = this.dgvSearchProduct.CurrentRow.Cells["ProductName"].Value.ToString();
-            //this.dgvSelect.CurrentRow.Cells["ProId"].Value = this.txtProductId.Text;
-            //this.dgvSelect.CurrentRow.Cells["ProductIdTag"].Value = this.dgvSearchProduct.CurrentRow.Cells["ProductIdTag"].Value.ToString();
-            //this.dgvSelect.CurrentRow.Cells["ProductUnitStock"].Value = this.dgvSearchProduct.CurrentRow.Cells["ProductUnitStock"].Value.ToString();
-            //this.dgvSelect.CurrentRow.Cells["ProductPerUnitPrice"].Value = this.dgvSearchProduct.CurrentRow.Cells["ProductPerUnitPrice"].Value.ToString();
-            //this.dgvSelect.CurrentRow.Cells["ProductDiscountRate"].Value = this.dgvSearchProduct.CurrentRow.Cells["ProductDiscountRate"].Value.ToString();
-            //this.dgvSelect.CurrentRow.Cells["ProductMSRP"].Value = this.dgvSearchProduct.CurrentRow.Cells["ProductMSRP"].Value.ToString();
-            //this.dgvSelect.CurrentRow.Cells["BrandName"].Value = this.dgvSearchProduct.CurrentRow.Cells["BrandName"].Value.ToString();
 
         }
 
@@ -158,7 +140,6 @@ namespace FinalPoject
         }
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
-        
         {
             if (dgvCart.SelectedRows.Count > 0)
             {
@@ -215,6 +196,7 @@ namespace FinalPoject
                     if (this.makeSalesRepo.SaveOrders())
                     {
                         MessageBox.Show("Save Successfully");
+                        dgvCart.Rows.Clear();
                     }
                     else
                     {

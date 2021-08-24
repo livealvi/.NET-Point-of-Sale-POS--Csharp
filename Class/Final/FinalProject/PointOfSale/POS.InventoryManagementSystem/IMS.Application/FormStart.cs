@@ -25,7 +25,8 @@ namespace FinalPoject
 
         private void btnMakeSell_Click(object sender, EventArgs e)
         {
-
+            FormProductsMaster productsMaster = new FormProductsMaster();
+            productsMaster.ShowDialog();
         }
 
         private void btnMasterStock_Click(object sender, EventArgs e)
