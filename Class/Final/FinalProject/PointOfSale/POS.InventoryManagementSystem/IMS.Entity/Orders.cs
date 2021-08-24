@@ -13,12 +13,42 @@ namespace IMS.Entity
         public int                       CustomerId         { get; set; }
         public Nullable<int>             BarCodeId          { get; set; }
         public Nullable<int>             OrderTag           { get; set; }
-        public Nullable<System.DateTime> Date               { get; set; }
+        public DateTime Date               { get; set; }
         public Nullable<int>             ProductId          { get; set; }
-        public Nullable<int>             Quantity           { get; set; }
+        //public Nullable<int>             Quantity           { get; set; }
         public string                    ProductDiscountRate{ get; set; }
         public Nullable<double>          ProductMSRP        { get; set; }
         public string                    Status             { get; set; }
+
+        //OutSide - Products
+        public string           ProductIdTag       { get; set; }
+        public string           ProductName        { get; set; }
+        public Nullable<double> ProductPerUnitPrice{ get; set; }
+        public string           ProductStatus      { get; set; }
+        public int              ProductUnitStock   { get; set; }
+
+        //OutSide - Customers
+        public string CustomerFullName{ get; set; }
+        public string Phone           { get; set; }
+        public string Address         { get; set; }
+        public string Email           { get; set; }
+
+        //OutSide - Users
+        public string FirstName{ get; set; }
+        public string Role     { get; set; }
+
+        //OutSide - Brands
+        public string BrandName{ get; set; }
+
+        //OutSide - Vendor
+        public string VendorName{ get; set; }
+
+        //OutSide - ThirdCategory
+        public string ThirdCategoryName{ get; set; }
+
+        //OutSide - Second Category 
+        public string SecondCategoryName{ get; set; }
+
 
         public virtual BarCodes   BarCode { get; set; }
         public virtual Customers Customer{ get; set; }

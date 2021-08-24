@@ -108,7 +108,6 @@ namespace FinalPoject
                 users.UserId = Convert.ToInt32(this.txtId.Text);
             }
 
-            //uc.MainCategoryName = this.txtId.Text;
             users.FirstName = this.txtFirstName.Text;
             users.LastName = this.txtLastName.Text;
             users.Age = Convert.ToInt32(this.txtAge.Text);
