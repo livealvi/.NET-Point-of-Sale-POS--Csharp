@@ -26,8 +26,6 @@ namespace FinalPoject
         private void PopulateGridView(string searchKey = null)
         {
             this.dgvSecondCate.AutoGenerateColumns = false;
-            
-            
             this.dgvSecondCate.DataSource = this.secondCateReop.GetAll(searchKey).ToList();
             this.dgvSecondCate.ClearSelection();
             this.Refresh();

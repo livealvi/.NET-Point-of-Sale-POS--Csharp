@@ -16,7 +16,7 @@ namespace IMS.Entity
         public DateTime Date               { get; set; }
         public Nullable<int>             ProductId          { get; set; }
         //public Nullable<int>             Quantity           { get; set; }
-        public Nullable<double>  ProductDiscountRate{ get; set; }
+        
         public Nullable<double> ProductMSRP        { get; set; }
         public string           Status             { get; set; }
         public Nullable<double> TotalAmount        { get; set; }
@@ -28,6 +28,7 @@ namespace IMS.Entity
         public Nullable<double> ProductPerUnitPrice{ get; set; }
         public string           ProductStatus      { get; set; }
         public int              ProductUnitStock   { get; set; }
+        public Nullable<double> ProductDiscountRate{ get; set; }
 
         //OutSide - Customers
         public string CustomerFullName{ get; set; }

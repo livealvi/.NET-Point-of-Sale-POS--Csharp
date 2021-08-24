@@ -18,6 +18,7 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+
         public List<Orders> GetAll(string key)
         {
             List<Orders> ordersList = new List<Orders>();
@@ -26,77 +27,39 @@ namespace IMS.Repository
             try
             {
                 if (key == null)
-                    sql = @"SELECT      
-		                          Orders.OrderId AS OrderId, Orders.OrderTag AS OrderTag, Orders.Status Status,
-		                          Orders.PaymentMethod AS PaymentMethod, Orders.Date AS Date,
-		                          Orders.TotalAmount AS TotalAmount,
-
-		                          BarCodes.BarCodeId AS BarCodeId,
-		                          
-		                          Customers.CustomerId AS CustomerId,
-		                          Customers.CustomerFullName AS CustomerFullName, Customers.Phone AS Phone,
-		                          Customers.Email AS Email, Customers.Address AS Address,
-		                          
-		                          Products.ProductId AS ProId, Products.ProductIdTag AS ProductIdTag,
-		                          Products.ProductName AS ProductName, Products.ProductStatus AS ProductStatus,
-		                          Products.ProductPerUnitPrice AS ProductPerUnitPrice, Products.ProductUnitStock AS ProductUnitStock,
-		                          Products.ProductMSRP AS ProductMSRP, Products.ProductDiscountRate AS ProductDiscountRate,
-		                          
-		                          Users.UserId AS UserId,
-		                          Users.FirstName AS FirstName, Users.Role AS Role,
-		                          
-		                          Brands.BrandName AS BrandName, Vendors.VendorName VendorName,
-		                          ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
-		                          SecondCategories.SecondCategoryName AS SecondCategoryName,
-		                          MainCategories.MainCategoryName AS MainCategoryName
-                                  FROM 
-		                          Orders INNER JOIN
-		                          Products ON Orders.ProductId = Products.ProductId INNER JOIN
-                                  Customers ON Orders.CustomerId = Customers.CustomerId INNER JOIN
-						          BarCodes ON Orders.BarCodeId = BarCodes.BarCodeId INNER JOIN
-                                  Users ON Orders.UserId = Users.UserId INNER JOIN
-                                  Brands ON Products.BrandId = Brands.BrandId INNER JOIN
-                                  Vendors ON Brands.VendorId = Vendors.VendorId INNER JOIN
-                                  ThirdCategories ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId INNER JOIN
-                                  SecondCategories ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId INNER JOIN
-						          MainCategories ON SecondCategories.MainCategoryId = MainCategories.MainCategoryId ";
+                    sql = @"select p.ProductId as 'ProductId', p.ProductIdTag as 'ProductIdTag', p.ProductName as 'ProductName',
+                                  p.ProductStatus AS ProductStatus,
+		                          p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
+		                          p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
+                                  b.BrandName AS BrandName, v.VendorName VendorName,
+		                          tc.ThirdCategoryName AS ThirdCategoryName,
+		                          sc.SecondCategoryName AS SecondCategoryName
+                                  from Products as p
+                                  left join brands as b on b.BrandId = p.BrandId
+                                  left join vendors as v on v.VendorId=b.VendorId
+                                  left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
+                                  left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId
+                                    where p.ProductStatus like 'Yes';";
                 else
-                    sql = @"SELECT      
-		                          Orders.OrderId AS OrderId, Orders.OrderTag AS OrderTag, Orders.Status Status,
-		                          Orders.PaymentMethod AS PaymentMethod, Orders.Date AS Date,
-		                          Orders.TotalAmount AS TotalAmount,
+                    sql = @"select p.ProductId as ProductId, p.ProductIdTag as ProductIdTag, p.ProductName as ProductName,
+                                  p.ProductStatus AS ProductStatus,
+		                          p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
+		                          p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
+                                  b.BrandName AS BrandName, v.VendorName VendorName,
+		                          tc.ThirdCategoryName AS ThirdCategoryName,
+		                          sc.SecondCategoryName AS SecondCategoryName
+                                  from Products as p
+                                  left join brands as b on b.BrandId = p.BrandId
+                                  left join vendors as v on v.VendorId=b.VendorId
+                                  left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
+                                  left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId 
+                                
 
-		                          BarCodes.BarCodeId AS BarCodeId,
-		                          
-		                          Customers.CustomerId AS CustomerId,
-		                          Customers.CustomerFullName AS CustomerFullName, Customers.Phone AS Phone,
-		                          Customers.Email AS Email, Customers.Address AS Address,
-		                          
-		                          Products.ProductId AS ProId, Products.ProductIdTag AS ProductIdTag,
-		                          Products.ProductName AS ProductName, Products.ProductStatus AS ProductStatus,
-		                          Products.ProductPerUnitPrice AS ProductPerUnitPrice, Products.ProductUnitStock AS ProductUnitStock,
-		                          Products.ProductMSRP AS ProductMSRP, Products.ProductDiscountRate AS ProductDiscountRate,
-		                          
-		                          Users.UserId AS UserId,
-		                          Users.FirstName AS FirstName, Users.Role AS Role,
-		                          
-		                          Brands.BrandName AS BrandName, Vendors.VendorName VendorName,
-		                          ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
-		                          SecondCategories.SecondCategoryName AS SecondCategoryName,
-		                          MainCategories.MainCategoryName AS MainCategoryName
-                                  FROM 
-		                          Orders INNER JOIN
-		                          Products ON Orders.ProductId = Products.ProductId INNER JOIN
-                                  Customers ON Orders.CustomerId = Customers.CustomerId INNER JOIN
-						          BarCodes ON Orders.BarCodeId = BarCodes.BarCodeId INNER JOIN
-                                  Users ON Orders.UserId = Users.UserId INNER JOIN
-                                  Brands ON Products.BrandId = Brands.BrandId INNER JOIN
-                                  Vendors ON Brands.VendorId = Vendors.VendorId INNER JOIN
-                                  ThirdCategories ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId INNER JOIN
-                                  SecondCategories ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId INNER JOIN
-						          MainCategories ON SecondCategories.MainCategoryId = MainCategories.MainCategoryId 
-
-                                  where SecondCategories.SecondCategoryName like '%" + key + "%' or MainCategories.MainCategoryName like '%" + key + "%' ; ";
+                                  where sc.SecondCategoryName like '%" + key + "%' or tc.ThirdCategoryName like '%" + key + "%' or " +
+                          "b.BrandName like '%" + key + "%' or v.VendorName like '%" + key + "%' or  v.ProductId like '%" + key + "%' or " +
+                          "p.ProductIdTag like '%" + key + "%' or p.ProductStatus like '%" + key + "%' or p.ProductPerUnitPrice like '%" + key + "%' or " +
+                          "p.ProductUnitStock like '%" + key + "%' or p.ProductMSRP like '%" + key + "%' or p.ProductDiscountRate like '%" + key + "%' or " +
+                          "p.ProductName like '%" + key + "%' ";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
 
@@ -128,7 +91,7 @@ namespace IMS.Repository
 
             //Products
             orders.ProductName = row["ProductName"].ToString(); 
-            orders.ProductId = Convert.ToInt32(row["ProId"].ToString());
+            orders.ProductId = Convert.ToInt32(row["ProductId"].ToString());
             orders.ProductIdTag = row["ProductIdTag"].ToString();
             orders.ProductUnitStock = Convert.ToInt32(row["ProductUnitStock"].ToString());
             orders.ProductPerUnitPrice = Convert.ToDouble(row["ProductPerUnitPrice"].ToString());
@@ -137,26 +100,26 @@ namespace IMS.Repository
             orders.ProductStatus = row["ProductStatus"].ToString();
 
             //Users
-            orders.UserId = Convert.ToInt32(row["UserId"].ToString());
-            orders.FirstName = row["FirstName"].ToString();
-            orders.Role = row["Role"].ToString();
+            //orders.UserId = Convert.ToInt32(row["UserId"].ToString());
+            //orders.FirstName = row["FirstName"].ToString();
+            //orders.Role = row["Role"].ToString();
 
-            //Customer
-            orders.CustomerId = Convert.ToInt32(row["CustomerId"].ToString());
-            orders.CustomerFullName = row["CustomerFullName"].ToString();
-            orders.Email = row["Email"].ToString();
-            orders.Phone = row["Phone"].ToString();
-            orders.Address = row["Address"].ToString();
+            ////Customer
+            //orders.CustomerId = Convert.ToInt32(row["CustomerId"].ToString());
+            //orders.CustomerFullName = row["CustomerFullName"].ToString();
+            //orders.Email = row["Email"].ToString();
+            //orders.Phone = row["Phone"].ToString();
+            //orders.Address = row["Address"].ToString();
 
-            //Order
-            orders.OrderId = Convert.ToInt32(row["OrderId"].ToString());
-            orders.OrderTag = row["OrderTag"].ToString();
-            orders.Date = Convert.ToDateTime(row["Date"].ToString());
-            orders.TotalAmount = Convert.ToDouble(row["TotalAmount"].ToString());
-            orders.Status = row["Status"].ToString();
+            ////Order
+            //orders.OrderId = Convert.ToInt32(row["OrderId"].ToString());
+            //orders.OrderTag = row["OrderTag"].ToString();
+            //orders.Date = Convert.ToDateTime(row["Date"].ToString());
+            //orders.TotalAmount = Convert.ToDouble(row["TotalAmount"].ToString());
+            //orders.Status = row["Status"].ToString();
 
             //BarCode
-            orders.BarCodeId = Convert.ToInt32(row["BarCodeId"].ToString());
+            //orders.BarCodeId = Convert.ToInt32(row["BarCodeId"].ToString());
 
             //BrandName
             orders.BrandName = row["BrandName"].ToString();
