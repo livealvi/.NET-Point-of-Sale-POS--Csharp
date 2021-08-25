@@ -19,47 +19,50 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        //view & search & filter 
         public List<Orders> GetAll(string key)
         {
             List<Orders> ordersList = new List<Orders>();
-            string sql;
 
+            string sql;
             try
             {
                 if (key == null)
-                    sql = @"select p.ProductId as 'ProductId', p.ProductIdTag as 'ProductIdTag', p.ProductName as 'ProductName',
-                                  p.ProductStatus AS ProductStatus,
-		                          p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
-		                          p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
-                                  b.BrandName AS BrandName, v.VendorName VendorName,
-		                          tc.ThirdCategoryName AS ThirdCategoryName,
-		                          sc.SecondCategoryName AS SecondCategoryName
-                                  from Products as p
-                                  left join brands as b on b.BrandId = p.BrandId
-                                  left join vendors as v on v.VendorId=b.VendorId
-                                  left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
-                                  left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId
+                    sql = @"select
+                                    p.ProductId as 'ProductId', p.ProductIdTag as 'ProductIdTag', p.ProductName as 'ProductName',
+                                    p.ProductStatus AS ProductStatus,
+		                            p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
+		                            p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
+                                    b.BrandName AS BrandName, v.VendorName VendorName,
+		                            tc.ThirdCategoryName AS ThirdCategoryName,
+		                            sc.SecondCategoryName AS SecondCategoryName
+                                    from Products as p
+                                    left join brands as b on b.BrandId = p.BrandId
+                                    left join vendors as v on v.VendorId=b.VendorId
+                                    left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
+                                    left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId
+                                    
                                     where p.ProductStatus like 'Yes';";
-                else
-                    sql = @"select p.ProductId as ProductId, p.ProductIdTag as ProductIdTag, p.ProductName as ProductName,
-                                  p.ProductStatus AS ProductStatus,
-		                          p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
-		                          p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
-                                  b.BrandName AS BrandName, v.VendorName VendorName,
-		                          tc.ThirdCategoryName AS ThirdCategoryName,
-		                          sc.SecondCategoryName AS SecondCategoryName
-                                  from Products as p
-                                  left join brands as b on b.BrandId = p.BrandId
-                                  left join vendors as v on v.VendorId=b.VendorId
-                                  left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
-                                  left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId 
+                else                
+                    sql = @"select  
+                                    p.ProductId as ProductId, p.ProductIdTag as ProductIdTag, p.ProductName as ProductName,
+                                    p.ProductStatus AS ProductStatus,
+		                            p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
+		                            p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
+                                    b.BrandName AS BrandName, v.VendorName VendorName,
+		                            tc.ThirdCategoryName AS ThirdCategoryName,
+		                            sc.SecondCategoryName AS SecondCategoryName
+                                    from Products as p
+                                    left join brands as b on b.BrandId = p.BrandId
+                                    left join vendors as v on v.VendorId=b.VendorId
+                                    left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
+                                    left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId 
                                 
-
                                   where sc.SecondCategoryName like '%" + key + "%' or tc.ThirdCategoryName like '%" + key + "%' or " +
-                          "b.BrandName like '%" + key + "%' or v.VendorName like '%" + key + "%' or  v.ProductId like '%" + key + "%' or " +
-                          "p.ProductIdTag like '%" + key + "%' or p.ProductStatus like '%" + key + "%' or p.ProductPerUnitPrice like '%" + key + "%' or " +
-                          "p.ProductUnitStock like '%" + key + "%' or p.ProductMSRP like '%" + key + "%' or p.ProductDiscountRate like '%" + key + "%' or " +
-                          "p.ProductName like '%" + key + "%' ";
+                                  "b.BrandName like '%" + key + "%' or v.VendorName like '%" + key + "%' or  v.ProductId like '%" + key + "%' or " +
+                                  "p.ProductIdTag like '%" + key + "%' or p.ProductStatus like '%" + key + "%' or p.ProductPerUnitPrice like '%" + key + "%' or " +
+                                  "p.ProductUnitStock like '%" + key + "%' or p.ProductMSRP like '%" + key + "%' or p.ProductDiscountRate like '%" + key + "%' or " +
+                                  "p.ProductName like '%" + key + "%' ";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
 
@@ -72,7 +75,6 @@ namespace IMS.Repository
                 }
                 return ordersList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -86,6 +88,7 @@ namespace IMS.Repository
             {
                 return null;
             }
+
             var orders = new Orders();
             orders.ProductName = row["ProductName"].ToString(); 
             orders.ProductId = Convert.ToInt32(row["ProductId"].ToString());
@@ -102,73 +105,43 @@ namespace IMS.Repository
             return orders;
         }
 
-        //SaveData - Orders 
-        public bool SaveOrders()
-        {
-            bool saveSuccesful=false;
-            List<Orders> orders = GetAllForOrders();
-            
-            foreach (Orders order in orders)
-            {
-                string sql = "insert into Orders (UserId, " +
-                             "BarCodeId, Date, ProductId, ProductName, ProductPerUnitPrice, OrderQuantity," +
-                             "OrderStatus, PaymentMethod, " +
-                             "TotalAmount, CustomerFullName, CustomerPhone, CustomerEmail, CustomerAddress) " +
-                             " values ('" + order.UserId + "', " +
-                             " '" + order.BarCodeId + "' , '" + order.Date + "' , '" + order.ProductId + "' ," +
-                             " '" + order.ProductName + "' ,  '" + order.ProductPerUnitPrice + "' , " +
-                             " '" + order.OrderQuantity + "' , '" + order.OrderStatus + "' , '" + order.PaymentMethod + "' ," +
-                             " '" + order.TotalAmount + "' ," +
-                             " '" + order.CustomerFullName + "' , '" + order.CustomerPhone + "' , '" + order.CustomerEmail + "' ," +
-                             " '" + order.CustomerAddress + "') ";
-                try
-                {
-                    this.iDB.ExecuteDMLQuery(sql);
-                    saveSuccesful = true;
-                }
-                catch(Exception e)
-                {
-                    saveSuccesful = false;
-                    Debug.WriteLine(e.ToString());
-                    break;
-                }
-            }
-            return saveSuccesful;
-        }
+        
 
         //for - Orders
         public List<Orders> GetAllForOrders()
         {
             List<Orders> ordersList = new List<Orders>();
             string sql;
+
             try
             {
                 sql = @"SELECT      
-		                    Orders.OrderId AS OrderId,
-		                    Orders.OrderTag AS OrderTag,
-		                    Users.UserId AS UserId,
-		             
-		                    BarCodes.BarCodeId AS BarCodeId,
-		                    Orders.Date AS Date,
-		                    Products.ProductId AS ProductId,
-                            Products.ProductName AS ProductName,
-                            Products.ProductPerUnitPrice AS ProductPerUnitPrice,
-		                    Orders.OrderQuantity AS OrderQuantity,
-		                    Orders.OrderStatus AS OrderStatus,
-		                    Orders.PaymentMethod AS PaymentMethod,
-		                    Orders.TotalAmount AS TotalAmount,
-		                    Orders.CustomerFullName AS CustomerFullName,
-		                    Orders.CustomerPhone AS CustomerPhone,
-		                    Orders.CustomerEmail AS CustomerEmail,
-		                    Orders.CustomerAddress AS CustomerAddress
-		                    From
-                            Orders INNER JOIN
-		                    Products ON Orders.ProductId = Products.ProductId INNER JOIN
-                         
-						    BarCodes ON Orders.BarCodeId = BarCodes.BarCodeId INNER JOIN
-                            Users ON Orders.UserId = Users.UserId";
+		                      Orders.OrderId AS OrderId,
+		                      Orders.OrderTag AS OrderTag,
+		                      Users.UserId AS UserId,
+		                      
+		                      BarCodes.BarCodeId AS BarCodeId,
+		                      Orders.Date AS Date,
+		                      Products.ProductId AS ProductId,
+                              Products.ProductName AS ProductName,
+                              Products.ProductPerUnitPrice AS ProductPerUnitPrice,
+		                      Orders.OrderQuantity AS OrderQuantity,
+		                      Orders.OrderStatus AS OrderStatus,
+		                      Orders.PaymentMethod AS PaymentMethod,
+		                      Orders.TotalAmount AS TotalAmount,
+		                      Orders.CustomerFullName AS CustomerFullName,
+		                      Orders.CustomerPhone AS CustomerPhone,
+		                      Orders.CustomerEmail AS CustomerEmail,
+		                      Orders.CustomerAddress AS CustomerAddress
+		                      From
+                              Orders INNER JOIN
+		                      Products ON Orders.ProductId = Products.ProductId INNER JOIN
+                              
+						      BarCodes ON Orders.BarCodeId = BarCodes.BarCodeId INNER JOIN
+                              Users ON Orders.UserId = Users.UserId";
                 
             var dt = this.iDB.ExecuteQueryTable(sql);
+
             int x = 0;
                 while (x < dt.Rows.Count)
                 {
@@ -191,6 +164,7 @@ namespace IMS.Repository
             {
                 return null;
             }
+
             var orders = new Orders();
             orders.CustomerEmail = row["CustomerEmail"].ToString();
             orders.CustomerAddress = row["CustomerAddress"].ToString(); 
@@ -214,6 +188,40 @@ namespace IMS.Repository
             //
             orders.BarCodeId = Convert.ToInt32(row["BarCodeId"].ToString());
             return orders;
+        }
+
+        //SaveData - Orders 
+        public bool SaveOrders()
+        {
+            bool saveSuccesful = false;
+            List<Orders> orders = GetAllForOrders();
+
+            foreach (Orders order in orders)
+            {
+                string sql = "insert into Orders (UserId, " +
+                             "BarCodeId, Date, ProductId, ProductName, ProductPerUnitPrice, OrderQuantity," +
+                             "OrderStatus, PaymentMethod, " +
+                             "TotalAmount, CustomerFullName, CustomerPhone, CustomerEmail, CustomerAddress) " +
+                             " values ('" + order.UserId + "', " +
+                             " '" + order.BarCodeId + "' , '" + order.Date + "' , '" + order.ProductId + "' ," +
+                             " '" + order.ProductName + "' ,  '" + order.ProductPerUnitPrice + "' , " +
+                             " '" + order.OrderQuantity + "' , '" + order.OrderStatus + "' , '" + order.PaymentMethod + "' ," +
+                             " '" + order.TotalAmount + "' ," +
+                             " '" + order.CustomerFullName + "' , '" + order.CustomerPhone + "' , '" + order.CustomerEmail + "' ," +
+                             " '" + order.CustomerAddress + "') ";
+                try
+                {
+                    this.iDB.ExecuteDMLQuery(sql);
+                    saveSuccesful = true;
+                }
+                catch (Exception e)
+                {
+                    saveSuccesful = false;
+                    Debug.WriteLine(e.ToString());
+                    break;
+                }
+            }
+            return saveSuccesful;
         }
     }
 }
