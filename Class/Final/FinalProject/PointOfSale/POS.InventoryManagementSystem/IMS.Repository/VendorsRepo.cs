@@ -19,13 +19,11 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
-
         //view & search
         public List<Vendors> GetAll(string key)
         {
             List<Vendors> vendorsList = new List<Vendors>();
             string sql;
-
             try
             {
                 if (key == null)
@@ -58,7 +56,6 @@ namespace IMS.Repository
                 }
                 return vendorsList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -82,7 +79,6 @@ namespace IMS.Repository
             //vendor.VendorImage = Convert.ToDouble(row["VendorImage"].ToString());
             vendor.ThirdCategoryId = Convert.ToInt32(row["ThirdCateId"].ToString());
             vendor.ThirdCategoryName = row["ThirdCateName"].ToString();
-
             return vendor;
         }
 
@@ -94,7 +90,6 @@ namespace IMS.Repository
             {
                 sql = @"SELECT VendorId , VendorName FROM Vendors";
                 return this.iDB.ExecuteQueryTable(sql);
-
             }
             catch (Exception e)
             {
@@ -127,7 +122,6 @@ namespace IMS.Repository
                     return vendor.VendorId;
                 }
             }
-
             return 0;
         }
 
@@ -139,20 +133,17 @@ namespace IMS.Repository
             }
 
             var v = new Vendors();
-
             v.VendorName = row["VendorName"].ToString();
             v.VendorId = Convert.ToInt32(row["VendorId"].ToString());
             return v;
         }
 
-        //DataCount
+        //DataCount - DataExists
         public bool DataExists(int id)
         {
             try
             {
                 DataSet ds = iDB.ExecuteQuery("select VendorId from Vendors where VendorId=" + id);
-
-                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
                 Debug.WriteLine(ds.Tables[0].Rows.Count);
 
                 if (ds.Tables[0].Rows.Count > 0)
@@ -174,7 +165,7 @@ namespace IMS.Repository
             }
         }
 
-        //save
+        //save - vendor
         public bool Save(Vendors vr)
         {
             try
@@ -196,7 +187,7 @@ namespace IMS.Repository
             }
         }
 
-        //update
+        //update - vendor
         public bool UpdateProduct(Vendors vr)
         {
             try
@@ -222,7 +213,7 @@ namespace IMS.Repository
             }
         }
 
-        //delete
+        //delete - vendor
         public bool Delete(string id)
         {
             string sql;
@@ -230,7 +221,6 @@ namespace IMS.Repository
             {
                 sql = @"delete from Vendors where VendorId ='" + id + "';";
                 var dataTable = this.iDB.ExecuteDMLQuery(sql);
-
                 return true;
             }
             catch (Exception e)
