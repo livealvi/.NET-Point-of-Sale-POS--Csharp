@@ -8,20 +8,17 @@ namespace IMS.Entity
 {
     public class Orders
     {
-        public int           OrderId      { get; set; }
-        public int           UserId       { get; set; }
-        public int           CustomerId   { get; set; }
-        public int           BarCodeId    { get; set; }
-        public string        OrderTag     { get; set; }
-        public DateTime      Date         { get; set; }
-        public int           OrderQuantity{ get; set; }
-        public Nullable<int> ProductId    { get; set; }
+        public int      OrderId      { get; set; }
+        public int      UserId       { get; set; }
+        public int      BarCodeId    { get; set; }
+        public DateTime Date         { get; set; }
+        public int      OrderQuantity{ get; set; }
+        public int      ProductId    { get; set; }
         //public Nullable<int>             Quantity           { get; set; }
         
-        public Nullable<double> ProductMSRP        { get; set; }
+        public double ProductMSRP        { get; set; }
         public string           Status             { get; set; }
         public double TotalAmount        { get; set; }
-
 
         //OutSide - Products
         public string ProductIdTag       { get; set; }
@@ -33,7 +30,6 @@ namespace IMS.Entity
         public string OrderStatus        { get; set; }
         public string PaymentMethod      { get; set; }
         
-
         //OutSide - Customers
         public string CustomerFullName{ get; set; }
         public string CustomerPhone   { get; set; }
@@ -55,7 +51,6 @@ namespace IMS.Entity
 
         //OutSide - Second Category 
         public string SecondCategoryName{ get; set; }
-
 
         public virtual BarCodes   BarCode { get; set; }
         public virtual Customers Customer{ get; set; }

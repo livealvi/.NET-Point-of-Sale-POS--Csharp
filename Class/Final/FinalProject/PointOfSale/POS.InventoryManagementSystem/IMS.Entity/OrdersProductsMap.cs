@@ -11,8 +11,8 @@ namespace IMS.Entity
     public class OrdersProductsMap
     {
         public int           OrderProductsCategoriesId{ get; set; }
-        public Nullable<int> OrderId                  { get; set; }
-        public Nullable<int> ProductId                { get; set; }
+        public int OrderId                  { get; set; }
+        public int ProductId                { get; set; }
 
         public virtual Orders   Order  { get; set; }
         public virtual Products Product{ get; set; }
