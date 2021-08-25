@@ -24,12 +24,13 @@ namespace IMS.Repository
         public List<Products> GetAll(string key)
         {
             List<Products> productList = new List<Products>();
-            string sql;
 
+            string sql;
             try
             {
                 if (key == null)
-                    sql = @"SELECT Products.ProductId AS pID, Products.ProductIdTag AS pTag, Brands.BrandName AS pBrandName, Products.ProductName AS pName, Products.ProductStatus AS pStatus, Products.ProductMSRP AS pMSRP, 
+                    sql = @"SELECT Products.ProductId AS pID, Products.ProductIdTag AS pTag, Brands.BrandName AS pBrandName,
+                    Products.ProductName AS pName, Products.ProductStatus AS pStatus, Products.ProductMSRP AS pMSRP, 
                     Products.ProductPerUnitPrice AS pPerUnPrice, Products.ProductQuantityPerUnit AS pQuaPerUn,
 					Products.ProductDiscountRate AS pDisRate, Products.ProductSize AS pSize, Products.ProductColor AS pColor, 
                     Products.ProductWeight AS pWeight, Products.ProductUnitStock AS pUnStock, Products.ProductDescription AS pDisc
@@ -37,8 +38,10 @@ namespace IMS.Repository
 					left join Brands
 					on Brands.BrandId=Products.BrandId";
                 else
-                    sql = @"SELECT Products.ProductId AS pID, Products.ProductIdTag AS pTag, Products.ProductName AS pName, Brands.BrandName AS pBrandName, Products.ProductStatus AS pStatus, Products.ProductMSRP AS pMSRP, 
-                    Products.ProductPerUnitPrice AS pPerUnPrice, Products.ProductQuantityPerUnit AS pQuaPerUn, Products.ProductDiscountRate AS pDisRate, Products.ProductSize AS pSize, Products.ProductColor AS pColor, 
+                    sql = @"SELECT Products.ProductId AS pID, Products.ProductIdTag AS pTag, Products.ProductName AS pName,
+                    Brands.BrandName AS pBrandName, Products.ProductStatus AS pStatus, Products.ProductMSRP AS pMSRP, 
+                    Products.ProductPerUnitPrice AS pPerUnPrice, Products.ProductQuantityPerUnit AS pQuaPerUn,
+                    Products.ProductDiscountRate AS pDisRate, Products.ProductSize AS pSize, Products.ProductColor AS pColor, 
                     Products.ProductWeight AS pWeight, Products.ProductUnitStock AS pUnStock, Products.ProductDescription AS pDisc
                     FROM     Products INNER JOIN
                     Brands ON Products.BrandId = Brands.BrandId 
@@ -54,7 +57,6 @@ namespace IMS.Repository
                 }
                 return productList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -62,7 +64,32 @@ namespace IMS.Repository
             }
         }
 
-        //DataCount
+        private Products ConvertToEntity(DataRow row)
+        {
+            if (row == null)
+            {
+                return null;
+            }
+
+            var product = new Products();
+            product.ProductId = Convert.ToInt32(row["pID"].ToString());
+            product.ProductIdTag = row["pTag"].ToString();
+            product.ProductName = row["pName"].ToString();
+            product.BrandName = row["pBrandName"].ToString();
+            product.ProductStatus = row["pStatus"].ToString();
+            product.ProductMSRP = Convert.ToDouble(row["pMSRP"].ToString());
+            product.ProductPerUnitPrice = Convert.ToDouble(row["pPerUnPrice"].ToString());
+            product.ProductQuantityPerUnit = Convert.ToDouble(row["pQuaPerUn"].ToString());
+            product.ProductDiscountRate = Convert.ToDouble(row["pDisRate"].ToString());
+            product.ProductSize = Convert.ToDouble(row["pSize"].ToString());
+            product.ProductColor = row["pColor"].ToString();
+            product.ProductWeight = Convert.ToDouble(row["pWeight"].ToString());
+            product.ProductUnitStock = Convert.ToInt32(row["pUnStock"].ToString());
+            product.ProductDescription = row["pDisc"].ToString();
+            return product;
+        }
+
+        //DataCount - DataExists
         public bool DataExists(int id)
         {
             try
@@ -91,7 +118,7 @@ namespace IMS.Repository
             }
         }
 
-        //save
+        //save - Product
         public bool Save(Products pro)
         {
             try
@@ -116,11 +143,9 @@ namespace IMS.Repository
             }
         }
 
-        //update
+        //update - Product
         public bool UpdateProduct(Products product)
         {
-            
-
             try
             {
                 string sql = @"update Products set ProductName='" + product.ProductName + "' , BrandId='" + product.BrandId + "',ProductDescription='" + product.ProductDescription + "', ProductQuantityPerUnit='" + product.ProductQuantityPerUnit + "'," +
@@ -145,8 +170,7 @@ namespace IMS.Repository
             }
         }
 
-
-        //delete
+        //delete - Product
         public bool Delete(string id)
         {
             string sql;
@@ -158,43 +182,12 @@ namespace IMS.Repository
                 
                 return true;
             }
-
             catch (Exception e)
             {
                 Debug.WriteLine(e.ToString());
                 return false;
-
                 throw;
             }
-            
-        }
-
-        
-
-        private Products ConvertToEntity(DataRow row)
-        {
-            if (row == null)
-            {
-                return null;
-            }
-
-            var product = new Products();
-            product.ProductId = Convert.ToInt32(row["pID"].ToString());
-            product.ProductIdTag = row["pTag"].ToString();
-            product.ProductName = row["pName"].ToString();
-            product.BrandName = row["pBrandName"].ToString();
-            product.ProductStatus = row["pStatus"].ToString();
-            product.ProductMSRP = Convert.ToDouble(row["pMSRP"].ToString());
-            product.ProductPerUnitPrice = Convert.ToDouble(row["pPerUnPrice"].ToString());
-            product.ProductQuantityPerUnit = Convert.ToDouble(row["pQuaPerUn"].ToString());
-            product.ProductDiscountRate = Convert.ToDouble(row["pDisRate"].ToString());
-            product.ProductSize = Convert.ToDouble(row["pSize"].ToString());
-            product.ProductColor = row["pColor"].ToString();
-            product.ProductWeight = Convert.ToDouble(row["pWeight"].ToString());
-            product.ProductUnitStock = Convert.ToInt32(row["pUnStock"].ToString());
-            product.ProductDescription = row["pDisc"].ToString();
-
-            return product;
         }
     }
 }
