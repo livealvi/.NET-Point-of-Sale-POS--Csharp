@@ -20,17 +20,32 @@ namespace FinalPoject
         private SecondCategoriesReop secondCateReop      { get; set; }
         private VendorsRepo          vendorsRepo         { get; set; }
         private BrandsRepo           brandRepo           { get; set; }
+        private UsersRepo            usersRepo           { get; set; }
         private DataTable OrderDetailDataTable;
         private MakeSalesRepo makeSalesRepo{get; set;}
         public FormMakeSale()
         {
             InitializeComponent();
+            
             this.makeSalesRepo = new MakeSalesRepo();
             this.secondCateReop = new SecondCategoriesReop();
             this.thirdCategoriesRepo = new ThirdCategoriesRepo();
             this.vendorsRepo = new VendorsRepo();
             this.brandRepo = new BrandsRepo();
+            this.usersRepo = new UsersRepo();
             InitiateDgvcart();
+        }
+
+
+        private void UsersIdToName()
+        {
+            this.cmbPayByUser.Items.Clear();
+            this.cmbPayByUser.Items.Add("--Not Selected--");
+            this.cmbPayByUser.SelectedIndex = cmbPayByUser.FindStringExact("--Not Selected--");
+            foreach (DataRow row in this.usersRepo.LoadComboUsersName().Rows)
+            {
+                this.cmbPayByUser.Items.Add(row["FirstName"].ToString() + " " + row["LastName"].ToString() +" - "+ row["Role"].ToString()) ;
+            }
         }
 
         void InitiateDgvcart()
@@ -39,16 +54,7 @@ namespace FinalPoject
             OrderDetailDataTable.Clear();
 
             dgvCart.AutoGenerateColumns = false;
-            //OrderDetailDataTable.Columns.Add("ProductName");
-            //OrderDetailDataTable.Columns.Add("ProductName");
-            //OrderDetailDataTable.Columns.Add("ProductName");
-            //OrderDetailDataTable.Columns.Add("ProductName");
-            //OrderDetailDataTable.Columns.Add("ProductName");
-
-            //foreach (string col in new[] {"ProductName","ProductId"})
-            //{
-            //}
-
+            
             foreach (DataGridViewTextBoxColumn col in dgvSearchProduct.Columns)
             {
                 OrderDetailDataTable.Columns.Add(col.HeaderText);
@@ -66,6 +72,7 @@ namespace FinalPoject
             this.ThirdCategoryIdToName();
             this.BrandIdToName();
             this.VendorIdToName();
+            this.UsersIdToName();
             this.Refresh();
             this.RefreshContent();
         }
@@ -233,6 +240,7 @@ namespace FinalPoject
            orders.TotalAmount = Convert.ToDouble(this.txtTotalAmount.Text);
            orders.OrderStatus = this.cmbPayStatus.Text;
            orders.PaymentMethod = this.cmbPaymentMethod.Text;
+           orders.UserId = usersRepo.GetUsersdId(this.cmbPayByUser.Text);
 
             return orders;
         }

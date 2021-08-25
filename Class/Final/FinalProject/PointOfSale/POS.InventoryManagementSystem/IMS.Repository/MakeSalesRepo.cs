@@ -12,13 +12,12 @@ namespace IMS.Repository
 {
     public class MakeSalesRepo
     {
-        private InventoryDBDataAccess iDB{ get; set; }
-
+        private InventoryDBDataAccess iDB      { get; set; }
+        
         public MakeSalesRepo()
         {
             this.iDB = new InventoryDBDataAccess();
         }
-
 
         public List<Orders> GetAll(string key)
         {
@@ -87,9 +86,7 @@ namespace IMS.Repository
             {
                 return null;
             }
-
             var orders = new Orders();
-
             orders.ProductName = row["ProductName"].ToString(); 
             orders.ProductId = Convert.ToInt32(row["ProductId"].ToString());
             orders.ProductIdTag = row["ProductIdTag"].ToString();
@@ -99,32 +96,31 @@ namespace IMS.Repository
             orders.ProductMSRP = Convert.ToDouble(row["ProductMSRP"].ToString());
             orders.ProductStatus = row["ProductStatus"].ToString();
             orders.BrandName = row["BrandName"].ToString();
-
             orders.VendorName = row["VendorName"].ToString();
-
             orders.ThirdCategoryName = row["ThirdCategoryName"].ToString();
-
             orders.SecondCategoryName = row["SecondCategoryName"].ToString();
-
-
             return orders;
         }
 
-
+        //SaveData - Orders 
         public bool SaveOrders()
         {
             bool saveSuccesful=false;
             List<Orders> orders = GetAllForOrders();
+            
             foreach (Orders order in orders)
             {
                 string sql = "insert into Orders (UserId, " +
-                             "BarCodeId, Date, ProductId, ProductName, ProductPerUnitPrice, OrderQuantity, OrderStatus, PaymentMethod, " +
+                             "BarCodeId, Date, ProductId, ProductName, ProductPerUnitPrice, OrderQuantity," +
+                             "OrderStatus, PaymentMethod, " +
                              "TotalAmount, CustomerFullName, CustomerPhone, CustomerEmail, CustomerAddress) " +
-                             " values (    '" + order.UserId + "', " +
-                             " '" + order.BarCodeId + "' , '" + order.Date + "' , '" + order.ProductId + "' , '" + order.ProductName + "' ,  '" + order.ProductPerUnitPrice + "' , " +
-                             " '" + order.OrderQuantity + "' , '" + order.OrderStatus + "' , '" + order.PaymentMethod + "' , '" + order.TotalAmount + "' ," +
-                             " '" + order.CustomerFullName + "' , '" + order.CustomerPhone + "' , '" + order.CustomerEmail + "' , '" + order.CustomerAddress + "') ";
-
+                             " values ('" + order.UserId + "', " +
+                             " '" + order.BarCodeId + "' , '" + order.Date + "' , '" + order.ProductId + "' ," +
+                             " '" + order.ProductName + "' ,  '" + order.ProductPerUnitPrice + "' , " +
+                             " '" + order.OrderQuantity + "' , '" + order.OrderStatus + "' , '" + order.PaymentMethod + "' ," +
+                             " '" + order.TotalAmount + "' ," +
+                             " '" + order.CustomerFullName + "' , '" + order.CustomerPhone + "' , '" + order.CustomerEmail + "' ," +
+                             " '" + order.CustomerAddress + "') ";
                 try
                 {
                     this.iDB.ExecuteDMLQuery(sql);
@@ -137,16 +133,14 @@ namespace IMS.Repository
                     break;
                 }
             }
-
             return saveSuccesful;
-
         }
 
+        //for - Orders
         public List<Orders> GetAllForOrders()
         {
             List<Orders> ordersList = new List<Orders>();
             string sql;
-
             try
             {
                 sql = @"SELECT      
@@ -175,8 +169,7 @@ namespace IMS.Repository
                             Users ON Orders.UserId = Users.UserId";
                 
             var dt = this.iDB.ExecuteQueryTable(sql);
-
-                int x = 0;
+            int x = 0;
                 while (x < dt.Rows.Count)
                 {
                     Orders o = this.ConvertToEntityForOrders(dt.Rows[x]);
@@ -185,7 +178,6 @@ namespace IMS.Repository
                 }
                 return ordersList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -199,9 +191,7 @@ namespace IMS.Repository
             {
                 return null;
             }
-
             var orders = new Orders();
-
             orders.CustomerEmail = row["CustomerEmail"].ToString();
             orders.CustomerAddress = row["CustomerAddress"].ToString(); 
             orders.CustomerPhone = row["CustomerPhone"].ToString();
@@ -223,10 +213,7 @@ namespace IMS.Repository
             orders.PaymentMethod = row["PaymentMethod"].ToString();
             //
             orders.BarCodeId = Convert.ToInt32(row["BarCodeId"].ToString());
-
             return orders;
         }
-
-
     }
 }

@@ -92,6 +92,67 @@ namespace IMS.Repository
             return users;
         }
 
+        //Load Combo for users
+        public DataTable LoadComboUsersName()
+        {
+            string sql;
+            try
+            {
+                sql = @"SELECT UserId , FirstName, LastName, Role FROM Users";
+                return this.iDB.ExecuteQueryTable(sql);
+
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+        }
+
+        public List<Users> GetUsersList()
+        {
+            DataTable dt = LoadComboUsersName();
+
+            List<Users> list = new List<Users>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                list.Add(ConvertToUsersList(row));
+            }
+
+            return list;
+        }
+
+        public int GetUsersdId(string UserFullNameWithRole)
+        {
+            List<Users> list = GetUsersList();
+
+            foreach (Users users in list)
+            {
+                if (users.FirstName == UserFullNameWithRole && users.LastName == UserFullNameWithRole && users.Role == UserFullNameWithRole)
+                {
+                    return users.UserId;
+                }
+            }
+
+            return 0;
+        }
+
+        private Users ConvertToUsersList(DataRow row)
+        {
+            if (row == null)
+            {
+                return null;
+            }
+
+            var u = new Users();
+
+            u.FirstName = row["FirstName"].ToString();
+            u.LastName = row["LastName"].ToString();
+            u.Role = row["Role"].ToString();
+            u.UserId = Convert.ToInt32(row["UserId"].ToString());
+            return u;
+        }
+
 
         //DataCount
         public bool DataExists(int id)

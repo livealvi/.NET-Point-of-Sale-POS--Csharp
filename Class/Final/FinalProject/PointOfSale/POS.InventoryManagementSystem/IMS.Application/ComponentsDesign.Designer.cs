@@ -213,7 +213,7 @@ namespace FinalPoject
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(418, 350);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Search Products";
@@ -268,7 +268,7 @@ namespace FinalPoject
             this.guna2Panel13.Controls.Add(this.guna2ControlBox3);
             this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel13.Location = new System.Drawing.Point(991, 0);
-            this.guna2Panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel13.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel13.Name = "guna2Panel13";
             this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
             this.guna2Panel13.Size = new System.Drawing.Size(140, 33);
@@ -546,7 +546,7 @@ namespace FinalPoject
             this.panel1.Controls.Add(this.guna2TextBox3);
             this.panel1.Controls.Add(this.guna2Panel22);
             this.panel1.Location = new System.Drawing.Point(31, 131);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 97);
             this.panel1.TabIndex = 29;
@@ -635,7 +635,7 @@ namespace FinalPoject
             this.guna2Panel19.Controls.Add(this.panel4);
             this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel19.Location = new System.Drawing.Point(0, 65);
-            this.guna2Panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel19.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel19.Name = "guna2Panel19";
             this.guna2Panel19.ShadowDecoration.Parent = this.guna2Panel19;
             this.guna2Panel19.Size = new System.Drawing.Size(416, 259);
@@ -726,7 +726,7 @@ namespace FinalPoject
             this.panel2.Controls.Add(this.guna2Panel3);
             this.panel2.Controls.Add(this.guna2Panel14);
             this.panel2.Location = new System.Drawing.Point(24, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(347, 49);
             this.panel2.TabIndex = 105;
@@ -815,7 +815,7 @@ namespace FinalPoject
             this.panel3.Controls.Add(this.guna2Panel27);
             this.panel3.Controls.Add(this.guna2Panel28);
             this.panel3.Location = new System.Drawing.Point(24, 53);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(347, 49);
             this.panel3.TabIndex = 106;
@@ -904,7 +904,7 @@ namespace FinalPoject
             this.panel4.Controls.Add(this.guna2Panel31);
             this.panel4.Controls.Add(this.guna2Panel32);
             this.panel4.Location = new System.Drawing.Point(24, 101);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(347, 93);
             this.panel4.TabIndex = 107;
@@ -925,7 +925,7 @@ namespace FinalPoject
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(191, 69);
             this.richTextBox1.TabIndex = 0;
@@ -1024,7 +1024,7 @@ namespace FinalPoject
             this.panel5.Controls.Add(this.guna2Panel17);
             this.panel5.Controls.Add(this.guna2Panel20);
             this.panel5.Location = new System.Drawing.Point(429, 176);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(139, 49);
             this.panel5.TabIndex = 106;
@@ -1088,7 +1088,7 @@ namespace FinalPoject
             this.Controls.Add(this.btnProductEdit);
             this.Controls.Add(this.btnProductRemove);
             this.Controls.Add(this.guna2TextBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ComponentsDesign";
             this.Text = "FormComponentsDesign";
             this.guna2PnlTopCloseMiniMax.ResumeLayout(false);

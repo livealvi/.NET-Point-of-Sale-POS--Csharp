@@ -141,6 +141,10 @@ namespace FinalPoject
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
+            this.cmbThird = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbSecond = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnCancleSearch = new Guna.UI2.WinForms.Guna2Button();
             this.label24 = new System.Windows.Forms.Label();
             this.txtSearchForSell = new Guna.UI2.WinForms.Guna2TextBox();
@@ -152,10 +156,6 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbSecond = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbThird = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1149,6 +1149,7 @@ namespace FinalPoject
             // 
             // cmbPayByUser
             // 
+            this.cmbPayByUser.Animated = true;
             this.cmbPayByUser.BackColor = System.Drawing.Color.Transparent;
             this.cmbPayByUser.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbPayByUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1159,10 +1160,6 @@ namespace FinalPoject
             this.cmbPayByUser.FormattingEnabled = true;
             this.cmbPayByUser.HoverState.Parent = this.cmbPayByUser;
             this.cmbPayByUser.ItemHeight = 30;
-            this.cmbPayByUser.Items.AddRange(new object[] {
-            "Admin",
-            "Emp",
-            "Cashier"});
             this.cmbPayByUser.ItemsAppearance.Parent = this.cmbPayByUser;
             this.cmbPayByUser.Location = new System.Drawing.Point(356, 250);
             this.cmbPayByUser.Name = "cmbPayByUser";
@@ -1813,6 +1810,90 @@ namespace FinalPoject
             this.tablePanel3.Size = new System.Drawing.Size(1622, 72);
             this.tablePanel3.TabIndex = 205;
             // 
+            // cmbThird
+            // 
+            this.cmbThird.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbThird, 11);
+            this.cmbThird.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbThird.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbThird.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbThird.FocusedState.Parent = this.cmbThird;
+            this.cmbThird.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbThird.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbThird.FormattingEnabled = true;
+            this.cmbThird.HoverState.Parent = this.cmbThird;
+            this.cmbThird.ItemHeight = 30;
+            this.cmbThird.ItemsAppearance.Parent = this.cmbThird;
+            this.cmbThird.Location = new System.Drawing.Point(1217, 18);
+            this.cmbThird.Name = "cmbThird";
+            this.tablePanel3.SetRow(this.cmbThird, 0);
+            this.cmbThird.ShadowDecoration.Parent = this.cmbThird;
+            this.cmbThird.Size = new System.Drawing.Size(162, 36);
+            this.cmbThird.TabIndex = 210;
+            // 
+            // cmbSecond
+            // 
+            this.cmbSecond.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbSecond, 12);
+            this.cmbSecond.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSecond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecond.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSecond.FocusedState.Parent = this.cmbSecond;
+            this.cmbSecond.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSecond.FormattingEnabled = true;
+            this.cmbSecond.HoverState.Parent = this.cmbSecond;
+            this.cmbSecond.ItemHeight = 30;
+            this.cmbSecond.ItemsAppearance.Parent = this.cmbSecond;
+            this.cmbSecond.Location = new System.Drawing.Point(1385, 18);
+            this.cmbSecond.Name = "cmbSecond";
+            this.tablePanel3.SetRow(this.cmbSecond, 0);
+            this.cmbSecond.ShadowDecoration.Parent = this.cmbSecond;
+            this.cmbSecond.Size = new System.Drawing.Size(183, 36);
+            this.cmbSecond.TabIndex = 209;
+            // 
+            // cmbVendor
+            // 
+            this.cmbVendor.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbVendor, 10);
+            this.cmbVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVendor.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbVendor.FocusedState.Parent = this.cmbVendor;
+            this.cmbVendor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbVendor.FormattingEnabled = true;
+            this.cmbVendor.HoverState.Parent = this.cmbVendor;
+            this.cmbVendor.ItemHeight = 30;
+            this.cmbVendor.ItemsAppearance.Parent = this.cmbVendor;
+            this.cmbVendor.Location = new System.Drawing.Point(1044, 18);
+            this.cmbVendor.Name = "cmbVendor";
+            this.tablePanel3.SetRow(this.cmbVendor, 0);
+            this.cmbVendor.ShadowDecoration.Parent = this.cmbVendor;
+            this.cmbVendor.Size = new System.Drawing.Size(167, 36);
+            this.cmbVendor.TabIndex = 208;
+            // 
+            // cmbBrand
+            // 
+            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel3.SetColumn(this.cmbBrand, 9);
+            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbBrand.FocusedState.Parent = this.cmbBrand;
+            this.cmbBrand.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbBrand.FormattingEnabled = true;
+            this.cmbBrand.HoverState.Parent = this.cmbBrand;
+            this.cmbBrand.ItemHeight = 30;
+            this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
+            this.cmbBrand.Location = new System.Drawing.Point(865, 18);
+            this.cmbBrand.Name = "cmbBrand";
+            this.tablePanel3.SetRow(this.cmbBrand, 0);
+            this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
+            this.cmbBrand.Size = new System.Drawing.Size(173, 36);
+            this.cmbBrand.TabIndex = 207;
+            // 
             // btnCancleSearch
             // 
             this.btnCancleSearch.Animated = true;
@@ -2061,90 +2142,6 @@ namespace FinalPoject
             this.btnDeleteProduct.TabIndex = 135;
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
-            // 
-            // cmbBrand
-            // 
-            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbBrand, 9);
-            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbBrand.FocusedState.Parent = this.cmbBrand;
-            this.cmbBrand.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbBrand.FormattingEnabled = true;
-            this.cmbBrand.HoverState.Parent = this.cmbBrand;
-            this.cmbBrand.ItemHeight = 30;
-            this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
-            this.cmbBrand.Location = new System.Drawing.Point(865, 18);
-            this.cmbBrand.Name = "cmbBrand";
-            this.tablePanel3.SetRow(this.cmbBrand, 0);
-            this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
-            this.cmbBrand.Size = new System.Drawing.Size(173, 36);
-            this.cmbBrand.TabIndex = 207;
-            // 
-            // cmbVendor
-            // 
-            this.cmbVendor.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbVendor, 10);
-            this.cmbVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbVendor.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbVendor.FocusedState.Parent = this.cmbVendor;
-            this.cmbVendor.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbVendor.FormattingEnabled = true;
-            this.cmbVendor.HoverState.Parent = this.cmbVendor;
-            this.cmbVendor.ItemHeight = 30;
-            this.cmbVendor.ItemsAppearance.Parent = this.cmbVendor;
-            this.cmbVendor.Location = new System.Drawing.Point(1044, 18);
-            this.cmbVendor.Name = "cmbVendor";
-            this.tablePanel3.SetRow(this.cmbVendor, 0);
-            this.cmbVendor.ShadowDecoration.Parent = this.cmbVendor;
-            this.cmbVendor.Size = new System.Drawing.Size(167, 36);
-            this.cmbVendor.TabIndex = 208;
-            // 
-            // cmbSecond
-            // 
-            this.cmbSecond.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbSecond, 12);
-            this.cmbSecond.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSecond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSecond.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbSecond.FocusedState.Parent = this.cmbSecond;
-            this.cmbSecond.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbSecond.FormattingEnabled = true;
-            this.cmbSecond.HoverState.Parent = this.cmbSecond;
-            this.cmbSecond.ItemHeight = 30;
-            this.cmbSecond.ItemsAppearance.Parent = this.cmbSecond;
-            this.cmbSecond.Location = new System.Drawing.Point(1385, 18);
-            this.cmbSecond.Name = "cmbSecond";
-            this.tablePanel3.SetRow(this.cmbSecond, 0);
-            this.cmbSecond.ShadowDecoration.Parent = this.cmbSecond;
-            this.cmbSecond.Size = new System.Drawing.Size(183, 36);
-            this.cmbSecond.TabIndex = 209;
-            // 
-            // cmbThird
-            // 
-            this.cmbThird.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbThird, 11);
-            this.cmbThird.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbThird.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbThird.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbThird.FocusedState.Parent = this.cmbThird;
-            this.cmbThird.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbThird.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbThird.FormattingEnabled = true;
-            this.cmbThird.HoverState.Parent = this.cmbThird;
-            this.cmbThird.ItemHeight = 30;
-            this.cmbThird.ItemsAppearance.Parent = this.cmbThird;
-            this.cmbThird.Location = new System.Drawing.Point(1217, 18);
-            this.cmbThird.Name = "cmbThird";
-            this.tablePanel3.SetRow(this.cmbThird, 0);
-            this.cmbThird.ShadowDecoration.Parent = this.cmbThird;
-            this.cmbThird.Size = new System.Drawing.Size(162, 36);
-            this.cmbThird.TabIndex = 210;
             // 
             // FormMakeSale
             // 
