@@ -10,7 +10,7 @@ namespace IMS.Entity
     {
         public int           ThirdCategoryId         { get; set; }
         public string        ThirdCategoryName       { get; set; }
-        public Nullable<int> SecondCategoryId        { get; set; }
+        public int SecondCategoryId        { get; set; }
         public string        ThirdCategoryDescription{ get; set; }
         public byte[]        ThirdCategoryImage      { get; set; }
 
