@@ -25,24 +25,28 @@ namespace IMS.Repository
         public List<Brands> GetAll(string key)
         {
             List<Brands> brandsList = new List<Brands>();
-            string sql;
 
+            string sql;
             try
             {
                 if (key == null)
-                    sql =
-                        @"SELECT Brands.BrandId AS BrandId, Brands.BrandTag AS BrandTag, Brands.BrandName As BrandName, Brands.BrandDescription AS BrandDisc, Brands.BrandStatus AS BrandStatus,
-                          Brands.BrandImage AS BrandImage, Vendors.VendorId AS VendorId, Vendors.VendorName AS VendorName
-                          FROM Brands
-                          LEFT JOIN Vendors
-			              ON Brands.VendorId = Vendors.VendorId;";
+                    sql = @"SELECT
+                                    Brands.BrandId AS BrandId, Brands.BrandTag AS BrandTag, Brands.BrandName As BrandName,
+                                    Brands.BrandDescription AS BrandDisc, Brands.BrandStatus AS BrandStatus,
+                                    Brands.BrandImage AS BrandImage, Vendors.VendorId AS VendorId, Vendors.VendorName AS VendorName
+                                    FROM Brands
+                                    LEFT JOIN Vendors
+			                        ON Brands.VendorId = Vendors.VendorId;";
                 else
-                    sql = @"SELECT Brands.BrandId AS BrandId, Brands.BrandTag AS BrandTag, Brands.BrandName As BrandName, Brands.BrandDescription AS BrandDisc, Brands.BrandStatus AS BrandStatus,
-                            Brands.BrandImage AS BrandImage, Vendors.VendorId AS VendorId, Vendors.VendorName AS VendorName
-                            FROM Brands
-                            LEFT JOIN Vendors
-			                ON Brands.VendorId = Vendors.VendorId
-                            where Brands.BrandName like '%" + key + "%' or Brands.BrandStatus like '%" + key + "%' or  Vendors.VendorName like '%" + key + "%'; ";
+                    sql = @"SELECT
+                                    Brands.BrandId AS BrandId, Brands.BrandTag AS BrandTag, Brands.BrandName As BrandName,
+                                    Brands.BrandDescription AS BrandDisc, Brands.BrandStatus AS BrandStatus,
+                                    Brands.BrandImage AS BrandImage, Vendors.VendorId AS VendorId, Vendors.VendorName AS VendorName
+                                    FROM Brands
+                                    LEFT JOIN Vendors
+			                        ON Brands.VendorId = Vendors.VendorId
+                                    where Brands.BrandName like '%" + key + "%' or Brands.BrandStatus like '%" + key + "%' or " + 
+                                    " Vendors.VendorName like '%" + key + "%'; ";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
 
@@ -55,7 +59,6 @@ namespace IMS.Repository
                 }
                 return brandsList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -79,7 +82,6 @@ namespace IMS.Repository
             //brand.BrandImage = Convert.ToDouble(row["pMSRP"].ToString());
             brand.VendorId = Convert.ToInt32(row["VendorId"].ToString());
             brand.VendorName = row["VendorName"].ToString();
-            
             return brand;
         }
         
@@ -91,7 +93,6 @@ namespace IMS.Repository
             {
                 sql = @"SELECT BrandId , BrandName FROM Brands";
                 return this.iDB.ExecuteQueryTable(sql);
-                
             }
             catch (Exception e)
             {
@@ -124,7 +125,6 @@ namespace IMS.Repository
                     return brand.BrandId;
                 }
             }
-
             return 0;
         }
 
@@ -136,21 +136,18 @@ namespace IMS.Repository
             }
 
             var b = new Brands();
-
             b.BrandName = row["BrandName"].ToString();
             b.BrandId = Convert.ToInt32(row["BrandId"].ToString());
             return b;
         }
 
-
-        //DataCount
+        //DataCount - DataExists
         public bool DataExists(int id)
         {
             try
             {
                 DataSet ds = iDB.ExecuteQuery("select BrandId from Brands where BrandId=" + id);
 
-                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
                 Debug.WriteLine(ds.Tables[0].Rows.Count);
 
                 if (ds.Tables[0].Rows.Count > 0)
@@ -165,14 +162,12 @@ namespace IMS.Repository
             catch (Exception e)
             {
                 Console.WriteLine(e);
-
                 throw;
-
                 return false;
             }
         }
 
-        //save
+        //save - Brands
         public bool Save(Brands br)
         {
             try
@@ -194,7 +189,7 @@ namespace IMS.Repository
             }
         }
 
-        //update
+        //update - Brands
         public bool UpdateProduct(Brands br)
         {
             try
@@ -221,17 +216,15 @@ namespace IMS.Repository
             }
         }
 
-        //delete
+        //delete - Brands
         public bool Delete(string id)
         {
             string sql;
 
             try
             {
-                
                 sql = @"delete from Brands where BrandId ='" + id + "';";
                 var dataTable = this.iDB.ExecuteDMLQuery(sql);
-
                 return true;
             }
             catch (Exception e)
@@ -241,7 +234,5 @@ namespace IMS.Repository
                 throw;
             }
         }
-
-
     }
 }
