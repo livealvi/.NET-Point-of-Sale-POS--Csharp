@@ -51,7 +51,6 @@
     <Compile Include="Orders.cs" />
     <Compile Include="OrdersProductsMap.cs" />
     <Compile Include="Products.cs" />
-    <Compile Include="Products_Categories_Map.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecondCategories.cs" />
     <Compile Include="ThirdCategories.cs" />
