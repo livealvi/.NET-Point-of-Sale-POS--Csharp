@@ -13,6 +13,7 @@ namespace IMS.Entity
         public string MainCategoryDescription { get; set; }
         public byte[] MainCategoryImage { get; set; }
 
+
         public virtual ICollection<SecondCategories> SecondCategories{ get; set; }
     }
 }
