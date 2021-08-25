@@ -14,17 +14,17 @@ namespace IMS.Repository
     {
         private InventoryDBDataAccess iDB{ get; set; }
 
-
         public MainCategoriesRepo()
         {
             this.iDB = new InventoryDBDataAccess();
         }
 
+        //view & search
         public List<MainCategories> GetAll(string key)
         {
             List<MainCategories> mainCategoriesList = new List<MainCategories>();
-            string sql;
 
+            string sql;
             try
             {
                 if (key == null)
@@ -34,6 +34,7 @@ namespace IMS.Repository
                 else
                     sql = @"SELECT MainCategories.MainCategoryId AS MainCategoryId, MainCategories.MainCategoryName AS MainCategoryName
                           FROM MainCategories
+
                           where MainCategories.MainCategoryId like '%" + key + "%' or MainCategories.MainCategoryName like '%" + key + "%' ; ";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
@@ -47,7 +48,6 @@ namespace IMS.Repository
                 }
                 return mainCategoriesList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -65,10 +65,8 @@ namespace IMS.Repository
             var mainCate = new MainCategories();
             mainCate.MainCategoryId = Convert.ToInt32(row["MainCategoryId"].ToString());
             mainCate.MainCategoryName = row["MainCategoryName"].ToString();
-            
             return mainCate;
         }
-
 
         //LoadComboBox
         public DataTable LoadComboMainCategoryName()
@@ -78,7 +76,6 @@ namespace IMS.Repository
             {
                 sql = @"SELECT MainCategoryId, MainCategoryName FROM MainCategories";
                 return this.iDB.ExecuteQueryTable(sql);
-
             }
             catch (Exception e)
             {
@@ -96,7 +93,6 @@ namespace IMS.Repository
             {
                 list.Add(ConvertToMainCateList(row));
             }
-
             return list;
         }
 
@@ -111,7 +107,6 @@ namespace IMS.Repository
                     return mc.MainCategoryId;
                 }
             }
-
             return 0;
         }
 
@@ -123,20 +118,18 @@ namespace IMS.Repository
             }
 
             var m = new MainCategories();
-
             m.MainCategoryName = row["MainCategoryName"].ToString();
             m.MainCategoryId = Convert.ToInt32(row["MainCategoryId"].ToString());
             return m;
         }
 
-        //DataCount
+        //DataCount - DataExists
         public bool DataExists(int id)
         {
             try
             {
                 DataSet ds = iDB.ExecuteQuery("select MainCategoryId from MainCategories where MainCategoryId=" + id);
 
-                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
                 Debug.WriteLine(ds.Tables[0].Rows.Count);
 
                 if (ds.Tables[0].Rows.Count > 0)
@@ -156,6 +149,7 @@ namespace IMS.Repository
             }
         }
 
+        //save - MainCategory
         public bool Save(MainCategories mc)
         {
             try
@@ -177,7 +171,7 @@ namespace IMS.Repository
             }
         }
 
-        //update
+        //update - MainCategory
         public bool UpdateProduct(MainCategories mc)
         {
             try
@@ -202,7 +196,7 @@ namespace IMS.Repository
             }
         }
 
-        //delete
+        //delete - MainCategory
         public bool Delete(string id)
         {
             string sql;
@@ -214,14 +208,12 @@ namespace IMS.Repository
 
                 return true;
             }
-
             catch (Exception e)
             {
                 Debug.WriteLine(e.ToString());
                 return false;
                 throw;
             }
-
         }
     }
 }
