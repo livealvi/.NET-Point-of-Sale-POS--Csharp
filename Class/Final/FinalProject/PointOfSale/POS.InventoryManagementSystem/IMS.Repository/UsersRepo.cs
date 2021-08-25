@@ -21,19 +21,19 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        //view & search
         public List<Users> GetAll(string key)
         {
             List<Users> usersList = new List<Users>();
             string sql;
-
             try
             {
-                if (key == null)  //
+                if (key == null)
                     sql = @"SELECT UserId, UserTag, FirstName,  LastName, Age, Gender, Role, Salary, JoinDate, Birthdate,   NID, Phone,
                           HomeTown, CurrentCity, Division, BloodGroup, PostalCode
                           FROM Users";
 
-                else //   
+                else 
                     sql = @"SELECT UserId, UserTag, FirstName, LastName, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
                           HomeTown, CurrentCity, Division, BloodGroup, PostalCode
                           FROM Users
@@ -55,7 +55,6 @@ namespace IMS.Repository
                 }
                 return usersList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -88,11 +87,10 @@ namespace IMS.Repository
             users.Division = row["Division"].ToString();
             users.BloodGroup = row["BloodGroup"].ToString();
             users.PostalCode = Convert.ToInt32(row["PostalCode"].ToString());
-
             return users;
         }
 
-        //Load Combo for users
+        //Load ComboBox
         public DataTable LoadComboUsersName()
         {
             string sql;
@@ -100,7 +98,6 @@ namespace IMS.Repository
             {
                 sql = @"SELECT UserId , FirstName, LastName, Role FROM Users";
                 return this.iDB.ExecuteQueryTable(sql);
-
             }
             catch (Exception e)
             {
@@ -133,7 +130,6 @@ namespace IMS.Repository
                     return users.UserId;
                 }
             }
-
             return 0;
         }
 
@@ -145,7 +141,6 @@ namespace IMS.Repository
             }
 
             var u = new Users();
-
             u.FirstName = row["FirstName"].ToString();
             u.LastName = row["LastName"].ToString();
             u.Role = row["Role"].ToString();
@@ -153,8 +148,7 @@ namespace IMS.Repository
             return u;
         }
 
-
-        //DataCount
+        //DataCount - DataExists
         public bool DataExists(int id)
         {
             try
@@ -181,16 +175,17 @@ namespace IMS.Repository
             }
         }
 
+        //save - user
         public bool Save(Users uc)
         {
-            try //   
+            try
             {
                 var sql = @"insert into Users (FirstName, LastName, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
-                                  HomeTown, CurrentCity, Division, BloodGroup, PostalCode)
-                                values ('" + uc.FirstName + "', '" + uc.LastName + "', '" + uc.Age + "', '" + uc.Gender + "'," +
-                          " '" + uc.Role + "', '" + uc.Salary + "', '" + uc.JoinDate + "', '" + uc.Birthdate + "',   '" + uc.NID + "'," +
-                          "'" + uc.Phone + "', '" + uc.HomeTown + "', '" + uc.CurrentCity + "', '" + uc.Division + "', '" + uc.BloodGroup + "'," +
-                          "'" + uc.PostalCode + "');";
+                                 HomeTown, CurrentCity, Division, BloodGroup, PostalCode)
+                                 values ('" + uc.FirstName + "', '" + uc.LastName + "', '" + uc.Age + "', '" + uc.Gender + "'," +
+                                 " '" + uc.Role + "', '" + uc.Salary + "', '" + uc.JoinDate + "', '" + uc.Birthdate + "',   '" + uc.NID + "'," +
+                                 " '" + uc.Phone + "', '" + uc.HomeTown + "', '" + uc.CurrentCity + "', '" + uc.Division + "', '" + uc.BloodGroup + "'," +
+                                 " '" + uc.PostalCode + "');";
 
                 var rowCount = this.iDB.ExecuteDMLQuery(sql);
 
@@ -206,7 +201,7 @@ namespace IMS.Repository
             }
         }
 
-        //update
+        //update - user
         public bool UpdateUser(Users uc)
         {
             try
@@ -238,26 +233,22 @@ namespace IMS.Repository
             }
         }
 
-        //delete
+        //delete - user
         public bool Delete(string id)
         {
             string sql;
-
             try
             {
                 sql = @"delete from Users where UserId ='" + id + "';";
                 var dataTable = this.iDB.ExecuteDMLQuery(sql);
-
                 return true;
             }
-
             catch (Exception e)
             {
                 Debug.WriteLine(e.ToString());
                 return false;
                 throw;
             }
-
         }
     }
 }
