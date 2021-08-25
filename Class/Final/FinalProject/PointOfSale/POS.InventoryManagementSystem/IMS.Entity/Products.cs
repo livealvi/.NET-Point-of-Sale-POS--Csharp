@@ -11,17 +11,17 @@ namespace IMS.Entity
         public int              ProductId             { get; set; }
         public string           ProductIdTag          { get; set; }
         public string           ProductName           { get; set; }
-        public Nullable<int>    BrandId               { get; set; }
+        public int  BrandId               { get; set; }
         public string           ProductDescription    { get; set; }
-        public Nullable<double> ProductQuantityPerUnit{ get; set; }
-        public Nullable<double> ProductPerUnitPrice   { get; set; }
-        public Nullable<double> ProductMSRP           { get; set; }
+        public double ProductQuantityPerUnit{ get; set; }
+        public double ProductPerUnitPrice   { get; set; }
+        public double ProductMSRP           { get; set; }
         public string           ProductStatus         { get; set; }
-        public Nullable<double> ProductDiscountRate   { get; set; }
-        public Nullable<double> ProductSize           { get; set; }
+        public double ProductDiscountRate   { get; set; }
+        public double ProductSize           { get; set; }
         public string           ProductColor          { get; set; }
        // public byte[]           ProductPictures       { get; set; }
-        public Nullable<double> ProductWeight         { get; set; }
+        public double ProductWeight         { get; set; }
         public int           ProductUnitStock      { get; set; }
 
         //outside
@@ -32,7 +32,5 @@ namespace IMS.Entity
         public string MainCategoryName  { get; set; }
 
         public virtual Brands Brand{ get; set; }
-        public virtual ICollection<Products_Categories_Map> Products_Categories_Map{ get; set; }
-
     }
 }

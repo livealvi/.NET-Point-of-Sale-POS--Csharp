@@ -17,8 +17,7 @@ namespace IMS.Entity
         //OutSide
         public string MainCategoryName{get; set;}
 
-        public virtual MainCategories MainCategory{ get; set; }
-        public virtual ICollection<Products_Categories_Map> Products_Categories_Map{ get; set; }
+        public virtual MainCategories               MainCategory   { get; set; }
         public virtual ICollection<ThirdCategories> ThirdCategories{ get; set; }
 
     }

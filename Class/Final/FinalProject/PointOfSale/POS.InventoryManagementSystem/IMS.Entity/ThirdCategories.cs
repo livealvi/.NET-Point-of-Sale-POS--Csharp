@@ -17,7 +17,6 @@ namespace IMS.Entity
         //OutSide
         public string SecondCategoryName{get; set;}
 
-        public virtual ICollection<Products_Categories_Map> Products_Categories_Map{ get; set; }
         public virtual SecondCategories SecondCategory{ get;                                set; }
         public virtual ICollection<Vendors> Vendors{ get; set; }
     }

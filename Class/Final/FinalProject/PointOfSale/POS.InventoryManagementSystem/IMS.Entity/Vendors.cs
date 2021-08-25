@@ -19,8 +19,7 @@ namespace IMS.Entity
         //Outside
         public string ThirdCategoryName{ get; set; }
 
-        public virtual ICollection<Brands> Brands{ get; set; }
-        public virtual ICollection<Products_Categories_Map> Products_Categories_Map{ get; set; }
-        public virtual ThirdCategories ThirdCategory{ get;                                  set; }
+        public virtual ICollection<Brands> Brands       { get; set; }
+        public virtual ThirdCategories     ThirdCategory{ get; set; }
     }
 }
