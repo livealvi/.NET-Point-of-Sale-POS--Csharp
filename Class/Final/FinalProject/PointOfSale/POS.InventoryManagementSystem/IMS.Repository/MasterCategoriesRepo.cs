@@ -9,7 +9,6 @@ using IMS.Entity;
 
 namespace IMS.Repository
 {
-    
     public class MasterCategoriesRepo
     {
         private InventoryDBDataAccess iDB{ get; set; }
@@ -22,49 +21,51 @@ namespace IMS.Repository
         public List<Products> GetAll(string key)
         {
             List<Products> productsList = new List<Products>();
+
             string sql;
             try
             {
                 if (key == null)
-                    sql = @"SELECT        Products.ProductName AS ProductName, Brands.BrandName AS BrandName,
-                    Vendors.VendorName AS VendorName, ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
-                    SecondCategories.SecondCategoryName AS SecondCategoryName,
-                    MainCategories.MainCategoryName AS MainCategoryName
-                    FROM            Products
-					left join Brands 
-					 Brands ON Products.BrandId = Brands.BrandId 
-					 left join Vendors
-                         Vendors ON Brands.VendorId = Vendors.VendorId
-						 left join ThirdCategories
-                         ThirdCategories ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId
-						 left join SecondCategories
-                         SecondCategories ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId
-						 left join MainCategories
-                         MainCategories ON SecondCategories.MainCategoryId = MainCategories.MainCategoryId";
+                    sql = @"SELECT
+                                    Products.ProductName AS ProductName, Brands.BrandName AS BrandName,
+                                    Vendors.VendorName AS VendorName, ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
+                                    SecondCategories.SecondCategoryName AS SecondCategoryName,
+                                    MainCategories.MainCategoryName AS MainCategoryName
+                                    FROM Products
+					                left join Brands 
+					                Brands ON Products.BrandId = Brands.BrandId 
+					                left join Vendors
+                                    Vendors ON Brands.VendorId = Vendors.VendorId
+						            left join ThirdCategories
+                                    ThirdCategories ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId
+						            left join SecondCategories
+                                    SecondCategories ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId
+						            left join MainCategories
+                                    MainCategories ON SecondCategories.MainCategoryId = MainCategories.MainCategoryId";
 
                 else
-                    sql = @"SELECT        Products.ProductName AS ProductName, Brands.BrandName AS BrandName,
-                    Vendors.VendorName AS VendorName, ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
-                    SecondCategories.SecondCategoryName AS SecondCategoryName,
-                    MainCategories.MainCategoryName AS MainCategoryName
-                    FROM            Products
-					left join Brands 
-					 Brands ON Products.BrandId = Brands.BrandId 
-					 left join Vendors
-                         Vendors ON Brands.VendorId = Vendors.VendorId
-						 left join ThirdCategories
-                         ThirdCategories ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId
-						 left join SecondCategories
-                         SecondCategories ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId
-						 left join MainCategories
-                         MainCategories ON SecondCategories.MainCategoryId = MainCategories.MainCategoryId
+                    sql = @"SELECT
+                                    Products.ProductName AS ProductName, Brands.BrandName AS BrandName,
+                                    Vendors.VendorName AS VendorName, ThirdCategories.ThirdCategoryName AS ThirdCategoryName,
+                                    SecondCategories.SecondCategoryName AS SecondCategoryName,
+                                    MainCategories.MainCategoryName AS MainCategoryName
+                                    FROM Products
+					                left join Brands 
+					                Brands ON Products.BrandId = Brands.BrandId 
+					                left join Vendors
+                                    Vendors ON Brands.VendorId = Vendors.VendorId
+						            left join ThirdCategories
+                                    ThirdCategories ON Vendors.ThirdCategoryId = ThirdCategories.ThirdCategoryId
+						            left join SecondCategories
+                                    SecondCategories ON ThirdCategories.SecondCategoryId = SecondCategories.SecondCategoryId
+						            left join MainCategories
+                                    MainCategories ON SecondCategories.MainCategoryId = MainCategories.MainCategoryId
 
-				  where Products.ProductName like '%" + key + "%' or Brands.BrandName like '%" + key + "%' or   Vendors.VendorName like '%" + key + "%' " +
-                          " or ThirdCategories.ThirdCategoryName like '%" + key + "%' or SecondCategories.SecondCategoryName like '%" + key + "%' " +
-                          " or  ThirdCategories.ThirdCategoryName like '%" + key + "%' or  MainCategories.MainCategoryName like '%" + key + "%';";
+				                    where Products.ProductName like '%" + key + "%' or Brands.BrandName like '%" + key + "%' or   Vendors.VendorName like '%" + key + "%' " +
+                                    " or ThirdCategories.ThirdCategoryName like '%" + key + "%' or SecondCategories.SecondCategoryName like '%" + key + "%' " +
+                                    " or  ThirdCategories.ThirdCategoryName like '%" + key + "%' or  MainCategories.MainCategoryName like '%" + key + "%';";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
-
 
                 int x = 0;
                 while (x < dt.Rows.Count)
@@ -75,7 +76,6 @@ namespace IMS.Repository
                 }
                 return productsList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -99,7 +99,5 @@ namespace IMS.Repository
             products.MainCategoryName = row["MainCategoryName"].ToString();
             return products;
         }
-
-       
     }
 }
