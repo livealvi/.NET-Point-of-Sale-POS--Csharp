@@ -42,10 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BarCodes.cs" />
-    <Compile Include="Bloods.cs" />
     <Compile Include="Brands.cs" />
     <Compile Include="Customers.cs" />
-    <Compile Include="Divisions.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="MainCategories.cs" />
     <Compile Include="Orders.cs" />

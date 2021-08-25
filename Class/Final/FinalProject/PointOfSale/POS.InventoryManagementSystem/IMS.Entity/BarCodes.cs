@@ -10,7 +10,6 @@ namespace IMS.Entity
     {
         public int    BarCodeId{ get; set; }
         public string BarCode1 { get; set; }
-        //public string BarCode1 { get; set; }
 
         public virtual ICollection<Orders> Orders{ get; set; }
     }
