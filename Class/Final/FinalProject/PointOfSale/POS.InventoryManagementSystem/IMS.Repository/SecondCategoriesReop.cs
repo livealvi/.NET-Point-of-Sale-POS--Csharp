@@ -19,11 +19,12 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        // view & search
         public List<SecondCategories> GetAll(string key)
         {
             List<SecondCategories> secondCategoriesList = new List<SecondCategories>();
-            string sql;
 
+            string sql;
             try
             {
                 if (key == null)
@@ -54,7 +55,6 @@ namespace IMS.Repository
                 }
                 return secondCategoriesList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -74,7 +74,6 @@ namespace IMS.Repository
             secCate.SecondCategoryName = row["SecondCategoryName"].ToString();
             secCate.MainCategoryId = Convert.ToInt32(row["MainCategoryId"].ToString());
             secCate.MainCategoryName = row["MainCategoryName"].ToString();
-
             return secCate;
         }
 
@@ -86,7 +85,6 @@ namespace IMS.Repository
             {
                 sql = @"SELECT SecondCategoryId, SecondCategoryName FROM SecondCategories";
                 return this.iDB.ExecuteQueryTable(sql);
-
             }
             catch (Exception e)
             {
@@ -104,7 +102,6 @@ namespace IMS.Repository
             {
                 list.Add(ConvertToSecondCateList(row));
             }
-
             return list;
         }
 
@@ -119,7 +116,6 @@ namespace IMS.Repository
                     return sc.SecondCategoryId;
                 }
             }
-
             return 0;
         }
 
@@ -131,20 +127,18 @@ namespace IMS.Repository
             }
 
             var s = new SecondCategories();
-
             s.SecondCategoryName = row["SecondCategoryName"].ToString();
             s.SecondCategoryId = Convert.ToInt32(row["SecondCategoryId"].ToString());
             return s;
         }
 
-        //DataCount
+        //DataCount - DataExists
         public bool DataExists(int id)
         {
             try
             {
                 DataSet ds = iDB.ExecuteQuery("select SecondCategoryId from SecondCategories where SecondCategoryId=" + id);
 
-                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
                 Debug.WriteLine(ds.Tables[0].Rows.Count);
 
                 if (ds.Tables[0].Rows.Count > 0)
@@ -166,6 +160,7 @@ namespace IMS.Repository
             }
         }
 
+        //save - SecondCategory
         public bool Save(SecondCategories sc)
         {
             try
@@ -187,7 +182,7 @@ namespace IMS.Repository
             }
         }
 
-        //update
+        //update - SecondCategory
         public bool UpdateProduct(SecondCategories thc)
         {
             try
@@ -212,7 +207,7 @@ namespace IMS.Repository
             }
         }
 
-        //delete
+        //delete - SecondCategory
         public bool Delete(string id)
         {
             string sql;
@@ -221,7 +216,6 @@ namespace IMS.Repository
             {
                 sql = @"delete from SecondCategories where SecondCategoryId ='" + id + "';";
                 var dataTable = this.iDB.ExecuteDMLQuery(sql);
-
                 return true;
             }
 
@@ -229,11 +223,8 @@ namespace IMS.Repository
             {
                 Debug.WriteLine(e.ToString());
                 return false;
-
                 throw;
             }
-
         }
-
     }
 }
