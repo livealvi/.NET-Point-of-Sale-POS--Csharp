@@ -23,8 +23,8 @@ namespace IMS.Repository
         public List<ThirdCategories> GetAll(string key)
         {
             List<ThirdCategories> thirdCategoriesList = new List<ThirdCategories>();
-            string sql;
 
+            string sql;
             try
             {
                 if (key == null)
@@ -55,7 +55,6 @@ namespace IMS.Repository
                 }
                 return thirdCategoriesList;
             }
-
             catch (Exception e)
             {
                 return null;
@@ -73,13 +72,10 @@ namespace IMS.Repository
             var thirdCate = new ThirdCategories();
             thirdCate.ThirdCategoryId = Convert.ToInt32(row["ThirdCategoryId"].ToString());
             thirdCate.ThirdCategoryName = row["ThirdCategoryName"].ToString();
-            //vendor.VendorImage = Convert.ToDouble(row["VendorImage"].ToString());
             thirdCate.SecondCategoryId = Convert.ToInt32(row["SecondCategoryId"].ToString());
             thirdCate.SecondCategoryName = row["SecondCategoryName"].ToString();
-
             return thirdCate;
         }
-
 
         //LoadComboBox
         public DataTable LoadComboThirdCategoryName()
@@ -131,13 +127,11 @@ namespace IMS.Repository
                         return thirdCate.ThirdCategoryId;
                     }
                 }
-
                 return 0;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-
                 throw;
             }
         }
@@ -152,7 +146,6 @@ namespace IMS.Repository
                 }
 
                 var thC = new ThirdCategories();
-
                 thC.ThirdCategoryName = row["ThirdCategoryName"].ToString();
                 thC.ThirdCategoryId = Convert.ToInt32(row["ThirdCategoryId"].ToString());
                 return thC;
@@ -165,15 +158,12 @@ namespace IMS.Repository
             }
         }
 
-        //DataCount
+        //DataCount - DataExists
         public bool DataExists(int id)
         {
             try
             {
                 DataSet ds = iDB.ExecuteQuery("select ThirdCategoryId from ThirdCategories where ThirdCategoryId=" + id);
-
-                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
-                Debug.WriteLine(ds.Tables[0].Rows.Count);
 
                 if (ds.Tables[0].Rows.Count > 0)
                 {
@@ -187,14 +177,12 @@ namespace IMS.Repository
             catch (Exception e)
             {
                 Console.WriteLine(e);
-
                 throw;
-
                 return false;
             }
         }
 
-        //save
+        //save - ThirdCategory
         public bool Save(ThirdCategories thc)
         {
             try
@@ -216,7 +204,7 @@ namespace IMS.Repository
             }
         }
 
-        //update
+        //update - ThirdCategory
         public bool UpdateProduct(ThirdCategories thc)
         {
             try
@@ -241,8 +229,7 @@ namespace IMS.Repository
             }
         }
 
-
-        //delete
+        //delete - ThirdCategory
         public bool Delete(string id)
         {
             string sql;
@@ -251,7 +238,6 @@ namespace IMS.Repository
             {
                 sql = @"delete from ThirdCategories where ThirdCategoryId ='" + id + "';";
                 var dataTable = this.iDB.ExecuteDMLQuery(sql);
-
                 return true;
             }
 
@@ -259,7 +245,6 @@ namespace IMS.Repository
             {
                 Debug.WriteLine(e.ToString());
                 return false;
-
                 throw;
             }
 
