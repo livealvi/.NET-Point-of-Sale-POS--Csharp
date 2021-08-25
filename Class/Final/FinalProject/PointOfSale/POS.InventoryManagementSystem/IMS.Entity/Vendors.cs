@@ -11,7 +11,7 @@ namespace IMS.Entity
         public int           VendorId         { get; set; }
         public string        VendorTag        { get; set; }
         public string        VendorName       { get; set; }
-        public Nullable<int> ThirdCategoryId  { get; set; }
+        public int ThirdCategoryId  { get; set; }
         public string        VendorDescription{ get; set; }
         public string        VendorStatus       { get; set; }
         public byte[]        VendorImage      { get; set; }
