@@ -41,18 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BarCodes.cs" />
-    <Compile Include="Brands.cs" />
-    <Compile Include="Customers.cs" />
-    <Compile Include="Users.cs" />
-    <Compile Include="MainCategories.cs" />
-    <Compile Include="Orders.cs" />
-    <Compile Include="OrdersProductsMap.cs" />
-    <Compile Include="Products.cs" />
+    <Compile Include="InventoryProducts\BarCodes\BarCodes.cs" />
+    <Compile Include="InventoryProducts\Categories\Brands.cs" />
+    <Compile Include="InventoryProducts\Users\Users.cs" />
+    <Compile Include="InventoryProducts\Categories\MainCategories.cs" />
+    <Compile Include="InventoryProducts\Orders\Orders.cs" />
+    <Compile Include="InventoryProducts\Orders\OrdersProductsMap.cs" />
+    <Compile Include="InventoryProducts\Products\Products.cs" />
+    <Compile Include="InventoryUsers\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecondCategories.cs" />
-    <Compile Include="ThirdCategories.cs" />
-    <Compile Include="Vendors.cs" />
+    <Compile Include="InventoryProducts\Categories\SecondCategories.cs" />
+    <Compile Include="InventoryProducts\Categories\ThirdCategories.cs" />
+    <Compile Include="InventoryProducts\Categories\Vendors.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

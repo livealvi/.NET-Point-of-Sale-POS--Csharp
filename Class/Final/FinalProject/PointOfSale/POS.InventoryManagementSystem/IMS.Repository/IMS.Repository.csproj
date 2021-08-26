@@ -41,16 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrandsRepo.cs" />
-    <Compile Include="MainCategoriesRepo.cs" />
-    <Compile Include="MakeSalesRepo.cs" />
-    <Compile Include="MasterCategoriesRepo.cs" />
-    <Compile Include="ProductsRepo.cs" />
+    <Compile Include="InventoryProducts\Categories\BrandsRepo.cs" />
+    <Compile Include="InventoryProducts\Categories\MainCategoriesRepo.cs" />
+    <Compile Include="InventoryProducts\Orders\OrdersRepo.cs" />
+    <Compile Include="InventoryProducts\Categories\MasterCategoriesRepo.cs" />
+    <Compile Include="InventoryProducts\Products\ProductsRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecondCategoriesReop.cs" />
-    <Compile Include="ThirdCategoriesRepo.cs" />
-    <Compile Include="UsersRepo.cs" />
-    <Compile Include="VendorsRepo.cs" />
+    <Compile Include="InventoryProducts\Categories\SecondCategoriesReop.cs" />
+    <Compile Include="InventoryProducts\Categories\ThirdCategoriesRepo.cs" />
+    <Compile Include="InventoryProducts\Users\UsersRepo.cs" />
+    <Compile Include="InventoryProducts\Categories\VendorsRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IMS.DataAccess\IMS.DataAccess.csproj">
@@ -65,6 +65,9 @@
       <Project>{2db543f6-afb8-40ca-b0ea-39f18f0a9cc4}</Project>
       <Name>IMS.Framework</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InventoryUsers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

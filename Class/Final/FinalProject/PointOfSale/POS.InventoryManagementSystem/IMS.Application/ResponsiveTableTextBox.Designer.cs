@@ -46,12 +46,12 @@ namespace FinalPoject
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtTag = new Guna.UI2.WinForms.Guna2TextBox();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
+            this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddMainCate = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddVendor = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddBrandCate = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddSecondCate = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddThirdCate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
@@ -499,6 +499,34 @@ namespace FinalPoject
             this.tablePanel3.Size = new System.Drawing.Size(1374, 67);
             this.tablePanel3.TabIndex = 198;
             // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddProduct.Animated = true;
+            this.btnAddProduct.CheckedState.Parent = this.btnAddProduct;
+            this.tablePanel3.SetColumn(this.btnAddProduct, 11);
+            this.btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddProduct.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnAddProduct.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddProduct.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddProduct.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnAddProduct.CustomImages.Parent = this.btnAddProduct;
+            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnAddProduct.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddProduct.HoverState.Parent = this.btnAddProduct;
+            this.btnAddProduct.Location = new System.Drawing.Point(1164, 16);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.tablePanel3.SetRow(this.btnAddProduct, 0);
+            this.btnAddProduct.ShadowDecoration.Parent = this.btnAddProduct;
+            this.btnAddProduct.Size = new System.Drawing.Size(171, 35);
+            this.btnAddProduct.TabIndex = 199;
+            this.btnAddProduct.Text = "Add - Products";
+            this.btnAddProduct.TextOffset = new System.Drawing.Point(8, 0);
+            // 
             // btnAddMainCate
             // 
             this.btnAddMainCate.Animated = true;
@@ -634,34 +662,6 @@ namespace FinalPoject
             this.btnAddThirdCate.TabIndex = 165;
             this.btnAddThirdCate.Text = "Add - Third Categories";
             this.btnAddThirdCate.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // btnAddProduct
-            // 
-            this.btnAddProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddProduct.Animated = true;
-            this.btnAddProduct.CheckedState.Parent = this.btnAddProduct;
-            this.tablePanel3.SetColumn(this.btnAddProduct, 11);
-            this.btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddProduct.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddProduct.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnAddProduct.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddProduct.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnAddProduct.CustomImages.Parent = this.btnAddProduct;
-            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddProduct.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnAddProduct.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProduct.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduct.HoverState.Parent = this.btnAddProduct;
-            this.btnAddProduct.Location = new System.Drawing.Point(1164, 16);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.tablePanel3.SetRow(this.btnAddProduct, 0);
-            this.btnAddProduct.ShadowDecoration.Parent = this.btnAddProduct;
-            this.btnAddProduct.Size = new System.Drawing.Size(171, 35);
-            this.btnAddProduct.TabIndex = 199;
-            this.btnAddProduct.Text = "Add - Products";
-            this.btnAddProduct.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // ResponsiveTableTextBox
             // 

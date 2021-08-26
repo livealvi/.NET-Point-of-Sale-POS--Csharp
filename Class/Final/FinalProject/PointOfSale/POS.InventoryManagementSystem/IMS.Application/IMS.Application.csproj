@@ -120,46 +120,58 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddProduct.cs">
+    <Compile Include="UserInterface\Dashboard\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddProduct.Designer.cs">
+    <Compile Include="UserInterface\Dashboard\FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Dashboard\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Dashboard\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Products\FormAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Products\FormAddProduct.Designer.cs">
       <DependentUpon>FormAddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBrand.cs">
+    <Compile Include="UserInterface\Categories\FormBrand.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBrand.Designer.cs">
+    <Compile Include="UserInterface\Categories\FormBrand.Designer.cs">
       <DependentUpon>FormBrand.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMainCategory.cs">
+    <Compile Include="UserInterface\Categories\FormMainCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMainCategory.Designer.cs">
+    <Compile Include="UserInterface\Categories\FormMainCategory.Designer.cs">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMakeSale.cs">
+    <Compile Include="UserInterface\Orders\FormMakeSale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMakeSale.Designer.cs">
+    <Compile Include="UserInterface\Orders\FormMakeSale.Designer.cs">
       <DependentUpon>FormMakeSale.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSellsHistory.cs">
+    <Compile Include="UserInterface\Orders\FormSellsHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSellsHistory.Designer.cs">
+    <Compile Include="UserInterface\Orders\FormSellsHistory.Designer.cs">
       <DependentUpon>FormSellsHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormThirdCategory.cs">
+    <Compile Include="UserInterface\Categories\FormThirdCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormThirdCategory.Designer.cs">
+    <Compile Include="UserInterface\Categories\FormThirdCategory.Designer.cs">
       <DependentUpon>FormThirdCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVendor.cs">
+    <Compile Include="UserInterface\Categories\FormVendor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVendor.Designer.cs">
+    <Compile Include="UserInterface\Categories\FormVendor.Designer.cs">
       <DependentUpon>FormVendor.cs</DependentUpon>
     </Compile>
     <Compile Include="ResponsiveTableTextBox.cs">
@@ -174,16 +186,16 @@
     <Compile Include="ComponentsDesign.Designer.cs">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMasterCategory.cs">
+    <Compile Include="UserInterface\Categories\FormMasterCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMasterCategory.Designer.cs">
+    <Compile Include="UserInterface\Categories\FormMasterCategory.Designer.cs">
       <DependentUpon>FormMasterCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUser.cs">
+    <Compile Include="UserInterface\Users\FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUser.Designer.cs">
+    <Compile Include="UserInterface\Users\FormUser.Designer.cs">
       <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStart.cs">
@@ -194,34 +206,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FormSecondCategory.cs">
+    <Compile Include="UserInterface\Categories\FormSecondCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSecondCategory.Designer.cs">
+    <Compile Include="UserInterface\Categories\FormSecondCategory.Designer.cs">
       <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddProduct.resx">
+    <EmbeddedResource Include="UserInterface\Dashboard\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\Products\FormAddProduct.resx">
       <DependentUpon>FormAddProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBrand.resx">
+    <EmbeddedResource Include="UserInterface\Categories\FormBrand.resx">
       <DependentUpon>FormBrand.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMainCategory.resx">
+    <EmbeddedResource Include="UserInterface\Categories\FormMainCategory.resx">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMakeSale.resx">
+    <EmbeddedResource Include="UserInterface\Orders\FormMakeSale.resx">
       <DependentUpon>FormMakeSale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSellsHistory.resx">
+    <EmbeddedResource Include="UserInterface\Orders\FormSellsHistory.resx">
       <DependentUpon>FormSellsHistory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormThirdCategory.resx">
+    <EmbeddedResource Include="UserInterface\Categories\FormThirdCategory.resx">
       <DependentUpon>FormThirdCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVendor.resx">
+    <EmbeddedResource Include="UserInterface\Categories\FormVendor.resx">
       <DependentUpon>FormVendor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -231,10 +246,10 @@
     <EmbeddedResource Include="ComponentsDesign.resx">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMasterCategory.resx">
+    <EmbeddedResource Include="UserInterface\Categories\FormMasterCategory.resx">
       <DependentUpon>FormMasterCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUser.resx">
+    <EmbeddedResource Include="UserInterface\Users\FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStart.resx">
@@ -244,7 +259,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSecondCategory.resx">
+    <EmbeddedResource Include="UserInterface\Categories\FormSecondCategory.resx">
       <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -316,6 +331,10 @@
     <None Include="Resources\icons8_shopping_cart_96px_1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8_restart_96px.png" />
+    <None Include="Resources\icons8_restart_96px_1.png" />
+    <None Include="Resources\icons8_delete_480px_2.png" />
+    <None Include="Resources\icons8_delete_480px_3.png" />
     <None Include="Resources\icons8_search_480px.png" />
     <None Include="Resources\icons8_remove_image_480px.png" />
     <None Include="Resources\icons8_remove_image_480px_1.png" />
@@ -330,6 +349,9 @@
     <None Include="Resources\icons8_waste_96px_2.png" />
     <None Include="Resources\icons8_no_image_480px_2.png" />
     <None Include="Resources\icons8_add_camera_480px.png" />
+    <None Include="Resources\icons8_clear_search_480px.png" />
+    <None Include="Resources\icons8_clear_search_480px_1.png" />
+    <None Include="Resources\icons8_available_updates_96px.png" />
     <Content Include="Resources\icons8_delete_480px_1.png" />
     <None Include="Resources\icons8_image_480px.png" />
   </ItemGroup>
@@ -363,5 +385,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
