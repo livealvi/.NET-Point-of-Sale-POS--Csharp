@@ -156,6 +156,7 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -223,6 +224,7 @@ namespace FinalPoject
             this.pnlOrderSelect.BorderColor = System.Drawing.Color.Silver;
             this.pnlOrderSelect.BorderRadius = 12;
             this.pnlOrderSelect.BorderThickness = 1;
+            this.pnlOrderSelect.Controls.Add(this.comboBox1);
             this.pnlOrderSelect.Controls.Add(this.guna2Panel6);
             this.pnlOrderSelect.CustomBorderColor = System.Drawing.Color.Silver;
             this.pnlOrderSelect.Dock = System.Windows.Forms.DockStyle.Top;
@@ -660,7 +662,6 @@ namespace FinalPoject
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Visible = false;
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
             // dataGridViewTextBoxColumn9
@@ -1830,6 +1831,7 @@ namespace FinalPoject
             this.cmbThird.ShadowDecoration.Parent = this.cmbThird;
             this.cmbThird.Size = new System.Drawing.Size(162, 36);
             this.cmbThird.TabIndex = 210;
+            this.cmbThird.SelectedIndexChanged += new System.EventHandler(this.cmbThird_SelectedIndexChanged);
             // 
             // cmbSecond
             // 
@@ -2143,6 +2145,15 @@ namespace FinalPoject
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(854, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // FormMakeSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2302,6 +2313,10 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn VendorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn SecondCategoryName;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbThird;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSecond;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbVendor;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbBrand;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -2314,9 +2329,6 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbThird;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbSecond;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbVendor;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbBrand;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

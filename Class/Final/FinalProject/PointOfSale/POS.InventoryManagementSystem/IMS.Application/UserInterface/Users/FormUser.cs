@@ -34,9 +34,10 @@ namespace FinalPoject
         public void RefreshContent()
         {
             this.txtId.Clear();
-            this.txtTag.Clear();
+            this.txtUserId.Clear();
             this.txtFirstName.Clear();
-            //
+            this.txtPassword.Clear();
+            this.txtEmail.Clear();
             this.txtLastName.Clear();
             this.txtAge.Clear();
             this.cmbGender.SelectedIndex = 0;
@@ -57,7 +58,6 @@ namespace FinalPoject
             this.PopulateGridView();
         }
 
-
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -71,10 +71,12 @@ namespace FinalPoject
 
         private void dgvUser_DoubleClick(object sender, EventArgs e)
         {
-            this.txtId.Text = this.dgvUser.CurrentRow.Cells["UserId"].Value.ToString();
-            this.txtTag.Text = this.dgvUser.CurrentRow.Cells["UserTag"].Value.ToString();
+            this.txtId.Text = this.dgvUser.CurrentRow.Cells["Id"].Value.ToString();
             this.txtFirstName.Text = this.dgvUser.CurrentRow.Cells["FirstName"].Value.ToString();
             this.txtLastName.Text = this.dgvUser.CurrentRow.Cells["LastName"].Value.ToString();
+            this.txtUserId.Text = this.dgvUser.CurrentRow.Cells["UserId"].Value.ToString();
+            this.txtPassword.Text = this.dgvUser.CurrentRow.Cells["Password"].Value.ToString();
+            this.txtEmail.Text = this.dgvUser.CurrentRow.Cells["Email"].Value.ToString();
             this.txtAge.Text = this.dgvUser.CurrentRow.Cells["Age"].Value.ToString();
             this.cmbGender.Text = this.dgvUser.CurrentRow.Cells["Gender"].Value.ToString();
             this.cmbRole.Text = this.dgvUser.CurrentRow.Cells["Role"].Value.ToString();
@@ -102,24 +104,26 @@ namespace FinalPoject
 
             if (this.txtId.Text == "")
             {
-                users.UserId = 0;
+                users.Id = 0;
             }
             else
             {
-                users.UserId = Convert.ToInt32(this.txtId.Text);
+                users.Id = Convert.ToInt32(this.txtId.Text);
             }
 
             users.FirstName = this.txtFirstName.Text;
             users.LastName = this.txtLastName.Text;
+            users.Password = this.txtPassword.Text;
+            users.Email = this.txtEmail.Text;
             users.Age = Convert.ToInt32(this.txtAge.Text);
             users.Gender = cmbGender.Text;
             users.Role = cmbRole.Text;
             users.Salary = Convert.ToDouble(txtSalary.Text);
             users.JoinDate = Convert.ToDateTime(Convert.ToDateTime(dtpJoinDate.Value).ToString("yyyy-MM-dd"));
             users.Birthdate = Convert.ToDateTime(Convert.ToDateTime(dtpBirthDate.Value).ToString("yyyy-MM-dd"));
-            users.NID = txtNID.Text; ;
-            users.Phone = txtPhone.Text; ;
-            users.HomeTown = txtHomeTown.Text; ;
+            users.NID = txtNID.Text; 
+            users.Phone = txtPhone.Text; 
+            users.HomeTown = txtHomeTown.Text; 
             users.CurrentCity = txtCurrentCity.Text;
             users.Division = cmbDivision.Text;
             users.BloodGroup = cmbBlood.Text;
@@ -139,7 +143,7 @@ namespace FinalPoject
                     return;
                 }
 
-                var decision = this.usersRepo.DataExists(ucObj.UserId);
+                var decision = this.usersRepo.DataExists(ucObj.Id);
 
                 if (decision)
                 {
@@ -182,7 +186,7 @@ namespace FinalPoject
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            var id = this.dgvUser.CurrentRow.Cells["UserId"].Value.ToString();
+            var id = this.dgvUser.CurrentRow.Cells["Id"].Value.ToString();
             var Fname = this.dgvUser.CurrentRow.Cells["FirstName"].Value.ToString();
             var Lname = this.dgvUser.CurrentRow.Cells["LastName"].Value.ToString();
 

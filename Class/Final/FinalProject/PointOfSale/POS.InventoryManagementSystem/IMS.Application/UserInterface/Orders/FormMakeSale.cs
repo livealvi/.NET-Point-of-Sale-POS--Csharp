@@ -34,6 +34,8 @@ namespace FinalPoject
             this.brandRepo = new BrandsRepo();
             this.usersRepo = new UsersRepo();
             InitiateDgvcart();
+
+            this.ThirdCategoryIdToName();
         }
 
 
@@ -69,7 +71,7 @@ namespace FinalPoject
             this.dgvSearchProduct.DataSource = this.makeSalesRepo.GetAll(searchKey);
             this.dgvSearchProduct.ClearSelection();
             this.SecondCategoryIdToName();
-            this.ThirdCategoryIdToName();
+            //this.ThirdCategoryIdToName();
             this.BrandIdToName();
             this.VendorIdToName();
             this.UsersIdToName();
@@ -92,7 +94,6 @@ namespace FinalPoject
             this.txtDiscount.Text = this.dgvSearchProduct.CurrentRow.Cells["ProductDiscountRate"].Value.ToString();
             this.txtProductMSRP.Text= this.dgvSearchProduct.CurrentRow.Cells["ProductMSRP"].Value.ToString();
             this.txtBrand.Text = this.dgvSearchProduct.CurrentRow.Cells["BrandName"].Value.ToString();
-
         }
 
         void UpdatePrice()
@@ -115,11 +116,13 @@ namespace FinalPoject
             row["ProductId"] = dgvSearchProduct.SelectedRows[0].Cells[0].Value.ToString();
             row["ProductIdTag"] = dgvSearchProduct.SelectedRows[0].Cells[1].Value.ToString();
             row["ProductName"] = dgvSearchProduct.SelectedRows[0].Cells[2].Value.ToString();
-            row["ProductUnitStock"] = dgvSearchProduct.SelectedRows[0].Cells[3].Value.ToString();
-            row["ProductPerUnitPrice"] = dgvSearchProduct.SelectedRows[0].Cells[4].Value.ToString();
-            row["ProductDiscountRate"] = dgvSearchProduct.SelectedRows[0].Cells[5].Value.ToString();
+            row["BrandName"] = dgvSearchProduct.SelectedRows[0].Cells[3].Value.ToString();
+            row["ProductUnitStock"] = dgvSearchProduct.SelectedRows[0].Cells[5].Value.ToString();
             row["ProductMSRP"] = dgvSearchProduct.SelectedRows[0].Cells[6].Value.ToString();
-            row["BrandName"] = dgvSearchProduct.SelectedRows[0].Cells[7].Value.ToString();
+            row["ProductPerUnitPrice"] = dgvSearchProduct.SelectedRows[0].Cells[7].Value.ToString();
+            row["ProductDiscountRate"] = dgvSearchProduct.SelectedRows[0].Cells[8].Value.ToString();
+            
+            
 
             OrderDetailDataTable.Rows.Add(row);
 
@@ -191,6 +194,15 @@ namespace FinalPoject
             {
                 this.cmbThird.Items.Add(row["ThirdCategoryName"].ToString());
             }
+
+
+            this.comboBox1.Items.Clear();
+            this.comboBox1.Items.Add("--Not Selected--");
+            this.comboBox1.SelectedIndex = comboBox1.FindStringExact("--Not Selected--");
+            foreach (DataRow row in this.thirdCategoriesRepo.LoadComboThirdCategoryName().Rows)
+            {
+                this.comboBox1.Items.Add(row["ThirdCategoryName"].ToString());
+            }
         }
         private void SecondCategoryIdToName()
         {
@@ -219,31 +231,53 @@ namespace FinalPoject
                 {
                     MessageBox.Show("Select a Item to remove");
                 }
-                
-
             }
-
         }
 
         private Orders FillEntity()
         {
 
             var orders = new Orders();
+
+            //orders.ProductId = Convert.ToInt32(this.txtProductId.Text);
+            //orders.ProductName = this.txtProductName.Text;
+            //orders.ProductPerUnitPrice = Convert.ToDouble(this.txtProductPerUnitPrice.Text);
+            orders.Id = usersRepo.GetUsersdId(this.cmbPayByUser.Text);
+            orders.CustomerFullName = this.txtCoustomerName.Text;
+            orders.CustomerAddress = this.txtCustomerAddress.Text;
+            orders.CustomerPhone = this.txtCustomerPhone.Text;
+            orders.CustomerEmail = this.txtCoustomerEmail.Text;
+            orders.OrderQuantity = Convert.ToInt32(this.txtProductQuant.Text);
+            orders.Date = Convert.ToDateTime(Convert.ToDateTime(dtpPayDate.Value).ToString("yyyy-MM-dd"));
+            orders.TotalAmount = Convert.ToDouble(this.txtTotalAmount.Text);
+            orders.OrderStatus = this.cmbPayStatus.Text;
+            orders.PaymentMethod = this.cmbPaymentMethod.Text;
+            orders.BarCodeId = Convert.ToInt32(this.txtBarcode.Text);
            
-           orders.ProductName = this.txtProductName.Text;
-           orders.ProductPerUnitPrice = Convert.ToDouble(this.txtProductPerUnitPrice.Text);
-           orders.CustomerFullName = this.txtCoustomerName.Text;
-           orders.CustomerAddress = this.txtCustomerAddress.Text;
-           orders.CustomerPhone = this.txtCustomerPhone.Text;
-           orders.OrderQuantity = Convert.ToInt32(this.txtProductQuant.Text);
-           orders.Date = Convert.ToDateTime(Convert.ToDateTime(dtpPayDate.Value).ToString("yyyy-MM-dd"));
-           orders.TotalAmount = Convert.ToDouble(this.txtTotalAmount.Text);
-           orders.OrderStatus = this.cmbPayStatus.Text;
-           orders.PaymentMethod = this.cmbPaymentMethod.Text;
-           orders.UserId = usersRepo.GetUsersdId(this.cmbPayByUser.Text);
 
             return orders;
         }
+
+        //
+        public List<Orders> GetAllForOrders()
+        {
+            List<Orders> orderList = new List<Orders>();
+
+            foreach (DataGridViewRow row in dgvCart.Rows)
+            {
+                Orders orders = this.FillEntity();
+                MessageBox.Show(row.Cells[7].Value.ToString());
+                orders.ProductId = Convert.ToInt32(row.Cells[0].Value.ToString());
+                orders.ProductName = row.Cells[2].Value.ToString();
+                orders.ProductPerUnitPrice = Convert.ToDouble(row.Cells[7].Value.ToString());
+                
+                //orders.ProductMSRP = Convert.ToDouble(row.Cells[6].Value.ToString());
+
+                orderList.Add(orders);
+            }
+            return orderList;
+        }
+        //
 
         private void btnPlaceOrderToSave_Click(object sender, EventArgs e)
         {
@@ -258,10 +292,14 @@ namespace FinalPoject
                 }
                 else
                 {
-                    if (this.makeSalesRepo.SaveOrders(orObj))
+                    if (this.makeSalesRepo.SaveOrders(GetAllForOrders()))
                     {
                         MessageBox.Show("Save Successfully");
-                        dgvCart.Rows.Clear();
+
+                        foreach (DataGridViewRow row in dgvCart.Rows)
+                        {
+                            dgvCart.Rows.RemoveAt(row.Index);
+                        }
                     }
                     else
                     {
@@ -276,14 +314,72 @@ namespace FinalPoject
 
             catch (Exception exception)
             {
-                MessageBox.Show("Please Fill Correct Data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please Fill Correct Data" + exception.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
             
         }
+
+        private void cmbThird_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbThird.SelectedIndex == 0)
+            {
+                PopulateGridView(null);
+            }
+            else
+            {
+                int count = dgvSearchProduct.Rows.Count;
+
+                while (count != 0)
+                {
+                    --count;
+                    if (dgvSearchProduct.Rows[count].Cells[10].Value.ToString() != cmbThird.Text)
+                    {
+                        //MessageBox.Show(dgvSearchProduct.Rows[count].Cells[10].Value.ToString() + " is not " + comboBox1.Text + " Removing" + dgvSearchProduct.Rows[count].Index);
+                        dgvSearchProduct.Rows.RemoveAt(dgvSearchProduct.Rows[count].Index);
+                    }
+                    //else
+                    //{
+                    //   // MessageBox.Show(dgvSearchProduct.Rows[count].Cells[10].Value.ToString() + " is " + comboBox1.Text + " Not Removing" + dgvSearchProduct.Rows[count].Index);
+                    //}
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                //PopulateGridView(null);
+            }
+            else
+            {
+                int count = dgvSearchProduct.Rows.Count;
+
+                while (count != 0)
+                {
+                    --count;
+                    if (dgvSearchProduct.Rows[count].Cells[10].Value.ToString() != comboBox1.Text)
+                    {
+                        //MessageBox.Show(dgvSearchProduct.Rows[count].Cells[10].Value.ToString() + " is not " + comboBox1.Text + " Removing" + dgvSearchProduct.Rows[count].Index);
+                        dgvSearchProduct.Rows.RemoveAt(dgvSearchProduct.Rows[count].Index);
+                    }
+                    //else
+                    //{
+                    //   // MessageBox.Show(dgvSearchProduct.Rows[count].Cells[10].Value.ToString() + " is " + comboBox1.Text + " Not Removing" + dgvSearchProduct.Rows[count].Index);
+                    //}
+                }
+            }
+        }
+
+        //private void cmbSecond_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    this.PopulateGridView(this.cmbSecond.Text);
+        //}
     }
 }

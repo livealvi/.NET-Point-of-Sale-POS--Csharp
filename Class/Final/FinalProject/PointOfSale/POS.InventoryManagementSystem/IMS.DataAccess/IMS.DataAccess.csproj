@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InventoryProducts\InventoryDBDataAccess.cs" />
-    <Compile Include="InventoryUsers\InventoryUserDBDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

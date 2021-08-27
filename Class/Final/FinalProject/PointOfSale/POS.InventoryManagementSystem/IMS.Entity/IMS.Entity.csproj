@@ -48,7 +48,6 @@
     <Compile Include="InventoryProducts\Orders\Orders.cs" />
     <Compile Include="InventoryProducts\Orders\OrdersProductsMap.cs" />
     <Compile Include="InventoryProducts\Products\Products.cs" />
-    <Compile Include="InventoryUsers\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="InventoryProducts\Categories\SecondCategories.cs" />
     <Compile Include="InventoryProducts\Categories\ThirdCategories.cs" />

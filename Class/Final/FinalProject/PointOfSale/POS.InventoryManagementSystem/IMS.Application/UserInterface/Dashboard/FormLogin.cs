@@ -17,22 +17,6 @@ namespace FinalPoject.UserInterface.Dashboard
             InitializeComponent();
         }
 
-
-        //private void lblForgetPassword_MouseHover(object sender, EventArgs e)
-        //{
-        //    
-        //}
-        
-        //private void lblForgetPassword_MouseLeave(object sender, EventArgs e)
-        //{
-        //    
-        //}
-
-        private void lblForgetPassword_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblForgetPassword_MouseHover(object sender, EventArgs e)
         {
             this.lblForgetPassword.ForeColor = Color.FromArgb(55, 148, 247);
@@ -41,6 +25,11 @@ namespace FinalPoject.UserInterface.Dashboard
         private void lblForgetPassword_MouseLeave(object sender, EventArgs e)
         {
             this.lblForgetPassword.ForeColor = Color.FromArgb(196, 189, 237);
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

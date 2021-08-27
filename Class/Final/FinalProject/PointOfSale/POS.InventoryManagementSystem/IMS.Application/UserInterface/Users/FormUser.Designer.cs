@@ -48,12 +48,16 @@ namespace FinalPoject
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCurrentCity = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbGender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,7 +67,7 @@ namespace FinalPoject
             this.cmbDivision = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpBirthDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpJoinDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.txtTag = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUserId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtId = new Guna.UI2.WinForms.Guna2TextBox();
@@ -91,10 +95,12 @@ namespace FinalPoject
             this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvUser = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -363,6 +369,8 @@ namespace FinalPoject
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label27);
@@ -395,6 +403,30 @@ namespace FinalPoject
             this.panel1.Size = new System.Drawing.Size(454, 695);
             this.panel1.TabIndex = 154;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(114, 570);
+            this.label20.Margin = new System.Windows.Forms.Padding(0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(36, 15);
+            this.label20.TabIndex = 171;
+            this.label20.Text = "Email";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(93, 520);
+            this.label19.Margin = new System.Windows.Forms.Padding(0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(57, 15);
+            this.label19.TabIndex = 170;
+            this.label19.Text = "Password";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -412,7 +444,7 @@ namespace FinalPoject
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(80, 1108);
+            this.label28.Location = new System.Drawing.Point(80, 1207);
             this.label28.Margin = new System.Windows.Forms.Padding(0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(70, 15);
@@ -424,7 +456,7 @@ namespace FinalPoject
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(76, 1058);
+            this.label27.Location = new System.Drawing.Point(76, 1157);
             this.label27.Margin = new System.Windows.Forms.Padding(0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(74, 15);
@@ -436,7 +468,7 @@ namespace FinalPoject
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(98, 1012);
+            this.label18.Location = new System.Drawing.Point(98, 1111);
             this.label18.Margin = new System.Windows.Forms.Padding(0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(52, 15);
@@ -448,38 +480,40 @@ namespace FinalPoject
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(122, 371);
+            this.label26.Location = new System.Drawing.Point(106, 372);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(28, 15);
+            this.label26.Size = new System.Drawing.Size(44, 15);
             this.label26.TabIndex = 165;
-            this.label26.Text = "TAG";
+            this.label26.Text = "User ID";
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.txtCurrentCity, 0, 27);
-            this.tableLayoutPanel2.Controls.Add(this.cmbGender, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.txtEmail, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.txtPassword, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.txtCurrentCity, 0, 31);
+            this.tableLayoutPanel2.Controls.Add(this.cmbGender, 0, 15);
             this.tableLayoutPanel2.Controls.Add(this.txtLastName, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.cmbRole, 0, 13);
-            this.tableLayoutPanel2.Controls.Add(this.txtPostalCode, 0, 33);
-            this.tableLayoutPanel2.Controls.Add(this.cmbBlood, 0, 31);
-            this.tableLayoutPanel2.Controls.Add(this.cmbDivision, 0, 29);
-            this.tableLayoutPanel2.Controls.Add(this.dtpBirthDate, 0, 19);
-            this.tableLayoutPanel2.Controls.Add(this.dtpJoinDate, 0, 17);
-            this.tableLayoutPanel2.Controls.Add(this.txtTag, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txtNID, 0, 21);
-            this.tableLayoutPanel2.Controls.Add(this.txtPhone, 0, 23);
+            this.tableLayoutPanel2.Controls.Add(this.cmbRole, 0, 17);
+            this.tableLayoutPanel2.Controls.Add(this.txtPostalCode, 0, 37);
+            this.tableLayoutPanel2.Controls.Add(this.cmbBlood, 0, 35);
+            this.tableLayoutPanel2.Controls.Add(this.cmbDivision, 0, 33);
+            this.tableLayoutPanel2.Controls.Add(this.dtpBirthDate, 0, 23);
+            this.tableLayoutPanel2.Controls.Add(this.dtpJoinDate, 0, 21);
+            this.tableLayoutPanel2.Controls.Add(this.txtUserId, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtNID, 0, 25);
+            this.tableLayoutPanel2.Controls.Add(this.txtPhone, 0, 27);
             this.tableLayoutPanel2.Controls.Add(this.txtId, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtAge, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.txtSalary, 0, 15);
+            this.tableLayoutPanel2.Controls.Add(this.txtAge, 0, 13);
+            this.tableLayoutPanel2.Controls.Add(this.txtSalary, 0, 19);
             this.tableLayoutPanel2.Controls.Add(this.txtFirstName, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.txtHomeTown, 0, 25);
+            this.tableLayoutPanel2.Controls.Add(this.txtHomeTown, 0, 29);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(162, 301);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 37;
+            this.tableLayoutPanel2.RowCount = 42;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
@@ -517,8 +551,67 @@ namespace FinalPoject
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 911);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 1118);
             this.tableLayoutPanel2.TabIndex = 164;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.Parent = this.txtEmail;
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.FocusedState.Parent = this.txtEmail;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.HoverState.Parent = this.txtEmail;
+            this.txtEmail.Location = new System.Drawing.Point(3, 260);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.txtEmail.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
+            this.txtEmail.Size = new System.Drawing.Size(194, 30);
+            this.txtEmail.TabIndex = 171;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.Parent = this.txtPassword;
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedState.Parent = this.txtPassword;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.HoverState.Parent = this.txtPassword;
+            this.txtPassword.Location = new System.Drawing.Point(3, 211);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.txtPassword.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
+            this.txtPassword.Size = new System.Drawing.Size(194, 30);
+            this.txtPassword.TabIndex = 170;
             // 
             // txtCurrentCity
             // 
@@ -535,7 +628,7 @@ namespace FinalPoject
             this.txtCurrentCity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCurrentCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCurrentCity.HoverState.Parent = this.txtCurrentCity;
-            this.txtCurrentCity.Location = new System.Drawing.Point(3, 652);
+            this.txtCurrentCity.Location = new System.Drawing.Point(3, 750);
             this.txtCurrentCity.Name = "txtCurrentCity";
             this.txtCurrentCity.PasswordChar = '\0';
             this.txtCurrentCity.PlaceholderText = "Yes or No";
@@ -561,7 +654,7 @@ namespace FinalPoject
             "Male",
             "Female"});
             this.cmbGender.ItemsAppearance.Parent = this.cmbGender;
-            this.cmbGender.Location = new System.Drawing.Point(2, 259);
+            this.cmbGender.Location = new System.Drawing.Point(2, 357);
             this.cmbGender.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.ShadowDecoration.Parent = this.cmbGender;
@@ -613,7 +706,7 @@ namespace FinalPoject
             "Cashier",
             "SalesMan"});
             this.cmbRole.ItemsAppearance.Parent = this.cmbRole;
-            this.cmbRole.Location = new System.Drawing.Point(2, 308);
+            this.cmbRole.Location = new System.Drawing.Point(2, 406);
             this.cmbRole.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.ShadowDecoration.Parent = this.cmbRole;
@@ -635,7 +728,7 @@ namespace FinalPoject
             this.txtPostalCode.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPostalCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPostalCode.HoverState.Parent = this.txtPostalCode;
-            this.txtPostalCode.Location = new System.Drawing.Point(3, 799);
+            this.txtPostalCode.Location = new System.Drawing.Point(3, 897);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.PasswordChar = '\0';
             this.txtPostalCode.PlaceholderText = "Yes or No";
@@ -667,7 +760,7 @@ namespace FinalPoject
             "AB+",
             "AB-"});
             this.cmbBlood.ItemsAppearance.Parent = this.cmbBlood;
-            this.cmbBlood.Location = new System.Drawing.Point(2, 749);
+            this.cmbBlood.Location = new System.Drawing.Point(2, 847);
             this.cmbBlood.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBlood.Name = "cmbBlood";
             this.cmbBlood.ShadowDecoration.Parent = this.cmbBlood;
@@ -697,7 +790,7 @@ namespace FinalPoject
             "Rangpur",
             "Sylhet"});
             this.cmbDivision.ItemsAppearance.Parent = this.cmbDivision;
-            this.cmbDivision.Location = new System.Drawing.Point(2, 700);
+            this.cmbDivision.Location = new System.Drawing.Point(2, 798);
             this.cmbDivision.Margin = new System.Windows.Forms.Padding(2);
             this.cmbDivision.Name = "cmbDivision";
             this.cmbDivision.ShadowDecoration.Parent = this.cmbDivision;
@@ -711,7 +804,7 @@ namespace FinalPoject
             this.dtpBirthDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpBirthDate.HoverState.Parent = this.dtpBirthDate;
-            this.dtpBirthDate.Location = new System.Drawing.Point(3, 456);
+            this.dtpBirthDate.Location = new System.Drawing.Point(3, 554);
             this.dtpBirthDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpBirthDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpBirthDate.Name = "dtpBirthDate";
@@ -727,7 +820,7 @@ namespace FinalPoject
             this.dtpJoinDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dtpJoinDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpJoinDate.HoverState.Parent = this.dtpJoinDate;
-            this.dtpJoinDate.Location = new System.Drawing.Point(3, 407);
+            this.dtpJoinDate.Location = new System.Drawing.Point(3, 505);
             this.dtpJoinDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpJoinDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpJoinDate.Name = "dtpJoinDate";
@@ -736,30 +829,30 @@ namespace FinalPoject
             this.dtpJoinDate.TabIndex = 7;
             this.dtpJoinDate.Value = new System.DateTime(2021, 8, 23, 0, 0, 0, 0);
             // 
-            // txtTag
+            // txtUserId
             // 
-            this.txtTag.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTag.DefaultText = "";
-            this.txtTag.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTag.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTag.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTag.DisabledState.Parent = this.txtTag;
-            this.txtTag.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTag.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTag.FocusedState.Parent = this.txtTag;
-            this.txtTag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTag.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtTag.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTag.HoverState.Parent = this.txtTag;
-            this.txtTag.Location = new System.Drawing.Point(3, 64);
-            this.txtTag.Name = "txtTag";
-            this.txtTag.PasswordChar = '\0';
-            this.txtTag.PlaceholderText = "";
-            this.txtTag.ReadOnly = true;
-            this.txtTag.SelectedText = "";
-            this.txtTag.ShadowDecoration.Parent = this.txtTag;
-            this.txtTag.Size = new System.Drawing.Size(194, 30);
-            this.txtTag.TabIndex = 167;
+            this.txtUserId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserId.DefaultText = "";
+            this.txtUserId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserId.DisabledState.Parent = this.txtUserId;
+            this.txtUserId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserId.FocusedState.Parent = this.txtUserId;
+            this.txtUserId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserId.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtUserId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserId.HoverState.Parent = this.txtUserId;
+            this.txtUserId.Location = new System.Drawing.Point(3, 64);
+            this.txtUserId.Name = "txtUserId";
+            this.txtUserId.PasswordChar = '\0';
+            this.txtUserId.PlaceholderText = "";
+            this.txtUserId.ReadOnly = true;
+            this.txtUserId.SelectedText = "";
+            this.txtUserId.ShadowDecoration.Parent = this.txtUserId;
+            this.txtUserId.Size = new System.Drawing.Size(194, 30);
+            this.txtUserId.TabIndex = 167;
             // 
             // txtNID
             // 
@@ -776,7 +869,7 @@ namespace FinalPoject
             this.txtNID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNID.HoverState.Parent = this.txtNID;
-            this.txtNID.Location = new System.Drawing.Point(3, 505);
+            this.txtNID.Location = new System.Drawing.Point(3, 603);
             this.txtNID.Name = "txtNID";
             this.txtNID.PasswordChar = '\0';
             this.txtNID.PlaceholderText = "Ex: 50";
@@ -800,7 +893,7 @@ namespace FinalPoject
             this.txtPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.HoverState.Parent = this.txtPhone;
-            this.txtPhone.Location = new System.Drawing.Point(3, 554);
+            this.txtPhone.Location = new System.Drawing.Point(3, 652);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "Ex: 20";
@@ -848,7 +941,7 @@ namespace FinalPoject
             this.txtAge.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAge.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAge.HoverState.Parent = this.txtAge;
-            this.txtAge.Location = new System.Drawing.Point(3, 211);
+            this.txtAge.Location = new System.Drawing.Point(3, 309);
             this.txtAge.Name = "txtAge";
             this.txtAge.PasswordChar = '\0';
             this.txtAge.PlaceholderText = "Ex: 10.00";
@@ -872,7 +965,7 @@ namespace FinalPoject
             this.txtSalary.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.HoverState.Parent = this.txtSalary;
-            this.txtSalary.Location = new System.Drawing.Point(3, 358);
+            this.txtSalary.Location = new System.Drawing.Point(3, 456);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.PasswordChar = '\0';
             this.txtSalary.PlaceholderText = "Ex: 50";
@@ -923,7 +1016,7 @@ namespace FinalPoject
             this.txtHomeTown.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtHomeTown.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHomeTown.HoverState.Parent = this.txtHomeTown;
-            this.txtHomeTown.Location = new System.Drawing.Point(3, 603);
+            this.txtHomeTown.Location = new System.Drawing.Point(3, 701);
             this.txtHomeTown.Name = "txtHomeTown";
             this.txtHomeTown.PasswordChar = '\0';
             this.txtHomeTown.PlaceholderText = "Yes or No";
@@ -937,7 +1030,7 @@ namespace FinalPoject
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(75, 961);
+            this.label17.Location = new System.Drawing.Point(75, 1060);
             this.label17.Margin = new System.Windows.Forms.Padding(0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(75, 15);
@@ -949,7 +1042,7 @@ namespace FinalPoject
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(82, 912);
+            this.label16.Location = new System.Drawing.Point(82, 1011);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(68, 15);
@@ -961,7 +1054,7 @@ namespace FinalPoject
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(109, 863);
+            this.label11.Location = new System.Drawing.Point(109, 962);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 15);
@@ -1035,7 +1128,7 @@ namespace FinalPoject
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(123, 814);
+            this.label15.Location = new System.Drawing.Point(123, 913);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(27, 15);
@@ -1047,7 +1140,7 @@ namespace FinalPoject
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(91, 767);
+            this.label13.Location = new System.Drawing.Point(91, 866);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 15);
@@ -1059,7 +1152,7 @@ namespace FinalPoject
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(120, 621);
+            this.label1.Location = new System.Drawing.Point(120, 720);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 15);
@@ -1071,7 +1164,7 @@ namespace FinalPoject
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(98, 716);
+            this.label14.Location = new System.Drawing.Point(98, 815);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(52, 15);
@@ -1083,7 +1176,7 @@ namespace FinalPoject
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(122, 521);
+            this.label12.Location = new System.Drawing.Point(122, 620);
             this.label12.Margin = new System.Windows.Forms.Padding(0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(28, 15);
@@ -1107,7 +1200,7 @@ namespace FinalPoject
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(112, 668);
+            this.label2.Location = new System.Drawing.Point(112, 767);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 15);
@@ -1131,7 +1224,7 @@ namespace FinalPoject
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(105, 571);
+            this.label10.Location = new System.Drawing.Point(105, 670);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 15);
@@ -1219,10 +1312,12 @@ namespace FinalPoject
             this.dgvUser.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.UserId,
-            this.UserTag,
             this.FirstName,
             this.LastName,
+            this.Password,
+            this.Email,
             this.Age,
             this.Gender,
             this.Role,
@@ -1248,23 +1343,24 @@ namespace FinalPoject
             this.dgvUser.TabIndex = 151;
             this.dgvUser.DoubleClick += new System.EventHandler(this.dgvUser_DoubleClick);
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            this.Id.Width = 125;
+            // 
             // UserId
             // 
             this.UserId.DataPropertyName = "UserId";
-            this.UserId.HeaderText = "UserId";
+            this.UserId.HeaderText = "User Id";
             this.UserId.MinimumWidth = 6;
             this.UserId.Name = "UserId";
             this.UserId.ReadOnly = true;
             this.UserId.Width = 125;
-            // 
-            // UserTag
-            // 
-            this.UserTag.DataPropertyName = "UserTag";
-            this.UserTag.HeaderText = "UserTag";
-            this.UserTag.MinimumWidth = 6;
-            this.UserTag.Name = "UserTag";
-            this.UserTag.ReadOnly = true;
-            this.UserTag.Width = 125;
             // 
             // FirstName
             // 
@@ -1281,6 +1377,22 @@ namespace FinalPoject
             this.LastName.HeaderText = "Last Name";
             this.LastName.Name = "LastName";
             this.LastName.ReadOnly = true;
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            this.Password.ReadOnly = true;
+            this.Password.Visible = false;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.Width = 125;
             // 
             // Age
             // 
@@ -1716,23 +1828,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserTag;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
-        private System.Windows.Forms.DataGridViewTextBoxColumn JoinDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BirthDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HomeTown;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CurrentCity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Division;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BloodGroup;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PostalCode;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
@@ -1748,7 +1843,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2ComboBox cmbDivision;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpBirthDate;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpJoinDate;
-        private Guna.UI2.WinForms.Guna2TextBox txtTag;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserId;
         private Guna.UI2.WinForms.Guna2TextBox txtNID;
         private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI2.WinForms.Guna2TextBox txtId;
@@ -1775,5 +1870,28 @@ namespace FinalPoject
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
+        private System.Windows.Forms.DataGridViewTextBoxColumn JoinDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BirthDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HomeTown;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CurrentCity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Division;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BloodGroup;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PostalCode;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
     }
 }

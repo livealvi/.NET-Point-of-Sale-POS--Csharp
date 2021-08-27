@@ -20,7 +20,7 @@ namespace IMS.Repository
         }
 
         //view & search & filter 
-        public List<Orders> GetAll(string key)
+        public DataTable GetAll(string key)
         {
             List<Orders> ordersList = new List<Orders>();
 
@@ -43,7 +43,7 @@ namespace IMS.Repository
                                     left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId
                                     
                                     where p.ProductStatus like 'Yes';";
-                else                
+                else
                     sql = @"select  
                                     p.ProductId as ProductId, p.ProductIdTag as ProductIdTag, p.ProductName as ProductName,
                                     p.ProductStatus AS ProductStatus,
@@ -58,11 +58,59 @@ namespace IMS.Repository
                                     left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
                                     left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId 
                                 
-                                  where sc.SecondCategoryName like '%" + key + "%' or tc.ThirdCategoryName like '%" + key + "%' or " +
-                                  "b.BrandName like '%" + key + "%' or v.VendorName like '%" + key + "%' or  v.ProductId like '%" + key + "%' or " +
-                                  "p.ProductIdTag like '%" + key + "%' or p.ProductStatus like '%" + key + "%' or p.ProductPerUnitPrice like '%" + key + "%' or " +
-                                  "p.ProductUnitStock like '%" + key + "%' or p.ProductMSRP like '%" + key + "%' or p.ProductDiscountRate like '%" + key + "%' or " +
-                                  "p.ProductName like '%" + key + "%' ";
+                                    where sc.SecondCategoryName like '%" + key + "%' ";
+
+                return this.iDB.ExecuteQueryTable(sql);
+                
+            }
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+        }
+
+
+        //view & search & filter 
+        public List<Orders> GetAll2(string key)
+        {
+            List<Orders> ordersList = new List<Orders>();
+
+            string sql;
+            try
+            {
+                if (key == null)
+                    sql = @"select
+                                    p.ProductId as 'ProductId', p.ProductIdTag as 'ProductIdTag', p.ProductName as 'ProductName',
+                                    p.ProductStatus AS ProductStatus,
+		                            p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
+		                            p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
+                                    b.BrandName AS BrandName, v.VendorName VendorName,
+		                            tc.ThirdCategoryName AS ThirdCategoryName,
+		                            sc.SecondCategoryName AS SecondCategoryName
+                                    from Products as p
+                                    left join brands as b on b.BrandId = p.BrandId
+                                    left join vendors as v on v.VendorId=b.VendorId
+                                    left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
+                                    left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId
+                                    
+                                    where p.ProductStatus like 'Yes';";
+                else
+                    sql = @"select  
+                                    p.ProductId as ProductId, p.ProductIdTag as ProductIdTag, p.ProductName as ProductName,
+                                    p.ProductStatus AS ProductStatus,
+		                            p.ProductPerUnitPrice AS ProductPerUnitPrice, p.ProductUnitStock AS ProductUnitStock,
+		                            p.ProductMSRP AS ProductMSRP, p.ProductDiscountRate AS ProductDiscountRate,
+                                    b.BrandName AS BrandName, v.VendorName VendorName,
+		                            tc.ThirdCategoryName AS ThirdCategoryName,
+		                            sc.SecondCategoryName AS SecondCategoryName
+                                    from Products as p
+                                    left join brands as b on b.BrandId = p.BrandId
+                                    left join vendors as v on v.VendorId=b.VendorId
+                                    left join ThirdCategories as tc on v.ThirdCategoryId=tc.ThirdCategoryId
+                                    left join SecondCategories as sc on tc.SecondCategoryId=sc.SecondCategoryId 
+                                
+                                    where sc.SecondCategoryName like '%" + key + "%' ";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
 
@@ -116,7 +164,8 @@ namespace IMS.Repository
                 sql = @"SELECT      
 		                      Orders.OrderId AS OrderId,
 		                      Orders.OrderTag AS OrderTag,
-		                      Users.UserId AS UserId,
+
+		                      Users.Id AS Id,
 		                      
 		                      BarCodes.BarCodeId AS BarCodeId,
 		                      Orders.Date AS Date,
@@ -136,7 +185,7 @@ namespace IMS.Repository
 		                      Products ON Orders.ProductId = Products.ProductId INNER JOIN
                               
 						      BarCodes ON Orders.BarCodeId = BarCodes.BarCodeId INNER JOIN
-                              Users ON Orders.UserId = Users.UserId";
+                              Users ON Orders.Id = Users.Id";
                 
             var dt = this.iDB.ExecuteQueryTable(sql);
 
@@ -169,7 +218,7 @@ namespace IMS.Repository
             orders.CustomerPhone = row["CustomerPhone"].ToString();
             orders.CustomerFullName = row["CustomerFullName"].ToString();
             //
-            orders.UserId = Convert.ToInt32(row["UserId"].ToString());
+            orders.Id = Convert.ToInt32(row["Id"].ToString());
             //
             orders.ProductId = Convert.ToInt32(row["ProductId"].ToString());
             orders.ProductName = row["ProductName"].ToString();
@@ -189,18 +238,17 @@ namespace IMS.Repository
         }
 
         //SaveData - Orders 
-        public bool SaveOrders(Orders or)
+        public bool SaveOrders(List<Orders> orders)
         {
             bool saveSuccesful = false;
-            List<Orders> orders = GetAllForOrders();
+            //List<Orders> orders = GetAllForOrders();
 
-            foreach (Orders order in orders)
+            foreach (Orders or in orders)
             {
-                string sql = "insert into Orders (UserId, " +
-                             "BarCodeId, Date, ProductId, ProductName, ProductPerUnitPrice, OrderQuantity," +
+                string sql = "insert into Orders (Id, BarCodeId, Date, ProductId, ProductName, ProductPerUnitPrice, OrderQuantity," +
                              "OrderStatus, PaymentMethod, " +
                              "TotalAmount, CustomerFullName, CustomerPhone, CustomerEmail, CustomerAddress) " +
-                             " values ('" + or.UserId + "', " +
+                             " values ('" + or.Id + "', " +
                              " '" + or.BarCodeId + "' , '" + or.Date + "' , '" + or.ProductId + "' ," +
                              " '" + or.ProductName + "' ,  '" + or.ProductPerUnitPrice + "' , " +
                              " '" + or.OrderQuantity + "' , '" + or.OrderStatus + "' , '" + or.PaymentMethod + "' ," +

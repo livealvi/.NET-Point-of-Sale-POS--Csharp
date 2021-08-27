@@ -29,15 +29,15 @@ namespace IMS.Repository
             try
             {
                 if (key == null)
-                    sql = @"SELECT UserId, UserTag, FirstName,  LastName, Age, Gender, Role, Salary, JoinDate, Birthdate,   NID, Phone,
+                    sql = @"SELECT Id, UserId, FirstName, LastName, Password, Email, Age, Gender, Role, Salary, JoinDate, Birthdate,   NID, Phone,
                           HomeTown, CurrentCity, Division, BloodGroup, PostalCode
                           FROM Users";
 
                 else 
-                    sql = @"SELECT UserId, UserTag, FirstName, LastName, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
+                    sql = @"SELECT Id, UserId, FirstName, LastName, Password, Email, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
                           HomeTown, CurrentCity, Division, BloodGroup, PostalCode
                           FROM Users
-                          where UserId like '%" + key + "%' or UserTag like '%" + key + "%' or FirstName like '%" + key + "%' or LastName like '%" + key + "%' " +
+                          where UserId like '%" + key + "%' or Email like '%" + key + "%' or FirstName like '%" + key + "%' or LastName like '%" + key + "%' " +
                           " or Age like '%" + key + "%' or Gender like '%" + key + "%' or Role like '%" + key + "%' " +
                           "or Salary like '%" + key + "%' or JoinDate like '%" + key + "%' or Birthdate like '%" + key + "%' " +
                           "or NID like '%" + key + "%' or Phone like '%" + key + "%'" +
@@ -70,11 +70,13 @@ namespace IMS.Repository
             }
 
             var users = new Users();
-            users.UserId = Convert.ToInt32(row["UserId"].ToString());
-            users.UserTag = row["UserTag"].ToString();
+            users.Id = Convert.ToInt32(row["Id"].ToString());
+            users.UserId = row["UserId"].ToString();
             users.FirstName = row["FirstName"].ToString();
             users.LastName = row["LastName"].ToString();
-            users.Age = Convert.ToInt32(row["UserId"].ToString());
+            users.Password = row["Password"].ToString();
+            users.Email = row["Email"].ToString();
+            users.Age = Convert.ToInt32(row["Age"].ToString());
             users.Gender = row["Gender"].ToString();
             users.Role = row["Role"].ToString();
             users.Salary = Convert.ToDouble(row["Salary"].ToString());
@@ -96,7 +98,7 @@ namespace IMS.Repository
             string sql;
             try
             {
-                sql = @"SELECT UserId , FirstName, LastName, Role FROM Users";
+                sql = @"SELECT Id , FirstName, LastName, Role FROM Users";
                 return this.iDB.ExecuteQueryTable(sql);
             }
             catch (Exception e)
@@ -125,9 +127,14 @@ namespace IMS.Repository
 
             foreach (Users users in list)
             {
-                if (users.FirstName == UserFullNameWithRole && users.LastName == UserFullNameWithRole && users.Role == UserFullNameWithRole)
+                //if (users.FirstName == UserFullNameWithRole && users.LastName == UserFullNameWithRole && users.Role == UserFullNameWithRole)
+                //{
+                //    return users.Id;
+                //}
+
+                if (UserFullNameWithRole == users.FirstName + " " + users.LastName + " - " + users.Role)
                 {
-                    return users.UserId;
+                    return users.Id;
                 }
             }
             return 0;
@@ -144,7 +151,7 @@ namespace IMS.Repository
             u.FirstName = row["FirstName"].ToString();
             u.LastName = row["LastName"].ToString();
             u.Role = row["Role"].ToString();
-            u.UserId = Convert.ToInt32(row["UserId"].ToString());
+            u.Id = Convert.ToInt32(row["Id"].ToString());
             return u;
         }
 
@@ -153,9 +160,8 @@ namespace IMS.Repository
         {
             try
             {
-                DataSet ds = iDB.ExecuteQuery("select UserId from Users where UserId=" + id);
+                DataSet ds = iDB.ExecuteQuery("select Id from Users where Id=" + id);
 
-                //System.Windows.MessageBox.Show(ds.Tables[0].Rows.Count);
                 Debug.WriteLine(ds.Tables[0].Rows.Count);
 
                 if (ds.Tables[0].Rows.Count > 0)
@@ -180,9 +186,9 @@ namespace IMS.Repository
         {
             try
             {
-                var sql = @"insert into Users (FirstName, LastName, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
+                var sql = @"insert into Users (FirstName, LastName,  Password, Email, Age, Gender, Role, Salary, JoinDate, Birthdate, NID, Phone,
                                  HomeTown, CurrentCity, Division, BloodGroup, PostalCode)
-                                 values ('" + uc.FirstName + "', '" + uc.LastName + "', '" + uc.Age + "', '" + uc.Gender + "'," +
+                                 values ('" + uc.FirstName + "', '" + uc.LastName + "', '" + uc.Password + "', '" + uc.Email + "',  '" + uc.Age + "', '" + uc.Gender + "'," +
                                  " '" + uc.Role + "', '" + uc.Salary + "', '" + uc.JoinDate + "', '" + uc.Birthdate + "',   '" + uc.NID + "'," +
                                  " '" + uc.Phone + "', '" + uc.HomeTown + "', '" + uc.CurrentCity + "', '" + uc.Division + "', '" + uc.BloodGroup + "'," +
                                  " '" + uc.PostalCode + "');";
@@ -206,14 +212,14 @@ namespace IMS.Repository
         {
             try
             {
-                string sql = @"update Users set FirstName='" + uc.FirstName + "' , LastName='" + uc.LastName + "' ," +
-                             "Age='" + uc.Age + "' , Gender='" + uc.Gender + "' ," +
-                             "Role='" + uc.Role + "' ,Salary='" + uc.Salary + "' ," +
-                             "JoinDate='" + uc.JoinDate + "' ,Birthdate='" + uc.Birthdate + "' ," +
-                             "NID='" + uc.NID + "' ,Phone='" + uc.Phone + "' ," +
-                             "HomeTown='" + uc.HomeTown + "' ,CurrentCity='" + uc.CurrentCity + "' ," +
-                             "Division='" + uc.Division + "' ,BloodGroup='" + uc.BloodGroup + "' ," +
-                             "PostalCode='" + uc.PostalCode + "' where UserId='" + uc.UserId + "' ;";
+                string sql = @" update Users set FirstName='" + uc.FirstName + "' , LastName='" + uc.LastName + "' ," +
+                             " Password='" + uc.Password + "' , Email='" + uc.Email + "' , Age='" + uc.Age + "' , Gender='" + uc.Gender + "' ," +
+                             " Role='" + uc.Role + "' ,Salary='" + uc.Salary + "' ," +
+                             " JoinDate='" + uc.JoinDate + "' ,Birthdate='" + uc.Birthdate + "' ," +
+                             " NID='" + uc.NID + "' ,Phone='" + uc.Phone + "' ," +
+                             " HomeTown='" + uc.HomeTown + "' ,CurrentCity='" + uc.CurrentCity + "' ," +
+                             " Division='" + uc.Division + "' ,BloodGroup='" + uc.BloodGroup + "' ," +
+                             " PostalCode='" + uc.PostalCode + "' where Id='" + uc.Id + "' ;";
 
                 int count = this.iDB.ExecuteDMLQuery(sql);
 
@@ -239,7 +245,7 @@ namespace IMS.Repository
             string sql;
             try
             {
-                sql = @"delete from Users where UserId ='" + id + "';";
+                sql = @"delete from Users where Id ='" + id + "';";
                 var dataTable = this.iDB.ExecuteDMLQuery(sql);
                 return true;
             }
