@@ -70,6 +70,66 @@ namespace IMS.Repository
             }
         }
 
+        public DataTable GetAllOrderHistory(string key)
+        {
+            List<Orders> ordersHistoryList = new List<Orders>();
+
+            string sql;
+            try
+            {
+                if (key == null)
+                    sql = @"select
+                                  Orders.OrderId AS OrderId, Orders.OrderTag AS OrderTag, Users.UserId AS UserId,
+			                      Orders.Date AS Date, Orders.ProductId AS ProductId, Orders.ProductName AS ProductName,
+			                      Orders.ProductPerUnitPrice AS ProductPerUnitPrice,
+			                      Orders.OrderQuantity AS OrderQuantity, Orders.TotalAmount AS TotalAmount,
+			                      Orders.PaymentMethod AS PaymentMethod,
+
+			                      Users.FirstName AS FirstName, Users.LastName AS LastName,
+			                      
+			                      Orders.CustomerFullName AS CustomerFullName, Orders.CustomerPhone AS CustomerPhone,
+			                      Orders.CustomerEmail AS CustomerEmail, Orders.CustomerAddress AS CustomerAddress,
+			                      
+			                      Orders.BarCodeId AS BarCodeId
+
+                                  FROM Orders INNER JOIN
+                                  Users ON Orders.Id = Users.Id ;";
+                else
+                    sql = @"select
+                                  Orders.OrderId AS OrderId, Orders.OrderTag AS OrderTag, Users.UserId AS UserId,
+			                      Orders.Date AS Date, Orders.ProductId AS ProductId, Orders.ProductName AS ProductName,
+			                      Orders.ProductPerUnitPrice AS ProductPerUnitPrice,
+			                      Orders.OrderQuantity AS OrderQuantity, Orders.TotalAmount AS TotalAmount,
+			                      Orders.PaymentMethod AS PaymentMethod,
+
+			                      Users.FirstName AS FirstName, Users.LastName AS LastName,
+			                      
+			                      Orders.CustomerFullName AS CustomerFullName, Orders.CustomerPhone AS CustomerPhone,
+			                      Orders.CustomerEmail AS CustomerEmail, Orders.CustomerAddress AS CustomerAddress,
+			                      
+			                      Orders.BarCodeId AS BarCodeId
+
+                                  FROM Orders INNER JOIN
+                                  Users ON Orders.Id = Users.Id 
+                                
+                                  where Orders.OrderId like '%" + key + "%' or Orders.OrderTag like '%" + key + "%' or " +
+                                  " Users.UserId like '%" + key + "%' or Orders.Date like '%" + key + "%' or " +
+                                  " Orders.ProductId like '%" + key + "%' or Orders.ProductName like '%" + key + "%' or " +
+                                  " Orders.ProductPerUnitPrice like '%" + key + "%' or Orders.OrderQuantity like '%" + key + "%' or " +
+                                  " Orders.TotalAmount like '%" + key + "%' or Orders.PaymentMethod like '%" + key + "%' or " +
+                                  " Users.FirstName like '%" + key + "%' or Users.LastName like '%" + key + "%' or " +
+                                  " Orders.CustomerFullName like '%" + key + "%' or  Orders.CustomerPhone like '%" + key + "%' or " +
+                                  " Orders.CustomerEmail like '%" + key + "%' or Orders.CustomerAddress like '%" + key + "%' or " +
+                                  " Orders.BarCodeId like '%" + key + "%' ";
+
+                return this.iDB.ExecuteQueryTable(sql);
+            }
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+        }
 
         //view & search & filter 
         public List<Orders> GetAll2(string key)

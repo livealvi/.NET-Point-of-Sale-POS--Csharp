@@ -196,11 +196,11 @@
     <Compile Include="UserInterface\Orders\FormMakeSale.Designer.cs">
       <DependentUpon>FormMakeSale.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Orders\FormSellsHistory.cs">
+    <Compile Include="UserInterface\Orders\FormSalesHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Orders\FormSellsHistory.Designer.cs">
-      <DependentUpon>FormSellsHistory.cs</DependentUpon>
+    <Compile Include="UserInterface\Orders\FormSalesHistory.Designer.cs">
+      <DependentUpon>FormSalesHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Categories\FormThirdCategory.cs">
       <SubType>Form</SubType>
@@ -279,8 +279,8 @@
     <EmbeddedResource Include="UserInterface\Orders\FormMakeSale.resx">
       <DependentUpon>FormMakeSale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Orders\FormSellsHistory.resx">
-      <DependentUpon>FormSellsHistory.cs</DependentUpon>
+    <EmbeddedResource Include="UserInterface\Orders\FormSalesHistory.resx">
+      <DependentUpon>FormSalesHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Categories\FormThirdCategory.resx">
       <DependentUpon>FormThirdCategory.cs</DependentUpon>

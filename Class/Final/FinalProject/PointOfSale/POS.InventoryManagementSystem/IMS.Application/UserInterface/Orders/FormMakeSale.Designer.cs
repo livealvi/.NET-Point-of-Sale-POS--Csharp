@@ -59,6 +59,8 @@ namespace FinalPoject
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
             this.MiddelPanel = new Guna.UI2.WinForms.Guna2Panel();
@@ -79,6 +81,7 @@ namespace FinalPoject
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label29 = new System.Windows.Forms.Label();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.guna2Panel29 = new Guna.UI2.WinForms.Guna2Panel();
@@ -133,12 +136,16 @@ namespace FinalPoject
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCancelSearch = new Guna.UI2.WinForms.Guna2Button();
             this.cmbThird = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbSecond = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -153,13 +160,6 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCancelSearch = new Guna.UI2.WinForms.Guna2Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -516,6 +516,28 @@ namespace FinalPoject
             this.guna2Panel22.Size = new System.Drawing.Size(401, 57);
             this.guna2Panel22.TabIndex = 164;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label5.Location = new System.Drawing.Point(127, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 21);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "All Available";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(26, 18);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(108, 21);
+            this.label28.TabIndex = 22;
+            this.label28.Text = "Porduct List : ";
+            // 
             // guna2Panel23
             // 
             this.guna2Panel23.BackColor = System.Drawing.Color.Transparent;
@@ -729,6 +751,17 @@ namespace FinalPoject
             this.guna2Panel27.ShadowDecoration.Parent = this.guna2Panel27;
             this.guna2Panel27.Size = new System.Drawing.Size(420, 57);
             this.guna2Panel27.TabIndex = 164;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label29.Location = new System.Drawing.Point(127, 18);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(79, 21);
+            this.label29.TabIndex = 21;
+            this.label29.Text = "Cart View";
             // 
             // guna2Panel28
             // 
@@ -1716,6 +1749,28 @@ namespace FinalPoject
             this.guna2Panel5.Size = new System.Drawing.Size(859, 57);
             this.guna2Panel5.TabIndex = 165;
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label30.Location = new System.Drawing.Point(145, 18);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(184, 21);
+            this.label30.TabIndex = 23;
+            this.label30.Text = "Products And Customer";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(26, 18);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(122, 21);
+            this.label31.TabIndex = 22;
+            this.label31.Text = "Fillable Deatils :";
+            // 
             // guna2Panel24
             // 
             this.guna2Panel24.BackColor = System.Drawing.Color.Transparent;
@@ -1806,6 +1861,43 @@ namespace FinalPoject
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F)});
             this.tablePanel3.Size = new System.Drawing.Size(1935, 58);
             this.tablePanel3.TabIndex = 205;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.tablePanel3.SetColumn(this.label1, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(929, 18);
+            this.label1.Name = "label1";
+            this.tablePanel3.SetRow(this.label1, 0);
+            this.label1.Size = new System.Drawing.Size(79, 21);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Filter By -";
+            // 
+            // btnCancelSearch
+            // 
+            this.btnCancelSearch.Animated = true;
+            this.btnCancelSearch.CheckedState.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_delete_480px_2;
+            this.btnCancelSearch.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_delete_480px_3;
+            this.btnCancelSearch.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCancelSearch.CustomImages.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.FillColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCancelSearch.HoverState.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Location = new System.Drawing.Point(654, 14);
+            this.btnCancelSearch.Name = "btnCancelSearch";
+            this.btnCancelSearch.ShadowDecoration.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Size = new System.Drawing.Size(33, 30);
+            this.btnCancelSearch.TabIndex = 207;
+            this.btnCancelSearch.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
             // 
             // cmbThird
             // 
@@ -2123,98 +2215,6 @@ namespace FinalPoject
             this.btnDeleteProduct.TabIndex = 135;
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
-            // 
-            // btnCancelSearch
-            // 
-            this.btnCancelSearch.Animated = true;
-            this.btnCancelSearch.CheckedState.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_delete_480px_2;
-            this.btnCancelSearch.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_delete_480px_3;
-            this.btnCancelSearch.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnCancelSearch.CustomImages.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.FillColor = System.Drawing.Color.Transparent;
-            this.btnCancelSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelSearch.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCancelSearch.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btnCancelSearch.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelSearch.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnCancelSearch.HoverState.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.Location = new System.Drawing.Point(654, 14);
-            this.btnCancelSearch.Name = "btnCancelSearch";
-            this.btnCancelSearch.ShadowDecoration.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.Size = new System.Drawing.Size(33, 30);
-            this.btnCancelSearch.TabIndex = 207;
-            this.btnCancelSearch.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label29.Location = new System.Drawing.Point(127, 18);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(79, 21);
-            this.label29.TabIndex = 21;
-            this.label29.Text = "Cart View";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label5.Location = new System.Drawing.Point(127, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 21);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "All Available";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(26, 18);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(108, 21);
-            this.label28.TabIndex = 22;
-            this.label28.Text = "Porduct List : ";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label30.Location = new System.Drawing.Point(145, 18);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(184, 21);
-            this.label30.TabIndex = 23;
-            this.label30.Text = "Products And Customer";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(26, 18);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(122, 21);
-            this.label31.TabIndex = 22;
-            this.label31.Text = "Fillable Deatils :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.tablePanel3.SetColumn(this.label1, 9);
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(929, 18);
-            this.label1.Name = "label1";
-            this.tablePanel3.SetRow(this.label1, 0);
-            this.label1.Size = new System.Drawing.Size(79, 21);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Filter By -";
             // 
             // FormMakeSale
             // 
