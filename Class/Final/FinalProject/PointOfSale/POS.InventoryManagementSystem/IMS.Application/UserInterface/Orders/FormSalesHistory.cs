@@ -26,7 +26,7 @@ namespace FinalPoject
             this.dgvSellHistory.DataSource = this.ordersRepo.GetAllOrderHistory(searchKey);
             this.dgvSellHistory.ClearSelection();
             this.Refresh();
-            //this.RefreshContent();
+            this.lblTotalItemResult.Text = this.dgvSellHistory.RowCount.ToString();
         }
 
         private void FormSellsHistory_Load(object sender, EventArgs e)
@@ -34,10 +34,20 @@ namespace FinalPoject
             this.PopulateGridView();
         }
 
-        private void btnCancelSearch_Click(object sender, EventArgs e)
+        private void RefreshContent()
         {
             this.PopulateGridView();
             this.txtSearchSellHistory.Clear();
+        }
+
+        private void btnCancelSearch_Click(object sender, EventArgs e)
+        {
+            this.RefreshContent();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.RefreshContent();
         }
 
         private void txtSearchSellHistory_TextChanged(object sender, EventArgs e)

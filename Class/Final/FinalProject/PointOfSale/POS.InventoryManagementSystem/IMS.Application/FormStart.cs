@@ -51,6 +51,11 @@ namespace FinalPoject
 
         }
 
+        private void btnSellingHistory_Click(object sender, EventArgs e)
+        {
+            ViewForm( new FormSellsHistory());
+        }
+
         public void ViewForm(object _form)
         {
             if (pnlFormViwer.Controls.Count > 0) pnlFormViwer.Controls.Clear();
@@ -64,6 +69,5 @@ namespace FinalPoject
                 form.Show();
             }
         }
-
     }
 }
