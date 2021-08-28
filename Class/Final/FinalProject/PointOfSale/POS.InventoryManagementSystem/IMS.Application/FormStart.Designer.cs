@@ -30,10 +30,7 @@ namespace FinalPoject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
-            this.pnlLeftMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.btnMasterProducts = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.btnUser = new Guna.UI2.WinForms.Guna2Button();
             this.btnMasterCustomers = new Guna.UI2.WinForms.Guna2Button();
             this.btnMakeSell = new Guna.UI2.WinForms.Guna2Button();
@@ -44,32 +41,17 @@ namespace FinalPoject
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlLeftMenu.SuspendLayout();
+            this.pnlLeftMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.pnlTop.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.pnlLeftMenu.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlLeftMenu
-            // 
-            this.pnlLeftMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnlLeftMenu.BackColor = System.Drawing.Color.White;
-            this.pnlLeftMenu.Controls.Add(this.btnMasterProducts);
-            this.pnlLeftMenu.Controls.Add(this.guna2Panel1);
-            this.pnlLeftMenu.Controls.Add(this.pnlInsideLeft);
-            this.pnlLeftMenu.Controls.Add(this.btnUser);
-            this.pnlLeftMenu.Controls.Add(this.btnMasterCustomers);
-            this.pnlLeftMenu.Controls.Add(this.btnMakeSell);
-            this.pnlLeftMenu.Controls.Add(this.btnMasterStock);
-            this.pnlLeftMenu.Controls.Add(this.btnDashboard);
-            this.pnlLeftMenu.CustomBorderColor = System.Drawing.Color.Silver;
-            this.pnlLeftMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.pnlLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlLeftMenu.Name = "pnlLeftMenu";
-            this.pnlLeftMenu.ShadowDecoration.Parent = this.pnlLeftMenu;
-            this.pnlLeftMenu.Size = new System.Drawing.Size(297, 782);
-            this.pnlLeftMenu.TabIndex = 30;
             // 
             // btnMasterProducts
             // 
@@ -98,7 +80,7 @@ namespace FinalPoject
             this.btnMasterProducts.HoverState.Parent = this.btnMasterProducts;
             this.btnMasterProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterProducts.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterProducts.Location = new System.Drawing.Point(33, 409);
+            this.btnMasterProducts.Location = new System.Drawing.Point(3, 366);
             this.btnMasterProducts.Name = "btnMasterProducts";
             this.btnMasterProducts.ShadowDecoration.Parent = this.btnMasterProducts;
             this.btnMasterProducts.Size = new System.Drawing.Size(230, 49);
@@ -108,26 +90,6 @@ namespace FinalPoject
             this.btnMasterProducts.TextOffset = new System.Drawing.Point(50, 0);
             this.btnMasterProducts.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.btnMasterProducts.Click += new System.EventHandler(this.btnMasterProducts_Click);
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(277, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(20, 782);
-            this.guna2Panel1.TabIndex = 17;
-            // 
-            // pnlInsideLeft
-            // 
-            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnlInsideLeft.Name = "pnlInsideLeft";
-            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
-            this.pnlInsideLeft.Size = new System.Drawing.Size(20, 782);
-            this.pnlInsideLeft.TabIndex = 13;
             // 
             // btnUser
             // 
@@ -156,7 +118,7 @@ namespace FinalPoject
             this.btnUser.HoverState.Parent = this.btnUser;
             this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUser.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnUser.Location = new System.Drawing.Point(33, 557);
+            this.btnUser.Location = new System.Drawing.Point(3, 516);
             this.btnUser.Name = "btnUser";
             this.btnUser.ShadowDecoration.Parent = this.btnUser;
             this.btnUser.Size = new System.Drawing.Size(230, 49);
@@ -194,7 +156,7 @@ namespace FinalPoject
             this.btnMasterCustomers.HoverState.Parent = this.btnMasterCustomers;
             this.btnMasterCustomers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterCustomers.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterCustomers.Location = new System.Drawing.Point(33, 483);
+            this.btnMasterCustomers.Location = new System.Drawing.Point(3, 441);
             this.btnMasterCustomers.Name = "btnMasterCustomers";
             this.btnMasterCustomers.ShadowDecoration.Parent = this.btnMasterCustomers;
             this.btnMasterCustomers.Size = new System.Drawing.Size(230, 49);
@@ -232,7 +194,7 @@ namespace FinalPoject
             this.btnMakeSell.HoverState.Parent = this.btnMakeSell;
             this.btnMakeSell.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMakeSell.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMakeSell.Location = new System.Drawing.Point(33, 261);
+            this.btnMakeSell.Location = new System.Drawing.Point(3, 216);
             this.btnMakeSell.Name = "btnMakeSell";
             this.btnMakeSell.ShadowDecoration.Parent = this.btnMakeSell;
             this.btnMakeSell.Size = new System.Drawing.Size(230, 49);
@@ -270,7 +232,7 @@ namespace FinalPoject
             this.btnMasterStock.HoverState.Parent = this.btnMasterStock;
             this.btnMasterStock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterStock.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterStock.Location = new System.Drawing.Point(33, 335);
+            this.btnMasterStock.Location = new System.Drawing.Point(3, 291);
             this.btnMasterStock.Name = "btnMasterStock";
             this.btnMasterStock.ShadowDecoration.Parent = this.btnMasterStock;
             this.btnMasterStock.Size = new System.Drawing.Size(230, 49);
@@ -308,7 +270,7 @@ namespace FinalPoject
             this.btnDashboard.HoverState.Parent = this.btnDashboard;
             this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDashboard.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnDashboard.Location = new System.Drawing.Point(33, 187);
+            this.btnDashboard.Location = new System.Drawing.Point(3, 141);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
             this.btnDashboard.Size = new System.Drawing.Size(230, 49);
@@ -381,6 +343,112 @@ namespace FinalPoject
             this.guna2Panel3.Size = new System.Drawing.Size(184, 73);
             this.guna2Panel3.TabIndex = 0;
             // 
+            // pnlLeftMenu
+            // 
+            this.pnlLeftMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlLeftMenu.BackColor = System.Drawing.Color.White;
+            this.pnlLeftMenu.Controls.Add(this.tableLayoutPanel1);
+            this.pnlLeftMenu.Controls.Add(this.guna2Panel1);
+            this.pnlLeftMenu.Controls.Add(this.pnlInsideLeft);
+            this.pnlLeftMenu.CustomBorderColor = System.Drawing.Color.Silver;
+            this.pnlLeftMenu.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.pnlLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlLeftMenu.Name = "pnlLeftMenu";
+            this.pnlLeftMenu.ShadowDecoration.Parent = this.pnlLeftMenu;
+            this.pnlLeftMenu.Size = new System.Drawing.Size(297, 782);
+            this.pnlLeftMenu.TabIndex = 30;
+            // 
+            // pnlInsideLeft
+            // 
+            this.pnlInsideLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInsideLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlInsideLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnlInsideLeft.Name = "pnlInsideLeft";
+            this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
+            this.pnlInsideLeft.Size = new System.Drawing.Size(20, 782);
+            this.pnlInsideLeft.TabIndex = 13;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel1.Location = new System.Drawing.Point(277, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(20, 782);
+            this.guna2Panel1.TabIndex = 17;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.btnUser, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.btnMasterProducts, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.btnMasterCustomers, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.btnDashboard, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnMasterStock, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnMakeSell, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnLogout, 0, 13);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 15;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(257, 782);
+            this.tableLayoutPanel1.TabIndex = 19;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Animated = true;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLogout.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLogout.BorderRadius = 13;
+            this.btnLogout.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.btnLogout.CheckedState.Parent = this.btnLogout;
+            this.btnLogout.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLogout.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnLogout.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
+            this.btnLogout.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
+            this.btnLogout.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
+            this.btnLogout.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.btnLogout.CustomImages.Parent = this.btnLogout;
+            this.btnLogout.FillColor = System.Drawing.Color.Transparent;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.ForeColor = System.Drawing.Color.Gray;
+            this.btnLogout.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnLogout.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.HoverState.Parent = this.btnLogout;
+            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.ImageOffset = new System.Drawing.Point(25, 0);
+            this.btnLogout.Location = new System.Drawing.Point(3, 709);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
+            this.btnLogout.Size = new System.Drawing.Size(230, 49);
+            this.btnLogout.TabIndex = 19;
+            this.btnLogout.Text = "Log out";
+            this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.TextOffset = new System.Drawing.Point(50, 0);
+            this.btnLogout.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,19 +462,17 @@ namespace FinalPoject
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.pnlLeftMenu.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
             this.guna2Panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.pnlLeftMenu.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Panel pnlLeftMenu;
         private Guna.UI2.WinForms.Guna2Button btnMasterProducts;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft;
         private Guna.UI2.WinForms.Guna2Button btnUser;
         private Guna.UI2.WinForms.Guna2Button btnMasterCustomers;
         private Guna.UI2.WinForms.Guna2Button btnMakeSell;
@@ -417,6 +483,11 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel pnlLeftMenu;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
     }
 }
 

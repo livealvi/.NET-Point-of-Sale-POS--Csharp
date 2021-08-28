@@ -60,7 +60,6 @@ namespace FinalPoject
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
             this.MiddelPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvCart = new System.Windows.Forms.DataGridView();
@@ -135,7 +134,6 @@ namespace FinalPoject
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
@@ -145,7 +143,6 @@ namespace FinalPoject
             this.cmbSecond = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnCancleSearch = new Guna.UI2.WinForms.Guna2Button();
             this.label24 = new System.Windows.Forms.Label();
             this.txtSearchForSell = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTotalItemFound = new System.Windows.Forms.Label();
@@ -156,7 +153,13 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnCancelSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -224,7 +227,6 @@ namespace FinalPoject
             this.pnlOrderSelect.BorderColor = System.Drawing.Color.Silver;
             this.pnlOrderSelect.BorderRadius = 12;
             this.pnlOrderSelect.BorderThickness = 1;
-            this.pnlOrderSelect.Controls.Add(this.comboBox1);
             this.pnlOrderSelect.Controls.Add(this.guna2Panel6);
             this.pnlOrderSelect.CustomBorderColor = System.Drawing.Color.Silver;
             this.pnlOrderSelect.Dock = System.Windows.Forms.DockStyle.Top;
@@ -254,9 +256,9 @@ namespace FinalPoject
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.label25.Location = new System.Drawing.Point(170, 21);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(153, 30);
+            this.label25.Size = new System.Drawing.Size(134, 30);
             this.label25.TabIndex = 20;
-            this.label25.Text = "Manager View";
+            this.label25.Text = "Product Cart";
             // 
             // label3
             // 
@@ -502,8 +504,9 @@ namespace FinalPoject
             // 
             // guna2Panel22
             // 
-            this.guna2Panel22.Controls.Add(this.guna2Panel23);
             this.guna2Panel22.Controls.Add(this.label5);
+            this.guna2Panel22.Controls.Add(this.label28);
+            this.guna2Panel22.Controls.Add(this.guna2Panel23);
             this.guna2Panel22.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel22.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Top;
@@ -522,17 +525,6 @@ namespace FinalPoject
             this.guna2Panel23.ShadowDecoration.Parent = this.guna2Panel23;
             this.guna2Panel23.Size = new System.Drawing.Size(20, 57);
             this.guna2Panel23.TabIndex = 19;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(26, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Search Product List";
             // 
             // guna2Panel15
             // 
@@ -726,6 +718,7 @@ namespace FinalPoject
             // 
             // guna2Panel27
             // 
+            this.guna2Panel27.Controls.Add(this.label29);
             this.guna2Panel27.Controls.Add(this.guna2Panel28);
             this.guna2Panel27.Controls.Add(this.label19);
             this.guna2Panel27.CustomBorderColor = System.Drawing.Color.Silver;
@@ -754,9 +747,9 @@ namespace FinalPoject
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(26, 18);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(145, 21);
+            this.label19.Size = new System.Drawing.Size(108, 21);
             this.label19.TabIndex = 0;
-            this.label19.Text = "Select Porduct List";
+            this.label19.Text = "Porduct List : ";
             // 
             // guna2Panel29
             // 
@@ -922,6 +915,7 @@ namespace FinalPoject
             this.txtBrand.PasswordChar = '\0';
             this.txtBrand.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.txtBrand.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtBrand.ReadOnly = true;
             this.txtBrand.SelectedText = "";
             this.txtBrand.ShadowDecoration.Parent = this.txtBrand;
             this.txtBrand.Size = new System.Drawing.Size(182, 30);
@@ -958,6 +952,7 @@ namespace FinalPoject
             this.txtNewVatAmount.Name = "txtNewVatAmount";
             this.txtNewVatAmount.PasswordChar = '\0';
             this.txtNewVatAmount.PlaceholderText = "";
+            this.txtNewVatAmount.ReadOnly = true;
             this.txtNewVatAmount.SelectedText = "";
             this.txtNewVatAmount.ShadowDecoration.Parent = this.txtNewVatAmount;
             this.txtNewVatAmount.Size = new System.Drawing.Size(271, 30);
@@ -985,6 +980,7 @@ namespace FinalPoject
             this.txtVatShow.PasswordChar = '\0';
             this.txtVatShow.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.txtVatShow.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtVatShow.ReadOnly = true;
             this.txtVatShow.SelectedText = "";
             this.txtVatShow.ShadowDecoration.Parent = this.txtVatShow;
             this.txtVatShow.Size = new System.Drawing.Size(182, 30);
@@ -1012,6 +1008,7 @@ namespace FinalPoject
             this.txtPorductItemLeft.PasswordChar = '\0';
             this.txtPorductItemLeft.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.txtPorductItemLeft.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtPorductItemLeft.ReadOnly = true;
             this.txtPorductItemLeft.SelectedText = "";
             this.txtPorductItemLeft.ShadowDecoration.Parent = this.txtPorductItemLeft;
             this.txtPorductItemLeft.Size = new System.Drawing.Size(182, 30);
@@ -1143,6 +1140,7 @@ namespace FinalPoject
             this.txtDiscount.PasswordChar = '\0';
             this.txtDiscount.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.txtDiscount.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtDiscount.ReadOnly = true;
             this.txtDiscount.SelectedText = "";
             this.txtDiscount.ShadowDecoration.Parent = this.txtDiscount;
             this.txtDiscount.Size = new System.Drawing.Size(182, 30);
@@ -1187,6 +1185,7 @@ namespace FinalPoject
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.PasswordChar = '\0';
             this.txtTotalAmount.PlaceholderText = "";
+            this.txtTotalAmount.ReadOnly = true;
             this.txtTotalAmount.SelectedText = "";
             this.txtTotalAmount.ShadowDecoration.Parent = this.txtTotalAmount;
             this.txtTotalAmount.Size = new System.Drawing.Size(271, 30);
@@ -1400,6 +1399,7 @@ namespace FinalPoject
             this.txtProductPerUnitPrice.Name = "txtProductPerUnitPrice";
             this.txtProductPerUnitPrice.PasswordChar = '\0';
             this.txtProductPerUnitPrice.PlaceholderText = "";
+            this.txtProductPerUnitPrice.ReadOnly = true;
             this.txtProductPerUnitPrice.SelectedText = "";
             this.txtProductPerUnitPrice.ShadowDecoration.Parent = this.txtProductPerUnitPrice;
             this.txtProductPerUnitPrice.Size = new System.Drawing.Size(170, 30);
@@ -1463,6 +1463,7 @@ namespace FinalPoject
             this.txtProductMSRP.PasswordChar = '\0';
             this.txtProductMSRP.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.txtProductMSRP.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtProductMSRP.ReadOnly = true;
             this.txtProductMSRP.SelectedText = "";
             this.txtProductMSRP.ShadowDecoration.Parent = this.txtProductMSRP;
             this.txtProductMSRP.Size = new System.Drawing.Size(170, 30);
@@ -1499,6 +1500,7 @@ namespace FinalPoject
             this.txtProductId.Name = "txtProductId";
             this.txtProductId.PasswordChar = '\0';
             this.txtProductId.PlaceholderText = "";
+            this.txtProductId.ReadOnly = true;
             this.txtProductId.SelectedText = "";
             this.txtProductId.ShadowDecoration.Parent = this.txtProductId;
             this.txtProductId.Size = new System.Drawing.Size(170, 30);
@@ -1535,6 +1537,7 @@ namespace FinalPoject
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.PasswordChar = '\0';
             this.txtProductName.PlaceholderText = "";
+            this.txtProductName.ReadOnly = true;
             this.txtProductName.SelectedText = "";
             this.txtProductName.ShadowDecoration.Parent = this.txtProductName;
             this.txtProductName.Size = new System.Drawing.Size(420, 30);
@@ -1574,6 +1577,7 @@ namespace FinalPoject
             this.txtProducTag.PasswordChar = '\0';
             this.txtProducTag.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.txtProducTag.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtProducTag.ReadOnly = true;
             this.txtProducTag.SelectedText = "";
             this.txtProducTag.ShadowDecoration.Parent = this.txtProducTag;
             this.txtProducTag.Size = new System.Drawing.Size(170, 30);
@@ -1700,8 +1704,9 @@ namespace FinalPoject
             // 
             // guna2Panel5
             // 
+            this.guna2Panel5.Controls.Add(this.label30);
+            this.guna2Panel5.Controls.Add(this.label31);
             this.guna2Panel5.Controls.Add(this.guna2Panel24);
-            this.guna2Panel5.Controls.Add(this.label1);
             this.guna2Panel5.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel5.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1720,17 +1725,6 @@ namespace FinalPoject
             this.guna2Panel24.ShadowDecoration.Parent = this.guna2Panel24;
             this.guna2Panel24.Size = new System.Drawing.Size(20, 57);
             this.guna2Panel24.TabIndex = 19;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(26, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fillable Deatils";
             // 
             // guna2Panel2
             // 
@@ -1752,10 +1746,10 @@ namespace FinalPoject
             // 
             this.guna2Panel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel12.Location = new System.Drawing.Point(1658, 10);
+            this.guna2Panel12.Location = new System.Drawing.Point(1965, 10);
             this.guna2Panel12.Name = "guna2Panel12";
             this.guna2Panel12.ShadowDecoration.Parent = this.guna2Panel12;
-            this.guna2Panel12.Size = new System.Drawing.Size(22, 89);
+            this.guna2Panel12.Size = new System.Drawing.Size(22, 72);
             this.guna2Panel12.TabIndex = 207;
             // 
             // guna2Panel10
@@ -1765,7 +1759,7 @@ namespace FinalPoject
             this.guna2Panel10.Location = new System.Drawing.Point(0, 10);
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.ShadowDecoration.Parent = this.guna2Panel10;
-            this.guna2Panel10.Size = new System.Drawing.Size(22, 89);
+            this.guna2Panel10.Size = new System.Drawing.Size(22, 72);
             this.guna2Panel10.TabIndex = 206;
             // 
             // guna2Panel14
@@ -1775,7 +1769,7 @@ namespace FinalPoject
             this.guna2Panel14.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel14.Name = "guna2Panel14";
             this.guna2Panel14.ShadowDecoration.Parent = this.guna2Panel14;
-            this.guna2Panel14.Size = new System.Drawing.Size(1680, 10);
+            this.guna2Panel14.Size = new System.Drawing.Size(1987, 10);
             this.guna2Panel14.TabIndex = 157;
             // 
             // tablePanel3
@@ -1785,22 +1779,24 @@ namespace FinalPoject
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 129F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 496F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 16F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 41F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 15F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 133F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 8F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 14F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 168F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 54F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 86F, true, "FilterBy"),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 179F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 173F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 168F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 189F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 16.31F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 7.23F)});
+            this.tablePanel3.Controls.Add(this.label1);
+            this.tablePanel3.Controls.Add(this.btnCancelSearch);
             this.tablePanel3.Controls.Add(this.cmbThird);
             this.tablePanel3.Controls.Add(this.cmbSecond);
             this.tablePanel3.Controls.Add(this.cmbVendor);
             this.tablePanel3.Controls.Add(this.cmbBrand);
-            this.tablePanel3.Controls.Add(this.btnCancleSearch);
             this.tablePanel3.Controls.Add(this.label24);
             this.tablePanel3.Controls.Add(this.txtSearchForSell);
             this.tablePanel3.Controls.Add(this.lblTotalItemFound);
@@ -1808,26 +1804,27 @@ namespace FinalPoject
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F)});
-            this.tablePanel3.Size = new System.Drawing.Size(1622, 72);
+            this.tablePanel3.Size = new System.Drawing.Size(1935, 58);
             this.tablePanel3.TabIndex = 205;
             // 
             // cmbThird
             // 
             this.cmbThird.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbThird, 11);
             this.cmbThird.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbThird.DropDownHeight = 300;
             this.cmbThird.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbThird.DropDownWidth = 250;
             this.cmbThird.FocusedColor = System.Drawing.Color.Empty;
             this.cmbThird.FocusedState.Parent = this.cmbThird;
             this.cmbThird.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbThird.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbThird.FormattingEnabled = true;
             this.cmbThird.HoverState.Parent = this.cmbThird;
+            this.cmbThird.IntegralHeight = false;
             this.cmbThird.ItemHeight = 30;
             this.cmbThird.ItemsAppearance.Parent = this.cmbThird;
-            this.cmbThird.Location = new System.Drawing.Point(1217, 18);
+            this.cmbThird.Location = new System.Drawing.Point(1367, 11);
             this.cmbThird.Name = "cmbThird";
-            this.tablePanel3.SetRow(this.cmbThird, 0);
             this.cmbThird.ShadowDecoration.Parent = this.cmbThird;
             this.cmbThird.Size = new System.Drawing.Size(162, 36);
             this.cmbThird.TabIndex = 210;
@@ -1836,96 +1833,78 @@ namespace FinalPoject
             // cmbSecond
             // 
             this.cmbSecond.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbSecond, 12);
             this.cmbSecond.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSecond.DropDownHeight = 300;
             this.cmbSecond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecond.DropDownWidth = 250;
             this.cmbSecond.FocusedColor = System.Drawing.Color.Empty;
             this.cmbSecond.FocusedState.Parent = this.cmbSecond;
             this.cmbSecond.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbSecond.FormattingEnabled = true;
             this.cmbSecond.HoverState.Parent = this.cmbSecond;
+            this.cmbSecond.IntegralHeight = false;
             this.cmbSecond.ItemHeight = 30;
             this.cmbSecond.ItemsAppearance.Parent = this.cmbSecond;
-            this.cmbSecond.Location = new System.Drawing.Point(1385, 18);
+            this.cmbSecond.Location = new System.Drawing.Point(1535, 11);
             this.cmbSecond.Name = "cmbSecond";
-            this.tablePanel3.SetRow(this.cmbSecond, 0);
             this.cmbSecond.ShadowDecoration.Parent = this.cmbSecond;
             this.cmbSecond.Size = new System.Drawing.Size(183, 36);
             this.cmbSecond.TabIndex = 209;
+            this.cmbSecond.SelectedIndexChanged += new System.EventHandler(this.cmbSecond_SelectedIndexChanged);
             // 
             // cmbVendor
             // 
             this.cmbVendor.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbVendor, 10);
             this.cmbVendor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbVendor.DropDownHeight = 300;
             this.cmbVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVendor.DropDownWidth = 250;
             this.cmbVendor.FocusedColor = System.Drawing.Color.Empty;
             this.cmbVendor.FocusedState.Parent = this.cmbVendor;
             this.cmbVendor.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbVendor.FormattingEnabled = true;
             this.cmbVendor.HoverState.Parent = this.cmbVendor;
+            this.cmbVendor.IntegralHeight = false;
             this.cmbVendor.ItemHeight = 30;
             this.cmbVendor.ItemsAppearance.Parent = this.cmbVendor;
-            this.cmbVendor.Location = new System.Drawing.Point(1044, 18);
+            this.cmbVendor.Location = new System.Drawing.Point(1194, 11);
             this.cmbVendor.Name = "cmbVendor";
-            this.tablePanel3.SetRow(this.cmbVendor, 0);
             this.cmbVendor.ShadowDecoration.Parent = this.cmbVendor;
             this.cmbVendor.Size = new System.Drawing.Size(167, 36);
             this.cmbVendor.TabIndex = 208;
+            this.cmbVendor.SelectedIndexChanged += new System.EventHandler(this.cmbVendor_SelectedIndexChanged);
             // 
             // cmbBrand
             // 
             this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
-            this.tablePanel3.SetColumn(this.cmbBrand, 9);
             this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBrand.DropDownHeight = 300;
             this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBrand.DropDownWidth = 250;
             this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
             this.cmbBrand.FocusedState.Parent = this.cmbBrand;
             this.cmbBrand.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbBrand.FormattingEnabled = true;
             this.cmbBrand.HoverState.Parent = this.cmbBrand;
+            this.cmbBrand.IntegralHeight = false;
             this.cmbBrand.ItemHeight = 30;
             this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
-            this.cmbBrand.Location = new System.Drawing.Point(865, 18);
+            this.cmbBrand.Location = new System.Drawing.Point(1015, 11);
             this.cmbBrand.Name = "cmbBrand";
-            this.tablePanel3.SetRow(this.cmbBrand, 0);
             this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
             this.cmbBrand.Size = new System.Drawing.Size(173, 36);
             this.cmbBrand.TabIndex = 207;
-            // 
-            // btnCancleSearch
-            // 
-            this.btnCancleSearch.Animated = true;
-            this.btnCancleSearch.CheckedState.Parent = this.btnCancleSearch;
-            this.btnCancleSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancleSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnCancleSearch.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnCancleSearch.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnCancleSearch.CustomImages.Parent = this.btnCancleSearch;
-            this.btnCancleSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnCancleSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancleSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnCancleSearch.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnCancleSearch.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancleSearch.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnCancleSearch.HoverState.Parent = this.btnCancleSearch;
-            this.btnCancleSearch.Location = new System.Drawing.Point(662, 21);
-            this.btnCancleSearch.Name = "btnCancleSearch";
-            this.btnCancleSearch.ShadowDecoration.Parent = this.btnCancleSearch;
-            this.btnCancleSearch.Size = new System.Drawing.Size(35, 30);
-            this.btnCancleSearch.TabIndex = 202;
-            this.btnCancleSearch.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnCancleSearch.Click += new System.EventHandler(this.btnCancleSearch_Click);
+            this.cmbBrand.SelectedIndexChanged += new System.EventHandler(this.cmbBrand_SelectedIndexChanged);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label24.Location = new System.Drawing.Point(19, 26);
+            this.label24.Location = new System.Drawing.Point(19, 19);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(114, 20);
@@ -1949,11 +1928,11 @@ namespace FinalPoject
             this.txtSearchForSell.HoverState.Parent = this.txtSearchForSell;
             this.txtSearchForSell.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.txtSearchForSell.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearchForSell.Location = new System.Drawing.Point(151, 21);
+            this.txtSearchForSell.Location = new System.Drawing.Point(151, 14);
             this.txtSearchForSell.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSearchForSell.Name = "txtSearchForSell";
             this.txtSearchForSell.PasswordChar = '\0';
-            this.txtSearchForSell.PlaceholderText = "by Name, Tag, Cate. Brand";
+            this.txtSearchForSell.PlaceholderText = "by Name, Tag, Brand etc.";
             this.txtSearchForSell.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtSearchForSell.SelectedText = "";
             this.txtSearchForSell.ShadowDecoration.Parent = this.txtSearchForSell;
@@ -1966,11 +1945,11 @@ namespace FinalPoject
             this.lblTotalItemFound.AutoSize = true;
             this.lblTotalItemFound.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalItemFound.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalItemFound.Location = new System.Drawing.Point(718, 25);
+            this.lblTotalItemFound.Location = new System.Drawing.Point(707, 17);
             this.lblTotalItemFound.Name = "lblTotalItemFound";
-            this.lblTotalItemFound.Size = new System.Drawing.Size(95, 21);
+            this.lblTotalItemFound.Size = new System.Drawing.Size(103, 21);
             this.lblTotalItemFound.TabIndex = 0;
-            this.lblTotalItemFound.Text = "Total Found";
+            this.lblTotalItemFound.Text = "Total Found :";
             // 
             // guna2Panel13
             // 
@@ -2037,7 +2016,7 @@ namespace FinalPoject
             this.btnCancle.ShadowDecoration.Parent = this.btnCancle;
             this.btnCancle.Size = new System.Drawing.Size(219, 35);
             this.btnCancle.TabIndex = 171;
-            this.btnCancle.Text = "Cancle";
+            this.btnCancle.Text = "Cancel";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnPlaceOrderToSave
@@ -2145,14 +2124,97 @@ namespace FinalPoject
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
-            // comboBox1
+            // btnCancelSearch
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(854, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.btnCancelSearch.Animated = true;
+            this.btnCancelSearch.CheckedState.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_delete_480px_2;
+            this.btnCancelSearch.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_delete_480px_3;
+            this.btnCancelSearch.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCancelSearch.CustomImages.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.FillColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCancelSearch.HoverState.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Location = new System.Drawing.Point(654, 14);
+            this.btnCancelSearch.Name = "btnCancelSearch";
+            this.btnCancelSearch.ShadowDecoration.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Size = new System.Drawing.Size(33, 30);
+            this.btnCancelSearch.TabIndex = 207;
+            this.btnCancelSearch.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label29.Location = new System.Drawing.Point(127, 18);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(79, 21);
+            this.label29.TabIndex = 21;
+            this.label29.Text = "Cart View";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label5.Location = new System.Drawing.Point(127, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 21);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "All Available";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(26, 18);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(108, 21);
+            this.label28.TabIndex = 22;
+            this.label28.Text = "Porduct List : ";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.label30.Location = new System.Drawing.Point(145, 18);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(184, 21);
+            this.label30.TabIndex = 23;
+            this.label30.Text = "Products And Customer";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(26, 18);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(122, 21);
+            this.label31.TabIndex = 22;
+            this.label31.Text = "Fillable Deatils :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.tablePanel3.SetColumn(this.label1, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(929, 18);
+            this.label1.Name = "label1";
+            this.tablePanel3.SetRow(this.label1, 0);
+            this.label1.Size = new System.Drawing.Size(79, 21);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Filter By -";
             // 
             // FormMakeSale
             // 
@@ -2221,7 +2283,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2Button btnDeleteProduct;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
-        private Guna.UI2.WinForms.Guna2Button btnCancleSearch;
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchForSell;
         private System.Windows.Forms.Label lblTotalItemFound;
@@ -2234,7 +2295,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel21;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel22;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel23;
-        private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel15;
         private Guna.UI2.WinForms.Guna2Panel MiddelPanel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel16;
@@ -2289,7 +2349,6 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel18;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label21;
         private Guna.UI2.WinForms.Guna2TextBox txtNewVatAmount;
         private System.Windows.Forms.DataGridView dgvCart;
@@ -2329,6 +2388,12 @@ namespace FinalPoject
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private Guna.UI2.WinForms.Guna2Button btnCancelSearch;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label1;
     }
 }
