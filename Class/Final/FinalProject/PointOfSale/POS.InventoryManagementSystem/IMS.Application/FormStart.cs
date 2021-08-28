@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalPoject.UserInterface.Dashboard;
 using Guna.UI2.WinForms;
 
 namespace FinalPoject
@@ -20,7 +21,7 @@ namespace FinalPoject
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            
+            ViewForm(new FormDashboard());
         }
 
         private void btnMakeSell_Click(object sender, EventArgs e)
