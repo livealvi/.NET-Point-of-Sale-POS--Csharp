@@ -412,5 +412,31 @@ namespace FinalPoject
         {
             this.Close();
         }
+
+        private void txtProductQuant_TextChanged(object sender, EventArgs e)
+        {
+            int quantityLeft = Int32.Parse(txtPorductItemLeft.Text);
+            if (txtProductQuant.Text != "")
+            {
+                int quantity = Int32.Parse(txtProductQuant.Text);
+                int itemsLeft = quantityLeft - quantity;
+
+                if (itemsLeft < 0)
+                {
+                    txtProductQuant.ForeColor = Color.OrangeRed;
+                }
+                else
+                {
+                    txtProductQuant.ForeColor = Color.Black;
+                }
+                txtPorductItemLeft.Text = itemsLeft.ToString();
+            }
+            else
+            {
+                txtProductQuant.ForeColor = Color.Black;
+                txtPorductItemLeft.Text = this.dgvSearchProduct.CurrentRow.Cells["ProductUnitStock"].Value.ToString();
+            }
+
+        }
     }
 }

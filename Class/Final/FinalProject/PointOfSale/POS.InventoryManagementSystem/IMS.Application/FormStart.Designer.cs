@@ -48,6 +48,7 @@ namespace FinalPoject
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlFormViwer = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblShowUserInfo = new System.Windows.Forms.Label();
             this.pnlLeftMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlTop.SuspendLayout();
@@ -474,6 +475,7 @@ namespace FinalPoject
             // 
             this.pnlTop.BackColor = System.Drawing.Color.White;
             this.pnlTop.BorderColor = System.Drawing.Color.White;
+            this.pnlTop.Controls.Add(this.lblShowUserInfo);
             this.pnlTop.Controls.Add(this.guna2Panel9);
             this.pnlTop.Controls.Add(this.guna2Panel3);
             this.pnlTop.CustomBorderColor = System.Drawing.Color.Silver;
@@ -532,6 +534,15 @@ namespace FinalPoject
             this.pnlFormViwer.Size = new System.Drawing.Size(1184, 709);
             this.pnlFormViwer.TabIndex = 44;
             // 
+            // lblShowUserInfo
+            // 
+            this.lblShowUserInfo.AutoSize = true;
+            this.lblShowUserInfo.Location = new System.Drawing.Point(76, 31);
+            this.lblShowUserInfo.Name = "lblShowUserInfo";
+            this.lblShowUserInfo.Size = new System.Drawing.Size(35, 13);
+            this.lblShowUserInfo.TabIndex = 6;
+            this.lblShowUserInfo.Text = "label1";
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -548,6 +559,7 @@ namespace FinalPoject
             this.pnlLeftMenu.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             this.guna2Panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -573,6 +585,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel pnlFormViwer;
         private Guna.UI2.WinForms.Guna2Button btnSellingHistory;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Label lblShowUserInfo;
     }
 }
 

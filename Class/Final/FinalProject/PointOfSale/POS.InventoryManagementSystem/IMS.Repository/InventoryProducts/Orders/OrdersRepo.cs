@@ -22,7 +22,7 @@ namespace IMS.Repository
         //view & search & filter 
         public DataTable GetAll(string key)
         {
-            List<Orders> ordersList = new List<Orders>();
+           // List<Orders> ordersList = new List<Orders>();
 
             string sql;
             try
@@ -70,6 +70,7 @@ namespace IMS.Repository
             }
         }
 
+        //Order History
         public DataTable GetAllOrderHistory(string key)
         {
             List<Orders> ordersHistoryList = new List<Orders>();

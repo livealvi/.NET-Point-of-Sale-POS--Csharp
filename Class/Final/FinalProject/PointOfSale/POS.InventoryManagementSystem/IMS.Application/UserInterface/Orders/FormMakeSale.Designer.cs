@@ -1473,6 +1473,7 @@ namespace FinalPoject
             this.txtProductQuant.ShadowDecoration.Parent = this.txtProductQuant;
             this.txtProductQuant.Size = new System.Drawing.Size(170, 30);
             this.txtProductQuant.TabIndex = 221;
+            this.txtProductQuant.TextChanged += new System.EventHandler(this.txtProductQuant_TextChanged);
             // 
             // txtProductMSRP
             // 

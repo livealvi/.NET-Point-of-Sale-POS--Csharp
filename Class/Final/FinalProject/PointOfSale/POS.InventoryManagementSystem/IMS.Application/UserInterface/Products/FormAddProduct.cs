@@ -20,8 +20,6 @@ namespace FinalPoject
     {
         private ProductsRepo                    productRepo{get;  set;}
         private BrandsRepo                     brandRepo  {get;  set;}
-        private DelegateCollection.RefreshGrid refreshGrid{ get; set; }
-        //private ProductsBrandViewRepo          pbvReop    { get; set; }
         public FormAddProduct()
         {
             InitializeComponent();

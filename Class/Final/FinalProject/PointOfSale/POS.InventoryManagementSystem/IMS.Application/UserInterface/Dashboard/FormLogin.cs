@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IMS.Repository;
 
 namespace FinalPoject.UserInterface.Dashboard
 {
     public partial class FormLogin : Form
     {
+        private UsersRepo usersRepo{get; set;}
         public FormLogin()
         {
             InitializeComponent();
+            this.usersRepo = new UsersRepo();
         }
 
         private void lblForgetPassword_MouseHover(object sender, EventArgs e)
@@ -30,6 +33,30 @@ namespace FinalPoject.UserInterface.Dashboard
         private void FormLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string role = usersRepo.GetRole(txtUserId.Text, txtPassword.Text);
+            if (role=="Admin")
+            {
+                //MessageBox.Show("Logged in as admin");
+                new FormStart(role).Show();
+            }
+            else if(role=="Cashier")
+            {
+                //MessageBox.Show("Logged in as Cashier");
+                new FormStart(role).Show();
+
+            }
+            else if (role == null)
+            {
+                MessageBox.Show("Error login");
+            }
+            else
+            {
+                MessageBox.Show("Role Returned : "+role);
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,6 +74,33 @@ namespace IMS.DataAccess
             this.QueryText(sql);
             int u = this.Sqlcom.ExecuteNonQuery();
             return u;
+        }
+
+        public string GetSingleData(string query, string columnName)
+        {
+            SqlConnection connection = null;
+            SqlDataReader reader = null;
+            string columnData = null;
+            try
+            {
+                connection = sqlcon;
+                SqlCommand cmd = new SqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    columnData = reader[columnName].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                connection?.Close();
+                reader?.Close();
+            }
+            return columnData;
         }
     }
 }

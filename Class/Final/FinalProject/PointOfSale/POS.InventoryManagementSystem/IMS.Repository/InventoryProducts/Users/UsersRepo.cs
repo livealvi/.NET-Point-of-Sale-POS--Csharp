@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using IMS.DataAccess;
@@ -20,6 +22,36 @@ namespace IMS.Repository
         {
             this.iDB = new InventoryDBDataAccess();
         }
+
+        //Login
+
+        public string GetRole(string username, string password)
+        {
+            SqlConnection connection = null;
+            SqlDataReader reader = null;
+            string columnData = null;
+            try
+            {
+                connection = iDB.Sqlcon;
+                SqlCommand cmd = new SqlCommand("select Role as role from Users where UserId='" + username + "' and Password='" + password + "'", connection);
+                reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    columnData = reader["role"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                connection?.Close();
+                reader?.Close();
+            }
+            return columnData;
+        }
+
 
         //view & search
         public List<Users> GetAll(string key)

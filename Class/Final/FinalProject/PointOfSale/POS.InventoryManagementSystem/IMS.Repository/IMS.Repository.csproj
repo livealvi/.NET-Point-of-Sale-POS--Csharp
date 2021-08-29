@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="InventoryProducts\Categories\BrandsRepo.cs" />
     <Compile Include="InventoryProducts\Categories\MainCategoriesRepo.cs" />
+    <Compile Include="InventoryProducts\Expense\ExpenseRepo.cs" />
     <Compile Include="InventoryProducts\Orders\OrdersRepo.cs" />
     <Compile Include="InventoryProducts\Categories\MasterCategoriesRepo.cs" />
     <Compile Include="InventoryProducts\Products\ProductsRepo.cs" />

@@ -14,9 +14,40 @@ namespace FinalPoject
 {
     public partial class FormStart : Form
     {
-        public FormStart()
+        private string role;
+        public FormStart(string role)
         {
             InitializeComponent();
+            this.role = role;
+
+            if (role == "Admin")
+            {
+                SetupForAdmin();
+            }
+            else if(role=="Cashier")
+            {
+                SetupForCashier();
+            }
+
+            this.lblShowUserInfo.Text = this.role;
+        }
+
+        void SetupForAdmin()
+        {
+            btnDashboard.Enabled = true;
+            btnMakeSell.Enabled = true;
+            btnMasterCustomers.Enabled = true;
+            btnMasterProducts.Enabled = true;
+            btnMasterStock.Enabled = true;
+        }
+
+        void SetupForCashier()
+        {
+            btnDashboard.Enabled = true;
+            btnMakeSell.Enabled = true;
+            btnMasterCustomers.Enabled = false;
+            btnMasterProducts.Enabled = true;
+            btnMasterStock.Enabled = false;
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
