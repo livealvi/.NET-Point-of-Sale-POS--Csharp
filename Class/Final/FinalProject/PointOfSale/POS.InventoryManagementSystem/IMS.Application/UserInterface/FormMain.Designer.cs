@@ -29,7 +29,6 @@ namespace FinalPoject
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
             this.btnMasterProducts = new Guna.UI2.WinForms.Guna2Button();
             this.btnUser = new Guna.UI2.WinForms.Guna2Button();
             this.btnMakeSell = new Guna.UI2.WinForms.Guna2Button();
@@ -46,16 +45,12 @@ namespace FinalPoject
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlTop = new Guna.UI2.WinForms.Guna2Panel();
             this.lblShowUserInfo = new System.Windows.Forms.Label();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlFormViwer = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlLeftMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlTop.SuspendLayout();
-            this.guna2Panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMasterProducts
@@ -477,9 +472,8 @@ namespace FinalPoject
             // 
             this.pnlTop.BackColor = System.Drawing.Color.White;
             this.pnlTop.BorderColor = System.Drawing.Color.White;
+            this.pnlTop.Controls.Add(this.label3);
             this.pnlTop.Controls.Add(this.lblShowUserInfo);
-            this.pnlTop.Controls.Add(this.guna2Panel9);
-            this.pnlTop.Controls.Add(this.guna2Panel3);
             this.pnlTop.CustomBorderColor = System.Drawing.Color.Silver;
             this.pnlTop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -493,48 +487,12 @@ namespace FinalPoject
             // lblShowUserInfo
             // 
             this.lblShowUserInfo.AutoSize = true;
-            this.lblShowUserInfo.Location = new System.Drawing.Point(76, 31);
+            this.lblShowUserInfo.Font = new System.Drawing.Font("Segoe UI", 16.2F);
+            this.lblShowUserInfo.Location = new System.Drawing.Point(134, 21);
             this.lblShowUserInfo.Name = "lblShowUserInfo";
-            this.lblShowUserInfo.Size = new System.Drawing.Size(35, 13);
+            this.lblShowUserInfo.Size = new System.Drawing.Size(54, 30);
             this.lblShowUserInfo.TabIndex = 6;
-            this.lblShowUserInfo.Text = "label1";
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel9.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel9.Location = new System.Drawing.Point(924, 0);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
-            this.guna2Panel9.Size = new System.Drawing.Size(76, 73);
-            this.guna2Panel9.TabIndex = 5;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.AutoRoundedCorners = true;
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2PictureBox1.BorderRadius = 24;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageLocation = "";
-            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 11);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 4;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(1000, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(184, 73);
-            this.guna2Panel3.TabIndex = 0;
+            this.lblShowUserInfo.Text = "user";
             // 
             // pnlFormViwer
             // 
@@ -544,6 +502,17 @@ namespace FinalPoject
             this.pnlFormViwer.ShadowDecoration.Parent = this.pnlFormViwer;
             this.pnlFormViwer.Size = new System.Drawing.Size(1184, 709);
             this.pnlFormViwer.TabIndex = 44;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(20, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 30);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Welcome: ";
             // 
             // FormStart
             // 
@@ -564,8 +533,6 @@ namespace FinalPoject
             this.panel1.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            this.guna2Panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -582,15 +549,13 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel pnlInsideLeft;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
         private Guna.UI2.WinForms.Guna2Panel pnlTop;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Panel pnlFormViwer;
         private Guna.UI2.WinForms.Guna2Button btnSellingHistory;
         private Guna.UI2.WinForms.Guna2Button btnExpenses;
         private System.Windows.Forms.Label lblShowUserInfo;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnCancelSearch;
+        private System.Windows.Forms.Label label3;
     }
 }
 
