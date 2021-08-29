@@ -47,10 +47,16 @@ namespace FinalPoject.UserInterface.Dashboard
             else if(role=="Cashier")
             {
                 new FormStart(role, this).Show();
+                FormStart formStart = new FormStart(role, this);
+                formStart.Visible = true;
+                this.Visible = false;
             }
             else if (role == "Salesman")
             {
                 new FormStart(role, this).Show();
+                FormStart formStart = new FormStart(role, this);
+                formStart.Visible = true;
+                this.Visible = false;
             }
             else if (role == null)
             {

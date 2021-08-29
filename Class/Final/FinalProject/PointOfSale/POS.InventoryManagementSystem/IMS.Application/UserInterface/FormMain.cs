@@ -49,6 +49,7 @@ namespace FinalPoject
             btnSellingHistory.Enabled = true;
             btnExpenses.Enabled = true;
             btnMasterStock.Enabled = true;
+            btnSetting.Enabled = true;
         }
 
         void SetupForCashier()
@@ -60,6 +61,7 @@ namespace FinalPoject
             btnSellingHistory.Enabled = true;
             btnExpenses.Enabled = false;
             btnMasterStock.Enabled = true;
+            btnSetting.Enabled = false;
         }
 
         void SetupForSalesman()
@@ -71,6 +73,7 @@ namespace FinalPoject
             btnSellingHistory.Enabled = true;
             btnExpenses.Enabled = false;
             btnMasterStock.Enabled = false;
+            btnSetting.Enabled = false;
         }
 
 
@@ -126,11 +129,6 @@ namespace FinalPoject
             }
         }
 
-        private void btnCancelSearch_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
            // var decision =  MessageBox.Show("Do you want to close the application?","Confirmation",MessageBoxButtons.YesNo);
@@ -147,6 +145,12 @@ namespace FinalPoject
             {
                 Application.Exit();
             }
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            FormSetting setting = new FormSetting();
+            setting.ShowDialog();
         }
     }
 }

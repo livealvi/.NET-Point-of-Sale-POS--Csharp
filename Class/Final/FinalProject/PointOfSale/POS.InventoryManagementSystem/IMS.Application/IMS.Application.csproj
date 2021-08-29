@@ -112,11 +112,29 @@
     <Reference Include="DevExpress.XtraScheduler.v21.1.Core.Desktop, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraVerticalGrid.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net45\FontAwesome.Sharp.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\..\..\Downloads\Compressed\Guna_UI_Framework_Ultimate_2.0.0.1_Downloadly.ir\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlClrProvider, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlClrProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlEnum.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -135,6 +153,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserInterface\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\BarCode\BarCodeMaker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,18 +231,6 @@
     <Compile Include="UserInterface\Category\FormVendor.Designer.cs">
       <DependentUpon>FormVendor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ResponsiveTableTextBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ResponsiveTableTextBox.Designer.cs">
-      <DependentUpon>ResponsiveTableTextBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ComponentsDesign.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ComponentsDesign.Designer.cs">
-      <DependentUpon>ComponentsDesign.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserInterface\Category\FormMasterCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +257,9 @@
     <Compile Include="UserInterface\Category\FormSecondCategory.Designer.cs">
       <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserInterface\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\BarCode\BarCodeMaker.resx">
       <DependentUpon>BarCodeMaker.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,12 +297,6 @@
       <DependentUpon>FormVendor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="ResponsiveTableTextBox.resx">
-      <DependentUpon>ResponsiveTableTextBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ComponentsDesign.resx">
-      <DependentUpon>ComponentsDesign.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Category\FormMasterCategory.resx">
       <DependentUpon>FormMasterCategory.cs</DependentUpon>
     </EmbeddedResource>

@@ -54,6 +54,8 @@
     <Compile Include="InventoryProducts\Categories\ThirdCategories.cs" />
     <Compile Include="InventoryProducts\Categories\Vendors.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,7 +37,7 @@ namespace FinalPoject
             this.pnlLeftMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancelSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
             this.btnExpenses = new Guna.UI2.WinForms.Guna2Button();
             this.btnSellingHistory = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
@@ -301,38 +301,38 @@ namespace FinalPoject
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnCancelSearch);
+            this.panel1.Controls.Add(this.btnSetting);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(241, 710);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(33, 49);
             this.panel1.TabIndex = 210;
             // 
-            // btnCancelSearch
+            // btnSetting
             // 
-            this.btnCancelSearch.Animated = true;
-            this.btnCancelSearch.CheckedState.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_settings_480px_1;
-            this.btnCancelSearch.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_settings_480px;
-            this.btnCancelSearch.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnCancelSearch.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancelSearch.CustomImages.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.FillColor = System.Drawing.Color.Transparent;
-            this.btnCancelSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelSearch.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCancelSearch.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btnCancelSearch.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelSearch.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnCancelSearch.HoverState.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancelSearch.Location = new System.Drawing.Point(0, 9);
-            this.btnCancelSearch.Name = "btnCancelSearch";
-            this.btnCancelSearch.ShadowDecoration.Parent = this.btnCancelSearch;
-            this.btnCancelSearch.Size = new System.Drawing.Size(33, 30);
-            this.btnCancelSearch.TabIndex = 209;
-            this.btnCancelSearch.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
+            this.btnSetting.Animated = true;
+            this.btnSetting.CheckedState.Parent = this.btnSetting;
+            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSetting.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_settings_480px_1;
+            this.btnSetting.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_settings_480px;
+            this.btnSetting.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSetting.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSetting.CustomImages.Parent = this.btnSetting;
+            this.btnSetting.FillColor = System.Drawing.Color.Transparent;
+            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.ForeColor = System.Drawing.Color.Transparent;
+            this.btnSetting.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnSetting.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.HoverState.Parent = this.btnSetting;
+            this.btnSetting.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSetting.Location = new System.Drawing.Point(0, 9);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.ShadowDecoration.Parent = this.btnSetting;
+            this.btnSetting.Size = new System.Drawing.Size(33, 30);
+            this.btnSetting.TabIndex = 209;
+            this.btnSetting.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnExpenses
             // 
@@ -440,7 +440,7 @@ namespace FinalPoject
             this.btnLogout.Location = new System.Drawing.Point(3, 710);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
-            this.btnLogout.Size = new System.Drawing.Size(167, 49);
+            this.btnLogout.Size = new System.Drawing.Size(217, 49);
             this.btnLogout.TabIndex = 19;
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -554,7 +554,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Button btnExpenses;
         private System.Windows.Forms.Label lblShowUserInfo;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button btnCancelSearch;
+        private Guna.UI2.WinForms.Guna2Button btnSetting;
         private System.Windows.Forms.Label label3;
     }
 }
