@@ -335,6 +335,7 @@ namespace FinalPoject
             this.btnExpenses.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExpenses.TextOffset = new System.Drawing.Point(50, 0);
             this.btnExpenses.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.btnExpenses.Click += new System.EventHandler(this.btnExpenses_Click);
             // 
             // btnSellingHistory
             // 

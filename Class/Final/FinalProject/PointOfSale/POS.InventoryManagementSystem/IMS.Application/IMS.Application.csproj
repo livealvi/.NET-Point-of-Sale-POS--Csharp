@@ -135,19 +135,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DelegateCollection.cs" />
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserInterface\BarCode\BarCodeMaker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,10 +147,10 @@
     <Compile Include="UserInterface\Dashboard\FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Dashboard\FormLogin.cs">
+    <Compile Include="UserInterface\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Dashboard\FormLogin.Designer.cs">
+    <Compile Include="UserInterface\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Expense\FormExpense.cs">
@@ -244,11 +231,11 @@
     <Compile Include="UserInterface\Users\FormUser.Designer.cs">
       <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormStart.cs">
+    <Compile Include="UserInterface\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormStart.Designer.cs">
-      <DependentUpon>FormStart.cs</DependentUpon>
+    <Compile Include="UserInterface\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -258,16 +245,13 @@
     <Compile Include="UserInterface\Categories\FormSecondCategory.Designer.cs">
       <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\BarCode\BarCodeMaker.resx">
       <DependentUpon>BarCodeMaker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Dashboard\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Dashboard\FormLogin.resx">
+    <EmbeddedResource Include="UserInterface\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Expense\FormExpense.resx">
@@ -310,8 +294,8 @@
     <EmbeddedResource Include="UserInterface\Users\FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStart.resx">
-      <DependentUpon>FormStart.cs</DependentUpon>
+    <EmbeddedResource Include="UserInterface\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

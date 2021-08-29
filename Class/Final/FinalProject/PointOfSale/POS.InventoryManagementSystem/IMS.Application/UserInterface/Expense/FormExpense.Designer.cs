@@ -64,10 +64,6 @@ namespace FinalPoject.UserInterface.Exp
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvExpenses = new System.Windows.Forms.DataGridView();
-            this.ExpenseId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExpenseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExpenseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExpenseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -87,6 +83,10 @@ namespace FinalPoject.UserInterface.Exp
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.ExpenseId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExpenseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExpenseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExpenseAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -274,7 +274,6 @@ namespace FinalPoject.UserInterface.Exp
             // 
             // panel1
             // 
-            this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
@@ -293,7 +292,7 @@ namespace FinalPoject.UserInterface.Exp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(83, 224);
+            this.label2.Location = new System.Drawing.Point(84, 336);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 15);
@@ -305,7 +304,7 @@ namespace FinalPoject.UserInterface.Exp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(63, 177);
+            this.label1.Location = new System.Drawing.Point(64, 289);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 15);
@@ -316,14 +315,15 @@ namespace FinalPoject.UserInterface.Exp
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.txtExpenseAmount, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.dtpExpenseDate, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.txtExpenseId, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtExpensesName, 0, 3);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 55);
+            this.tableLayoutPanel2.Controls.Add(this.txtExpenseAmount, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.dtpExpenseDate, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.txtExpenseId, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtExpensesName, 0, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 2);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 9;
+            this.tableLayoutPanel2.RowCount = 11;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
@@ -333,7 +333,8 @@ namespace FinalPoject.UserInterface.Exp
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(231, 303);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(231, 537);
             this.tableLayoutPanel2.TabIndex = 164;
             // 
             // txtExpenseAmount
@@ -351,7 +352,7 @@ namespace FinalPoject.UserInterface.Exp
             this.txtExpenseAmount.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtExpenseAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtExpenseAmount.HoverState.Parent = this.txtExpenseAmount;
-            this.txtExpenseAmount.Location = new System.Drawing.Point(3, 113);
+            this.txtExpenseAmount.Location = new System.Drawing.Point(3, 277);
             this.txtExpenseAmount.Name = "txtExpenseAmount";
             this.txtExpenseAmount.PasswordChar = '\0';
             this.txtExpenseAmount.PlaceholderText = "";
@@ -367,7 +368,7 @@ namespace FinalPoject.UserInterface.Exp
             this.dtpExpenseDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtpExpenseDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpExpenseDate.HoverState.Parent = this.dtpExpenseDate;
-            this.dtpExpenseDate.Location = new System.Drawing.Point(3, 162);
+            this.dtpExpenseDate.Location = new System.Drawing.Point(3, 326);
             this.dtpExpenseDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpExpenseDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpExpenseDate.Name = "dtpExpenseDate";
@@ -392,7 +393,7 @@ namespace FinalPoject.UserInterface.Exp
             this.txtExpenseId.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtExpenseId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtExpenseId.HoverState.Parent = this.txtExpenseId;
-            this.txtExpenseId.Location = new System.Drawing.Point(3, 15);
+            this.txtExpenseId.Location = new System.Drawing.Point(3, 179);
             this.txtExpenseId.Name = "txtExpenseId";
             this.txtExpenseId.PasswordChar = '\0';
             this.txtExpenseId.PlaceholderText = "";
@@ -419,7 +420,7 @@ namespace FinalPoject.UserInterface.Exp
             this.txtExpensesName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtExpensesName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtExpensesName.HoverState.Parent = this.txtExpensesName;
-            this.txtExpensesName.Location = new System.Drawing.Point(3, 64);
+            this.txtExpensesName.Location = new System.Drawing.Point(3, 228);
             this.txtExpensesName.Name = "txtExpensesName";
             this.txtExpensesName.PasswordChar = '\0';
             this.txtExpensesName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
@@ -434,7 +435,7 @@ namespace FinalPoject.UserInterface.Exp
             this.txtExpensesId.AutoSize = true;
             this.txtExpensesId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpensesId.ForeColor = System.Drawing.Color.Black;
-            this.txtExpensesId.Location = new System.Drawing.Point(45, 79);
+            this.txtExpensesId.Location = new System.Drawing.Point(46, 191);
             this.txtExpensesId.Margin = new System.Windows.Forms.Padding(0);
             this.txtExpensesId.Name = "txtExpensesId";
             this.txtExpensesId.Size = new System.Drawing.Size(69, 15);
@@ -446,7 +447,7 @@ namespace FinalPoject.UserInterface.Exp
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(24, 129);
+            this.label7.Location = new System.Drawing.Point(25, 241);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 15);
@@ -618,9 +619,9 @@ namespace FinalPoject.UserInterface.Exp
             this.dgvExpenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvExpenses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ExpenseId,
+            this.ExpenseDate,
             this.ExpenseName,
-            this.ExpenseAmount,
-            this.ExpenseDate});
+            this.ExpenseAmount});
             this.dgvExpenses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvExpenses.Location = new System.Drawing.Point(8, 154);
             this.dgvExpenses.Margin = new System.Windows.Forms.Padding(2);
@@ -632,40 +633,6 @@ namespace FinalPoject.UserInterface.Exp
             this.dgvExpenses.Size = new System.Drawing.Size(937, 462);
             this.dgvExpenses.TabIndex = 160;
             this.dgvExpenses.DoubleClick += new System.EventHandler(this.dgvExpenses_DoubleClick);
-            // 
-            // ExpenseId
-            // 
-            this.ExpenseId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ExpenseId.DataPropertyName = "ExpenseId";
-            this.ExpenseId.HeaderText = "Expense ID";
-            this.ExpenseId.MinimumWidth = 6;
-            this.ExpenseId.Name = "ExpenseId";
-            this.ExpenseId.ReadOnly = true;
-            // 
-            // ExpenseName
-            // 
-            this.ExpenseName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ExpenseName.DataPropertyName = "ExpenseName";
-            this.ExpenseName.HeaderText = "Expense Name";
-            this.ExpenseName.MinimumWidth = 6;
-            this.ExpenseName.Name = "ExpenseName";
-            this.ExpenseName.ReadOnly = true;
-            // 
-            // ExpenseAmount
-            // 
-            this.ExpenseAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ExpenseAmount.DataPropertyName = "ExpenseAmount";
-            this.ExpenseAmount.HeaderText = "Expense Amount";
-            this.ExpenseAmount.MinimumWidth = 6;
-            this.ExpenseAmount.Name = "ExpenseAmount";
-            this.ExpenseAmount.ReadOnly = true;
-            // 
-            // ExpenseDate
-            // 
-            this.ExpenseDate.DataPropertyName = "ExpenseDate";
-            this.ExpenseDate.HeaderText = "Expense Date";
-            this.ExpenseDate.Name = "ExpenseDate";
-            this.ExpenseDate.ReadOnly = true;
             // 
             // guna2Panel28
             // 
@@ -936,6 +903,40 @@ namespace FinalPoject.UserInterface.Exp
             this.label6.TabIndex = 0;
             this.label6.Text = "View All Expenses";
             // 
+            // ExpenseId
+            // 
+            this.ExpenseId.DataPropertyName = "ExpenseId";
+            this.ExpenseId.HeaderText = "Expense ID";
+            this.ExpenseId.MinimumWidth = 6;
+            this.ExpenseId.Name = "ExpenseId";
+            this.ExpenseId.ReadOnly = true;
+            // 
+            // ExpenseDate
+            // 
+            this.ExpenseDate.DataPropertyName = "ExpenseDate";
+            this.ExpenseDate.HeaderText = "Expense Date";
+            this.ExpenseDate.Name = "ExpenseDate";
+            this.ExpenseDate.ReadOnly = true;
+            this.ExpenseDate.Width = 256;
+            // 
+            // ExpenseName
+            // 
+            this.ExpenseName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ExpenseName.DataPropertyName = "ExpenseName";
+            this.ExpenseName.HeaderText = "Expense Name";
+            this.ExpenseName.MinimumWidth = 6;
+            this.ExpenseName.Name = "ExpenseName";
+            this.ExpenseName.ReadOnly = true;
+            // 
+            // ExpenseAmount
+            // 
+            this.ExpenseAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ExpenseAmount.DataPropertyName = "ExpenseAmount";
+            this.ExpenseAmount.HeaderText = "Expense Amount";
+            this.ExpenseAmount.MinimumWidth = 6;
+            this.ExpenseAmount.Name = "ExpenseAmount";
+            this.ExpenseAmount.ReadOnly = true;
+            // 
             // FormExpense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -949,6 +950,7 @@ namespace FinalPoject.UserInterface.Exp
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlInsideTop);
             this.Name = "FormExpense";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expense";
             this.Load += new System.EventHandler(this.Expense_Load);
             this.pnlOrderSelect.ResumeLayout(false);
@@ -1034,8 +1036,8 @@ namespace FinalPoject.UserInterface.Exp
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpExpenseDate;
         private Guna.UI2.WinForms.Guna2TextBox txtExpenseAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExpenseId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpenseDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExpenseName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExpenseAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExpenseDate;
     }
 }

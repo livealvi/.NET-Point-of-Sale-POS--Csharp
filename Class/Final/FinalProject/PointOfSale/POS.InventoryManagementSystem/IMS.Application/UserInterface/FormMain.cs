@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalPoject.UserInterface.Dashboard;
+using FinalPoject.UserInterface.Exp;
 using Guna.UI2.WinForms;
 
 namespace FinalPoject
@@ -97,14 +98,15 @@ namespace FinalPoject
             ViewForm(new FormUser());
         }
 
-        private void btnMasterCustomer_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSellingHistory_Click(object sender, EventArgs e)
         {
             ViewForm( new FormSellsHistory());
+        }
+
+        private void btnExpenses_Click(object sender, EventArgs e)
+        {
+            ViewForm(new FormExpense());
         }
 
         public void ViewForm(object _form)
@@ -120,5 +122,7 @@ namespace FinalPoject
                 form.Show();
             }
         }
+
+        
     }
 }

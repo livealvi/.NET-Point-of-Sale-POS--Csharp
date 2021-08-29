@@ -160,6 +160,7 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.lblTotalItemResult = new System.Windows.Forms.Label();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1135,9 +1136,9 @@ namespace FinalPoject
             this.label16.Location = new System.Drawing.Point(302, 259);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(42, 15);
+            this.label16.Size = new System.Drawing.Size(41, 15);
             this.label16.TabIndex = 240;
-            this.label16.Text = "Pay By";
+            this.label16.Text = "Sell By";
             // 
             // label17
             // 
@@ -1838,8 +1839,8 @@ namespace FinalPoject
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 8F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 39F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 14F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 168F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 54F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 110F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 112F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 86F, true, "FilterBy"),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 179F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 173F),
@@ -1847,6 +1848,7 @@ namespace FinalPoject
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 189F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 16.31F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 7.23F)});
+            this.tablePanel3.Controls.Add(this.lblTotalItemResult);
             this.tablePanel3.Controls.Add(this.label1);
             this.tablePanel3.Controls.Add(this.btnCancelSearch);
             this.tablePanel3.Controls.Add(this.cmbThird);
@@ -2036,10 +2038,12 @@ namespace FinalPoject
             // lblTotalItemFound
             // 
             this.lblTotalItemFound.AutoSize = true;
+            this.tablePanel3.SetColumn(this.lblTotalItemFound, 7);
             this.lblTotalItemFound.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalItemFound.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalItemFound.Location = new System.Drawing.Point(707, 17);
+            this.lblTotalItemFound.Location = new System.Drawing.Point(707, 18);
             this.lblTotalItemFound.Name = "lblTotalItemFound";
+            this.tablePanel3.SetRow(this.lblTotalItemFound, 0);
             this.lblTotalItemFound.Size = new System.Drawing.Size(103, 21);
             this.lblTotalItemFound.TabIndex = 0;
             this.lblTotalItemFound.Text = "Total Found :";
@@ -2216,6 +2220,19 @@ namespace FinalPoject
             this.btnDeleteProduct.TabIndex = 135;
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
+            // 
+            // lblTotalItemResult
+            // 
+            this.lblTotalItemResult.AutoSize = true;
+            this.tablePanel3.SetColumn(this.lblTotalItemResult, 8);
+            this.lblTotalItemResult.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalItemResult.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalItemResult.Location = new System.Drawing.Point(817, 18);
+            this.lblTotalItemResult.Name = "lblTotalItemResult";
+            this.tablePanel3.SetRow(this.lblTotalItemResult, 0);
+            this.lblTotalItemResult.Size = new System.Drawing.Size(19, 21);
+            this.lblTotalItemResult.TabIndex = 6;
+            this.lblTotalItemResult.Text = "0";
             // 
             // FormMakeSale
             // 
@@ -2396,5 +2413,6 @@ namespace FinalPoject
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTotalItemResult;
     }
 }

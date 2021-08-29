@@ -52,6 +52,7 @@ namespace FinalPoject
             this.dgvSearchProduct.ClearSelection();
             this.Refresh();
             this.RefreshContent();
+            this.lblTotalItemResult.Text = this.dgvSearchProduct.RowCount.ToString();
         }
 
         private void FormMakeSale_Load(object sender, EventArgs e)
@@ -223,6 +224,16 @@ namespace FinalPoject
             this.txtDiscount.Clear();
             this.txtProductMSRP.Clear();
             this.txtBrand.Clear();
+            this.txtPorductItemLeft.Clear();
+            //
+            this.txtCoustomerName.Clear();
+            this.txtCoustomerEmail.Clear();
+            this.txtCustomerPhone.Clear();
+            this.txtCustomerAddress.Clear();
+            this.dtpPayDate.Text = "";
+            this.cmbPayStatus.StartIndex = -1;
+            this.cmbPayByUser.StartIndex = -1;
+            this.cmbPaymentMethod.StartIndex = -1;
         }
 
         //Refresh Button
