@@ -23,8 +23,42 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
-        //Login
+        public string GetAdminSal()
+        {
+            return iDB.GetSingleData("select sum(Salary) as id from users where Role='Admin' ", "Id");
+        }
+        public string GetSalesmanSal()
+        {
+            return iDB.GetSingleData("select sum(Salary) as id from users where Role='Salesman' ", "Id");
+        }
+        public string GetCashierSal()
+        {
+            return iDB.GetSingleData("select sum(Salary) as id from users where Role='Cashier' ", "Id");
+        }
+        public string GetTotalSal()
+        {
+            return iDB.GetSingleData("  select sum(Salary) as id from users ", "Id");
+        }
 
+        //
+        public string GetTotalAdmin()
+        {
+            return iDB.GetSingleData("select count(Id) as Id from users where Role='Admin' ", "Id");
+        }
+        public string GetTotalSalesman()
+        {
+            return iDB.GetSingleData("select count(Id) as Id from users where Role='Salesman' ", "Id");
+        }
+        public string GetTotalCashier()
+        {
+            return iDB.GetSingleData("select count(Id) as Id from users where Role='Cashier' ", "Id");
+        }
+        public string GetTotalUser()
+        {
+            return iDB.GetSingleData("select count(Id) as Id from users", "Id");
+        }
+
+        //Login
         public string GetRole(string username, string password)
         {
             SqlConnection connection = null;

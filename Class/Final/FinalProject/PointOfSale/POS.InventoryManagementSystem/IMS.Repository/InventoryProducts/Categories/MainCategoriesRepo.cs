@@ -20,6 +20,8 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        
+
         //view & search
         public List<MainCategories> GetAll(string key)
         {

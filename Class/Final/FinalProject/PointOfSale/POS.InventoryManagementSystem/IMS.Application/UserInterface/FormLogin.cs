@@ -40,16 +40,17 @@ namespace FinalPoject.UserInterface.Dashboard
             string role = usersRepo.GetRole(txtUserId.Text, txtPassword.Text);
             if (role=="Admin")
             {
-                new FormStart(role).Show();
-                
+                FormStart formStart = new FormStart  (role,this);
+                formStart.Visible = true;
+                this.Visible = false;
             }
             else if(role=="Cashier")
             {
-                new FormStart(role).Show();
+                new FormStart(role, this).Show();
             }
             else if (role == "Salesman")
             {
-                new FormStart(role).Show();
+                new FormStart(role, this).Show();
             }
             else if (role == null)
             {

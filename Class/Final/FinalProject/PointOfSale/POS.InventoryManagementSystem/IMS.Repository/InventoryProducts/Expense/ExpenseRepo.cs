@@ -19,12 +19,19 @@ namespace IMS.Repository.InventoryProducts.Expense
             this.iDB = new InventoryDBDataAccess();
         }
 
+        public string GetTodayExpense()
+        {
+            return iDB.GetSingleData("select sum(ExpenseAmount) as sum from Expenses where ExpenseDate=format(getdate(),'yyyy-MM-dd')", "sum");
+        }
 
         public string GetLastWeekExpense()
         {
             return iDB.GetSingleData("select sum(ExpenseAmount) as sum from Expenses where ExpenseDate<GETDATE() and ExpenseDate>DATEADD(day,-8, GETDATE())", "sum");
         }
-
+        public string GetLastMonth()
+        {
+            return iDB.GetSingleData("select sum(ExpenseAmount) as sum from Expenses where ExpenseDate<GETDATE() and ExpenseDate>DATEADD(day,-31, GETDATE())", "sum");
+        }
         public string GetTotalExpense()
         {
             return iDB.GetSingleData("select  sum(ExpenseAmount) as TOTAL FROM Expenses ", "TOTAL");

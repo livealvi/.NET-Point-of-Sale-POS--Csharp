@@ -37,6 +37,8 @@ namespace FinalPoject
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLeftMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnExpenses = new Guna.UI2.WinForms.Guna2Button();
             this.btnSellingHistory = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
@@ -50,6 +52,7 @@ namespace FinalPoject
             this.pnlFormViwer = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlLeftMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -66,8 +69,8 @@ namespace FinalPoject
             this.btnMasterProducts.CheckedState.Parent = this.btnMasterProducts;
             this.btnMasterProducts.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMasterProducts.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnMasterProducts.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_people_96px;
-            this.btnMasterProducts.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_people_96px_1;
+            this.btnMasterProducts.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_categorize_480px_1;
+            this.btnMasterProducts.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_categorize_480px;
             this.btnMasterProducts.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterProducts.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
             this.btnMasterProducts.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
@@ -87,7 +90,7 @@ namespace FinalPoject
             this.btnMasterProducts.ShadowDecoration.Parent = this.btnMasterProducts;
             this.btnMasterProducts.Size = new System.Drawing.Size(230, 49);
             this.btnMasterProducts.TabIndex = 18;
-            this.btnMasterProducts.Text = "Master Products";
+            this.btnMasterProducts.Text = "Master Categories";
             this.btnMasterProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterProducts.TextOffset = new System.Drawing.Point(50, 0);
             this.btnMasterProducts.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -263,8 +266,10 @@ namespace FinalPoject
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 15);
             this.tableLayoutPanel1.Controls.Add(this.btnExpenses, 0, 13);
             this.tableLayoutPanel1.Controls.Add(this.btnSellingHistory, 0, 11);
             this.tableLayoutPanel1.Controls.Add(this.btnUser, 0, 9);
@@ -274,7 +279,7 @@ namespace FinalPoject
             this.tableLayoutPanel1.Controls.Add(this.btnMakeSell, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnLogout, 0, 15);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 17;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -296,8 +301,43 @@ namespace FinalPoject
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(257, 782);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(277, 782);
             this.tableLayoutPanel1.TabIndex = 19;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnCancelSearch);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(241, 710);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(33, 49);
+            this.panel1.TabIndex = 210;
+            // 
+            // btnCancelSearch
+            // 
+            this.btnCancelSearch.Animated = true;
+            this.btnCancelSearch.CheckedState.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_settings_480px_1;
+            this.btnCancelSearch.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_settings_480px;
+            this.btnCancelSearch.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCancelSearch.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCancelSearch.CustomImages.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.FillColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnCancelSearch.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCancelSearch.HoverState.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCancelSearch.Location = new System.Drawing.Point(0, 9);
+            this.btnCancelSearch.Name = "btnCancelSearch";
+            this.btnCancelSearch.ShadowDecoration.Parent = this.btnCancelSearch;
+            this.btnCancelSearch.Size = new System.Drawing.Size(33, 30);
+            this.btnCancelSearch.TabIndex = 209;
+            this.btnCancelSearch.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
             // 
             // btnExpenses
             // 
@@ -310,8 +350,8 @@ namespace FinalPoject
             this.btnExpenses.CheckedState.Parent = this.btnExpenses;
             this.btnExpenses.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnExpenses.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnExpenses.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
-            this.btnExpenses.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
+            this.btnExpenses.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_paycheque_480px_2;
+            this.btnExpenses.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_paycheque_480px;
             this.btnExpenses.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExpenses.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
             this.btnExpenses.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
@@ -348,8 +388,8 @@ namespace FinalPoject
             this.btnSellingHistory.CheckedState.Parent = this.btnSellingHistory;
             this.btnSellingHistory.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSellingHistory.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnSellingHistory.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
-            this.btnSellingHistory.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
+            this.btnSellingHistory.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_order_history_480px;
+            this.btnSellingHistory.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_order_history_480px_1;
             this.btnSellingHistory.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSellingHistory.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
             this.btnSellingHistory.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
@@ -386,8 +426,8 @@ namespace FinalPoject
             this.btnLogout.CheckedState.Parent = this.btnLogout;
             this.btnLogout.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogout.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnLogout.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
-            this.btnLogout.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
+            this.btnLogout.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_exit_480px;
+            this.btnLogout.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_exit_480px_1;
             this.btnLogout.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
             this.btnLogout.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
@@ -396,7 +436,7 @@ namespace FinalPoject
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnLogout.ForeColor = System.Drawing.Color.Gray;
             this.btnLogout.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
             this.btnLogout.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnLogout.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnLogout.HoverState.Parent = this.btnLogout;
@@ -405,21 +445,22 @@ namespace FinalPoject
             this.btnLogout.Location = new System.Drawing.Point(3, 710);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
-            this.btnLogout.Size = new System.Drawing.Size(230, 49);
+            this.btnLogout.Size = new System.Drawing.Size(167, 49);
             this.btnLogout.TabIndex = 19;
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.TextOffset = new System.Drawing.Point(50, 0);
             this.btnLogout.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(277, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(287, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(20, 782);
+            this.guna2Panel1.Size = new System.Drawing.Size(10, 782);
             this.guna2Panel1.TabIndex = 17;
             // 
             // pnlInsideLeft
@@ -429,7 +470,7 @@ namespace FinalPoject
             this.pnlInsideLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlInsideLeft.Name = "pnlInsideLeft";
             this.pnlInsideLeft.ShadowDecoration.Parent = this.pnlInsideLeft;
-            this.pnlInsideLeft.Size = new System.Drawing.Size(20, 782);
+            this.pnlInsideLeft.Size = new System.Drawing.Size(10, 782);
             this.pnlInsideLeft.TabIndex = 13;
             // 
             // pnlTop
@@ -517,8 +558,10 @@ namespace FinalPoject
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStart_FormClosed);
             this.pnlLeftMenu.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
             this.guna2Panel9.ResumeLayout(false);
@@ -546,6 +589,8 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Button btnSellingHistory;
         private Guna.UI2.WinForms.Guna2Button btnExpenses;
         private System.Windows.Forms.Label lblShowUserInfo;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button btnCancelSearch;
     }
 }
 

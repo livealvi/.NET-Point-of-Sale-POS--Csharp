@@ -171,16 +171,16 @@
     <Compile Include="UserInterface\Products\FormAddProduct.Designer.cs">
       <DependentUpon>FormAddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormBrand.cs">
+    <Compile Include="UserInterface\Category\FormBrand.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormBrand.Designer.cs">
+    <Compile Include="UserInterface\Category\FormBrand.Designer.cs">
       <DependentUpon>FormBrand.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormMainCategory.cs">
+    <Compile Include="UserInterface\Category\FormMainCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormMainCategory.Designer.cs">
+    <Compile Include="UserInterface\Category\FormMainCategory.Designer.cs">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Orders\FormMakeSale.cs">
@@ -195,16 +195,16 @@
     <Compile Include="UserInterface\Orders\FormSalesHistory.Designer.cs">
       <DependentUpon>FormSalesHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormThirdCategory.cs">
+    <Compile Include="UserInterface\Category\FormThirdCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormThirdCategory.Designer.cs">
+    <Compile Include="UserInterface\Category\FormThirdCategory.Designer.cs">
       <DependentUpon>FormThirdCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormVendor.cs">
+    <Compile Include="UserInterface\Category\FormVendor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormVendor.Designer.cs">
+    <Compile Include="UserInterface\Category\FormVendor.Designer.cs">
       <DependentUpon>FormVendor.cs</DependentUpon>
     </Compile>
     <Compile Include="ResponsiveTableTextBox.cs">
@@ -219,10 +219,10 @@
     <Compile Include="ComponentsDesign.Designer.cs">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormMasterCategory.cs">
+    <Compile Include="UserInterface\Category\FormMasterCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormMasterCategory.Designer.cs">
+    <Compile Include="UserInterface\Category\FormMasterCategory.Designer.cs">
       <DependentUpon>FormMasterCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Users\FormUser.cs">
@@ -239,10 +239,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserInterface\Categories\FormSecondCategory.cs">
+    <Compile Include="UserInterface\Category\FormSecondCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Categories\FormSecondCategory.Designer.cs">
+    <Compile Include="UserInterface\Category\FormSecondCategory.Designer.cs">
       <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="UserInterface\BarCode\BarCodeMaker.resx">
@@ -263,10 +263,10 @@
     <EmbeddedResource Include="UserInterface\Products\FormAddProduct.resx">
       <DependentUpon>FormAddProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Categories\FormBrand.resx">
+    <EmbeddedResource Include="UserInterface\Category\FormBrand.resx">
       <DependentUpon>FormBrand.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Categories\FormMainCategory.resx">
+    <EmbeddedResource Include="UserInterface\Category\FormMainCategory.resx">
       <DependentUpon>FormMainCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Orders\FormMakeSale.resx">
@@ -275,10 +275,10 @@
     <EmbeddedResource Include="UserInterface\Orders\FormSalesHistory.resx">
       <DependentUpon>FormSalesHistory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Categories\FormThirdCategory.resx">
+    <EmbeddedResource Include="UserInterface\Category\FormThirdCategory.resx">
       <DependentUpon>FormThirdCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Categories\FormVendor.resx">
+    <EmbeddedResource Include="UserInterface\Category\FormVendor.resx">
       <DependentUpon>FormVendor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -288,7 +288,7 @@
     <EmbeddedResource Include="ComponentsDesign.resx">
       <DependentUpon>ComponentsDesign.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Categories\FormMasterCategory.resx">
+    <EmbeddedResource Include="UserInterface\Category\FormMasterCategory.resx">
       <DependentUpon>FormMasterCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Users\FormUser.resx">
@@ -301,7 +301,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Categories\FormSecondCategory.resx">
+    <EmbeddedResource Include="UserInterface\Category\FormSecondCategory.resx">
       <DependentUpon>FormSecondCategory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -373,6 +373,14 @@
     <None Include="Resources\icons8_shopping_cart_96px_1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8_settings_480px.png" />
+    <None Include="Resources\icons8_settings_480px_1.png" />
+    <None Include="Resources\icons8_exit_480px_1.png" />
+    <None Include="Resources\icons8_exit_480px.png" />
+    <None Include="Resources\icons8_paycheque_480px.png" />
+    <None Include="Resources\icons8_paycheque_480px_2.png" />
+    <None Include="Resources\icons8_order_history_480px_1.png" />
+    <None Include="Resources\icons8_order_history_480px.png" />
     <None Include="Resources\icons8_save_500px_1.png" />
     <None Include="Resources\icons8_save_500px.png" />
     <None Include="Resources\icons8_restart_96px.png" />
@@ -396,6 +404,8 @@
     <None Include="Resources\icons8_clear_search_480px.png" />
     <None Include="Resources\icons8_clear_search_480px_1.png" />
     <None Include="Resources\icons8_available_updates_96px.png" />
+    <None Include="Resources\icons8_categorize_480px.png" />
+    <None Include="Resources\icons8_categorize_480px_1.png" />
     <Content Include="Resources\icons8_delete_480px_1.png" />
     <None Include="Resources\icons8_image_480px.png" />
   </ItemGroup>

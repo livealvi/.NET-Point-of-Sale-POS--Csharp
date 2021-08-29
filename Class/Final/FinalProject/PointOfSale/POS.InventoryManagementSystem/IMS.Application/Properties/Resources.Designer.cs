@@ -93,6 +93,26 @@ namespace FinalPoject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_categorize_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_categorize_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_categorize_480px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_categorize_480px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_clear_search_480px {
             get {
                 object obj = ResourceManager.GetObject("icons8_clear_search_480px", resourceCulture);
@@ -233,6 +253,26 @@ namespace FinalPoject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_exit_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_480px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_exit_480px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_image_480px {
             get {
                 object obj = ResourceManager.GetObject("icons8_image_480px", resourceCulture);
@@ -276,6 +316,46 @@ namespace FinalPoject.Properties {
         internal static System.Drawing.Bitmap icons8_no_image_480px_2 {
             get {
                 object obj = ResourceManager.GetObject("icons8_no_image_480px_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_order_history_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_order_history_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_order_history_480px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_order_history_480px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_paycheque_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_paycheque_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_paycheque_480px_2 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_paycheque_480px_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +486,26 @@ namespace FinalPoject.Properties {
         internal static System.Drawing.Bitmap icons8_search_480px {
             get {
                 object obj = ResourceManager.GetObject("icons8_search_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_settings_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_settings_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_settings_480px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_settings_480px_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -480,12 +480,12 @@ namespace FinalPoject
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(106, 372);
+            this.label26.Location = new System.Drawing.Point(73, 374);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(44, 15);
+            this.label26.Size = new System.Drawing.Size(77, 15);
             this.label26.TabIndex = 165;
-            this.label26.Text = "User ID";
+            this.label26.Text = "User Login ID";
             // 
             // tableLayoutPanel2
             // 
@@ -580,7 +580,7 @@ namespace FinalPoject
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtEmail.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtEmail.PlaceholderText = "Ex: user@gmail.com";
             this.txtEmail.SelectedText = "";
             this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
             this.txtEmail.Size = new System.Drawing.Size(194, 30);
@@ -607,7 +607,7 @@ namespace FinalPoject
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtPassword.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtPassword.PlaceholderText = "Passowrd";
             this.txtPassword.SelectedText = "";
             this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
             this.txtPassword.Size = new System.Drawing.Size(194, 30);
@@ -631,7 +631,7 @@ namespace FinalPoject
             this.txtCurrentCity.Location = new System.Drawing.Point(3, 750);
             this.txtCurrentCity.Name = "txtCurrentCity";
             this.txtCurrentCity.PasswordChar = '\0';
-            this.txtCurrentCity.PlaceholderText = "Yes or No";
+            this.txtCurrentCity.PlaceholderText = "Ex: Mirpur 1, Dhaka.";
             this.txtCurrentCity.SelectedText = "";
             this.txtCurrentCity.ShadowDecoration.Parent = this.txtCurrentCity;
             this.txtCurrentCity.Size = new System.Drawing.Size(194, 30);
@@ -682,7 +682,7 @@ namespace FinalPoject
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
             this.txtLastName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtLastName.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtLastName.PlaceholderText = "Ex: Kabir";
             this.txtLastName.SelectedText = "";
             this.txtLastName.ShadowDecoration.Parent = this.txtLastName;
             this.txtLastName.Size = new System.Drawing.Size(194, 30);
@@ -731,7 +731,7 @@ namespace FinalPoject
             this.txtPostalCode.Location = new System.Drawing.Point(3, 897);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.PasswordChar = '\0';
-            this.txtPostalCode.PlaceholderText = "Yes or No";
+            this.txtPostalCode.PlaceholderText = "Ex: 1234";
             this.txtPostalCode.SelectedText = "";
             this.txtPostalCode.ShadowDecoration.Parent = this.txtPostalCode;
             this.txtPostalCode.Size = new System.Drawing.Size(194, 30);
@@ -847,7 +847,7 @@ namespace FinalPoject
             this.txtUserId.Location = new System.Drawing.Point(3, 64);
             this.txtUserId.Name = "txtUserId";
             this.txtUserId.PasswordChar = '\0';
-            this.txtUserId.PlaceholderText = "";
+            this.txtUserId.PlaceholderText = "Auto Generated";
             this.txtUserId.ReadOnly = true;
             this.txtUserId.SelectedText = "";
             this.txtUserId.ShadowDecoration.Parent = this.txtUserId;
@@ -872,7 +872,7 @@ namespace FinalPoject
             this.txtNID.Location = new System.Drawing.Point(3, 603);
             this.txtNID.Name = "txtNID";
             this.txtNID.PasswordChar = '\0';
-            this.txtNID.PlaceholderText = "Ex: 50";
+            this.txtNID.PlaceholderText = "Ex: 192345678";
             this.txtNID.SelectedText = "";
             this.txtNID.ShadowDecoration.Parent = this.txtNID;
             this.txtNID.Size = new System.Drawing.Size(194, 30);
@@ -896,7 +896,7 @@ namespace FinalPoject
             this.txtPhone.Location = new System.Drawing.Point(3, 652);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderText = "Ex: 20";
+            this.txtPhone.PlaceholderText = "Ex: 01700000000";
             this.txtPhone.SelectedText = "";
             this.txtPhone.ShadowDecoration.Parent = this.txtPhone;
             this.txtPhone.Size = new System.Drawing.Size(194, 30);
@@ -920,7 +920,8 @@ namespace FinalPoject
             this.txtId.Location = new System.Drawing.Point(3, 15);
             this.txtId.Name = "txtId";
             this.txtId.PasswordChar = '\0';
-            this.txtId.PlaceholderText = "";
+            this.txtId.PlaceholderText = "Auto Generated";
+            this.txtId.ReadOnly = true;
             this.txtId.SelectedText = "";
             this.txtId.ShadowDecoration.Parent = this.txtId;
             this.txtId.Size = new System.Drawing.Size(194, 30);
@@ -944,7 +945,7 @@ namespace FinalPoject
             this.txtAge.Location = new System.Drawing.Point(3, 309);
             this.txtAge.Name = "txtAge";
             this.txtAge.PasswordChar = '\0';
-            this.txtAge.PlaceholderText = "Ex: 10.00";
+            this.txtAge.PlaceholderText = "Ex: 19-70";
             this.txtAge.SelectedText = "";
             this.txtAge.ShadowDecoration.Parent = this.txtAge;
             this.txtAge.Size = new System.Drawing.Size(194, 30);
@@ -968,7 +969,7 @@ namespace FinalPoject
             this.txtSalary.Location = new System.Drawing.Point(3, 456);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.PasswordChar = '\0';
-            this.txtSalary.PlaceholderText = "Ex: 50";
+            this.txtSalary.PlaceholderText = "Ex: 50.000";
             this.txtSalary.SelectedText = "";
             this.txtSalary.ShadowDecoration.Parent = this.txtSalary;
             this.txtSalary.Size = new System.Drawing.Size(194, 30);
@@ -995,7 +996,7 @@ namespace FinalPoject
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
             this.txtFirstName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtFirstName.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtFirstName.PlaceholderText = "Ex: Jone";
             this.txtFirstName.SelectedText = "";
             this.txtFirstName.ShadowDecoration.Parent = this.txtFirstName;
             this.txtFirstName.Size = new System.Drawing.Size(194, 30);
@@ -1019,7 +1020,7 @@ namespace FinalPoject
             this.txtHomeTown.Location = new System.Drawing.Point(3, 701);
             this.txtHomeTown.Name = "txtHomeTown";
             this.txtHomeTown.PasswordChar = '\0';
-            this.txtHomeTown.PlaceholderText = "Yes or No";
+            this.txtHomeTown.PlaceholderText = "Ex: Mirpur 1, Dhaka.";
             this.txtHomeTown.SelectedText = "";
             this.txtHomeTown.ShadowDecoration.Parent = this.txtHomeTown;
             this.txtHomeTown.Size = new System.Drawing.Size(194, 30);
@@ -1030,24 +1031,24 @@ namespace FinalPoject
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(75, 1060);
+            this.label17.Location = new System.Drawing.Point(58, 1059);
             this.label17.Margin = new System.Windows.Forms.Padding(0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 15);
+            this.label17.Size = new System.Drawing.Size(92, 15);
             this.label17.TabIndex = 157;
-            this.label17.Text = "Current Add.";
+            this.label17.Text = "Current Address";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(82, 1011);
+            this.label16.Location = new System.Drawing.Point(64, 1011);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 15);
+            this.label16.Size = new System.Drawing.Size(85, 15);
             this.label16.TabIndex = 156;
-            this.label16.Text = "Home Add.";
+            this.label16.Text = "Home Address";
             // 
             // label11
             // 
@@ -1583,18 +1584,18 @@ namespace FinalPoject
             this.btnRefresh.Animated = true;
             this.btnRefresh.CheckedState.Parent = this.btnRefresh;
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
+            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.btnRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnRefresh.CustomImages.Parent = this.btnRefresh;
             this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
+            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
             this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.HoverState.Parent = this.btnRefresh;
             this.btnRefresh.Location = new System.Drawing.Point(148, 11);
             this.btnRefresh.Name = "btnRefresh";
@@ -1762,7 +1763,8 @@ namespace FinalPoject
             this.Controls.Add(this.pnlInsideLeft);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.pnlInsideTop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "FormUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCustomers";

@@ -242,7 +242,9 @@ namespace FinalPoject.UserInterface.Dashboard
             this.ClientSize = new System.Drawing.Size(1443, 833);
             this.Controls.Add(this.guna2GradientPanel1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1459, 872);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1459, 872);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";

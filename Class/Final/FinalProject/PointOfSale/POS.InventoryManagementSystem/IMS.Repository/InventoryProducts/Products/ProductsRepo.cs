@@ -21,6 +21,20 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+
+        public string GetTotalProducts()
+        {
+            return iDB.GetSingleData("select count(ProductId) as id from Products ", "id");
+        }
+        public string GetAvailableProducts()
+        {
+            return iDB.GetSingleData("select count(ProductId) as id from Products where ProductStatus='YES' ", "id");
+        }
+        public string GetNoAvailableProducts()
+        {
+            return iDB.GetSingleData("select count(ProductId) as id from Products where ProductStatus='NO' ", "id");
+        }
+
         //view & search
         public List<Products> GetAll(string key)
         {

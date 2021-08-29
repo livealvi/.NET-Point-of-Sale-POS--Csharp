@@ -16,9 +16,12 @@ namespace FinalPoject
     public partial class FormStart : Form
     {
         private string role;
-        public FormStart(string role)
+        private Form loginForm;
+        public FormStart(string role, Form form)
         {
             InitializeComponent();
+
+            this.loginForm = form;
             this.role = role;
 
             if (role == "Admin")
@@ -90,7 +93,7 @@ namespace FinalPoject
 
         private void btnMasterProducts_Click(object sender, EventArgs e)
         {
-            ViewForm(new FormProductsMaster());
+            ViewForm(new FormMasterCategory());
         }
 
         private void btnMasterUser_Click(object sender, EventArgs e)
@@ -123,6 +126,27 @@ namespace FinalPoject
             }
         }
 
-        
+        private void btnCancelSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+           // var decision =  MessageBox.Show("Do you want to close the application?","Confirmation",MessageBoxButtons.YesNo);
+
+            if (MessageBox.Show("Do you want to close the application?", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void FormStart_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (MessageBox.Show("Do you want to close the application?", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

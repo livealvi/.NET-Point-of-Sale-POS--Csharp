@@ -85,6 +85,11 @@ namespace IMS.DataAccess
             {
                 connection = sqlcon;
                 SqlCommand cmd = new SqlCommand(query, connection);
+
+                //if (reader.IsClosed)
+                //{
+                //    reader = new SqlDataReader(connection);
+                //}
                 reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
@@ -97,7 +102,7 @@ namespace IMS.DataAccess
             }
             finally
             {
-                connection?.Close();
+                //connection?.Close();
                 reader?.Close();
             }
             return columnData;

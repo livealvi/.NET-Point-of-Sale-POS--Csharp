@@ -7,15 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IMS.Entity.InventoryProducts;
 using IMS.Repository;
+using FinalPoject.UserInterface.Dashboard;
 
 namespace FinalPoject
 {
-    public partial class FormProductsMaster : Form
+    public partial class FormMasterCategory : Form
     {
         private MasterCategoriesRepo masterCategoriesRepo{get;  set;}
 
-        public FormProductsMaster() 
+        public FormMasterCategory() 
         {
             InitializeComponent();
             this.masterCategoriesRepo = new MasterCategoriesRepo();

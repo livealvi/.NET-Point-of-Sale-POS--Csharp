@@ -19,6 +19,33 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        public string GetMainCate()
+        {
+            return iDB.GetSingleData("  select sum(MainCategoryId) as id from MainCategories ", "Id");
+        }
+
+        public string GetSecCate()
+        {
+            return iDB.GetSingleData("  select sum(SecondCategoryId) as id from SecondCategories ", "Id");
+        }
+
+        public string GetThCate()
+        {
+            return iDB.GetSingleData("  select sum(ThirdCategoryId) as id from ThirdCategories ", "Id");
+        }
+
+        public string GetVN()
+        {
+            return iDB.GetSingleData("  select sum(VendorId) as id from Vendors ", "Id");
+        }
+
+        public string GetBR()
+        {
+            return iDB.GetSingleData("  select sum(BrandId) as id from Brands ", "Id");
+        }
+
+
+
         public List<Products> GetAll(string key)
         {
             List<Products> productsList = new List<Products>();

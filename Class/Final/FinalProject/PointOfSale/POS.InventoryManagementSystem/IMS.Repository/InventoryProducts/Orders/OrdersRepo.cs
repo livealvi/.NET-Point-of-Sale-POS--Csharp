@@ -19,10 +19,24 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
-        public string GetTotalOrder()
+
+        public string GetTodaySell()
         {
-            return iDB.GetSingleData("", "");
+            return iDB.GetSingleData("select count(orderid) as totalsell from orders where date=format(getdate(),'yyyy-MM-dd')", "totalsell");
         }
+        public string GetTotalOrders()
+        {
+            return iDB.GetSingleData("select count(orderid) as totalsell from orders", "totalsell");
+        }
+        public string GetLastWeekSell()
+        {
+            return iDB.GetSingleData("select sum(TotalAmount) as sum from orders where date<GETDATE() and date>DATEADD(day,-8, GETDATE())", "sum");
+        }
+        public string GetLastMonthSell()
+        {
+            return iDB.GetSingleData("select sum(TotalAmount) as sum from orders where date<GETDATE() and date>DATEADD(day,-31, GETDATE())", "sum");
+        }
+
 
         //view & search & filter 
         public DataTable GetAll(string key)

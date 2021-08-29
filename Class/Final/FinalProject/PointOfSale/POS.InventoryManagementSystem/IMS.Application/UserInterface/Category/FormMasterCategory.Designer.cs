@@ -1,7 +1,7 @@
 ﻿
 namespace FinalPoject
 {
-    partial class FormProductsMaster
+    partial class FormMasterCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -767,9 +767,9 @@ namespace FinalPoject
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(18, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(294, 60);
+            this.label3.Size = new System.Drawing.Size(338, 60);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Master Controls";
+            this.label3.Text = "Master Categories";
             // 
             // guna2Panel9
             // 
@@ -820,7 +820,7 @@ namespace FinalPoject
             this.pnlInsideTop.Size = new System.Drawing.Size(1244, 16);
             this.pnlInsideTop.TabIndex = 5;
             // 
-            // FormProductsMaster
+            // FormMasterCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -828,7 +828,7 @@ namespace FinalPoject
             this.Controls.Add(this.guna2Panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeBox = false;
-            this.Name = "FormProductsMaster";
+            this.Name = "FormMasterCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Master Categories";
             this.Load += new System.EventHandler(this.FormProductsMaster_Load);
