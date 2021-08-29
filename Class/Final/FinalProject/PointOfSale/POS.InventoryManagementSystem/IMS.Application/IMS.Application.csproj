@@ -373,6 +373,8 @@
     <None Include="Resources\icons8_shopping_cart_96px_1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8_save_500px_1.png" />
+    <None Include="Resources\icons8_save_500px.png" />
     <None Include="Resources\icons8_restart_96px.png" />
     <None Include="Resources\icons8_restart_96px_1.png" />
     <None Include="Resources\icons8_delete_480px_2.png" />

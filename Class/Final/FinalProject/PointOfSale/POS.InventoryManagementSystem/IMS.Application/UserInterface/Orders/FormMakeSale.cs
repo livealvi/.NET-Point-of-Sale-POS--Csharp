@@ -352,7 +352,7 @@ namespace FinalPoject
             foreach (DataGridViewRow row in dgvCart.Rows)
             {
                 Orders orders = this.FillEntity();
-                MessageBox.Show(row.Cells[7].Value.ToString());
+                //MessageBox.Show(row.Cells[7].Value.ToString());
                 orders.ProductId = Convert.ToInt32(row.Cells[0].Value.ToString());
                 orders.ProductName = row.Cells[2].Value.ToString();
                 orders.ProductPerUnitPrice = Convert.ToDouble(row.Cells[7].Value.ToString());

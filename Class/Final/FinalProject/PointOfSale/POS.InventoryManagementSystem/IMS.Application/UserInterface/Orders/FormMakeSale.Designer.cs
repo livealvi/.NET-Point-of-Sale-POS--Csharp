@@ -129,7 +129,6 @@ namespace FinalPoject
             this.txtProducTag = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel20 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
@@ -144,6 +143,7 @@ namespace FinalPoject
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
+            this.lblTotalItemResult = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelSearch = new Guna.UI2.WinForms.Guna2Button();
             this.cmbThird = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -151,7 +151,6 @@ namespace FinalPoject
             this.cmbVendor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.txtSearchForSell = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTotalItemFound = new System.Windows.Forms.Label();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -160,7 +159,8 @@ namespace FinalPoject
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.lblTotalItemResult = new System.Windows.Forms.Label();
+            this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.txtSearchForSell = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -173,7 +173,6 @@ namespace FinalPoject
             this.guna2Panel27.SuspendLayout();
             this.RightPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.guna2Panel18.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -181,6 +180,7 @@ namespace FinalPoject
             this.tablePanel3.SuspendLayout();
             this.guna2Panel13.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel3
@@ -1403,6 +1403,7 @@ namespace FinalPoject
             // 
             this.dtpPayDate.CheckedState.Parent = this.dtpPayDate;
             this.dtpPayDate.CustomFormat = "yyyy-MM-dd";
+            this.dtpPayDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtpPayDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpPayDate.HoverState.Parent = this.dtpPayDate;
             this.dtpPayDate.Location = new System.Drawing.Point(190, 480);
@@ -1642,20 +1643,6 @@ namespace FinalPoject
             this.label7.TabIndex = 213;
             this.label7.Text = "Product Name";
             // 
-            // pbImage
-            // 
-            this.pbImage.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pbImage.ErrorImage = global::FinalPoject.Properties.Resources.icons8_no_image_480px_2;
-            this.pbImage.Image = global::FinalPoject.Properties.Resources.icons8_add_camera_480px;
-            this.pbImage.Location = new System.Drawing.Point(19, 52);
-            this.pbImage.Margin = new System.Windows.Forms.Padding(2);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.ShadowDecoration.Parent = this.pbImage;
-            this.pbImage.Size = new System.Drawing.Size(220, 220);
-            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbImage.TabIndex = 216;
-            this.pbImage.TabStop = false;
-            // 
             // guna2Panel17
             // 
             this.guna2Panel17.BackColor = System.Drawing.Color.Transparent;
@@ -1865,6 +1852,19 @@ namespace FinalPoject
             this.tablePanel3.Size = new System.Drawing.Size(1935, 58);
             this.tablePanel3.TabIndex = 205;
             // 
+            // lblTotalItemResult
+            // 
+            this.lblTotalItemResult.AutoSize = true;
+            this.tablePanel3.SetColumn(this.lblTotalItemResult, 8);
+            this.lblTotalItemResult.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalItemResult.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalItemResult.Location = new System.Drawing.Point(817, 18);
+            this.lblTotalItemResult.Name = "lblTotalItemResult";
+            this.tablePanel3.SetRow(this.lblTotalItemResult, 0);
+            this.lblTotalItemResult.Size = new System.Drawing.Size(19, 21);
+            this.lblTotalItemResult.TabIndex = 6;
+            this.lblTotalItemResult.Text = "0";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -1883,7 +1883,7 @@ namespace FinalPoject
             this.btnCancelSearch.Animated = true;
             this.btnCancelSearch.CheckedState.Parent = this.btnCancelSearch;
             this.btnCancelSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_delete_480px_2;
+            this.btnCancelSearch.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_delete_480px_1;
             this.btnCancelSearch.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_delete_480px_3;
             this.btnCancelSearch.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCancelSearch.CustomImages.Parent = this.btnCancelSearch;
@@ -2006,35 +2006,6 @@ namespace FinalPoject
             this.label24.TabIndex = 164;
             this.label24.Text = "Search Product";
             // 
-            // txtSearchForSell
-            // 
-            this.txtSearchForSell.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.txtSearchForSell.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchForSell.DefaultText = "";
-            this.txtSearchForSell.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchForSell.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchForSell.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchForSell.DisabledState.Parent = this.txtSearchForSell;
-            this.txtSearchForSell.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchForSell.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchForSell.FocusedState.Parent = this.txtSearchForSell;
-            this.txtSearchForSell.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchForSell.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchForSell.HoverState.Parent = this.txtSearchForSell;
-            this.txtSearchForSell.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.txtSearchForSell.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSearchForSell.Location = new System.Drawing.Point(151, 14);
-            this.txtSearchForSell.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtSearchForSell.Name = "txtSearchForSell";
-            this.txtSearchForSell.PasswordChar = '\0';
-            this.txtSearchForSell.PlaceholderText = "by Name, Tag, Brand etc.";
-            this.txtSearchForSell.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearchForSell.SelectedText = "";
-            this.txtSearchForSell.ShadowDecoration.Parent = this.txtSearchForSell;
-            this.txtSearchForSell.Size = new System.Drawing.Size(488, 30);
-            this.txtSearchForSell.TabIndex = 134;
-            this.txtSearchForSell.TextChanged += new System.EventHandler(this.txtSearchForSell_TextChanged_1);
-            // 
             // lblTotalItemFound
             // 
             this.lblTotalItemFound.AutoSize = true;
@@ -2096,8 +2067,8 @@ namespace FinalPoject
             this.btnCancle.Animated = true;
             this.btnCancle.CheckedState.Parent = this.btnCancle;
             this.btnCancle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancle.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_trash_can_480px;
-            this.btnCancle.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_trash_can_480px_1;
+            this.btnCancle.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_delete_480px;
+            this.btnCancle.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_delete_480px_1;
             this.btnCancle.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCancle.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnCancle.CustomImages.Parent = this.btnCancle;
@@ -2121,17 +2092,17 @@ namespace FinalPoject
             this.btnPlaceOrderToSave.Animated = true;
             this.btnPlaceOrderToSave.CheckedState.Parent = this.btnPlaceOrderToSave;
             this.btnPlaceOrderToSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPlaceOrderToSave.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnPlaceOrderToSave.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnPlaceOrderToSave.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_save_500px;
+            this.btnPlaceOrderToSave.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_save_500px_1;
             this.btnPlaceOrderToSave.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPlaceOrderToSave.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnPlaceOrderToSave.CustomImages.Parent = this.btnPlaceOrderToSave;
-            this.btnPlaceOrderToSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnPlaceOrderToSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.btnPlaceOrderToSave.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaceOrderToSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnPlaceOrderToSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnPlaceOrderToSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(55)))), ((int)(((byte)(238)))));
+            this.btnPlaceOrderToSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(55)))), ((int)(((byte)(238)))));
             this.btnPlaceOrderToSave.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaceOrderToSave.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnPlaceOrderToSave.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.btnPlaceOrderToSave.HoverState.Parent = this.btnPlaceOrderToSave;
             this.btnPlaceOrderToSave.Location = new System.Drawing.Point(959, 11);
             this.btnPlaceOrderToSave.Name = "btnPlaceOrderToSave";
@@ -2147,8 +2118,8 @@ namespace FinalPoject
             this.btnAddItem.Animated = true;
             this.btnAddItem.CheckedState.Parent = this.btnAddItem;
             this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddItem.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddItem.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddItem.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
+            this.btnAddItem.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
             this.btnAddItem.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddItem.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnAddItem.CustomImages.Parent = this.btnAddItem;
@@ -2173,18 +2144,18 @@ namespace FinalPoject
             this.btnRefresh.Animated = true;
             this.btnRefresh.CheckedState.Parent = this.btnRefresh;
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
+            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.btnRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnRefresh.CustomImages.Parent = this.btnRefresh;
             this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
+            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
             this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.HoverState.Parent = this.btnRefresh;
             this.btnRefresh.Location = new System.Drawing.Point(493, 11);
             this.btnRefresh.Name = "btnRefresh";
@@ -2221,18 +2192,48 @@ namespace FinalPoject
             this.btnDeleteProduct.Text = "Remove Iitem";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
-            // lblTotalItemResult
+            // pbImage
             // 
-            this.lblTotalItemResult.AutoSize = true;
-            this.tablePanel3.SetColumn(this.lblTotalItemResult, 8);
-            this.lblTotalItemResult.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalItemResult.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalItemResult.Location = new System.Drawing.Point(817, 18);
-            this.lblTotalItemResult.Name = "lblTotalItemResult";
-            this.tablePanel3.SetRow(this.lblTotalItemResult, 0);
-            this.lblTotalItemResult.Size = new System.Drawing.Size(19, 21);
-            this.lblTotalItemResult.TabIndex = 6;
-            this.lblTotalItemResult.Text = "0";
+            this.pbImage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pbImage.ErrorImage = global::FinalPoject.Properties.Resources.icons8_no_image_480px_2;
+            this.pbImage.Image = global::FinalPoject.Properties.Resources.icons8_add_camera_480px;
+            this.pbImage.Location = new System.Drawing.Point(19, 52);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(2);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.ShadowDecoration.Parent = this.pbImage;
+            this.pbImage.Size = new System.Drawing.Size(220, 220);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImage.TabIndex = 216;
+            this.pbImage.TabStop = false;
+            // 
+            // txtSearchForSell
+            // 
+            this.txtSearchForSell.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtSearchForSell.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchForSell.DefaultText = "";
+            this.txtSearchForSell.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchForSell.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchForSell.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchForSell.DisabledState.Parent = this.txtSearchForSell;
+            this.txtSearchForSell.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchForSell.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchForSell.FocusedState.Parent = this.txtSearchForSell;
+            this.txtSearchForSell.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchForSell.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchForSell.HoverState.Parent = this.txtSearchForSell;
+            this.txtSearchForSell.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.txtSearchForSell.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
+            this.txtSearchForSell.Location = new System.Drawing.Point(151, 14);
+            this.txtSearchForSell.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSearchForSell.Name = "txtSearchForSell";
+            this.txtSearchForSell.PasswordChar = '\0';
+            this.txtSearchForSell.PlaceholderText = "by Name, Tag, Brand etc.";
+            this.txtSearchForSell.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearchForSell.SelectedText = "";
+            this.txtSearchForSell.ShadowDecoration.Parent = this.txtSearchForSell;
+            this.txtSearchForSell.Size = new System.Drawing.Size(488, 30);
+            this.txtSearchForSell.TabIndex = 134;
+            this.txtSearchForSell.TextChanged += new System.EventHandler(this.txtSearchForSell_TextChanged_1);
             // 
             // FormMakeSale
             // 
@@ -2266,7 +2267,6 @@ namespace FinalPoject
             this.RightPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.guna2Panel18.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
@@ -2276,6 +2276,7 @@ namespace FinalPoject
             this.tablePanel3.PerformLayout();
             this.guna2Panel13.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
 
         }
