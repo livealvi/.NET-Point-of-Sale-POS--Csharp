@@ -32,23 +32,22 @@ namespace FinalPoject
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
             this.btnMasterProducts = new Guna.UI2.WinForms.Guna2Button();
             this.btnUser = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMasterCustomers = new Guna.UI2.WinForms.Guna2Button();
             this.btnMakeSell = new Guna.UI2.WinForms.Guna2Button();
             this.btnMasterStock = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLeftMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExpenses = new Guna.UI2.WinForms.Guna2Button();
             this.btnSellingHistory = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlTop = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblShowUserInfo = new System.Windows.Forms.Label();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlFormViwer = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblShowUserInfo = new System.Windows.Forms.Label();
             this.pnlLeftMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlTop.SuspendLayout();
@@ -83,7 +82,7 @@ namespace FinalPoject
             this.btnMasterProducts.HoverState.Parent = this.btnMasterProducts;
             this.btnMasterProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterProducts.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterProducts.Location = new System.Drawing.Point(3, 291);
+            this.btnMasterProducts.Location = new System.Drawing.Point(3, 329);
             this.btnMasterProducts.Name = "btnMasterProducts";
             this.btnMasterProducts.ShadowDecoration.Parent = this.btnMasterProducts;
             this.btnMasterProducts.Size = new System.Drawing.Size(230, 49);
@@ -121,7 +120,7 @@ namespace FinalPoject
             this.btnUser.HoverState.Parent = this.btnUser;
             this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUser.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnUser.Location = new System.Drawing.Point(3, 441);
+            this.btnUser.Location = new System.Drawing.Point(3, 404);
             this.btnUser.Name = "btnUser";
             this.btnUser.ShadowDecoration.Parent = this.btnUser;
             this.btnUser.Size = new System.Drawing.Size(230, 49);
@@ -131,44 +130,6 @@ namespace FinalPoject
             this.btnUser.TextOffset = new System.Drawing.Point(50, 0);
             this.btnUser.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.btnUser.Click += new System.EventHandler(this.btnMasterUser_Click);
-            // 
-            // btnMasterCustomers
-            // 
-            this.btnMasterCustomers.Animated = true;
-            this.btnMasterCustomers.BackColor = System.Drawing.Color.Transparent;
-            this.btnMasterCustomers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnMasterCustomers.BorderColor = System.Drawing.Color.Transparent;
-            this.btnMasterCustomers.BorderRadius = 13;
-            this.btnMasterCustomers.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.btnMasterCustomers.CheckedState.Parent = this.btnMasterCustomers;
-            this.btnMasterCustomers.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnMasterCustomers.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnMasterCustomers.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_people_96px;
-            this.btnMasterCustomers.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_people_96px_1;
-            this.btnMasterCustomers.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMasterCustomers.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
-            this.btnMasterCustomers.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
-            this.btnMasterCustomers.CustomImages.Parent = this.btnMasterCustomers;
-            this.btnMasterCustomers.FillColor = System.Drawing.Color.Transparent;
-            this.btnMasterCustomers.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnMasterCustomers.ForeColor = System.Drawing.Color.Gray;
-            this.btnMasterCustomers.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.btnMasterCustomers.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnMasterCustomers.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnMasterCustomers.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnMasterCustomers.HoverState.Parent = this.btnMasterCustomers;
-            this.btnMasterCustomers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMasterCustomers.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterCustomers.Location = new System.Drawing.Point(3, 366);
-            this.btnMasterCustomers.Name = "btnMasterCustomers";
-            this.btnMasterCustomers.ShadowDecoration.Parent = this.btnMasterCustomers;
-            this.btnMasterCustomers.Size = new System.Drawing.Size(230, 49);
-            this.btnMasterCustomers.TabIndex = 5;
-            this.btnMasterCustomers.Text = "Customers Details";
-            this.btnMasterCustomers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMasterCustomers.TextOffset = new System.Drawing.Point(50, 0);
-            this.btnMasterCustomers.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.btnMasterCustomers.Click += new System.EventHandler(this.btnMasterCustomer_Click);
             // 
             // btnMakeSell
             // 
@@ -197,7 +158,7 @@ namespace FinalPoject
             this.btnMakeSell.HoverState.Parent = this.btnMakeSell;
             this.btnMakeSell.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMakeSell.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMakeSell.Location = new System.Drawing.Point(3, 141);
+            this.btnMakeSell.Location = new System.Drawing.Point(3, 179);
             this.btnMakeSell.Name = "btnMakeSell";
             this.btnMakeSell.ShadowDecoration.Parent = this.btnMakeSell;
             this.btnMakeSell.Size = new System.Drawing.Size(230, 49);
@@ -235,7 +196,7 @@ namespace FinalPoject
             this.btnMasterStock.HoverState.Parent = this.btnMasterStock;
             this.btnMasterStock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterStock.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnMasterStock.Location = new System.Drawing.Point(3, 216);
+            this.btnMasterStock.Location = new System.Drawing.Point(3, 254);
             this.btnMasterStock.Name = "btnMasterStock";
             this.btnMasterStock.ShadowDecoration.Parent = this.btnMasterStock;
             this.btnMasterStock.Size = new System.Drawing.Size(230, 49);
@@ -273,7 +234,7 @@ namespace FinalPoject
             this.btnDashboard.HoverState.Parent = this.btnDashboard;
             this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDashboard.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnDashboard.Location = new System.Drawing.Point(3, 66);
+            this.btnDashboard.Location = new System.Drawing.Point(3, 104);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
             this.btnDashboard.Size = new System.Drawing.Size(230, 49);
@@ -304,19 +265,18 @@ namespace FinalPoject
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button2, 0, 15);
-            this.tableLayoutPanel1.Controls.Add(this.btnSellingHistory, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.btnUser, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.btnExpenses, 0, 13);
+            this.tableLayoutPanel1.Controls.Add(this.btnSellingHistory, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.btnUser, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.btnMasterProducts, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.btnMasterCustomers, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.btnDashboard, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnMasterStock, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.btnMakeSell, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnLogout, 0, 17);
+            this.tableLayoutPanel1.Controls.Add(this.btnLogout, 0, 15);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 19;
+            this.tableLayoutPanel1.RowCount = 17;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -331,50 +291,50 @@ namespace FinalPoject
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(257, 782);
             this.tableLayoutPanel1.TabIndex = 19;
             // 
-            // guna2Button2
+            // btnExpenses
             // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 13;
-            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Button2.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
-            this.guna2Button2.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
-            this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
-            this.guna2Button2.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.Gray;
-            this.guna2Button2.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.ImageOffset = new System.Drawing.Point(25, 0);
-            this.guna2Button2.Location = new System.Drawing.Point(3, 591);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(230, 49);
-            this.guna2Button2.TabIndex = 8;
-            this.guna2Button2.Text = "Expenses";
-            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.TextOffset = new System.Drawing.Point(50, 0);
-            this.guna2Button2.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.btnExpenses.Animated = true;
+            this.btnExpenses.BackColor = System.Drawing.Color.Transparent;
+            this.btnExpenses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExpenses.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExpenses.BorderRadius = 13;
+            this.btnExpenses.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.btnExpenses.CheckedState.Parent = this.btnExpenses;
+            this.btnExpenses.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnExpenses.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnExpenses.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_construction_96px;
+            this.btnExpenses.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_construction_96px_1;
+            this.btnExpenses.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnExpenses.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
+            this.btnExpenses.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.btnExpenses.CustomImages.Parent = this.btnExpenses;
+            this.btnExpenses.FillColor = System.Drawing.Color.Transparent;
+            this.btnExpenses.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnExpenses.ForeColor = System.Drawing.Color.Gray;
+            this.btnExpenses.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.btnExpenses.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnExpenses.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnExpenses.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnExpenses.HoverState.Parent = this.btnExpenses;
+            this.btnExpenses.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnExpenses.ImageOffset = new System.Drawing.Point(25, 0);
+            this.btnExpenses.Location = new System.Drawing.Point(3, 554);
+            this.btnExpenses.Name = "btnExpenses";
+            this.btnExpenses.ShadowDecoration.Parent = this.btnExpenses;
+            this.btnExpenses.Size = new System.Drawing.Size(230, 49);
+            this.btnExpenses.TabIndex = 8;
+            this.btnExpenses.Text = "Expenses";
+            this.btnExpenses.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnExpenses.TextOffset = new System.Drawing.Point(50, 0);
+            this.btnExpenses.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
             // btnSellingHistory
             // 
@@ -403,7 +363,7 @@ namespace FinalPoject
             this.btnSellingHistory.HoverState.Parent = this.btnSellingHistory;
             this.btnSellingHistory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSellingHistory.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnSellingHistory.Location = new System.Drawing.Point(3, 516);
+            this.btnSellingHistory.Location = new System.Drawing.Point(3, 479);
             this.btnSellingHistory.Name = "btnSellingHistory";
             this.btnSellingHistory.ShadowDecoration.Parent = this.btnSellingHistory;
             this.btnSellingHistory.Size = new System.Drawing.Size(230, 49);
@@ -441,7 +401,7 @@ namespace FinalPoject
             this.btnLogout.HoverState.Parent = this.btnLogout;
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btnLogout.Location = new System.Drawing.Point(3, 709);
+            this.btnLogout.Location = new System.Drawing.Point(3, 710);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
             this.btnLogout.Size = new System.Drawing.Size(230, 49);
@@ -487,6 +447,15 @@ namespace FinalPoject
             this.pnlTop.ShadowDecoration.Parent = this.pnlTop;
             this.pnlTop.Size = new System.Drawing.Size(1184, 73);
             this.pnlTop.TabIndex = 43;
+            // 
+            // lblShowUserInfo
+            // 
+            this.lblShowUserInfo.AutoSize = true;
+            this.lblShowUserInfo.Location = new System.Drawing.Point(76, 31);
+            this.lblShowUserInfo.Name = "lblShowUserInfo";
+            this.lblShowUserInfo.Size = new System.Drawing.Size(35, 13);
+            this.lblShowUserInfo.TabIndex = 6;
+            this.lblShowUserInfo.Text = "label1";
             // 
             // guna2Panel9
             // 
@@ -534,15 +503,6 @@ namespace FinalPoject
             this.pnlFormViwer.Size = new System.Drawing.Size(1184, 709);
             this.pnlFormViwer.TabIndex = 44;
             // 
-            // lblShowUserInfo
-            // 
-            this.lblShowUserInfo.AutoSize = true;
-            this.lblShowUserInfo.Location = new System.Drawing.Point(76, 31);
-            this.lblShowUserInfo.Name = "lblShowUserInfo";
-            this.lblShowUserInfo.Size = new System.Drawing.Size(35, 13);
-            this.lblShowUserInfo.TabIndex = 6;
-            this.lblShowUserInfo.Text = "label1";
-            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,7 +529,6 @@ namespace FinalPoject
         #endregion
         private Guna.UI2.WinForms.Guna2Button btnMasterProducts;
         private Guna.UI2.WinForms.Guna2Button btnUser;
-        private Guna.UI2.WinForms.Guna2Button btnMasterCustomers;
         private Guna.UI2.WinForms.Guna2Button btnMakeSell;
         private Guna.UI2.WinForms.Guna2Button btnMasterStock;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
@@ -584,7 +543,7 @@ namespace FinalPoject
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Panel pnlFormViwer;
         private Guna.UI2.WinForms.Guna2Button btnSellingHistory;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnExpenses;
         private System.Windows.Forms.Label lblShowUserInfo;
     }
 }

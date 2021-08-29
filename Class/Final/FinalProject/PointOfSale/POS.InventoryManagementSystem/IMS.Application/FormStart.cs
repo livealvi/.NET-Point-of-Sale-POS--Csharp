@@ -28,6 +28,10 @@ namespace FinalPoject
             {
                 SetupForCashier();
             }
+            else if (role == "Salesman")
+            {
+                SetupForSalesman();
+            }
 
             this.lblShowUserInfo.Text = this.role;
         }
@@ -36,8 +40,10 @@ namespace FinalPoject
         {
             btnDashboard.Enabled = true;
             btnMakeSell.Enabled = true;
-            btnMasterCustomers.Enabled = true;
             btnMasterProducts.Enabled = true;
+            btnUser.Enabled = true;
+            btnSellingHistory.Enabled = true;
+            btnExpenses.Enabled = true;
             btnMasterStock.Enabled = true;
         }
 
@@ -45,10 +51,24 @@ namespace FinalPoject
         {
             btnDashboard.Enabled = true;
             btnMakeSell.Enabled = true;
-            btnMasterCustomers.Enabled = false;
-            btnMasterProducts.Enabled = true;
+            btnMasterProducts.Enabled = false;
+            btnUser.Enabled = false;
+            btnSellingHistory.Enabled = true;
+            btnExpenses.Enabled = false;
+            btnMasterStock.Enabled = true;
+        }
+
+        void SetupForSalesman()
+        {
+            btnDashboard.Enabled = false;
+            btnMakeSell.Enabled = true;
+            btnMasterProducts.Enabled = false;
+            btnUser.Enabled = false;
+            btnSellingHistory.Enabled = true;
+            btnExpenses.Enabled = false;
             btnMasterStock.Enabled = false;
         }
+
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {

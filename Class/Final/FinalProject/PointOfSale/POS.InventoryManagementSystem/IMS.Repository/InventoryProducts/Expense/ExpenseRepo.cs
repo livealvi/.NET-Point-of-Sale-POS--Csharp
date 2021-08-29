@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,17 @@ namespace IMS.Repository.InventoryProducts.Expense
             this.iDB = new InventoryDBDataAccess();
         }
 
+
+        public string GetLastWeekExpense()
+        {
+            return iDB.GetSingleData("select sum(ExpenseAmount) as sum from Expenses where ExpenseDate<GETDATE() and ExpenseDate>DATEADD(day,-8, GETDATE())", "sum");
+        }
+
+        public string GetTotalExpense()
+        {
+            return iDB.GetSingleData("select  sum(ExpenseAmount) as TOTAL FROM Expenses ", "TOTAL");
+        }
+
         //view & search
         public List<Expenses> GetAll(string key)
         {
@@ -28,13 +40,14 @@ namespace IMS.Repository.InventoryProducts.Expense
             {
                 if (key == null)
                     sql =
-                        @"SELECT MainCategories.MainCategoryId AS MainCategoryId, MainCategories.MainCategoryName AS MainCategoryName
-                          FROM MainCategories";
+                        @"SELECT ExpenseId, ExpenseName, ExpenseAmount, ExpenseDate
+                                FROM Expenses";
                 else
-                    sql = @"SELECT MainCategories.MainCategoryId AS MainCategoryId, MainCategories.MainCategoryName AS MainCategoryName
-                          FROM MainCategories
+                    sql = @"SELECT ExpenseId, ExpenseName, ExpenseAmount, ExpenseDate
+                                FROM Expenses
 
-                          where MainCategories.MainCategoryId like '%" + key + "%' or MainCategories.MainCategoryName like '%" + key + "%' ; ";
+                          where ExpenseId like '%" + key + "%' or ExpenseName like '%" + key + "%' or ExpenseAmount like '%" + key + "%'" +
+                          " or ExpenseDate like '%" + key + "%' ; ";
 
                 var dt = this.iDB.ExecuteQueryTable(sql);
 
@@ -54,11 +67,6 @@ namespace IMS.Repository.InventoryProducts.Expense
             }
         }
 
-        public string GetLastWeekExpense()
-        {
-            return iDB.GetSingleData("select sum(ExpenseAmount) as sum from Expenses where ExpenseDate<GETDATE() and ExpenseDate>DATEADD(day,-8, GETDATE())", "sum");
-        }
-
         private Expenses ConvertToEntity(DataRow row)
         {
             if (row == null)
@@ -72,6 +80,99 @@ namespace IMS.Repository.InventoryProducts.Expense
             expenses.ExpenseAmount = Convert.ToDouble(row["ExpenseAmount"].ToString());
             expenses.ExpenseDate = Convert.ToDateTime(row["ExpenseDate"].ToString());
             return expenses;
+        }
+
+        //DataCount - DataExists
+        public bool DataExists(int id)
+        {
+            try
+            {
+                DataSet ds = iDB.ExecuteQuery("select ExpenseId from Expenses where ExpenseId=" + id);
+
+                Debug.WriteLine(ds.Tables[0].Rows.Count);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+                return false;
+            }
+        }
+
+        //save - Expenses
+        public bool Save(Expenses ex)
+        {
+            try
+            {
+                var sql = @"insert into Expenses (ExpenseName, ExpenseAmount, ExpenseDate)
+                                values ('" + ex.ExpenseName + "' , '" + ex.ExpenseAmount + "' , '" + ex.ExpenseDate + "' );";
+
+                var rowCount = this.iDB.ExecuteDMLQuery(sql);
+
+                if (rowCount == 1)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+            }
+        }
+
+        //update - Expenses
+        public bool UpdateExpenses(Expenses ex)
+        {
+            try
+            {
+                string sql = @"update Expenses set ExpenseName='" + ex.ExpenseName + "' , ExpenseAmount='" + ex.ExpenseAmount + "' , ExpenseDate='" + ex.ExpenseDate + "'  where ExpenseId='" + ex.ExpenseId + "';";
+
+                int count = this.iDB.ExecuteDMLQuery(sql);
+
+                if (count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                throw;
+            }
+        }
+
+        //delete - Expenses
+        public bool Delete(string id)
+        {
+            string sql;
+
+            try
+            {
+                sql = @"delete from Expenses where ExpenseId ='" + id + "';";
+                var dataTable = this.iDB.ExecuteDMLQuery(sql);
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                return false;
+                throw;
+            }
         }
 
     }

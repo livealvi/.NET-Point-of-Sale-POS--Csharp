@@ -40,18 +40,20 @@ namespace FinalPoject.UserInterface.Dashboard
             string role = usersRepo.GetRole(txtUserId.Text, txtPassword.Text);
             if (role=="Admin")
             {
-                //MessageBox.Show("Logged in as admin");
                 new FormStart(role).Show();
+                
             }
             else if(role=="Cashier")
             {
-                //MessageBox.Show("Logged in as Cashier");
                 new FormStart(role).Show();
-
+            }
+            else if (role == "Salesman")
+            {
+                new FormStart(role).Show();
             }
             else if (role == null)
             {
-                MessageBox.Show("Error login");
+                MessageBox.Show("UserID & Password Incorrect", "Login Filed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

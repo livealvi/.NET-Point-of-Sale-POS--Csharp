@@ -19,6 +19,11 @@ namespace IMS.Repository
             this.iDB = new InventoryDBDataAccess();
         }
 
+        public string GetTotalOrder()
+        {
+            return iDB.GetSingleData("", "");
+        }
+
         //view & search & filter 
         public DataTable GetAll(string key)
         {

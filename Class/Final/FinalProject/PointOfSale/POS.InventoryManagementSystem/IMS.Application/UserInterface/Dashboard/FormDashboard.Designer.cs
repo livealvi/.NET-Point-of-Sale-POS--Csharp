@@ -110,7 +110,6 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
@@ -138,7 +137,31 @@ namespace FinalPoject.UserInterface.Dashboard
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblExpLast7 = new System.Windows.Forms.Label();
+            this.lblExpLast7Day = new System.Windows.Forms.Label();
+            this.lblExpLastDay = new System.Windows.Forms.Label();
+            this.lblAdminTotalSal = new System.Windows.Forms.Label();
+            this.lblCashierTotalSal = new System.Windows.Forms.Label();
+            this.lblSalesManTotalSal = new System.Windows.Forms.Label();
+            this.lblTotalSal = new System.Windows.Forms.Label();
+            this.lblTotalExp = new System.Windows.Forms.Label();
+            this.lblLastDaySell = new System.Windows.Forms.Label();
+            this.lblLast7DaySell = new System.Windows.Forms.Label();
+            this.lblLast30DaySell = new System.Windows.Forms.Label();
+            this.lblLastTotalSell = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblExpLast30Day = new System.Windows.Forms.Label();
+            this.lblAvailableStock = new System.Windows.Forms.Label();
+            this.lblNotAvailableStock = new System.Windows.Forms.Label();
+            this.lblTotalStock = new System.Windows.Forms.Label();
+            this.lblTotalAdmin = new System.Windows.Forms.Label();
+            this.lblTotalCashier = new System.Windows.Forms.Label();
+            this.lblTotalSalesMan = new System.Windows.Forms.Label();
+            this.lblTotalUser = new System.Windows.Forms.Label();
+            this.lblTotalMC = new System.Windows.Forms.Label();
+            this.lblTotalSC = new System.Windows.Forms.Label();
+            this.lblTotalTH = new System.Windows.Forms.Label();
+            this.lblTotalVN = new System.Windows.Forms.Label();
+            this.lblTotalBR = new System.Windows.Forms.Label();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -358,6 +381,11 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.9633F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.0367F));
+            this.tableLayoutPanel13.Controls.Add(this.lblTotalBR, 2, 5);
+            this.tableLayoutPanel13.Controls.Add(this.lblTotalVN, 2, 4);
+            this.tableLayoutPanel13.Controls.Add(this.lblTotalTH, 2, 3);
+            this.tableLayoutPanel13.Controls.Add(this.lblTotalSC, 2, 2);
+            this.tableLayoutPanel13.Controls.Add(this.lblTotalMC, 2, 1);
             this.tableLayoutPanel13.Controls.Add(this.label28, 1, 4);
             this.tableLayoutPanel13.Controls.Add(this.label29, 1, 3);
             this.tableLayoutPanel13.Controls.Add(this.label30, 1, 2);
@@ -507,8 +535,6 @@ namespace FinalPoject.UserInterface.Dashboard
             this.guna2Button3.Animated = true;
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button3.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
-            this.guna2Button3.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.guna2Button3.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
@@ -590,6 +616,10 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.71429F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.28571F));
+            this.tableLayoutPanel12.Controls.Add(this.lblTotalSal, 2, 4);
+            this.tableLayoutPanel12.Controls.Add(this.lblSalesManTotalSal, 2, 3);
+            this.tableLayoutPanel12.Controls.Add(this.lblCashierTotalSal, 2, 2);
+            this.tableLayoutPanel12.Controls.Add(this.lblAdminTotalSal, 2, 1);
             this.tableLayoutPanel12.Controls.Add(this.label24, 1, 4);
             this.tableLayoutPanel12.Controls.Add(this.label25, 1, 3);
             this.tableLayoutPanel12.Controls.Add(this.label26, 1, 2);
@@ -726,8 +756,6 @@ namespace FinalPoject.UserInterface.Dashboard
             this.guna2Button4.Animated = true;
             this.guna2Button4.CheckedState.Parent = this.guna2Button4;
             this.guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button4.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
-            this.guna2Button4.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.guna2Button4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.guna2Button4.CustomImages.Parent = this.guna2Button4;
@@ -809,10 +837,14 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.tableLayoutPanel11.Controls.Add(this.lblExpLast30Day, 2, 3);
+            this.tableLayoutPanel11.Controls.Add(this.label10, 1, 3);
+            this.tableLayoutPanel11.Controls.Add(this.lblExpLastDay, 2, 1);
             this.tableLayoutPanel11.Controls.Add(this.label20, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.lblExp, 1, 2);
-            this.tableLayoutPanel11.Controls.Add(this.label23, 1, 3);
-            this.tableLayoutPanel11.Controls.Add(this.lblExpLast7, 2, 2);
+            this.tableLayoutPanel11.Controls.Add(this.lblExpLast7Day, 2, 2);
+            this.tableLayoutPanel11.Controls.Add(this.label23, 1, 4);
+            this.tableLayoutPanel11.Controls.Add(this.lblTotalExp, 2, 4);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(8, 65);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -853,7 +885,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(23, 104);
+            this.label23.Location = new System.Drawing.Point(23, 134);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(103, 17);
             this.label23.TabIndex = 160;
@@ -934,8 +966,6 @@ namespace FinalPoject.UserInterface.Dashboard
             this.guna2Button5.Animated = true;
             this.guna2Button5.CheckedState.Parent = this.guna2Button5;
             this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button5.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
-            this.guna2Button5.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.guna2Button5.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.guna2Button5.CustomImages.Parent = this.guna2Button5;
@@ -1017,6 +1047,10 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.tableLayoutPanel10.Controls.Add(this.lblTotalUser, 2, 4);
+            this.tableLayoutPanel10.Controls.Add(this.lblTotalSalesMan, 2, 3);
+            this.tableLayoutPanel10.Controls.Add(this.lblTotalCashier, 2, 2);
+            this.tableLayoutPanel10.Controls.Add(this.lblTotalAdmin, 2, 1);
             this.tableLayoutPanel10.Controls.Add(this.label18, 1, 1);
             this.tableLayoutPanel10.Controls.Add(this.label17, 1, 2);
             this.tableLayoutPanel10.Controls.Add(this.label16, 1, 3);
@@ -1052,9 +1086,9 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(23, 74);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(57, 17);
+            this.label17.Size = new System.Drawing.Size(58, 17);
             this.label17.TabIndex = 162;
-            this.label17.Text = "Casheri:";
+            this.label17.Text = "Cashier:";
             // 
             // label16
             // 
@@ -1063,9 +1097,9 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(23, 104);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(74, 17);
+            this.label16.Size = new System.Drawing.Size(70, 17);
             this.label16.TabIndex = 163;
-            this.label16.Text = "Sales Man:";
+            this.label16.Text = "Salesman:";
             // 
             // label19
             // 
@@ -1153,8 +1187,6 @@ namespace FinalPoject.UserInterface.Dashboard
             this.guna2Button2.Animated = true;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button2.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
-            this.guna2Button2.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
@@ -1236,10 +1268,12 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.tableLayoutPanel9.Controls.Add(this.lblTotalStock, 2, 3);
+            this.tableLayoutPanel9.Controls.Add(this.lblNotAvailableStock, 2, 2);
+            this.tableLayoutPanel9.Controls.Add(this.lblAvailableStock, 2, 1);
             this.tableLayoutPanel9.Controls.Add(this.label14, 1, 1);
             this.tableLayoutPanel9.Controls.Add(this.label13, 1, 2);
-            this.tableLayoutPanel9.Controls.Add(this.label12, 1, 3);
-            this.tableLayoutPanel9.Controls.Add(this.label15, 1, 4);
+            this.tableLayoutPanel9.Controls.Add(this.label15, 1, 3);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(8, 65);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -1275,23 +1309,12 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label13.TabIndex = 162;
             this.label13.Text = "Not Available:";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(23, 104);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(93, 17);
-            this.label12.TabIndex = 163;
-            this.label12.Text = "Last 30 Days: ";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(23, 134);
+            this.label15.Location = new System.Drawing.Point(23, 104);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(81, 17);
             this.label15.TabIndex = 160;
@@ -1372,8 +1395,6 @@ namespace FinalPoject.UserInterface.Dashboard
             this.guna2Button1.Animated = true;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
-            this.guna2Button1.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.guna2Button1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
@@ -1455,10 +1476,14 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
-            this.tableLayoutPanel8.Controls.Add(this.label9, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.lblLastTotalSell, 2, 4);
+            this.tableLayoutPanel8.Controls.Add(this.lblLast30DaySell, 2, 3);
+            this.tableLayoutPanel8.Controls.Add(this.lblLast7DaySell, 2, 2);
+            this.tableLayoutPanel8.Controls.Add(this.lblLastDaySell, 2, 1);
             this.tableLayoutPanel8.Controls.Add(this.label11, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.lbl, 1, 3);
             this.tableLayoutPanel8.Controls.Add(this.lblTotalSell, 1, 4);
+            this.tableLayoutPanel8.Controls.Add(this.lbl, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label9, 1, 3);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(8, 65);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -1477,7 +1502,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(23, 44);
+            this.label9.Location = new System.Drawing.Point(23, 104);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 17);
             this.label9.TabIndex = 161;
@@ -1499,7 +1524,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl.ForeColor = System.Drawing.Color.Black;
-            this.lbl.Location = new System.Drawing.Point(23, 104);
+            this.lbl.Location = new System.Drawing.Point(23, 44);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(75, 17);
             this.lbl.TabIndex = 163;
@@ -1591,8 +1616,6 @@ namespace FinalPoject.UserInterface.Dashboard
             this.btnVendorRefresh.Animated = true;
             this.btnVendorRefresh.CheckedState.Parent = this.btnVendorRefresh;
             this.btnVendorRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVendorRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
-            this.btnVendorRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.btnVendorRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnVendorRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnVendorRefresh.CustomImages.Parent = this.btnVendorRefresh;
@@ -1646,16 +1669,284 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label6.TabIndex = 0;
             this.label6.Text = "Sales";
             // 
-            // lblExpLast7
+            // lblExpLast7Day
             // 
-            this.lblExpLast7.AutoSize = true;
-            this.lblExpLast7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpLast7.ForeColor = System.Drawing.Color.Black;
-            this.lblExpLast7.Location = new System.Drawing.Point(147, 74);
-            this.lblExpLast7.Name = "lblExpLast7";
-            this.lblExpLast7.Size = new System.Drawing.Size(103, 17);
-            this.lblExpLast7.TabIndex = 164;
-            this.lblExpLast7.Text = "Total Expenses:";
+            this.lblExpLast7Day.AutoSize = true;
+            this.lblExpLast7Day.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpLast7Day.ForeColor = System.Drawing.Color.Black;
+            this.lblExpLast7Day.Location = new System.Drawing.Point(147, 74);
+            this.lblExpLast7Day.Name = "lblExpLast7Day";
+            this.lblExpLast7Day.Size = new System.Drawing.Size(15, 17);
+            this.lblExpLast7Day.TabIndex = 164;
+            this.lblExpLast7Day.Text = "0";
+            // 
+            // lblExpLastDay
+            // 
+            this.lblExpLastDay.AutoSize = true;
+            this.lblExpLastDay.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpLastDay.ForeColor = System.Drawing.Color.Black;
+            this.lblExpLastDay.Location = new System.Drawing.Point(147, 44);
+            this.lblExpLastDay.Name = "lblExpLastDay";
+            this.lblExpLastDay.Size = new System.Drawing.Size(15, 17);
+            this.lblExpLastDay.TabIndex = 165;
+            this.lblExpLastDay.Text = "0";
+            // 
+            // lblAdminTotalSal
+            // 
+            this.lblAdminTotalSal.AutoSize = true;
+            this.lblAdminTotalSal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdminTotalSal.ForeColor = System.Drawing.Color.Black;
+            this.lblAdminTotalSal.Location = new System.Drawing.Point(178, 44);
+            this.lblAdminTotalSal.Name = "lblAdminTotalSal";
+            this.lblAdminTotalSal.Size = new System.Drawing.Size(15, 17);
+            this.lblAdminTotalSal.TabIndex = 165;
+            this.lblAdminTotalSal.Text = "0";
+            // 
+            // lblCashierTotalSal
+            // 
+            this.lblCashierTotalSal.AutoSize = true;
+            this.lblCashierTotalSal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCashierTotalSal.ForeColor = System.Drawing.Color.Black;
+            this.lblCashierTotalSal.Location = new System.Drawing.Point(178, 74);
+            this.lblCashierTotalSal.Name = "lblCashierTotalSal";
+            this.lblCashierTotalSal.Size = new System.Drawing.Size(15, 17);
+            this.lblCashierTotalSal.TabIndex = 165;
+            this.lblCashierTotalSal.Text = "0";
+            // 
+            // lblSalesManTotalSal
+            // 
+            this.lblSalesManTotalSal.AutoSize = true;
+            this.lblSalesManTotalSal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalesManTotalSal.ForeColor = System.Drawing.Color.Black;
+            this.lblSalesManTotalSal.Location = new System.Drawing.Point(178, 104);
+            this.lblSalesManTotalSal.Name = "lblSalesManTotalSal";
+            this.lblSalesManTotalSal.Size = new System.Drawing.Size(15, 17);
+            this.lblSalesManTotalSal.TabIndex = 165;
+            this.lblSalesManTotalSal.Text = "0";
+            // 
+            // lblTotalSal
+            // 
+            this.lblTotalSal.AutoSize = true;
+            this.lblTotalSal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSal.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalSal.Location = new System.Drawing.Point(178, 134);
+            this.lblTotalSal.Name = "lblTotalSal";
+            this.lblTotalSal.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalSal.TabIndex = 165;
+            this.lblTotalSal.Text = "0";
+            // 
+            // lblTotalExp
+            // 
+            this.lblTotalExp.AutoSize = true;
+            this.lblTotalExp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalExp.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalExp.Location = new System.Drawing.Point(147, 134);
+            this.lblTotalExp.Name = "lblTotalExp";
+            this.lblTotalExp.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalExp.TabIndex = 165;
+            this.lblTotalExp.Text = "0";
+            // 
+            // lblLastDaySell
+            // 
+            this.lblLastDaySell.AutoSize = true;
+            this.lblLastDaySell.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastDaySell.ForeColor = System.Drawing.Color.Black;
+            this.lblLastDaySell.Location = new System.Drawing.Point(147, 44);
+            this.lblLastDaySell.Name = "lblLastDaySell";
+            this.lblLastDaySell.Size = new System.Drawing.Size(15, 17);
+            this.lblLastDaySell.TabIndex = 165;
+            this.lblLastDaySell.Text = "0";
+            // 
+            // lblLast7DaySell
+            // 
+            this.lblLast7DaySell.AutoSize = true;
+            this.lblLast7DaySell.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLast7DaySell.ForeColor = System.Drawing.Color.Black;
+            this.lblLast7DaySell.Location = new System.Drawing.Point(147, 74);
+            this.lblLast7DaySell.Name = "lblLast7DaySell";
+            this.lblLast7DaySell.Size = new System.Drawing.Size(15, 17);
+            this.lblLast7DaySell.TabIndex = 167;
+            this.lblLast7DaySell.Text = "0";
+            // 
+            // lblLast30DaySell
+            // 
+            this.lblLast30DaySell.AutoSize = true;
+            this.lblLast30DaySell.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLast30DaySell.ForeColor = System.Drawing.Color.Black;
+            this.lblLast30DaySell.Location = new System.Drawing.Point(147, 104);
+            this.lblLast30DaySell.Name = "lblLast30DaySell";
+            this.lblLast30DaySell.Size = new System.Drawing.Size(15, 17);
+            this.lblLast30DaySell.TabIndex = 167;
+            this.lblLast30DaySell.Text = "0";
+            // 
+            // lblLastTotalSell
+            // 
+            this.lblLastTotalSell.AutoSize = true;
+            this.lblLastTotalSell.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastTotalSell.ForeColor = System.Drawing.Color.Black;
+            this.lblLastTotalSell.Location = new System.Drawing.Point(147, 134);
+            this.lblLastTotalSell.Name = "lblLastTotalSell";
+            this.lblLastTotalSell.Size = new System.Drawing.Size(15, 17);
+            this.lblLastTotalSell.TabIndex = 167;
+            this.lblLastTotalSell.Text = "0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(23, 104);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(93, 17);
+            this.label10.TabIndex = 167;
+            this.label10.Text = "Last 30 Days: ";
+            // 
+            // lblExpLast30Day
+            // 
+            this.lblExpLast30Day.AutoSize = true;
+            this.lblExpLast30Day.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpLast30Day.ForeColor = System.Drawing.Color.Black;
+            this.lblExpLast30Day.Location = new System.Drawing.Point(147, 104);
+            this.lblExpLast30Day.Name = "lblExpLast30Day";
+            this.lblExpLast30Day.Size = new System.Drawing.Size(15, 17);
+            this.lblExpLast30Day.TabIndex = 167;
+            this.lblExpLast30Day.Text = "0";
+            // 
+            // lblAvailableStock
+            // 
+            this.lblAvailableStock.AutoSize = true;
+            this.lblAvailableStock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvailableStock.ForeColor = System.Drawing.Color.Black;
+            this.lblAvailableStock.Location = new System.Drawing.Point(147, 44);
+            this.lblAvailableStock.Name = "lblAvailableStock";
+            this.lblAvailableStock.Size = new System.Drawing.Size(15, 17);
+            this.lblAvailableStock.TabIndex = 167;
+            this.lblAvailableStock.Text = "0";
+            // 
+            // lblNotAvailableStock
+            // 
+            this.lblNotAvailableStock.AutoSize = true;
+            this.lblNotAvailableStock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotAvailableStock.ForeColor = System.Drawing.Color.Black;
+            this.lblNotAvailableStock.Location = new System.Drawing.Point(147, 74);
+            this.lblNotAvailableStock.Name = "lblNotAvailableStock";
+            this.lblNotAvailableStock.Size = new System.Drawing.Size(15, 17);
+            this.lblNotAvailableStock.TabIndex = 167;
+            this.lblNotAvailableStock.Text = "0";
+            // 
+            // lblTotalStock
+            // 
+            this.lblTotalStock.AutoSize = true;
+            this.lblTotalStock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalStock.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalStock.Location = new System.Drawing.Point(147, 104);
+            this.lblTotalStock.Name = "lblTotalStock";
+            this.lblTotalStock.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalStock.TabIndex = 167;
+            this.lblTotalStock.Text = "0";
+            // 
+            // lblTotalAdmin
+            // 
+            this.lblTotalAdmin.AutoSize = true;
+            this.lblTotalAdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAdmin.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalAdmin.Location = new System.Drawing.Point(147, 44);
+            this.lblTotalAdmin.Name = "lblTotalAdmin";
+            this.lblTotalAdmin.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalAdmin.TabIndex = 167;
+            this.lblTotalAdmin.Tag = "";
+            this.lblTotalAdmin.Text = "0";
+            // 
+            // lblTotalCashier
+            // 
+            this.lblTotalCashier.AutoSize = true;
+            this.lblTotalCashier.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalCashier.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalCashier.Location = new System.Drawing.Point(147, 74);
+            this.lblTotalCashier.Name = "lblTotalCashier";
+            this.lblTotalCashier.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalCashier.TabIndex = 167;
+            this.lblTotalCashier.Tag = "";
+            this.lblTotalCashier.Text = "0";
+            // 
+            // lblTotalSalesMan
+            // 
+            this.lblTotalSalesMan.AutoSize = true;
+            this.lblTotalSalesMan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSalesMan.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalSalesMan.Location = new System.Drawing.Point(147, 104);
+            this.lblTotalSalesMan.Name = "lblTotalSalesMan";
+            this.lblTotalSalesMan.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalSalesMan.TabIndex = 167;
+            this.lblTotalSalesMan.Tag = "";
+            this.lblTotalSalesMan.Text = "0";
+            // 
+            // lblTotalUser
+            // 
+            this.lblTotalUser.AutoSize = true;
+            this.lblTotalUser.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalUser.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalUser.Location = new System.Drawing.Point(147, 134);
+            this.lblTotalUser.Name = "lblTotalUser";
+            this.lblTotalUser.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalUser.TabIndex = 167;
+            this.lblTotalUser.Tag = "";
+            this.lblTotalUser.Text = "0";
+            // 
+            // lblTotalMC
+            // 
+            this.lblTotalMC.AutoSize = true;
+            this.lblTotalMC.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMC.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalMC.Location = new System.Drawing.Point(157, 34);
+            this.lblTotalMC.Name = "lblTotalMC";
+            this.lblTotalMC.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalMC.TabIndex = 167;
+            this.lblTotalMC.Text = "0";
+            // 
+            // lblTotalSC
+            // 
+            this.lblTotalSC.AutoSize = true;
+            this.lblTotalSC.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSC.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalSC.Location = new System.Drawing.Point(157, 64);
+            this.lblTotalSC.Name = "lblTotalSC";
+            this.lblTotalSC.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalSC.TabIndex = 167;
+            this.lblTotalSC.Text = "0";
+            // 
+            // lblTotalTH
+            // 
+            this.lblTotalTH.AutoSize = true;
+            this.lblTotalTH.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalTH.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalTH.Location = new System.Drawing.Point(157, 94);
+            this.lblTotalTH.Name = "lblTotalTH";
+            this.lblTotalTH.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalTH.TabIndex = 167;
+            this.lblTotalTH.Text = "0";
+            // 
+            // lblTotalVN
+            // 
+            this.lblTotalVN.AutoSize = true;
+            this.lblTotalVN.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalVN.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalVN.Location = new System.Drawing.Point(157, 124);
+            this.lblTotalVN.Name = "lblTotalVN";
+            this.lblTotalVN.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalVN.TabIndex = 167;
+            this.lblTotalVN.Text = "0";
+            // 
+            // lblTotalBR
+            // 
+            this.lblTotalBR.AutoSize = true;
+            this.lblTotalBR.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalBR.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalBR.Location = new System.Drawing.Point(157, 154);
+            this.lblTotalBR.Name = "lblTotalBR";
+            this.lblTotalBR.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalBR.TabIndex = 167;
+            this.lblTotalBR.Text = "0";
             // 
             // FormDashboard
             // 
@@ -1828,11 +2119,34 @@ namespace FinalPoject.UserInterface.Dashboard
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label lblExpLast7;
+        private System.Windows.Forms.Label lblExpLast7Day;
+        private System.Windows.Forms.Label lblTotalSal;
+        private System.Windows.Forms.Label lblSalesManTotalSal;
+        private System.Windows.Forms.Label lblCashierTotalSal;
+        private System.Windows.Forms.Label lblAdminTotalSal;
+        private System.Windows.Forms.Label lblTotalExp;
+        private System.Windows.Forms.Label lblExpLastDay;
+        private System.Windows.Forms.Label lblLastTotalSell;
+        private System.Windows.Forms.Label lblLast30DaySell;
+        private System.Windows.Forms.Label lblLast7DaySell;
+        private System.Windows.Forms.Label lblLastDaySell;
+        private System.Windows.Forms.Label lblExpLast30Day;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblTotalBR;
+        private System.Windows.Forms.Label lblTotalVN;
+        private System.Windows.Forms.Label lblTotalTH;
+        private System.Windows.Forms.Label lblTotalSC;
+        private System.Windows.Forms.Label lblTotalMC;
+        private System.Windows.Forms.Label lblTotalUser;
+        private System.Windows.Forms.Label lblTotalSalesMan;
+        private System.Windows.Forms.Label lblTotalCashier;
+        private System.Windows.Forms.Label lblTotalAdmin;
+        private System.Windows.Forms.Label lblTotalStock;
+        private System.Windows.Forms.Label lblNotAvailableStock;
+        private System.Windows.Forms.Label lblAvailableStock;
     }
 }

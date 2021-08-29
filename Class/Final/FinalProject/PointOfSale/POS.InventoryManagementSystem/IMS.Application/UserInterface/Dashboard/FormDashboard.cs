@@ -23,7 +23,9 @@ namespace FinalPoject.UserInterface.Dashboard
 
         private void PopulateGridView()
         {
-            lblExpLast7.Text = expenseRepo.GetLastWeekExpense();
+            lblExpLast7Day.Text = expenseRepo.GetLastWeekExpense();
+            lblTotalExp.Text = expenseRepo.GetTotalExpense();
+
         }
     }
 }

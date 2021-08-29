@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalPoject.UserInterface.Dashboard;
+using FinalPoject.UserInterface.Exp;
 using FinalPoject.UserInterface.Orders;
 
 namespace FinalPoject
@@ -18,7 +19,7 @@ namespace FinalPoject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDashboard());
+            Application.Run(new FormExpense());
         }
     }
 }

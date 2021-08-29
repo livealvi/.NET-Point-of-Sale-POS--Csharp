@@ -166,11 +166,11 @@
     <Compile Include="UserInterface\Dashboard\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterface\Exp\Expense.cs">
+    <Compile Include="UserInterface\Expense\FormExpense.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\Exp\Expense.Designer.cs">
-      <DependentUpon>Expense.cs</DependentUpon>
+    <Compile Include="UserInterface\Expense\FormExpense.Designer.cs">
+      <DependentUpon>FormExpense.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Orders\InvoiceReport.cs">
       <SubType>Form</SubType>
@@ -270,8 +270,8 @@
     <EmbeddedResource Include="UserInterface\Dashboard\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterface\Exp\Expense.resx">
-      <DependentUpon>Expense.cs</DependentUpon>
+    <EmbeddedResource Include="UserInterface\Expense\FormExpense.resx">
+      <DependentUpon>FormExpense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Orders\InvoiceReport.resx">
       <DependentUpon>InvoiceReport.cs</DependentUpon>

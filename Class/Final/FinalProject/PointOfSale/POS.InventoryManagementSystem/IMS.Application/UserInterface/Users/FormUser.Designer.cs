@@ -704,7 +704,7 @@ namespace FinalPoject
             "Not Selected",
             "Admin",
             "Cashier",
-            "SalesMan"});
+            "Salesman"});
             this.cmbRole.ItemsAppearance.Parent = this.cmbRole;
             this.cmbRole.Location = new System.Drawing.Point(2, 406);
             this.cmbRole.Margin = new System.Windows.Forms.Padding(2);
