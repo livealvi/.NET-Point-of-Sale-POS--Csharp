@@ -606,7 +606,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.btnShowCategory.ShadowDecoration.Parent = this.btnShowCategory;
             this.btnShowCategory.Size = new System.Drawing.Size(198, 35);
             this.btnShowCategory.TabIndex = 133;
-            this.btnShowCategory.Text = "View Detailes";
+            this.btnShowCategory.Text = "View Details";
             this.btnShowCategory.TextOffset = new System.Drawing.Point(8, 0);
             this.btnShowCategory.Click += new System.EventHandler(this.btnShowCategory_Click);
             // 
@@ -874,7 +874,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.btnShowSalary.ShadowDecoration.Parent = this.btnShowSalary;
             this.btnShowSalary.Size = new System.Drawing.Size(197, 35);
             this.btnShowSalary.TabIndex = 133;
-            this.btnShowSalary.Text = "View Detailes";
+            this.btnShowSalary.Text = "View Details";
             this.btnShowSalary.TextOffset = new System.Drawing.Point(8, 0);
             this.btnShowSalary.Click += new System.EventHandler(this.btnShowSalary_Click);
             // 
@@ -1142,7 +1142,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.btnShowExpenses.ShadowDecoration.Parent = this.btnShowExpenses;
             this.btnShowExpenses.Size = new System.Drawing.Size(197, 35);
             this.btnShowExpenses.TabIndex = 133;
-            this.btnShowExpenses.Text = "View Detailes";
+            this.btnShowExpenses.Text = "View Details";
             this.btnShowExpenses.TextOffset = new System.Drawing.Point(8, 0);
             this.btnShowExpenses.Click += new System.EventHandler(this.btnShowExpenses_Click);
             // 
@@ -1414,7 +1414,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.btnShowUser.ShadowDecoration.Parent = this.btnShowUser;
             this.btnShowUser.Size = new System.Drawing.Size(198, 35);
             this.btnShowUser.TabIndex = 133;
-            this.btnShowUser.Text = "View Detailes";
+            this.btnShowUser.Text = "View Details";
             this.btnShowUser.TextOffset = new System.Drawing.Point(8, 0);
             this.btnShowUser.Click += new System.EventHandler(this.btnShowUser_Click);
             // 
@@ -1491,13 +1491,13 @@ namespace FinalPoject.UserInterface.Dashboard
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(8, 65);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 6;
+            this.tableLayoutPanel9.RowCount = 5;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(454, 208);
             this.tableLayoutPanel9.TabIndex = 161;
             // 
@@ -1506,7 +1506,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.lblTotalStock.AutoSize = true;
             this.lblTotalStock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalStock.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalStock.Location = new System.Drawing.Point(147, 104);
+            this.lblTotalStock.Location = new System.Drawing.Point(147, 119);
             this.lblTotalStock.Name = "lblTotalStock";
             this.lblTotalStock.Size = new System.Drawing.Size(15, 17);
             this.lblTotalStock.TabIndex = 167;
@@ -1517,7 +1517,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.lblNotAvailableStock.AutoSize = true;
             this.lblNotAvailableStock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotAvailableStock.ForeColor = System.Drawing.Color.Black;
-            this.lblNotAvailableStock.Location = new System.Drawing.Point(147, 74);
+            this.lblNotAvailableStock.Location = new System.Drawing.Point(147, 89);
             this.lblNotAvailableStock.Name = "lblNotAvailableStock";
             this.lblNotAvailableStock.Size = new System.Drawing.Size(15, 17);
             this.lblNotAvailableStock.TabIndex = 167;
@@ -1528,7 +1528,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.lblAvailableStock.AutoSize = true;
             this.lblAvailableStock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvailableStock.ForeColor = System.Drawing.Color.Black;
-            this.lblAvailableStock.Location = new System.Drawing.Point(147, 44);
+            this.lblAvailableStock.Location = new System.Drawing.Point(147, 59);
             this.lblAvailableStock.Name = "lblAvailableStock";
             this.lblAvailableStock.Size = new System.Drawing.Size(15, 17);
             this.lblAvailableStock.TabIndex = 167;
@@ -1539,7 +1539,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(23, 44);
+            this.label14.Location = new System.Drawing.Point(23, 59);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(69, 17);
             this.label14.TabIndex = 161;
@@ -1550,7 +1550,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(23, 74);
+            this.label13.Location = new System.Drawing.Point(23, 89);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(96, 17);
             this.label13.TabIndex = 162;
@@ -1561,7 +1561,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(23, 104);
+            this.label15.Location = new System.Drawing.Point(23, 119);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(81, 17);
             this.label15.TabIndex = 160;
@@ -1658,7 +1658,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.btnShowStock.ShadowDecoration.Parent = this.btnShowStock;
             this.btnShowStock.Size = new System.Drawing.Size(197, 35);
             this.btnShowStock.TabIndex = 133;
-            this.btnShowStock.Text = "View Detailes";
+            this.btnShowStock.Text = "View Details";
             this.btnShowStock.TextOffset = new System.Drawing.Point(8, 0);
             this.btnShowStock.Click += new System.EventHandler(this.btnShowStock_Click);
             // 
@@ -1927,7 +1927,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.btnShowSales.ShadowDecoration.Parent = this.btnShowSales;
             this.btnShowSales.Size = new System.Drawing.Size(197, 35);
             this.btnShowSales.TabIndex = 133;
-            this.btnShowSales.Text = "View Detailes";
+            this.btnShowSales.Text = "View Details";
             this.btnShowSales.TextOffset = new System.Drawing.Point(8, 0);
             this.btnShowSales.Click += new System.EventHandler(this.btnShowSales_Click);
             // 
