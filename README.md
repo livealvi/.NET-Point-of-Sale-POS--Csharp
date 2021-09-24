@@ -4,7 +4,7 @@ This porject base on my unversity course [CSC 2210: Object Oriented Programming 
 
 # Tools & Technology
 
-## Languges
+## Languages
 
  - C# Language Basics
  - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
