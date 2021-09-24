@@ -1,7 +1,0 @@
-C:\Users\Alvi\Documents\C#\practice\Array\Array\bin\Debug\Array.exe.config
-C:\Users\Alvi\Documents\C#\practice\Array\Array\bin\Debug\Array.exe
-C:\Users\Alvi\Documents\C#\practice\Array\Array\bin\Debug\Array.pdb
-C:\Users\Alvi\Documents\C#\practice\Array\Array\obj\Debug\Array.csproj.AssemblyReference.cache
-C:\Users\Alvi\Documents\C#\practice\Array\Array\obj\Debug\Array.csproj.CoreCompileInputs.cache
-C:\Users\Alvi\Documents\C#\practice\Array\Array\obj\Debug\Array.exe
-C:\Users\Alvi\Documents\C#\practice\Array\Array\obj\Debug\Array.pdb

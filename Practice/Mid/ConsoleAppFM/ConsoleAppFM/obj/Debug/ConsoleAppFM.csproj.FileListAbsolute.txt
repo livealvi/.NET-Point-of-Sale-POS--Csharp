@@ -1,7 +1,0 @@
-C:\Users\Alvi\Documents\C#\Practice\ConsoleAppFM\ConsoleAppFM\bin\Debug\ConsoleAppFM.exe.config
-C:\Users\Alvi\Documents\C#\Practice\ConsoleAppFM\ConsoleAppFM\bin\Debug\ConsoleAppFM.exe
-C:\Users\Alvi\Documents\C#\Practice\ConsoleAppFM\ConsoleAppFM\bin\Debug\ConsoleAppFM.pdb
-C:\Users\Alvi\Documents\C#\Practice\ConsoleAppFM\ConsoleAppFM\obj\Debug\ConsoleAppFM.csproj.AssemblyReference.cache
-C:\Users\Alvi\Documents\C#\Practice\ConsoleAppFM\ConsoleAppFM\obj\Debug\ConsoleAppFM.csproj.CoreCompileInputs.cache
-C:\Users\Alvi\Documents\C#\Practice\ConsoleAppFM\ConsoleAppFM\obj\Debug\ConsoleAppFM.exe
-C:\Users\Alvi\Documents\C#\Practice\ConsoleAppFM\ConsoleAppFM\obj\Debug\ConsoleAppFM.pdb

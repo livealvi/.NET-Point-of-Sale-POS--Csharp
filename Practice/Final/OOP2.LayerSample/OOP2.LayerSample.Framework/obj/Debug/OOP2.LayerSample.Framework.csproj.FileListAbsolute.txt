@@ -1,5 +1,0 @@
-C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Framework\bin\Debug\OOP2.LayerSample.Framework.dll
-C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Framework\bin\Debug\OOP2.LayerSample.Framework.pdb
-C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Framework\obj\Debug\OOP2.LayerSample.Framework.csproj.CoreCompileInputs.cache
-C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Framework\obj\Debug\OOP2.LayerSample.Framework.dll
-C:\Users\Alvi\Documents\C#\Practice\Final\OOP2.LayerSample\OOP2.LayerSample.Framework\obj\Debug\OOP2.LayerSample.Framework.pdb

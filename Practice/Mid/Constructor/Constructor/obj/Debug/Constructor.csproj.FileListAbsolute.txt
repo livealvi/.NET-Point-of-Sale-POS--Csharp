@@ -1,7 +1,0 @@
-C:\Users\Alvi\Documents\C#\practice\Constructor\Constructor\bin\Debug\Constructor.exe.config
-C:\Users\Alvi\Documents\C#\practice\Constructor\Constructor\bin\Debug\Constructor.exe
-C:\Users\Alvi\Documents\C#\practice\Constructor\Constructor\bin\Debug\Constructor.pdb
-C:\Users\Alvi\Documents\C#\practice\Constructor\Constructor\obj\Debug\Constructor.csproj.AssemblyReference.cache
-C:\Users\Alvi\Documents\C#\practice\Constructor\Constructor\obj\Debug\Constructor.csproj.CoreCompileInputs.cache
-C:\Users\Alvi\Documents\C#\practice\Constructor\Constructor\obj\Debug\Constructor.exe
-C:\Users\Alvi\Documents\C#\practice\Constructor\Constructor\obj\Debug\Constructor.pdb
