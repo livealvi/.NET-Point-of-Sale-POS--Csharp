@@ -44,9 +44,9 @@ namespace FinalPoject
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlInsideLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlTop = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblShowUserInfo = new System.Windows.Forms.Label();
             this.pnlFormViwer = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnlLeftMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -326,7 +326,7 @@ namespace FinalPoject
             this.btnSetting.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnSetting.HoverState.Parent = this.btnSetting;
             this.btnSetting.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSetting.Location = new System.Drawing.Point(0, 9);
+            this.btnSetting.Location = new System.Drawing.Point(0, 14);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.ShadowDecoration.Parent = this.btnSetting;
             this.btnSetting.Size = new System.Drawing.Size(33, 30);
@@ -484,6 +484,17 @@ namespace FinalPoject
             this.pnlTop.Size = new System.Drawing.Size(1184, 73);
             this.pnlTop.TabIndex = 43;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(20, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 30);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Welcome: ";
+            // 
             // lblShowUserInfo
             // 
             this.lblShowUserInfo.AutoSize = true;
@@ -502,17 +513,6 @@ namespace FinalPoject
             this.pnlFormViwer.ShadowDecoration.Parent = this.pnlFormViwer;
             this.pnlFormViwer.Size = new System.Drawing.Size(1184, 709);
             this.pnlFormViwer.TabIndex = 44;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(20, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 30);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Welcome: ";
             // 
             // FormStart
             // 

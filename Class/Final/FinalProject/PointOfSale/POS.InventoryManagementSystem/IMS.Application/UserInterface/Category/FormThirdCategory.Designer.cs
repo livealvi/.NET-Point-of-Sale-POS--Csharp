@@ -185,7 +185,7 @@ namespace FinalPoject
             this.btnAddSecondCate.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSecondCate.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddSecondCate.HoverState.Parent = this.btnAddSecondCate;
-            this.btnAddSecondCate.Location = new System.Drawing.Point(372, 398);
+            this.btnAddSecondCate.Location = new System.Drawing.Point(377, 398);
             this.btnAddSecondCate.Name = "btnAddSecondCate";
             this.btnAddSecondCate.ShadowDecoration.Parent = this.btnAddSecondCate;
             this.btnAddSecondCate.Size = new System.Drawing.Size(35, 30);
@@ -198,7 +198,7 @@ namespace FinalPoject
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(24, 408);
+            this.label2.Location = new System.Drawing.Point(25, 360);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 15);
@@ -209,15 +209,13 @@ namespace FinalPoject
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.cmbSecondCateName, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.cmbSecondCateName, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.txtThirdCateId, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtThirdCateName, 0, 5);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(164, 236);
+            this.tableLayoutPanel2.Controls.Add(this.txtThirdCateName, 0, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(169, 236);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 10;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
@@ -226,6 +224,7 @@ namespace FinalPoject
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 296);
             this.tableLayoutPanel2.TabIndex = 164;
@@ -243,7 +242,7 @@ namespace FinalPoject
             this.cmbSecondCateName.HoverState.Parent = this.cmbSecondCateName;
             this.cmbSecondCateName.ItemHeight = 30;
             this.cmbSecondCateName.ItemsAppearance.Parent = this.cmbSecondCateName;
-            this.cmbSecondCateName.Location = new System.Drawing.Point(2, 161);
+            this.cmbSecondCateName.Location = new System.Drawing.Point(2, 112);
             this.cmbSecondCateName.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSecondCateName.Name = "cmbSecondCateName";
             this.cmbSecondCateName.ShadowDecoration.Parent = this.cmbSecondCateName;
@@ -268,7 +267,7 @@ namespace FinalPoject
             this.txtThirdCateId.Location = new System.Drawing.Point(3, 15);
             this.txtThirdCateId.Name = "txtThirdCateId";
             this.txtThirdCateId.PasswordChar = '\0';
-            this.txtThirdCateId.PlaceholderText = "";
+            this.txtThirdCateId.PlaceholderText = "Auto Generate";
             this.txtThirdCateId.SelectedText = "";
             this.txtThirdCateId.ShadowDecoration.Parent = this.txtThirdCateId;
             this.txtThirdCateId.Size = new System.Drawing.Size(194, 30);
@@ -291,7 +290,7 @@ namespace FinalPoject
             this.txtThirdCateName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtThirdCateName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtThirdCateName.HoverState.Parent = this.txtThirdCateName;
-            this.txtThirdCateName.Location = new System.Drawing.Point(3, 113);
+            this.txtThirdCateName.Location = new System.Drawing.Point(3, 64);
             this.txtThirdCateName.Name = "txtThirdCateName";
             this.txtThirdCateName.PasswordChar = '\0';
             this.txtThirdCateName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
@@ -356,7 +355,7 @@ namespace FinalPoject
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(50, 258);
+            this.label8.Location = new System.Drawing.Point(58, 259);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 15);
@@ -368,7 +367,7 @@ namespace FinalPoject
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(26, 357);
+            this.label7.Location = new System.Drawing.Point(37, 311);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 15);
@@ -499,7 +498,7 @@ namespace FinalPoject
             this.btnCancle.ShadowDecoration.Parent = this.btnCancle;
             this.btnCancle.Size = new System.Drawing.Size(142, 35);
             this.btnCancle.TabIndex = 117;
-            this.btnCancle.Text = "Cancle";
+            this.btnCancle.Text = "Cancel";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnSave
@@ -554,7 +553,7 @@ namespace FinalPoject
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(26, 17);
+            this.label5.Location = new System.Drawing.Point(26, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(166, 21);
             this.label5.TabIndex = 0;
@@ -632,6 +631,7 @@ namespace FinalPoject
             this.ThirdCategoryPicture.MinimumWidth = 6;
             this.ThirdCategoryPicture.Name = "ThirdCategoryPicture";
             this.ThirdCategoryPicture.ReadOnly = true;
+            this.ThirdCategoryPicture.Visible = false;
             // 
             // SecondCategoryName
             // 
@@ -719,18 +719,18 @@ namespace FinalPoject
             this.btnRefresh.Animated = true;
             this.btnRefresh.CheckedState.Parent = this.btnRefresh;
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
+            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.btnRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnRefresh.CustomImages.Parent = this.btnRefresh;
             this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
+            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
             this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.HoverState.Parent = this.btnRefresh;
             this.btnRefresh.Location = new System.Drawing.Point(140, 11);
             this.btnRefresh.Name = "btnRefresh";
@@ -904,7 +904,7 @@ namespace FinalPoject
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(26, 17);
+            this.label6.Location = new System.Drawing.Point(26, 18);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(151, 21);
             this.label6.TabIndex = 0;
@@ -982,11 +982,11 @@ namespace FinalPoject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 6);
+            this.label3.Location = new System.Drawing.Point(18, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(305, 60);
+            this.label3.Size = new System.Drawing.Size(269, 39);
             this.label3.TabIndex = 20;
             this.label3.Text = "Third Categories";
             // 
@@ -1143,10 +1143,10 @@ namespace FinalPoject
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchCategories;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
+        private Guna.UI2.WinForms.Guna2Button btnAddSecondCate;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThirdCategoryPicture;
         private System.Windows.Forms.DataGridViewTextBoxColumn SecondCategoryName;
-        private Guna.UI2.WinForms.Guna2Button btnAddSecondCate;
     }
 }

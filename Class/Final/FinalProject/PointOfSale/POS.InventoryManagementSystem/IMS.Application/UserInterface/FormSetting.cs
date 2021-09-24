@@ -28,7 +28,7 @@ namespace FinalPoject
                 Server dbServer = new Server(new ServerConnection(txtServer.Text, txtUsername.Text, txtPassword.Text));
                 Backup dbBackup = new Backup(){Action = BackupActionType.Database, Database = txtDatabase.Text};
 
-                dbBackup.Devices.AddDevice(@"C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\Backup\inventoryDB.bak", DeviceType.File);
+                dbBackup.Devices.AddDevice(@"C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\inventoryDB.bak", DeviceType.File);
                 dbBackup.Initialize = true;
 
                 dbBackup.PercentComplete += DbBackup_PercentComplete;
@@ -52,6 +52,7 @@ namespace FinalPoject
                 });
                 MessageBox.Show("Backup Done", "Database", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
+           
         }
 
         private void DbBackup_PercentComplete(object sender, PercentCompleteEventArgs e)
@@ -78,7 +79,7 @@ namespace FinalPoject
                 Server dbServer = new Server(new ServerConnection(txtServer.Text, txtUsername.Text, txtPassword.Text));
                 Restore dbRestore = new Restore() {Database = txtDatabase.Text, Action = RestoreActionType.Database, ReplaceDatabase = true, NoRecovery = false};
 
-                dbRestore.Devices.AddDevice(@"C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\Backup\inventoryDB.bak", DeviceType.File);
+                dbRestore.Devices.AddDevice(@"C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\inventoryDB.bak", DeviceType.File);
 
                 dbRestore.PercentComplete += DbRestore_PercentComplete;
                 dbRestore.Complete += DbRestore_Complete;

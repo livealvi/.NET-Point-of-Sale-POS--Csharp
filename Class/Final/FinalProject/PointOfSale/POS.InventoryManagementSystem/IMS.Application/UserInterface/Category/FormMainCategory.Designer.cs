@@ -67,9 +67,6 @@ namespace FinalPoject
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvMainCate = new System.Windows.Forms.DataGridView();
-            this.MainCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainCategoryImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
@@ -89,6 +86,9 @@ namespace FinalPoject
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.MainCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MainCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MainCategoryImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -210,11 +210,11 @@ namespace FinalPoject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 6);
+            this.label3.Location = new System.Drawing.Point(18, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 60);
+            this.label3.Size = new System.Drawing.Size(238, 39);
             this.label3.TabIndex = 20;
             this.label3.Text = "Main Category";
             // 
@@ -334,7 +334,7 @@ namespace FinalPoject
             this.txtMainCateId.Location = new System.Drawing.Point(3, 15);
             this.txtMainCateId.Name = "txtMainCateId";
             this.txtMainCateId.PasswordChar = '\0';
-            this.txtMainCateId.PlaceholderText = "";
+            this.txtMainCateId.PlaceholderText = "Auto Generate";
             this.txtMainCateId.SelectedText = "";
             this.txtMainCateId.ShadowDecoration.Parent = this.txtMainCateId;
             this.txtMainCateId.Size = new System.Drawing.Size(194, 30);
@@ -361,7 +361,7 @@ namespace FinalPoject
             this.txtMainCateName.Name = "txtMainCateName";
             this.txtMainCateName.PasswordChar = '\0';
             this.txtMainCateName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtMainCateName.PlaceholderText = "Ex: Chips, Coke, Mobile";
+            this.txtMainCateName.PlaceholderText = "Food & Grocery";
             this.txtMainCateName.SelectedText = "";
             this.txtMainCateName.ShadowDecoration.Parent = this.txtMainCateName;
             this.txtMainCateName.Size = new System.Drawing.Size(194, 30);
@@ -566,7 +566,7 @@ namespace FinalPoject
             this.btnCancle.ShadowDecoration.Parent = this.btnCancle;
             this.btnCancle.Size = new System.Drawing.Size(142, 35);
             this.btnCancle.TabIndex = 117;
-            this.btnCancle.Text = "Cancle";
+            this.btnCancle.Text = "Cancel";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnSave
@@ -672,33 +672,6 @@ namespace FinalPoject
             this.dgvMainCate.TabIndex = 160;
             this.dgvMainCate.DoubleClick += new System.EventHandler(this.dgvMainCate_DoubleClick);
             // 
-            // MainCategoryId
-            // 
-            this.MainCategoryId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MainCategoryId.DataPropertyName = "MainCategoryId";
-            this.MainCategoryId.HeaderText = "Main Category ID";
-            this.MainCategoryId.MinimumWidth = 6;
-            this.MainCategoryId.Name = "MainCategoryId";
-            this.MainCategoryId.ReadOnly = true;
-            // 
-            // MainCategoryName
-            // 
-            this.MainCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MainCategoryName.DataPropertyName = "MainCategoryName";
-            this.MainCategoryName.HeaderText = "Main Category Name";
-            this.MainCategoryName.MinimumWidth = 6;
-            this.MainCategoryName.Name = "MainCategoryName";
-            this.MainCategoryName.ReadOnly = true;
-            // 
-            // MainCategoryImage
-            // 
-            this.MainCategoryImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MainCategoryImage.DataPropertyName = "MainCategoryImage";
-            this.MainCategoryImage.HeaderText = "Main Category Picture";
-            this.MainCategoryImage.MinimumWidth = 6;
-            this.MainCategoryImage.Name = "MainCategoryImage";
-            this.MainCategoryImage.ReadOnly = true;
-            // 
             // guna2Panel28
             // 
             this.guna2Panel28.BackColor = System.Drawing.Color.Transparent;
@@ -777,18 +750,18 @@ namespace FinalPoject
             this.btnRefresh.Animated = true;
             this.btnRefresh.CheckedState.Parent = this.btnRefresh;
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
+            this.btnRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.btnRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnRefresh.CustomImages.Parent = this.btnRefresh;
             this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
+            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
             this.btnRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnRefresh.HoverState.Parent = this.btnRefresh;
             this.btnRefresh.Location = new System.Drawing.Point(160, 11);
             this.btnRefresh.Name = "btnRefresh";
@@ -967,6 +940,34 @@ namespace FinalPoject
             this.label6.Size = new System.Drawing.Size(151, 21);
             this.label6.TabIndex = 0;
             this.label6.Text = "View All Categories";
+            // 
+            // MainCategoryId
+            // 
+            this.MainCategoryId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MainCategoryId.DataPropertyName = "MainCategoryId";
+            this.MainCategoryId.HeaderText = "Main Category ID";
+            this.MainCategoryId.MinimumWidth = 6;
+            this.MainCategoryId.Name = "MainCategoryId";
+            this.MainCategoryId.ReadOnly = true;
+            // 
+            // MainCategoryName
+            // 
+            this.MainCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MainCategoryName.DataPropertyName = "MainCategoryName";
+            this.MainCategoryName.HeaderText = "Main Category Name";
+            this.MainCategoryName.MinimumWidth = 6;
+            this.MainCategoryName.Name = "MainCategoryName";
+            this.MainCategoryName.ReadOnly = true;
+            // 
+            // MainCategoryImage
+            // 
+            this.MainCategoryImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MainCategoryImage.DataPropertyName = "MainCategoryImage";
+            this.MainCategoryImage.HeaderText = "Main Category Picture";
+            this.MainCategoryImage.MinimumWidth = 6;
+            this.MainCategoryImage.Name = "MainCategoryImage";
+            this.MainCategoryImage.ReadOnly = true;
+            this.MainCategoryImage.Visible = false;
             // 
             // FormMainCategory
             // 

@@ -42,7 +42,7 @@ namespace IMS.DataAccess
         //internal DataTable dt
         public InventoryDBDataAccess()
         {
-            this.Sqlcon = new SqlConnection(@"Data Source=X510UQR\SQLEXPRESS;Initial Catalog=inventoryDB;Persist Security Info=True;User ID=sa;Password=madworld");
+            this.Sqlcon = new SqlConnection(@"Data Source=X510UQR;Initial Catalog=inventoryDB;Persist Security Info=True;User ID=sa;Password=madworld");
             Sqlcon.Open();
         }
 

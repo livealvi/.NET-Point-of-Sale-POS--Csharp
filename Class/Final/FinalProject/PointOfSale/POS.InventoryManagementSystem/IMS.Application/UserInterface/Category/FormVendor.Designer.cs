@@ -728,11 +728,11 @@ namespace FinalPoject
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(26, 17);
+            this.label5.Location = new System.Drawing.Point(26, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 21);
+            this.label5.Size = new System.Drawing.Size(98, 21);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Enter Details";
+            this.label5.Text = "Add Vendor";
             // 
             // guna2Panel11
             // 
@@ -1218,11 +1218,11 @@ namespace FinalPoject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 6);
+            this.label3.Location = new System.Drawing.Point(18, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 60);
+            this.label3.Size = new System.Drawing.Size(144, 39);
             this.label3.TabIndex = 20;
             this.label3.Text = "Vendors";
             // 

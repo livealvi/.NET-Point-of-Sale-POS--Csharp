@@ -305,7 +305,7 @@ namespace FinalPoject
             this.btnCancle.ShadowDecoration.Parent = this.btnCancle;
             this.btnCancle.Size = new System.Drawing.Size(142, 35);
             this.btnCancle.TabIndex = 117;
-            this.btnCancle.Text = "Cancle";
+            this.btnCancle.Text = "Cancel";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnSave
@@ -682,7 +682,7 @@ namespace FinalPoject
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
             this.txtLastName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtLastName.PlaceholderText = "Ex: Kabir";
+            this.txtLastName.PlaceholderText = "Ex: Hasan";
             this.txtLastName.SelectedText = "";
             this.txtLastName.ShadowDecoration.Parent = this.txtLastName;
             this.txtLastName.Size = new System.Drawing.Size(194, 30);
@@ -996,7 +996,7 @@ namespace FinalPoject
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
             this.txtFirstName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.txtFirstName.PlaceholderText = "Ex: Jone";
+            this.txtFirstName.PlaceholderText = "Ex: Alvi";
             this.txtFirstName.SelectedText = "";
             this.txtFirstName.ShadowDecoration.Parent = this.txtFirstName;
             this.txtFirstName.Size = new System.Drawing.Size(194, 30);

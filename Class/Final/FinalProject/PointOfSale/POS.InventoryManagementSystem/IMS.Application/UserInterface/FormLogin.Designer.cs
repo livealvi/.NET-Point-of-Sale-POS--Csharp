@@ -63,11 +63,11 @@ namespace FinalPoject.UserInterface.Dashboard
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
             this.label5.Location = new System.Drawing.Point(42, 161);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(311, 65);
+            this.label5.Size = new System.Drawing.Size(279, 42);
             this.label5.TabIndex = 24;
             this.label5.Text = "Welcome Back";
             // 
@@ -75,11 +75,11 @@ namespace FinalPoject.UserInterface.Dashboard
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.InfoText;
             this.label4.Location = new System.Drawing.Point(42, 86);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 65);
+            this.label4.Size = new System.Drawing.Size(119, 42);
             this.label4.TabIndex = 23;
             this.label4.Text = "Hello,";
             // 
@@ -107,11 +107,11 @@ namespace FinalPoject.UserInterface.Dashboard
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(172, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 56);
+            this.label3.Size = new System.Drawing.Size(105, 37);
             this.label3.TabIndex = 20;
             this.label3.Text = "Log in";
             // 
@@ -247,7 +247,7 @@ namespace FinalPoject.UserInterface.Dashboard
             this.MinimumSize = new System.Drawing.Size(1459, 872);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormLogin";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel2.PerformLayout();

@@ -387,7 +387,7 @@ namespace FinalPoject
             this.txtTag.Location = new System.Drawing.Point(3, 64);
             this.txtTag.Name = "txtTag";
             this.txtTag.PasswordChar = '\0';
-            this.txtTag.PlaceholderText = "";
+            this.txtTag.PlaceholderText = "Auto Generate";
             this.txtTag.ReadOnly = true;
             this.txtTag.SelectedText = "";
             this.txtTag.ShadowDecoration.Parent = this.txtTag;
@@ -460,7 +460,7 @@ namespace FinalPoject
             this.txtId.Location = new System.Drawing.Point(3, 15);
             this.txtId.Name = "txtId";
             this.txtId.PasswordChar = '\0';
-            this.txtId.PlaceholderText = "";
+            this.txtId.PlaceholderText = "Auto Generate";
             this.txtId.SelectedText = "";
             this.txtId.ShadowDecoration.Parent = this.txtId;
             this.txtId.Size = new System.Drawing.Size(194, 30);
@@ -1039,7 +1039,7 @@ namespace FinalPoject
             this.btnCancle.ShadowDecoration.Parent = this.btnCancle;
             this.btnCancle.Size = new System.Drawing.Size(142, 35);
             this.btnCancle.TabIndex = 117;
-            this.btnCancle.Text = "Cancle";
+            this.btnCancle.Text = "Cancel";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnSaveProduct

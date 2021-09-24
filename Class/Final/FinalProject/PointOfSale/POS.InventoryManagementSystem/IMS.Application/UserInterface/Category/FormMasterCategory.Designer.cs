@@ -30,6 +30,7 @@ namespace FinalPoject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMasterCategory));
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -314,18 +315,18 @@ namespace FinalPoject
             this.btnMasterRefresh.Animated = true;
             this.btnMasterRefresh.CheckedState.Parent = this.btnMasterRefresh;
             this.btnMasterRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMasterRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnMasterRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnMasterRefresh.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_restart_96px_1;
+            this.btnMasterRefresh.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_restart_96px;
             this.btnMasterRefresh.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMasterRefresh.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnMasterRefresh.CustomImages.Parent = this.btnMasterRefresh;
             this.btnMasterRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMasterRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnMasterRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnMasterRefresh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMasterRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnMasterRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnMasterRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
+            this.btnMasterRefresh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(148)))), ((int)(((byte)(247)))));
             this.btnMasterRefresh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMasterRefresh.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnMasterRefresh.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(233)))), ((int)(((byte)(249)))));
             this.btnMasterRefresh.HoverState.Parent = this.btnMasterRefresh;
             this.btnMasterRefresh.Location = new System.Drawing.Point(494, 11);
             this.btnMasterRefresh.Name = "btnMasterRefresh";
@@ -399,8 +400,8 @@ namespace FinalPoject
             this.btnAddProduct.CheckedState.Parent = this.btnAddProduct;
             this.tablePanel3.SetColumn(this.btnAddProduct, 11);
             this.btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddProduct.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddProduct.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddProduct.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.CustomImages.HoveredImage")));
+            this.btnAddProduct.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.CustomImages.Image")));
             this.btnAddProduct.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddProduct.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnAddProduct.CustomImages.Parent = this.btnAddProduct;
@@ -427,8 +428,8 @@ namespace FinalPoject
             this.btnAddMainCate.CheckedState.Parent = this.btnAddMainCate;
             this.tablePanel3.SetColumn(this.btnAddMainCate, 1);
             this.btnAddMainCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddMainCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddMainCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddMainCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
+            this.btnAddMainCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
             this.btnAddMainCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddMainCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnAddMainCate.CustomImages.Parent = this.btnAddMainCate;
@@ -455,8 +456,8 @@ namespace FinalPoject
             this.btnAddVendor.CheckedState.Parent = this.btnAddVendor;
             this.tablePanel3.SetColumn(this.btnAddVendor, 7);
             this.btnAddVendor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddVendor.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddVendor.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddVendor.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("btnAddVendor.CustomImages.HoveredImage")));
+            this.btnAddVendor.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btnAddVendor.CustomImages.Image")));
             this.btnAddVendor.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddVendor.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnAddVendor.CustomImages.Parent = this.btnAddVendor;
@@ -484,8 +485,8 @@ namespace FinalPoject
             this.btnAddBrandCate.CheckedState.Parent = this.btnAddBrandCate;
             this.tablePanel3.SetColumn(this.btnAddBrandCate, 9);
             this.btnAddBrandCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddBrandCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddBrandCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddBrandCate.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("btnAddBrandCate.CustomImages.HoveredImage")));
+            this.btnAddBrandCate.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBrandCate.CustomImages.Image")));
             this.btnAddBrandCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddBrandCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnAddBrandCate.CustomImages.Parent = this.btnAddBrandCate;
@@ -512,8 +513,8 @@ namespace FinalPoject
             this.btnAddSecondCate.CheckedState.Parent = this.btnAddSecondCate;
             this.tablePanel3.SetColumn(this.btnAddSecondCate, 3);
             this.btnAddSecondCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddSecondCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddSecondCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddSecondCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_plus_math_480px_1;
+            this.btnAddSecondCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_plus_math_480px;
             this.btnAddSecondCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddSecondCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnAddSecondCate.CustomImages.Parent = this.btnAddSecondCate;
@@ -540,8 +541,8 @@ namespace FinalPoject
             this.btnAddThirdCate.CheckedState.Parent = this.btnAddThirdCate;
             this.tablePanel3.SetColumn(this.btnAddThirdCate, 5);
             this.btnAddThirdCate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddThirdCate.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnAddThirdCate.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnAddThirdCate.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("btnAddThirdCate.CustomImages.HoveredImage")));
+            this.btnAddThirdCate.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btnAddThirdCate.CustomImages.Image")));
             this.btnAddThirdCate.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddThirdCate.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
             this.btnAddThirdCate.CustomImages.Parent = this.btnAddThirdCate;
@@ -624,7 +625,7 @@ namespace FinalPoject
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label24.Location = new System.Drawing.Point(10, 20);
+            this.label24.Location = new System.Drawing.Point(10, 19);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(113, 19);
@@ -658,7 +659,7 @@ namespace FinalPoject
             this.txtSerachAllCate.HoverState.Parent = this.txtSerachAllCate;
             this.txtSerachAllCate.HoverState.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.txtSerachAllCate.IconRight = global::FinalPoject.Properties.Resources.icons8_search_480px;
-            this.txtSerachAllCate.Location = new System.Drawing.Point(133, 14);
+            this.txtSerachAllCate.Location = new System.Drawing.Point(133, 13);
             this.txtSerachAllCate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSerachAllCate.Name = "txtSerachAllCate";
             this.txtSerachAllCate.PasswordChar = '\0';
@@ -685,7 +686,7 @@ namespace FinalPoject
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(26, 17);
+            this.label6.Location = new System.Drawing.Point(26, 18);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(151, 21);
             this.label6.TabIndex = 0;
@@ -763,11 +764,11 @@ namespace FinalPoject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 25F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 6);
+            this.label3.Location = new System.Drawing.Point(18, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(338, 60);
+            this.label3.Size = new System.Drawing.Size(294, 39);
             this.label3.TabIndex = 20;
             this.label3.Text = "Master Categories";
             // 

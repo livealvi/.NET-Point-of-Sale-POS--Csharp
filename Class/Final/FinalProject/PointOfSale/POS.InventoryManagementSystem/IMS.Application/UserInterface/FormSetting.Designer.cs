@@ -42,8 +42,10 @@ namespace FinalPoject
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDBRestore = new Guna.UI2.WinForms.Guna2Button();
             this.btnBackupDB = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblPersent = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,8 +66,6 @@ namespace FinalPoject
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnDBRestore = new Guna.UI2.WinForms.Guna2Button();
             this.pnlOrderSelect.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -241,6 +241,33 @@ namespace FinalPoject
             this.tableLayoutPanel4.Size = new System.Drawing.Size(936, 57);
             this.tableLayoutPanel4.TabIndex = 137;
             // 
+            // btnDBRestore
+            // 
+            this.btnDBRestore.Animated = true;
+            this.btnDBRestore.CheckedState.Parent = this.btnDBRestore;
+            this.btnDBRestore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDBRestore.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
+            this.btnDBRestore.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
+            this.btnDBRestore.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDBRestore.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
+            this.btnDBRestore.CustomImages.Parent = this.btnDBRestore;
+            this.btnDBRestore.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDBRestore.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
+            this.btnDBRestore.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDBRestore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnDBRestore.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
+            this.btnDBRestore.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDBRestore.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDBRestore.HoverState.Parent = this.btnDBRestore;
+            this.btnDBRestore.Location = new System.Drawing.Point(477, 11);
+            this.btnDBRestore.Name = "btnDBRestore";
+            this.btnDBRestore.ShadowDecoration.Parent = this.btnDBRestore;
+            this.btnDBRestore.Size = new System.Drawing.Size(219, 35);
+            this.btnDBRestore.TabIndex = 134;
+            this.btnDBRestore.Text = "Restore Database";
+            this.btnDBRestore.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnDBRestore.Click += new System.EventHandler(this.btnDBRestore_Click);
+            // 
             // btnBackupDB
             // 
             this.btnBackupDB.Animated = true;
@@ -294,6 +321,18 @@ namespace FinalPoject
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(936, 488);
             this.guna2Panel5.TabIndex = 132;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(236, 276);
+            this.label7.Margin = new System.Windows.Forms.Padding(0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 15);
+            this.label7.TabIndex = 195;
+            this.label7.Text = "Status: ";
             // 
             // lblStatus
             // 
@@ -481,7 +520,7 @@ namespace FinalPoject
             this.txtServer.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.txtServer.BackColor = System.Drawing.Color.Transparent;
             this.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtServer.DefaultText = "X510UQR\\SQLEXPRESS";
+            this.txtServer.DefaultText = "X510UQR";
             this.txtServer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtServer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtServer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -588,45 +627,6 @@ namespace FinalPoject
             this.label6.Size = new System.Drawing.Size(134, 21);
             this.label6.TabIndex = 0;
             this.label6.Text = "Database Backup";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(236, 276);
-            this.label7.Margin = new System.Windows.Forms.Padding(0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 15);
-            this.label7.TabIndex = 195;
-            this.label7.Text = "Status: ";
-            // 
-            // btnDBRestore
-            // 
-            this.btnDBRestore.Animated = true;
-            this.btnDBRestore.CheckedState.Parent = this.btnDBRestore;
-            this.btnDBRestore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDBRestore.CustomImages.HoveredImage = global::FinalPoject.Properties.Resources.icons8_edit_image_480px;
-            this.btnDBRestore.CustomImages.Image = global::FinalPoject.Properties.Resources.icons8_edit_image_480px_1;
-            this.btnDBRestore.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDBRestore.CustomImages.ImageOffset = new System.Drawing.Point(10, -1);
-            this.btnDBRestore.CustomImages.Parent = this.btnDBRestore;
-            this.btnDBRestore.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDBRestore.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(255)))), ((int)(((byte)(203)))));
-            this.btnDBRestore.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDBRestore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnDBRestore.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(173)))), ((int)(((byte)(27)))));
-            this.btnDBRestore.HoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDBRestore.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDBRestore.HoverState.Parent = this.btnDBRestore;
-            this.btnDBRestore.Location = new System.Drawing.Point(477, 11);
-            this.btnDBRestore.Name = "btnDBRestore";
-            this.btnDBRestore.ShadowDecoration.Parent = this.btnDBRestore;
-            this.btnDBRestore.Size = new System.Drawing.Size(219, 35);
-            this.btnDBRestore.TabIndex = 134;
-            this.btnDBRestore.Text = "Restore Database";
-            this.btnDBRestore.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnDBRestore.Click += new System.EventHandler(this.btnDBRestore_Click);
             // 
             // FormSetting
             // 
