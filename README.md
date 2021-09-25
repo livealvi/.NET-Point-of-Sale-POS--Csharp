@@ -1,14 +1,69 @@
 # Inventory & Super Shop Management System - Point of Sale (POS)
 
 
+This porject based on my university course [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog). In the Inventory & Super Shop Management project have **3 roles**.
 
-This porject based on my unversity course [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog). In the Inventory & Super Shop Management project have 3 roles. Now, Breakdown the roles and features are:
+# Quick Shortcuts
 
-- User 1 : Admin
-- User 2 : Cashier  
-- User 3 : Sales Man
+[**Inventory & Super Shop Management System - Point of Sale (POS)**](#inventory--super-shop-management-system---point-of-sale-pos)
+  - [# Roles](#roles)
+  - [# Features](#features)
 
-> ### # Admin
+
+ [**1. Quick Overview - Setup & Run**](#quick-overview---setup--run)
+- [Inventory & Super Shop Management System - Confiugre](#quick-overview---setup--run)
+    - [Step - 1](#step---1)
+    - [Step - 2](#step---2)
+    - [Step - 2](#step---2-1)
+    - [Step - 3](#step---3)
+  
+ [**2. Tools Technologies**](#tools-technologies)
+ - [Stacks Used](#tools-technologies)
+   - [Languages](#languages)
+   - [IDE](#ide)
+   - [Database](#database)
+   - [Icons](#icons)
+  
+ [**3. Solution Explorer & Layer Architecture**](#solution-explorer--layer-architecture)
+ - [Solution Explorer](#solution-explorer--layer-architecture)
+   - [Layer Architecture](#solution)
+      - [**1. Application Layer**](#1-application-layer)
+      - [**2. DataAccess Layer**](#2-dataaccess-layer)
+      - [**3. Entity Layer**](#3-entity-layer)
+      - [**4. Framework Layer**](#4-framework-layer)
+      - [**5. Repository Layer**](#5-repository-layer)
+  
+  [**4. Database Diagram**](#database-diagram)
+
+  [**5. Screens**](#screens)
+  - [Windows Forms](#windows-forms)
+    - [**# Login**](#-login)
+    - [**# Dashboard**](#-dashboard)
+    - [**# Make Payment**](#-make-payment)
+    - [**# Sales History**](#-sales-history)
+    - [**# Master Categories**](#-master-categories)
+    - [**# Main Category**](#-main-category)
+    - [**# Second Category**](#-second-category)
+    - [**# Third Category**](#-third-category)
+    - [**# Vendors**](#-vendors)
+    - [**# Brands**](#-brands)
+    - [**# Products**](#-products)
+    - [**# Expenses Tracker**](#-expenses-tracker)
+    - [**# Database Backup & Restore**](#-database-backup--restore)
+  
+ [**6. Note**](#note)
+
+<hr>
+
+## # Roles
+
+- User 1 : **Admin**
+- User 2 : **Cashier**  
+- User 3 : **Sales Man**
+
+## # Features
+
+> ### # **Admin**
 - Manage Employees – Add Employee, Delete Employee, Edit Employee Info.
 - Manage Products – Add Product, Delete Product, Edit Product Info.
 - Manage Stock – Add, Delete, Edit - Vendor’s Product.
@@ -17,35 +72,50 @@ This porject based on my unversity course [CSC 2210: Object Oriented Programming
 - Make Sell.
 - Bill Generate.
 - Selling History.
-- Make Custom Barcode.
 - Database Backup & Restore.
 
-> ### # Cashier 
+> ### # **Cashier**
 - Make Sell.
 - Bill Generate.
 - Selling History.
 - Manage Stock.
 
-> ### # Cashier 
+> ### # **Sales Man**
 - Make Sell.
 - Bill Generate.
 
-
-
+<hr>
 
 ## Quick Overview - Setup & Run
 
->**Need Download**: [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) , [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) , [Microsoft SQL Server 2019 *Express (64-bit)*](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) , [SQL Server Management Studio (SSMS) 18.9.2](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) 
+>**Need to Download**:<br>[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
+<br>[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
+<br>[Microsoft SQL Server 2019 *Express (64-bit)*](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+<br>[SQL Server Management Studio (SSMS) 18.9.2](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) 
 
-### Super Shop Management System
-
+### Step - 1 
+Download or Clone
 ```sh
 git clone https://github.com/livealvi/PointOfSaleProject
-cd POS.InventoryManagementSystem/
 ```
-open ```POS.InventoryManagementSystem.sln``` with  ```Visual Studio```
 
-# Tools & Technology
+### Step - 2
+Make [Database](#database) follow this [Diagram](#database-diagram)
+
+### Step - 3
+Make Database connection on [**DataAccess Layer**](#2-dataaccess-layer)
+
+### Step - 4
+Goto project folder **PointOfSaleProject** open 
+```POS.InventoryManagementSystem.sln``` with  ```Visual Studio```
+
+### Step - 3
+**Build & Run the project**
+
+<hr>
+
+
+# Tools Technologies
 
 ## Languages
 
