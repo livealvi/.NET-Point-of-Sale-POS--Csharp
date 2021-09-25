@@ -13,8 +13,8 @@
 -
 - [Step - 1](#step---1)
 - [Step - 2](#step---2)
-- [Step - 2](#step---2-1)
 - [Step - 3](#step---3)
+- [Step - 4](#step---4)
 
   
  [**3. Tools Technologies**](#tools-technologies)
@@ -37,7 +37,7 @@
   
   [**5. Database Diagram**](#database-diagram)
   -
-  - [Diagram Image](#image)
+  - [Diagram Image](#database-diagram)
 
   [**6. Screens**](#screens)
   -
@@ -67,7 +67,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
 
 - User 1 : **Admin**
 - User 2 : **Cashier**  
-- User 3 : **Sales Man**
+- User 3 : **Salesman**
 
 ## # Features
 
@@ -92,7 +92,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
 
 <br>
 
-> ### **3. Sales Man**
+> ### **3. Salesman**
 - Make Sell.
 - Bill Generate.
 
