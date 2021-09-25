@@ -92,7 +92,7 @@ open ```POS.InventoryManagementSystem.sln``` with  ```Visual Studio```
 <img src="markdownAssets/layers/RepositoryLayer.png"  width="349" height="334">
 
 # Database Diagram 
-> **Note:** Using SQL Server & SQL Server Management Studio (SSMS) (_**Database Script or .bak file Not Include on this repo**_)
+> **Note:** Using SQL Server & SQL Server Management Studio (SSMS)<br>(_**Database Script or .bak file Not Include on this repo**_)
 
 <img src="markdownAssets/Diagram/DiagramDB.png"  width="auto" height="auto">
 
@@ -100,7 +100,7 @@ open ```POS.InventoryManagementSystem.sln``` with  ```Visual Studio```
 # Screens
 
 ## Windows Forms
-> **Note:** Using Default .NET UI Component And **Two 3rd Party** .NET UI & Reporting Components (_**3rd Party UI Not Include on this repo**_) <br>
+> **Note:** Using Default .NET UI Component And **Two 3rd Party** .NET UI & Reporting Components<br>(_**3rd Party UI Not Include on this repo**_) <br>
  >  - [DevExpress](https://www.devexpress.com/)
  >  -  [Guna UI2](https://gunaui.com/)
 
