@@ -73,12 +73,16 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
 - Bill Generate.
 - Selling History.
 - Database Backup & Restore.
+  
+<br>
 
 > ### # **Cashier**
 - Make Sell.
 - Bill Generate.
 - Selling History.
 - Manage Stock.
+
+<br>
 
 > ### # **Sales Man**
 - Make Sell.
@@ -93,24 +97,24 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
 <br>[Microsoft SQL Server 2019 *Express (64-bit)*](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 <br>[SQL Server Management Studio (SSMS) 18.9.2](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) 
 
-### Step - 1 
+#### Step - 1 
 Download or Clone
 ```sh
 git clone https://github.com/livealvi/PointOfSaleProject
 ```
 
-### Step - 2
+#### Step - 2
 Make [Database](#database) follow this [Diagram](#database-diagram)
 
-### Step - 3
+#### Step - 3
 Make Database connection on [**DataAccess Layer**](#2-dataaccess-layer)
 
-### Step - 4
+#### Step - 4
 Goto project folder **PointOfSaleProject** open 
 ```POS.InventoryManagementSystem.sln``` with  ```Visual Studio```
 
-### Step - 3
-**Build & Run the project**
+#### Step - 3
+Build & Run the project
 
 <hr>
 
