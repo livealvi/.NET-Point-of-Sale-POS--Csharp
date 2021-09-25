@@ -71,7 +71,12 @@
 
 # Point of Sale (POS)
 
-This porject based on my university course [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog). In the Inventory & Super Shop Management project have **3 roles**.
+Point of Sale (POS) with N-Tier Architecture ([**5 Layers**](#solution)). This Project was developed in C# and follows Object Relational Mapping (ORM) from scratch and using MS SQL Server 2019 and .NET Framework 4.8 as backend. Project-based on my university course curriculum [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog).
+
+<br>
+
+This POS has **3 roles** features. 
+
 ## # Roles
 
 - User 1 : **Admin**
