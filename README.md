@@ -5,8 +5,8 @@
 
 [**1. Get Started**](#point-of-sale-pos)
 -
-  - [Roles](#roles)
-  - [Features](#features)
+  - [Roles](#-roles)
+  - [Features](#-features)
 
 
  [**2. Quick Overview - Setup & Run**](#quick-overview---setup--run)
