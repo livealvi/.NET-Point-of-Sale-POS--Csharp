@@ -6,11 +6,12 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
 # Quick Shortcuts
 
 [**Inventory & Super Shop Management System - Point of Sale (POS)**](#inventory--super-shop-management-system---point-of-sale-pos)
-  - [# Roles](#roles)
-  - [# Features](#features)
+  - [Roles](#roles)
+  - [Features](#features)
 
 
  [**1. Quick Overview - Setup & Run**](#quick-overview---setup--run)
+ -
 - [Inventory & Super Shop Management System - Confiugre](#quick-overview---setup--run)
     - [Step - 1](#step---1)
     - [Step - 2](#step---2)
@@ -18,6 +19,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
     - [Step - 3](#step---3)
   
  [**2. Tools Technologies**](#tools-technologies)
+ -
  - [Stacks Used](#tools-technologies)
    - [Languages](#languages)
    - [IDE](#ide)
@@ -25,6 +27,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
    - [Icons](#icons)
   
  [**3. Solution Explorer & Layer Architecture**](#solution-explorer--layer-architecture)
+ -
  - [Solution Explorer](#solution-explorer--layer-architecture)
    - [Layer Architecture](#solution)
       - [**1. Application Layer**](#1-application-layer)
@@ -34,8 +37,11 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
       - [**5. Repository Layer**](#5-repository-layer)
   
   [**4. Database Diagram**](#database-diagram)
+  -
+  - [Diagram Image](#image)
 
   [**5. Screens**](#screens)
+  -
   - [Windows Forms](#windows-forms)
     - [**# Login**](#-login)
     - [**# Dashboard**](#-dashboard)
@@ -52,7 +58,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
     - [**# Database Backup & Restore**](#-database-backup--restore)
   
  [**6. Note**](#note)
-
+ -
 <hr>
 
 ## # Roles
