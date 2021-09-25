@@ -54,7 +54,7 @@
     - [**# Brands**](#-brands)
     - [**# Products**](#-products)
     - [**# Expenses Tracker**](#-expenses-tracker)
-    - [**# Employees & User Tracker**](#-employees---user-tracker)
+    - [**# Employees & User Tracker**](#-employees--user-tracker)
     - [**# Database Backup & Restore**](#-database-backup--restore)
   
  [**7. Note**](#note)
