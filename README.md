@@ -1,8 +1,6 @@
 # Inventory & Super Shop Management System - Point of Sale (POS)
 
 
-This porject based on my university course [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog). In the Inventory & Super Shop Management project have **3 roles**.
-
 # Quick Shortcuts
 
 [**Inventory & Super Shop Management System - Point of Sale (POS)**](#inventory--super-shop-management-system---point-of-sale-pos)
@@ -58,9 +56,11 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
     - [**# Database Backup & Restore**](#-database-backup--restore)
   
  [**6. Note**](#note)
- -
+
+
 <hr>
 
+This porject based on my university course [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog). In the Inventory & Super Shop Management project have **3 roles**.
 ## # Roles
 
 - User 1 : **Admin**
