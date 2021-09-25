@@ -1,4 +1,4 @@
-# Inventory & Super Shop Management System - Point of Sale (POS)
+# Point of Sale (POS) - Inventory & Super Shop Management System - C#
 
 <div align="center">
   
