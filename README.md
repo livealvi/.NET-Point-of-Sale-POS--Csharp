@@ -10,16 +10,16 @@
 
 
  [**2. Quick Overview - Setup & Run**](#quick-overview---setup--run)
- -
-- [Inventory & Super Shop Management System - Confiugre](#quick-overview---setup--run)
-    - [Step - 1](#step---1)
-    - [Step - 2](#step---2)
-    - [Step - 2](#step---2-1)
-    - [Step - 3](#step---3)
+-
+- [Step - 1](#step---1)
+- [Step - 2](#step---2)
+- [Step - 2](#step---2-1)
+- [Step - 3](#step---3)
+
   
  [**3. Tools Technologies**](#tools-technologies)
  -
- - [Stacks Used](#tools-technologies)
+
    - [Languages](#languages)
    - [IDE](#ide)
    - [Database](#database)
