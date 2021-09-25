@@ -3,7 +3,7 @@
 
 # Quick Shortcuts
 
-[**1. Get Started**](#inventory--super-shop-management-system---point-of-sale-pos)
+[**1. Get Started**](#point-of-sale-pos)
 -
   - [Roles](#roles)
   - [Features](#features)
