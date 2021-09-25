@@ -71,7 +71,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
 
 ## # Features
 
-> ### # **Admin**
+> ### **1. Admin**
 - Manage Employees – Add Employee, Delete Employee, Edit Employee Info.
 - Manage Products – Add Product, Delete Product, Edit Product Info.
 - Manage Stock – Add, Delete, Edit - Vendor’s Product.
@@ -84,7 +84,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
   
 <br>
 
-> ### # **Cashier**
+> ### **2. Cashier**
 - Make Sell.
 - Bill Generate.
 - Selling History.
@@ -92,7 +92,7 @@ This porject based on my university course [CSC 2210: Object Oriented Programmin
 
 <br>
 
-> ### # **Sales Man**
+> ### **3. Sales Man**
 - Make Sell.
 - Bill Generate.
 
