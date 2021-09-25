@@ -59,8 +59,6 @@
  [**7. Note**](#note)
 -
 
-<hr>
-
 # Point of Sale (POS)
 
 This porject based on my university course [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog). In the Inventory & Super Shop Management project have **3 roles**.
