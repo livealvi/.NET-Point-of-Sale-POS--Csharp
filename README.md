@@ -26,7 +26,7 @@
 - [Step - 4](#step---4)
 
   
- [**3. Tools Technologies**](#tools-technologies)
+ [**3. Tools & Technologies**](#tools-technologies)
  -
 
    - [Languages](#languages)
@@ -140,7 +140,7 @@ Build & Run the project
 <hr>
 
 
-# Tools Technologies
+# Tools & Technologies
 
 ## Languages
 
