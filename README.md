@@ -5,8 +5,8 @@
 
 [**1. Get Started**](#point-of-sale-pos)
 -
-  - [Roles](#-roles)
-  - [Features](#-features)
+  - [Roles](#roles)
+  - [Features](#features)
 
 
  [**2. Quick Overview - Setup & Run**](#quick-overview---setup--run)
@@ -252,3 +252,5 @@ Build & Run the project
 - 3rd Party .NET UI & Reporting Components Not Include [DevExpress](https://www.devexpress.com/) and [Guna UI2](https://gunaui.com/) Not Include
 
 ### - Thank You.
+
+
