@@ -54,6 +54,7 @@
     - [**# Brands**](#-brands)
     - [**# Products**](#-products)
     - [**# Expenses Tracker**](#-expenses-tracker)
+    - [**# Employees & User Tracker**](#-employees-&-user-tracker)
     - [**# Database Backup & Restore**](#-database-backup--restore)
   
  [**7. Note**](#note)
@@ -227,6 +228,10 @@ Build & Run the project
 ### **# Products**
 
 <img src="markdownAssets/Screens/Snapshot_14.png"  width="auto" height="auto">
+
+### **# Employees & User Tracker**
+
+<img src="markdownAssets/Screens/Snapshot_16.png"  width="auto" height="auto">
 
 ### **# Expenses Tracker**
 
