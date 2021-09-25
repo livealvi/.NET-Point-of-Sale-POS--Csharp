@@ -3,12 +3,13 @@
 
 # Quick Shortcuts
 
-[**Inventory & Super Shop Management System - Point of Sale (POS)**](#inventory--super-shop-management-system---point-of-sale-pos)
+[**1. Get Started**](#inventory--super-shop-management-system---point-of-sale-pos)
+-
   - [Roles](#roles)
   - [Features](#features)
 
 
- [**1. Quick Overview - Setup & Run**](#quick-overview---setup--run)
+ [**2. Quick Overview - Setup & Run**](#quick-overview---setup--run)
  -
 - [Inventory & Super Shop Management System - Confiugre](#quick-overview---setup--run)
     - [Step - 1](#step---1)
@@ -16,7 +17,7 @@
     - [Step - 2](#step---2-1)
     - [Step - 3](#step---3)
   
- [**2. Tools Technologies**](#tools-technologies)
+ [**3. Tools Technologies**](#tools-technologies)
  -
  - [Stacks Used](#tools-technologies)
    - [Languages](#languages)
@@ -24,7 +25,7 @@
    - [Database](#database)
    - [Icons](#icons)
   
- [**3. Solution Explorer & Layer Architecture**](#solution-explorer--layer-architecture)
+ [**4. Solution Explorer & Layer Architecture**](#solution-explorer--layer-architecture)
  -
  - [Solution Explorer](#solution-explorer--layer-architecture)
    - [Layer Architecture](#solution)
@@ -34,11 +35,11 @@
       - [**4. Framework Layer**](#4-framework-layer)
       - [**5. Repository Layer**](#5-repository-layer)
   
-  [**4. Database Diagram**](#database-diagram)
+  [**5. Database Diagram**](#database-diagram)
   -
   - [Diagram Image](#image)
 
-  [**5. Screens**](#screens)
+  [**6. Screens**](#screens)
   -
   - [Windows Forms](#windows-forms)
     - [**# Login**](#-login)
@@ -55,10 +56,12 @@
     - [**# Expenses Tracker**](#-expenses-tracker)
     - [**# Database Backup & Restore**](#-database-backup--restore)
   
- [**6. Note**](#note)
-
+ [**7. Note**](#note)
+-
 
 <hr>
+
+# Point of Sale (POS)
 
 This porject based on my university course [CSC 2210: Object Oriented Programming 2](https://www.aiub.edu/faculties/fst/ug-course-catalog). In the Inventory & Super Shop Management project have **3 roles**.
 ## # Roles
