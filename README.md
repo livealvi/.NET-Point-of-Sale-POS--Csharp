@@ -121,7 +121,7 @@ Point of Sale (POS) with N-Tier Architecture ([**5 Layers**](#solution)). This P
 #### Step - 1 
 Download or Clone
 ```sh
-git clone https://github.com/livealvi/PointOfSaleProject
+git clone https://github.com/livealvi/.NET-Point-of-Sale-POS--Csharp
 ```
 
 #### Step - 2
